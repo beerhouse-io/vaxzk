@@ -54830,23 +54830,7 @@ this in the docs: http://dev.apollodata.com/core/fragments.html#unique-names`) :
                                 })
                             ]
                         }),
-                        (0, A.jsxs)(`button`, {
-                            onClick: ()=>s(`publish`),
-                            className: `flex flex-col items-center justify-center px-3 py-2 active:scale-90 duration-150 transition-all ${r === `publish` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
-                            children: [
-                                (0, A.jsx)(`span`, {
-                                    className: `material-symbols-outlined`,
-                                    style: {
-                                        fontVariationSettings: r === `publish` ? `'FILL' 1` : void 0
-                                    },
-                                    children: `publish`
-                                }),
-                                (0, A.jsx)(`span`, {
-                                    className: `text-[11px] font-medium tracking-wide uppercase mt-1`,
-                                    children: `Admin`
-                                })
-                            ]
-                        })
+                        !1
                     ]
                 }),
                 r === `home` && (0, A.jsx)(`button`, {
