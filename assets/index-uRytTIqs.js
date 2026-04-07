@@ -54740,8 +54740,14 @@ this in the docs: http://dev.apollodata.com/core/fragments.html#unique-names`) :
         let { t: r } = He(), [i, a] = (0, Ie.useState)(`home`), [o, s] = (0, Ie.useState)(`home`), [c, l] = (0, Ie.useState)(null), [u, d] = (0, Ie.useState)(null);
         Ie.useEffect(()=>{
             async function e() {
-                if (!(!t || !n)) try {
-                    l(await sCe(await X9(await Y9(n, We), Ue, new Uint8Array(32))));
+                if (console.log(`1`), !(!t || !n)) try {
+                    console.log(`2`);
+                    let e = await Y9(n, We);
+                    console.log(`3`), console.log(`4`);
+                    let t = await X9(e, Ue, new Uint8Array(32));
+                    console.log(`5`);
+                    let r = await sCe(t);
+                    console.log(`6`), console.log(r), l(r);
                 } catch (e) {
                     console.error(`Failed to check clinic status:`, e), l(!1);
                 }
