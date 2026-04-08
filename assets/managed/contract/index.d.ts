@@ -17,14 +17,11 @@ export type VaxZkProof = { issuerId: Uint8Array;
                            expirationDate: bigint
                          };
 
-export enum ProfileState { ADMIN = 0, CLINIC = 1, USER = 2 }
-
 export type Witnesses<PS> = {
   localSk(context: __compactRuntime.WitnessContext<Ledger, PS>): [PS, Uint8Array];
 }
 
 export type ImpureCircuits<PS> = {
-  getProfile(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, ProfileState>;
   getCertIssuerId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   getProofReqId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
@@ -43,7 +40,6 @@ export type ImpureCircuits<PS> = {
 }
 
 export type ProvableCircuits<PS> = {
-  getProfile(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, ProfileState>;
   getCertIssuerId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   getProofReqId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
@@ -66,7 +62,6 @@ export type PureCircuits = {
 }
 
 export type Circuits<PS> = {
-  getProfile(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, ProfileState>;
   getShieldedId(context: __compactRuntime.CircuitContext<PS>, _sk_0: Uint8Array): __compactRuntime.CircuitResults<PS, Uint8Array>;
   getCertIssuerId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   getProofReqId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;

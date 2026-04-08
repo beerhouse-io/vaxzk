@@ -4,22 +4,6 @@
   "runtime-version": "0.15.0",
   "circuits": [
     {
-      "name": "getProfile",
-      "pure": false,
-      "proof": true,
-      "arguments": [
-      ],
-      "result-type": {
-        "type-name": "Enum",
-        "name": "ProfileState",
-        "elements": [
-          "ADMIN",
-          "CLINIC",
-          "USER"
-        ]
-      }
-    },
-    {
       "name": "getShieldedId",
       "pure": true,
       "proof": false,
