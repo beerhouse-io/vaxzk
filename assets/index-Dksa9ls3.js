@@ -59099,8 +59099,10 @@ ${h(e)}
             }
             async function r() {
                 if (!(!t || !n)) try {
-                    let e = await Q9(n, We), t = new Uint8Array(32), { isAdmin: r } = await L7((await Z9.join(e, Ue, t)).state$);
-                    d(r);
+                    let e = await Q9(n, We), t = new Uint8Array(32), r = await Z9.join(e, Ue, t);
+                    console.log(`Looking is Admin`);
+                    let { isAdmin: i } = await L7(r.state$);
+                    console.log(i), d(i);
                 } catch (e) {
                     console.error(`Failed to check admin status:`, e), d(!1);
                 }
