@@ -60738,12 +60738,15 @@ ${h(e)}
                 for (let t of e.admins)n.push(k5(t));
                 let r = [];
                 for (let t of e.clinics)r.push(k5(t));
-                let i = t ? Tl.getShieldedId(t.secretKey) : null;
+                let i = [];
+                for (let t of e.vaccines)i.push(new TextDecoder().decode(t).replace(/\0/g, ``).trim());
+                let a = t ? Tl.getShieldedId(t.secretKey) : null;
                 return {
                     admins: n,
                     clinics: r,
-                    isAdmin: i ? e.admins.member(i) : !1,
-                    isClinic: i ? e.clinics.member(i) : !1
+                    vaccines: i,
+                    isAdmin: a ? e.admins.member(a) : !1,
+                    isClinic: a ? e.clinics.member(a) : !1
                 };
             }).pipe(gAe({
                 bufferSize: 1,
