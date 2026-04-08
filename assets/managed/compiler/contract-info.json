@@ -4,6 +4,42 @@
   "runtime-version": "0.15.0",
   "circuits": [
     {
+      "name": "addVaccine",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+        {
+          "name": "name",
+          "type": {
+            "type-name": "Bytes",
+            "length": 20
+          }
+        }
+      ],
+      "result-type": {
+        "type-name": "Tuple",
+        "types": [
+        ]
+      }
+    },
+    {
+      "name": "hasVaccine",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+        {
+          "name": "name",
+          "type": {
+            "type-name": "Bytes",
+            "length": 20
+          }
+        }
+      ],
+      "result-type": {
+        "type-name": "Boolean"
+      }
+    },
+    {
       "name": "getShieldedId",
       "pure": true,
       "proof": false,
