@@ -58931,32 +58931,21 @@ ${h(e)}
                 })
             ]
         });
-    }, zje = ({ onBack: e })=>{
-        let { t } = Ve(), [n, r] = (0, Ie.useState)(!1), [i, a] = (0, Ie.useState)(!1), [o, s] = (0, Ie.useState)(null);
+    }, zje = ()=>{
+        let { t: e } = Ve(), [t, n] = (0, Ie.useState)(!1), [r, i] = (0, Ie.useState)(!1), [a, o] = (0, Ie.useState)(null);
         return (0, A.jsxs)(`main`, {
             className: `pt-24 px-6 max-w-screen-md mx-auto`,
             children: [
                 (0, A.jsxs)(`section`, {
                     className: `mb-12 text-left`,
                     children: [
-                        (0, A.jsx)(`div`, {
-                            className: `flex items-center gap-3 mb-6`,
-                            children: (0, A.jsx)(`button`, {
-                                onClick: e,
-                                className: `flex items-center justify-center w-10 h-10 rounded-full hover:bg-blue-50/50 transition-colors active:scale-95 duration-200`,
-                                children: (0, A.jsx)(`span`, {
-                                    className: `material-symbols-outlined text-blue-700`,
-                                    children: `arrow_back`
-                                })
-                            })
-                        }),
                         (0, A.jsx)(`h2`, {
                             className: `text-4xl font-extrabold tracking-tight text-on-surface mb-2`,
-                            children: t.deployContract
+                            children: e.deployContract
                         }),
                         (0, A.jsx)(`p`, {
                             className: `text-on-surface-variant text-lg leading-relaxed max-w-md`,
-                            children: t.deployContractSubtitle
+                            children: e.deployContractSubtitle
                         })
                     ]
                 }),
@@ -58971,15 +58960,15 @@ ${h(e)}
                             (0, A.jsxs)(`form`, {
                                 className: `space-y-8 relative z-10`,
                                 onSubmit: async (e)=>{
-                                    e.preventDefault(), r(!0), s(null);
+                                    e.preventDefault(), n(!0), o(null);
                                     try {
                                         if (!window.midnight) throw Error(`Midnight Extension not found. Please install Lace.`);
                                         let e = Object.values(window.midnight).find((e)=>!!e && typeof e == `object` && `apiVersion` in e);
                                         if (!e) throw Error(`Compatible Midnight wallet not found`);
-                                        let t = await Q9(await e.connect(He), He), n = crypto.getRandomValues(new Uint8Array(32)), i = await Z9.deploy(t, n);
-                                        console.log(`Successfully deployed contract at:`, i.deployedContractAddress), r(!1), a(!0), setTimeout(()=>a(!1), 5e3);
+                                        let t = await Q9(await e.connect(He), He), r = crypto.getRandomValues(new Uint8Array(32)), a = await Z9.deploy(t, r);
+                                        console.log(`Successfully deployed contract at:`, a.deployedContractAddress), n(!1), i(!0), setTimeout(()=>i(!1), 5e3);
                                     } catch (e) {
-                                        console.error(`Deployment failed:`, e), s(e instanceof Error ? e.message : String(e)), r(!1);
+                                        console.error(`Deployment failed:`, e), o(e instanceof Error ? e.message : String(e)), n(!1);
                                     }
                                 },
                                 children: [
@@ -58988,7 +58977,7 @@ ${h(e)}
                                         children: [
                                             (0, A.jsx)(`label`, {
                                                 className: `block text-sm font-semibold tracking-wide text-primary uppercase ml-1`,
-                                                children: t.contractName
+                                                children: e.contractName
                                             }),
                                             (0, A.jsxs)(`div`, {
                                                 className: `relative group`,
@@ -59002,7 +58991,7 @@ ${h(e)}
                                                     }),
                                                     (0, A.jsx)(`input`, {
                                                         className: `w-full pl-12 pr-4 py-4 bg-slate-50 border-none rounded-lg focus:ring-2 focus:ring-primary/20 focus:bg-white transition-all duration-300 placeholder:text-outline`,
-                                                        placeholder: t.contractNamePlaceholder,
+                                                        placeholder: e.contractNamePlaceholder,
                                                         type: `text`,
                                                         required: !0
                                                     })
@@ -59010,7 +58999,7 @@ ${h(e)}
                                             })
                                         ]
                                     }),
-                                    o && (0, A.jsxs)(`div`, {
+                                    a && (0, A.jsxs)(`div`, {
                                         className: `bg-red-50 text-red-700 p-4 rounded-lg border border-red-200 text-sm flex items-start gap-3 mt-6`,
                                         children: [
                                             (0, A.jsx)(`span`, {
@@ -59018,7 +59007,7 @@ ${h(e)}
                                                 children: `error`
                                             }),
                                             (0, A.jsx)(`span`, {
-                                                children: o
+                                                children: a
                                             })
                                         ]
                                     }),
@@ -59036,11 +59025,11 @@ ${h(e)}
                                                 children: [
                                                     (0, A.jsx)(`h4`, {
                                                         className: `font-bold text-primary text-sm`,
-                                                        children: t.contractParamsTitle
+                                                        children: e.contractParamsTitle
                                                     }),
                                                     (0, A.jsx)(`p`, {
                                                         className: `text-xs text-blue-800/70 leading-relaxed mt-1`,
-                                                        children: t.contractDesc
+                                                        children: e.contractDesc
                                                     })
                                                 ]
                                             })
@@ -59049,33 +59038,33 @@ ${h(e)}
                                     (0, A.jsx)(`div`, {
                                         className: `pt-6 relative pb-20`,
                                         children: (0, A.jsx)(`button`, {
-                                            className: `w-full py-4 bg-gradient-to-r from-primary to-blue-600 font-bold text-lg rounded-full shadow-lg shadow-primary/20 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2 ${n ? `opacity-80 cursor-wait` : ``}`,
+                                            className: `w-full py-4 bg-gradient-to-r from-primary to-blue-600 font-bold text-lg rounded-full shadow-lg shadow-primary/20 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2 ${t ? `opacity-80 cursor-wait` : ``}`,
                                             type: `submit`,
-                                            disabled: n || i,
-                                            children: n ? (0, A.jsxs)(A.Fragment, {
+                                            disabled: t || r,
+                                            children: t ? (0, A.jsxs)(A.Fragment, {
                                                 children: [
                                                     (0, A.jsx)(`span`, {
                                                         className: `animate-spin material-symbols-outlined`,
                                                         children: `sync`
                                                     }),
                                                     (0, A.jsx)(`span`, {
-                                                        children: t.deploying
+                                                        children: e.deploying
                                                     })
                                                 ]
-                                            }) : i ? (0, A.jsxs)(A.Fragment, {
+                                            }) : r ? (0, A.jsxs)(A.Fragment, {
                                                 children: [
                                                     (0, A.jsx)(`span`, {
                                                         className: `material-symbols-outlined`,
                                                         children: `check_circle`
                                                     }),
                                                     (0, A.jsx)(`span`, {
-                                                        children: t.deploySuccess
+                                                        children: e.deploySuccess
                                                     })
                                                 ]
                                             }) : (0, A.jsxs)(A.Fragment, {
                                                 children: [
                                                     (0, A.jsx)(`span`, {
-                                                        children: t.deployContractButton
+                                                        children: e.deployContractButton
                                                     }),
                                                     (0, A.jsx)(`span`, {
                                                         className: `material-symbols-outlined`,
@@ -59186,9 +59175,7 @@ ${h(e)}
                                 onBack: ()=>a(o)
                             });
                         case `deploy`:
-                            return (0, A.jsx)(zje, {
-                                onBack: ()=>a(o)
-                            });
+                            return (0, A.jsx)(zje, {});
                         case `calendar`:
                             return (0, A.jsx)(Je, {});
                         default:
