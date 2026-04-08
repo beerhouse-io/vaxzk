@@ -58668,12 +58668,12 @@ ${h(e)}
                 for (let t of e.admins)n.push(k5(t));
                 let r = [];
                 for (let t of e.clinics)r.push(k5(t));
-                let i = t ? _l.getShieldedId(t.secretKey) : null;
-                return {
+                let i = t ? _l.getShieldedId(t.secretKey) : null, a = i ? e.admins.member(i) : !1, o = i ? e.clinics.member(i) : !1;
+                return console.log(a), console.log(i), console.log(e.admins), {
                     admins: n,
                     clinics: r,
-                    isAdmin: i ? e.admins.member(i) : !1,
-                    isClinic: i ? e.clinics.member(i) : !1
+                    isAdmin: a,
+                    isClinic: o
                 };
             }).pipe(oAe({
                 bufferSize: 1,
