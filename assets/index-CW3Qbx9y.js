@@ -58669,7 +58669,9 @@ ${h(e)}
                 let r = [];
                 for (let t of e.clinics)r.push(k5(t));
                 let i = t ? _l.getShieldedId(t.secretKey) : null, a = i ? e.admins.member(i) : !1, o = i ? e.clinics.member(i) : !1;
-                return console.log(a), console.log(i), console.log(e.admins), {
+                console.log(a), console.log(`myId`), console.log(i), console.log(`member`);
+                for (let t of e.admins)console.log(t);
+                return {
                     admins: n,
                     clinics: r,
                     isAdmin: a,
