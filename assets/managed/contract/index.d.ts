@@ -1,5 +1,22 @@
 import type * as __compactRuntime from '@midnight-ntwrk/compact-runtime';
 
+export type CertIssuerInfo = { uri: string;
+                               name: string;
+                               key: string;
+                               verificationEndpoint: string
+                             };
+
+export type VaccineProofRequest = { vaccine: string;
+                                    personalId: string;
+                                    validUntil: bigint
+                                  };
+
+export type VaxZkProof = { issuerId: Uint8Array;
+                           vaccine: string;
+                           personalId: string;
+                           expirationDate: bigint
+                         };
+
 export enum ProfileState { ADMIN = 0, CLINIC = 1, USER = 2 }
 
 export type Witnesses<PS> = {
@@ -8,22 +25,40 @@ export type Witnesses<PS> = {
 
 export type ImpureCircuits<PS> = {
   getProfile(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, ProfileState>;
+  getCertIssuerId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
+  getProofReqId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeAdmin(context: __compactRuntime.CircuitContext<PS>,
               adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   addClinic(context: __compactRuntime.CircuitContext<PS>, clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeClinic(context: __compactRuntime.CircuitContext<PS>,
                clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
+  addCertificateIssuer(context: __compactRuntime.CircuitContext<PS>,
+                       issuerInfo_0: CertIssuerInfo): __compactRuntime.CircuitResults<PS, Uint8Array>;
+  requestVaccineProof(context: __compactRuntime.CircuitContext<PS>,
+                      req_0: VaccineProofRequest): __compactRuntime.CircuitResults<PS, Uint8Array>;
+  submitVaccineProof(context: __compactRuntime.CircuitContext<PS>,
+                     proofReqId_0: Uint8Array,
+                     proof_0: VaxZkProof): __compactRuntime.CircuitResults<PS, []>;
 }
 
 export type ProvableCircuits<PS> = {
   getProfile(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, ProfileState>;
+  getCertIssuerId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
+  getProofReqId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeAdmin(context: __compactRuntime.CircuitContext<PS>,
               adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   addClinic(context: __compactRuntime.CircuitContext<PS>, clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeClinic(context: __compactRuntime.CircuitContext<PS>,
                clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
+  addCertificateIssuer(context: __compactRuntime.CircuitContext<PS>,
+                       issuerInfo_0: CertIssuerInfo): __compactRuntime.CircuitResults<PS, Uint8Array>;
+  requestVaccineProof(context: __compactRuntime.CircuitContext<PS>,
+                      req_0: VaccineProofRequest): __compactRuntime.CircuitResults<PS, Uint8Array>;
+  submitVaccineProof(context: __compactRuntime.CircuitContext<PS>,
+                     proofReqId_0: Uint8Array,
+                     proof_0: VaxZkProof): __compactRuntime.CircuitResults<PS, []>;
 }
 
 export type PureCircuits = {
@@ -33,12 +68,21 @@ export type PureCircuits = {
 export type Circuits<PS> = {
   getProfile(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, ProfileState>;
   getShieldedId(context: __compactRuntime.CircuitContext<PS>, _sk_0: Uint8Array): __compactRuntime.CircuitResults<PS, Uint8Array>;
+  getCertIssuerId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
+  getProofReqId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeAdmin(context: __compactRuntime.CircuitContext<PS>,
               adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   addClinic(context: __compactRuntime.CircuitContext<PS>, clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeClinic(context: __compactRuntime.CircuitContext<PS>,
                clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
+  addCertificateIssuer(context: __compactRuntime.CircuitContext<PS>,
+                       issuerInfo_0: CertIssuerInfo): __compactRuntime.CircuitResults<PS, Uint8Array>;
+  requestVaccineProof(context: __compactRuntime.CircuitContext<PS>,
+                      req_0: VaccineProofRequest): __compactRuntime.CircuitResults<PS, Uint8Array>;
+  submitVaccineProof(context: __compactRuntime.CircuitContext<PS>,
+                     proofReqId_0: Uint8Array,
+                     proof_0: VaxZkProof): __compactRuntime.CircuitResults<PS, []>;
 }
 
 export type Ledger = {
@@ -53,6 +97,29 @@ export type Ledger = {
     size(): bigint;
     member(elem_0: Uint8Array): boolean;
     [Symbol.iterator](): Iterator<Uint8Array>
+  };
+  issuers: {
+    isEmpty(): boolean;
+    size(): bigint;
+    member(key_0: Uint8Array): boolean;
+    lookup(key_0: Uint8Array): CertIssuerInfo;
+    [Symbol.iterator](): Iterator<[Uint8Array, CertIssuerInfo]>
+  };
+  readonly issuerId: bigint;
+  readonly proofReqId: bigint;
+  vaccineProofReqs: {
+    isEmpty(): boolean;
+    size(): bigint;
+    member(key_0: Uint8Array): boolean;
+    lookup(key_0: Uint8Array): VaccineProofRequest;
+    [Symbol.iterator](): Iterator<[Uint8Array, VaccineProofRequest]>
+  };
+  vaccineProofs: {
+    isEmpty(): boolean;
+    size(): bigint;
+    member(key_0: Uint8Array): boolean;
+    lookup(key_0: Uint8Array): VaxZkProof;
+    [Symbol.iterator](): Iterator<[Uint8Array, VaxZkProof]>
   };
 }
 

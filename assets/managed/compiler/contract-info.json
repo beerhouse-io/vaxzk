@@ -38,6 +38,28 @@
       }
     },
     {
+      "name": "getCertIssuerId",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+      ],
+      "result-type": {
+        "type-name": "Bytes",
+        "length": 32
+      }
+    },
+    {
+      "name": "getProofReqId",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+      ],
+      "result-type": {
+        "type-name": "Bytes",
+        "length": 32
+      }
+    },
+    {
       "name": "addAdmin",
       "pure": false,
       "proof": true,
@@ -104,6 +126,151 @@
           "type": {
             "type-name": "Bytes",
             "length": 32
+          }
+        }
+      ],
+      "result-type": {
+        "type-name": "Tuple",
+        "types": [
+        ]
+      }
+    },
+    {
+      "name": "addCertificateIssuer",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+        {
+          "name": "issuerInfo",
+          "type": {
+            "type-name": "Struct",
+            "name": "CertIssuerInfo",
+            "elements": [
+              {
+                "name": "uri",
+                "type": {
+                  "type-name": "Opaque",
+                  "tsType": "string"
+                }
+              },
+              {
+                "name": "name",
+                "type": {
+                  "type-name": "Opaque",
+                  "tsType": "string"
+                }
+              },
+              {
+                "name": "key",
+                "type": {
+                  "type-name": "Opaque",
+                  "tsType": "string"
+                }
+              },
+              {
+                "name": "verificationEndpoint",
+                "type": {
+                  "type-name": "Opaque",
+                  "tsType": "string"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "result-type": {
+        "type-name": "Bytes",
+        "length": 32
+      }
+    },
+    {
+      "name": "requestVaccineProof",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+        {
+          "name": "req",
+          "type": {
+            "type-name": "Struct",
+            "name": "VaccineProofRequest",
+            "elements": [
+              {
+                "name": "vaccine",
+                "type": {
+                  "type-name": "Opaque",
+                  "tsType": "string"
+                }
+              },
+              {
+                "name": "personalId",
+                "type": {
+                  "type-name": "Opaque",
+                  "tsType": "string"
+                }
+              },
+              {
+                "name": "validUntil",
+                "type": {
+                  "type-name": "Uint",
+                  "maxval": 340282366920938463463374607431768211455
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "result-type": {
+        "type-name": "Bytes",
+        "length": 32
+      }
+    },
+    {
+      "name": "submitVaccineProof",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+        {
+          "name": "proofReqId",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        },
+        {
+          "name": "proof",
+          "type": {
+            "type-name": "Struct",
+            "name": "VaxZkProof",
+            "elements": [
+              {
+                "name": "issuerId",
+                "type": {
+                  "type-name": "Bytes",
+                  "length": 32
+                }
+              },
+              {
+                "name": "vaccine",
+                "type": {
+                  "type-name": "Opaque",
+                  "tsType": "string"
+                }
+              },
+              {
+                "name": "personalId",
+                "type": {
+                  "type-name": "Opaque",
+                  "tsType": "string"
+                }
+              },
+              {
+                "name": "expirationDate",
+                "type": {
+                  "type-name": "Uint",
+                  "maxval": 340282366920938463463374607431768211455
+                }
+              }
+            ]
           }
         }
       ],
