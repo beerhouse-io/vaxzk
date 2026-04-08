@@ -9800,7 +9800,9 @@ perfect harmony.`,
             adminKey: `Initial Admin (Optional)`,
             adminKeyPlaceholder: `Leave empty to use current wallet`,
             contractParamsTitle: `Contract Parameters`,
-            contractDesc: `The constructor will automatically set your wallet as the initial admin. Further clinics can be added later.`
+            contractDesc: `The constructor will automatically set your wallet as the initial admin. Further clinics can be added later.`,
+            deployContract: `Deploy Contract`,
+            deployContractSubtitle: `Deploy a new VaxZk smart contract to the Midnight network.`
         },
         pt: {
             tagline: `Seu passaporte de imunização, sempre com você.`,
@@ -9927,7 +9929,9 @@ perfeita harmonia.`,
             adminKey: `Admin Inicial (Opcional)`,
             adminKeyPlaceholder: `Deixe vazio para usar a carteira atual`,
             contractParamsTitle: `Parâmetros do Contrato`,
-            contractDesc: `O construtor definirá automaticamente sua carteira como admin inicial. Outras clínicas poderão ser adicionadas depois.`
+            contractDesc: `O construtor definirá automaticamente sua carteira como admin inicial. Outras clínicas poderão ser adicionadas depois.`,
+            deployContract: `Publicar Contrato`,
+            deployContractSubtitle: `Faça o deploy de um novo contrato VaxZk na rede do Midnight.`
         },
         es: {
             tagline: `Tu pasaporte de inmunización, siempre contigo.`,
@@ -10054,7 +10058,9 @@ perfecta armonía.`,
             adminKey: `Admin Inicial (Opcional)`,
             adminKeyPlaceholder: `Dejar vacío para usar la billetera actual`,
             contractParamsTitle: `Parámetros del Contrato`,
-            contractDesc: `El constructor establecerá automáticamente su billetera como administrador inicial. Se pueden agregar más clínicas posteriormente.`
+            contractDesc: `El constructor establecerá automáticamente su billetera como administrador inicial. Se pueden agregar más clínicas posteriormente.`,
+            deployContract: `Publicar Contrato`,
+            deployContractSubtitle: `Despliegue un nuevo contrato inteligente VaxZk en la red de Midnight.`
         }
     }, ze = (0, Ie.createContext)({
         language: `en`,
@@ -58946,11 +58952,11 @@ ${h(e)}
                         }),
                         (0, A.jsx)(`h2`, {
                             className: `text-4xl font-extrabold tracking-tight text-on-surface mb-2`,
-                            children: t.publishContract
+                            children: t.deployContract
                         }),
                         (0, A.jsx)(`p`, {
                             className: `text-on-surface-variant text-lg leading-relaxed max-w-md`,
-                            children: t.publishContractSubtitle
+                            children: t.deployContractSubtitle
                         })
                     ]
                 }),
