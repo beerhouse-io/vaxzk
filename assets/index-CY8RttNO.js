@@ -9803,7 +9803,8 @@ perfect harmony.`,
             contractDesc: `The constructor will automatically set your wallet as the initial admin. Further clinics can be added later.`,
             deployContract: `Deploy Contract`,
             deployContractSubtitle: `Deploy a new VaxZk smart contract to the Midnight network.`,
-            vaccinesAdminTitle: `Manage Vaccines`,
+            vaccinesAdminTitle: `Manage`,
+            vaccinesAdminTitleEnd: `Vaccines`,
             vaccinesAdminSubtitle: `List and add new vaccines to the system.`,
             vaccinesList: `Registered Vaccines`,
             add: `Add`,
@@ -9937,7 +9938,8 @@ perfeita harmonia.`,
             contractDesc: `O construtor definirá automaticamente sua carteira como admin inicial. Outras clínicas poderão ser adicionadas depois.`,
             deployContract: `Publicar Contrato`,
             deployContractSubtitle: `Faça o deploy de um novo contrato VaxZk na rede do Midnight.`,
-            vaccinesAdminTitle: `Gerenciar Vacinas`,
+            vaccinesAdminTitle: `Gerenciar`,
+            vaccinesAdminTitleEnd: `Vacinas`,
             vaccinesAdminSubtitle: `Liste e adicione novas vacinas ao sistema.`,
             vaccinesList: `Vacinas Cadastradas`,
             add: `Adicionar`,
@@ -10071,7 +10073,8 @@ perfecta armonía.`,
             contractDesc: `El constructor establecerá automáticamente su billetera como administrador inicial. Se pueden agregar más clínicas posteriormente.`,
             deployContract: `Publicar Contrato`,
             deployContractSubtitle: `Despliegue un nuevo contrato inteligente VaxZk en la red de Midnight.`,
-            vaccinesAdminTitle: `Administrar Vacunas`,
+            vaccinesAdminTitle: `Administrar`,
+            vaccinesAdminTitleEnd: `Vacunas`,
             vaccinesAdminSubtitle: `Listar y agregar nuevas vacunas al sistema.`,
             vaccinesList: `Vacunas Registradas`,
             add: `Agregar`,
@@ -61207,12 +61210,20 @@ ${h(e)}
                 (0, k.jsxs)(`section`, {
                     className: `mb-12 text-left`,
                     children: [
-                        (0, k.jsx)(`h2`, {
-                            className: `text-4xl font-extrabold tracking-tighter text-on-surface mb-2 font-headline`,
-                            children: t.vaccinesAdminTitle
+                        (0, k.jsxs)(`h2`, {
+                            className: `text-4xl md:text-5xl font-extrabold text-on-surface tracking-tighter mb-4 max-w-2xl`,
+                            children: [
+                                (0, k.jsx)(`span`, {
+                                    className: `text-primary`,
+                                    children: t.vaccinesAdminTitle
+                                }),
+                                ` `,
+                                t.vaccinesAdminTitleEnd,
+                                ` `
+                            ]
                         }),
                         (0, k.jsx)(`p`, {
-                            className: `text-on-surface-variant text-lg max-w-xl`,
+                            className: `text-on-surface-variant text-lg max-w-xl leading-relaxed`,
                             children: t.vaccinesAdminSubtitle
                         })
                     ]
