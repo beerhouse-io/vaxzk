@@ -60731,7 +60731,7 @@ ${h(e)}
             this.deployedContract = e, this.deployedContractAddress = e.deployTxData.public.contractAddress, this.state$ = cAe([
                 t.publicDataProvider.contractStateObservable(this.deployedContractAddress, {
                     type: `latest`
-                }).pipe(R7((e)=>Cl(e.data)), vAe((e)=>console.log(`ledger state changed: admins ${e.admins.size()}, clinics: ${e.clinics.size()}`))),
+                }).pipe(R7((e)=>Cl(e.data)), vAe((e)=>console.log(`ledger state changed: admins ${e.admins.size()}, clinics: ${e.clinics.size()}, vaccines: ${e.vaccines.size()}`))),
                 I7(t.privateStateProvider.get(J9))
             ], (e, t)=>{
                 let n = [];
@@ -60809,6 +60809,19 @@ ${h(e)}
                     circuit: `revokeClinic`,
                     txHash: t.public.txHash,
                     blockHeight: t.public.blockHeight
+                }
+            });
+        }
+        async addVaccine(e) {
+            console.log(`adding Vaccine ${e}`);
+            let t = new TextEncoder().encode(e), n = new Uint8Array(20);
+            n.set(t.slice(0, 20));
+            let r = await this.deployedContract.callTx.addVaccine(n);
+            console.log({
+                transactionAdded: {
+                    circuit: `addVaccine`,
+                    txHash: r.public.txHash,
+                    blockHeight: r.public.blockHeight
                 }
             });
         }
