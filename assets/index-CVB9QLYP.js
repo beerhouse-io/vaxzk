@@ -10782,24 +10782,15 @@ perfecta armonía.`,
                                                 })
                                             ]
                                         }),
-                                        (0, A.jsxs)(`div`, {
+                                        (0, A.jsx)(`div`, {
                                             className: `flex items-center gap-3`,
-                                            children: [
-                                                (0, A.jsx)(`span`, {
-                                                    className: `material-symbols-outlined text-primary`,
-                                                    style: {
-                                                        fontVariationSettings: `'FILL' 1`
-                                                    },
-                                                    children: `check_circle`
-                                                }),
-                                                (0, A.jsx)(`button`, {
-                                                    className: `w-10 h-10 rounded-full hover:bg-white/50 flex items-center justify-center transition-colors text-slate-400`,
-                                                    children: (0, A.jsx)(`span`, {
-                                                        className: `material-symbols-outlined`,
-                                                        children: `more_vert`
-                                                    })
-                                                })
-                                            ]
+                                            children: (0, A.jsx)(`span`, {
+                                                className: `material-symbols-outlined text-primary`,
+                                                style: {
+                                                    fontVariationSettings: `'FILL' 1`
+                                                },
+                                                children: `check_circle`
+                                            })
                                         })
                                     ]
                                 }),
@@ -10833,24 +10824,15 @@ perfecta armonía.`,
                                                 })
                                             ]
                                         }),
-                                        (0, A.jsxs)(`div`, {
+                                        (0, A.jsx)(`div`, {
                                             className: `flex items-center gap-3`,
-                                            children: [
-                                                (0, A.jsx)(`span`, {
-                                                    className: `material-symbols-outlined text-primary`,
-                                                    style: {
-                                                        fontVariationSettings: `'FILL' 1`
-                                                    },
-                                                    children: `check_circle`
-                                                }),
-                                                (0, A.jsx)(`button`, {
-                                                    className: `w-10 h-10 rounded-full hover:bg-white/50 flex items-center justify-center transition-colors text-slate-400`,
-                                                    children: (0, A.jsx)(`span`, {
-                                                        className: `material-symbols-outlined`,
-                                                        children: `more_vert`
-                                                    })
-                                                })
-                                            ]
+                                            children: (0, A.jsx)(`span`, {
+                                                className: `material-symbols-outlined text-primary`,
+                                                style: {
+                                                    fontVariationSettings: `'FILL' 1`
+                                                },
+                                                children: `check_circle`
+                                            })
                                         })
                                     ]
                                 }),
