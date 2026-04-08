@@ -14856,7 +14856,7 @@ perfecta armonía.`,
         }
         _isAdmin_0(e, t) {
             let n = this._localSk_0(e, t), r = this._getShieldedId_0(n);
-            return et(ul.fromValue(sl(e, t, [
+            return et(!ul.fromValue(sl(e, t, [
                 {
                     dup: {
                         n: 0
@@ -14896,7 +14896,7 @@ perfecta armonía.`,
             ]).value), `You are not an admin`), !0;
         }
         _addAdmin_0(e, t, n) {
-            return this._isAdmin_0(e, t), et(!ul.fromValue(sl(e, t, [
+            return this._isAdmin_0(e, t), et(ul.fromValue(sl(e, t, [
                 {
                     dup: {
                         n: 0
