@@ -14745,7 +14745,7 @@ perfecta armonía.`,
                 addAdmin: (...e)=>{
                     if (e.length !== 2) throw new $e(`addAdmin: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || tt(`addAdmin`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 88 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || tt(`addAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 88 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || tt(`addAdmin`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 89 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || tt(`addAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 89 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: cl()
@@ -14771,7 +14771,7 @@ perfecta armonía.`,
                 revokeAdmin: (...e)=>{
                     if (e.length !== 2) throw new $e(`revokeAdmin: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || tt(`revokeAdmin`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 95 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || tt(`revokeAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 95 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || tt(`revokeAdmin`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 96 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || tt(`revokeAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 96 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: cl()
@@ -14797,7 +14797,7 @@ perfecta armonía.`,
                 addClinic: (...e)=>{
                     if (e.length !== 2) throw new $e(`addClinic: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || tt(`addClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 102 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || tt(`addClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 102 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || tt(`addClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 103 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || tt(`addClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 103 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: cl()
@@ -14823,7 +14823,7 @@ perfecta armonía.`,
                 revokeClinic: (...e)=>{
                     if (e.length !== 2) throw new $e(`revokeClinic: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || tt(`revokeClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 109 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || tt(`revokeClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 109 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || tt(`revokeClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 110 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || tt(`revokeClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 110 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: cl()
@@ -14849,7 +14849,7 @@ perfecta armonía.`,
                 addCertificateIssuer: (...e)=>{
                     if (e.length !== 2) throw new $e(`addCertificateIssuer: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || tt(`addCertificateIssuer`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 116 char 1`, `CircuitContext`, t), typeof n != `object` && tt(`addCertificateIssuer`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 116 char 1`, `struct CertIssuerInfo<uri: Opaque<"string">, name: Opaque<"string">, key: Opaque<"string">, verificationEndpoint: Opaque<"string">>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || tt(`addCertificateIssuer`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 117 char 1`, `CircuitContext`, t), typeof n != `object` && tt(`addCertificateIssuer`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 117 char 1`, `struct CertIssuerInfo<uri: Opaque<"string">, name: Opaque<"string">, key: Opaque<"string">, verificationEndpoint: Opaque<"string">>`, n);
                     let r = {
                         ...t,
                         gasCost: cl()
@@ -14875,7 +14875,7 @@ perfecta armonía.`,
                 addVaccine: (...e)=>{
                     if (e.length !== 2) throw new $e(`addVaccine: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || tt(`addVaccine`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 125 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 20 || tt(`addVaccine`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 125 char 1`, `Bytes<20>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || tt(`addVaccine`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 126 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 20 || tt(`addVaccine`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 126 char 1`, `Bytes<20>`, n);
                     let r = {
                         ...t,
                         gasCost: cl()
@@ -14901,7 +14901,7 @@ perfecta armonía.`,
                 delVaccine: (...e)=>{
                     if (e.length !== 2) throw new $e(`delVaccine: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || tt(`delVaccine`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 131 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 20 || tt(`delVaccine`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 131 char 1`, `Bytes<20>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || tt(`delVaccine`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 132 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 20 || tt(`delVaccine`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 132 char 1`, `Bytes<20>`, n);
                     let r = {
                         ...t,
                         gasCost: cl()
@@ -14927,7 +14927,7 @@ perfecta armonía.`,
                 requestVaccineProof: (...e)=>{
                     if (e.length !== 2) throw new $e(`requestVaccineProof: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || tt(`requestVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 138 char 1`, `CircuitContext`, t), typeof n == `object` && typeof n.validUntil == `bigint` && n.validUntil >= 0n && n.validUntil <= 340282366920938463463374607431768211455n || tt(`requestVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 138 char 1`, `struct VaccineProofRequest<vaccine: Opaque<"string">, personalId: Opaque<"string">, validUntil: Uint<0..340282366920938463463374607431768211456>>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || tt(`requestVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 139 char 1`, `CircuitContext`, t), typeof n == `object` && typeof n.validUntil == `bigint` && n.validUntil >= 0n && n.validUntil <= 340282366920938463463374607431768211455n || tt(`requestVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 139 char 1`, `struct VaccineProofRequest<vaccine: Opaque<"string">, personalId: Opaque<"string">, validUntil: Uint<0..340282366920938463463374607431768211456>>`, n);
                     let r = {
                         ...t,
                         gasCost: cl()
@@ -14953,7 +14953,7 @@ perfecta armonía.`,
                 submitVaccineProof: (...e)=>{
                     if (e.length !== 3) throw new $e(`submitVaccineProof: expected 3 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1], r = e[2];
-                    typeof t == `object` && t.currentQueryContext != null || tt(`submitVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 149 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || tt(`submitVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 149 char 1`, `Bytes<32>`, n), typeof r == `object` && r.issuerId.buffer instanceof ArrayBuffer && r.issuerId.BYTES_PER_ELEMENT === 1 && r.issuerId.length === 32 && typeof r.expirationDate == `bigint` && r.expirationDate >= 0n && r.expirationDate <= 340282366920938463463374607431768211455n || tt(`submitVaccineProof`, `argument 2 (argument 3 as invoked from Typescript)`, `vaxzk.compact line 149 char 1`, `struct VaxZkProof<issuerId: Bytes<32>, vaccine: Opaque<"string">, personalId: Opaque<"string">, expirationDate: Uint<0..340282366920938463463374607431768211456>>`, r);
+                    typeof t == `object` && t.currentQueryContext != null || tt(`submitVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 150 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || tt(`submitVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 150 char 1`, `Bytes<32>`, n), typeof r == `object` && r.issuerId.buffer instanceof ArrayBuffer && r.issuerId.BYTES_PER_ELEMENT === 1 && r.issuerId.length === 32 && typeof r.expirationDate == `bigint` && r.expirationDate >= 0n && r.expirationDate <= 340282366920938463463374607431768211455n || tt(`submitVaccineProof`, `argument 2 (argument 3 as invoked from Typescript)`, `vaxzk.compact line 150 char 1`, `struct VaxZkProof<issuerId: Bytes<32>, vaccine: Opaque<"string">, personalId: Opaque<"string">, expirationDate: Uint<0..340282366920938463463374607431768211456>>`, r);
                     let i = {
                         ...t,
                         gasCost: cl()
@@ -15759,8 +15759,8 @@ perfecta armonía.`,
             ]), n;
         }
         _isAdmin_0(e, t) {
-            let n = this._ownPublicKey_0(e, t), r;
-            return et((r = n.bytes, ml.fromValue(ll(e, t, [
+            let n = this._ownPublicKey_0(e, t), r = this._getShieldedId_0(n.bytes);
+            return et(ml.fromValue(ll(e, t, [
                 {
                     dup: {
                         n: 0
@@ -15797,7 +15797,7 @@ perfecta armonía.`,
                         result: void 0
                     }
                 }
-            ]).value)), `You are not an admin`), !0;
+            ]).value), `You are not an admin`), !0;
         }
         _isClinic_0(e, t) {
             let n = this._localSk_0(e, t), r = this._getShieldedId_0(n);
@@ -60825,7 +60825,8 @@ ${h(e)}
                 return {
                     clinics: n,
                     vaccines: r,
-                    isClinic: i ? e.clinics.member(i) : !1
+                    isClinic: i ? e.clinics.member(i) : !1,
+                    isAdmin: i ? e.admins.member(i) : !1
                 };
             }).pipe(vAe({
                 bufferSize: 1,
