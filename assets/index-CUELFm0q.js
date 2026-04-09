@@ -61523,7 +61523,7 @@ ${h(e)}
                                             "data-name": e,
                                             onClick: p,
                                             children: (0, O.jsx)(`span`, {
-                                                className: `material-symbols-outlined animate-spin`,
+                                                className: `material-symbols-outlined`,
                                                 children: `delete`
                                             })
                                         })
