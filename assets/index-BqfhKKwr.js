@@ -61357,7 +61357,7 @@ ${h(e)}
                                     try {
                                         await u.addVaccine(i.trim()), a(``);
                                     } catch (e) {
-                                        console.error(`Failed to add vaccine:`, e), l(`Erro ao adicionar vacina`);
+                                        console.log(e), console.error(`Failed to add vaccine:`, e), e instanceof Error ? l(`Erro ao adicionar vacina: ` + e.message) : l(`Erro ao adicionar vacina: ` + String(e));
                                     } finally{
                                         s(!1);
                                     }
