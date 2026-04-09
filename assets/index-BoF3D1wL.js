@@ -61522,16 +61522,9 @@ ${h(e)}
                                             href: `#`,
                                             "data-name": e,
                                             onClick: p,
-                                            children: o ? (0, O.jsx)(O.Fragment, {
-                                                children: (0, O.jsx)(`span`, {
-                                                    className: `material-symbols-outlined animate-spin`,
-                                                    children: `trash`
-                                                })
-                                            }) : (0, O.jsx)(O.Fragment, {
-                                                children: (0, O.jsx)(`span`, {
-                                                    className: `material-symbols-outlined`,
-                                                    children: `trash`
-                                                })
+                                            children: (0, O.jsx)(`span`, {
+                                                className: `material-symbols-outlined animate-spin`,
+                                                children: `delete`
                                             })
                                         })
                                     ]
