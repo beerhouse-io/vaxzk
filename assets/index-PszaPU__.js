@@ -60997,164 +60997,160 @@ ${h(e)}
             }
         };
     }
-    var Zje = ({ onBack: e })=>{
-        let { t } = Ue(), [n, r] = (0, Re.useState)(!1), [i, a] = (0, Re.useState)(!1), [o, s] = (0, Re.useState)(null);
-        return (0, O.jsxs)(`main`, {
-            className: `pt-24 px-6 max-w-screen-md mx-auto`,
+    var Zje = ({ connectedApi: e })=>{
+        let { t } = Ue(), [n, r] = (0, Re.useState)([]), [i, a] = (0, Re.useState)(``), [o, s] = (0, Re.useState)(!1), [c, l] = (0, Re.useState)(null), [u, d] = (0, Re.useState)(null);
+        return (0, Re.useEffect)(()=>{
+            let t;
+            async function n() {
+                if (e) try {
+                    let n = await Q9(e, Ge), i = new Uint8Array(32), a = await Z9.join(n, We, i);
+                    d(a), t = a.state$.subscribe((e)=>{
+                        r(e.vaccines);
+                    });
+                } catch (e) {
+                    console.error(`Failed to join contract:`, e), l(`Erro ao conectar ao contrato`);
+                }
+            }
+            return n(), ()=>{
+                t && t.unsubscribe();
+            };
+        }, [
+            e
+        ]), (0, O.jsxs)(`main`, {
+            className: `pt-24 pb-32 px-6 max-w-screen-xl mx-auto`,
             children: [
                 (0, O.jsxs)(`section`, {
                     className: `mb-12 text-left`,
                     children: [
-                        (0, O.jsx)(`div`, {
-                            className: `flex items-center gap-3 mb-6`,
-                            children: (0, O.jsx)(`button`, {
-                                onClick: e,
-                                className: `flex items-center justify-center w-10 h-10 rounded-full hover:bg-blue-50/50 transition-colors active:scale-95 duration-200`,
-                                children: (0, O.jsx)(`span`, {
-                                    className: `material-symbols-outlined text-blue-700`,
-                                    children: `arrow_back`
-                                })
-                            })
-                        }),
-                        (0, O.jsx)(`h2`, {
-                            className: `text-4xl font-extrabold tracking-tight text-on-surface mb-2`,
-                            children: t.publishContract
+                        (0, O.jsxs)(`h2`, {
+                            className: `text-4xl md:text-5xl font-extrabold text-on-surface tracking-tighter mb-4 max-w-2xl`,
+                            children: [
+                                (0, O.jsx)(`span`, {
+                                    className: `text-primary`,
+                                    children: t.manage
+                                }),
+                                ` `,
+                                t.vaccinesAdminTitleEnd,
+                                ` `
+                            ]
                         }),
                         (0, O.jsx)(`p`, {
-                            className: `text-on-surface-variant text-lg leading-relaxed max-w-md`,
-                            children: t.publishContractSubtitle
+                            className: `text-on-surface-variant text-lg leading-relaxed`,
+                            children: t.vaccinesAdminSubtitle
                         })
                     ]
                 }),
-                (0, O.jsx)(`div`, {
-                    className: `space-y-16 text-left`,
-                    children: (0, O.jsxs)(`div`, {
-                        className: `bg-white p-8 rounded-xl shadow-sm border border-slate-100 relative overflow-hidden`,
-                        children: [
-                            (0, O.jsx)(`div`, {
-                                className: `absolute -top-24 -right-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl`
-                            }),
-                            (0, O.jsxs)(`form`, {
-                                className: `space-y-8 relative z-10`,
-                                onSubmit: async (e)=>{
-                                    e.preventDefault(), r(!0), s(null);
+                (0, O.jsxs)(`div`, {
+                    className: `bg-white p-8 rounded-xl shadow-sm border border-slate-100 mb-12 text-left`,
+                    children: [
+                        (0, O.jsxs)(`form`, {
+                            onSubmit: async (e)=>{
+                                if (e.preventDefault(), !(!u || !i.trim())) {
+                                    s(!0), l(null);
                                     try {
-                                        if (!window.midnight) throw Error(`Midnight Extension not found. Please install Lace.`);
-                                        let e = Object.values(window.midnight).find((e)=>!!e && typeof e == `object` && `apiVersion` in e);
-                                        if (!e) throw Error(`Compatible Midnight wallet not found`);
-                                        let t = await Q9(await e.connect(Ge), Ge), n = crypto.getRandomValues(new Uint8Array(32)), i = await Z9.deploy(t, n);
-                                        console.log(`Successfully deployed contract at:`, i.deployedContractAddress), r(!1), a(!0), setTimeout(()=>a(!1), 5e3);
+                                        await u.addVaccine(i.trim()), a(``);
                                     } catch (e) {
-                                        console.error(`Deployment failed:`, e), s(e instanceof Error ? e.message : String(e)), r(!1);
+                                        console.error(`Failed to add vaccine:`, e), l(`Erro ao adicionar vacina`);
+                                    } finally{
+                                        s(!1);
                                     }
-                                },
-                                children: [
-                                    (0, O.jsxs)(`div`, {
-                                        className: `space-y-3`,
-                                        children: [
-                                            (0, O.jsx)(`label`, {
-                                                className: `block text-sm font-semibold tracking-wide text-primary uppercase ml-1`,
-                                                children: t.contractName
-                                            }),
-                                            (0, O.jsxs)(`div`, {
-                                                className: `relative group`,
-                                                children: [
-                                                    (0, O.jsx)(`div`, {
-                                                        className: `absolute inset-y-0 left-4 flex items-center pointer-events-none`,
-                                                        children: (0, O.jsx)(`span`, {
-                                                            className: `material-symbols-outlined text-outline`,
-                                                            children: `description`
-                                                        })
-                                                    }),
-                                                    (0, O.jsx)(`input`, {
-                                                        className: `w-full pl-12 pr-4 py-4 bg-slate-50 border-none rounded-lg focus:ring-2 focus:ring-primary/20 focus:bg-white transition-all duration-300 placeholder:text-outline`,
-                                                        placeholder: t.contractNamePlaceholder,
-                                                        type: `text`,
-                                                        required: !0
-                                                    })
-                                                ]
-                                            })
-                                        ]
-                                    }),
-                                    o && (0, O.jsxs)(`div`, {
-                                        className: `bg-red-50 text-red-700 p-4 rounded-lg border border-red-200 text-sm flex items-start gap-3 mt-6`,
-                                        children: [
-                                            (0, O.jsx)(`span`, {
-                                                className: `material-symbols-outlined text-red-500`,
-                                                children: `error`
-                                            }),
-                                            (0, O.jsx)(`span`, {
-                                                children: o
-                                            })
-                                        ]
-                                    }),
-                                    (0, O.jsxs)(`div`, {
-                                        className: `bg-blue-50 p-5 rounded-lg border-none flex items-start gap-4 mt-6`,
-                                        children: [
-                                            (0, O.jsx)(`div`, {
-                                                className: `w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center shrink-0`,
-                                                children: (0, O.jsx)(`span`, {
-                                                    className: `material-symbols-outlined text-primary`,
-                                                    children: `gavel`
+                                }
+                            },
+                            className: `flex flex-col sm:flex-row gap-4`,
+                            children: [
+                                (0, O.jsxs)(`div`, {
+                                    className: `flex-1 space-y-3`,
+                                    children: [
+                                        (0, O.jsx)(`label`, {
+                                            className: `block text-sm font-semibold tracking-wide text-primary uppercase ml-1`,
+                                            children: t.vaccineName
+                                        }),
+                                        (0, O.jsx)(`input`, {
+                                            className: `w-full px-4 py-4 bg-slate-50 border-none rounded-lg focus:ring-2 focus:ring-primary/20 focus:bg-white transition-all duration-300`,
+                                            placeholder: t.vaccinePlaceholder,
+                                            value: i,
+                                            onChange: (e)=>a(e.target.value),
+                                            disabled: o,
+                                            type: `text`
+                                        })
+                                    ]
+                                }),
+                                (0, O.jsx)(`div`, {
+                                    className: `flex items-end`,
+                                    children: (0, O.jsx)(`button`, {
+                                        className: `w-full sm:w-auto px-8 py-4 bg-primary font-bold rounded-lg shadow-lg active:scale-95 transition-all duration-200 disabled:opacity-50 flex items-center justify-center gap-2`,
+                                        type: `submit`,
+                                        disabled: o || !i.trim(),
+                                        children: o ? (0, O.jsxs)(O.Fragment, {
+                                            children: [
+                                                (0, O.jsx)(`span`, {
+                                                    className: `material-symbols-outlined animate-spin`,
+                                                    children: `sync`
+                                                }),
+                                                (0, O.jsx)(`span`, {
+                                                    children: t.loading
                                                 })
-                                            }),
-                                            (0, O.jsxs)(`div`, {
-                                                children: [
-                                                    (0, O.jsx)(`h4`, {
-                                                        className: `font-bold text-primary text-sm`,
-                                                        children: t.contractParamsTitle
-                                                    }),
-                                                    (0, O.jsx)(`p`, {
-                                                        className: `text-xs text-blue-800/70 leading-relaxed mt-1`,
-                                                        children: t.contractDesc
-                                                    })
-                                                ]
-                                            })
-                                        ]
-                                    }),
-                                    (0, O.jsx)(`div`, {
-                                        className: `pt-6 relative pb-20`,
-                                        children: (0, O.jsx)(`button`, {
-                                            className: `w-full py-4 bg-gradient-to-r from-primary to-blue-600 font-bold text-lg rounded-full shadow-lg shadow-primary/20 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2 ${n ? `opacity-80 cursor-wait` : ``}`,
-                                            type: `submit`,
-                                            disabled: n || i,
-                                            children: n ? (0, O.jsxs)(O.Fragment, {
-                                                children: [
-                                                    (0, O.jsx)(`span`, {
-                                                        className: `animate-spin material-symbols-outlined`,
-                                                        children: `sync`
-                                                    }),
-                                                    (0, O.jsx)(`span`, {
-                                                        children: t.deploying
-                                                    })
-                                                ]
-                                            }) : i ? (0, O.jsxs)(O.Fragment, {
-                                                children: [
-                                                    (0, O.jsx)(`span`, {
-                                                        className: `material-symbols-outlined`,
-                                                        children: `check_circle`
-                                                    }),
-                                                    (0, O.jsx)(`span`, {
-                                                        children: t.deploySuccess
-                                                    })
-                                                ]
-                                            }) : (0, O.jsxs)(O.Fragment, {
-                                                children: [
-                                                    (0, O.jsx)(`span`, {
-                                                        children: t.deployContractButton
-                                                    }),
-                                                    (0, O.jsx)(`span`, {
-                                                        className: `material-symbols-outlined`,
-                                                        children: `cloud_upload`
-                                                    })
-                                                ]
-                                            })
+                                            ]
+                                        }) : (0, O.jsxs)(O.Fragment, {
+                                            children: [
+                                                (0, O.jsx)(`span`, {
+                                                    className: `material-symbols-outlined`,
+                                                    children: `add`
+                                                }),
+                                                (0, O.jsx)(`span`, {
+                                                    children: t.add
+                                                })
+                                            ]
                                         })
                                     })
-                                ]
-                            })
-                        ]
-                    })
+                                })
+                            ]
+                        }),
+                        c && (0, O.jsx)(`p`, {
+                            className: `text-error text-sm mt-3 px-1`,
+                            children: c
+                        })
+                    ]
+                }),
+                (0, O.jsxs)(`div`, {
+                    className: `space-y-4 text-left`,
+                    children: [
+                        (0, O.jsx)(`h3`, {
+                            className: `text-2xl font-bold mb-6`,
+                            children: t.vaccinesList
+                        }),
+                        n.length === 0 ? (0, O.jsxs)(`div`, {
+                            className: `bg-surface-container-low p-12 rounded-xl border border-dashed border-slate-200 text-center`,
+                            children: [
+                                (0, O.jsx)(`span`, {
+                                    className: `material-symbols-outlined text-slate-300 text-6xl mb-4`,
+                                    children: `vaccines`
+                                }),
+                                (0, O.jsx)(`p`, {
+                                    className: `text-on-surface-variant italic`,
+                                    children: `Nenhuma vacina cadastrada no contrato.`
+                                })
+                            ]
+                        }) : (0, O.jsx)(`div`, {
+                            className: `grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6`,
+                            children: n.map((e, t)=>(0, O.jsxs)(`div`, {
+                                    className: `bg-surface-container-low p-6 rounded-xl border border-slate-50 flex items-center gap-4 hover:bg-surface-container-high transition-colors`,
+                                    children: [
+                                        (0, O.jsx)(`div`, {
+                                            className: `w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center text-primary`,
+                                            children: (0, O.jsx)(`span`, {
+                                                className: `material-symbols-outlined`,
+                                                children: `vaccines`
+                                            })
+                                        }),
+                                        (0, O.jsx)(`span`, {
+                                            className: `font-bold text-lg text-on-surface`,
+                                            children: e
+                                        })
+                                    ]
+                                }, t))
+                        })
+                    ]
                 })
             ]
         });
@@ -61639,7 +61635,7 @@ ${h(e)}
             n
         ]);
         let u = (e)=>{
-            e !== `add` && e !== `publish` && s(i), a(e);
+            e !== `add` && e !== `access` && s(i), a(e);
         };
         return (0, O.jsxs)(`div`, {
             className: `bg-background text-on-background min-h-screen`,
@@ -61717,9 +61713,9 @@ ${h(e)}
                             return (0, O.jsx)(Xe, {
                                 onBack: ()=>a(o)
                             });
-                        case `publish`:
+                        case `access`:
                             return (0, O.jsx)(Zje, {
-                                onBack: ()=>a(o)
+                                connectedApi: n
                             });
                         case `listvaccine`:
                             return (0, O.jsx)($je, {
@@ -61795,25 +61791,25 @@ ${h(e)}
                             ]
                         }),
                         (0, O.jsxs)(`button`, {
-                            onClick: ()=>u(`publish`),
-                            className: `flex flex-col items-center justify-center px-3 py-2 active:scale-90 duration-150 transition-all ${i === `publish` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
+                            onClick: ()=>u(`access`),
+                            className: `flex flex-col items-center justify-center px-3 py-2 active:scale-90 duration-150 transition-all ${i === `access` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, O.jsx)(`span`, {
                                     className: `material-symbols-outlined`,
                                     style: {
-                                        fontVariationSettings: i === `publish` ? `'FILL' 1` : void 0
+                                        fontVariationSettings: i === `access` ? `'FILL' 1` : void 0
                                     },
-                                    children: `publish`
+                                    children: `admin_panel_settings`
                                 }),
                                 (0, O.jsx)(`span`, {
                                     className: `text-[11px] font-medium tracking-wide uppercase mt-1`,
-                                    children: `Admin`
+                                    children: `Access`
                                 })
                             ]
                         }),
                         (0, O.jsxs)(`button`, {
                             onClick: ()=>u(`listvaccine`),
-                            className: `flex flex-col items-center justify-center px-3 py-2 active:scale-90 duration-150 transition-all ${i === `publish` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
+                            className: `flex flex-col items-center justify-center px-3 py-2 active:scale-90 duration-150 transition-all ${i === `listvaccine` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, O.jsx)(`span`, {
                                     className: `material-symbols-outlined`,
@@ -61830,7 +61826,7 @@ ${h(e)}
                         }),
                         (0, O.jsxs)(`button`, {
                             onClick: ()=>u(`listcountries`),
-                            className: `flex flex-col items-center justify-center px-3 py-2 active:scale-90 duration-150 transition-all ${i === `publish` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
+                            className: `flex flex-col items-center justify-center px-3 py-2 active:scale-90 duration-150 transition-all ${i === `listcountries` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, O.jsx)(`span`, {
                                     className: `material-symbols-outlined`,
