@@ -9803,12 +9803,14 @@ perfect harmony.`,
             contractDesc: `The constructor will automatically set your wallet as the initial admin. Further clinics can be added later.`,
             deployContract: `Deploy Contract`,
             deployContractSubtitle: `Deploy a new VaxZk smart contract to the Midnight network.`,
-            vaccinesAdminTitle: `Manage`,
+            manage: `Manage`,
             vaccinesAdminTitleEnd: `Vaccines`,
             vaccinesAdminSubtitle: `List and add new vaccines to the system.`,
             vaccinesList: `Registered Vaccines`,
             add: `Add`,
-            loading: `Processing...`
+            loading: `Processing...`,
+            countriesAdminTitleEnd: `Countries`,
+            countriesAdminSubtitle: `List all the countries and what types of cows are needed to visit them.`
         },
         pt: {
             tagline: `Seu passaporte de imunização, sempre com você.`,
@@ -9938,12 +9940,14 @@ perfeita harmonia.`,
             contractDesc: `O construtor definirá automaticamente sua carteira como admin inicial. Outras clínicas poderão ser adicionadas depois.`,
             deployContract: `Publicar Contrato`,
             deployContractSubtitle: `Faça o deploy de um novo contrato VaxZk na rede do Midnight.`,
-            vaccinesAdminTitle: `Gerenciar`,
+            manage: `Gerenciar`,
             vaccinesAdminTitleEnd: `Vacinas`,
             vaccinesAdminSubtitle: `Liste e adicione novas vacinas ao sistema.`,
             vaccinesList: `Vacinas Cadastradas`,
             add: `Adicionar`,
-            loading: `Processando...`
+            loading: `Processando...`,
+            countriesAdminTitleEnd: `Paises`,
+            countriesAdminSubtitle: `Liste todos os países e quais vacas são necessárias para visitá-los.`
         },
         es: {
             tagline: `Tu pasaporte de inmunización, siempre contigo.`,
@@ -10073,12 +10077,14 @@ perfecta armonía.`,
             contractDesc: `El constructor establecerá automáticamente su billetera como administrador inicial. Se pueden agregar más clínicas posteriormente.`,
             deployContract: `Publicar Contrato`,
             deployContractSubtitle: `Despliegue un nuevo contrato inteligente VaxZk en la red de Midnight.`,
-            vaccinesAdminTitle: `Administrar`,
+            manage: `Administrar`,
             vaccinesAdminTitleEnd: `Vacunas`,
             vaccinesAdminSubtitle: `Listar y agregar nuevas vacunas al sistema.`,
             vaccinesList: `Vacunas Registradas`,
             add: `Agregar`,
-            loading: `Procesando...`
+            loading: `Procesando...`,
+            countriesAdminTitleEnd: `Países`,
+            countriesAdminSubtitle: `Enumera todos los países y qué tipos de vacas se necesitan para visitarlos.`
         }
     }, Ve = (0, Re.createContext)({
         language: `en`,
@@ -61309,7 +61315,7 @@ ${h(e)}
                             children: [
                                 (0, O.jsx)(`span`, {
                                     className: `text-primary`,
-                                    children: t.vaccinesAdminTitle
+                                    children: t.manage
                                 }),
                                 ` `,
                                 t.vaccinesAdminTitleEnd,
@@ -61466,16 +61472,16 @@ ${h(e)}
                             children: [
                                 (0, O.jsx)(`span`, {
                                     className: `text-primary`,
-                                    children: t.vaccinesAdminTitle
+                                    children: t.manage
                                 }),
                                 ` `,
-                                t.vaccinesAdminTitleEnd,
+                                t.countriesAdminTitleEnd,
                                 ` `
                             ]
                         }),
                         (0, O.jsx)(`p`, {
                             className: `text-on-surface-variant text-lg max-w-xl leading-relaxed`,
-                            children: t.vaccinesAdminSubtitle
+                            children: t.countriesAdminSubtitle
                         })
                     ]
                 }),
