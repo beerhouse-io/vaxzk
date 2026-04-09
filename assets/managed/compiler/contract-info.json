@@ -4,50 +4,12 @@
   "runtime-version": "0.15.0",
   "circuits": [
     {
-      "name": "addVaccine",
-      "pure": false,
-      "proof": true,
-      "arguments": [
-        {
-          "name": "name",
-          "type": {
-            "type-name": "Bytes",
-            "length": 20
-          }
-        }
-      ],
-      "result-type": {
-        "type-name": "Tuple",
-        "types": [
-        ]
-      }
-    },
-    {
-      "name": "delVaccine",
-      "pure": false,
-      "proof": true,
-      "arguments": [
-        {
-          "name": "name",
-          "type": {
-            "type-name": "Bytes",
-            "length": 20
-          }
-        }
-      ],
-      "result-type": {
-        "type-name": "Tuple",
-        "types": [
-        ]
-      }
-    },
-    {
       "name": "getShieldedId",
       "pure": true,
       "proof": false,
       "arguments": [
         {
-          "name": "_sk",
+          "name": "id",
           "type": {
             "type-name": "Bytes",
             "length": 32
@@ -203,6 +165,44 @@
       "result-type": {
         "type-name": "Bytes",
         "length": 32
+      }
+    },
+    {
+      "name": "addVaccine",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+        {
+          "name": "name",
+          "type": {
+            "type-name": "Bytes",
+            "length": 20
+          }
+        }
+      ],
+      "result-type": {
+        "type-name": "Tuple",
+        "types": [
+        ]
+      }
+    },
+    {
+      "name": "delVaccine",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+        {
+          "name": "name",
+          "type": {
+            "type-name": "Bytes",
+            "length": 20
+          }
+        }
+      ],
+      "result-type": {
+        "type-name": "Tuple",
+        "types": [
+        ]
       }
     },
     {
