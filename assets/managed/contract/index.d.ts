@@ -23,7 +23,7 @@ export type Witnesses<PS> = {
 
 export type ImpureCircuits<PS> = {
   addVaccine(context: __compactRuntime.CircuitContext<PS>, name_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
-  hasVaccine(context: __compactRuntime.CircuitContext<PS>, name_0: Uint8Array): __compactRuntime.CircuitResults<PS, boolean>;
+  delVaccine(context: __compactRuntime.CircuitContext<PS>, name_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   getCertIssuerId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   getProofReqId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
@@ -43,7 +43,7 @@ export type ImpureCircuits<PS> = {
 
 export type ProvableCircuits<PS> = {
   addVaccine(context: __compactRuntime.CircuitContext<PS>, name_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
-  hasVaccine(context: __compactRuntime.CircuitContext<PS>, name_0: Uint8Array): __compactRuntime.CircuitResults<PS, boolean>;
+  delVaccine(context: __compactRuntime.CircuitContext<PS>, name_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   getCertIssuerId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   getProofReqId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
@@ -67,7 +67,7 @@ export type PureCircuits = {
 
 export type Circuits<PS> = {
   addVaccine(context: __compactRuntime.CircuitContext<PS>, name_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
-  hasVaccine(context: __compactRuntime.CircuitContext<PS>, name_0: Uint8Array): __compactRuntime.CircuitResults<PS, boolean>;
+  delVaccine(context: __compactRuntime.CircuitContext<PS>, name_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   getShieldedId(context: __compactRuntime.CircuitContext<PS>, _sk_0: Uint8Array): __compactRuntime.CircuitResults<PS, Uint8Array>;
   getCertIssuerId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   getProofReqId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;

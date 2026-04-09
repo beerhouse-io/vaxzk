@@ -14710,10 +14710,10 @@ perfecta armonía.`,
                         gasCost: r.gasCost
                     };
                 },
-                hasVaccine: (...e)=>{
-                    if (e.length !== 2) throw new et(`hasVaccine: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
+                delVaccine: (...e)=>{
+                    if (e.length !== 2) throw new et(`delVaccine: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || nt(`hasVaccine`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 26 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 20 || nt(`hasVaccine`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 26 char 1`, `Bytes<20>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || nt(`delVaccine`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 26 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 20 || nt(`delVaccine`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 26 char 1`, `Bytes<20>`, n);
                     let r = {
                         ...t,
                         gasCost: ll()
@@ -14725,10 +14725,10 @@ perfecta armonía.`,
                         output: void 0,
                         publicTranscript: [],
                         privateTranscriptOutputs: []
-                    }, a = this._hasVaccine_0(r, i, n);
+                    }, a = this._delVaccine_0(r, i, n);
                     return i.output = {
-                        value: ml.toValue(a),
-                        alignment: ml.alignment()
+                        value: [],
+                        alignment: []
                     }, {
                         result: a,
                         context: r,
@@ -14745,7 +14745,7 @@ perfecta armonía.`,
                 getCertIssuerId: (...e)=>{
                     if (e.length !== 1) throw new et(`getCertIssuerId: expected 1 argument (as invoked from Typescript), received ${e.length}`);
                     let t = e[0];
-                    typeof t == `object` && t.currentQueryContext != null || nt(`getCertIssuerId`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 71 char 1`, `CircuitContext`, t);
+                    typeof t == `object` && t.currentQueryContext != null || nt(`getCertIssuerId`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 73 char 1`, `CircuitContext`, t);
                     let n = {
                         ...t,
                         gasCost: ll()
@@ -14771,7 +14771,7 @@ perfecta armonía.`,
                 getProofReqId: (...e)=>{
                     if (e.length !== 1) throw new et(`getProofReqId: expected 1 argument (as invoked from Typescript), received ${e.length}`);
                     let t = e[0];
-                    typeof t == `object` && t.currentQueryContext != null || nt(`getProofReqId`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 79 char 1`, `CircuitContext`, t);
+                    typeof t == `object` && t.currentQueryContext != null || nt(`getProofReqId`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 81 char 1`, `CircuitContext`, t);
                     let n = {
                         ...t,
                         gasCost: ll()
@@ -14797,7 +14797,7 @@ perfecta armonía.`,
                 addAdmin: (...e)=>{
                     if (e.length !== 2) throw new et(`addAdmin: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || nt(`addAdmin`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 102 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || nt(`addAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 102 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || nt(`addAdmin`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 104 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || nt(`addAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 104 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: ll()
@@ -14823,7 +14823,7 @@ perfecta armonía.`,
                 revokeAdmin: (...e)=>{
                     if (e.length !== 2) throw new et(`revokeAdmin: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || nt(`revokeAdmin`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 110 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || nt(`revokeAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 110 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || nt(`revokeAdmin`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 112 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || nt(`revokeAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 112 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: ll()
@@ -14849,7 +14849,7 @@ perfecta armonía.`,
                 addClinic: (...e)=>{
                     if (e.length !== 2) throw new et(`addClinic: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || nt(`addClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 118 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || nt(`addClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 118 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || nt(`addClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 120 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || nt(`addClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 120 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: ll()
@@ -14875,7 +14875,7 @@ perfecta armonía.`,
                 revokeClinic: (...e)=>{
                     if (e.length !== 2) throw new et(`revokeClinic: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || nt(`revokeClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 125 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || nt(`revokeClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 125 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || nt(`revokeClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 127 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || nt(`revokeClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 127 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: ll()
@@ -14901,7 +14901,7 @@ perfecta armonía.`,
                 addCertificateIssuer: (...e)=>{
                     if (e.length !== 2) throw new et(`addCertificateIssuer: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || nt(`addCertificateIssuer`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 132 char 1`, `CircuitContext`, t), typeof n != `object` && nt(`addCertificateIssuer`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 132 char 1`, `struct CertIssuerInfo<uri: Opaque<"string">, name: Opaque<"string">, key: Opaque<"string">, verificationEndpoint: Opaque<"string">>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || nt(`addCertificateIssuer`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 134 char 1`, `CircuitContext`, t), typeof n != `object` && nt(`addCertificateIssuer`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 134 char 1`, `struct CertIssuerInfo<uri: Opaque<"string">, name: Opaque<"string">, key: Opaque<"string">, verificationEndpoint: Opaque<"string">>`, n);
                     let r = {
                         ...t,
                         gasCost: ll()
@@ -14927,7 +14927,7 @@ perfecta armonía.`,
                 requestVaccineProof: (...e)=>{
                     if (e.length !== 2) throw new et(`requestVaccineProof: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || nt(`requestVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 141 char 1`, `CircuitContext`, t), typeof n == `object` && typeof n.validUntil == `bigint` && n.validUntil >= 0n && n.validUntil <= 340282366920938463463374607431768211455n || nt(`requestVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 141 char 1`, `struct VaccineProofRequest<vaccine: Opaque<"string">, personalId: Opaque<"string">, validUntil: Uint<0..340282366920938463463374607431768211456>>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || nt(`requestVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 143 char 1`, `CircuitContext`, t), typeof n == `object` && typeof n.validUntil == `bigint` && n.validUntil >= 0n && n.validUntil <= 340282366920938463463374607431768211455n || nt(`requestVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 143 char 1`, `struct VaccineProofRequest<vaccine: Opaque<"string">, personalId: Opaque<"string">, validUntil: Uint<0..340282366920938463463374607431768211456>>`, n);
                     let r = {
                         ...t,
                         gasCost: ll()
@@ -14953,7 +14953,7 @@ perfecta armonía.`,
                 submitVaccineProof: (...e)=>{
                     if (e.length !== 3) throw new et(`submitVaccineProof: expected 3 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1], r = e[2];
-                    typeof t == `object` && t.currentQueryContext != null || nt(`submitVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 152 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || nt(`submitVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 152 char 1`, `Bytes<32>`, n), typeof r == `object` && r.issuerId.buffer instanceof ArrayBuffer && r.issuerId.BYTES_PER_ELEMENT === 1 && r.issuerId.length === 32 && typeof r.expirationDate == `bigint` && r.expirationDate >= 0n && r.expirationDate <= 340282366920938463463374607431768211455n || nt(`submitVaccineProof`, `argument 2 (argument 3 as invoked from Typescript)`, `vaxzk.compact line 152 char 1`, `struct VaxZkProof<issuerId: Bytes<32>, vaccine: Opaque<"string">, personalId: Opaque<"string">, expirationDate: Uint<0..340282366920938463463374607431768211456>>`, r);
+                    typeof t == `object` && t.currentQueryContext != null || nt(`submitVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 154 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || nt(`submitVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 154 char 1`, `Bytes<32>`, n), typeof r == `object` && r.issuerId.buffer instanceof ArrayBuffer && r.issuerId.BYTES_PER_ELEMENT === 1 && r.issuerId.length === 32 && typeof r.expirationDate == `bigint` && r.expirationDate >= 0n && r.expirationDate <= 340282366920938463463374607431768211455n || nt(`submitVaccineProof`, `argument 2 (argument 3 as invoked from Typescript)`, `vaxzk.compact line 154 char 1`, `struct VaxZkProof<issuerId: Bytes<32>, vaccine: Opaque<"string">, personalId: Opaque<"string">, expirationDate: Uint<0..340282366920938463463374607431768211456>>`, r);
                     let i = {
                         ...t,
                         gasCost: ll()
@@ -14978,7 +14978,7 @@ perfecta armonía.`,
                 }
             }, this.impureCircuits = {
                 addVaccine: this.circuits.addVaccine,
-                hasVaccine: this.circuits.hasVaccine,
+                delVaccine: this.circuits.delVaccine,
                 getCertIssuerId: this.circuits.getCertIssuerId,
                 getProofReqId: this.circuits.getProofReqId,
                 addAdmin: this.circuits.addAdmin,
@@ -14990,7 +14990,7 @@ perfecta armonía.`,
                 submitVaccineProof: this.circuits.submitVaccineProof
             }, this.provableCircuits = {
                 addVaccine: this.circuits.addVaccine,
-                hasVaccine: this.circuits.hasVaccine,
+                delVaccine: this.circuits.delVaccine,
                 getCertIssuerId: this.circuits.getCertIssuerId,
                 getProofReqId: this.circuits.getProofReqId,
                 addAdmin: this.circuits.addAdmin,
@@ -15010,7 +15010,7 @@ perfecta armonía.`,
             if (!(`initialZswapLocalState` in t)) throw new et(`Contract state constructor: expected 'initialZswapLocalState' in argument 1 (as invoked from Typescript)`);
             if (typeof t.initialZswapLocalState != `object`) throw new et(`Contract state constructor: expected 'initialZswapLocalState' in argument 1 (as invoked from Typescript) to be an object`);
             let n = new ur, r = M.newArray();
-            r = r.arrayPush(M.newNull()), r = r.arrayPush(M.newNull()), r = r.arrayPush(M.newNull()), r = r.arrayPush(M.newNull()), r = r.arrayPush(M.newNull()), r = r.arrayPush(M.newNull()), r = r.arrayPush(M.newNull()), r = r.arrayPush(M.newNull()), r = r.arrayPush(M.newNull()), n.data = new ir(r), n.setOperation(`addVaccine`, new cr), n.setOperation(`hasVaccine`, new cr), n.setOperation(`getCertIssuerId`, new cr), n.setOperation(`getProofReqId`, new cr), n.setOperation(`addAdmin`, new cr), n.setOperation(`revokeAdmin`, new cr), n.setOperation(`addClinic`, new cr), n.setOperation(`revokeClinic`, new cr), n.setOperation(`addCertificateIssuer`, new cr), n.setOperation(`requestVaccineProof`, new cr), n.setOperation(`submitVaccineProof`, new cr);
+            r = r.arrayPush(M.newNull()), r = r.arrayPush(M.newNull()), r = r.arrayPush(M.newNull()), r = r.arrayPush(M.newNull()), r = r.arrayPush(M.newNull()), r = r.arrayPush(M.newNull()), r = r.arrayPush(M.newNull()), r = r.arrayPush(M.newNull()), r = r.arrayPush(M.newNull()), n.data = new ir(r), n.setOperation(`addVaccine`, new cr), n.setOperation(`delVaccine`, new cr), n.setOperation(`getCertIssuerId`, new cr), n.setOperation(`getProofReqId`, new cr), n.setOperation(`addAdmin`, new cr), n.setOperation(`revokeAdmin`, new cr), n.setOperation(`addClinic`, new cr), n.setOperation(`revokeClinic`, new cr), n.setOperation(`addCertificateIssuer`, new cr), n.setOperation(`requestVaccineProof`, new cr), n.setOperation(`submitVaccineProof`, new cr);
             let i = cl(Ln(), t.initialZswapLocalState.coinPublicKey, n.data, t.initialPrivateState), a = {
                 input: {
                     value: [],
@@ -15681,8 +15681,8 @@ perfecta armonía.`,
                 }
             ]), [];
         }
-        _hasVaccine_0(e, t, n) {
-            return ml.fromValue(N(e, t, [
+        _delVaccine_0(e, t, n) {
+            return this._isAdmin_0(e, t), tt(ml.fromValue(N(e, t, [
                 {
                     dup: {
                         n: 0
@@ -15719,11 +15719,47 @@ perfecta armonía.`,
                         result: void 0
                     }
                 }
-            ]).value);
+            ]).value), `Vacina nao está cadastrada`), N(e, t, [
+                {
+                    idx: {
+                        cached: !1,
+                        pushPath: !0,
+                        path: [
+                            {
+                                tag: `value`,
+                                value: {
+                                    value: F.toValue(3n),
+                                    alignment: F.alignment()
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    push: {
+                        storage: !1,
+                        value: M.newCell({
+                            value: yl.toValue(n),
+                            alignment: yl.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    rem: {
+                        cached: !1
+                    }
+                },
+                {
+                    ins: {
+                        cached: !0,
+                        n: 1
+                    }
+                }
+            ]), [];
         }
         _localSk_0(e, t) {
             let n = ul(wl(e.currentQueryContext.state), e.currentPrivateState, e.currentQueryContext.address), [r, i] = this.witnesses.localSk(n);
-            return e.currentPrivateState = r, i.buffer instanceof ArrayBuffer && i.BYTES_PER_ELEMENT === 1 && i.length === 32 || nt(`localSk`, `return value`, `vaxzk.compact line 44 char 1`, `Bytes<32>`, i), t.privateTranscriptOutputs.push({
+            return e.currentPrivateState = r, i.buffer instanceof ArrayBuffer && i.BYTES_PER_ELEMENT === 1 && i.length === 32 || nt(`localSk`, `return value`, `vaxzk.compact line 46 char 1`, `Bytes<32>`, i), t.privateTranscriptOutputs.push({
                 value: P.toValue(i),
                 alignment: P.alignment()
             }), i;
@@ -15802,7 +15838,7 @@ perfecta armonía.`,
                     0,
                     0,
                     0
-                ]), `vaxzk.compact line 73 char 45`),
+                ]), `vaxzk.compact line 75 char 45`),
                 _l.fromValue(N(e, t, [
                     {
                         dup: {
@@ -15899,7 +15935,7 @@ perfecta armonía.`,
                     0,
                     0,
                     0
-                ]), `vaxzk.compact line 81 char 45`),
+                ]), `vaxzk.compact line 83 char 45`),
                 _l.fromValue(N(e, t, [
                     {
                         dup: {
@@ -17183,7 +17219,7 @@ perfecta armonía.`,
                 member (...e) {
                     if (e.length !== 1) throw new et(`member: expected 1 argument, received ${e.length}`);
                     let t = e[0];
-                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || nt(`member`, `argument 1`, `vaxzk.compact line 31 char 1`, `Bytes<32>`, t), ml.fromValue(N(n, r, [
+                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || nt(`member`, `argument 1`, `vaxzk.compact line 33 char 1`, `Bytes<32>`, t), ml.fromValue(N(n, r, [
                         {
                             dup: {
                                 n: 0
@@ -17225,7 +17261,7 @@ perfecta armonía.`,
                 lookup (...e) {
                     if (e.length !== 1) throw new et(`lookup: expected 1 argument, received ${e.length}`);
                     let t = e[0];
-                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || nt(`lookup`, `argument 1`, `vaxzk.compact line 31 char 1`, `Bytes<32>`, t), gl.fromValue(N(n, r, [
+                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || nt(`lookup`, `argument 1`, `vaxzk.compact line 33 char 1`, `Bytes<32>`, t), gl.fromValue(N(n, r, [
                         {
                             dup: {
                                 n: 0
@@ -17419,7 +17455,7 @@ perfecta armonía.`,
                 member (...e) {
                     if (e.length !== 1) throw new et(`member: expected 1 argument, received ${e.length}`);
                     let t = e[0];
-                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || nt(`member`, `argument 1`, `vaxzk.compact line 38 char 1`, `Bytes<32>`, t), ml.fromValue(N(n, r, [
+                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || nt(`member`, `argument 1`, `vaxzk.compact line 40 char 1`, `Bytes<32>`, t), ml.fromValue(N(n, r, [
                         {
                             dup: {
                                 n: 0
@@ -17461,7 +17497,7 @@ perfecta armonía.`,
                 lookup (...e) {
                     if (e.length !== 1) throw new et(`lookup: expected 1 argument, received ${e.length}`);
                     let t = e[0];
-                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || nt(`lookup`, `argument 1`, `vaxzk.compact line 38 char 1`, `Bytes<32>`, t), pl.fromValue(N(n, r, [
+                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || nt(`lookup`, `argument 1`, `vaxzk.compact line 40 char 1`, `Bytes<32>`, t), pl.fromValue(N(n, r, [
                         {
                             dup: {
                                 n: 0
@@ -17595,7 +17631,7 @@ perfecta armonía.`,
                 member (...e) {
                     if (e.length !== 1) throw new et(`member: expected 1 argument, received ${e.length}`);
                     let t = e[0];
-                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || nt(`member`, `argument 1`, `vaxzk.compact line 41 char 1`, `Bytes<32>`, t), ml.fromValue(N(n, r, [
+                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || nt(`member`, `argument 1`, `vaxzk.compact line 43 char 1`, `Bytes<32>`, t), ml.fromValue(N(n, r, [
                         {
                             dup: {
                                 n: 0
@@ -17637,7 +17673,7 @@ perfecta armonía.`,
                 lookup (...e) {
                     if (e.length !== 1) throw new et(`lookup: expected 1 argument, received ${e.length}`);
                     let t = e[0];
-                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || nt(`lookup`, `argument 1`, `vaxzk.compact line 41 char 1`, `Bytes<32>`, t), hl.fromValue(N(n, r, [
+                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || nt(`lookup`, `argument 1`, `vaxzk.compact line 43 char 1`, `Bytes<32>`, t), hl.fromValue(N(n, r, [
                         {
                             dup: {
                                 n: 0
@@ -17702,7 +17738,7 @@ perfecta armonía.`,
         getShieldedId: (...e)=>{
             if (e.length !== 1) throw new et(`getShieldedId: expected 1 argument (as invoked from Typescript), received ${e.length}`);
             let t = e[0];
-            return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || nt(`getShieldedId`, `argument 1`, `vaxzk.compact line 66 char 1`, `Bytes<32>`, t), Tl._getShieldedId_0(t);
+            return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || nt(`getShieldedId`, `argument 1`, `vaxzk.compact line 68 char 1`, `Bytes<32>`, t), Tl._getShieldedId_0(t);
         }
     }, Dl, Ol = (e)=>{
         Dl = e;
@@ -60969,6 +61005,19 @@ ${h(e)}
                 }
             });
         }
+        async delVaccine(e) {
+            console.log(`removing Vaccine ${e}`);
+            let t = new TextEncoder().encode(e), n = new Uint8Array(20);
+            n.set(t.slice(0, 20));
+            let r = await this.deployedContract.callTx.delVaccine(n);
+            console.log({
+                transactionAdded: {
+                    circuit: `delVaccine`,
+                    txHash: r.public.txHash,
+                    blockHeight: r.public.blockHeight
+                }
+            });
+        }
     };
     async function Q9(e, t) {
         Ol(t);
@@ -61306,7 +61355,7 @@ ${h(e)}
         });
     }, $je = ({ connectedApi: e })=>{
         let { t } = Ue(), [n, r] = (0, Re.useState)([]), [i, a] = (0, Re.useState)(``), [o, s] = (0, Re.useState)(!1), [c, l] = (0, Re.useState)(null), [u, d] = (0, Re.useState)(null);
-        return (0, Re.useEffect)(()=>{
+        (0, Re.useEffect)(()=>{
             let t;
             async function n() {
                 if (e) try {
@@ -61323,7 +61372,31 @@ ${h(e)}
             };
         }, [
             e
-        ]), (0, O.jsxs)(`main`, {
+        ]);
+        let f = async (e)=>{
+            if (e.preventDefault(), !(!u || !i.trim())) {
+                s(!0), l(null);
+                try {
+                    await u.addVaccine(i.trim()), a(``);
+                } catch (e) {
+                    console.error(`Failed to add vaccine:`, e), e instanceof Error ? l(`Erro ao adicionar vacina: ` + e.message) : l(`Erro ao adicionar vacina: ` + String(e));
+                } finally{
+                    s(!1);
+                }
+            }
+        }, p = async (e)=>{
+            if (e.preventDefault(), !(!u || !i.trim())) {
+                s(!0), l(null);
+                try {
+                    await u.delVaccine(i.trim()), a(``);
+                } catch (e) {
+                    console.error(`Failed to add vaccine:`, e), e instanceof Error ? l(`Erro ao adicionar vacina: ` + e.message) : l(`Erro ao adicionar vacina: ` + String(e));
+                } finally{
+                    s(!1);
+                }
+            }
+        };
+        return (0, O.jsxs)(`main`, {
             className: `pt-24 pb-32 px-6 max-w-screen-xl mx-auto`,
             children: [
                 (0, O.jsxs)(`section`, {
@@ -61351,18 +61424,7 @@ ${h(e)}
                     className: `bg-white p-8 rounded-xl shadow-sm border border-slate-100 mb-12 text-left`,
                     children: [
                         (0, O.jsxs)(`form`, {
-                            onSubmit: async (e)=>{
-                                if (e.preventDefault(), !(!u || !i.trim())) {
-                                    s(!0), l(null);
-                                    try {
-                                        await u.addVaccine(i.trim()), a(``);
-                                    } catch (e) {
-                                        console.log(e), console.error(`Failed to add vaccine:`, e), e instanceof Error ? l(`Erro ao adicionar vacina: ` + e.message) : l(`Erro ao adicionar vacina: ` + String(e));
-                                    } finally{
-                                        s(!1);
-                                    }
-                                }
-                            },
+                            onSubmit: f,
                             className: `flex flex-col sm:flex-row gap-4`,
                             children: [
                                 (0, O.jsxs)(`div`, {
@@ -61453,6 +61515,31 @@ ${h(e)}
                                         (0, O.jsx)(`span`, {
                                             className: `font-bold text-lg text-on-surface`,
                                             children: e
+                                        }),
+                                        (0, O.jsxs)(`form`, {
+                                            onSubmit: p,
+                                            className: `flex flex-col sm:flex-row gap-4`,
+                                            children: [
+                                                (0, O.jsx)(`input`, {
+                                                    value: i,
+                                                    type: `hidden`
+                                                }),
+                                                (0, O.jsx)(`button`, {
+                                                    type: `submit`,
+                                                    disabled: o,
+                                                    children: o ? (0, O.jsx)(O.Fragment, {
+                                                        children: (0, O.jsx)(`span`, {
+                                                            className: `material-symbols-outlined animate-spin`,
+                                                            children: `trash`
+                                                        })
+                                                    }) : (0, O.jsx)(O.Fragment, {
+                                                        children: (0, O.jsx)(`span`, {
+                                                            className: `material-symbols-outlined`,
+                                                            children: `trash`
+                                                        })
+                                                    })
+                                                })
+                                            ]
                                         })
                                     ]
                                 }, t))

@@ -23,7 +23,7 @@
       }
     },
     {
-      "name": "hasVaccine",
+      "name": "delVaccine",
       "pure": false,
       "proof": true,
       "arguments": [
@@ -36,7 +36,9 @@
         }
       ],
       "result-type": {
-        "type-name": "Boolean"
+        "type-name": "Tuple",
+        "types": [
+        ]
       }
     },
     {
