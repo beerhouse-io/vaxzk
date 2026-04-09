@@ -61346,7 +61346,7 @@ ${h(e)}
                             ]
                         }),
                         (0, O.jsx)(`p`, {
-                            className: `text-on-surface-variant text-lg max-w-xl leading-relaxed`,
+                            className: `text-on-surface-variant text-lg leading-relaxed`,
                             children: t.vaccinesAdminSubtitle
                         })
                     ]
@@ -61503,7 +61503,7 @@ ${h(e)}
                             ]
                         }),
                         (0, O.jsx)(`p`, {
-                            className: `text-on-surface-variant text-lg max-w-xl leading-relaxed`,
+                            className: `text-on-surface-variant text-lg leading-relaxed`,
                             children: t.countriesAdminSubtitle
                         })
                     ]
