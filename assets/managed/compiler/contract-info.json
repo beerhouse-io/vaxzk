@@ -4,6 +4,66 @@
   "runtime-version": "0.15.0",
   "circuits": [
     {
+      "name": "schnorrChallengeVaxZk",
+      "pure": true,
+      "proof": false,
+      "arguments": [
+        {
+          "name": "ann",
+          "type": {
+            "type-name": "Alias",
+            "name": "JubjubPoint",
+            "type": {
+              "type-name": "Opaque",
+              "tsType": "JubjubPoint"
+            }
+          }
+        },
+        {
+          "name": "pk",
+          "type": {
+            "type-name": "Alias",
+            "name": "JubjubPoint",
+            "type": {
+              "type-name": "Opaque",
+              "tsType": "JubjubPoint"
+            }
+          }
+        },
+        {
+          "name": "vaccine",
+          "type": {
+            "type-name": "Bytes",
+            "length": 20
+          }
+        },
+        {
+          "name": "personalId",
+          "type": {
+            "type-name": "Bytes",
+            "length": 20
+          }
+        },
+        {
+          "name": "expirationDate",
+          "type": {
+            "type-name": "Uint",
+            "maxval": 340282366920938463463374607431768211455
+          }
+        },
+        {
+          "name": "userPubKey",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        }
+      ],
+      "result-type": {
+        "type-name": "Field"
+      }
+    },
+    {
       "name": "getShieldedId",
       "pure": true,
       "proof": false,
@@ -147,8 +207,12 @@
               {
                 "name": "key",
                 "type": {
-                  "type-name": "Opaque",
-                  "tsType": "string"
+                  "type-name": "Alias",
+                  "name": "JubjubPoint",
+                  "type": {
+                    "type-name": "Opaque",
+                    "tsType": "JubjubPoint"
+                  }
                 }
               },
               {
@@ -219,15 +283,15 @@
               {
                 "name": "vaccine",
                 "type": {
-                  "type-name": "Opaque",
-                  "tsType": "string"
+                  "type-name": "Bytes",
+                  "length": 20
                 }
               },
               {
                 "name": "personalId",
                 "type": {
-                  "type-name": "Opaque",
-                  "tsType": "string"
+                  "type-name": "Bytes",
+                  "length": 20
                 }
               },
               {
@@ -257,43 +321,6 @@
             "type-name": "Bytes",
             "length": 32
           }
-        },
-        {
-          "name": "proof",
-          "type": {
-            "type-name": "Struct",
-            "name": "VaxZkProof",
-            "elements": [
-              {
-                "name": "issuerId",
-                "type": {
-                  "type-name": "Bytes",
-                  "length": 32
-                }
-              },
-              {
-                "name": "vaccine",
-                "type": {
-                  "type-name": "Opaque",
-                  "tsType": "string"
-                }
-              },
-              {
-                "name": "personalId",
-                "type": {
-                  "type-name": "Opaque",
-                  "tsType": "string"
-                }
-              },
-              {
-                "name": "expirationDate",
-                "type": {
-                  "type-name": "Uint",
-                  "maxval": 340282366920938463463374607431768211455
-                }
-              }
-            ]
-          }
         }
       ],
       "result-type": {
@@ -305,12 +332,100 @@
   ],
   "witnesses": [
     {
+      "name": "getSchnorrReduction",
+      "arguments": [
+        {
+          "name": "challengeHash",
+          "type": {
+            "type-name": "Field"
+          }
+        }
+      ],
+      "result type": {
+        "type-name": "Tuple",
+        "types": [
+          {
+            "type-name": "Field"
+          },
+          {
+            "type-name": "Uint",
+            "maxval": 452312848583266388373324160190187140051835877600158453279131187530910662655
+          }
+        ]
+      }
+    },
+    {
       "name": "localSk",
       "arguments": [
       ],
       "result type": {
         "type-name": "Bytes",
         "length": 32
+      }
+    },
+    {
+      "name": "getAttestedCertProofWitness",
+      "arguments": [
+      ],
+      "result type": {
+        "type-name": "Struct",
+        "name": "VaxZkProof",
+        "elements": [
+          {
+            "name": "issuerId",
+            "type": {
+              "type-name": "Bytes",
+              "length": 32
+            }
+          },
+          {
+            "name": "vaccine",
+            "type": {
+              "type-name": "Bytes",
+              "length": 20
+            }
+          },
+          {
+            "name": "personalId",
+            "type": {
+              "type-name": "Bytes",
+              "length": 20
+            }
+          },
+          {
+            "name": "expirationDate",
+            "type": {
+              "type-name": "Uint",
+              "maxval": 340282366920938463463374607431768211455
+            }
+          },
+          {
+            "name": "issuerSignature",
+            "type": {
+              "type-name": "Struct",
+              "name": "SchnorrSignature",
+              "elements": [
+                {
+                  "name": "announcement",
+                  "type": {
+                    "type-name": "Alias",
+                    "name": "JubjubPoint",
+                    "type": {
+                      "type-name": "Opaque",
+                      "tsType": "JubjubPoint"
+                    }
+                  }
+                },
+                {
+                  "name": "response",
+                  "type": {
+                    "type-name": "Field"
+                  }
+                }
+              ]
+            }
+          }
+        ]
       }
     }
   ],
