@@ -905,12 +905,12 @@ export class Contract {
     const __compact_pattern_tmp2_0 = signature_0;
     const announcement_0 = __compact_pattern_tmp2_0.announcement;
     const response_0 = __compact_pattern_tmp2_0.response;
-    const cFull_0 = this._transientHash_0({ ann: announcement_0,
-                                            pk: pk_0,
-                                            vaccine: vaccine_0,
-                                            personalId: personalId_0,
-                                            expirationDate: expirationDate_0,
-                                            userPubKey: userPubKey_0 });
+    const cFull_0 = this._schnorrChallengeVaxZk_0(announcement_0,
+                                                  pk_0,
+                                                  vaccine_0,
+                                                  personalId_0,
+                                                  expirationDate_0,
+                                                  userPubKey_0);
     const TWO_248_0 = 452312848583266388373324160190187140051835877600158453279131187530910662656n;
     const __compact_pattern_tmp1_0 = this._getSchnorrReduction_0(context,
                                                                  partialProofData,
@@ -2154,28 +2154,28 @@ export const pureCircuits = {
     if (!(vaccine_0.buffer instanceof ArrayBuffer && vaccine_0.BYTES_PER_ELEMENT === 1 && vaccine_0.length === 20)) {
       __compactRuntime.typeError('schnorrChallengeVaxZk',
                                  'argument 3',
-                                 'Schnorr.compact line 64 char 3',
+                                 'Schnorr.compact line 58 char 3',
                                  'Bytes<20>',
                                  vaccine_0)
     }
     if (!(personalId_0.buffer instanceof ArrayBuffer && personalId_0.BYTES_PER_ELEMENT === 1 && personalId_0.length === 20)) {
       __compactRuntime.typeError('schnorrChallengeVaxZk',
                                  'argument 4',
-                                 'Schnorr.compact line 64 char 3',
+                                 'Schnorr.compact line 58 char 3',
                                  'Bytes<20>',
                                  personalId_0)
     }
     if (!(typeof(expirationDate_0) === 'bigint' && expirationDate_0 >= 0n && expirationDate_0 <= 340282366920938463463374607431768211455n)) {
       __compactRuntime.typeError('schnorrChallengeVaxZk',
                                  'argument 5',
-                                 'Schnorr.compact line 64 char 3',
+                                 'Schnorr.compact line 58 char 3',
                                  'Uint<0..340282366920938463463374607431768211456>',
                                  expirationDate_0)
     }
     if (!(userPubKey_0.buffer instanceof ArrayBuffer && userPubKey_0.BYTES_PER_ELEMENT === 1 && userPubKey_0.length === 32)) {
       __compactRuntime.typeError('schnorrChallengeVaxZk',
                                  'argument 6',
-                                 'Schnorr.compact line 64 char 3',
+                                 'Schnorr.compact line 58 char 3',
                                  'Bytes<32>',
                                  userPubKey_0)
     }
