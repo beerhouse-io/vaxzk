@@ -63367,7 +63367,9 @@ ${h(e)}
                                             } catch (e) {
                                                 if (console.error(`Deployment failed:`, e), e && typeof e == `object` && `cause` in e) {
                                                     let t = e.cause;
-                                                    console.log(`Causa raiz _tag:`, t?._tag), console.log(`Mensagem:`, t?.failure?.message), c(t?.failure?.message ? String(t?.failure?.message) : ``), console.log(`Causa interna:`, t?.cause), console.log(`txData:`, t?.txData);
+                                                    console.log(`Causa raiz _tag:`, t?._tag), console.log(`Mensagem:`, t?.failure?.message), c(t?.failure?.message ? String(t?.failure?.message) : ``), console.log(`Causa interna:`, t?.failure?.txData);
+                                                    let n = t?.failure?.txData;
+                                                    console.log(`txData:`, new TextDecoder().decode(new Uint8Array(n)));
                                                 }
                                                 i(!1);
                                             }
