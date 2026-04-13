@@ -63365,9 +63365,9 @@ ${h(e)}
                                                 let a = r.deployedContractAddress;
                                                 console.log(r), console.log(`Successfully deployed contract at:`, a), gl(a), o(a), i(!1);
                                             } catch (e) {
-                                                if (console.error(`Deployment failed:`, e), c(e instanceof Error ? e.message : String(e)), e && typeof e == `object` && `cause` in e) {
+                                                if (console.error(`Deployment failed:`, e), e && typeof e == `object` && `cause` in e) {
                                                     let t = e.cause;
-                                                    console.log(`Causa raiz _tag:`, t?._tag), console.log(`Mensagem:`, t?.message), console.log(`Causa interna:`, t?.cause), console.log(`txData:`, t?.txData);
+                                                    console.log(`Causa raiz _tag:`, t?._tag), console.log(`Mensagem:`, t?.failure?.message), c(t?.failure?.message ? String(t?.failure?.message) : ``), console.log(`Causa interna:`, t?.cause), console.log(`txData:`, t?.txData);
                                                 }
                                                 i(!1);
                                             }
