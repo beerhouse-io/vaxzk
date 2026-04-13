@@ -63358,18 +63358,17 @@ ${h(e)}
                                                 if (!window.midnight) throw Error(`Midnight Extension not found. Please install Lace.`);
                                                 let e = Object.values(window.midnight).find((e)=>!!e && typeof e == `object` && `apiVersion` in e);
                                                 if (!e) throw Error(`Compatible Midnight wallet not found`);
-                                                let t = await m7(await e.connect(vl), vl), n = crypto.getRandomValues(new Uint8Array(32));
-                                                console.log(`VaxZkAPI`);
-                                                let r = await p7.deploy(t, n);
-                                                console.log(`deployng...`);
-                                                let a = r.deployedContractAddress;
+                                                let t = await m7(await e.connect(vl), vl), n = crypto.getRandomValues(new Uint8Array(32)), r = await p7.deploy(t, n), a = r.deployedContractAddress;
                                                 console.log(r), console.log(`Successfully deployed contract at:`, a), gl(a), o(a), i(!1);
                                             } catch (e) {
                                                 if (console.error(`Deployment failed:`, e), e && typeof e == `object` && `cause` in e) {
-                                                    let t = e.cause;
-                                                    console.log(`Causa raiz _tag:`, t?._tag), console.log(`Mensagem:`, t?.failure?.message), c(t?.failure?.message ? String(t?.failure?.message) : ``), console.log(`Causa interna:`, t?.failure?.txData);
-                                                    let n = t?.failure?.txData;
-                                                    console.log(`txData:`, new TextDecoder().decode(new Uint8Array(n)));
+                                                    let n = e.cause;
+                                                    console.log(`Causa raiz _tag:`, n?._tag);
+                                                    var t = n?.failure?.message ? String(n?.failure?.message) : ``;
+                                                    t += `
+`;
+                                                    let r = n?.failure?.txData;
+                                                    t += new TextDecoder().decode(new Uint8Array(r)), console.log(`Mensagem:`, n?.failure?.message), c(t), console.log(`txData:`, new TextDecoder().decode(new Uint8Array(r)));
                                                 }
                                                 i(!1);
                                             }
