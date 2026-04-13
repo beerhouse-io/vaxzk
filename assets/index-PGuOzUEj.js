@@ -63555,6 +63555,7 @@ ${h(e)}
                                 className: `flex items-center gap-3`,
                                 children: [
                                     (0, b.jsx)(Q9, {}),
+                                    `log`,
                                     (0, b.jsxs)(`button`, {
                                         onClick: e,
                                         className: `flex items-center gap-1 px-3 py-1.5 rounded-full text-error hover:bg-error/10 transition-colors text-sm font-semibold`,
