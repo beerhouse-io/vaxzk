@@ -63606,7 +63606,9 @@ ${h(e)}
                                                 if (!window.midnight) throw Error(`Midnight Extension not found. Please install Lace.`);
                                                 let e = Object.values(window.midnight).find((e)=>!!e && typeof e == `object` && `apiVersion` in e);
                                                 if (!e) throw Error(`Compatible Midnight wallet not found`);
-                                                let t = await p7(await e.connect(vl), vl), n = crypto.getRandomValues(new Uint8Array(32)), r = await f7.deploy(t, n);
+                                                let t = await p7(await e.connect(vl), vl), n = crypto.getRandomValues(new Uint8Array(32));
+                                                console.log(`VaxZkAPI`);
+                                                let r = await f7.deploy(t, n);
                                                 console.log(`deployng...`);
                                                 let a = r.deployedContractAddress;
                                                 console.log(r), console.log(`Successfully deployed contract at:`, a), gl(a), o(a), i(!1);
