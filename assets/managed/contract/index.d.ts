@@ -22,9 +22,6 @@ export type SchnorrSignature = { announcement: __compactRuntime.JubjubPoint;
                                  response: bigint
                                };
 
-export type UserProfileInfo = { uri: string; nickname: string; country: string
-                              };
-
 export type Witnesses<PS> = {
   getSchnorrReduction(context: __compactRuntime.WitnessContext<Ledger, PS>,
                       challengeHash_0: bigint): [PS, [bigint, bigint]];
@@ -39,9 +36,6 @@ export type ImpureCircuits<PS> = {
   useInvite(context: __compactRuntime.CircuitContext<PS>,
             _secret_0: Uint8Array,
             _nonce_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
-  updateUserProfile(context: __compactRuntime.CircuitContext<PS>,
-                    profileInfo_0: UserProfileInfo): __compactRuntime.CircuitResults<PS, []>;
-  getUserProfile(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, UserProfileInfo>;
   getCertIssuerId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   getProofReqId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
@@ -65,9 +59,6 @@ export type ProvableCircuits<PS> = {
   useInvite(context: __compactRuntime.CircuitContext<PS>,
             _secret_0: Uint8Array,
             _nonce_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
-  updateUserProfile(context: __compactRuntime.CircuitContext<PS>,
-                    profileInfo_0: UserProfileInfo): __compactRuntime.CircuitResults<PS, []>;
-  getUserProfile(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, UserProfileInfo>;
   getCertIssuerId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   getProofReqId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
@@ -109,9 +100,6 @@ export type Circuits<PS> = {
             _secret_0: Uint8Array,
             _nonce_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   getShieldedId(context: __compactRuntime.CircuitContext<PS>, id_0: Uint8Array): __compactRuntime.CircuitResults<PS, Uint8Array>;
-  updateUserProfile(context: __compactRuntime.CircuitContext<PS>,
-                    profileInfo_0: UserProfileInfo): __compactRuntime.CircuitResults<PS, []>;
-  getUserProfile(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, UserProfileInfo>;
   getCertIssuerId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   getProofReqId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
