@@ -22,20 +22,42 @@ export type SchnorrSignature = { announcement: __compactRuntime.JubjubPoint;
                                  response: bigint
                                };
 
+export type ClinicProfileInfo = { uri: string;
+                                  name: string;
+                                  location: string;
+                                  latitude: bigint;
+                                  longitude: bigint;
+                                  image: string
+                                };
+
+export type UserProfileInfo = { uri: string; nickname: string; country: string
+                              };
+
 export type Witnesses<PS> = {
   getSchnorrReduction(context: __compactRuntime.WitnessContext<Ledger, PS>,
                       challengeHash_0: bigint): [PS, [bigint, bigint]];
+  inviteSecret(context: __compactRuntime.WitnessContext<Ledger, PS>): [PS, Uint8Array];
+  inviteNonce(context: __compactRuntime.WitnessContext<Ledger, PS>): [PS, Uint8Array];
   localSk(context: __compactRuntime.WitnessContext<Ledger, PS>): [PS, Uint8Array];
   getAttestedCertProofWitness(context: __compactRuntime.WitnessContext<Ledger, PS>): [PS, VaxZkProof];
 }
 
 export type ImpureCircuits<PS> = {
+  registerInvite(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, []>;
+  useInvite(context: __compactRuntime.CircuitContext<PS>,
+            _secret_0: Uint8Array,
+            _nonce_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
+  updateUserProfile(context: __compactRuntime.CircuitContext<PS>,
+                    profileInfo_0: UserProfileInfo): __compactRuntime.CircuitResults<PS, []>;
+  getUserProfile(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, UserProfileInfo>;
   getCertIssuerId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   getProofReqId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeAdmin(context: __compactRuntime.CircuitContext<PS>,
               adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
-  addClinic(context: __compactRuntime.CircuitContext<PS>, clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
+  addClinic(context: __compactRuntime.CircuitContext<PS>,
+            clinicId_0: Uint8Array,
+            info_0: ClinicProfileInfo): __compactRuntime.CircuitResults<PS, []>;
   revokeClinic(context: __compactRuntime.CircuitContext<PS>,
                clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   addCertificateIssuer(context: __compactRuntime.CircuitContext<PS>,
@@ -49,12 +71,21 @@ export type ImpureCircuits<PS> = {
 }
 
 export type ProvableCircuits<PS> = {
+  registerInvite(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, []>;
+  useInvite(context: __compactRuntime.CircuitContext<PS>,
+            _secret_0: Uint8Array,
+            _nonce_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
+  updateUserProfile(context: __compactRuntime.CircuitContext<PS>,
+                    profileInfo_0: UserProfileInfo): __compactRuntime.CircuitResults<PS, []>;
+  getUserProfile(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, UserProfileInfo>;
   getCertIssuerId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   getProofReqId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeAdmin(context: __compactRuntime.CircuitContext<PS>,
               adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
-  addClinic(context: __compactRuntime.CircuitContext<PS>, clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
+  addClinic(context: __compactRuntime.CircuitContext<PS>,
+            clinicId_0: Uint8Array,
+            info_0: ClinicProfileInfo): __compactRuntime.CircuitResults<PS, []>;
   revokeClinic(context: __compactRuntime.CircuitContext<PS>,
                clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   addCertificateIssuer(context: __compactRuntime.CircuitContext<PS>,
@@ -85,13 +116,22 @@ export type Circuits<PS> = {
                         personalId_0: Uint8Array,
                         expirationDate_0: bigint,
                         userPubKey_0: Uint8Array): __compactRuntime.CircuitResults<PS, bigint>;
+  registerInvite(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, []>;
+  useInvite(context: __compactRuntime.CircuitContext<PS>,
+            _secret_0: Uint8Array,
+            _nonce_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   getShieldedId(context: __compactRuntime.CircuitContext<PS>, id_0: Uint8Array): __compactRuntime.CircuitResults<PS, Uint8Array>;
+  updateUserProfile(context: __compactRuntime.CircuitContext<PS>,
+                    profileInfo_0: UserProfileInfo): __compactRuntime.CircuitResults<PS, []>;
+  getUserProfile(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, UserProfileInfo>;
   getCertIssuerId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   getProofReqId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeAdmin(context: __compactRuntime.CircuitContext<PS>,
               adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
-  addClinic(context: __compactRuntime.CircuitContext<PS>, clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
+  addClinic(context: __compactRuntime.CircuitContext<PS>,
+            clinicId_0: Uint8Array,
+            info_0: ClinicProfileInfo): __compactRuntime.CircuitResults<PS, []>;
   revokeClinic(context: __compactRuntime.CircuitContext<PS>,
                clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   addCertificateIssuer(context: __compactRuntime.CircuitContext<PS>,
@@ -105,6 +145,7 @@ export type Circuits<PS> = {
 }
 
 export type Ledger = {
+  readonly inviteHash: Uint8Array;
   admins: {
     isEmpty(): boolean;
     size(): bigint;
@@ -114,8 +155,9 @@ export type Ledger = {
   clinics: {
     isEmpty(): boolean;
     size(): bigint;
-    member(elem_0: Uint8Array): boolean;
-    [Symbol.iterator](): Iterator<Uint8Array>
+    member(key_0: Uint8Array): boolean;
+    lookup(key_0: Uint8Array): ClinicProfileInfo;
+    [Symbol.iterator](): Iterator<[Uint8Array, ClinicProfileInfo]>
   };
   vaccines: {
     isEmpty(): boolean;

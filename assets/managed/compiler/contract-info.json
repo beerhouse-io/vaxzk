@@ -64,6 +64,44 @@
       }
     },
     {
+      "name": "registerInvite",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+      ],
+      "result-type": {
+        "type-name": "Tuple",
+        "types": [
+        ]
+      }
+    },
+    {
+      "name": "useInvite",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+        {
+          "name": "_secret",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        },
+        {
+          "name": "_nonce",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        }
+      ],
+      "result-type": {
+        "type-name": "Tuple",
+        "types": [
+        ]
+      }
+    },
+    {
       "name": "getShieldedId",
       "pure": true,
       "proof": false,
@@ -79,6 +117,82 @@
       "result-type": {
         "type-name": "Bytes",
         "length": 32
+      }
+    },
+    {
+      "name": "updateUserProfile",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+        {
+          "name": "profileInfo",
+          "type": {
+            "type-name": "Struct",
+            "name": "UserProfileInfo",
+            "elements": [
+              {
+                "name": "uri",
+                "type": {
+                  "type-name": "Opaque",
+                  "tsType": "string"
+                }
+              },
+              {
+                "name": "nickname",
+                "type": {
+                  "type-name": "Opaque",
+                  "tsType": "string"
+                }
+              },
+              {
+                "name": "country",
+                "type": {
+                  "type-name": "Opaque",
+                  "tsType": "string"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "result-type": {
+        "type-name": "Tuple",
+        "types": [
+        ]
+      }
+    },
+    {
+      "name": "getUserProfile",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+      ],
+      "result-type": {
+        "type-name": "Struct",
+        "name": "UserProfileInfo",
+        "elements": [
+          {
+            "name": "uri",
+            "type": {
+              "type-name": "Opaque",
+              "tsType": "string"
+            }
+          },
+          {
+            "name": "nickname",
+            "type": {
+              "type-name": "Opaque",
+              "tsType": "string"
+            }
+          },
+          {
+            "name": "country",
+            "type": {
+              "type-name": "Opaque",
+              "tsType": "string"
+            }
+          }
+        ]
       }
     },
     {
@@ -151,6 +265,55 @@
           "type": {
             "type-name": "Bytes",
             "length": 32
+          }
+        },
+        {
+          "name": "info",
+          "type": {
+            "type-name": "Struct",
+            "name": "ClinicProfileInfo",
+            "elements": [
+              {
+                "name": "uri",
+                "type": {
+                  "type-name": "Opaque",
+                  "tsType": "string"
+                }
+              },
+              {
+                "name": "name",
+                "type": {
+                  "type-name": "Opaque",
+                  "tsType": "string"
+                }
+              },
+              {
+                "name": "location",
+                "type": {
+                  "type-name": "Opaque",
+                  "tsType": "string"
+                }
+              },
+              {
+                "name": "latitude",
+                "type": {
+                  "type-name": "Field"
+                }
+              },
+              {
+                "name": "longitude",
+                "type": {
+                  "type-name": "Field"
+                }
+              },
+              {
+                "name": "image",
+                "type": {
+                  "type-name": "Opaque",
+                  "tsType": "string"
+                }
+              }
+            ]
           }
         }
       ],
@@ -352,6 +515,24 @@
             "maxval": 452312848583266388373324160190187140051835877600158453279131187530910662655
           }
         ]
+      }
+    },
+    {
+      "name": "inviteSecret",
+      "arguments": [
+      ],
+      "result type": {
+        "type-name": "Bytes",
+        "length": 32
+      }
+    },
+    {
+      "name": "inviteNonce",
+      "arguments": [
+      ],
+      "result type": {
+        "type-name": "Bytes",
+        "length": 32
       }
     },
     {
