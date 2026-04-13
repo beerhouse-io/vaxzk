@@ -63555,7 +63555,6 @@ ${h(e)}
                                 className: `flex items-center gap-3`,
                                 children: [
                                     (0, b.jsx)(Q9, {}),
-                                    `log`,
                                     (0, b.jsxs)(`button`, {
                                         onClick: e,
                                         className: `flex items-center gap-1 px-3 py-1.5 rounded-full text-error hover:bg-error/10 transition-colors text-sm font-semibold`,
@@ -63607,8 +63606,10 @@ ${h(e)}
                                                 if (!window.midnight) throw Error(`Midnight Extension not found. Please install Lace.`);
                                                 let e = Object.values(window.midnight).find((e)=>!!e && typeof e == `object` && `apiVersion` in e);
                                                 if (!e) throw Error(`Compatible Midnight wallet not found`);
-                                                let t = await p7(await e.connect(vl), vl), n = crypto.getRandomValues(new Uint8Array(32)), r = (await f7.deploy(t, n)).deployedContractAddress;
-                                                console.log(`Successfully deployed contract at:`, r), gl(r), o(r), i(!1);
+                                                let t = await p7(await e.connect(vl), vl), n = crypto.getRandomValues(new Uint8Array(32)), r = await f7.deploy(t, n);
+                                                console.log(`deployng...`);
+                                                let a = r.deployedContractAddress;
+                                                console.log(r), console.log(`Successfully deployed contract at:`, a), gl(a), o(a), i(!1);
                                             } catch (e) {
                                                 console.error(`Deployment failed:`, e), c(e instanceof Error ? e.message : String(e)), i(!1);
                                             }
