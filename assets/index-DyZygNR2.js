@@ -63345,8 +63345,10 @@ ${h(e)}
                                                     var t = n?.failure?.message ? String(n?.failure?.message) : ``;
                                                     t += `
 `;
-                                                    let r = n?.failure?.txData;
-                                                    t += new TextDecoder().decode(new Uint8Array(r)), console.log(`Mensagem:`, n?.failure?.message), c(t), console.log(`txData:`, new TextDecoder().decode(new Uint8Array(r)));
+                                                    let r = new Uint8Array(n?.failure?.cause?.txData);
+                                                    console.log(r);
+                                                    let i = new TextDecoder().decode(r);
+                                                    console.log(`txData:`, i), t += i, console.log(`Mensagem:`, n?.failure?.message), c(t), console.log(`txData:`, i);
                                                 }
                                                 i(!1);
                                             }
