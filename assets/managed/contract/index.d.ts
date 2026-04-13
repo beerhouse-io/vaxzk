@@ -22,14 +22,6 @@ export type SchnorrSignature = { announcement: __compactRuntime.JubjubPoint;
                                  response: bigint
                                };
 
-export type ClinicProfileInfo = { uri: string;
-                                  name: string;
-                                  location: string;
-                                  latitude: bigint;
-                                  longitude: bigint;
-                                  image: string
-                                };
-
 export type UserProfileInfo = { uri: string; nickname: string; country: string
                               };
 
@@ -55,9 +47,7 @@ export type ImpureCircuits<PS> = {
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeAdmin(context: __compactRuntime.CircuitContext<PS>,
               adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
-  addClinic(context: __compactRuntime.CircuitContext<PS>,
-            clinicId_0: Uint8Array,
-            info_0: ClinicProfileInfo): __compactRuntime.CircuitResults<PS, []>;
+  addClinic(context: __compactRuntime.CircuitContext<PS>, clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeClinic(context: __compactRuntime.CircuitContext<PS>,
                clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   addCertificateIssuer(context: __compactRuntime.CircuitContext<PS>,
@@ -83,9 +73,7 @@ export type ProvableCircuits<PS> = {
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeAdmin(context: __compactRuntime.CircuitContext<PS>,
               adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
-  addClinic(context: __compactRuntime.CircuitContext<PS>,
-            clinicId_0: Uint8Array,
-            info_0: ClinicProfileInfo): __compactRuntime.CircuitResults<PS, []>;
+  addClinic(context: __compactRuntime.CircuitContext<PS>, clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeClinic(context: __compactRuntime.CircuitContext<PS>,
                clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   addCertificateIssuer(context: __compactRuntime.CircuitContext<PS>,
@@ -129,9 +117,7 @@ export type Circuits<PS> = {
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeAdmin(context: __compactRuntime.CircuitContext<PS>,
               adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
-  addClinic(context: __compactRuntime.CircuitContext<PS>,
-            clinicId_0: Uint8Array,
-            info_0: ClinicProfileInfo): __compactRuntime.CircuitResults<PS, []>;
+  addClinic(context: __compactRuntime.CircuitContext<PS>, clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeClinic(context: __compactRuntime.CircuitContext<PS>,
                clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   addCertificateIssuer(context: __compactRuntime.CircuitContext<PS>,
@@ -155,9 +141,8 @@ export type Ledger = {
   clinics: {
     isEmpty(): boolean;
     size(): bigint;
-    member(key_0: Uint8Array): boolean;
-    lookup(key_0: Uint8Array): ClinicProfileInfo;
-    [Symbol.iterator](): Iterator<[Uint8Array, ClinicProfileInfo]>
+    member(elem_0: Uint8Array): boolean;
+    [Symbol.iterator](): Iterator<Uint8Array>
   };
   vaccines: {
     isEmpty(): boolean;

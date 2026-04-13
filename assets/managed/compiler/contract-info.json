@@ -266,55 +266,6 @@
             "type-name": "Bytes",
             "length": 32
           }
-        },
-        {
-          "name": "info",
-          "type": {
-            "type-name": "Struct",
-            "name": "ClinicProfileInfo",
-            "elements": [
-              {
-                "name": "uri",
-                "type": {
-                  "type-name": "Opaque",
-                  "tsType": "string"
-                }
-              },
-              {
-                "name": "name",
-                "type": {
-                  "type-name": "Opaque",
-                  "tsType": "string"
-                }
-              },
-              {
-                "name": "location",
-                "type": {
-                  "type-name": "Opaque",
-                  "tsType": "string"
-                }
-              },
-              {
-                "name": "latitude",
-                "type": {
-                  "type-name": "Field"
-                }
-              },
-              {
-                "name": "longitude",
-                "type": {
-                  "type-name": "Field"
-                }
-              },
-              {
-                "name": "image",
-                "type": {
-                  "type-name": "Opaque",
-                  "tsType": "string"
-                }
-              }
-            ]
-          }
         }
       ],
       "result-type": {
