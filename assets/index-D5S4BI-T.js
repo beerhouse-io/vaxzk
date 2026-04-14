@@ -13156,9 +13156,9 @@ perfecta armonía.`,
             },
             children: e
         });
-    }, pl = ()=>(0, F.useContext)(dl), ml = `preprod`, hl = `vaxzk_contract_1.0`;
+    }, pl = ()=>(0, F.useContext)(dl), ml = `preprod`, hl = `vaxzk_contract_`;
     function gl() {
-        return localStorage.getItem(`vaxzk_contract_1.0`) ?? `140b5d4c7b538b989682bb251d7729b544092caa9e53a8059f686fd9fb0fc8b9`;
+        return localStorage.getItem(`vaxzk_contract_`) ?? ``;
     }
     function _l(e) {
         localStorage.setItem(hl, e);
@@ -63309,8 +63309,21 @@ ${h(e)}
                                                 console.log(r), console.log(`Successfully deployed contract at:`, a), _l(a), o(a), i(!1);
                                             } catch (e) {
                                                 if (console.error(`Deployment failed:`, e), e && typeof e == `object` && `cause` in e) {
-                                                    let t = e.cause;
-                                                    console.log(t instanceof M5), t instanceof M5 && (console.log(JSON.parse(t.message)), c(JSON.parse(t.message)), console.log(t.finalizedTxData));
+                                                    let n = e.cause;
+                                                    var t = n?.failure?.message ? String(n?.failure?.message) : ``;
+                                                    let r = n?.failure?.cause?.txData, i = B6(r);
+                                                    console.log(`txData:`, i);
+                                                    try {
+                                                        if (r) {
+                                                            let e = r.type === `Buffer` ? r.data : r, t = e instanceof Uint8Array ? e : new Uint8Array(Object.values(e));
+                                                            console.log(`uint8TxData:`, t);
+                                                            let n = B6(t);
+                                                            console.log(`txData (hex):`, n);
+                                                        }
+                                                    } catch  {
+                                                        console.log(`txData (json fallback):`, JSON.stringify(r));
+                                                    }
+                                                    c(t);
                                                 }
                                                 i(!1);
                                             }
