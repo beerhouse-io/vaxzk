@@ -63425,8 +63425,10 @@ ${h(e)}
                                                 console.log(r), console.log(`Successfully deployed contract at:`, a), _l(a), o(a), i(!1);
                                             } catch (e) {
                                                 if (console.error(`Deployment failed:`, e), e && typeof e == `object` && `cause` in e) {
-                                                    let t = e.cause;
-                                                    c(t?.failure?.message ? String(t?.failure?.message) : ``);
+                                                    let n = e.cause;
+                                                    var t = n?.failure?.message ? String(n?.failure?.message) : ``;
+                                                    let r = n?.failure?.cause?.txData, i = Object.values(r), a = String.fromCharCode(...i);
+                                                    console.log(a), t = t + `<br>` + a, c(t);
                                                 }
                                                 i(!1);
                                             }
