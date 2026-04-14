@@ -64,44 +64,6 @@
       }
     },
     {
-      "name": "registerInvite",
-      "pure": false,
-      "proof": true,
-      "arguments": [
-      ],
-      "result-type": {
-        "type-name": "Tuple",
-        "types": [
-        ]
-      }
-    },
-    {
-      "name": "useInvite",
-      "pure": false,
-      "proof": true,
-      "arguments": [
-        {
-          "name": "_secret",
-          "type": {
-            "type-name": "Bytes",
-            "length": 32
-          }
-        },
-        {
-          "name": "_nonce",
-          "type": {
-            "type-name": "Bytes",
-            "length": 32
-          }
-        }
-      ],
-      "result-type": {
-        "type-name": "Tuple",
-        "types": [
-        ]
-      }
-    },
-    {
       "name": "getShieldedId",
       "pure": true,
       "proof": false,
@@ -390,24 +352,6 @@
             "maxval": 452312848583266388373324160190187140051835877600158453279131187530910662655
           }
         ]
-      }
-    },
-    {
-      "name": "inviteSecret",
-      "arguments": [
-      ],
-      "result type": {
-        "type-name": "Bytes",
-        "length": 32
-      }
-    },
-    {
-      "name": "inviteNonce",
-      "arguments": [
-      ],
-      "result type": {
-        "type-name": "Bytes",
-        "length": 32
       }
     },
     {
