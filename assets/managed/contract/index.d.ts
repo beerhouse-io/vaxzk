@@ -25,11 +25,17 @@ export type SchnorrSignature = { announcement: __compactRuntime.JubjubPoint;
 export type Witnesses<PS> = {
   getSchnorrReduction(context: __compactRuntime.WitnessContext<Ledger, PS>,
                       challengeHash_0: bigint): [PS, [bigint, bigint]];
+  inviteSecret(context: __compactRuntime.WitnessContext<Ledger, PS>): [PS, Uint8Array];
+  inviteNonce(context: __compactRuntime.WitnessContext<Ledger, PS>): [PS, Uint8Array];
   localSk(context: __compactRuntime.WitnessContext<Ledger, PS>): [PS, Uint8Array];
   getAttestedCertProofWitness(context: __compactRuntime.WitnessContext<Ledger, PS>): [PS, VaxZkProof];
 }
 
 export type ImpureCircuits<PS> = {
+  registerInvite(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, []>;
+  useInvite(context: __compactRuntime.CircuitContext<PS>,
+            _secret_0: Uint8Array,
+            _nonce_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   getCertIssuerId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   getProofReqId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
@@ -49,6 +55,10 @@ export type ImpureCircuits<PS> = {
 }
 
 export type ProvableCircuits<PS> = {
+  registerInvite(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, []>;
+  useInvite(context: __compactRuntime.CircuitContext<PS>,
+            _secret_0: Uint8Array,
+            _nonce_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   getCertIssuerId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   getProofReqId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
@@ -85,6 +95,10 @@ export type Circuits<PS> = {
                         personalId_0: Uint8Array,
                         expirationDate_0: bigint,
                         userPubKey_0: Uint8Array): __compactRuntime.CircuitResults<PS, bigint>;
+  registerInvite(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, []>;
+  useInvite(context: __compactRuntime.CircuitContext<PS>,
+            _secret_0: Uint8Array,
+            _nonce_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   getShieldedId(context: __compactRuntime.CircuitContext<PS>, id_0: Uint8Array): __compactRuntime.CircuitResults<PS, Uint8Array>;
   getCertIssuerId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
   getProofReqId(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, Uint8Array>;
@@ -105,6 +119,7 @@ export type Circuits<PS> = {
 }
 
 export type Ledger = {
+  readonly inviteHash: Uint8Array;
   admins: {
     isEmpty(): boolean;
     size(): bigint;
