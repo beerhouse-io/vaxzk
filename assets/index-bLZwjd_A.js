@@ -13156,9 +13156,9 @@ perfecta armonía.`,
             },
             children: e
         });
-    }, pl = ()=>(0, F.useContext)(dl), ml = `preprod`, hl = `vaxzk_contract`;
+    }, pl = ()=>(0, F.useContext)(dl), ml = `preprod`, hl = `vaxzk_contract_1.0`;
     function gl() {
-        return localStorage.getItem(`vaxzk_contract`) ?? `140b5d4c7b538b989682bb251d7729b544092caa9e53a8059f686fd9fb0fc8b9`;
+        return localStorage.getItem(`vaxzk_contract_1.0`) ?? `140b5d4c7b538b989682bb251d7729b544092caa9e53a8059f686fd9fb0fc8b9`;
     }
     function _l(e) {
         localStorage.setItem(hl, e);
