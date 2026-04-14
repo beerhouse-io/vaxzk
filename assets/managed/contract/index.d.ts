@@ -119,7 +119,6 @@ export type Circuits<PS> = {
 }
 
 export type Ledger = {
-  readonly inviteHash: Uint8Array;
   admins: {
     isEmpty(): boolean;
     size(): bigint;

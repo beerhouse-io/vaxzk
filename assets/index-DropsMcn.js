@@ -13156,18 +13156,17 @@ perfecta armonía.`,
             },
             children: e
         });
-    }, pl = ()=>(0, F.useContext)(dl), ml = `vaxzk_contract_address`;
-    function hl() {
-        return localStorage.getItem(`vaxzk_contract_address`) ?? ``;
+    }, pl = ()=>(0, F.useContext)(dl), ml = `preprod`, hl = `vaxzk_contract`;
+    function gl() {
+        return localStorage.getItem(`vaxzk_contract`) ?? `140b5d4c7b538b989682bb251d7729b544092caa9e53a8059f686fd9fb0fc8b9`;
     }
-    function gl(e) {
-        localStorage.setItem(ml, e);
+    function _l(e) {
+        localStorage.setItem(hl, e);
     }
-    function _l() {
-        localStorage.removeItem(ml);
+    function vl() {
+        localStorage.removeItem(hl);
     }
-    hl();
-    var vl = `preprod`, yl = (()=>{
+    var yl = (()=>{
         if (window.midnight) return Object.values(window.midnight).find((e)=>!!e && typeof e == `object` && `apiVersion` in e);
     })(), bl = ({ onLoginSuccess: e })=>{
         let { t } = pl(), [n, r] = (0, F.useState)(`idle`), [i, a] = (0, F.useState)(null);
@@ -13261,7 +13260,7 @@ perfecta armonía.`,
                                         console.log(`Found wallet:`, yl.name, yl.apiVersion);
                                         try {
                                             r(`connecting`), a(null);
-                                            let n = await yl.connect(vl), i = await n.getShieldedAddresses();
+                                            let n = await yl.connect(ml), i = await n.getShieldedAddresses();
                                             if (i.shieldedAddress) r(`connected`), e(i.shieldedAddress, n);
                                             else throw Error(t.shieldedAddressNotFound);
                                         } catch (e) {
@@ -13330,15 +13329,15 @@ perfecta armonía.`,
         });
     }, xl = [
         {
-            code: `admin`,
+            key: `admin`,
             label: `Admin`
         },
         {
-            code: `clinic`,
+            key: `clinic`,
             label: `Clinic`
         },
         {
-            code: `user`,
+            key: `user`,
             label: `User`
         }
     ], Sl = (0, F.createContext)({
@@ -13356,10 +13355,10 @@ perfecta armonía.`,
                 defaultValue: t,
                 className: `flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-bold transition-colors bg-primary`,
                 onChange: (e)=>n(e.target.value),
-                children: xl.map(({ code: e, label: t })=>(0, b.jsx)(`option`, {
+                children: xl.map(({ key: e, label: t })=>(0, b.jsx)(`option`, {
                         value: e,
                         children: t
-                    }))
+                    }, e))
             })
         });
     }
@@ -14447,7 +14446,7 @@ perfecta armonía.`,
                 registerInvite: (...e)=>{
                     if (e.length !== 1) throw new S(`registerInvite: expected 1 argument (as invoked from Typescript), received ${e.length}`);
                     let t = e[0];
-                    typeof t == `object` && t.currentQueryContext != null || w(`registerInvite`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 13 char 1`, `CircuitContext`, t);
+                    typeof t == `object` && t.currentQueryContext != null || w(`registerInvite`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 15 char 3`, `CircuitContext`, t);
                     let n = {
                         ...t,
                         gasCost: hc()
@@ -14473,7 +14472,7 @@ perfecta armonía.`,
                 useInvite: (...e)=>{
                     if (e.length !== 3) throw new S(`useInvite: expected 3 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1], r = e[2];
-                    typeof t == `object` && t.currentQueryContext != null || w(`useInvite`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 20 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`useInvite`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 20 char 1`, `Bytes<32>`, n), r.buffer instanceof ArrayBuffer && r.BYTES_PER_ELEMENT === 1 && r.length === 32 || w(`useInvite`, `argument 2 (argument 3 as invoked from Typescript)`, `Invites.compact line 20 char 1`, `Bytes<32>`, r);
+                    typeof t == `object` && t.currentQueryContext != null || w(`useInvite`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 22 char 3`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`useInvite`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 22 char 3`, `Bytes<32>`, n), r.buffer instanceof ArrayBuffer && r.BYTES_PER_ELEMENT === 1 && r.length === 32 || w(`useInvite`, `argument 2 (argument 3 as invoked from Typescript)`, `Invites.compact line 22 char 3`, `Bytes<32>`, r);
                     let i = {
                         ...t,
                         gasCost: hc()
@@ -14505,7 +14504,7 @@ perfecta armonía.`,
                 getCertIssuerId: (...e)=>{
                     if (e.length !== 1) throw new S(`getCertIssuerId: expected 1 argument (as invoked from Typescript), received ${e.length}`);
                     let t = e[0];
-                    typeof t == `object` && t.currentQueryContext != null || w(`getCertIssuerId`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 62 char 1`, `CircuitContext`, t);
+                    typeof t == `object` && t.currentQueryContext != null || w(`getCertIssuerId`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 65 char 1`, `CircuitContext`, t);
                     let n = {
                         ...t,
                         gasCost: hc()
@@ -14531,7 +14530,7 @@ perfecta armonía.`,
                 getProofReqId: (...e)=>{
                     if (e.length !== 1) throw new S(`getProofReqId: expected 1 argument (as invoked from Typescript), received ${e.length}`);
                     let t = e[0];
-                    typeof t == `object` && t.currentQueryContext != null || w(`getProofReqId`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 70 char 1`, `CircuitContext`, t);
+                    typeof t == `object` && t.currentQueryContext != null || w(`getProofReqId`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 73 char 1`, `CircuitContext`, t);
                     let n = {
                         ...t,
                         gasCost: hc()
@@ -14557,7 +14556,7 @@ perfecta armonía.`,
                 addAdmin: (...e)=>{
                     if (e.length !== 2) throw new S(`addAdmin: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`addAdmin`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 94 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`addAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 94 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`addAdmin`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 97 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`addAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 97 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: hc()
@@ -14583,7 +14582,7 @@ perfecta armonía.`,
                 revokeAdmin: (...e)=>{
                     if (e.length !== 2) throw new S(`revokeAdmin: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`revokeAdmin`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 101 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`revokeAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 101 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`revokeAdmin`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 104 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`revokeAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 104 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: hc()
@@ -14609,7 +14608,7 @@ perfecta armonía.`,
                 addClinic: (...e)=>{
                     if (e.length !== 2) throw new S(`addClinic: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`addClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 108 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`addClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 108 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`addClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 111 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`addClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 111 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: hc()
@@ -14635,7 +14634,7 @@ perfecta armonía.`,
                 revokeClinic: (...e)=>{
                     if (e.length !== 2) throw new S(`revokeClinic: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`revokeClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 115 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`revokeClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 115 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`revokeClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 118 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`revokeClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 118 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: hc()
@@ -14661,7 +14660,7 @@ perfecta armonía.`,
                 addCertificateIssuer: (...e)=>{
                     if (e.length !== 2) throw new S(`addCertificateIssuer: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`addCertificateIssuer`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 122 char 1`, `CircuitContext`, t), typeof n != `object` && w(`addCertificateIssuer`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 122 char 1`, `struct CertIssuerInfo<uri: Opaque<"string">, name: Opaque<"string">, key: Opaque<"JubjubPoint">, verificationEndpoint: Opaque<"string">>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`addCertificateIssuer`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 125 char 1`, `CircuitContext`, t), typeof n != `object` && w(`addCertificateIssuer`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 125 char 1`, `struct CertIssuerInfo<uri: Opaque<"string">, name: Opaque<"string">, key: Opaque<"JubjubPoint">, verificationEndpoint: Opaque<"string">>`, n);
                     let r = {
                         ...t,
                         gasCost: hc()
@@ -14687,7 +14686,7 @@ perfecta armonía.`,
                 addVaccine: (...e)=>{
                     if (e.length !== 2) throw new S(`addVaccine: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`addVaccine`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 131 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 20 || w(`addVaccine`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 131 char 1`, `Bytes<20>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`addVaccine`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 134 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 20 || w(`addVaccine`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 134 char 1`, `Bytes<20>`, n);
                     let r = {
                         ...t,
                         gasCost: hc()
@@ -14713,7 +14712,7 @@ perfecta armonía.`,
                 delVaccine: (...e)=>{
                     if (e.length !== 2) throw new S(`delVaccine: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`delVaccine`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 137 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 20 || w(`delVaccine`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 137 char 1`, `Bytes<20>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`delVaccine`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 140 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 20 || w(`delVaccine`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 140 char 1`, `Bytes<20>`, n);
                     let r = {
                         ...t,
                         gasCost: hc()
@@ -14739,7 +14738,7 @@ perfecta armonía.`,
                 requestVaccineProof: (...e)=>{
                     if (e.length !== 2) throw new S(`requestVaccineProof: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`requestVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 144 char 1`, `CircuitContext`, t), typeof n == `object` && n.vaccine.buffer instanceof ArrayBuffer && n.vaccine.BYTES_PER_ELEMENT === 1 && n.vaccine.length === 20 && n.personalId.buffer instanceof ArrayBuffer && n.personalId.BYTES_PER_ELEMENT === 1 && n.personalId.length === 20 && typeof n.validUntil == `bigint` && n.validUntil >= 0n && n.validUntil <= 340282366920938463463374607431768211455n || w(`requestVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 144 char 1`, `struct VaccineProofRequest<vaccine: Bytes<20>, personalId: Bytes<20>, validUntil: Uint<0..340282366920938463463374607431768211456>>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`requestVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 147 char 1`, `CircuitContext`, t), typeof n == `object` && n.vaccine.buffer instanceof ArrayBuffer && n.vaccine.BYTES_PER_ELEMENT === 1 && n.vaccine.length === 20 && n.personalId.buffer instanceof ArrayBuffer && n.personalId.BYTES_PER_ELEMENT === 1 && n.personalId.length === 20 && typeof n.validUntil == `bigint` && n.validUntil >= 0n && n.validUntil <= 340282366920938463463374607431768211455n || w(`requestVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 147 char 1`, `struct VaccineProofRequest<vaccine: Bytes<20>, personalId: Bytes<20>, validUntil: Uint<0..340282366920938463463374607431768211456>>`, n);
                     let r = {
                         ...t,
                         gasCost: hc()
@@ -14765,7 +14764,7 @@ perfecta armonía.`,
                 submitVaccineProof: (...e)=>{
                     if (e.length !== 2) throw new S(`submitVaccineProof: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`submitVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 155 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`submitVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 155 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`submitVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 158 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`submitVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 158 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: hc()
@@ -15399,14 +15398,14 @@ perfecta armonía.`,
         }
         _inviteSecret_0(e, t) {
             let n = gc(Jl(e.currentQueryContext.state), e.currentPrivateState, e.currentQueryContext.address), [r, i] = this.witnesses.inviteSecret(n);
-            return e.currentPrivateState = r, i.buffer instanceof ArrayBuffer && i.BYTES_PER_ELEMENT === 1 && i.length === 32 || w(`inviteSecret`, `return value`, `Invites.compact line 5 char 1`, `Bytes<32>`, i), t.privateTranscriptOutputs.push({
+            return e.currentPrivateState = r, i.buffer instanceof ArrayBuffer && i.BYTES_PER_ELEMENT === 1 && i.length === 32 || w(`inviteSecret`, `return value`, `Invites.compact line 6 char 3`, `Bytes<32>`, i), t.privateTranscriptOutputs.push({
                 value: I.toValue(i),
                 alignment: I.alignment()
             }), i;
         }
         _inviteNonce_0(e, t) {
             let n = gc(Jl(e.currentQueryContext.state), e.currentPrivateState, e.currentQueryContext.address), [r, i] = this.witnesses.inviteNonce(n);
-            return e.currentPrivateState = r, i.buffer instanceof ArrayBuffer && i.BYTES_PER_ELEMENT === 1 && i.length === 32 || w(`inviteNonce`, `return value`, `Invites.compact line 6 char 1`, `Bytes<32>`, i), t.privateTranscriptOutputs.push({
+            return e.currentPrivateState = r, i.buffer instanceof ArrayBuffer && i.BYTES_PER_ELEMENT === 1 && i.length === 32 || w(`inviteNonce`, `return value`, `Invites.compact line 8 char 3`, `Bytes<32>`, i), t.privateTranscriptOutputs.push({
                 value: I.toValue(i),
                 alignment: I.alignment()
             }), i;
@@ -15476,14 +15475,14 @@ perfecta armonía.`,
         }
         _localSk_0(e, t) {
             let n = gc(Jl(e.currentQueryContext.state), e.currentPrivateState, e.currentQueryContext.address), [r, i] = this.witnesses.localSk(n);
-            return e.currentPrivateState = r, i.buffer instanceof ArrayBuffer && i.BYTES_PER_ELEMENT === 1 && i.length === 32 || w(`localSk`, `return value`, `vaxzk.compact line 36 char 1`, `Bytes<32>`, i), t.privateTranscriptOutputs.push({
+            return e.currentPrivateState = r, i.buffer instanceof ArrayBuffer && i.BYTES_PER_ELEMENT === 1 && i.length === 32 || w(`localSk`, `return value`, `vaxzk.compact line 39 char 1`, `Bytes<32>`, i), t.privateTranscriptOutputs.push({
                 value: I.toValue(i),
                 alignment: I.alignment()
             }), i;
         }
         _getAttestedCertProofWitness_0(e, t) {
             let n = gc(Jl(e.currentQueryContext.state), e.currentPrivateState, e.currentQueryContext.address), [r, i] = this.witnesses.getAttestedCertProofWitness(n);
-            return e.currentPrivateState = r, typeof i == `object` && i.issuerId.buffer instanceof ArrayBuffer && i.issuerId.BYTES_PER_ELEMENT === 1 && i.issuerId.length === 32 && i.vaccine.buffer instanceof ArrayBuffer && i.vaccine.BYTES_PER_ELEMENT === 1 && i.vaccine.length === 20 && i.personalId.buffer instanceof ArrayBuffer && i.personalId.BYTES_PER_ELEMENT === 1 && i.personalId.length === 20 && typeof i.expirationDate == `bigint` && i.expirationDate >= 0n && i.expirationDate <= 340282366920938463463374607431768211455n && typeof i.issuerSignature == `object` && typeof i.issuerSignature.response == `bigint` && i.issuerSignature.response >= 0 && i.issuerSignature.response <= Ls || w(`getAttestedCertProofWitness`, `return value`, `vaxzk.compact line 39 char 1`, `struct VaxZkProof<issuerId: Bytes<32>, vaccine: Bytes<20>, personalId: Bytes<20>, expirationDate: Uint<0..340282366920938463463374607431768211456>, issuerSignature: struct SchnorrSignature<announcement: Opaque<"JubjubPoint">, response: Field>>`, i), t.privateTranscriptOutputs.push({
+            return e.currentPrivateState = r, typeof i == `object` && i.issuerId.buffer instanceof ArrayBuffer && i.issuerId.BYTES_PER_ELEMENT === 1 && i.issuerId.length === 32 && i.vaccine.buffer instanceof ArrayBuffer && i.vaccine.BYTES_PER_ELEMENT === 1 && i.vaccine.length === 20 && i.personalId.buffer instanceof ArrayBuffer && i.personalId.BYTES_PER_ELEMENT === 1 && i.personalId.length === 20 && typeof i.expirationDate == `bigint` && i.expirationDate >= 0n && i.expirationDate <= 340282366920938463463374607431768211455n && typeof i.issuerSignature == `object` && typeof i.issuerSignature.response == `bigint` && i.issuerSignature.response >= 0 && i.issuerSignature.response <= Ls || w(`getAttestedCertProofWitness`, `return value`, `vaxzk.compact line 42 char 1`, `struct VaxZkProof<issuerId: Bytes<32>, vaccine: Bytes<20>, personalId: Bytes<20>, expirationDate: Uint<0..340282366920938463463374607431768211456>, issuerSignature: struct SchnorrSignature<announcement: Opaque<"JubjubPoint">, response: Field>>`, i), t.privateTranscriptOutputs.push({
                 value: Il.toValue(i),
                 alignment: Il.alignment()
             }), i;
@@ -15562,7 +15561,7 @@ perfecta armonía.`,
                     0,
                     0,
                     0
-                ]), `vaxzk.compact line 64 char 45`),
+                ]), `vaxzk.compact line 67 char 45`),
                 Bl.fromValue(P(e, t, [
                     {
                         dup: {
@@ -15659,7 +15658,7 @@ perfecta armonía.`,
                     0,
                     0,
                     0
-                ]), `vaxzk.compact line 72 char 45`),
+                ]), `vaxzk.compact line 75 char 45`),
                 Bl.fromValue(P(e, t, [
                     {
                         dup: {
@@ -16732,36 +16731,6 @@ perfecta armonía.`,
             privateTranscriptOutputs: []
         };
         return {
-            get inviteHash () {
-                return I.fromValue(P(n, r, [
-                    {
-                        dup: {
-                            n: 0
-                        }
-                    },
-                    {
-                        idx: {
-                            cached: !1,
-                            pushPath: !1,
-                            path: [
-                                {
-                                    tag: `value`,
-                                    value: {
-                                        value: L.toValue(0n),
-                                        alignment: L.alignment()
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        popeq: {
-                            cached: !1,
-                            result: void 0
-                        }
-                    }
-                ]).value);
-            },
             admins: {
                 isEmpty (...e) {
                     if (e.length !== 0) throw new S(`isEmpty: expected 0 arguments, received ${e.length}`);
@@ -16840,7 +16809,7 @@ perfecta armonía.`,
                 member (...e) {
                     if (e.length !== 1) throw new S(`member: expected 1 argument, received ${e.length}`);
                     let t = e[0];
-                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`member`, `argument 1`, `vaxzk.compact line 11 char 1`, `Bytes<32>`, t), Ml.fromValue(P(n, r, [
+                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`member`, `argument 1`, `vaxzk.compact line 14 char 1`, `Bytes<32>`, t), Ml.fromValue(P(n, r, [
                         {
                             dup: {
                                 n: 0
@@ -16962,7 +16931,7 @@ perfecta armonía.`,
                 member (...e) {
                     if (e.length !== 1) throw new S(`member: expected 1 argument, received ${e.length}`);
                     let t = e[0];
-                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`member`, `argument 1`, `vaxzk.compact line 15 char 1`, `Bytes<32>`, t), Ml.fromValue(P(n, r, [
+                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`member`, `argument 1`, `vaxzk.compact line 18 char 1`, `Bytes<32>`, t), Ml.fromValue(P(n, r, [
                         {
                             dup: {
                                 n: 0
@@ -17084,7 +17053,7 @@ perfecta armonía.`,
                 member (...e) {
                     if (e.length !== 1) throw new S(`member: expected 1 argument, received ${e.length}`);
                     let t = e[0];
-                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 20 || w(`member`, `argument 1`, `vaxzk.compact line 18 char 1`, `Bytes<20>`, t), Ml.fromValue(P(n, r, [
+                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 20 || w(`member`, `argument 1`, `vaxzk.compact line 21 char 1`, `Bytes<20>`, t), Ml.fromValue(P(n, r, [
                         {
                             dup: {
                                 n: 0
@@ -17206,7 +17175,7 @@ perfecta armonía.`,
                 member (...e) {
                     if (e.length !== 1) throw new S(`member: expected 1 argument, received ${e.length}`);
                     let t = e[0];
-                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`member`, `argument 1`, `vaxzk.compact line 21 char 1`, `Bytes<32>`, t), Ml.fromValue(P(n, r, [
+                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`member`, `argument 1`, `vaxzk.compact line 24 char 1`, `Bytes<32>`, t), Ml.fromValue(P(n, r, [
                         {
                             dup: {
                                 n: 0
@@ -17248,7 +17217,7 @@ perfecta armonía.`,
                 lookup (...e) {
                     if (e.length !== 1) throw new S(`lookup: expected 1 argument, received ${e.length}`);
                     let t = e[0];
-                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`lookup`, `argument 1`, `vaxzk.compact line 21 char 1`, `Bytes<32>`, t), Rl.fromValue(P(n, r, [
+                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`lookup`, `argument 1`, `vaxzk.compact line 24 char 1`, `Bytes<32>`, t), Rl.fromValue(P(n, r, [
                         {
                             dup: {
                                 n: 0
@@ -17442,7 +17411,7 @@ perfecta armonía.`,
                 member (...e) {
                     if (e.length !== 1) throw new S(`member: expected 1 argument, received ${e.length}`);
                     let t = e[0];
-                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`member`, `argument 1`, `vaxzk.compact line 30 char 1`, `Bytes<32>`, t), Ml.fromValue(P(n, r, [
+                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`member`, `argument 1`, `vaxzk.compact line 33 char 1`, `Bytes<32>`, t), Ml.fromValue(P(n, r, [
                         {
                             dup: {
                                 n: 0
@@ -17484,7 +17453,7 @@ perfecta armonía.`,
                 lookup (...e) {
                     if (e.length !== 1) throw new S(`lookup: expected 1 argument, received ${e.length}`);
                     let t = e[0];
-                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`lookup`, `argument 1`, `vaxzk.compact line 30 char 1`, `Bytes<32>`, t), jl.fromValue(P(n, r, [
+                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`lookup`, `argument 1`, `vaxzk.compact line 33 char 1`, `Bytes<32>`, t), jl.fromValue(P(n, r, [
                         {
                             dup: {
                                 n: 0
@@ -17618,7 +17587,7 @@ perfecta armonía.`,
                 member (...e) {
                     if (e.length !== 1) throw new S(`member: expected 1 argument, received ${e.length}`);
                     let t = e[0];
-                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`member`, `argument 1`, `vaxzk.compact line 33 char 1`, `Bytes<32>`, t), Ml.fromValue(P(n, r, [
+                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`member`, `argument 1`, `vaxzk.compact line 36 char 1`, `Bytes<32>`, t), Ml.fromValue(P(n, r, [
                         {
                             dup: {
                                 n: 0
@@ -17660,7 +17629,7 @@ perfecta armonía.`,
                 lookup (...e) {
                     if (e.length !== 1) throw new S(`lookup: expected 1 argument, received ${e.length}`);
                     let t = e[0];
-                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`lookup`, `argument 1`, `vaxzk.compact line 33 char 1`, `Bytes<32>`, t), Il.fromValue(P(n, r, [
+                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`lookup`, `argument 1`, `vaxzk.compact line 36 char 1`, `Bytes<32>`, t), Il.fromValue(P(n, r, [
                         {
                             dup: {
                                 n: 0
@@ -17734,7 +17703,7 @@ perfecta armonía.`,
         getShieldedId: (...e)=>{
             if (e.length !== 1) throw new S(`getShieldedId: expected 1 argument (as invoked from Typescript), received ${e.length}`);
             let t = e[0];
-            return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`getShieldedId`, `argument 1`, `vaxzk.compact line 57 char 1`, `Bytes<32>`, t), Yl._getShieldedId_0(t);
+            return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`getShieldedId`, `argument 1`, `vaxzk.compact line 60 char 1`, `Bytes<32>`, t), Yl._getShieldedId_0(t);
         }
     }, Zl, Ql = (e)=>{
         Zl = e;
@@ -61150,9 +61119,9 @@ ${h(e)}
         return (0, F.useEffect)(()=>{
             let t;
             async function n() {
-                let n = hl();
+                let n = gl();
                 if (!(!e || !n)) try {
-                    let i = await p7(e, vl), a = new Uint8Array(32), o = await f7.join(i, n, a);
+                    let i = await p7(e, ml), a = new Uint8Array(32), o = await f7.join(i, n, a);
                     d(o), t = o.state$.subscribe((e)=>{
                         r(e.vaccines);
                     });
@@ -62282,9 +62251,9 @@ ${h(e)}
         (0, F.useEffect)(()=>{
             let t;
             async function n() {
-                let n = hl();
+                let n = gl();
                 if (!(!e || !n)) try {
-                    let i = await p7(e, vl), a = new Uint8Array(32), o = await f7.join(i, n, a);
+                    let i = await p7(e, ml), a = new Uint8Array(32), o = await f7.join(i, n, a);
                     O(o), t = o.state$.subscribe((e)=>{
                         r(e.vaccines), d(e.issuers), S(e.vaccineProofReqs);
                     });
@@ -62773,9 +62742,9 @@ ${h(e)}
         return (0, F.useEffect)(()=>{
             let t;
             async function n() {
-                let n = hl();
+                let n = gl();
                 if (!(!e || !n)) try {
-                    let i = await p7(e, vl), a = new Uint8Array(32), o = await f7.join(i, n, a);
+                    let i = await p7(e, ml), a = new Uint8Array(32), o = await f7.join(i, n, a);
                     d(o), t = o.state$.subscribe((e)=>{
                         r(e.vaccines);
                     });
@@ -63240,7 +63209,7 @@ ${h(e)}
             ]
         });
     }, mPe = ({ onLogout: e, walletAddress: t })=>{
-        let { t: n } = pl(), [r, i] = (0, F.useState)(!1), [a, o] = (0, F.useState)(hl() || null), [s, c] = (0, F.useState)(null);
+        let { t: n } = pl(), [r, i] = (0, F.useState)(!1), [a, o] = (0, F.useState)(gl() || null), [s, c] = (0, F.useState)(null);
         return (0, b.jsxs)(`div`, {
             className: `bg-background text-on-background min-h-screen`,
             children: [
@@ -63336,8 +63305,8 @@ ${h(e)}
                                                 if (!window.midnight) throw Error(`Midnight Extension not found. Please install Lace.`);
                                                 let e = Object.values(window.midnight).find((e)=>!!e && typeof e == `object` && `apiVersion` in e);
                                                 if (!e) throw Error(`Compatible Midnight wallet not found`);
-                                                let t = await p7(await e.connect(vl), vl), n = crypto.getRandomValues(new Uint8Array(32)), r = await f7.deploy(t, n), a = r.deployedContractAddress;
-                                                console.log(r), console.log(`Successfully deployed contract at:`, a), gl(a), o(a), i(!1);
+                                                let t = await p7(await e.connect(ml), ml), n = crypto.getRandomValues(new Uint8Array(32)), r = await f7.deploy(t, n), a = r.deployedContractAddress;
+                                                console.log(r), console.log(`Successfully deployed contract at:`, a), _l(a), o(a), i(!1);
                                             } catch (e) {
                                                 if (console.error(`Deployment failed:`, e), e && typeof e == `object` && `cause` in e) {
                                                     let t = e.cause;
@@ -63455,7 +63424,7 @@ ${h(e)}
                                                     (0, b.jsx)(`button`, {
                                                         type: `button`,
                                                         onClick: ()=>{
-                                                            _l(), o(null), c(null);
+                                                            vl(), o(null), c(null);
                                                         },
                                                         className: `self-start text-xs text-green-700 underline hover:no-underline`,
                                                         children: `Deploy a new contract instead`
@@ -65268,7 +65237,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                 walletAddress: n,
                 connectedApi: i
             }) : (0, b.jsx)(b.Fragment, {
-                children: hl() ? (0, b.jsx)(VFe, {
+                children: gl() ? (0, b.jsx)(VFe, {
                     children: (0, b.jsxs)(mFe, {
                         children: [
                             (0, b.jsx)(D9, {
