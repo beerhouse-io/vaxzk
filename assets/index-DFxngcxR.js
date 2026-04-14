@@ -13179,7 +13179,7 @@ perfecta armonía.`,
                 children: hl.map(({ code: e, label: t })=>(0, b.jsx)(`option`, {
                         value: e,
                         children: t
-                    }))
+                    }, e))
             })
         });
     }
