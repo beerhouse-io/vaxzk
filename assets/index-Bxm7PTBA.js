@@ -64637,11 +64637,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             t(!1), r(null), a(null);
         };
         return (0, b.jsx)(b.Fragment, {
-            children: e ? (0, b.jsx)(lPe, {
-                onLogout: s,
-                walletAddress: n,
-                connectedApi: i
-            }) : (0, b.jsx)(b.Fragment, {
+            children: e ? (0, b.jsx)(b.Fragment, {
                 children: gl() ? (0, b.jsx)(RFe, {
                     children: (0, b.jsxs)(uFe, {
                         children: [
@@ -64651,15 +64647,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                             }),
                             (0, b.jsx)(D9, {
                                 path: `/`,
-                                element: (0, b.jsxs)(b.Fragment, {
-                                    children: [
-                                        (0, b.jsx)(Q9, {
-                                            fixed: !0
-                                        }),
-                                        (0, b.jsx)(qNe, {
-                                            onLoginSuccess: o
-                                        })
-                                    ]
+                                element: (0, b.jsx)(lPe, {
+                                    onLogout: s,
+                                    walletAddress: n,
+                                    connectedApi: i
                                 })
                             })
                         ]
@@ -64668,6 +64659,15 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                     onLogout: s,
                     walletAddress: n
                 })
+            }) : (0, b.jsxs)(b.Fragment, {
+                children: [
+                    (0, b.jsx)(Q9, {
+                        fixed: !0
+                    }),
+                    (0, b.jsx)(qNe, {
+                        onLoginSuccess: o
+                    })
+                ]
             })
         });
     }
