@@ -130,6 +130,63 @@
             "type-name": "Bytes",
             "length": 32
           }
+        },
+        {
+          "name": "clinicProfile",
+          "type": {
+            "type-name": "Struct",
+            "name": "ClinicProfile",
+            "elements": [
+              {
+                "name": "ownerId",
+                "type": {
+                  "type-name": "Bytes",
+                  "length": 32
+                }
+              },
+              {
+                "name": "name",
+                "type": {
+                  "type-name": "Bytes",
+                  "length": 32
+                }
+              },
+              {
+                "name": "urlImage",
+                "type": {
+                  "type-name": "Bytes",
+                  "length": 64
+                }
+              },
+              {
+                "name": "address",
+                "type": {
+                  "type-name": "Bytes",
+                  "length": 64
+                }
+              },
+              {
+                "name": "latitud",
+                "type": {
+                  "type-name": "Bytes",
+                  "length": 20
+                }
+              },
+              {
+                "name": "longitud",
+                "type": {
+                  "type-name": "Bytes",
+                  "length": 20
+                }
+              },
+              {
+                "name": "isOnline",
+                "type": {
+                  "type-name": "Boolean"
+                }
+              }
+            ]
+          }
         }
       ],
       "result-type": {
@@ -355,15 +412,6 @@
             "maxval": 452312848583266388373324160190187140051835877600158453279131187530910662655
           }
         ]
-      }
-    },
-    {
-      "name": "localSk",
-      "arguments": [
-      ],
-      "result type": {
-        "type-name": "Bytes",
-        "length": 32
       }
     },
     {

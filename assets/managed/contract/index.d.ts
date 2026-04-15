@@ -1,5 +1,14 @@
 import type * as __compactRuntime from '@midnight-ntwrk/compact-runtime';
 
+export type ClinicProfile = { ownerId: Uint8Array;
+                              name: Uint8Array;
+                              urlImage: Uint8Array;
+                              address: Uint8Array;
+                              latitud: Uint8Array;
+                              longitud: Uint8Array;
+                              isOnline: boolean
+                            };
+
 export type UserProfile = { isAdmin: boolean; isClinic: boolean };
 
 export type CertIssuerInfo = { uri: string;
@@ -27,7 +36,6 @@ export type SchnorrSignature = { announcement: __compactRuntime.JubjubPoint;
 export type Witnesses<PS> = {
   getSchnorrReduction(context: __compactRuntime.WitnessContext<Ledger, PS>,
                       challengeHash_0: bigint): [PS, [bigint, bigint]];
-  localSk(context: __compactRuntime.WitnessContext<Ledger, PS>): [PS, Uint8Array];
   getAttestedCertProofWitness(context: __compactRuntime.WitnessContext<Ledger, PS>): [PS, VaxZkProof];
 }
 
@@ -35,7 +43,9 @@ export type ImpureCircuits<PS> = {
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeAdmin(context: __compactRuntime.CircuitContext<PS>,
               adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
-  addClinic(context: __compactRuntime.CircuitContext<PS>, clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
+  addClinic(context: __compactRuntime.CircuitContext<PS>,
+            clinicId_0: Uint8Array,
+            clinicProfile_0: ClinicProfile): __compactRuntime.CircuitResults<PS, []>;
   revokeClinic(context: __compactRuntime.CircuitContext<PS>,
                clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   addCertificateIssuer(context: __compactRuntime.CircuitContext<PS>,
@@ -53,7 +63,9 @@ export type ProvableCircuits<PS> = {
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeAdmin(context: __compactRuntime.CircuitContext<PS>,
               adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
-  addClinic(context: __compactRuntime.CircuitContext<PS>, clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
+  addClinic(context: __compactRuntime.CircuitContext<PS>,
+            clinicId_0: Uint8Array,
+            clinicProfile_0: ClinicProfile): __compactRuntime.CircuitResults<PS, []>;
   revokeClinic(context: __compactRuntime.CircuitContext<PS>,
                clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   addCertificateIssuer(context: __compactRuntime.CircuitContext<PS>,
@@ -89,7 +101,9 @@ export type Circuits<PS> = {
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeAdmin(context: __compactRuntime.CircuitContext<PS>,
               adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
-  addClinic(context: __compactRuntime.CircuitContext<PS>, clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
+  addClinic(context: __compactRuntime.CircuitContext<PS>,
+            clinicId_0: Uint8Array,
+            clinicProfile_0: ClinicProfile): __compactRuntime.CircuitResults<PS, []>;
   revokeClinic(context: __compactRuntime.CircuitContext<PS>,
                clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   addCertificateIssuer(context: __compactRuntime.CircuitContext<PS>,
@@ -113,8 +127,16 @@ export type Ledger = {
   clinics: {
     isEmpty(): boolean;
     size(): bigint;
-    member(elem_0: Uint8Array): boolean;
-    [Symbol.iterator](): Iterator<Uint8Array>
+    member(key_0: Uint8Array): boolean;
+    lookup(key_0: Uint8Array): ClinicProfile;
+    [Symbol.iterator](): Iterator<[Uint8Array, ClinicProfile]>
+  };
+  ownerClinicIndex: {
+    isEmpty(): boolean;
+    size(): bigint;
+    member(key_0: Uint8Array): boolean;
+    lookup(key_0: Uint8Array): boolean;
+    [Symbol.iterator](): Iterator<[Uint8Array, boolean]>
   };
   vaccines: {
     isEmpty(): boolean;
