@@ -62371,7 +62371,9 @@ ${h(e)}
                                         className: `hidden md:block text-xl font-bold text-blue-800 tracking-tight`,
                                         children: [
                                             `VaxZk`,
-                                            hl() && (0, b.jsxs)(b.Fragment, {
+                                            hl() && (0, b.jsxs)(`a`, {
+                                                href: `https://preprod.nightforge.jp/address/${hl()}`,
+                                                target: `_blank`,
                                                 children: [
                                                     (0, b.jsx)(`br`, {}),
                                                     (0, b.jsxs)(`span`, {
