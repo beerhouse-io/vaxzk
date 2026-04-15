@@ -62788,9 +62788,20 @@ ${h(e)}
                                     (0, b.jsx)(`div`, {
                                         className: `hidden md:block h-8 w-[1px] bg-slate-200 mx-2`
                                     }),
-                                    (0, b.jsx)(`h1`, {
+                                    (0, b.jsxs)(`h1`, {
                                         className: `hidden md:block text-xl font-bold text-blue-800 tracking-tight`,
-                                        children: `VaxZk`
+                                        children: [
+                                            `VaxZk`,
+                                            ml() && (0, b.jsxs)(b.Fragment, {
+                                                children: [
+                                                    (0, b.jsx)(`br`, {}),
+                                                    (0, b.jsx)(`span`, {
+                                                        className: `text-xs font-medium text-slate-500`,
+                                                        children: ml()
+                                                    })
+                                                ]
+                                            })
+                                        ]
                                     })
                                 ]
                             }),
