@@ -8,7 +8,7 @@
     { "op": "constrain_bits", "var": 2, "bits": 8 },
     { "op": "constrain_bits", "var": 3, "bits": 248 },
     { "op": "load_imm", "imm": "01" },
-    { "op": "persistent_hash", "alignment": [{ "tag": "atom", "value": { "length": 32, "tag": "bytes" } }, { "tag": "atom", "value": { "length": 32, "tag": "bytes" } }], "inputs": [2, 3, 0, 1] },
+    { "op": "persistent_hash", "alignment": [{ "tag": "atom", "value": { "length": 32, "tag": "bytes" } }, { "tag": "atom", "value": { "length": 32, "tag": "bytes" } }], "inputs": [0, 1, 2, 3] },
     { "op": "load_imm", "imm": "30" },
     { "op": "declare_pub_input", "var": 7 },
     { "op": "pi_skip", "guard": 4, "count": 1 },
