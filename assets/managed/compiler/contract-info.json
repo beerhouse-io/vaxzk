@@ -64,7 +64,7 @@
       }
     },
     {
-      "name": "registerInvite",
+      "name": "registerInviteAdmin",
       "pure": false,
       "proof": true,
       "arguments": [
@@ -97,25 +97,6 @@
       "result-type": {
         "type-name": "Bytes",
         "length": 32
-      }
-    },
-    {
-      "name": "addAdmin",
-      "pure": false,
-      "proof": true,
-      "arguments": [
-        {
-          "name": "adminId",
-          "type": {
-            "type-name": "Bytes",
-            "length": 32
-          }
-        }
-      ],
-      "result-type": {
-        "type-name": "Tuple",
-        "types": [
-        ]
       }
     },
     {
