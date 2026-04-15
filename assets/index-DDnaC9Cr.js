@@ -63101,10 +63101,8 @@ ${h(e)}
                                 if (e.preventDefault(), o) {
                                     r(!0), a(null), l(``);
                                     try {
-                                        let e = _Pe();
-                                        console.log(`Your UUID is: ` + e);
-                                        let t = await o.registerInviteAdmin(e);
-                                        console.log(`newLink: ` + t.toString()), l(gl + `/invite/` + t.toString());
+                                        let e = await o.registerInviteAdmin(_Pe()), t = new TextDecoder().decode(e).replace(/\0/g, ``).trim();
+                                        l(gl + `/invite/` + t);
                                     } catch (e) {
                                         console.error(`Failed to add vaccine:`, e), e instanceof Error ? a(`Erro ao adicionar vacina: ` + e.message) : a(`Erro ao adicionar vacina: ` + String(e));
                                     } finally{
