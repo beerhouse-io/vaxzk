@@ -61928,7 +61928,19 @@ ${h(e)}
             ]
         });
     }, oPe = ({ connectedApi: e })=>{
-        let { t } = pl(), [n, r] = (0, N.useState)(!1), [i, a] = (0, N.useState)(null), [o, s] = (0, N.useState)(null);
+        let { t } = pl(), [n, r] = (0, N.useState)(!1), [i, a] = (0, N.useState)(null), [o, s] = (0, N.useState)(null), [c, l] = (0, N.useState)(null), u = async (e)=>{
+            if (e.preventDefault(), o) {
+                r(!0), a(null), l(``);
+                try {
+                    let e = await o.inviteAdmin();
+                    console.log(`running`), console.log(e), l(`https://vaxzk.beerhouse.io/invite?link=adadad`);
+                } catch (e) {
+                    console.error(`Failed to add vaccine:`, e), e instanceof Error ? a(`Erro ao adicionar vacina: ` + e.message) : a(`Erro ao adicionar vacina: ` + String(e));
+                } finally{
+                    r(!1);
+                }
+            }
+        };
         return (0, N.useEffect)(()=>{
             async function t() {
                 let t = hl();
@@ -61978,19 +61990,7 @@ ${h(e)}
                             children: `Crie um link de convite para o usuario se tornar admin.`
                         }),
                         (0, b.jsxs)(`form`, {
-                            onSubmit: async (e)=>{
-                                if (e.preventDefault(), o) {
-                                    r(!0), a(null);
-                                    try {
-                                        let e = await o.inviteAdmin();
-                                        console.log(`running`), console.log(e);
-                                    } catch (e) {
-                                        console.error(`Failed to add vaccine:`, e), e instanceof Error ? a(`Erro ao adicionar vacina: ` + e.message) : a(`Erro ao adicionar vacina: ` + String(e));
-                                    } finally{
-                                        r(!1);
-                                    }
-                                }
-                            },
+                            onSubmit: u,
                             className: `flex flex-col sm:flex-row gap-4`,
                             children: [
                                 (0, b.jsx)(`button`, {
@@ -62022,6 +62022,99 @@ ${h(e)}
                                 i && (0, b.jsx)(`p`, {
                                     className: `text-error text-sm mt-3 px-1`,
                                     children: i
+                                })
+                            ]
+                        })
+                    ]
+                }),
+                (0, b.jsxs)(`div`, {
+                    className: `bg-white p-8 rounded-xl shadow-sm border border-slate-100 mb-12 text-left`,
+                    children: [
+                        (0, b.jsx)(`h3`, {
+                            className: `text-lg font-semibold text-on-surface mb-4`,
+                            children: `Adicionar um Admin`
+                        }),
+                        (0, b.jsx)(`p`, {
+                            className: `text-on-surface-variant text-sm mb-4`,
+                            children: `Crie um link de convite para o usuario se tornar admin.`
+                        }),
+                        (0, b.jsxs)(`form`, {
+                            onSubmit: u,
+                            className: `flex flex-col sm:flex-row gap-4`,
+                            children: [
+                                (0, b.jsx)(`button`, {
+                                    className: `px-8 py-4 bg-secondary font-bold rounded-lg shadow-lg active:scale-95 transition-all duration-200 disabled:opacity-50 flex items-center gap-2`,
+                                    type: `submit`,
+                                    disabled: n,
+                                    children: n ? (0, b.jsxs)(b.Fragment, {
+                                        children: [
+                                            (0, b.jsx)(`span`, {
+                                                className: `material-symbols-outlined animate-spin`,
+                                                children: `sync`
+                                            }),
+                                            (0, b.jsx)(`span`, {
+                                                children: t.loading
+                                            })
+                                        ]
+                                    }) : (0, b.jsxs)(b.Fragment, {
+                                        children: [
+                                            (0, b.jsx)(`span`, {
+                                                className: `material-symbols-outlined`,
+                                                children: `verified_user`
+                                            }),
+                                            (0, b.jsx)(`span`, {
+                                                children: `Criar Convite`
+                                            })
+                                        ]
+                                    })
+                                }),
+                                i && (0, b.jsx)(`p`, {
+                                    className: `text-error text-sm mt-3 px-1`,
+                                    children: i
+                                }),
+                                c && (0, b.jsxs)(`div`, {
+                                    className: `bg-green-50 border border-green-200 rounded-xl p-5 flex flex-col gap-3`,
+                                    children: [
+                                        (0, b.jsxs)(`div`, {
+                                            className: `flex items-center gap-2 text-green-700 font-bold`,
+                                            children: [
+                                                (0, b.jsx)(`span`, {
+                                                    className: `material-symbols-outlined`,
+                                                    children: `check_circle`
+                                                }),
+                                                (0, b.jsx)(`span`, {
+                                                    children: `Contract deployed & saved!`
+                                                })
+                                            ]
+                                        }),
+                                        (0, b.jsx)(`p`, {
+                                            className: `text-xs text-green-800/70`,
+                                            children: `This address is stored in your browser. All views will use it automatically on the next page load.`
+                                        }),
+                                        (0, b.jsxs)(`div`, {
+                                            className: `flex items-center gap-2 bg-white border border-green-100 rounded-lg px-4 py-3`,
+                                            children: [
+                                                (0, b.jsx)(`span`, {
+                                                    className: `material-symbols-outlined text-green-600 text-base shrink-0`,
+                                                    children: `link`
+                                                }),
+                                                (0, b.jsx)(`code`, {
+                                                    className: `text-xs font-mono text-green-900 break-all select-all flex-1`,
+                                                    children: c
+                                                }),
+                                                (0, b.jsx)(`button`, {
+                                                    type: `button`,
+                                                    title: `Copy address`,
+                                                    className: `shrink-0 p-1 rounded hover:bg-green-100 transition-colors`,
+                                                    onClick: ()=>navigator.clipboard.writeText(c),
+                                                    children: (0, b.jsx)(`span`, {
+                                                        className: `material-symbols-outlined text-green-600 text-base`,
+                                                        children: `content_copy`
+                                                    })
+                                                })
+                                            ]
+                                        })
+                                    ]
                                 })
                             ]
                         })
