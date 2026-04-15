@@ -12852,7 +12852,9 @@ perfect harmony.`,
             vaccinesAdminSubtitle: `List and add new vaccines to the system.`,
             vaccinesList: `Registered Vaccines`,
             add: `Add`,
-            loading: `Processing...`
+            loading: `Processing...`,
+            accessAdminTitleEnd: `Acessos`,
+            accessAdminSubtitle: `Gerencie as permissoes dos usuarios`
         },
         pt: {
             tagline: `Seu passaporte de imunização, sempre com você.`,
@@ -12987,7 +12989,9 @@ perfeita harmonia.`,
             vaccinesAdminSubtitle: `Liste e adicione novas vacinas ao sistema.`,
             vaccinesList: `Vacinas Cadastradas`,
             add: `Adicionar`,
-            loading: `Processando...`
+            loading: `Processando...`,
+            accessAdminTitleEnd: `Acessos`,
+            accessAdminSubtitle: `Gerencie as permissoes dos usuarios`
         },
         es: {
             tagline: `Tu pasaporte de inmunización, siempre contigo.`,
@@ -13122,7 +13126,9 @@ perfecta armonía.`,
             vaccinesAdminSubtitle: `Listar y agregar nuevas vacunas al sistema.`,
             vaccinesList: `Vacunas Registradas`,
             add: `Agregar`,
-            loading: `Procesando...`
+            loading: `Procesando...`,
+            accessAdminTitleEnd: `Acessos`,
+            accessAdminSubtitle: `Gerencie as permissoes dos usuarios`
         }
     }, dl = (0, N.createContext)({
         language: `en`,
@@ -13140,7 +13146,7 @@ perfecta armonía.`,
         });
     }, pl = ()=>(0, N.useContext)(dl), ml = `preprod`;
     function hl() {
-        return `8b8d1f0db613d7762f0398c695ce8f70ea6acd88397a0c9548c89070b6ead397`;
+        return ``;
     }
     var gl = (()=>{
         if (window.midnight) return Object.values(window.midnight).find((e)=>!!e && typeof e == `object` && `apiVersion` in e);
@@ -61479,6 +61485,9 @@ ${h(e)}
                 }
             });
         }
+        async inviteAdmin() {
+            return console.log(`inviteAdmin`), new TextEncoder().encode(`marco`);
+        }
         async addCertificateIssuer(e) {
             console.log(`adding certificate issuer: ${e.name}`);
             let t = await this.deployedContract.callTx.addCertificateIssuer(e);
@@ -61919,23 +61928,18 @@ ${h(e)}
             ]
         });
     }, oPe = ({ connectedApi: e })=>{
-        let { t } = pl(), [n, r] = (0, N.useState)([]), [i, a] = (0, N.useState)(``), [o, s] = (0, N.useState)(!1), [c, l] = (0, N.useState)(null), [u, d] = (0, N.useState)(null);
+        let { t } = pl(), [n, r] = (0, N.useState)(!1), [i, a] = (0, N.useState)(null), [o, s] = (0, N.useState)(null);
         return (0, N.useEffect)(()=>{
-            let t;
-            async function n() {
-                let n = hl();
-                if (!(!e || !n)) try {
-                    let i = await A7(e, ml), a = new Uint8Array(32), o = await k7.join(i, n, a);
-                    d(o), t = o.state$.subscribe((e)=>{
-                        r(e.vaccines);
-                    });
+            async function t() {
+                let t = hl();
+                if (!(!e || !t)) try {
+                    let n = await A7(e, ml), r = new Uint8Array(32);
+                    s(await k7.join(n, t, r));
                 } catch (e) {
-                    console.error(`Failed to join contract:`, e), l(`Erro ao conectar ao contrato`);
+                    console.error(`Failed to join contract:`, e), a(`Erro ao conectar ao contrato`);
                 }
             }
-            return n(), ()=>{
-                t && t.unsubscribe();
-            };
+            return t(), ()=>{};
         }, [
             e
         ]), (0, b.jsxs)(`main`, {
@@ -61952,125 +61956,74 @@ ${h(e)}
                                     children: t.manage
                                 }),
                                 ` `,
-                                t.vaccinesAdminTitleEnd,
+                                t.accessAdminTitleEnd,
                                 ` `
                             ]
                         }),
                         (0, b.jsx)(`p`, {
                             className: `text-on-surface-variant text-lg leading-relaxed`,
-                            children: t.vaccinesAdminSubtitle
+                            children: t.accessAdminSubtitle
                         })
                     ]
                 }),
                 (0, b.jsxs)(`div`, {
                     className: `bg-white p-8 rounded-xl shadow-sm border border-slate-100 mb-12 text-left`,
                     children: [
+                        (0, b.jsx)(`h3`, {
+                            className: `text-lg font-semibold text-on-surface mb-4`,
+                            children: `Adicionar um Admin`
+                        }),
+                        (0, b.jsx)(`p`, {
+                            className: `text-on-surface-variant text-sm mb-4`,
+                            children: `Crie um link de convite para o usuario se tornar admin.`
+                        }),
                         (0, b.jsxs)(`form`, {
                             onSubmit: async (e)=>{
-                                if (e.preventDefault(), !(!u || !i.trim())) {
-                                    s(!0), l(null);
+                                if (e.preventDefault(), o) {
+                                    r(!0), a(null);
                                     try {
-                                        await u.addVaccine(i.trim()), a(``);
+                                        let e = await o.inviteAdmin();
+                                        console.log(`running`), console.log(e);
                                     } catch (e) {
-                                        console.error(`Failed to add vaccine:`, e), l(`Erro ao adicionar vacina`);
+                                        console.error(`Failed to add vaccine:`, e), e instanceof Error ? a(`Erro ao adicionar vacina: ` + e.message) : a(`Erro ao adicionar vacina: ` + String(e));
                                     } finally{
-                                        s(!1);
+                                        r(!1);
                                     }
                                 }
                             },
                             className: `flex flex-col sm:flex-row gap-4`,
                             children: [
-                                (0, b.jsxs)(`div`, {
-                                    className: `flex-1 space-y-3`,
-                                    children: [
-                                        (0, b.jsx)(`label`, {
-                                            className: `block text-sm font-semibold tracking-wide text-primary uppercase ml-1`,
-                                            children: t.vaccineName
-                                        }),
-                                        (0, b.jsx)(`input`, {
-                                            className: `w-full px-4 py-4 bg-slate-50 border-none rounded-lg focus:ring-2 focus:ring-primary/20 focus:bg-white transition-all duration-300`,
-                                            placeholder: t.vaccinePlaceholder,
-                                            value: i,
-                                            onChange: (e)=>a(e.target.value),
-                                            disabled: o,
-                                            type: `text`
-                                        })
-                                    ]
-                                }),
-                                (0, b.jsx)(`div`, {
-                                    className: `flex items-end`,
-                                    children: (0, b.jsx)(`button`, {
-                                        className: `w-full sm:w-auto px-8 py-4 bg-primary font-bold rounded-lg shadow-lg active:scale-95 transition-all duration-200 disabled:opacity-50 flex items-center justify-center gap-2`,
-                                        type: `submit`,
-                                        disabled: o || !i.trim(),
-                                        children: o ? (0, b.jsxs)(b.Fragment, {
-                                            children: [
-                                                (0, b.jsx)(`span`, {
-                                                    className: `material-symbols-outlined animate-spin`,
-                                                    children: `sync`
-                                                }),
-                                                (0, b.jsx)(`span`, {
-                                                    children: t.loading
-                                                })
-                                            ]
-                                        }) : (0, b.jsxs)(b.Fragment, {
-                                            children: [
-                                                (0, b.jsx)(`span`, {
-                                                    className: `material-symbols-outlined`,
-                                                    children: `add`
-                                                }),
-                                                (0, b.jsx)(`span`, {
-                                                    children: t.add
-                                                })
-                                            ]
-                                        })
-                                    })
-                                })
-                            ]
-                        }),
-                        c && (0, b.jsx)(`p`, {
-                            className: `text-error text-sm mt-3 px-1`,
-                            children: c
-                        })
-                    ]
-                }),
-                (0, b.jsxs)(`div`, {
-                    className: `space-y-4 text-left`,
-                    children: [
-                        (0, b.jsx)(`h3`, {
-                            className: `text-2xl font-bold mb-6`,
-                            children: t.vaccinesList
-                        }),
-                        n.length === 0 ? (0, b.jsxs)(`div`, {
-                            className: `bg-surface-container-low p-12 rounded-xl border border-dashed border-slate-200 text-center`,
-                            children: [
-                                (0, b.jsx)(`span`, {
-                                    className: `material-symbols-outlined text-slate-300 text-6xl mb-4`,
-                                    children: `vaccines`
-                                }),
-                                (0, b.jsx)(`p`, {
-                                    className: `text-on-surface-variant italic`,
-                                    children: `Nenhuma vacina cadastrada no contrato.`
-                                })
-                            ]
-                        }) : (0, b.jsx)(`div`, {
-                            className: `grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6`,
-                            children: n.map((e, t)=>(0, b.jsxs)(`div`, {
-                                    className: `bg-surface-container-low p-6 rounded-xl border border-slate-50 flex items-center gap-4 hover:bg-surface-container-high transition-colors`,
-                                    children: [
-                                        (0, b.jsx)(`div`, {
-                                            className: `w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center text-primary`,
-                                            children: (0, b.jsx)(`span`, {
-                                                className: `material-symbols-outlined`,
-                                                children: `vaccines`
+                                (0, b.jsx)(`button`, {
+                                    className: `px-8 py-4 bg-secondary font-bold rounded-lg shadow-lg active:scale-95 transition-all duration-200 disabled:opacity-50 flex items-center gap-2`,
+                                    type: `submit`,
+                                    disabled: n,
+                                    children: n ? (0, b.jsxs)(b.Fragment, {
+                                        children: [
+                                            (0, b.jsx)(`span`, {
+                                                className: `material-symbols-outlined animate-spin`,
+                                                children: `sync`
+                                            }),
+                                            (0, b.jsx)(`span`, {
+                                                children: t.loading
                                             })
-                                        }),
-                                        (0, b.jsx)(`span`, {
-                                            className: `font-bold text-lg text-on-surface`,
-                                            children: e
-                                        })
-                                    ]
-                                }, t))
+                                        ]
+                                    }) : (0, b.jsxs)(b.Fragment, {
+                                        children: [
+                                            (0, b.jsx)(`span`, {
+                                                className: `material-symbols-outlined`,
+                                                children: `verified_user`
+                                            }),
+                                            (0, b.jsx)(`span`, {
+                                                children: `Criar Convite`
+                                            })
+                                        ]
+                                    })
+                                }),
+                                i && (0, b.jsx)(`p`, {
+                                    className: `text-error text-sm mt-3 px-1`,
+                                    children: i
+                                })
+                            ]
                         })
                     ]
                 })
