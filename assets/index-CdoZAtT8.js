@@ -13324,10 +13324,14 @@ perfecta armonía.`,
         }
     ], yl = (0, N.createContext)({
         profile: `user`,
-        setProfile: ()=>{}
+        setProfile: ()=>{},
+        activeTab: `home`,
+        setActiveTab: ()=>{}
     });
     function bl({ fixed: e = !1 }) {
-        let { profile: t, setProfile: n } = Sl();
+        let { profile: t, setProfile: n, setActiveTab: r } = Sl(), i = (e)=>{
+            e !== t && (console.log(`handleProfileChange`, e), r(e === `user` ? `home` : e === `clinic` ? `addvaccine` : `access`), n(e));
+        };
         return (0, b.jsx)(`div`, {
             className: `flex items-center gap-1 bg-white/80 backdrop-blur-md rounded-full px-2 py-1 shadow-sm border border-slate-200/60 ${e ? `fixed top-3 right-4 z-[100]` : ``}`,
             children: (0, b.jsx)(`select`, {
@@ -13336,7 +13340,7 @@ perfecta armonía.`,
                 },
                 defaultValue: t,
                 className: `flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-bold transition-colors bg-primary`,
-                onChange: (e)=>n(e.target.value),
+                onChange: (e)=>i(e.target.value),
                 children: vl.map(({ code: e, label: t })=>(0, b.jsx)(`option`, {
                         value: e,
                         children: t
@@ -13345,11 +13349,13 @@ perfecta armonía.`,
         });
     }
     var xl = ({ children: e })=>{
-        let [t, n] = (0, N.useState)(`user`);
+        let [t, n] = (0, N.useState)(`user`), [r, i] = (0, N.useState)(`home`);
         return (0, b.jsx)(yl.Provider, {
             value: {
                 profile: t,
-                setProfile: n
+                setProfile: n,
+                activeTab: r,
+                setActiveTab: i
             },
             children: e
         });
@@ -62320,7 +62326,7 @@ ${h(e)}
                 })
             })
         }), sPe = ({ onLogout: e, walletAddress: t, connectedApi: n })=>{
-        let { t: r } = pl(), { profile: i } = Sl(), [a, o] = (0, N.useState)(`home`), s = (e)=>{
+        let { t: r } = pl(), { profile: i, activeTab: a, setActiveTab: o } = Sl(), s = (e)=>{
             o(e);
         };
         return (0, b.jsxs)(`div`, {
