@@ -59965,12 +59965,14 @@ ${h(e)}
                                             r(`connecting`), a(null);
                                             let n = await l7.connect(pl), i = await n.getConfiguration();
                                             if (console.log(`Service URI Config:`, i), await n.getConnectionStatus()) {
-                                                let t = await c7(n, pl), i = new Uint8Array(32), a = await s7.join(t, hl(), i);
-                                                console.log(`running`);
-                                                let o = await a.getProfile();
-                                                console.log(o);
-                                                let s = await n.getShieldedAddresses();
-                                                s.shieldedAddress && (r(`connected`), e(s.shieldedAddress, n));
+                                                let t = await n.getShieldedAddresses();
+                                                if (hl()) {
+                                                    let e = await c7(n, pl), t = new Uint8Array(32), r = await s7.join(e, hl(), t);
+                                                    console.log(`running`);
+                                                    let i = await r.getProfile();
+                                                    console.log(i);
+                                                }
+                                                t.shieldedAddress && (r(`connected`), e(t.shieldedAddress, n));
                                             } else throw Error(t.shieldedAddressNotFound);
                                         } catch (e) {
                                             console.error(`Connection failed:`, e), a(e instanceof Error ? e.message : t.connectionFailed), r(`error`);
