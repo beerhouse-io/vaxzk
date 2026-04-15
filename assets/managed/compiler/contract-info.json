@@ -210,6 +210,31 @@
       }
     },
     {
+      "name": "getProfile",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+      ],
+      "result-type": {
+        "type-name": "Struct",
+        "name": "UserProfile",
+        "elements": [
+          {
+            "name": "isAdmin",
+            "type": {
+              "type-name": "Boolean"
+            }
+          },
+          {
+            "name": "isClinic",
+            "type": {
+              "type-name": "Boolean"
+            }
+          }
+        ]
+      }
+    },
+    {
       "name": "addVaccine",
       "pure": false,
       "proof": true,

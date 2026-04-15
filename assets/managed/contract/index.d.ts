@@ -1,5 +1,7 @@
 import type * as __compactRuntime from '@midnight-ntwrk/compact-runtime';
 
+export type UserProfile = { isAdmin: boolean; isClinic: boolean };
+
 export type CertIssuerInfo = { uri: string;
                                name: string;
                                key: __compactRuntime.JubjubPoint;
@@ -38,6 +40,7 @@ export type ImpureCircuits<PS> = {
                clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   addCertificateIssuer(context: __compactRuntime.CircuitContext<PS>,
                        issuerInfo_0: CertIssuerInfo): __compactRuntime.CircuitResults<PS, Uint8Array>;
+  getProfile(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, UserProfile>;
   addVaccine(context: __compactRuntime.CircuitContext<PS>, name_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   delVaccine(context: __compactRuntime.CircuitContext<PS>, name_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   requestVaccineProof(context: __compactRuntime.CircuitContext<PS>,
@@ -55,6 +58,7 @@ export type ProvableCircuits<PS> = {
                clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   addCertificateIssuer(context: __compactRuntime.CircuitContext<PS>,
                        issuerInfo_0: CertIssuerInfo): __compactRuntime.CircuitResults<PS, Uint8Array>;
+  getProfile(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, UserProfile>;
   addVaccine(context: __compactRuntime.CircuitContext<PS>, name_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   delVaccine(context: __compactRuntime.CircuitContext<PS>, name_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   requestVaccineProof(context: __compactRuntime.CircuitContext<PS>,
@@ -90,6 +94,7 @@ export type Circuits<PS> = {
                clinicId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   addCertificateIssuer(context: __compactRuntime.CircuitContext<PS>,
                        issuerInfo_0: CertIssuerInfo): __compactRuntime.CircuitResults<PS, Uint8Array>;
+  getProfile(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, UserProfile>;
   addVaccine(context: __compactRuntime.CircuitContext<PS>, name_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   delVaccine(context: __compactRuntime.CircuitContext<PS>, name_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   requestVaccineProof(context: __compactRuntime.CircuitContext<PS>,
