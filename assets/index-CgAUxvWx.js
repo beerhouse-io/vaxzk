@@ -13242,9 +13242,11 @@ perfecta armonía.`,
                                         console.log(`Found wallet:`, _l.name, _l.apiVersion);
                                         try {
                                             r(`connecting`), a(null);
-                                            let n = await _l.connect(ml), i = await n.getShieldedAddresses();
-                                            if (i.shieldedAddress) r(`connected`), e(i.shieldedAddress, n);
-                                            else throw Error(t.shieldedAddressNotFound);
+                                            let n = await _l.connect(ml), i = await n.getConfiguration();
+                                            if (console.log(`Service URI Config:`, i), await n.getConnectionStatus()) {
+                                                let t = await n.getShieldedAddresses();
+                                                t.shieldedAddress && (r(`connected`), e(t.shieldedAddress, n));
+                                            } else throw Error(t.shieldedAddressNotFound);
                                         } catch (e) {
                                             console.error(`Connection failed:`, e), a(e instanceof Error ? e.message : t.connectionFailed), r(`error`);
                                         }
@@ -13330,7 +13332,7 @@ perfecta armonía.`,
     });
     function xl({ fixed: e = !1 }) {
         let { profile: t, setProfile: n, setActiveTab: r } = Cl(), i = (e)=>{
-            e !== t && (console.log(`handleProfileChange`, e), r(e === `user` ? `home` : e === `clinic` ? `addvaccine` : `access`), n(e));
+            e !== t && (console.log(`handleProfileChange`, e), r(e === `user` ? `home` : e === `clinic` ? `addvaccine` : `adminvaccine`), n(e));
         };
         return (0, b.jsx)(`div`, {
             className: `flex items-center gap-1 bg-white/80 backdrop-blur-md rounded-full px-2 py-1 shadow-sm border border-slate-200/60 ${e ? `fixed top-3 right-4 z-[100]` : ``}`,
