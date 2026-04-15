@@ -13146,7 +13146,7 @@ perfecta armonía.`,
         });
     }, pl = ()=>(0, N.useContext)(dl), ml = `preprod`, hl = `https://vaxzk.beerhouse.io/`;
     function gl() {
-        return `a72243a59217273ff9f0041e23081e05c8482ebdc1a95a01853e6796f7dedb95`;
+        return ``;
     }
     var _l = (()=>{
         if (window.midnight) return Object.values(window.midnight).find((e)=>!!e && typeof e == `object` && `apiVersion` in e);
@@ -61467,6 +61467,16 @@ ${h(e)}
         }
         static async getPrivateState(e, t) {
             return await e.privateStateProvider.get(`VaxZkPrivateState`) ?? D7(t);
+        }
+        async getProfile() {
+            let e = await this.deployedContract.callTx.getProfile();
+            return console.log({
+                transactionAdded: {
+                    circuit: `getProfile`,
+                    txHash: e.public.txHash,
+                    blockHeight: e.public.blockHeight
+                }
+            }), e.private.result;
         }
         async addAdmin(e) {
             if (console.log(`adding Admin with ID ${i8(e)}`), e.length !== 32) throw Error(`Admin ID shall be 32 bytes long but it is ${e.length}`);
