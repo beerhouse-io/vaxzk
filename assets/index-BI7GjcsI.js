@@ -13155,7 +13155,7 @@ perfecta armonía.`,
         });
     }, pl = ()=>(0, N.useContext)(dl), ml = `preprod`, hl = `https://vaxzk.beerhouse.io/`;
     function gl() {
-        return ``;
+        return `152591c2ad5c7dde979ae677d3f6abf993f94c1d224d7afe2ab1269605b1c149`;
     }
     var _l = (()=>{
         if (window.midnight) return Object.values(window.midnight).find((e)=>!!e && typeof e == `object` && `apiVersion` in e);
@@ -15177,7 +15177,7 @@ perfecta armonía.`,
                 registerInvite: (...e)=>{
                     if (e.length !== 2) throw new S(`registerInvite: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`registerInvite`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 11 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`registerInvite`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 11 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`registerInvite`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 7 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`registerInvite`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 7 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: hc()
@@ -15198,32 +15198,6 @@ perfecta armonía.`,
                         context: r,
                         proofData: i,
                         gasCost: r.gasCost
-                    };
-                },
-                useInvite: (...e)=>{
-                    if (e.length !== 3) throw new S(`useInvite: expected 3 arguments (as invoked from Typescript), received ${e.length}`);
-                    let t = e[0], n = e[1], r = e[2];
-                    typeof t == `object` && t.currentQueryContext != null || w(`useInvite`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 17 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`useInvite`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 17 char 1`, `Bytes<32>`, n), r.buffer instanceof ArrayBuffer && r.BYTES_PER_ELEMENT === 1 && r.length === 32 || w(`useInvite`, `argument 2 (argument 3 as invoked from Typescript)`, `Invites.compact line 17 char 1`, `Bytes<32>`, r);
-                    let i = {
-                        ...t,
-                        gasCost: hc()
-                    }, a = {
-                        input: {
-                            value: P.toValue(n).concat(P.toValue(r)),
-                            alignment: P.alignment().concat(P.alignment())
-                        },
-                        output: void 0,
-                        publicTranscript: [],
-                        privateTranscriptOutputs: []
-                    }, o = this._useInvite_0(i, a, n, r);
-                    return a.output = {
-                        value: [],
-                        alignment: []
-                    }, {
-                        result: o,
-                        context: i,
-                        proofData: a,
-                        gasCost: i.gasCost
                     };
                 },
                 getShieldedId (e, ...t) {
@@ -15494,7 +15468,6 @@ perfecta armonía.`,
                 }
             }, this.impureCircuits = {
                 registerInvite: this.circuits.registerInvite,
-                useInvite: this.circuits.useInvite,
                 addAdmin: this.circuits.addAdmin,
                 revokeAdmin: this.circuits.revokeAdmin,
                 addClinic: this.circuits.addClinic,
@@ -15507,7 +15480,6 @@ perfecta armonía.`,
                 submitVaccineProof: this.circuits.submitVaccineProof
             }, this.provableCircuits = {
                 registerInvite: this.circuits.registerInvite,
-                useInvite: this.circuits.useInvite,
                 addAdmin: this.circuits.addAdmin,
                 revokeAdmin: this.circuits.revokeAdmin,
                 addClinic: this.circuits.addClinic,
@@ -15528,7 +15500,7 @@ perfecta armonía.`,
             if (!(`initialZswapLocalState` in t)) throw new S(`Contract state constructor: expected 'initialZswapLocalState' in argument 1 (as invoked from Typescript)`);
             if (typeof t.initialZswapLocalState != `object`) throw new S(`Contract state constructor: expected 'initialZswapLocalState' in argument 1 (as invoked from Typescript) to be an object`);
             let n = new cn, r = j.newArray();
-            r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), n.data = new tn(r), n.setOperation(`registerInvite`, new on), n.setOperation(`useInvite`, new on), n.setOperation(`addAdmin`, new on), n.setOperation(`revokeAdmin`, new on), n.setOperation(`addClinic`, new on), n.setOperation(`revokeClinic`, new on), n.setOperation(`addCertificateIssuer`, new on), n.setOperation(`getProfile`, new on), n.setOperation(`addVaccine`, new on), n.setOperation(`delVaccine`, new on), n.setOperation(`requestVaccineProof`, new on), n.setOperation(`submitVaccineProof`, new on);
+            r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), n.data = new tn(r), n.setOperation(`registerInvite`, new on), n.setOperation(`addAdmin`, new on), n.setOperation(`revokeAdmin`, new on), n.setOperation(`addClinic`, new on), n.setOperation(`revokeClinic`, new on), n.setOperation(`addCertificateIssuer`, new on), n.setOperation(`getProfile`, new on), n.setOperation(`addVaccine`, new on), n.setOperation(`delVaccine`, new on), n.setOperation(`requestVaccineProof`, new on), n.setOperation(`submitVaccineProof`, new on);
             let i = mc(At(), t.initialZswapLocalState.coinPublicKey, n.data, t.initialPrivateState), a = {
                 input: {
                     value: [],
@@ -16759,14 +16731,11 @@ perfecta armonía.`,
                 alignment: P.alignment()
             }), i;
         }
-        _createInviteHash_0(e, t) {
-            return this._persistentHash_0([
-                e,
-                t
-            ]);
-        }
         _registerInvite_0(e, t, n) {
-            let r = this._inviteNonce_0(e, t), i = this._createInviteHash_0(n, r);
+            let r = this._inviteNonce_0(e, t), i = this._persistentHash_0([
+                n,
+                r
+            ]);
             return M(e, t, [
                 {
                     push: {
@@ -16820,37 +16789,6 @@ perfecta armonía.`,
                     }
                 }
             ]).value);
-        }
-        _useInvite_0(e, t, n, r) {
-            let i = this._createInviteHash_0(n, r);
-            return C(this._equal_0(P.fromValue(M(e, t, [
-                {
-                    dup: {
-                        n: 0
-                    }
-                },
-                {
-                    idx: {
-                        cached: !1,
-                        pushPath: !1,
-                        path: [
-                            {
-                                tag: `value`,
-                                value: {
-                                    value: I.toValue(0n),
-                                    alignment: I.alignment()
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    popeq: {
-                        cached: !1,
-                        result: void 0
-                    }
-                }
-            ]).value), i), `Convite inválido`), [];
         }
         _getAttestedCertProofWitness_0(e, t) {
             let n = gc(bu(e.currentQueryContext.state), e.currentPrivateState, e.currentQueryContext.address), [r, i] = this.witnesses.getAttestedCertProofWitness(n);
@@ -18159,7 +18097,7 @@ perfecta armonía.`,
                     }
                 }
             ]).value);
-            C(this._equal_1(r.vaccine, a.vaccine), `The submitted proof doesn't match the vaccine type`), C(this._equal_2(r.personalId, a.personalId), `The submitted proof doesn't match the passport or ID number`);
+            C(this._equal_0(r.vaccine, a.vaccine), `The submitted proof doesn't match the vaccine type`), C(this._equal_1(r.personalId, a.personalId), `The submitted proof doesn't match the passport or ID number`);
             let s;
             C((s = r.expirationDate, s >= a.validUntil), `The submitted certificate proof doesn't comply with validity date`);
             let c = this._getShieldedId_0(this._ownPublicKey_0(e, t).bytes);
@@ -18215,9 +18153,6 @@ perfecta armonía.`,
             return !!e.every((e, n)=>t[n] === e);
         }
         _equal_1(e, t) {
-            return !!e.every((e, n)=>t[n] === e);
-        }
-        _equal_2(e, t) {
             return !!e.every((e, n)=>t[n] === e);
         }
     };

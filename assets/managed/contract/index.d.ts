@@ -43,9 +43,6 @@ export type Witnesses<PS> = {
 export type ImpureCircuits<PS> = {
   registerInvite(context: __compactRuntime.CircuitContext<PS>,
                  secret_0: Uint8Array): __compactRuntime.CircuitResults<PS, Uint8Array>;
-  useInvite(context: __compactRuntime.CircuitContext<PS>,
-            _secret_0: Uint8Array,
-            _nonce_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeAdmin(context: __compactRuntime.CircuitContext<PS>,
               adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
@@ -68,9 +65,6 @@ export type ImpureCircuits<PS> = {
 export type ProvableCircuits<PS> = {
   registerInvite(context: __compactRuntime.CircuitContext<PS>,
                  secret_0: Uint8Array): __compactRuntime.CircuitResults<PS, Uint8Array>;
-  useInvite(context: __compactRuntime.CircuitContext<PS>,
-            _secret_0: Uint8Array,
-            _nonce_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeAdmin(context: __compactRuntime.CircuitContext<PS>,
               adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
@@ -110,9 +104,6 @@ export type Circuits<PS> = {
                         userPubKey_0: Uint8Array): __compactRuntime.CircuitResults<PS, bigint>;
   registerInvite(context: __compactRuntime.CircuitContext<PS>,
                  secret_0: Uint8Array): __compactRuntime.CircuitResults<PS, Uint8Array>;
-  useInvite(context: __compactRuntime.CircuitContext<PS>,
-            _secret_0: Uint8Array,
-            _nonce_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   getShieldedId(context: __compactRuntime.CircuitContext<PS>, id_0: Uint8Array): __compactRuntime.CircuitResults<PS, Uint8Array>;
   addAdmin(context: __compactRuntime.CircuitContext<PS>, adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeAdmin(context: __compactRuntime.CircuitContext<PS>,

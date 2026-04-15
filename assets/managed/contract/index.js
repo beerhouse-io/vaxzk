@@ -263,14 +263,14 @@ export class Contract {
         if (!(typeof(contextOrig_0) === 'object' && contextOrig_0.currentQueryContext != undefined)) {
           __compactRuntime.typeError('registerInvite',
                                      'argument 1 (as invoked from Typescript)',
-                                     'Invites.compact line 11 char 1',
+                                     'Invites.compact line 7 char 1',
                                      'CircuitContext',
                                      contextOrig_0)
         }
         if (!(secret_0.buffer instanceof ArrayBuffer && secret_0.BYTES_PER_ELEMENT === 1 && secret_0.length === 32)) {
           __compactRuntime.typeError('registerInvite',
                                      'argument 1 (argument 2 as invoked from Typescript)',
-                                     'Invites.compact line 11 char 1',
+                                     'Invites.compact line 7 char 1',
                                      'Bytes<32>',
                                      secret_0)
         }
@@ -288,51 +288,6 @@ export class Contract {
                                                 partialProofData,
                                                 secret_0);
         partialProofData.output = { value: _descriptor_0.toValue(result_0), alignment: _descriptor_0.alignment() };
-        return { result: result_0, context: context, proofData: partialProofData, gasCost: context.gasCost };
-      },
-      useInvite: (...args_1) => {
-        if (args_1.length !== 3) {
-          throw new __compactRuntime.CompactError(`useInvite: expected 3 arguments (as invoked from Typescript), received ${args_1.length}`);
-        }
-        const contextOrig_0 = args_1[0];
-        const _secret_0 = args_1[1];
-        const _nonce_0 = args_1[2];
-        if (!(typeof(contextOrig_0) === 'object' && contextOrig_0.currentQueryContext != undefined)) {
-          __compactRuntime.typeError('useInvite',
-                                     'argument 1 (as invoked from Typescript)',
-                                     'Invites.compact line 17 char 1',
-                                     'CircuitContext',
-                                     contextOrig_0)
-        }
-        if (!(_secret_0.buffer instanceof ArrayBuffer && _secret_0.BYTES_PER_ELEMENT === 1 && _secret_0.length === 32)) {
-          __compactRuntime.typeError('useInvite',
-                                     'argument 1 (argument 2 as invoked from Typescript)',
-                                     'Invites.compact line 17 char 1',
-                                     'Bytes<32>',
-                                     _secret_0)
-        }
-        if (!(_nonce_0.buffer instanceof ArrayBuffer && _nonce_0.BYTES_PER_ELEMENT === 1 && _nonce_0.length === 32)) {
-          __compactRuntime.typeError('useInvite',
-                                     'argument 2 (argument 3 as invoked from Typescript)',
-                                     'Invites.compact line 17 char 1',
-                                     'Bytes<32>',
-                                     _nonce_0)
-        }
-        const context = { ...contextOrig_0, gasCost: __compactRuntime.emptyRunningCost() };
-        const partialProofData = {
-          input: {
-            value: _descriptor_0.toValue(_secret_0).concat(_descriptor_0.toValue(_nonce_0)),
-            alignment: _descriptor_0.alignment().concat(_descriptor_0.alignment())
-          },
-          output: undefined,
-          publicTranscript: [],
-          privateTranscriptOutputs: []
-        };
-        const result_0 = this._useInvite_0(context,
-                                           partialProofData,
-                                           _secret_0,
-                                           _nonce_0);
-        partialProofData.output = { value: [], alignment: [] };
         return { result: result_0, context: context, proofData: partialProofData, gasCost: context.gasCost };
       },
       getShieldedId(context, ...args_1) {
@@ -691,7 +646,6 @@ export class Contract {
     };
     this.impureCircuits = {
       registerInvite: this.circuits.registerInvite,
-      useInvite: this.circuits.useInvite,
       addAdmin: this.circuits.addAdmin,
       revokeAdmin: this.circuits.revokeAdmin,
       addClinic: this.circuits.addClinic,
@@ -705,7 +659,6 @@ export class Contract {
     };
     this.provableCircuits = {
       registerInvite: this.circuits.registerInvite,
-      useInvite: this.circuits.useInvite,
       addAdmin: this.circuits.addAdmin,
       revokeAdmin: this.circuits.revokeAdmin,
       addClinic: this.circuits.addClinic,
@@ -749,7 +702,6 @@ export class Contract {
     stateValue_0 = stateValue_0.arrayPush(__compactRuntime.StateValue.newNull());
     state_0.data = new __compactRuntime.ChargedState(stateValue_0);
     state_0.setOperation('registerInvite', new __compactRuntime.ContractOperation());
-    state_0.setOperation('useInvite', new __compactRuntime.ContractOperation());
     state_0.setOperation('addAdmin', new __compactRuntime.ContractOperation());
     state_0.setOperation('revokeAdmin', new __compactRuntime.ContractOperation());
     state_0.setOperation('addClinic', new __compactRuntime.ContractOperation());
@@ -1172,12 +1124,9 @@ export class Contract {
     });
     return result_0;
   }
-  _createInviteHash_0(secret_0, nonce_0) {
-    return this._persistentHash_0([secret_0, nonce_0]);
-  }
   _registerInvite_0(context, partialProofData, secret_0) {
     const nonce_0 = this._inviteNonce_0(context, partialProofData);
-    const tmp_0 = this._createInviteHash_0(secret_0, nonce_0);
+    const tmp_0 = this._persistentHash_0([secret_0, nonce_0]);
     __compactRuntime.queryLedgerState(context,
                                       partialProofData,
                                       [
@@ -1200,24 +1149,6 @@ export class Contract {
                                                                                                  alignment: _descriptor_24.alignment() } }] } },
                                                                       { popeq: { cached: false,
                                                                                  result: undefined } }]).value);
-  }
-  _useInvite_0(context, partialProofData, _secret_0, _nonce_0) {
-    const hash_0 = this._createInviteHash_0(_secret_0, _nonce_0);
-    __compactRuntime.assert(this._equal_0(_descriptor_0.fromValue(__compactRuntime.queryLedgerState(context,
-                                                                                                    partialProofData,
-                                                                                                    [
-                                                                                                     { dup: { n: 0 } },
-                                                                                                     { idx: { cached: false,
-                                                                                                              pushPath: false,
-                                                                                                              path: [
-                                                                                                                     { tag: 'value',
-                                                                                                                       value: { value: _descriptor_24.toValue(0n),
-                                                                                                                                alignment: _descriptor_24.alignment() } }] } },
-                                                                                                     { popeq: { cached: false,
-                                                                                                                result: undefined } }]).value),
-                                          hash_0),
-                            'Convite inválido');
-    return [];
   }
   _getAttestedCertProofWitness_0(context, partialProofData) {
     const witnessContext_0 = __compactRuntime.createWitnessContext(ledger(context.currentQueryContext.state), context.currentPrivateState, context.currentQueryContext.address);
@@ -1793,10 +1724,10 @@ export class Contract {
                                                                                                                  alignment: _descriptor_0.alignment() } }] } },
                                                                                       { popeq: { cached: false,
                                                                                                  result: undefined } }]).value);
-    __compactRuntime.assert(this._equal_1(proof_0.vaccine,
+    __compactRuntime.assert(this._equal_0(proof_0.vaccine,
                                           vaccineProofReq_0.vaccine),
                             "The submitted proof doesn't match the vaccine type");
-    __compactRuntime.assert(this._equal_2(proof_0.personalId,
+    __compactRuntime.assert(this._equal_1(proof_0.personalId,
                                           vaccineProofReq_0.personalId),
                             "The submitted proof doesn't match the passport or ID number");
     let t_0;
@@ -1837,10 +1768,6 @@ export class Contract {
     return true;
   }
   _equal_1(x0, y0) {
-    if (!x0.every((x, i) => y0[i] === x)) { return false; }
-    return true;
-  }
-  _equal_2(x0, y0) {
     if (!x0.every((x, i) => y0[i] === x)) { return false; }
     return true;
   }

@@ -82,32 +82,6 @@
       }
     },
     {
-      "name": "useInvite",
-      "pure": false,
-      "proof": true,
-      "arguments": [
-        {
-          "name": "_secret",
-          "type": {
-            "type-name": "Bytes",
-            "length": 32
-          }
-        },
-        {
-          "name": "_nonce",
-          "type": {
-            "type-name": "Bytes",
-            "length": 32
-          }
-        }
-      ],
-      "result-type": {
-        "type-name": "Tuple",
-        "types": [
-        ]
-      }
-    },
-    {
       "name": "getShieldedId",
       "pure": true,
       "proof": false,
