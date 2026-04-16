@@ -63155,7 +63155,7 @@ ${h(e)}
                                     }
                                 }
                             },
-                            className: `flex flex-col sm:flex-row gap-4`,
+                            className: `flex flex-col gap-4`,
                             children: [
                                 (0, b.jsx)(`button`, {
                                     className: `px-8 py-4 bg-secondary font-bold rounded-lg shadow-lg active:scale-95 transition-all duration-200 disabled:opacity-50 flex items-center gap-2`,
