@@ -13155,7 +13155,7 @@ perfecta armonía.`,
         });
     }, pl = ()=>(0, N.useContext)(dl), ml = `preprod`, hl = `https://vaxzk.beerhouse.io`;
     function gl() {
-        return ``;
+        return `a6aad2963e80f2d0e6f1498e24c0f4133b853c13ef7305b74584af2338271eb3`;
     }
     var _l = (()=>{
         if (window.midnight) return Object.values(window.midnight).find((e)=>!!e && typeof e == `object` && `apiVersion` in e);
@@ -65631,26 +65631,85 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         return Y7(i.pathname, o) != null || Y7(i.pathname, a) != null;
     }
     var oIe = ()=>{
-        let { uuid: e } = oFe();
-        return e == `` ? `code is necessary` : (0, b.jsx)(`main`, {
-            className: `pt-24 pb-32 px-6 max-w-screen-xl mx-auto`,
-            children: (0, b.jsx)(`section`, {
-                className: `mb-12 text-left`,
-                children: (0, b.jsxs)(`h2`, {
-                    className: `text-4xl md:text-5xl font-extrabold text-on-surface tracking-tighter mb-4 max-w-2xl`,
-                    children: [
-                        (0, b.jsx)(`span`, {
-                            className: `text-primary`,
-                            children: `Under Construction `
-                        }),
-                        ` `,
-                        (0, b.jsx)(`br`, {}),
-                        `Código: `,
-                        e
-                    ]
+        let { uuid: e } = oFe(), [t] = (0, N.useState)(null);
+        return e ? (0, b.jsxs)(`main`, {
+            className: `pt-12 px-6 max-w-screen-md mx-auto`,
+            children: [
+                (0, b.jsx)(`section`, {
+                    className: `mb-7`,
+                    children: (0, b.jsx)(`h2`, {
+                        className: `text-4xl font-extrabold tracking-tight text-on-surface mb-2`,
+                        style: {},
+                        children: `Adicionar como Admin`
+                    })
+                }),
+                (0, b.jsx)(`div`, {
+                    className: `space-y-16`,
+                    children: (0, b.jsx)(`div`, {
+                        className: `bg-surface-container-low p-8 rounded-xl shadow-sm border-none relative overflow-hidden`,
+                        children: (0, b.jsxs)(`form`, {
+                            onSubmit: async (n)=>{
+                                if (n.preventDefault(), console.log(`a`), console.log(e), t) try {
+                                    await t.acceptInviteAdmin(e.trim());
+                                } catch (e) {
+                                    console.error(`Failed to add vaccine:`, e);
+                                }
+                            },
+                            className: `space-y-8 relative z-10`,
+                            children: [
+                                (0, b.jsxs)(`div`, {
+                                    className: `bg-secondary-container/20 p-5 rounded-lg border-none flex items-start gap-4 mt-12`,
+                                    style: {
+                                        background: `rgb(161 190 253 / 0.2)`
+                                    },
+                                    children: [
+                                        (0, b.jsx)(`div`, {
+                                            className: `w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0`,
+                                            children: (0, b.jsx)(`span`, {
+                                                className: `material-symbols-outlined text-on-secondary-container`,
+                                                children: `verified_user`
+                                            })
+                                        }),
+                                        (0, b.jsxs)(`div`, {
+                                            children: [
+                                                (0, b.jsx)(`h4`, {
+                                                    className: `font-bold text-on-secondary-container text-sm`,
+                                                    children: `Registro Seguro`
+                                                }),
+                                                (0, b.jsx)(`p`, {
+                                                    className: `text-xs text-on-secondary-container/80 leading-relaxed`,
+                                                    children: `Suas informações de saúde são criptografadas e utilizadas apenas para o seu controle pessoal de imunização.`
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                }),
+                                (0, b.jsx)(`div`, {
+                                    className: `pt-6`,
+                                    children: (0, b.jsxs)(`button`, {
+                                        className: `w-full py-4 bg-gradient-to-r from-primary to-primary-container text-white font-bold text-lg rounded-full shadow-lg shadow-primary/20 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2`,
+                                        style: {
+                                            background: `#0070eb`
+                                        },
+                                        type: `submit`,
+                                        children: [
+                                            (0, b.jsx)(`span`, {
+                                                className: ``,
+                                                children: `Salvar Registro`
+                                            }),
+                                            (0, b.jsx)(`span`, {
+                                                className: `material-symbols-outlined`,
+                                                children: `check_circle`
+                                            })
+                                        ]
+                                    })
+                                })
+                            ]
+                        })
+                    })
                 })
-            })
-        });
+            ]
+        }) : `code is necessary`;
     }, sIe = [
         {
             code: `en`,
