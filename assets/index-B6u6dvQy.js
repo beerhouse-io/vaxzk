@@ -63968,24 +63968,9 @@ ${h(e)}
                 })
             ]
         });
-    }, yPe = ({ connectedApi: e })=>{
+    }, yPe = ({ vaxApi: e })=>{
         let t = new URLSearchParams(window.location.search).get(`code`);
-        if (!t) return `code is necessary`;
-        let [n, r] = (0, N.useState)(null);
-        return (0, N.useEffect)(()=>{
-            async function t() {
-                let t = gl();
-                if (!(!e || !t)) try {
-                    let n = await k7(e, ml), i = new Uint8Array(32);
-                    r(await O7.join(n, t, i));
-                } catch (e) {
-                    console.error(`Failed to join contract:`, e);
-                }
-            }
-            return t(), ()=>{};
-        }, [
-            e
-        ]), (0, b.jsxs)(`main`, {
+        return t ? (0, b.jsxs)(`main`, {
             className: `pt-12 px-6 max-w-screen-md mx-auto`,
             children: [
                 (0, b.jsx)(`section`, {
@@ -64001,9 +63986,9 @@ ${h(e)}
                     children: (0, b.jsx)(`div`, {
                         className: `bg-surface-container-low p-8 rounded-xl shadow-sm border-none relative overflow-hidden`,
                         children: (0, b.jsxs)(`form`, {
-                            onSubmit: async (e)=>{
-                                if (e.preventDefault(), console.log(`a`), console.log(t), n) try {
-                                    await n.acceptInviteAdmin(t.trim());
+                            onSubmit: async (n)=>{
+                                if (n.preventDefault(), console.log(`a`), console.log(t), e) try {
+                                    await e.acceptInviteAdmin(t.trim());
                                 } catch (e) {
                                     console.error(`Failed to add vaccine:`, e);
                                 }
@@ -64062,7 +64047,7 @@ ${h(e)}
                     })
                 })
             ]
-        });
+        }) : `code is necessary`;
     }, bPe = `modulepreload`, xPe = function(e) {
         return `/` + e;
     }, I7 = {}, SPe = function(e, t, n) {
@@ -65757,9 +65742,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         });
     }
     function sIe() {
-        let [e, t] = (0, N.useState)(!1), [n, r] = (0, N.useState)(null), [i, a] = (0, N.useState)(null), o = (e, n)=>{
+        let [e, t] = (0, N.useState)(!1), [n, r] = (0, N.useState)(null), [i, a] = (0, N.useState)(null), [o, s] = (0, N.useState)(null), c = async (e, n)=>{
             r(e), a(n), t(!0);
-        }, s = ()=>{
+            let i = await k7(n, ml), o = new Uint8Array(32);
+            s(await O7.join(i, gl(), o));
+        }, l = ()=>{
             t(!1), r(null), a(null);
         };
         return (0, b.jsx)(b.Fragment, {
@@ -65770,13 +65757,13 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                             (0, b.jsx)(O9, {
                                 path: `/invite`,
                                 element: (0, b.jsx)(yPe, {
-                                    connectedApi: i
+                                    vaxApi: o
                                 })
                             }),
                             (0, b.jsx)(O9, {
                                 path: `/`,
                                 element: (0, b.jsx)(_Pe, {
-                                    onLogout: s,
+                                    onLogout: l,
                                     walletAddress: n,
                                     connectedApi: i
                                 })
@@ -65784,7 +65771,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                         ]
                     })
                 }) : (0, b.jsx)(vPe, {
-                    onLogout: s,
+                    onLogout: l,
                     walletAddress: n
                 })
             }) : (0, b.jsxs)(b.Fragment, {
@@ -65793,7 +65780,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                         fixed: !0
                     }),
                     (0, b.jsx)(vl, {
-                        onLoginSuccess: o
+                        onLoginSuccess: c
                     })
                 ]
             })
