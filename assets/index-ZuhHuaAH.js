@@ -65743,43 +65743,55 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
     }
     function sIe() {
         let [e, t] = (0, N.useState)(!1), [n, r] = (0, N.useState)(null), [i, a] = (0, N.useState)(null), [o, s] = (0, N.useState)(null), c = async (e, n)=>{
+            console.log(`loading...`);
             let i = await k7(n, ml), o = new Uint8Array(32);
             s(await O7.join(i, gl(), o)), r(e), a(n), t(!0);
         }, l = ()=>{
             t(!1), r(null), a(null);
         };
-        return (0, b.jsx)(b.Fragment, {
-            children: e ? (0, b.jsx)(b.Fragment, {
-                children: gl() ? (0, b.jsx)(KFe, {
-                    children: (0, b.jsxs)(bFe, {
-                        children: [
-                            (0, b.jsx)(O9, {
-                                path: `/invite`,
-                                element: (0, b.jsx)(yPe, {
-                                    vaxApi: o
-                                })
-                            }),
-                            (0, b.jsx)(O9, {
-                                path: `/`,
-                                element: (0, b.jsx)(_Pe, {
+        return (0, b.jsx)(KFe, {
+            children: (0, b.jsxs)(bFe, {
+                children: [
+                    (0, b.jsx)(O9, {
+                        path: `/invite`,
+                        element: (0, b.jsx)(b.Fragment, {
+                            children: e ? (0, b.jsx)(yPe, {
+                                vaxApi: o
+                            }) : (0, b.jsxs)(b.Fragment, {
+                                children: [
+                                    (0, b.jsx)(Q9, {
+                                        fixed: !0
+                                    }),
+                                    (0, b.jsx)(vl, {
+                                        onLoginSuccess: c
+                                    })
+                                ]
+                            })
+                        })
+                    }),
+                    (0, b.jsx)(O9, {
+                        path: `/`,
+                        element: (0, b.jsx)(b.Fragment, {
+                            children: e ? (0, b.jsx)(b.Fragment, {
+                                children: gl() ? (0, b.jsx)(_Pe, {
                                     onLogout: l,
                                     walletAddress: n,
                                     connectedApi: i
+                                }) : (0, b.jsx)(vPe, {
+                                    onLogout: l,
+                                    walletAddress: n
                                 })
+                            }) : (0, b.jsxs)(b.Fragment, {
+                                children: [
+                                    (0, b.jsx)(Q9, {
+                                        fixed: !0
+                                    }),
+                                    (0, b.jsx)(vl, {
+                                        onLoginSuccess: c
+                                    })
+                                ]
                             })
-                        ]
-                    })
-                }) : (0, b.jsx)(vPe, {
-                    onLogout: l,
-                    walletAddress: n
-                })
-            }) : (0, b.jsxs)(b.Fragment, {
-                children: [
-                    (0, b.jsx)(Q9, {
-                        fixed: !0
-                    }),
-                    (0, b.jsx)(vl, {
-                        onLoginSuccess: c
+                        })
                     })
                 ]
             })
