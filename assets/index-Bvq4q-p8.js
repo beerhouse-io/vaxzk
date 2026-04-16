@@ -65652,11 +65652,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                                 if (t.preventDefault(), e) try {
                                     await e.acceptInviteAdmin(i.trim());
                                 } catch (e) {
-                                    if (console.error(`Contract failed:`, e), e && typeof e == `object` && `cause` in e) {
-                                        console.log(`aqui!`);
-                                        let t = e.cause;
-                                        n(t?.failure?.message ? String(t?.failure?.message) : ``);
-                                    }
+                                    console.error(`Contract failed:`, e), e instanceof Error ? n(`Erro ao usar o convite: ` + e.message) : n(`Erro ao usar o convite: ` + String(e));
                                 }
                             },
                             className: `space-y-8 relative z-10`,
