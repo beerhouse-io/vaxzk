@@ -65630,9 +65630,24 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         let a = X7(n.currentLocation.pathname, r) || n.currentLocation.pathname, o = X7(n.nextLocation.pathname, r) || n.nextLocation.pathname;
         return Y7(i.pathname, o) != null || Y7(i.pathname, a) != null;
     }
-    var oIe = ()=>{
-        let { uuid: e } = oFe(), [t] = (0, N.useState)(null);
-        return e ? (0, b.jsxs)(`main`, {
+    var oIe = ({ connectedApi: e })=>{
+        let { uuid: t } = oFe();
+        if (!t) return `code is necessary`;
+        let [n, r] = (0, N.useState)(null);
+        return (0, N.useEffect)(()=>{
+            async function t() {
+                let t = gl();
+                if (!(!e || !t)) try {
+                    let n = await k7(e, ml), i = new Uint8Array(32);
+                    r(await O7.join(n, t, i));
+                } catch (e) {
+                    console.error(`Failed to join contract:`, e);
+                }
+            }
+            return t(), ()=>{};
+        }, [
+            e
+        ]), (0, b.jsxs)(`main`, {
             className: `pt-12 px-6 max-w-screen-md mx-auto`,
             children: [
                 (0, b.jsx)(`section`, {
@@ -65648,9 +65663,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                     children: (0, b.jsx)(`div`, {
                         className: `bg-surface-container-low p-8 rounded-xl shadow-sm border-none relative overflow-hidden`,
                         children: (0, b.jsxs)(`form`, {
-                            onSubmit: async (n)=>{
-                                if (n.preventDefault(), console.log(`a`), console.log(e), t) try {
-                                    await t.acceptInviteAdmin(e.trim());
+                            onSubmit: async (e)=>{
+                                if (e.preventDefault(), console.log(`a`), console.log(t), n) try {
+                                    await n.acceptInviteAdmin(t.trim());
                                 } catch (e) {
                                     console.error(`Failed to add vaccine:`, e);
                                 }
@@ -65709,7 +65724,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                     })
                 })
             ]
-        }) : `code is necessary`;
+        });
     }, sIe = [
         {
             code: `en`,
@@ -65758,7 +65773,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                         children: [
                             (0, b.jsx)(O9, {
                                 path: `/invite/:uuid`,
-                                element: (0, b.jsx)(oIe, {})
+                                element: (0, b.jsx)(oIe, {
+                                    connectedApi: i
+                                })
                             }),
                             (0, b.jsx)(O9, {
                                 path: `/`,
