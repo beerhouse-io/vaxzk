@@ -65743,9 +65743,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
     }
     function sIe() {
         let [e, t] = (0, N.useState)(!1), [n, r] = (0, N.useState)(null), [i, a] = (0, N.useState)(null), [o, s] = (0, N.useState)(null), c = async (e, n)=>{
-            r(e), a(n), t(!0);
             let i = await k7(n, ml), o = new Uint8Array(32);
-            s(await O7.join(i, gl(), o));
+            s(await O7.join(i, gl(), o)), r(e), a(n), t(!0);
         }, l = ()=>{
             t(!1), r(null), a(null);
         };
