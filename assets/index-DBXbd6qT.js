@@ -13155,7 +13155,7 @@ perfecta armonía.`,
         });
     }, pl = ()=>(0, N.useContext)(dl), ml = `preprod`, hl = `https://vaxzk.beerhouse.io`;
     function gl() {
-        return `8734f073740250d39fb50a988f021803fa44896261a612ba2eb1289d3fd81083`;
+        return `31730e84517373e9a4d8a0cb110f0e3dec7663dc813df1b0ce853b7898273cb2`;
     }
     var _l = (()=>{
         if (window.midnight) return Object.values(window.midnight).find((e)=>!!e && typeof e == `object` && `apiVersion` in e);
@@ -15176,7 +15176,7 @@ perfecta armonía.`,
                 registerInviteAdmin: (...e)=>{
                     if (e.length !== 2) throw new S(`registerInviteAdmin: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`registerInviteAdmin`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 9 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`registerInviteAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 9 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`registerInviteAdmin`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 17 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`registerInviteAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 17 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: hc()
@@ -15202,7 +15202,7 @@ perfecta armonía.`,
                 acceptInviteAdmin: (...e)=>{
                     if (e.length !== 2) throw new S(`acceptInviteAdmin: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`acceptInviteAdmin`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 13 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`acceptInviteAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 13 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`acceptInviteAdmin`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 22 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`acceptInviteAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 22 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: hc()
@@ -15225,42 +15225,42 @@ perfecta armonía.`,
                         gasCost: r.gasCost
                     };
                 },
+                revokeAdmin: (...e)=>{
+                    if (e.length !== 1) throw new S(`revokeAdmin: expected 1 argument (as invoked from Typescript), received ${e.length}`);
+                    let t = e[0];
+                    typeof t == `object` && t.currentQueryContext != null || w(`revokeAdmin`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 36 char 1`, `CircuitContext`, t);
+                    let n = {
+                        ...t,
+                        gasCost: hc()
+                    }, r = {
+                        input: {
+                            value: [],
+                            alignment: []
+                        },
+                        output: void 0,
+                        publicTranscript: [],
+                        privateTranscriptOutputs: []
+                    }, i = this._revokeAdmin_0(n, r);
+                    return r.output = {
+                        value: [],
+                        alignment: []
+                    }, {
+                        result: i,
+                        context: n,
+                        proofData: r,
+                        gasCost: n.gasCost
+                    };
+                },
                 getShieldedId (e, ...t) {
                     return {
                         result: Su.getShieldedId(...t),
                         context: e
                     };
                 },
-                revokeAdmin: (...e)=>{
-                    if (e.length !== 2) throw new S(`revokeAdmin: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
-                    let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`revokeAdmin`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 94 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`revokeAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 94 char 1`, `Bytes<32>`, n);
-                    let r = {
-                        ...t,
-                        gasCost: hc()
-                    }, i = {
-                        input: {
-                            value: P.toValue(n),
-                            alignment: P.alignment()
-                        },
-                        output: void 0,
-                        publicTranscript: [],
-                        privateTranscriptOutputs: []
-                    }, a = this._revokeAdmin_0(r, i, n);
-                    return i.output = {
-                        value: [],
-                        alignment: []
-                    }, {
-                        result: a,
-                        context: r,
-                        proofData: i,
-                        gasCost: r.gasCost
-                    };
-                },
                 addClinic: (...e)=>{
                     if (e.length !== 3) throw new S(`addClinic: expected 3 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1], r = e[2];
-                    typeof t == `object` && t.currentQueryContext != null || w(`addClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 101 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`addClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 101 char 1`, `Bytes<32>`, n), typeof r == `object` && r.ownerId.buffer instanceof ArrayBuffer && r.ownerId.BYTES_PER_ELEMENT === 1 && r.ownerId.length === 32 && r.name.buffer instanceof ArrayBuffer && r.name.BYTES_PER_ELEMENT === 1 && r.name.length === 32 && r.urlImage.buffer instanceof ArrayBuffer && r.urlImage.BYTES_PER_ELEMENT === 1 && r.urlImage.length === 64 && r.address.buffer instanceof ArrayBuffer && r.address.BYTES_PER_ELEMENT === 1 && r.address.length === 64 && r.latitud.buffer instanceof ArrayBuffer && r.latitud.BYTES_PER_ELEMENT === 1 && r.latitud.length === 20 && r.longitud.buffer instanceof ArrayBuffer && r.longitud.BYTES_PER_ELEMENT === 1 && r.longitud.length === 20 && typeof r.isOnline == `boolean` || w(`addClinic`, `argument 2 (argument 3 as invoked from Typescript)`, `vaxzk.compact line 101 char 1`, `struct ClinicProfile<ownerId: Bytes<32>, name: Bytes<32>, urlImage: Bytes<64>, address: Bytes<64>, latitud: Bytes<20>, longitud: Bytes<20>, isOnline: Boolean>`, r);
+                    typeof t == `object` && t.currentQueryContext != null || w(`addClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 91 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`addClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 91 char 1`, `Bytes<32>`, n), typeof r == `object` && r.ownerId.buffer instanceof ArrayBuffer && r.ownerId.BYTES_PER_ELEMENT === 1 && r.ownerId.length === 32 && r.name.buffer instanceof ArrayBuffer && r.name.BYTES_PER_ELEMENT === 1 && r.name.length === 32 && r.urlImage.buffer instanceof ArrayBuffer && r.urlImage.BYTES_PER_ELEMENT === 1 && r.urlImage.length === 64 && r.address.buffer instanceof ArrayBuffer && r.address.BYTES_PER_ELEMENT === 1 && r.address.length === 64 && r.latitud.buffer instanceof ArrayBuffer && r.latitud.BYTES_PER_ELEMENT === 1 && r.latitud.length === 20 && r.longitud.buffer instanceof ArrayBuffer && r.longitud.BYTES_PER_ELEMENT === 1 && r.longitud.length === 20 && typeof r.isOnline == `boolean` || w(`addClinic`, `argument 2 (argument 3 as invoked from Typescript)`, `vaxzk.compact line 91 char 1`, `struct ClinicProfile<ownerId: Bytes<32>, name: Bytes<32>, urlImage: Bytes<64>, address: Bytes<64>, latitud: Bytes<20>, longitud: Bytes<20>, isOnline: Boolean>`, r);
                     let i = {
                         ...t,
                         gasCost: hc()
@@ -15286,7 +15286,7 @@ perfecta armonía.`,
                 revokeClinic: (...e)=>{
                     if (e.length !== 2) throw new S(`revokeClinic: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`revokeClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 109 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`revokeClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 109 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`revokeClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 99 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`revokeClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 99 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: hc()
@@ -15312,7 +15312,7 @@ perfecta armonía.`,
                 addCertificateIssuer: (...e)=>{
                     if (e.length !== 2) throw new S(`addCertificateIssuer: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`addCertificateIssuer`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 116 char 1`, `CircuitContext`, t), typeof n != `object` && w(`addCertificateIssuer`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 116 char 1`, `struct CertIssuerInfo<uri: Opaque<"string">, name: Opaque<"string">, key: Opaque<"JubjubPoint">, verificationEndpoint: Opaque<"string">>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`addCertificateIssuer`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 106 char 1`, `CircuitContext`, t), typeof n != `object` && w(`addCertificateIssuer`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 106 char 1`, `struct CertIssuerInfo<uri: Opaque<"string">, name: Opaque<"string">, key: Opaque<"JubjubPoint">, verificationEndpoint: Opaque<"string">>`, n);
                     let r = {
                         ...t,
                         gasCost: hc()
@@ -15338,7 +15338,7 @@ perfecta armonía.`,
                 getProfile: (...e)=>{
                     if (e.length !== 1) throw new S(`getProfile: expected 1 argument (as invoked from Typescript), received ${e.length}`);
                     let t = e[0];
-                    typeof t == `object` && t.currentQueryContext != null || w(`getProfile`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 124 char 1`, `CircuitContext`, t);
+                    typeof t == `object` && t.currentQueryContext != null || w(`getProfile`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 114 char 1`, `CircuitContext`, t);
                     let n = {
                         ...t,
                         gasCost: hc()
@@ -15364,7 +15364,7 @@ perfecta armonía.`,
                 addVaccine: (...e)=>{
                     if (e.length !== 2) throw new S(`addVaccine: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`addVaccine`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 134 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 20 || w(`addVaccine`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 134 char 1`, `Bytes<20>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`addVaccine`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 124 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 20 || w(`addVaccine`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 124 char 1`, `Bytes<20>`, n);
                     let r = {
                         ...t,
                         gasCost: hc()
@@ -15390,7 +15390,7 @@ perfecta armonía.`,
                 delVaccine: (...e)=>{
                     if (e.length !== 2) throw new S(`delVaccine: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`delVaccine`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 140 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 20 || w(`delVaccine`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 140 char 1`, `Bytes<20>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`delVaccine`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 130 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 20 || w(`delVaccine`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 130 char 1`, `Bytes<20>`, n);
                     let r = {
                         ...t,
                         gasCost: hc()
@@ -15416,7 +15416,7 @@ perfecta armonía.`,
                 requestVaccineProof: (...e)=>{
                     if (e.length !== 2) throw new S(`requestVaccineProof: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`requestVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 147 char 1`, `CircuitContext`, t), typeof n == `object` && n.vaccine.buffer instanceof ArrayBuffer && n.vaccine.BYTES_PER_ELEMENT === 1 && n.vaccine.length === 20 && n.personalId.buffer instanceof ArrayBuffer && n.personalId.BYTES_PER_ELEMENT === 1 && n.personalId.length === 20 && typeof n.validUntil == `bigint` && n.validUntil >= 0n && n.validUntil <= 340282366920938463463374607431768211455n || w(`requestVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 147 char 1`, `struct VaccineProofRequest<vaccine: Bytes<20>, personalId: Bytes<20>, validUntil: Uint<0..340282366920938463463374607431768211456>>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`requestVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 137 char 1`, `CircuitContext`, t), typeof n == `object` && n.vaccine.buffer instanceof ArrayBuffer && n.vaccine.BYTES_PER_ELEMENT === 1 && n.vaccine.length === 20 && n.personalId.buffer instanceof ArrayBuffer && n.personalId.BYTES_PER_ELEMENT === 1 && n.personalId.length === 20 && typeof n.validUntil == `bigint` && n.validUntil >= 0n && n.validUntil <= 340282366920938463463374607431768211455n || w(`requestVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 137 char 1`, `struct VaccineProofRequest<vaccine: Bytes<20>, personalId: Bytes<20>, validUntil: Uint<0..340282366920938463463374607431768211456>>`, n);
                     let r = {
                         ...t,
                         gasCost: hc()
@@ -15442,7 +15442,7 @@ perfecta armonía.`,
                 submitVaccineProof: (...e)=>{
                     if (e.length !== 2) throw new S(`submitVaccineProof: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`submitVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 158 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`submitVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 158 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`submitVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 148 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`submitVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 148 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: hc()
@@ -15499,7 +15499,7 @@ perfecta armonía.`,
             if (!(`initialZswapLocalState` in t)) throw new S(`Contract state constructor: expected 'initialZswapLocalState' in argument 1 (as invoked from Typescript)`);
             if (typeof t.initialZswapLocalState != `object`) throw new S(`Contract state constructor: expected 'initialZswapLocalState' in argument 1 (as invoked from Typescript) to be an object`);
             let n = new cn, r = j.newArray();
-            r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), n.data = new tn(r), n.setOperation(`registerInviteAdmin`, new on), n.setOperation(`acceptInviteAdmin`, new on), n.setOperation(`revokeAdmin`, new on), n.setOperation(`addClinic`, new on), n.setOperation(`revokeClinic`, new on), n.setOperation(`addCertificateIssuer`, new on), n.setOperation(`getProfile`, new on), n.setOperation(`addVaccine`, new on), n.setOperation(`delVaccine`, new on), n.setOperation(`requestVaccineProof`, new on), n.setOperation(`submitVaccineProof`, new on);
+            r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), r = r.arrayPush(j.newNull()), n.data = new tn(r), n.setOperation(`registerInviteAdmin`, new on), n.setOperation(`acceptInviteAdmin`, new on), n.setOperation(`revokeAdmin`, new on), n.setOperation(`addClinic`, new on), n.setOperation(`revokeClinic`, new on), n.setOperation(`addCertificateIssuer`, new on), n.setOperation(`getProfile`, new on), n.setOperation(`addVaccine`, new on), n.setOperation(`delVaccine`, new on), n.setOperation(`requestVaccineProof`, new on), n.setOperation(`submitVaccineProof`, new on);
             let i = mc(At(), t.initialZswapLocalState.coinPublicKey, n.data, t.initialPrivateState), a = {
                 input: {
                     value: [],
@@ -15566,7 +15566,10 @@ perfecta armonía.`,
                 {
                     push: {
                         storage: !0,
-                        value: j.newMap(new wn).encode()
+                        value: j.newCell({
+                            value: fu.toValue(0n),
+                            alignment: fu.alignment()
+                        }).encode()
                     }
                 },
                 {
@@ -15588,7 +15591,10 @@ perfecta armonía.`,
                 {
                     push: {
                         storage: !0,
-                        value: j.newMap(new wn).encode()
+                        value: j.newCell({
+                            value: fu.toValue(0n),
+                            alignment: fu.alignment()
+                        }).encode()
                     }
                 },
                 {
@@ -15654,10 +15660,7 @@ perfecta armonía.`,
                 {
                     push: {
                         storage: !0,
-                        value: j.newCell({
-                            value: fu.toValue(0n),
-                            alignment: fu.alignment()
-                        }).encode()
+                        value: j.newMap(new wn).encode()
                     }
                 },
                 {
@@ -15679,10 +15682,7 @@ perfecta armonía.`,
                 {
                     push: {
                         storage: !0,
-                        value: j.newCell({
-                            value: fu.toValue(0n),
-                            alignment: fu.alignment()
-                        }).encode()
+                        value: j.newMap(new wn).encode()
                     }
                 },
                 {
@@ -15704,7 +15704,10 @@ perfecta armonía.`,
                 {
                     push: {
                         storage: !0,
-                        value: j.newMap(new wn).encode()
+                        value: j.newCell({
+                            value: fu.toValue(0n),
+                            alignment: fu.alignment()
+                        }).encode()
                     }
                 },
                 {
@@ -15719,6 +15722,53 @@ perfecta armonía.`,
                         storage: !1,
                         value: j.newCell({
                             value: I.toValue(9n),
+                            alignment: I.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    push: {
+                        storage: !0,
+                        value: j.newCell({
+                            value: fu.toValue(0n),
+                            alignment: fu.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    ins: {
+                        cached: !1,
+                        n: 1
+                    }
+                }
+            ]), M(i, a, [
+                {
+                    push: {
+                        storage: !1,
+                        value: j.newCell({
+                            value: I.toValue(10n),
+                            alignment: I.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    push: {
+                        storage: !0,
+                        value: j.newMap(new wn).encode()
+                    }
+                },
+                {
+                    ins: {
+                        cached: !1,
+                        n: 1
+                    }
+                }
+            ]), M(i, a, [
+                {
+                    push: {
+                        storage: !1,
+                        value: j.newCell({
+                            value: I.toValue(11n),
                             alignment: I.alignment()
                         }).encode()
                     }
@@ -15789,67 +15839,67 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
+                                    value: I.toValue(8n),
+                                    alignment: I.alignment()
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    addi: {
+                        immediate: parseInt(Bt({
+                            value: du.toValue(1n),
+                            alignment: du.alignment()
+                        }.value))
+                    }
+                },
+                {
+                    ins: {
+                        cached: !0,
+                        n: 1
+                    }
+                }
+            ]), M(i, a, [
+                {
+                    idx: {
+                        cached: !1,
+                        pushPath: !0,
+                        path: [
+                            {
+                                tag: `value`,
+                                value: {
+                                    value: I.toValue(9n),
+                                    alignment: I.alignment()
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    addi: {
+                        immediate: parseInt(Bt({
+                            value: du.toValue(1n),
+                            alignment: du.alignment()
+                        }.value))
+                    }
+                },
+                {
+                    ins: {
+                        cached: !0,
+                        n: 1
+                    }
+                }
+            ]), M(i, a, [
+                {
+                    idx: {
+                        cached: !1,
+                        pushPath: !0,
+                        path: [
+                            {
+                                tag: `value`,
+                                value: {
                                     value: I.toValue(6n),
-                                    alignment: I.alignment()
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    addi: {
-                        immediate: parseInt(Bt({
-                            value: du.toValue(1n),
-                            alignment: du.alignment()
-                        }.value))
-                    }
-                },
-                {
-                    ins: {
-                        cached: !0,
-                        n: 1
-                    }
-                }
-            ]), M(i, a, [
-                {
-                    idx: {
-                        cached: !1,
-                        pushPath: !0,
-                        path: [
-                            {
-                                tag: `value`,
-                                value: {
-                                    value: I.toValue(7n),
-                                    alignment: I.alignment()
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    addi: {
-                        immediate: parseInt(Bt({
-                            value: du.toValue(1n),
-                            alignment: du.alignment()
-                        }.value))
-                    }
-                },
-                {
-                    ins: {
-                        cached: !0,
-                        n: 1
-                    }
-                }
-            ]), M(i, a, [
-                {
-                    idx: {
-                        cached: !1,
-                        pushPath: !0,
-                        path: [
-                            {
-                                tag: `value`,
-                                value: {
-                                    value: I.toValue(4n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -15913,7 +15963,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(4n),
+                                    value: I.toValue(6n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -15977,7 +16027,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(4n),
+                                    value: I.toValue(6n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -16256,7 +16306,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(2n),
+                                    value: I.toValue(4n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -16335,7 +16385,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(3n),
+                                    value: I.toValue(5n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -16587,7 +16637,7 @@ perfecta armonía.`,
                 ]),
                 isOnline: !0
             };
-            return M(i, a, [
+            M(i, a, [
                 {
                     idx: {
                         cached: !1,
@@ -16596,7 +16646,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(2n),
+                                    value: I.toValue(4n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -16666,6 +16716,116 @@ perfecta armonía.`,
                         n: 1
                     }
                 }
+            ]);
+            let u = fu.fromValue(M(i, a, [
+                {
+                    dup: {
+                        n: 0
+                    }
+                },
+                {
+                    idx: {
+                        cached: !1,
+                        pushPath: !1,
+                        path: [
+                            {
+                                tag: `value`,
+                                value: {
+                                    value: I.toValue(0n),
+                                    alignment: I.alignment()
+                                }
+                            }
+                        ]
+                    }
+                },
+                `size`,
+                {
+                    popeq: {
+                        cached: !0,
+                        result: void 0
+                    }
+                }
+            ]).value);
+            M(i, a, [
+                {
+                    push: {
+                        storage: !1,
+                        value: j.newCell({
+                            value: I.toValue(2n),
+                            alignment: I.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    push: {
+                        storage: !0,
+                        value: j.newCell({
+                            value: fu.toValue(u),
+                            alignment: fu.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    ins: {
+                        cached: !1,
+                        n: 1
+                    }
+                }
+            ]);
+            let d = fu.fromValue(M(i, a, [
+                {
+                    dup: {
+                        n: 0
+                    }
+                },
+                {
+                    idx: {
+                        cached: !1,
+                        pushPath: !1,
+                        path: [
+                            {
+                                tag: `value`,
+                                value: {
+                                    value: I.toValue(1n),
+                                    alignment: I.alignment()
+                                }
+                            }
+                        ]
+                    }
+                },
+                `size`,
+                {
+                    popeq: {
+                        cached: !0,
+                        result: void 0
+                    }
+                }
+            ]).value);
+            return M(i, a, [
+                {
+                    push: {
+                        storage: !1,
+                        value: j.newCell({
+                            value: I.toValue(3n),
+                            alignment: I.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    push: {
+                        storage: !0,
+                        value: j.newCell({
+                            value: fu.toValue(d),
+                            alignment: fu.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    ins: {
+                        cached: !1,
+                        n: 1
+                    }
+                }
             ]), n.data = new tn(i.currentQueryContext.state.state), {
                 currentContractState: n,
                 currentPrivateState: i.currentPrivateState,
@@ -16720,8 +16880,49 @@ perfecta armonía.`,
                 userPubKey: a
             });
         }
+        _isAdmin_0(e, t) {
+            let n = this._ownPublicKey_0(e, t), r = this._getShieldedId_0(n.bytes);
+            return C(tu.fromValue(M(e, t, [
+                {
+                    dup: {
+                        n: 0
+                    }
+                },
+                {
+                    idx: {
+                        cached: !1,
+                        pushPath: !1,
+                        path: [
+                            {
+                                tag: `value`,
+                                value: {
+                                    value: I.toValue(0n),
+                                    alignment: I.alignment()
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    push: {
+                        storage: !1,
+                        value: j.newCell({
+                            value: P.toValue(r),
+                            alignment: P.alignment()
+                        }).encode()
+                    }
+                },
+                `member`,
+                {
+                    popeq: {
+                        cached: !0,
+                        result: void 0
+                    }
+                }
+            ]).value), `You are not an admin`), [];
+        }
         _registerInviteAdmin_0(e, t, n) {
-            return M(e, t, [
+            return this._isAdmin_0(e, t), M(e, t, [
                 {
                     idx: {
                         cached: !1,
@@ -16806,7 +17007,7 @@ perfecta armonía.`,
                 }
             ]).value), `Invalid invite code`);
             let r = this._ownPublicKey_0(e, t), i = this._getShieldedId_0(r.bytes);
-            return C(!tu.fromValue(M(e, t, [
+            C(!tu.fromValue(M(e, t, [
                 {
                     dup: {
                         n: 0
@@ -16886,6 +17087,61 @@ perfecta armonía.`,
                         n: 1
                     }
                 }
+            ]);
+            let a = fu.fromValue(M(e, t, [
+                {
+                    dup: {
+                        n: 0
+                    }
+                },
+                {
+                    idx: {
+                        cached: !1,
+                        pushPath: !1,
+                        path: [
+                            {
+                                tag: `value`,
+                                value: {
+                                    value: I.toValue(0n),
+                                    alignment: I.alignment()
+                                }
+                            }
+                        ]
+                    }
+                },
+                `size`,
+                {
+                    popeq: {
+                        cached: !0,
+                        result: void 0
+                    }
+                }
+            ]).value);
+            M(e, t, [
+                {
+                    push: {
+                        storage: !1,
+                        value: j.newCell({
+                            value: I.toValue(2n),
+                            alignment: I.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    push: {
+                        storage: !0,
+                        value: j.newCell({
+                            value: fu.toValue(a),
+                            alignment: fu.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    ins: {
+                        cached: !1,
+                        n: 1
+                    }
+                }
             ]), M(e, t, [
                 {
                     idx: {
@@ -16919,6 +17175,157 @@ perfecta armonía.`,
                 {
                     ins: {
                         cached: !0,
+                        n: 1
+                    }
+                }
+            ]);
+            let o = fu.fromValue(M(e, t, [
+                {
+                    dup: {
+                        n: 0
+                    }
+                },
+                {
+                    idx: {
+                        cached: !1,
+                        pushPath: !1,
+                        path: [
+                            {
+                                tag: `value`,
+                                value: {
+                                    value: I.toValue(1n),
+                                    alignment: I.alignment()
+                                }
+                            }
+                        ]
+                    }
+                },
+                `size`,
+                {
+                    popeq: {
+                        cached: !0,
+                        result: void 0
+                    }
+                }
+            ]).value);
+            return M(e, t, [
+                {
+                    push: {
+                        storage: !1,
+                        value: j.newCell({
+                            value: I.toValue(3n),
+                            alignment: I.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    push: {
+                        storage: !0,
+                        value: j.newCell({
+                            value: fu.toValue(o),
+                            alignment: fu.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    ins: {
+                        cached: !1,
+                        n: 1
+                    }
+                }
+            ]), [];
+        }
+        _revokeAdmin_0(e, t) {
+            this._isAdmin_0(e, t);
+            let n = this._ownPublicKey_0(e, t), r = this._getShieldedId_0(n.bytes);
+            M(e, t, [
+                {
+                    idx: {
+                        cached: !1,
+                        pushPath: !0,
+                        path: [
+                            {
+                                tag: `value`,
+                                value: {
+                                    value: I.toValue(0n),
+                                    alignment: I.alignment()
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    push: {
+                        storage: !1,
+                        value: j.newCell({
+                            value: P.toValue(r),
+                            alignment: P.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    rem: {
+                        cached: !1
+                    }
+                },
+                {
+                    ins: {
+                        cached: !0,
+                        n: 1
+                    }
+                }
+            ]);
+            let i = fu.fromValue(M(e, t, [
+                {
+                    dup: {
+                        n: 0
+                    }
+                },
+                {
+                    idx: {
+                        cached: !1,
+                        pushPath: !1,
+                        path: [
+                            {
+                                tag: `value`,
+                                value: {
+                                    value: I.toValue(0n),
+                                    alignment: I.alignment()
+                                }
+                            }
+                        ]
+                    }
+                },
+                `size`,
+                {
+                    popeq: {
+                        cached: !0,
+                        result: void 0
+                    }
+                }
+            ]).value);
+            return M(e, t, [
+                {
+                    push: {
+                        storage: !1,
+                        value: j.newCell({
+                            value: I.toValue(2n),
+                            alignment: I.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    push: {
+                        storage: !0,
+                        value: j.newCell({
+                            value: fu.toValue(i),
+                            alignment: fu.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    ins: {
+                        cached: !1,
                         n: 1
                     }
                 }
@@ -17005,7 +17412,7 @@ perfecta armonía.`,
                     0,
                     0,
                     0
-                ]), `vaxzk.compact line 66 char 45`),
+                ]), `vaxzk.compact line 70 char 45`),
                 fu.fromValue(M(e, t, [
                     {
                         dup: {
@@ -17020,7 +17427,7 @@ perfecta armonía.`,
                                 {
                                     tag: `value`,
                                     value: {
-                                        value: I.toValue(6n),
+                                        value: I.toValue(8n),
                                         alignment: I.alignment()
                                     }
                                 }
@@ -17044,7 +17451,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(6n),
+                                    value: I.toValue(8n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -17102,7 +17509,7 @@ perfecta armonía.`,
                     0,
                     0,
                     0
-                ]), `vaxzk.compact line 74 char 45`),
+                ]), `vaxzk.compact line 78 char 45`),
                 fu.fromValue(M(e, t, [
                     {
                         dup: {
@@ -17117,7 +17524,7 @@ perfecta armonía.`,
                                 {
                                     tag: `value`,
                                     value: {
-                                        value: I.toValue(7n),
+                                        value: I.toValue(9n),
                                         alignment: I.alignment()
                                     }
                                 }
@@ -17141,7 +17548,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(7n),
+                                    value: I.toValue(9n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -17164,47 +17571,6 @@ perfecta armonía.`,
                 }
             ]), n;
         }
-        _isAdmin_0(e, t) {
-            let n = this._ownPublicKey_0(e, t), r = this._getShieldedId_0(n.bytes);
-            return C(tu.fromValue(M(e, t, [
-                {
-                    dup: {
-                        n: 0
-                    }
-                },
-                {
-                    idx: {
-                        cached: !1,
-                        pushPath: !1,
-                        path: [
-                            {
-                                tag: `value`,
-                                value: {
-                                    value: I.toValue(0n),
-                                    alignment: I.alignment()
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    push: {
-                        storage: !1,
-                        value: j.newCell({
-                            value: P.toValue(r),
-                            alignment: P.alignment()
-                        }).encode()
-                    }
-                },
-                `member`,
-                {
-                    popeq: {
-                        cached: !0,
-                        result: void 0
-                    }
-                }
-            ]).value), `You are not an admin`), [];
-        }
         _isClinic_0(e, t) {
             let n = this._ownPublicKey_0(e, t), r = this._getShieldedId_0(n.bytes);
             return C(tu.fromValue(M(e, t, [
@@ -17221,7 +17587,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(3n),
+                                    value: I.toValue(5n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -17246,82 +17612,6 @@ perfecta armonía.`,
                 }
             ]).value), `You are not a registered clinic`), [];
         }
-        _revokeAdmin_0(e, t, n) {
-            return this._isAdmin_0(e, t), C(!tu.fromValue(M(e, t, [
-                {
-                    dup: {
-                        n: 0
-                    }
-                },
-                {
-                    idx: {
-                        cached: !1,
-                        pushPath: !1,
-                        path: [
-                            {
-                                tag: `value`,
-                                value: {
-                                    value: I.toValue(0n),
-                                    alignment: I.alignment()
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    push: {
-                        storage: !1,
-                        value: j.newCell({
-                            value: P.toValue(n),
-                            alignment: P.alignment()
-                        }).encode()
-                    }
-                },
-                `member`,
-                {
-                    popeq: {
-                        cached: !0,
-                        result: void 0
-                    }
-                }
-            ]).value), `Admin ID is not in the admins list`), M(e, t, [
-                {
-                    idx: {
-                        cached: !1,
-                        pushPath: !0,
-                        path: [
-                            {
-                                tag: `value`,
-                                value: {
-                                    value: I.toValue(0n),
-                                    alignment: I.alignment()
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    push: {
-                        storage: !1,
-                        value: j.newCell({
-                            value: P.toValue(n),
-                            alignment: P.alignment()
-                        }).encode()
-                    }
-                },
-                {
-                    rem: {
-                        cached: !1
-                    }
-                },
-                {
-                    ins: {
-                        cached: !0,
-                        n: 1
-                    }
-                }
-            ]), [];
-        }
         _addClinic_0(e, t, n, r) {
             this._isAdmin_0(e, t), C(!tu.fromValue(M(e, t, [
                 {
@@ -17337,7 +17627,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(2n),
+                                    value: I.toValue(4n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -17369,7 +17659,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(2n),
+                                    value: I.toValue(4n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -17417,7 +17707,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(3n),
+                                    value: I.toValue(5n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -17471,7 +17761,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(2n),
+                                    value: I.toValue(4n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -17503,7 +17793,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(2n),
+                                    value: I.toValue(4n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -17549,7 +17839,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(5n),
+                                    value: I.toValue(7n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -17581,7 +17871,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(5n),
+                                    value: I.toValue(7n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -17675,7 +17965,7 @@ perfecta armonía.`,
                                 {
                                     tag: `value`,
                                     value: {
-                                        value: I.toValue(3n),
+                                        value: I.toValue(5n),
                                         alignment: I.alignment()
                                     }
                                 }
@@ -17716,7 +18006,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(4n),
+                                    value: I.toValue(6n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -17748,7 +18038,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(4n),
+                                    value: I.toValue(6n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -17799,7 +18089,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(4n),
+                                    value: I.toValue(6n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -17831,7 +18121,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(4n),
+                                    value: I.toValue(6n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -17877,7 +18167,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(8n),
+                                    value: I.toValue(10n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -17909,7 +18199,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(8n),
+                                    value: I.toValue(10n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -17963,7 +18253,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(8n),
+                                    value: I.toValue(10n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -18000,7 +18290,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(9n),
+                                    value: I.toValue(11n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -18039,7 +18329,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(5n),
+                                    value: I.toValue(7n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -18077,7 +18367,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(8n),
+                                    value: I.toValue(10n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -18119,7 +18409,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(5n),
+                                    value: I.toValue(7n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -18161,7 +18451,7 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: I.toValue(9n),
+                                    value: I.toValue(11n),
                                     alignment: I.alignment()
                                 }
                             }
@@ -18221,6 +18511,66 @@ perfecta armonía.`,
             privateTranscriptOutputs: []
         };
         return {
+            get totalAdmin () {
+                return fu.fromValue(M(n, r, [
+                    {
+                        dup: {
+                            n: 0
+                        }
+                    },
+                    {
+                        idx: {
+                            cached: !1,
+                            pushPath: !1,
+                            path: [
+                                {
+                                    tag: `value`,
+                                    value: {
+                                        value: I.toValue(2n),
+                                        alignment: I.alignment()
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        popeq: {
+                            cached: !1,
+                            result: void 0
+                        }
+                    }
+                ]).value);
+            },
+            get totalInviteAdmin () {
+                return fu.fromValue(M(n, r, [
+                    {
+                        dup: {
+                            n: 0
+                        }
+                    },
+                    {
+                        idx: {
+                            cached: !1,
+                            pushPath: !1,
+                            path: [
+                                {
+                                    tag: `value`,
+                                    value: {
+                                        value: I.toValue(3n),
+                                        alignment: I.alignment()
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        popeq: {
+                            cached: !1,
+                            result: void 0
+                        }
+                    }
+                ]).value);
+            },
             clinics: {
                 isEmpty (...e) {
                     if (e.length !== 0) throw new S(`isEmpty: expected 0 arguments, received ${e.length}`);
@@ -18238,7 +18588,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: I.toValue(2n),
+                                            value: I.toValue(4n),
                                             alignment: I.alignment()
                                         }
                                     }
@@ -18280,7 +18630,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: I.toValue(2n),
+                                            value: I.toValue(4n),
                                             alignment: I.alignment()
                                         }
                                     }
@@ -18313,7 +18663,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: I.toValue(2n),
+                                            value: I.toValue(4n),
                                             alignment: I.alignment()
                                         }
                                     }
@@ -18355,7 +18705,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: I.toValue(2n),
+                                            value: I.toValue(4n),
                                             alignment: I.alignment()
                                         }
                                     }
@@ -18387,7 +18737,7 @@ perfecta armonía.`,
                 },
                 [Symbol.iterator] (...e) {
                     if (e.length !== 0) throw new S(`iter: expected 0 arguments, received ${e.length}`);
-                    let n = t.asArray()[2];
+                    let n = t.asArray()[4];
                     return n.asMap().keys().map((e)=>{
                         let t = n.asMap().get(e).asCell();
                         return [
@@ -18414,7 +18764,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: I.toValue(3n),
+                                            value: I.toValue(5n),
                                             alignment: I.alignment()
                                         }
                                     }
@@ -18456,7 +18806,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: I.toValue(3n),
+                                            value: I.toValue(5n),
                                             alignment: I.alignment()
                                         }
                                     }
@@ -18489,7 +18839,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: I.toValue(3n),
+                                            value: I.toValue(5n),
                                             alignment: I.alignment()
                                         }
                                     }
@@ -18518,304 +18868,6 @@ perfecta armonía.`,
                     if (e.length !== 1) throw new S(`lookup: expected 1 argument, received ${e.length}`);
                     let t = e[0];
                     return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`lookup`, `argument 1`, `vaxzk.compact line 13 char 1`, `Bytes<32>`, t), tu.fromValue(M(n, r, [
-                        {
-                            dup: {
-                                n: 0
-                            }
-                        },
-                        {
-                            idx: {
-                                cached: !1,
-                                pushPath: !1,
-                                path: [
-                                    {
-                                        tag: `value`,
-                                        value: {
-                                            value: I.toValue(3n),
-                                            alignment: I.alignment()
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            idx: {
-                                cached: !1,
-                                pushPath: !1,
-                                path: [
-                                    {
-                                        tag: `value`,
-                                        value: {
-                                            value: P.toValue(t),
-                                            alignment: P.alignment()
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            popeq: {
-                                cached: !1,
-                                result: void 0
-                            }
-                        }
-                    ]).value);
-                },
-                [Symbol.iterator] (...e) {
-                    if (e.length !== 0) throw new S(`iter: expected 0 arguments, received ${e.length}`);
-                    let n = t.asArray()[3];
-                    return n.asMap().keys().map((e)=>{
-                        let t = n.asMap().get(e).asCell();
-                        return [
-                            P.fromValue(e.value),
-                            tu.fromValue(t.value)
-                        ];
-                    })[Symbol.iterator]();
-                }
-            },
-            vaccines: {
-                isEmpty (...e) {
-                    if (e.length !== 0) throw new S(`isEmpty: expected 0 arguments, received ${e.length}`);
-                    return tu.fromValue(M(n, r, [
-                        {
-                            dup: {
-                                n: 0
-                            }
-                        },
-                        {
-                            idx: {
-                                cached: !1,
-                                pushPath: !1,
-                                path: [
-                                    {
-                                        tag: `value`,
-                                        value: {
-                                            value: I.toValue(4n),
-                                            alignment: I.alignment()
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        `size`,
-                        {
-                            push: {
-                                storage: !1,
-                                value: j.newCell({
-                                    value: fu.toValue(0n),
-                                    alignment: fu.alignment()
-                                }).encode()
-                            }
-                        },
-                        `eq`,
-                        {
-                            popeq: {
-                                cached: !0,
-                                result: void 0
-                            }
-                        }
-                    ]).value);
-                },
-                size (...e) {
-                    if (e.length !== 0) throw new S(`size: expected 0 arguments, received ${e.length}`);
-                    return fu.fromValue(M(n, r, [
-                        {
-                            dup: {
-                                n: 0
-                            }
-                        },
-                        {
-                            idx: {
-                                cached: !1,
-                                pushPath: !1,
-                                path: [
-                                    {
-                                        tag: `value`,
-                                        value: {
-                                            value: I.toValue(4n),
-                                            alignment: I.alignment()
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        `size`,
-                        {
-                            popeq: {
-                                cached: !0,
-                                result: void 0
-                            }
-                        }
-                    ]).value);
-                },
-                member (...e) {
-                    if (e.length !== 1) throw new S(`member: expected 1 argument, received ${e.length}`);
-                    let t = e[0];
-                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 20 || w(`member`, `argument 1`, `vaxzk.compact line 16 char 1`, `Bytes<20>`, t), tu.fromValue(M(n, r, [
-                        {
-                            dup: {
-                                n: 0
-                            }
-                        },
-                        {
-                            idx: {
-                                cached: !1,
-                                pushPath: !1,
-                                path: [
-                                    {
-                                        tag: `value`,
-                                        value: {
-                                            value: I.toValue(4n),
-                                            alignment: I.alignment()
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            push: {
-                                storage: !1,
-                                value: j.newCell({
-                                    value: F.toValue(t),
-                                    alignment: F.alignment()
-                                }).encode()
-                            }
-                        },
-                        `member`,
-                        {
-                            popeq: {
-                                cached: !0,
-                                result: void 0
-                            }
-                        }
-                    ]).value);
-                },
-                [Symbol.iterator] (...e) {
-                    if (e.length !== 0) throw new S(`iter: expected 0 arguments, received ${e.length}`);
-                    return t.asArray()[4].asMap().keys().map((e)=>F.fromValue(e.value))[Symbol.iterator]();
-                }
-            },
-            issuers: {
-                isEmpty (...e) {
-                    if (e.length !== 0) throw new S(`isEmpty: expected 0 arguments, received ${e.length}`);
-                    return tu.fromValue(M(n, r, [
-                        {
-                            dup: {
-                                n: 0
-                            }
-                        },
-                        {
-                            idx: {
-                                cached: !1,
-                                pushPath: !1,
-                                path: [
-                                    {
-                                        tag: `value`,
-                                        value: {
-                                            value: I.toValue(5n),
-                                            alignment: I.alignment()
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        `size`,
-                        {
-                            push: {
-                                storage: !1,
-                                value: j.newCell({
-                                    value: fu.toValue(0n),
-                                    alignment: fu.alignment()
-                                }).encode()
-                            }
-                        },
-                        `eq`,
-                        {
-                            popeq: {
-                                cached: !0,
-                                result: void 0
-                            }
-                        }
-                    ]).value);
-                },
-                size (...e) {
-                    if (e.length !== 0) throw new S(`size: expected 0 arguments, received ${e.length}`);
-                    return fu.fromValue(M(n, r, [
-                        {
-                            dup: {
-                                n: 0
-                            }
-                        },
-                        {
-                            idx: {
-                                cached: !1,
-                                pushPath: !1,
-                                path: [
-                                    {
-                                        tag: `value`,
-                                        value: {
-                                            value: I.toValue(5n),
-                                            alignment: I.alignment()
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        `size`,
-                        {
-                            popeq: {
-                                cached: !0,
-                                result: void 0
-                            }
-                        }
-                    ]).value);
-                },
-                member (...e) {
-                    if (e.length !== 1) throw new S(`member: expected 1 argument, received ${e.length}`);
-                    let t = e[0];
-                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`member`, `argument 1`, `vaxzk.compact line 19 char 1`, `Bytes<32>`, t), tu.fromValue(M(n, r, [
-                        {
-                            dup: {
-                                n: 0
-                            }
-                        },
-                        {
-                            idx: {
-                                cached: !1,
-                                pushPath: !1,
-                                path: [
-                                    {
-                                        tag: `value`,
-                                        value: {
-                                            value: I.toValue(5n),
-                                            alignment: I.alignment()
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            push: {
-                                storage: !1,
-                                value: j.newCell({
-                                    value: P.toValue(t),
-                                    alignment: P.alignment()
-                                }).encode()
-                            }
-                        },
-                        `member`,
-                        {
-                            popeq: {
-                                cached: !0,
-                                result: void 0
-                            }
-                        }
-                    ]).value);
-                },
-                lookup (...e) {
-                    if (e.length !== 1) throw new S(`lookup: expected 1 argument, received ${e.length}`);
-                    let t = e[0];
-                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`lookup`, `argument 1`, `vaxzk.compact line 19 char 1`, `Bytes<32>`, t), su.fromValue(M(n, r, [
                         {
                             dup: {
                                 n: 0
@@ -18866,72 +18918,12 @@ perfecta armonía.`,
                         let t = n.asMap().get(e).asCell();
                         return [
                             P.fromValue(e.value),
-                            su.fromValue(t.value)
+                            tu.fromValue(t.value)
                         ];
                     })[Symbol.iterator]();
                 }
             },
-            get issuerId () {
-                return fu.fromValue(M(n, r, [
-                    {
-                        dup: {
-                            n: 0
-                        }
-                    },
-                    {
-                        idx: {
-                            cached: !1,
-                            pushPath: !1,
-                            path: [
-                                {
-                                    tag: `value`,
-                                    value: {
-                                        value: I.toValue(6n),
-                                        alignment: I.alignment()
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        popeq: {
-                            cached: !0,
-                            result: void 0
-                        }
-                    }
-                ]).value);
-            },
-            get proofReqId () {
-                return fu.fromValue(M(n, r, [
-                    {
-                        dup: {
-                            n: 0
-                        }
-                    },
-                    {
-                        idx: {
-                            cached: !1,
-                            pushPath: !1,
-                            path: [
-                                {
-                                    tag: `value`,
-                                    value: {
-                                        value: I.toValue(7n),
-                                        alignment: I.alignment()
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        popeq: {
-                            cached: !0,
-                            result: void 0
-                        }
-                    }
-                ]).value);
-            },
-            vaccineProofReqs: {
+            vaccines: {
                 isEmpty (...e) {
                     if (e.length !== 0) throw new S(`isEmpty: expected 0 arguments, received ${e.length}`);
                     return tu.fromValue(M(n, r, [
@@ -18948,7 +18940,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: I.toValue(8n),
+                                            value: I.toValue(6n),
                                             alignment: I.alignment()
                                         }
                                     }
@@ -18990,7 +18982,365 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: I.toValue(8n),
+                                            value: I.toValue(6n),
+                                            alignment: I.alignment()
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        `size`,
+                        {
+                            popeq: {
+                                cached: !0,
+                                result: void 0
+                            }
+                        }
+                    ]).value);
+                },
+                member (...e) {
+                    if (e.length !== 1) throw new S(`member: expected 1 argument, received ${e.length}`);
+                    let t = e[0];
+                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 20 || w(`member`, `argument 1`, `vaxzk.compact line 16 char 1`, `Bytes<20>`, t), tu.fromValue(M(n, r, [
+                        {
+                            dup: {
+                                n: 0
+                            }
+                        },
+                        {
+                            idx: {
+                                cached: !1,
+                                pushPath: !1,
+                                path: [
+                                    {
+                                        tag: `value`,
+                                        value: {
+                                            value: I.toValue(6n),
+                                            alignment: I.alignment()
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            push: {
+                                storage: !1,
+                                value: j.newCell({
+                                    value: F.toValue(t),
+                                    alignment: F.alignment()
+                                }).encode()
+                            }
+                        },
+                        `member`,
+                        {
+                            popeq: {
+                                cached: !0,
+                                result: void 0
+                            }
+                        }
+                    ]).value);
+                },
+                [Symbol.iterator] (...e) {
+                    if (e.length !== 0) throw new S(`iter: expected 0 arguments, received ${e.length}`);
+                    return t.asArray()[6].asMap().keys().map((e)=>F.fromValue(e.value))[Symbol.iterator]();
+                }
+            },
+            issuers: {
+                isEmpty (...e) {
+                    if (e.length !== 0) throw new S(`isEmpty: expected 0 arguments, received ${e.length}`);
+                    return tu.fromValue(M(n, r, [
+                        {
+                            dup: {
+                                n: 0
+                            }
+                        },
+                        {
+                            idx: {
+                                cached: !1,
+                                pushPath: !1,
+                                path: [
+                                    {
+                                        tag: `value`,
+                                        value: {
+                                            value: I.toValue(7n),
+                                            alignment: I.alignment()
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        `size`,
+                        {
+                            push: {
+                                storage: !1,
+                                value: j.newCell({
+                                    value: fu.toValue(0n),
+                                    alignment: fu.alignment()
+                                }).encode()
+                            }
+                        },
+                        `eq`,
+                        {
+                            popeq: {
+                                cached: !0,
+                                result: void 0
+                            }
+                        }
+                    ]).value);
+                },
+                size (...e) {
+                    if (e.length !== 0) throw new S(`size: expected 0 arguments, received ${e.length}`);
+                    return fu.fromValue(M(n, r, [
+                        {
+                            dup: {
+                                n: 0
+                            }
+                        },
+                        {
+                            idx: {
+                                cached: !1,
+                                pushPath: !1,
+                                path: [
+                                    {
+                                        tag: `value`,
+                                        value: {
+                                            value: I.toValue(7n),
+                                            alignment: I.alignment()
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        `size`,
+                        {
+                            popeq: {
+                                cached: !0,
+                                result: void 0
+                            }
+                        }
+                    ]).value);
+                },
+                member (...e) {
+                    if (e.length !== 1) throw new S(`member: expected 1 argument, received ${e.length}`);
+                    let t = e[0];
+                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`member`, `argument 1`, `vaxzk.compact line 19 char 1`, `Bytes<32>`, t), tu.fromValue(M(n, r, [
+                        {
+                            dup: {
+                                n: 0
+                            }
+                        },
+                        {
+                            idx: {
+                                cached: !1,
+                                pushPath: !1,
+                                path: [
+                                    {
+                                        tag: `value`,
+                                        value: {
+                                            value: I.toValue(7n),
+                                            alignment: I.alignment()
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            push: {
+                                storage: !1,
+                                value: j.newCell({
+                                    value: P.toValue(t),
+                                    alignment: P.alignment()
+                                }).encode()
+                            }
+                        },
+                        `member`,
+                        {
+                            popeq: {
+                                cached: !0,
+                                result: void 0
+                            }
+                        }
+                    ]).value);
+                },
+                lookup (...e) {
+                    if (e.length !== 1) throw new S(`lookup: expected 1 argument, received ${e.length}`);
+                    let t = e[0];
+                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`lookup`, `argument 1`, `vaxzk.compact line 19 char 1`, `Bytes<32>`, t), su.fromValue(M(n, r, [
+                        {
+                            dup: {
+                                n: 0
+                            }
+                        },
+                        {
+                            idx: {
+                                cached: !1,
+                                pushPath: !1,
+                                path: [
+                                    {
+                                        tag: `value`,
+                                        value: {
+                                            value: I.toValue(7n),
+                                            alignment: I.alignment()
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            idx: {
+                                cached: !1,
+                                pushPath: !1,
+                                path: [
+                                    {
+                                        tag: `value`,
+                                        value: {
+                                            value: P.toValue(t),
+                                            alignment: P.alignment()
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            popeq: {
+                                cached: !1,
+                                result: void 0
+                            }
+                        }
+                    ]).value);
+                },
+                [Symbol.iterator] (...e) {
+                    if (e.length !== 0) throw new S(`iter: expected 0 arguments, received ${e.length}`);
+                    let n = t.asArray()[7];
+                    return n.asMap().keys().map((e)=>{
+                        let t = n.asMap().get(e).asCell();
+                        return [
+                            P.fromValue(e.value),
+                            su.fromValue(t.value)
+                        ];
+                    })[Symbol.iterator]();
+                }
+            },
+            get issuerId () {
+                return fu.fromValue(M(n, r, [
+                    {
+                        dup: {
+                            n: 0
+                        }
+                    },
+                    {
+                        idx: {
+                            cached: !1,
+                            pushPath: !1,
+                            path: [
+                                {
+                                    tag: `value`,
+                                    value: {
+                                        value: I.toValue(8n),
+                                        alignment: I.alignment()
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        popeq: {
+                            cached: !0,
+                            result: void 0
+                        }
+                    }
+                ]).value);
+            },
+            get proofReqId () {
+                return fu.fromValue(M(n, r, [
+                    {
+                        dup: {
+                            n: 0
+                        }
+                    },
+                    {
+                        idx: {
+                            cached: !1,
+                            pushPath: !1,
+                            path: [
+                                {
+                                    tag: `value`,
+                                    value: {
+                                        value: I.toValue(9n),
+                                        alignment: I.alignment()
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        popeq: {
+                            cached: !0,
+                            result: void 0
+                        }
+                    }
+                ]).value);
+            },
+            vaccineProofReqs: {
+                isEmpty (...e) {
+                    if (e.length !== 0) throw new S(`isEmpty: expected 0 arguments, received ${e.length}`);
+                    return tu.fromValue(M(n, r, [
+                        {
+                            dup: {
+                                n: 0
+                            }
+                        },
+                        {
+                            idx: {
+                                cached: !1,
+                                pushPath: !1,
+                                path: [
+                                    {
+                                        tag: `value`,
+                                        value: {
+                                            value: I.toValue(10n),
+                                            alignment: I.alignment()
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        `size`,
+                        {
+                            push: {
+                                storage: !1,
+                                value: j.newCell({
+                                    value: fu.toValue(0n),
+                                    alignment: fu.alignment()
+                                }).encode()
+                            }
+                        },
+                        `eq`,
+                        {
+                            popeq: {
+                                cached: !0,
+                                result: void 0
+                            }
+                        }
+                    ]).value);
+                },
+                size (...e) {
+                    if (e.length !== 0) throw new S(`size: expected 0 arguments, received ${e.length}`);
+                    return fu.fromValue(M(n, r, [
+                        {
+                            dup: {
+                                n: 0
+                            }
+                        },
+                        {
+                            idx: {
+                                cached: !1,
+                                pushPath: !1,
+                                path: [
+                                    {
+                                        tag: `value`,
+                                        value: {
+                                            value: I.toValue(10n),
                                             alignment: I.alignment()
                                         }
                                     }
@@ -19023,7 +19373,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: I.toValue(8n),
+                                            value: I.toValue(10n),
                                             alignment: I.alignment()
                                         }
                                     }
@@ -19065,7 +19415,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: I.toValue(8n),
+                                            value: I.toValue(10n),
                                             alignment: I.alignment()
                                         }
                                     }
@@ -19097,7 +19447,7 @@ perfecta armonía.`,
                 },
                 [Symbol.iterator] (...e) {
                     if (e.length !== 0) throw new S(`iter: expected 0 arguments, received ${e.length}`);
-                    let n = t.asArray()[8];
+                    let n = t.asArray()[10];
                     return n.asMap().keys().map((e)=>{
                         let t = n.asMap().get(e).asCell();
                         return [
@@ -19124,7 +19474,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: I.toValue(9n),
+                                            value: I.toValue(11n),
                                             alignment: I.alignment()
                                         }
                                     }
@@ -19166,7 +19516,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: I.toValue(9n),
+                                            value: I.toValue(11n),
                                             alignment: I.alignment()
                                         }
                                     }
@@ -19199,7 +19549,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: I.toValue(9n),
+                                            value: I.toValue(11n),
                                             alignment: I.alignment()
                                         }
                                     }
@@ -19241,7 +19591,7 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: I.toValue(9n),
+                                            value: I.toValue(11n),
                                             alignment: I.alignment()
                                         }
                                     }
@@ -19273,7 +19623,7 @@ perfecta armonía.`,
                 },
                 [Symbol.iterator] (...e) {
                     if (e.length !== 0) throw new S(`iter: expected 0 arguments, received ${e.length}`);
-                    let n = t.asArray()[9];
+                    let n = t.asArray()[11];
                     return n.asMap().keys().map((e)=>{
                         let t = n.asMap().get(e).asCell();
                         return [
@@ -19298,7 +19648,7 @@ perfecta armonía.`,
         getShieldedId: (...e)=>{
             if (e.length !== 1) throw new S(`getShieldedId: expected 1 argument (as invoked from Typescript), received ${e.length}`);
             let t = e[0];
-            return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`getShieldedId`, `argument 1`, `vaxzk.compact line 60 char 1`, `Bytes<32>`, t), xu._getShieldedId_0(t);
+            return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`getShieldedId`, `argument 1`, `vaxzk.compact line 64 char 1`, `Bytes<32>`, t), xu._getShieldedId_0(t);
         }
     }, Cu, wu = (e)=>{
         Cu = e;
@@ -62492,7 +62842,7 @@ ${h(e)}
             this.providers = t, this.deployedContract = e, this.deployedContractAddress = e.deployTxData.public.contractAddress, this.state$ = MMe([
                 t.publicDataProvider.contractStateObservable(this.deployedContractAddress, {
                     type: `latest`
-                }).pipe(f5((e)=>bu(e.data)), HMe((e)=>console.log(`ledger state changed: clinics: ${e.clinics.size()}, vaccines: ${e.vaccines.size()}`))),
+                }).pipe(f5((e)=>bu(e.data)), HMe((e)=>console.log(`ledger state changed: invites: ${e.totalInviteAdmin} admins; ${e.totalAdmin} clinics: ${e.clinics.size()}, vaccines: ${e.vaccines.size()}`))),
                 u5(t.privateStateProvider.get(S7))
             ], (e, t)=>{
                 let n = [], r = [];
@@ -62549,14 +62899,14 @@ ${h(e)}
                 }
             }), e.private.result;
         }
-        async revokeAdmin(e) {
-            if (console.log(`revoking Admin with ID ${n8(e)}`), e.length !== 32) throw Error(`Admin ID shall be 32 bytes long but it is ${e.length}`);
-            let t = await this.deployedContract.callTx.revokeAdmin(e);
+        async revokeAdmin() {
+            console.log(`self revoking Admin permissions`);
+            let e = await this.deployedContract.callTx.revokeAdmin();
             console.log({
                 transactionAdded: {
                     circuit: `revokeAdmin`,
-                    txHash: t.public.txHash,
-                    blockHeight: t.public.blockHeight
+                    txHash: e.public.txHash,
+                    blockHeight: e.public.blockHeight
                 }
             });
         }
@@ -65734,57 +66084,48 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
     }
     function sIe() {
         let [e, t] = (0, N.useState)(!1), [n, r] = (0, N.useState)(null), [i, a] = (0, N.useState)(null), [o, s] = (0, N.useState)(null), c = async (e, n)=>{
-            console.log(`loading...`);
-            let i = await A7(n, ml), o = new Uint8Array(32);
-            s(await k7.join(i, gl(), o)), r(e), a(n), t(!0);
+            if (console.log(`loading...`), gl()) {
+                let e = await A7(n, ml), t = new Uint8Array(32);
+                s(await k7.join(e, gl(), t));
+            }
+            r(e), a(n), t(!0);
         }, l = ()=>{
             t(!1), r(null), a(null);
         };
         return (0, b.jsx)(GFe, {
             children: (0, b.jsx)(b.Fragment, {
-                children: gl() ? (0, b.jsxs)(vFe, {
-                    children: [
-                        (0, b.jsx)(k9, {
-                            path: `/invite`,
-                            element: (0, b.jsx)(b.Fragment, {
-                                children: e ? (0, b.jsx)(aIe, {
+                children: e ? (0, b.jsx)(b.Fragment, {
+                    children: gl() ? (0, b.jsxs)(vFe, {
+                        children: [
+                            (0, b.jsx)(k9, {
+                                path: `/invite`,
+                                element: (0, b.jsx)(aIe, {
                                     vaxApi: o
-                                }) : (0, b.jsxs)(b.Fragment, {
-                                    children: [
-                                        (0, b.jsx)(Q9, {
-                                            fixed: !0
-                                        }),
-                                        (0, b.jsx)(vl, {
-                                            onLoginSuccess: c
-                                        })
-                                    ]
                                 })
-                            })
-                        }),
-                        (0, b.jsx)(k9, {
-                            path: `/`,
-                            element: (0, b.jsx)(b.Fragment, {
-                                children: e ? (0, b.jsx)(gPe, {
+                            }),
+                            (0, b.jsx)(k9, {
+                                path: `/`,
+                                element: (0, b.jsx)(gPe, {
                                     onLogout: l,
                                     walletAddress: n,
                                     connectedApi: i,
                                     vaxApi: o
-                                }) : (0, b.jsxs)(b.Fragment, {
-                                    children: [
-                                        (0, b.jsx)(Q9, {
-                                            fixed: !0
-                                        }),
-                                        (0, b.jsx)(vl, {
-                                            onLoginSuccess: c
-                                        })
-                                    ]
                                 })
                             })
+                        ]
+                    }) : (0, b.jsx)(_Pe, {
+                        onLogout: l,
+                        walletAddress: n
+                    })
+                }) : (0, b.jsxs)(b.Fragment, {
+                    children: [
+                        (0, b.jsx)(Q9, {
+                            fixed: !0
+                        }),
+                        (0, b.jsx)(vl, {
+                            onLoginSuccess: c
                         })
                     ]
-                }) : (0, b.jsx)(_Pe, {
-                    onLogout: l,
-                    walletAddress: n
                 })
             })
         });
