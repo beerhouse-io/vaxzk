@@ -62406,10 +62406,10 @@ ${h(e)}
     function sPe() {
         return globalThis.crypto.getRandomValues(new Uint8Array(32)).reduce((e, t, n)=>e | BigInt(t) << BigInt(8 * (31 - n)), 0n) % C7;
     }
-    function cPe(e) {
+    function w7(e) {
         return tc(e);
     }
-    function w7(e, t, n, r, i, a) {
+    function T7(e, t, n, r, i, a) {
         let o = tc(e), s = sPe(), c = tc(s), l = Su.getShieldedId(a);
         return {
             issuerId: t,
@@ -62422,7 +62422,7 @@ ${h(e)}
             }
         };
     }
-    var T7 = (e, t)=>({
+    var E7 = (e, t)=>({
             secretKey: e ?? crypto.getRandomValues(new Uint8Array(32)),
             vaxZkProof: {
                 issuerId: new Uint8Array,
@@ -62438,7 +62438,7 @@ ${h(e)}
                 }
             },
             inviteNonce: t ?? crypto.getRandomValues(new Uint8Array(32))
-        }), E7 = 452312848583266388373324160190187140051835877600158453279131187530910662656n, D7 = sge(`VaxZk`, yu).pipe(cge({
+        }), D7 = 452312848583266388373324160190187140051835877600158453279131187530910662656n, O7 = sge(`VaxZk`, yu).pipe(cge({
         getAttestedCertProofWitness: ({ privateState: e })=>[
                 e,
                 e.vaxZkProof
@@ -62446,11 +62446,11 @@ ${h(e)}
         getSchnorrReduction: ({ privateState: e }, t)=>[
                 e,
                 [
-                    t / E7,
-                    t % E7
+                    t / D7,
+                    t % D7
                 ]
             ]
-    }), lge(window.location.origin)), lPe = ()=>{
+    }), lge(window.location.origin)), cPe = ()=>{
         let e = new Map, t = {}, n = ()=>Promise.resolve();
         return {
             setContractAddress (e) {},
@@ -62483,7 +62483,7 @@ ${h(e)}
             exportSigningKeys: n,
             importSigningKeys: n
         };
-    }, O7 = class e {
+    }, k7 = class e {
         deployedContractAddress;
         state$;
         deployedContract;
@@ -62523,21 +62523,21 @@ ${h(e)}
         }
         static async deploy(t, n) {
             return console.log(`deploying VaxZk contract...`), new e(await ePe(t, {
-                compiledContract: D7,
+                compiledContract: O7,
                 privateStateId: S7,
-                initialPrivateState: T7(n)
+                initialPrivateState: E7(n)
             }), t);
         }
         static async join(t, n, r) {
             return console.log(`joining VaxZk contract at: ${n}`), t.privateStateProvider.setContractAddress(n), new e(await aPe(t, {
                 contractAddress: n,
-                compiledContract: D7,
+                compiledContract: O7,
                 privateStateId: S7,
                 initialPrivateState: await e.getPrivateState(t, r)
             }), t);
         }
         static async getPrivateState(e, t) {
-            return await e.privateStateProvider.get(`VaxZkPrivateState`) ?? T7(t);
+            return await e.privateStateProvider.get(`VaxZkPrivateState`) ?? E7(t);
         }
         async getProfile() {
             let e = await this.deployedContract.callTx.getProfile();
@@ -62657,7 +62657,7 @@ ${h(e)}
             }), t.private.result;
         }
         async submitVaccineProof(e, t, n, r) {
-            let i = w7(1234567890123456789012345678901234567890123456789012345678901234n, t, n, r, 1924992000n, r8(this.providers.walletProvider.getCoinPublicKey())), a = await this.providers.privateStateProvider.get(`VaxZkPrivateState`) ?? T7();
+            let i = T7(1234567890123456789012345678901234567890123456789012345678901234n, t, n, r, 1924992000n, r8(this.providers.walletProvider.getCoinPublicKey())), a = await this.providers.privateStateProvider.get(`VaxZkPrivateState`) ?? E7();
             await this.providers.privateStateProvider.set(S7, {
                 ...a,
                 vaxZkProof: i
@@ -62676,18 +62676,18 @@ ${h(e)}
             a.set(i.encode(e).slice(0, 20));
             let o = new Uint8Array(20);
             o.set(i.encode(t).slice(0, 20));
-            let s = w7(1234567890123456789012345678901234567890123456789012345678901234n, r, a, o, n, r8(this.providers.walletProvider.getCoinPublicKey())), c = await this.providers.privateStateProvider.get(`VaxZkPrivateState`) ?? T7();
+            let s = T7(1234567890123456789012345678901234567890123456789012345678901234n, r, a, o, n, r8(this.providers.walletProvider.getCoinPublicKey())), c = await this.providers.privateStateProvider.get(`VaxZkPrivateState`) ?? E7();
             await this.providers.privateStateProvider.set(S7, {
                 ...c,
                 vaxZkProof: s
             }), console.log(`VaxZkProof signed and stored in private state`);
         }
     };
-    async function k7(e, t) {
+    async function A7(e, t) {
         wu(t);
         let n = await e.getConfiguration(), r = await e.getShieldedAddresses(), i = new lwe(window.location.origin, fetch.bind(window));
         return {
-            privateStateProvider: lPe(),
+            privateStateProvider: cPe(),
             publicDataProvider: uNe(n.indexerUri, n.indexerWsUri),
             zkConfigProvider: i,
             proofProvider: hNe(n.proverServerUri, i),
@@ -62710,14 +62710,14 @@ ${h(e)}
             }
         };
     }
-    var uPe = 1234567890123456789012345678901234567890123456789012345678901234n, A7 = ({ connectedApi: e })=>{
+    var lPe = 1234567890123456789012345678901234567890123456789012345678901234n, j7 = ({ connectedApi: e })=>{
         let { t } = pl(), [n, r] = (0, N.useState)([]), [i, a] = (0, N.useState)(!1), [o, s] = (0, N.useState)(null), [c, l] = (0, N.useState)(!1), [u, d] = (0, N.useState)(null), [f, p] = (0, N.useState)([]), [m, h] = (0, N.useState)(null), [g, _] = (0, N.useState)(null), [v, y] = (0, N.useState)(null);
         (0, N.useEffect)(()=>{
             let t;
             async function n() {
                 let n = gl();
                 if (!(!e || !n)) try {
-                    let i = await k7(e, ml), a = new Uint8Array(32), o = await O7.join(i, n, a);
+                    let i = await A7(e, ml), a = new Uint8Array(32), o = await k7.join(i, n, a);
                     y(o), t = o.state$.subscribe((e)=>{
                         r(e.issuers), p(e.vaccineProofReqs);
                     });
@@ -62735,7 +62735,7 @@ ${h(e)}
             if (v) {
                 a(!0), s(null);
                 try {
-                    let e = cPe(uPe);
+                    let e = w7(lPe);
                     await v.addCertificateIssuer({
                         uri: `https://issuer.vaxzk.example`,
                         name: `VaxZk Demo Issuer`,
@@ -63061,46 +63061,46 @@ ${h(e)}
                 })
             ]
         });
-    }, j7 = [];
-    for(let e = 0; e < 256; ++e)j7.push((e + 256).toString(16).slice(1));
-    function dPe(e, t = 0) {
-        return (j7[e[t + 0]] + j7[e[t + 1]] + j7[e[t + 2]] + j7[e[t + 3]] + `-` + j7[e[t + 4]] + j7[e[t + 5]] + `-` + j7[e[t + 6]] + j7[e[t + 7]] + `-` + j7[e[t + 8]] + j7[e[t + 9]] + `-` + j7[e[t + 10]] + j7[e[t + 11]] + j7[e[t + 12]] + j7[e[t + 13]] + j7[e[t + 14]] + j7[e[t + 15]]).toLowerCase();
+    }, M7 = [];
+    for(let e = 0; e < 256; ++e)M7.push((e + 256).toString(16).slice(1));
+    function uPe(e, t = 0) {
+        return (M7[e[t + 0]] + M7[e[t + 1]] + M7[e[t + 2]] + M7[e[t + 3]] + `-` + M7[e[t + 4]] + M7[e[t + 5]] + `-` + M7[e[t + 6]] + M7[e[t + 7]] + `-` + M7[e[t + 8]] + M7[e[t + 9]] + `-` + M7[e[t + 10]] + M7[e[t + 11]] + M7[e[t + 12]] + M7[e[t + 13]] + M7[e[t + 14]] + M7[e[t + 15]]).toLowerCase();
     }
-    var M7, fPe = new Uint8Array(16);
-    function pPe() {
-        if (!M7) {
+    var N7, dPe = new Uint8Array(16);
+    function fPe() {
+        if (!N7) {
             if (typeof crypto > `u` || !crypto.getRandomValues) throw Error(`crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported`);
-            M7 = crypto.getRandomValues.bind(crypto);
+            N7 = crypto.getRandomValues.bind(crypto);
         }
-        return M7(fPe);
+        return N7(dPe);
     }
-    var N7 = {
+    var P7 = {
         randomUUID: typeof crypto < `u` && crypto.randomUUID && crypto.randomUUID.bind(crypto)
     };
-    function mPe(e, t, n) {
+    function pPe(e, t, n) {
         e ||= {};
-        let r = e.random ?? e.rng?.() ?? pPe();
+        let r = e.random ?? e.rng?.() ?? fPe();
         if (r.length < 16) throw Error(`Random bytes length must be >= 16`);
         if (r[6] = r[6] & 15 | 64, r[8] = r[8] & 63 | 128, t) {
             if (n ||= 0, n < 0 || n + 16 > t.length) throw RangeError(`UUID byte range ${n}:${n + 15} is out of buffer bounds`);
             for(let e = 0; e < 16; ++e)t[n + e] = r[e];
             return t;
         }
-        return dPe(r);
+        return uPe(r);
     }
-    function hPe(e, t, n) {
-        return N7.randomUUID && !t && !e ? N7.randomUUID() : mPe(e, t, n);
+    function mPe(e, t, n) {
+        return P7.randomUUID && !t && !e ? P7.randomUUID() : pPe(e, t, n);
     }
-    var gPe = ({ connectedApi: e })=>{
+    var hPe = ({ connectedApi: e })=>{
         let { t } = pl(), [n, r] = (0, N.useState)(!1), [i, a] = (0, N.useState)(null), [o, s] = (0, N.useState)(null), [c, l] = (0, N.useState)(null);
         return (0, N.useEffect)(()=>{
             async function t() {
                 let t = gl();
                 if (!(!e || !t)) try {
-                    let n = await k7(e, ml), r = new Uint8Array(32);
-                    s(await O7.join(n, t, r));
+                    let n = await A7(e, ml), r = new Uint8Array(32);
+                    s(await k7.join(n, t, r));
                 } catch (e) {
-                    console.error(`Failed to join contract:`, e), a(`Erro ao conectar ao contrato`);
+                    e instanceof Error ? a(`Erro ao criar um novo convite: ` + e.message) : a(`Erro ao criar um novo convite: ` + String(e));
                 }
             }
             return t(), ()=>{};
@@ -63146,10 +63146,10 @@ ${h(e)}
                                 if (e.preventDefault(), o) {
                                     r(!0), a(null), l(``);
                                     try {
-                                        let e = hPe(), t = await o.registerInviteAdmin(e);
-                                        console.log(`txData`, t), l(hl + `/invite?code=` + e);
+                                        let e = mPe(), t = await o.registerInviteAdmin(e);
+                                        console.log(`txData`, t), l(hl + `/#/invite?code=` + e);
                                     } catch (e) {
-                                        console.error(`Failed to add vaccine:`, e), e instanceof Error ? a(`Erro ao adicionar vacina: ` + e.message) : a(`Erro ao adicionar vacina: ` + String(e));
+                                        console.error(`Failed to add vaccine:`, e), e instanceof Error ? a(`Erro ao criar um novo convite: ` + e.message) : a(`Erro ao criar um novo convite: ` + String(e));
                                     } finally{
                                         r(!1);
                                     }
@@ -63237,14 +63237,14 @@ ${h(e)}
                 })
             ]
         });
-    }, P7 = ({ connectedApi: e })=>{
+    }, F7 = ({ connectedApi: e })=>{
         let { t } = pl(), [n, r] = (0, N.useState)([]), [i, a] = (0, N.useState)(``), [o, s] = (0, N.useState)(!1), [c, l] = (0, N.useState)(null), [u, d] = (0, N.useState)(null);
         (0, N.useEffect)(()=>{
             let t;
             async function n() {
                 let n = gl();
                 if (!(!e || !n)) try {
-                    let i = await k7(e, ml), a = new Uint8Array(32), o = await O7.join(i, n, a);
+                    let i = await A7(e, ml), a = new Uint8Array(32), o = await k7.join(i, n, a);
                     d(o), t = o.state$.subscribe((e)=>{
                         r(e.vaccines);
                     });
@@ -63419,7 +63419,7 @@ ${h(e)}
                 })
             ]
         });
-    }, F7 = ()=>(0, b.jsx)(`main`, {
+    }, I7 = ()=>(0, b.jsx)(`main`, {
             className: `pt-24 pb-32 px-6 max-w-screen-xl mx-auto`,
             children: (0, b.jsx)(`section`, {
                 className: `mb-12 text-left`,
@@ -63434,7 +63434,7 @@ ${h(e)}
                     ]
                 })
             })
-        }), _Pe = ({ onLogout: e, walletAddress: t, connectedApi: n })=>{
+        }), gPe = ({ onLogout: e, walletAddress: t, connectedApi: n })=>{
         let { t: r } = pl(), { profile: i, activeTab: a, setActiveTab: o } = Cl(), s = (e)=>{
             o(e);
         };
@@ -63531,31 +63531,31 @@ ${h(e)}
                         case `wallet`:
                             return (0, b.jsx)(Tl, {});
                         case `listclinics`:
-                            return (0, b.jsx)(F7, {});
+                            return (0, b.jsx)(I7, {});
                         case `userprofile`:
-                            return (0, b.jsx)(F7, {});
+                            return (0, b.jsx)(I7, {});
                         case `addvaccine`:
-                            return (0, b.jsx)(A7, {
+                            return (0, b.jsx)(j7, {
                                 connectedApi: n
                             });
                         case `clinicprofile`:
-                            return (0, b.jsx)(F7, {});
+                            return (0, b.jsx)(I7, {});
                         case `access`:
-                            return (0, b.jsx)(gPe, {
+                            return (0, b.jsx)(hPe, {
                                 connectedApi: n
                             });
                         case `adminvaccine`:
-                            return (0, b.jsx)(P7, {
+                            return (0, b.jsx)(F7, {
                                 connectedApi: n
                             });
                         default:
                             switch(i){
                                 case `admin`:
-                                    return (0, b.jsx)(P7, {
+                                    return (0, b.jsx)(F7, {
                                         connectedApi: n
                                     });
                                 case `clinic`:
-                                    return (0, b.jsx)(A7, {
+                                    return (0, b.jsx)(j7, {
                                         connectedApi: n
                                     });
                                 default:
@@ -63708,7 +63708,7 @@ ${h(e)}
                 })
             ]
         });
-    }, vPe = ({ onLogout: e, walletAddress: t })=>{
+    }, _Pe = ({ onLogout: e, walletAddress: t })=>{
         let { t: n } = pl(), [r, i] = (0, N.useState)(!1), [a, o] = (0, N.useState)(gl() || null), [s, c] = (0, N.useState)(null);
         return (0, b.jsxs)(`div`, {
             className: `bg-background text-on-background min-h-screen`,
@@ -63805,7 +63805,7 @@ ${h(e)}
                                                 if (!window.midnight) throw Error(`Midnight Extension not found. Please install Lace.`);
                                                 let e = Object.values(window.midnight).find((e)=>!!e && typeof e == `object` && `apiVersion` in e);
                                                 if (!e) throw Error(`Compatible Midnight wallet not found`);
-                                                let t = await k7(await e.connect(ml), ml), n = crypto.getRandomValues(new Uint8Array(32)), r = await O7.deploy(t, n), a = r.deployedContractAddress;
+                                                let t = await A7(await e.connect(ml), ml), n = crypto.getRandomValues(new Uint8Array(32)), r = await k7.deploy(t, n), a = r.deployedContractAddress;
                                                 console.log(r), console.log(`Successfully deployed contract at:`, a), o(a), i(!1);
                                             } catch (e) {
                                                 if (console.error(`Deployment failed:`, e), e && typeof e == `object` && `cause` in e) {
@@ -63968,89 +63968,9 @@ ${h(e)}
                 })
             ]
         });
-    }, yPe = ({ vaxApi: e })=>{
-        let t = new URLSearchParams(window.location.search).get(`code`);
-        return t ? (0, b.jsxs)(`main`, {
-            className: `pt-12 px-6 max-w-screen-md mx-auto`,
-            children: [
-                (0, b.jsx)(`section`, {
-                    className: `mb-7`,
-                    children: (0, b.jsx)(`h2`, {
-                        className: `text-4xl font-extrabold tracking-tight text-on-surface mb-2`,
-                        style: {},
-                        children: `Adicionar como Admin`
-                    })
-                }),
-                (0, b.jsx)(`div`, {
-                    className: `space-y-16`,
-                    children: (0, b.jsx)(`div`, {
-                        className: `bg-surface-container-low p-8 rounded-xl shadow-sm border-none relative overflow-hidden`,
-                        children: (0, b.jsxs)(`form`, {
-                            onSubmit: async (n)=>{
-                                if (n.preventDefault(), console.log(`a`), console.log(t), e) try {
-                                    await e.acceptInviteAdmin(t.trim());
-                                } catch (e) {
-                                    console.error(`Failed to add vaccine:`, e);
-                                }
-                            },
-                            className: `space-y-8 relative z-10`,
-                            children: [
-                                (0, b.jsxs)(`div`, {
-                                    className: `bg-secondary-container/20 p-5 rounded-lg border-none flex items-start gap-4 mt-12`,
-                                    style: {
-                                        background: `rgb(161 190 253 / 0.2)`
-                                    },
-                                    children: [
-                                        (0, b.jsx)(`div`, {
-                                            className: `w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0`,
-                                            children: (0, b.jsx)(`span`, {
-                                                className: `material-symbols-outlined text-on-secondary-container`,
-                                                children: `verified_user`
-                                            })
-                                        }),
-                                        (0, b.jsxs)(`div`, {
-                                            children: [
-                                                (0, b.jsx)(`h4`, {
-                                                    className: `font-bold text-on-secondary-container text-sm`,
-                                                    children: `Registro Seguro`
-                                                }),
-                                                (0, b.jsx)(`p`, {
-                                                    className: `text-xs text-on-secondary-container/80 leading-relaxed`,
-                                                    children: `Suas informações de saúde são criptografadas e utilizadas apenas para o seu controle pessoal de imunização.`
-                                                })
-                                            ]
-                                        })
-                                    ]
-                                }),
-                                (0, b.jsx)(`div`, {
-                                    className: `pt-6`,
-                                    children: (0, b.jsxs)(`button`, {
-                                        className: `w-full py-4 bg-gradient-to-r from-primary to-primary-container text-white font-bold text-lg rounded-full shadow-lg shadow-primary/20 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2`,
-                                        style: {
-                                            background: `#0070eb`
-                                        },
-                                        type: `submit`,
-                                        children: [
-                                            (0, b.jsx)(`span`, {
-                                                className: ``,
-                                                children: `Salvar Registro`
-                                            }),
-                                            (0, b.jsx)(`span`, {
-                                                className: `material-symbols-outlined`,
-                                                children: `check_circle`
-                                            })
-                                        ]
-                                    })
-                                })
-                            ]
-                        })
-                    })
-                })
-            ]
-        }) : `code is necessary`;
-    }, bPe = `modulepreload`, xPe = function(e) {
+    }, vPe = `modulepreload`, yPe = function(e) {
         return `/` + e;
-    }, I7 = {}, SPe = function(e, t, n) {
+    }, L7 = {}, bPe = function(e, t, n) {
         let r = Promise.resolve();
         if (t && t.length > 0) {
             let e = document.getElementsByTagName(`link`), i = document.querySelector(`meta[property=csp-nonce]`), a = i?.nonce || i?.getAttribute(`nonce`);
@@ -64064,8 +63984,8 @@ ${h(e)}
                         }))));
             }
             r = o(t.map((t)=>{
-                if (t = xPe(t, n), t in I7) return;
-                I7[t] = !0;
+                if (t = yPe(t, n), t in L7) return;
+                L7[t] = !0;
                 let r = t.endsWith(`.css`), i = r ? `[rel="stylesheet"]` : ``;
                 if (n) for(let n = e.length - 1; n >= 0; n--){
                     let i = e[n];
@@ -64073,7 +63993,7 @@ ${h(e)}
                 }
                 else if (document.querySelector(`link[href="${t}"]${i}`)) return;
                 let o = document.createElement(`link`);
-                if (o.rel = r ? `stylesheet` : bPe, r || (o.as = `script`), o.crossOrigin = ``, o.href = t, a && o.setAttribute(`nonce`, a), document.head.appendChild(o), r) return new Promise((e, n)=>{
+                if (o.rel = r ? `stylesheet` : vPe, r || (o.as = `script`), o.crossOrigin = ``, o.href = t, a && o.setAttribute(`nonce`, a), document.head.appendChild(o), r) return new Promise((e, n)=>{
                     o.addEventListener(`load`, e), o.addEventListener(`error`, ()=>n(Error(`Unable to preload CSS for ${t}`)));
                 });
             }));
@@ -64088,32 +64008,36 @@ ${h(e)}
             for (let e of t || [])e.status === `rejected` && i(e.reason);
             return e().catch(i);
         });
-    }, L7 = `popstate`;
-    function R7(e) {
+    }, R7 = `popstate`;
+    function z7(e) {
         return typeof e == `object` && !!e && `pathname` in e && `search` in e && `hash` in e && `state` in e && `key` in e;
     }
-    function CPe(e = {}) {
+    function xPe(e = {}) {
         function t(e, t) {
-            let n = t.state?.masked, { pathname: r, search: i, hash: a } = n || e.location;
-            return H7(``, {
-                pathname: r,
-                search: i,
-                hash: a
-            }, t.state && t.state.usr || null, t.state && t.state.key || `default`, n ? {
-                pathname: e.location.pathname,
-                search: e.location.search,
-                hash: e.location.hash
-            } : void 0);
+            let { pathname: n = `/`, search: r = ``, hash: i = `` } = G7(e.location.hash.substring(1));
+            return !n.startsWith(`/`) && !n.startsWith(`.`) && (n = `/` + n), U7(``, {
+                pathname: n,
+                search: r,
+                hash: i
+            }, t.state && t.state.usr || null, t.state && t.state.key || `default`);
         }
         function n(e, t) {
-            return typeof t == `string` ? t : U7(t);
+            let n = e.document.querySelector(`base`), r = ``;
+            if (n && n.getAttribute(`href`)) {
+                let t = e.location.href, n = t.indexOf(`#`);
+                r = n === -1 ? t : t.slice(0, n);
+            }
+            return r + `#` + (typeof t == `string` ? t : W7(t));
         }
-        return TPe(t, n, null, e);
-    }
-    function z7(e, t) {
-        if (e === !1 || e == null) throw Error(t);
+        function r(e, t) {
+            V7(e.pathname.charAt(0) === `/`, `relative pathnames are not supported in hash history.push(${JSON.stringify(t)})`);
+        }
+        return CPe(t, n, r, e);
     }
     function B7(e, t) {
+        if (e === !1 || e == null) throw Error(t);
+    }
+    function V7(e, t) {
         if (!e) {
             typeof console < `u` && console.warn(t);
             try {
@@ -64121,10 +64045,10 @@ ${h(e)}
             } catch  {}
         }
     }
-    function wPe() {
+    function SPe() {
         return Math.random().toString(36).substring(2, 10);
     }
-    function V7(e, t) {
+    function H7(e, t) {
         return {
             usr: e.state,
             key: e.key,
@@ -64136,21 +64060,21 @@ ${h(e)}
             } : void 0
         };
     }
-    function H7(e, t, n = null, r, i) {
+    function U7(e, t, n = null, r, i) {
         return {
             pathname: typeof e == `string` ? e : e.pathname,
             search: ``,
             hash: ``,
-            ...typeof t == `string` ? W7(t) : t,
+            ...typeof t == `string` ? G7(t) : t,
             state: n,
-            key: t && t.key || r || wPe(),
+            key: t && t.key || r || SPe(),
             unstable_mask: i
         };
     }
-    function U7({ pathname: e = `/`, search: t = ``, hash: n = `` }) {
+    function W7({ pathname: e = `/`, search: t = ``, hash: n = `` }) {
         return t && t !== `?` && (e += t.charAt(0) === `?` ? t : `?` + t), n && n !== `#` && (e += n.charAt(0) === `#` ? n : `#` + n), e;
     }
-    function W7(e) {
+    function G7(e) {
         let t = {};
         if (e) {
             let n = e.indexOf(`#`);
@@ -64160,7 +64084,7 @@ ${h(e)}
         }
         return t;
     }
-    function TPe(e, t, n, r = {}) {
+    function CPe(e, t, n, r = {}) {
         let { window: i = document.defaultView, v5Compat: a = !1 } = r, o = i.history, s = `POP`, c = null, l = u();
         l ?? (l = 0, o.replaceState({
             ...o.state,
@@ -64182,9 +64106,9 @@ ${h(e)}
         }
         function f(e, t) {
             s = `PUSH`;
-            let r = R7(e) ? e : H7(h.location, e, t);
+            let r = z7(e) ? e : U7(h.location, e, t);
             n && n(r, e), l = u() + 1;
-            let d = V7(r, l), f = h.createHref(r.unstable_mask || r);
+            let d = H7(r, l), f = h.createHref(r.unstable_mask || r);
             try {
                 o.pushState(d, ``, f);
             } catch (e) {
@@ -64199,9 +64123,9 @@ ${h(e)}
         }
         function p(e, t) {
             s = `REPLACE`;
-            let r = R7(e) ? e : H7(h.location, e, t);
+            let r = z7(e) ? e : U7(h.location, e, t);
             n && n(r, e), l = u();
-            let i = V7(r, l), d = h.createHref(r.unstable_mask || r);
+            let i = H7(r, l), d = h.createHref(r.unstable_mask || r);
             o.replaceState(i, ``, d), a && c && c({
                 action: s,
                 location: h.location,
@@ -64209,7 +64133,7 @@ ${h(e)}
             });
         }
         function m(e) {
-            return EPe(e);
+            return wPe(e);
         }
         let h = {
             get action () {
@@ -64220,8 +64144,8 @@ ${h(e)}
             },
             listen (e) {
                 if (c) throw Error(`A history only accepts one active listener`);
-                return i.addEventListener(L7, d), c = e, ()=>{
-                    i.removeEventListener(L7, d), c = null;
+                return i.addEventListener(R7, d), c = e, ()=>{
+                    i.removeEventListener(R7, d), c = null;
                 };
             },
             createHref (e) {
@@ -64244,28 +64168,28 @@ ${h(e)}
         };
         return h;
     }
-    function EPe(e, t = !1) {
+    function wPe(e, t = !1) {
         let n = `http://localhost`;
-        typeof window < `u` && (n = window.location.origin === `null` ? window.location.href : window.location.origin), z7(n, `No window.location.(origin|href) available to create URL`);
-        let r = typeof e == `string` ? e : U7(e);
+        typeof window < `u` && (n = window.location.origin === `null` ? window.location.href : window.location.origin), B7(n, `No window.location.(origin|href) available to create URL`);
+        let r = typeof e == `string` ? e : W7(e);
         return r = r.replace(/ $/, `%20`), !t && r.startsWith(`//`) && (r = n + r), new URL(r, n);
     }
-    function G7(e, t, n = `/`) {
-        return DPe(e, t, n, !1);
+    function K7(e, t, n = `/`) {
+        return TPe(e, t, n, !1);
     }
-    function DPe(e, t, n, r) {
-        let i = X7((typeof t == `string` ? W7(t) : t).pathname || `/`, n);
+    function TPe(e, t, n, r) {
+        let i = Z7((typeof t == `string` ? G7(t) : t).pathname || `/`, n);
         if (i == null) return null;
-        let a = K7(e);
-        kPe(a);
+        let a = q7(e);
+        DPe(a);
         let o = null;
         for(let e = 0; o == null && e < a.length; ++e){
-            let t = BPe(i);
-            o = RPe(a[e], t, r);
+            let t = RPe(i);
+            o = IPe(a[e], t, r);
         }
         return o;
     }
-    function OPe(e, t) {
+    function EPe(e, t) {
         let { route: n, pathname: r, params: i } = e;
         return {
             id: n.id,
@@ -64276,7 +64200,7 @@ ${h(e)}
             handle: n.handle
         };
     }
-    function K7(e, t = [], n = [], r = ``, i = !1) {
+    function q7(e, t = [], n = [], r = ``, i = !1) {
         let a = (e, a, o = i, s)=>{
             let c = {
                 relativePath: s === void 0 ? e.path || `` : s,
@@ -64286,24 +64210,24 @@ ${h(e)}
             };
             if (c.relativePath.startsWith(`/`)) {
                 if (!c.relativePath.startsWith(r) && o) return;
-                z7(c.relativePath.startsWith(r), `Absolute route path "${c.relativePath}" nested under path "${r}" is not valid. An absolute child route path must start with the combined path of all its parent routes.`), c.relativePath = c.relativePath.slice(r.length);
+                B7(c.relativePath.startsWith(r), `Absolute route path "${c.relativePath}" nested under path "${r}" is not valid. An absolute child route path must start with the combined path of all its parent routes.`), c.relativePath = c.relativePath.slice(r.length);
             }
-            let l = t9([
+            let l = n9([
                 r,
                 c.relativePath
             ]), u = n.concat(c);
-            e.children && e.children.length > 0 && (z7(e.index !== !0, `Index routes must not have child routes. Please remove all child routes from route path "${l}".`), K7(e.children, t, u, l, o)), !(e.path == null && !e.index) && t.push({
+            e.children && e.children.length > 0 && (B7(e.index !== !0, `Index routes must not have child routes. Please remove all child routes from route path "${l}".`), q7(e.children, t, u, l, o)), !(e.path == null && !e.index) && t.push({
                 path: l,
-                score: IPe(l, e.index),
+                score: PPe(l, e.index),
                 routesMeta: u
             });
         };
         return e.forEach((e, t)=>{
             if (e.path === `` || !e.path?.includes(`?`)) a(e, t);
-            else for (let n of q7(e.path))a(e, t, !0, n);
+            else for (let n of J7(e.path))a(e, t, !0, n);
         }), t;
     }
-    function q7(e) {
+    function J7(e) {
         let t = e.split(`/`);
         if (t.length === 0) return [];
         let [n, ...r] = t, i = n.endsWith(`?`), a = n.replace(/\?$/, ``);
@@ -64313,61 +64237,61 @@ ${h(e)}
         ] : [
             a
         ];
-        let o = q7(r.join(`/`)), s = [];
+        let o = J7(r.join(`/`)), s = [];
         return s.push(...o.map((e)=>e === `` ? a : [
                 a,
                 e
             ].join(`/`))), i && s.push(...o), s.map((t)=>e.startsWith(`/`) && t === `` ? `/` : t);
     }
-    function kPe(e) {
-        e.sort((e, t)=>e.score === t.score ? LPe(e.routesMeta.map((e)=>e.childrenIndex), t.routesMeta.map((e)=>e.childrenIndex)) : t.score - e.score);
+    function DPe(e) {
+        e.sort((e, t)=>e.score === t.score ? FPe(e.routesMeta.map((e)=>e.childrenIndex), t.routesMeta.map((e)=>e.childrenIndex)) : t.score - e.score);
     }
-    var APe = /^:[\w-]+$/, jPe = 3, MPe = 2, NPe = 1, PPe = 10, FPe = -2, J7 = (e)=>e === `*`;
-    function IPe(e, t) {
+    var OPe = /^:[\w-]+$/, kPe = 3, APe = 2, jPe = 1, MPe = 10, NPe = -2, Y7 = (e)=>e === `*`;
+    function PPe(e, t) {
         let n = e.split(`/`), r = n.length;
-        return n.some(J7) && (r += FPe), t && (r += MPe), n.filter((e)=>!J7(e)).reduce((e, t)=>e + (APe.test(t) ? jPe : t === `` ? NPe : PPe), r);
+        return n.some(Y7) && (r += NPe), t && (r += APe), n.filter((e)=>!Y7(e)).reduce((e, t)=>e + (OPe.test(t) ? kPe : t === `` ? jPe : MPe), r);
     }
-    function LPe(e, t) {
+    function FPe(e, t) {
         return e.length === t.length && e.slice(0, -1).every((e, n)=>e === t[n]) ? e[e.length - 1] - t[t.length - 1] : 0;
     }
-    function RPe(e, t, n = !1) {
+    function IPe(e, t, n = !1) {
         let { routesMeta: r } = e, i = {}, a = `/`, o = [];
         for(let e = 0; e < r.length; ++e){
-            let s = r[e], c = e === r.length - 1, l = a === `/` ? t : t.slice(a.length) || `/`, u = Y7({
+            let s = r[e], c = e === r.length - 1, l = a === `/` ? t : t.slice(a.length) || `/`, u = X7({
                 path: s.relativePath,
                 caseSensitive: s.caseSensitive,
                 end: c
             }, l), d = s.route;
-            if (!u && c && n && !r[r.length - 1].route.index && (u = Y7({
+            if (!u && c && n && !r[r.length - 1].route.index && (u = X7({
                 path: s.relativePath,
                 caseSensitive: s.caseSensitive,
                 end: !1
             }, l)), !u) return null;
             Object.assign(i, u.params), o.push({
                 params: i,
-                pathname: t9([
+                pathname: n9([
                     a,
                     u.pathname
                 ]),
-                pathnameBase: WPe(t9([
+                pathnameBase: HPe(n9([
                     a,
                     u.pathnameBase
                 ])),
                 route: d
-            }), u.pathnameBase !== `/` && (a = t9([
+            }), u.pathnameBase !== `/` && (a = n9([
                 a,
                 u.pathnameBase
             ]));
         }
         return o;
     }
-    function Y7(e, t) {
+    function X7(e, t) {
         typeof e == `string` && (e = {
             path: e,
             caseSensitive: !1,
             end: !0
         });
-        let [n, r] = zPe(e.path, e.caseSensitive, e.end), i = t.match(n);
+        let [n, r] = LPe(e.path, e.caseSensitive, e.end), i = t.match(n);
         if (!i) return null;
         let a = i[0], o = a.replace(/(.)\/+$/, `$1`), s = i.slice(1);
         return {
@@ -64384,8 +64308,8 @@ ${h(e)}
             pattern: e
         };
     }
-    function zPe(e, t = !1, n = !0) {
-        B7(e === `*` || !e.endsWith(`*`) || e.endsWith(`/*`), `Route path "${e}" will be treated as if it were "${e.replace(/\*$/, `/*`)}" because the \`*\` character must always follow a \`/\` in the pattern. To get rid of this warning, please change the route path to "${e.replace(/\*$/, `/*`)}".`);
+    function LPe(e, t = !1, n = !0) {
+        V7(e === `*` || !e.endsWith(`*`) || e.endsWith(`/*`), `Route path "${e}" will be treated as if it were "${e.replace(/\*$/, `/*`)}" because the \`*\` character must always follow a \`/\` in the pattern. To get rid of this warning, please change the route path to "${e.replace(/\*$/, `/*`)}".`);
         let r = [], i = `^` + e.replace(/\/*\*?$/, ``).replace(/^\/*/, `/`).replace(/[\\.*+^${}|()[\]]/g, `\\$&`).replace(/\/:([\w-]+)(\?)?/g, (e, t, n, i, a)=>{
             if (r.push({
                 paramName: t,
@@ -64403,49 +64327,49 @@ ${h(e)}
             r
         ];
     }
-    function BPe(e) {
+    function RPe(e) {
         try {
             return e.split(`/`).map((e)=>decodeURIComponent(e).replace(/\//g, `%2F`)).join(`/`);
         } catch (t) {
-            return B7(!1, `The URL path "${e}" could not be decoded because it is a malformed URL segment. This is probably due to a bad percent encoding (${t}).`), e;
+            return V7(!1, `The URL path "${e}" could not be decoded because it is a malformed URL segment. This is probably due to a bad percent encoding (${t}).`), e;
         }
     }
-    function X7(e, t) {
+    function Z7(e, t) {
         if (t === `/`) return e;
         if (!e.toLowerCase().startsWith(t.toLowerCase())) return null;
         let n = t.endsWith(`/`) ? t.length - 1 : t.length, r = e.charAt(n);
         return r && r !== `/` ? null : e.slice(n) || `/`;
     }
-    var VPe = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
-    function HPe(e, t = `/`) {
-        let { pathname: n, search: r = ``, hash: i = `` } = typeof e == `string` ? W7(e) : e, a;
-        return n ? (n = n.replace(/\/\/+/g, `/`), a = n.startsWith(`/`) ? Z7(n.substring(1), `/`) : Z7(n, t)) : a = t, {
+    var zPe = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
+    function BPe(e, t = `/`) {
+        let { pathname: n, search: r = ``, hash: i = `` } = typeof e == `string` ? G7(e) : e, a;
+        return n ? (n = n.replace(/\/\/+/g, `/`), a = n.startsWith(`/`) ? Q7(n.substring(1), `/`) : Q7(n, t)) : a = t, {
             pathname: a,
-            search: GPe(r),
-            hash: KPe(i)
+            search: UPe(r),
+            hash: WPe(i)
         };
     }
-    function Z7(e, t) {
+    function Q7(e, t) {
         let n = t.replace(/\/+$/, ``).split(`/`);
         return e.split(`/`).forEach((e)=>{
             e === `..` ? n.length > 1 && n.pop() : e !== `.` && n.push(e);
         }), n.length > 1 ? n.join(`/`) : `/`;
     }
-    function Q7(e, t, n, r) {
+    function $7(e, t, n, r) {
         return `Cannot include a '${e}' character in a manually specified \`to.${t}\` field [${JSON.stringify(r)}].  Please separate it out to the \`to.${n}\` field. Alternatively you may provide the full path as a string in <Link to="..."> and the router will parse it for you.`;
     }
-    function UPe(e) {
+    function VPe(e) {
         return e.filter((e, t)=>t === 0 || e.route.path && e.route.path.length > 0);
     }
-    function $7(e) {
-        let t = UPe(e);
+    function e9(e) {
+        let t = VPe(e);
         return t.map((e, n)=>n === t.length - 1 ? e.pathname : e.pathnameBase);
     }
-    function e9(e, t, n, r = !1) {
+    function t9(e, t, n, r = !1) {
         let i;
-        typeof e == `string` ? i = W7(e) : (i = {
+        typeof e == `string` ? i = G7(e) : (i = {
             ...e
-        }, z7(!i.pathname || !i.pathname.includes(`?`), Q7(`?`, `pathname`, `search`, i)), z7(!i.pathname || !i.pathname.includes(`#`), Q7(`#`, `pathname`, `hash`, i)), z7(!i.search || !i.search.includes(`#`), Q7(`#`, `search`, `hash`, i)));
+        }, B7(!i.pathname || !i.pathname.includes(`?`), $7(`?`, `pathname`, `search`, i)), B7(!i.pathname || !i.pathname.includes(`#`), $7(`#`, `pathname`, `hash`, i)), B7(!i.search || !i.search.includes(`#`), $7(`#`, `search`, `hash`, i)));
         let a = e === `` || i.pathname === ``, o = a ? `/` : i.pathname, s;
         if (o == null) s = n;
         else {
@@ -64457,34 +64381,34 @@ ${h(e)}
             }
             s = e >= 0 ? t[e] : `/`;
         }
-        let c = HPe(i, s), l = o && o !== `/` && o.endsWith(`/`), u = (a || o === `.`) && n.endsWith(`/`);
+        let c = BPe(i, s), l = o && o !== `/` && o.endsWith(`/`), u = (a || o === `.`) && n.endsWith(`/`);
         return !c.pathname.endsWith(`/`) && (l || u) && (c.pathname += `/`), c;
     }
-    var t9 = (e)=>e.join(`/`).replace(/\/\/+/g, `/`), WPe = (e)=>e.replace(/\/+$/, ``).replace(/^\/*/, `/`), GPe = (e)=>!e || e === `?` ? `` : e.startsWith(`?`) ? e : `?` + e, KPe = (e)=>!e || e === `#` ? `` : e.startsWith(`#`) ? e : `#` + e, qPe = class {
+    var n9 = (e)=>e.join(`/`).replace(/\/\/+/g, `/`), HPe = (e)=>e.replace(/\/+$/, ``).replace(/^\/*/, `/`), UPe = (e)=>!e || e === `?` ? `` : e.startsWith(`?`) ? e : `?` + e, WPe = (e)=>!e || e === `#` ? `` : e.startsWith(`#`) ? e : `#` + e, GPe = class {
         constructor(e, t, n, r = !1){
             this.status = e, this.statusText = t || ``, this.internal = r, n instanceof Error ? (this.data = n.toString(), this.error = n) : this.data = n;
         }
     };
-    function JPe(e) {
+    function KPe(e) {
         return e != null && typeof e.status == `number` && typeof e.statusText == `string` && typeof e.internal == `boolean` && `data` in e;
     }
-    function YPe(e) {
+    function qPe(e) {
         return e.map((e)=>e.route.path).filter(Boolean).join(`/`).replace(/\/\/*/g, `/`) || `/`;
     }
-    var n9 = typeof window < `u` && window.document !== void 0 && window.document.createElement !== void 0;
-    function r9(e, t) {
+    var r9 = typeof window < `u` && window.document !== void 0 && window.document.createElement !== void 0;
+    function i9(e, t) {
         let n = e;
-        if (typeof n != `string` || !VPe.test(n)) return {
+        if (typeof n != `string` || !zPe.test(n)) return {
             absoluteURL: void 0,
             isExternal: !1,
             to: n
         };
         let r = n, i = !1;
-        if (n9) try {
-            let e = new URL(window.location.href), r = n.startsWith(`//`) ? new URL(e.protocol + n) : new URL(n), a = X7(r.pathname, t);
+        if (r9) try {
+            let e = new URL(window.location.href), r = n.startsWith(`//`) ? new URL(e.protocol + n) : new URL(n), a = Z7(r.pathname, t);
             r.origin === e.origin && a != null ? n = a + r.search + r.hash : i = !0;
         } catch  {
-            B7(!1, `<Link to="${n}"> contains an invalid URL which will probably break when clicked - please update to a valid URL path.`);
+            V7(!1, `<Link to="${n}"> contains an invalid URL which will probably break when clicked - please update to a valid URL path.`);
         }
         return {
             absoluteURL: r,
@@ -64493,65 +64417,65 @@ ${h(e)}
         };
     }
     Object.getOwnPropertyNames(Object.prototype).sort().join(`\0`);
-    var i9 = [
+    var a9 = [
         `POST`,
         `PUT`,
         `PATCH`,
         `DELETE`
     ];
-    new Set(i9);
-    var XPe = [
+    new Set(a9);
+    var JPe = [
         `GET`,
-        ...i9
+        ...a9
     ];
-    new Set(XPe);
-    var a9 = N.createContext(null);
-    a9.displayName = `DataRouter`;
+    new Set(JPe);
     var o9 = N.createContext(null);
-    o9.displayName = `DataRouterState`;
-    var s9 = N.createContext(!1);
-    function ZPe() {
-        return N.useContext(s9);
+    o9.displayName = `DataRouter`;
+    var s9 = N.createContext(null);
+    s9.displayName = `DataRouterState`;
+    var c9 = N.createContext(!1);
+    function YPe() {
+        return N.useContext(c9);
     }
-    var c9 = N.createContext({
+    var l9 = N.createContext({
         isTransitioning: !1
     });
-    c9.displayName = `ViewTransition`;
-    var QPe = N.createContext(new Map);
-    QPe.displayName = `Fetchers`;
-    var $Pe = N.createContext(null);
-    $Pe.displayName = `Await`;
-    var l9 = N.createContext(null);
-    l9.displayName = `Navigation`;
+    l9.displayName = `ViewTransition`;
+    var XPe = N.createContext(new Map);
+    XPe.displayName = `Fetchers`;
+    var ZPe = N.createContext(null);
+    ZPe.displayName = `Await`;
     var u9 = N.createContext(null);
-    u9.displayName = `Location`;
-    var d9 = N.createContext({
+    u9.displayName = `Navigation`;
+    var d9 = N.createContext(null);
+    d9.displayName = `Location`;
+    var f9 = N.createContext({
         outlet: null,
         matches: [],
         isDataRoute: !1
     });
-    d9.displayName = `Route`;
-    var f9 = N.createContext(null);
-    f9.displayName = `RouteError`;
-    var p9 = `REACT_ROUTER_ERROR`, eFe = `REDIRECT`, tFe = `ROUTE_ERROR_RESPONSE`;
-    function nFe(e) {
-        if (e.startsWith(`${p9}:${eFe}:{`)) try {
+    f9.displayName = `Route`;
+    var p9 = N.createContext(null);
+    p9.displayName = `RouteError`;
+    var m9 = `REACT_ROUTER_ERROR`, QPe = `REDIRECT`, $Pe = `ROUTE_ERROR_RESPONSE`;
+    function eFe(e) {
+        if (e.startsWith(`${m9}:${QPe}:{`)) try {
             let t = JSON.parse(e.slice(28));
             if (typeof t == `object` && t && typeof t.status == `number` && typeof t.statusText == `string` && typeof t.location == `string` && typeof t.reloadDocument == `boolean` && typeof t.replace == `boolean`) return t;
         } catch  {}
     }
-    function rFe(e) {
-        if (e.startsWith(`${p9}:${tFe}:{`)) try {
+    function tFe(e) {
+        if (e.startsWith(`${m9}:${$Pe}:{`)) try {
             let t = JSON.parse(e.slice(40));
-            if (typeof t == `object` && t && typeof t.status == `number` && typeof t.statusText == `string`) return new qPe(t.status, t.statusText, t.data);
+            if (typeof t == `object` && t && typeof t.status == `number` && typeof t.statusText == `string`) return new GPe(t.status, t.statusText, t.data);
         } catch  {}
     }
-    function iFe(e, { relative: t } = {}) {
-        z7(m9(), `useHref() may be used only in the context of a <Router> component.`);
-        let { basename: n, navigator: r } = N.useContext(l9), { hash: i, pathname: a, search: o } = v9(e, {
+    function nFe(e, { relative: t } = {}) {
+        B7(h9(), `useHref() may be used only in the context of a <Router> component.`);
+        let { basename: n, navigator: r } = N.useContext(u9), { hash: i, pathname: a, search: o } = y9(e, {
             relative: t
         }), s = a;
-        return n !== `/` && (s = a === `/` ? n : t9([
+        return n !== `/` && (s = a === `/` ? n : n9([
             n,
             a
         ])), r.createHref({
@@ -64560,33 +64484,33 @@ ${h(e)}
             hash: i
         });
     }
-    function m9() {
-        return N.useContext(u9) != null;
-    }
     function h9() {
-        return z7(m9(), `useLocation() may be used only in the context of a <Router> component.`), N.useContext(u9).location;
+        return N.useContext(d9) != null;
     }
-    var g9 = `You should call navigate() in a React.useEffect(), not when your component is first rendered.`;
-    function _9(e) {
-        N.useContext(l9).static || N.useLayoutEffect(e);
+    function g9() {
+        return B7(h9(), `useLocation() may be used only in the context of a <Router> component.`), N.useContext(d9).location;
     }
-    function aFe() {
-        let { isDataRoute: e } = N.useContext(d9);
-        return e ? vFe() : oFe();
+    var _9 = `You should call navigate() in a React.useEffect(), not when your component is first rendered.`;
+    function v9(e) {
+        N.useContext(u9).static || N.useLayoutEffect(e);
     }
-    function oFe() {
-        z7(m9(), `useNavigate() may be used only in the context of a <Router> component.`);
-        let e = N.useContext(a9), { basename: t, navigator: n } = N.useContext(l9), { matches: r } = N.useContext(d9), { pathname: i } = h9(), a = JSON.stringify($7(r)), o = N.useRef(!1);
-        return _9(()=>{
+    function rFe() {
+        let { isDataRoute: e } = N.useContext(f9);
+        return e ? gFe() : iFe();
+    }
+    function iFe() {
+        B7(h9(), `useNavigate() may be used only in the context of a <Router> component.`);
+        let e = N.useContext(o9), { basename: t, navigator: n } = N.useContext(u9), { matches: r } = N.useContext(f9), { pathname: i } = g9(), a = JSON.stringify(e9(r)), o = N.useRef(!1);
+        return v9(()=>{
             o.current = !0;
         }), N.useCallback((r, s = {})=>{
-            if (B7(o.current, g9), !o.current) return;
+            if (V7(o.current, _9), !o.current) return;
             if (typeof r == `number`) {
                 n.go(r);
                 return;
             }
-            let c = e9(r, JSON.parse(a), i, s.relative === `path`);
-            e == null && t !== `/` && (c.pathname = c.pathname === `/` ? t : t9([
+            let c = t9(r, JSON.parse(a), i, s.relative === `path`);
+            e == null && t !== `/` && (c.pathname = c.pathname === `/` ? t : n9([
                 t,
                 c.pathname
             ])), (s.replace ? n.replace : n.push)(c, s.state, s);
@@ -64599,53 +64523,53 @@ ${h(e)}
         ]);
     }
     N.createContext(null);
-    function v9(e, { relative: t } = {}) {
-        let { matches: n } = N.useContext(d9), { pathname: r } = h9(), i = JSON.stringify($7(n));
-        return N.useMemo(()=>e9(e, JSON.parse(i), r, t === `path`), [
+    function y9(e, { relative: t } = {}) {
+        let { matches: n } = N.useContext(f9), { pathname: r } = g9(), i = JSON.stringify(e9(n));
+        return N.useMemo(()=>t9(e, JSON.parse(i), r, t === `path`), [
             e,
             i,
             r,
             t
         ]);
     }
-    function sFe(e, t) {
-        return y9(e, t);
+    function aFe(e, t) {
+        return b9(e, t);
     }
-    function y9(e, t, n) {
-        z7(m9(), `useRoutes() may be used only in the context of a <Router> component.`);
-        let { navigator: r } = N.useContext(l9), { matches: i } = N.useContext(d9), a = i[i.length - 1], o = a ? a.params : {}, s = a ? a.pathname : `/`, c = a ? a.pathnameBase : `/`, l = a && a.route;
+    function b9(e, t, n) {
+        B7(h9(), `useRoutes() may be used only in the context of a <Router> component.`);
+        let { navigator: r } = N.useContext(u9), { matches: i } = N.useContext(f9), a = i[i.length - 1], o = a ? a.params : {}, s = a ? a.pathname : `/`, c = a ? a.pathnameBase : `/`, l = a && a.route;
         {
             let e = l && l.path || ``;
-            D9(s, !l || e.endsWith(`*`) || e.endsWith(`*?`), `You rendered descendant <Routes> (or called \`useRoutes()\`) at "${s}" (under <Route path="${e}">) but the parent route path has no trailing "*". This means if you navigate deeper, the parent won't match anymore and therefore the child routes will never render.
+            O9(s, !l || e.endsWith(`*`) || e.endsWith(`*?`), `You rendered descendant <Routes> (or called \`useRoutes()\`) at "${s}" (under <Route path="${e}">) but the parent route path has no trailing "*". This means if you navigate deeper, the parent won't match anymore and therefore the child routes will never render.
 
 Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` : `${e}/*`}">.`);
         }
-        let u = h9(), d;
+        let u = g9(), d;
         if (t) {
-            let e = typeof t == `string` ? W7(t) : t;
-            z7(c === `/` || e.pathname?.startsWith(c), `When overriding the location using \`<Routes location>\` or \`useRoutes(routes, location)\`, the location pathname must begin with the portion of the URL pathname that was matched by all parent routes. The current pathname base is "${c}" but pathname "${e.pathname}" was given in the \`location\` prop.`), d = e;
+            let e = typeof t == `string` ? G7(t) : t;
+            B7(c === `/` || e.pathname?.startsWith(c), `When overriding the location using \`<Routes location>\` or \`useRoutes(routes, location)\`, the location pathname must begin with the portion of the URL pathname that was matched by all parent routes. The current pathname base is "${c}" but pathname "${e.pathname}" was given in the \`location\` prop.`), d = e;
         } else d = u;
         let f = d.pathname || `/`, p = f;
         if (c !== `/`) {
             let e = c.replace(/^\//, ``).split(`/`);
             p = `/` + f.replace(/^\//, ``).split(`/`).slice(e.length).join(`/`);
         }
-        let m = G7(e, {
+        let m = K7(e, {
             pathname: p
         });
-        B7(l || m != null, `No routes matched location "${d.pathname}${d.search}${d.hash}" `), B7(m == null || m[m.length - 1].route.element !== void 0 || m[m.length - 1].route.Component !== void 0 || m[m.length - 1].route.lazy !== void 0, `Matched leaf route at location "${d.pathname}${d.search}${d.hash}" does not have an element or Component. This means it will render an <Outlet /> with a null value by default resulting in an "empty" page.`);
-        let h = fFe(m && m.map((e)=>Object.assign({}, e, {
+        V7(l || m != null, `No routes matched location "${d.pathname}${d.search}${d.hash}" `), V7(m == null || m[m.length - 1].route.element !== void 0 || m[m.length - 1].route.Component !== void 0 || m[m.length - 1].route.lazy !== void 0, `Matched leaf route at location "${d.pathname}${d.search}${d.hash}" does not have an element or Component. This means it will render an <Outlet /> with a null value by default resulting in an "empty" page.`);
+        let h = uFe(m && m.map((e)=>Object.assign({}, e, {
                 params: Object.assign({}, o, e.params),
-                pathname: t9([
+                pathname: n9([
                     c,
                     r.encodeLocation ? r.encodeLocation(e.pathname.replace(/%/g, `%25`).replace(/\?/g, `%3F`).replace(/#/g, `%23`)).pathname : e.pathname
                 ]),
-                pathnameBase: e.pathnameBase === `/` ? c : t9([
+                pathnameBase: e.pathnameBase === `/` ? c : n9([
                     c,
                     r.encodeLocation ? r.encodeLocation(e.pathnameBase.replace(/%/g, `%25`).replace(/\?/g, `%3F`).replace(/#/g, `%23`)).pathname : e.pathnameBase
                 ])
             })), i, n);
-        return t && h ? N.createElement(u9.Provider, {
+        return t && h ? N.createElement(d9.Provider, {
             value: {
                 location: {
                     pathname: `/`,
@@ -64660,8 +64584,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             }
         }, h) : h;
     }
-    function cFe() {
-        let e = _Fe(), t = JPe(e) ? `${e.status} ${e.statusText}` : e instanceof Error ? e.message : JSON.stringify(e), n = e instanceof Error ? e.stack : null, r = `rgba(200,200,200, 0.5)`, i = {
+    function oFe() {
+        let e = hFe(), t = KPe(e) ? `${e.status} ${e.statusText}` : e instanceof Error ? e.message : JSON.stringify(e), n = e instanceof Error ? e.stack : null, r = `rgba(200,200,200, 0.5)`, i = {
             padding: `0.5rem`,
             backgroundColor: r
         }, a = {
@@ -64680,7 +64604,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             style: i
         }, n) : null, o);
     }
-    var lFe = N.createElement(cFe, null), b9 = class extends N.Component {
+    var sFe = N.createElement(oFe, null), x9 = class extends N.Component {
         constructor(e){
             super(e), this.state = {
                 location: e.location,
@@ -64710,36 +64634,36 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         render() {
             let e = this.state.error;
             if (this.context && typeof e == `object` && e && `digest` in e && typeof e.digest == `string`) {
-                let t = rFe(e.digest);
+                let t = tFe(e.digest);
                 t && (e = t);
             }
-            let t = e === void 0 ? this.props.children : N.createElement(d9.Provider, {
+            let t = e === void 0 ? this.props.children : N.createElement(f9.Provider, {
                 value: this.props.routeContext
-            }, N.createElement(f9.Provider, {
+            }, N.createElement(p9.Provider, {
                 value: e,
                 children: this.props.component
             }));
-            return this.context ? N.createElement(uFe, {
+            return this.context ? N.createElement(cFe, {
                 error: e
             }, t) : t;
         }
     };
-    b9.contextType = s9;
-    var x9 = new WeakMap;
-    function uFe({ children: e, error: t }) {
-        let { basename: n } = N.useContext(l9);
+    x9.contextType = c9;
+    var S9 = new WeakMap;
+    function cFe({ children: e, error: t }) {
+        let { basename: n } = N.useContext(u9);
         if (typeof t == `object` && t && `digest` in t && typeof t.digest == `string`) {
-            let e = nFe(t.digest);
+            let e = eFe(t.digest);
             if (e) {
-                let r = x9.get(t);
+                let r = S9.get(t);
                 if (r) throw r;
-                let i = r9(e.location, n);
-                if (n9 && !x9.get(t)) if (i.isExternal || e.reloadDocument) window.location.href = i.absoluteURL || i.to;
+                let i = i9(e.location, n);
+                if (r9 && !S9.get(t)) if (i.isExternal || e.reloadDocument) window.location.href = i.absoluteURL || i.to;
                 else {
                     let n = Promise.resolve().then(()=>window.__reactRouterDataRouter.navigate(i.to, {
                             replace: e.replace
                         }));
-                    throw x9.set(t, n), n;
+                    throw S9.set(t, n), n;
                 }
                 return N.createElement(`meta`, {
                     httpEquiv: `refresh`,
@@ -64749,13 +64673,13 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         }
         return e;
     }
-    function dFe({ routeContext: e, match: t, children: n }) {
-        let r = N.useContext(a9);
-        return r && r.static && r.staticContext && (t.route.errorElement || t.route.ErrorBoundary) && (r.staticContext._deepestRenderedBoundaryId = t.route.id), N.createElement(d9.Provider, {
+    function lFe({ routeContext: e, match: t, children: n }) {
+        let r = N.useContext(o9);
+        return r && r.static && r.staticContext && (t.route.errorElement || t.route.ErrorBoundary) && (r.staticContext._deepestRenderedBoundaryId = t.route.id), N.createElement(f9.Provider, {
             value: e
         }, n);
     }
-    function fFe(e, t = [], n) {
+    function uFe(e, t = [], n) {
         let r = n?.state;
         if (e == null) {
             if (!r) return null;
@@ -64766,7 +64690,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         let i = e, a = r?.errors;
         if (a != null) {
             let e = i.findIndex((e)=>e.route.id && a?.[e.route.id] !== void 0);
-            z7(e >= 0, `Could not find a matching route for errors on route IDs: ${Object.keys(a).join(`,`)}`), i = i.slice(0, Math.min(i.length, e + 1));
+            B7(e >= 0, `Could not find a matching route for errors on route IDs: ${Object.keys(a).join(`,`)}`), i = i.slice(0, Math.min(i.length, e + 1));
         }
         let o = !1, s = -1;
         if (n && r) {
@@ -64788,16 +64712,16 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             c(e, {
                 location: r.location,
                 params: r.matches?.[0]?.params ?? {},
-                unstable_pattern: YPe(r.matches),
+                unstable_pattern: qPe(r.matches),
                 errorInfo: t
             });
         } : void 0;
         return i.reduceRight((e, n, c)=>{
             let u, d = !1, f = null, p = null;
-            r && (u = a && n.route.id ? a[n.route.id] : void 0, f = n.route.errorElement || lFe, o && (s < 0 && c === 0 ? (D9(`route-fallback`, !1, "No `HydrateFallback` element provided to render during initial hydration"), d = !0, p = null) : s === c && (d = !0, p = n.route.hydrateFallbackElement || null)));
+            r && (u = a && n.route.id ? a[n.route.id] : void 0, f = n.route.errorElement || sFe, o && (s < 0 && c === 0 ? (O9(`route-fallback`, !1, "No `HydrateFallback` element provided to render during initial hydration"), d = !0, p = null) : s === c && (d = !0, p = n.route.hydrateFallbackElement || null)));
             let m = t.concat(i.slice(0, c + 1)), h = ()=>{
                 let t;
-                return t = u ? f : d ? p : n.route.Component ? N.createElement(n.route.Component, null) : n.route.element ? n.route.element : e, N.createElement(dFe, {
+                return t = u ? f : d ? p : n.route.Component ? N.createElement(n.route.Component, null) : n.route.element ? n.route.element : e, N.createElement(lFe, {
                     match: n,
                     routeContext: {
                         outlet: e,
@@ -64807,7 +64731,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                     children: t
                 });
             };
-            return r && (n.route.ErrorBoundary || n.route.errorElement || c === 0) ? N.createElement(b9, {
+            return r && (n.route.ErrorBoundary || n.route.errorElement || c === 0) ? N.createElement(x9, {
                 location: r.location,
                 revalidation: r.revalidation,
                 component: f,
@@ -64822,48 +64746,48 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             }) : h();
         }, null);
     }
-    function S9(e) {
+    function C9(e) {
         return `${e} must be used within a data router.  See https://reactrouter.com/en/main/routers/picking-a-router.`;
     }
-    function pFe(e) {
-        let t = N.useContext(a9);
-        return z7(t, S9(e)), t;
-    }
-    function C9(e) {
+    function dFe(e) {
         let t = N.useContext(o9);
-        return z7(t, S9(e)), t;
-    }
-    function mFe(e) {
-        let t = N.useContext(d9);
-        return z7(t, S9(e)), t;
+        return B7(t, C9(e)), t;
     }
     function w9(e) {
-        let t = mFe(e), n = t.matches[t.matches.length - 1];
-        return z7(n.route.id, `${e} can only be used on routes that contain a unique "id"`), n.route.id;
+        let t = N.useContext(s9);
+        return B7(t, C9(e)), t;
     }
-    function hFe() {
-        return w9(`useRouteId`);
+    function fFe(e) {
+        let t = N.useContext(f9);
+        return B7(t, C9(e)), t;
     }
-    function gFe() {
-        return C9(`useNavigation`).navigation;
+    function T9(e) {
+        let t = fFe(e), n = t.matches[t.matches.length - 1];
+        return B7(n.route.id, `${e} can only be used on routes that contain a unique "id"`), n.route.id;
     }
-    function T9() {
-        let { matches: e, loaderData: t } = C9(`useMatches`);
-        return N.useMemo(()=>e.map((e)=>OPe(e, t)), [
+    function pFe() {
+        return T9(`useRouteId`);
+    }
+    function mFe() {
+        return w9(`useNavigation`).navigation;
+    }
+    function E9() {
+        let { matches: e, loaderData: t } = w9(`useMatches`);
+        return N.useMemo(()=>e.map((e)=>EPe(e, t)), [
             e,
             t
         ]);
     }
-    function _Fe() {
-        let e = N.useContext(f9), t = C9(`useRouteError`), n = w9(`useRouteError`);
+    function hFe() {
+        let e = N.useContext(p9), t = w9(`useRouteError`), n = T9(`useRouteError`);
         return e === void 0 ? t.errors?.[n] : e;
     }
-    function vFe() {
-        let { router: e } = pFe(`useNavigate`), t = w9(`useNavigate`), n = N.useRef(!1);
-        return _9(()=>{
+    function gFe() {
+        let { router: e } = dFe(`useNavigate`), t = T9(`useNavigate`), n = N.useRef(!1);
+        return v9(()=>{
             n.current = !0;
         }), N.useCallback(async (r, i = {})=>{
-            B7(n.current, g9), n.current && (typeof r == `number` ? await e.navigate(r) : await e.navigate(r, {
+            V7(n.current, _9), n.current && (typeof r == `number` ? await e.navigate(r) : await e.navigate(r, {
                 fromRouteId: t,
                 ...i
             }));
@@ -64872,24 +64796,24 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             t
         ]);
     }
-    var E9 = {};
-    function D9(e, t, n) {
-        !t && !E9[e] && (E9[e] = !0, B7(!1, n));
+    var D9 = {};
+    function O9(e, t, n) {
+        !t && !D9[e] && (D9[e] = !0, V7(!1, n));
     }
-    N.useOptimistic, N.memo(yFe);
-    function yFe({ routes: e, future: t, state: n, isStatic: r, onError: i }) {
-        return y9(e, void 0, {
+    N.useOptimistic, N.memo(_Fe);
+    function _Fe({ routes: e, future: t, state: n, isStatic: r, onError: i }) {
+        return b9(e, void 0, {
             state: n,
             isStatic: r,
             onError: i,
             future: t
         });
     }
-    function O9(e) {
-        z7(!1, `A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.`);
+    function k9(e) {
+        B7(!1, `A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.`);
     }
-    function k9({ basename: e = `/`, children: t = null, location: n, navigationType: r = `POP`, navigator: i, static: a = !1, unstable_useTransitions: o }) {
-        z7(!m9(), `You cannot render a <Router> inside another <Router>. You should never have more than one in your app.`);
+    function A9({ basename: e = `/`, children: t = null, location: n, navigationType: r = `POP`, navigator: i, static: a = !1, unstable_useTransitions: o }) {
+        B7(!h9(), `You cannot render a <Router> inside another <Router>. You should never have more than one in your app.`);
         let s = e.replace(/^\/*/, `/`), c = N.useMemo(()=>({
                 basename: s,
                 navigator: i,
@@ -64902,9 +64826,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             a,
             o
         ]);
-        typeof n == `string` && (n = W7(n));
+        typeof n == `string` && (n = G7(n));
         let { pathname: l = `/`, search: u = ``, hash: d = ``, state: f = null, key: p = `default`, unstable_mask: m } = n, h = N.useMemo(()=>{
-            let e = X7(l, s);
+            let e = Z7(l, s);
             return e == null ? null : {
                 location: {
                     pathname: e,
@@ -64926,18 +64850,18 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             r,
             m
         ]);
-        return B7(h != null, `<Router basename="${s}"> is not able to match the URL "${l}${u}${d}" because it does not start with the basename, so the <Router> won't render anything.`), h == null ? null : N.createElement(l9.Provider, {
+        return V7(h != null, `<Router basename="${s}"> is not able to match the URL "${l}${u}${d}" because it does not start with the basename, so the <Router> won't render anything.`), h == null ? null : N.createElement(u9.Provider, {
             value: c
-        }, N.createElement(u9.Provider, {
+        }, N.createElement(d9.Provider, {
             children: t,
             value: h
         }));
     }
-    function bFe({ children: e, location: t }) {
-        return sFe(A9(e), t);
+    function vFe({ children: e, location: t }) {
+        return aFe(j9(e), t);
     }
     N.Component;
-    function A9(e, t = []) {
+    function j9(e, t = []) {
         let n = [];
         return N.Children.forEach(e, (e, r)=>{
             if (!N.isValidElement(e)) return;
@@ -64946,10 +64870,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                 r
             ];
             if (e.type === N.Fragment) {
-                n.push.apply(n, A9(e.props.children, i));
+                n.push.apply(n, j9(e.props.children, i));
                 return;
             }
-            z7(e.type === O9, `[${typeof e.type == `string` ? e.type : e.type.name}] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>`), z7(!e.props.index || !e.props.children, `An index route cannot have child routes.`);
+            B7(e.type === k9, `[${typeof e.type == `string` ? e.type : e.type.name}] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>`), B7(!e.props.index || !e.props.children, `An index route cannot have child routes.`);
             let a = {
                 id: e.props.id || i.join(`-`),
                 caseSensitive: e.props.caseSensitive,
@@ -64969,63 +64893,63 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                 handle: e.props.handle,
                 lazy: e.props.lazy
             };
-            e.props.children && (a.children = A9(e.props.children, i)), n.push(a);
+            e.props.children && (a.children = j9(e.props.children, i)), n.push(a);
         }), n;
     }
-    var j9 = `get`, M9 = `application/x-www-form-urlencoded`;
-    function N9(e) {
+    var M9 = `get`, N9 = `application/x-www-form-urlencoded`;
+    function P9(e) {
         return typeof HTMLElement < `u` && e instanceof HTMLElement;
     }
+    function yFe(e) {
+        return P9(e) && e.tagName.toLowerCase() === `button`;
+    }
+    function bFe(e) {
+        return P9(e) && e.tagName.toLowerCase() === `form`;
+    }
     function xFe(e) {
-        return N9(e) && e.tagName.toLowerCase() === `button`;
+        return P9(e) && e.tagName.toLowerCase() === `input`;
     }
     function SFe(e) {
-        return N9(e) && e.tagName.toLowerCase() === `form`;
-    }
-    function CFe(e) {
-        return N9(e) && e.tagName.toLowerCase() === `input`;
-    }
-    function wFe(e) {
         return !!(e.metaKey || e.altKey || e.ctrlKey || e.shiftKey);
     }
-    function TFe(e, t) {
-        return e.button === 0 && (!t || t === `_self`) && !wFe(e);
+    function CFe(e, t) {
+        return e.button === 0 && (!t || t === `_self`) && !SFe(e);
     }
-    var P9 = null;
-    function EFe() {
-        if (P9 === null) try {
-            new FormData(document.createElement(`form`), 0), P9 = !1;
+    var F9 = null;
+    function wFe() {
+        if (F9 === null) try {
+            new FormData(document.createElement(`form`), 0), F9 = !1;
         } catch  {
-            P9 = !0;
+            F9 = !0;
         }
-        return P9;
+        return F9;
     }
-    var DFe = new Set([
+    var TFe = new Set([
         `application/x-www-form-urlencoded`,
         `multipart/form-data`,
         `text/plain`
     ]);
-    function F9(e) {
-        return e != null && !DFe.has(e) ? (B7(!1, `"${e}" is not a valid \`encType\` for \`<Form>\`/\`<fetcher.Form>\` and will default to "${M9}"`), null) : e;
+    function I9(e) {
+        return e != null && !TFe.has(e) ? (V7(!1, `"${e}" is not a valid \`encType\` for \`<Form>\`/\`<fetcher.Form>\` and will default to "${N9}"`), null) : e;
     }
-    function OFe(e, t) {
+    function EFe(e, t) {
         let n, r, i, a, o;
-        if (SFe(e)) {
+        if (bFe(e)) {
             let o = e.getAttribute(`action`);
-            r = o ? X7(o, t) : null, n = e.getAttribute(`method`) || j9, i = F9(e.getAttribute(`enctype`)) || M9, a = new FormData(e);
-        } else if (xFe(e) || CFe(e) && (e.type === `submit` || e.type === `image`)) {
+            r = o ? Z7(o, t) : null, n = e.getAttribute(`method`) || M9, i = I9(e.getAttribute(`enctype`)) || N9, a = new FormData(e);
+        } else if (yFe(e) || xFe(e) && (e.type === `submit` || e.type === `image`)) {
             let o = e.form;
             if (o == null) throw Error(`Cannot submit a <button> or <input type="submit"> without a <form>`);
             let s = e.getAttribute(`formaction`) || o.getAttribute(`action`);
-            if (r = s ? X7(s, t) : null, n = e.getAttribute(`formmethod`) || o.getAttribute(`method`) || j9, i = F9(e.getAttribute(`formenctype`)) || F9(o.getAttribute(`enctype`)) || M9, a = new FormData(o, e), !EFe()) {
+            if (r = s ? Z7(s, t) : null, n = e.getAttribute(`formmethod`) || o.getAttribute(`method`) || M9, i = I9(e.getAttribute(`formenctype`)) || I9(o.getAttribute(`enctype`)) || N9, a = new FormData(o, e), !wFe()) {
                 let { name: t, type: n, value: r } = e;
                 if (n === `image`) {
                     let e = t ? `${t}.` : ``;
                     a.append(`${e}x`, `0`), a.append(`${e}y`, `0`);
                 } else t && a.append(t, r);
             }
-        } else if (N9(e)) throw Error(`Cannot submit element that is not <form>, <button>, or <input type="submit|image">`);
-        else n = j9, r = null, i = M9, o = e;
+        } else if (P9(e)) throw Error(`Cannot submit element that is not <form>, <button>, or <input type="submit|image">`);
+        else n = M9, r = null, i = N9, o = e;
         return a && i === `text/plain` && (o = a, a = void 0), {
             action: r,
             method: n.toLowerCase(),
@@ -65035,27 +64959,27 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         };
     }
     Object.getOwnPropertyNames(Object.prototype).sort().join(`\0`);
-    var kFe = {
+    var DFe = {
         "&": `\\u0026`,
         ">": `\\u003e`,
         "<": `\\u003c`,
         "\u2028": `\\u2028`,
         "\u2029": `\\u2029`
-    }, AFe = /[&><\u2028\u2029]/g;
-    function I9(e) {
-        return e.replace(AFe, (e)=>kFe[e]);
+    }, OFe = /[&><\u2028\u2029]/g;
+    function L9(e) {
+        return e.replace(OFe, (e)=>DFe[e]);
     }
-    function L9(e, t) {
+    function R9(e, t) {
         if (e === !1 || e == null) throw Error(t);
     }
-    function R9(e, t, n, r) {
+    function z9(e, t, n, r) {
         let i = typeof e == `string` ? new URL(e, typeof window > `u` ? `server://singlefetch/` : window.location.origin) : e;
-        return n ? i.pathname.endsWith(`/`) ? i.pathname = `${i.pathname}_.${r}` : i.pathname = `${i.pathname}.${r}` : i.pathname === `/` ? i.pathname = `_root.${r}` : t && X7(i.pathname, t) === `/` ? i.pathname = `${t.replace(/\/$/, ``)}/_root.${r}` : i.pathname = `${i.pathname.replace(/\/$/, ``)}.${r}`, i;
+        return n ? i.pathname.endsWith(`/`) ? i.pathname = `${i.pathname}_.${r}` : i.pathname = `${i.pathname}.${r}` : i.pathname === `/` ? i.pathname = `_root.${r}` : t && Z7(i.pathname, t) === `/` ? i.pathname = `${t.replace(/\/$/, ``)}/_root.${r}` : i.pathname = `${i.pathname.replace(/\/$/, ``)}.${r}`, i;
     }
-    async function z9(e, t) {
+    async function kFe(e, t) {
         if (e.id in t) return t[e.id];
         try {
-            let n = await SPe(()=>import(e.module).then(async (m)=>{
+            let n = await bPe(()=>import(e.module).then(async (m)=>{
                     await m.__tla;
                     return m;
                 }), []);
@@ -65064,21 +64988,21 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             return console.error(`Error loading route module \`${e.module}\`, reloading page...`), console.error(t), window.__reactRouterContext && window.__reactRouterContext.isSpaMode, window.location.reload(), new Promise(()=>{});
         }
     }
-    function jFe(e) {
+    function AFe(e) {
         return e != null && typeof e.page == `string`;
     }
-    function MFe(e) {
+    function jFe(e) {
         return e == null ? !1 : e.href == null ? e.rel === `preload` && typeof e.imageSrcSet == `string` && typeof e.imageSizes == `string` : typeof e.rel == `string` && typeof e.href == `string`;
     }
-    async function NFe(e, t, n) {
-        return LFe((await Promise.all(e.map(async (e)=>{
+    async function MFe(e, t, n) {
+        return IFe((await Promise.all(e.map(async (e)=>{
             let r = t.routes[e.route.id];
             if (r) {
-                let e = await z9(r, n);
+                let e = await kFe(r, n);
                 return e.links ? e.links() : [];
             }
             return [];
-        }))).flat(1).filter(MFe).filter((e)=>e.rel === `stylesheet` || e.rel === `preload`).map((e)=>e.rel === `stylesheet` ? {
+        }))).flat(1).filter(jFe).filter((e)=>e.rel === `stylesheet` || e.rel === `preload`).map((e)=>e.rel === `stylesheet` ? {
                 ...e,
                 rel: `prefetch`,
                 as: `style`
@@ -65106,8 +65030,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             return !0;
         }) : [];
     }
-    function PFe(e, t, { includeHydrateFallback: n } = {}) {
-        return FFe(e.map((e)=>{
+    function NFe(e, t, { includeHydrateFallback: n } = {}) {
+        return PFe(e.map((e)=>{
             let r = t.routes[e.route.id];
             if (!r) return [];
             let i = [
@@ -65116,21 +65040,21 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             return r.clientActionModule && (i = i.concat(r.clientActionModule)), r.clientLoaderModule && (i = i.concat(r.clientLoaderModule)), n && r.hydrateFallbackModule && (i = i.concat(r.hydrateFallbackModule)), r.imports && (i = i.concat(r.imports)), i;
         }).flat(1));
     }
-    function FFe(e) {
+    function PFe(e) {
         return [
             ...new Set(e)
         ];
     }
-    function IFe(e) {
+    function FFe(e) {
         let t = {}, n = Object.keys(e).sort();
         for (let r of n)t[r] = e[r];
         return t;
     }
-    function LFe(e, t) {
+    function IFe(e, t) {
         let n = new Set, r = new Set(t);
         return e.reduce((e, i)=>{
-            if (t && !jFe(i) && i.as === `script` && i.href && r.has(i.href)) return e;
-            let a = JSON.stringify(IFe(i));
+            if (t && !AFe(i) && i.as === `script` && i.href && r.has(i.href)) return e;
+            let a = JSON.stringify(FFe(i));
             return n.has(a) || (n.add(a), e.push({
                 key: a,
                 link: i
@@ -65138,20 +65062,20 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         }, []);
     }
     function V9() {
-        let e = N.useContext(a9);
-        return L9(e, `You must render this element inside a <DataRouterContext.Provider> element`), e;
-    }
-    function RFe() {
         let e = N.useContext(o9);
-        return L9(e, `You must render this element inside a <DataRouterStateContext.Provider> element`), e;
+        return R9(e, `You must render this element inside a <DataRouterContext.Provider> element`), e;
+    }
+    function LFe() {
+        let e = N.useContext(s9);
+        return R9(e, `You must render this element inside a <DataRouterStateContext.Provider> element`), e;
     }
     var H9 = N.createContext(void 0);
     H9.displayName = `FrameworkContext`;
     function U9() {
         let e = N.useContext(H9);
-        return L9(e, `You must render this element inside a <HydratedRouter> element`), e;
+        return R9(e, `You must render this element inside a <HydratedRouter> element`), e;
     }
-    function zFe(e, t) {
+    function RFe(e, t) {
         let n = N.useContext(H9), [r, i] = N.useState(!1), [a, o] = N.useState(!1), { onFocus: s, onBlur: c, onMouseEnter: l, onMouseLeave: u, onTouchStart: d } = t, f = N.useRef(null);
         N.useEffect(()=>{
             if (e === `render` && o(!0), e === `viewport`) {
@@ -65210,27 +65134,27 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             e && e(n), n.defaultPrevented || t(n);
         };
     }
-    function BFe({ page: e, ...t }) {
-        let n = ZPe(), { router: r } = V9(), i = N.useMemo(()=>G7(r.routes, e, r.basename), [
+    function zFe({ page: e, ...t }) {
+        let n = YPe(), { router: r } = V9(), i = N.useMemo(()=>K7(r.routes, e, r.basename), [
             r.routes,
             e,
             r.basename
         ]);
-        return i ? n ? N.createElement(HFe, {
+        return i ? n ? N.createElement(VFe, {
             page: e,
             matches: i,
             ...t
-        }) : N.createElement(UFe, {
+        }) : N.createElement(HFe, {
             page: e,
             matches: i,
             ...t
         }) : null;
     }
-    function VFe(e) {
+    function BFe(e) {
         let { manifest: t, routeModules: n } = U9(), [r, i] = N.useState([]);
         return N.useEffect(()=>{
             let r = !1;
-            return NFe(e, t, n).then((e)=>{
+            return MFe(e, t, n).then((e)=>{
                 r || i(e);
             }), ()=>{
                 r = !0;
@@ -65241,10 +65165,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             n
         ]), r;
     }
-    function HFe({ page: e, matches: t, ...n }) {
-        let r = h9(), { future: i } = U9(), { basename: a } = V9(), o = N.useMemo(()=>{
+    function VFe({ page: e, matches: t, ...n }) {
+        let r = g9(), { future: i } = U9(), { basename: a } = V9(), o = N.useMemo(()=>{
             if (e === r.pathname + r.search + r.hash) return [];
-            let n = R9(e, a, i.unstable_trailingSlashAwareDataRequests, `rsc`), o = !1, s = [];
+            let n = z9(e, a, i.unstable_trailingSlashAwareDataRequests, `rsc`), o = !1, s = [];
             for (let e of t)typeof e.route.shouldRevalidate == `function` ? o = !0 : s.push(e.route.id);
             return o && s.length > 0 && n.searchParams.set(`_routes`, s.join(`,`)), [
                 n.pathname + n.search
@@ -65264,8 +65188,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                 ...n
             })));
     }
-    function UFe({ page: e, matches: t, ...n }) {
-        let r = h9(), { future: i, manifest: a, routeModules: o } = U9(), { basename: s } = V9(), { loaderData: c, matches: l } = RFe(), u = N.useMemo(()=>B9(e, t, l, a, r, `data`), [
+    function HFe({ page: e, matches: t, ...n }) {
+        let r = g9(), { future: i, manifest: a, routeModules: o } = U9(), { basename: s } = V9(), { loaderData: c, matches: l } = LFe(), u = N.useMemo(()=>B9(e, t, l, a, r, `data`), [
             e,
             t,
             l,
@@ -65284,7 +65208,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                 let t = a.routes[e.route.id];
                 !t || !t.hasLoader || (!u.some((t)=>t.route.id === e.route.id) && e.route.id in c && o[e.route.id]?.shouldRevalidate || t.hasClientLoader ? l = !0 : n.add(e.route.id));
             }), n.size === 0) return [];
-            let d = R9(e, s, i.unstable_trailingSlashAwareDataRequests, `data`);
+            let d = z9(e, s, i.unstable_trailingSlashAwareDataRequests, `data`);
             return l && n.size > 0 && d.searchParams.set(`_routes`, t.filter((e)=>n.has(e.route.id)).map((e)=>e.route.id).join(`,`)), [
                 d.pathname + d.search
             ];
@@ -65298,10 +65222,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             t,
             e,
             o
-        ]), p = N.useMemo(()=>PFe(d, a), [
+        ]), p = N.useMemo(()=>NFe(d, a), [
             d,
             a
-        ]), m = VFe(d);
+        ]), m = BFe(d);
         return N.createElement(N.Fragment, null, f.map((e)=>N.createElement(`link`, {
                 key: e,
                 rel: `prefetch`,
@@ -65320,7 +65244,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                 crossOrigin: t.crossOrigin ?? n.crossOrigin
             })));
     }
-    function WFe(...e) {
+    function UFe(...e) {
         return (t)=>{
             e.forEach((e)=>{
                 typeof e == `function` ? e(t) : e != null && (e.current = t);
@@ -65328,13 +65252,13 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         };
     }
     N.Component;
-    var GFe = typeof window < `u` && window.document !== void 0 && window.document.createElement !== void 0;
+    var WFe = typeof window < `u` && window.document !== void 0 && window.document.createElement !== void 0;
     try {
-        GFe && (window.__reactRouterVersion = `7.14.0`);
+        WFe && (window.__reactRouterVersion = `7.14.0`);
     } catch  {}
-    function KFe({ basename: e, children: t, unstable_useTransitions: n, window: r }) {
+    function GFe({ basename: e, children: t, unstable_useTransitions: n, window: r }) {
         let i = N.useRef();
-        i.current ??= CPe({
+        i.current ??= xPe({
             window: r,
             v5Compat: !0
         });
@@ -65349,7 +65273,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         return N.useLayoutEffect(()=>a.listen(c), [
             a,
             c
-        ]), N.createElement(k9, {
+        ]), N.createElement(A9, {
             basename: e,
             children: t,
             location: o.location,
@@ -65358,7 +65282,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             unstable_useTransitions: n
         });
     }
-    function qFe({ basename: e, children: t, history: n, unstable_useTransitions: r }) {
+    function KFe({ basename: e, children: t, history: n, unstable_useTransitions: r }) {
         let [i, a] = N.useState({
             action: n.action,
             location: n.location
@@ -65370,7 +65294,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         return N.useLayoutEffect(()=>n.listen(o), [
             n,
             o
-        ]), N.createElement(k9, {
+        ]), N.createElement(A9, {
             basename: e,
             children: t,
             location: i.location,
@@ -65379,21 +65303,21 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             unstable_useTransitions: r
         });
     }
-    qFe.displayName = `unstable_HistoryRouter`;
+    KFe.displayName = `unstable_HistoryRouter`;
     var G9 = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i, K9 = N.forwardRef(function({ onClick: e, discover: t = `render`, prefetch: n = `none`, relative: r, reloadDocument: i, replace: a, unstable_mask: o, state: s, target: c, to: l, preventScrollReset: u, viewTransition: d, unstable_defaultShouldRevalidate: f, ...p }, m) {
-        let { basename: h, navigator: g, unstable_useTransitions: _ } = N.useContext(l9), v = typeof l == `string` && G9.test(l), y = r9(l, h);
+        let { basename: h, navigator: g, unstable_useTransitions: _ } = N.useContext(u9), v = typeof l == `string` && G9.test(l), y = i9(l, h);
         l = y.to;
-        let b = iFe(l, {
+        let b = nFe(l, {
             relative: r
-        }), x = h9(), S = null;
+        }), x = g9(), S = null;
         if (o) {
-            let e = e9(o, [], x.unstable_mask ? x.unstable_mask.pathname : `/`, !0);
-            h !== `/` && (e.pathname = e.pathname === `/` ? h : t9([
+            let e = t9(o, [], x.unstable_mask ? x.unstable_mask.pathname : `/`, !0);
+            h !== `/` && (e.pathname = e.pathname === `/` ? h : n9([
                 h,
                 e.pathname
             ])), S = g.createHref(e);
         }
-        let [C, w, T] = zFe(n, p), ee = QFe(l, {
+        let [C, w, T] = RFe(n, p), ee = ZFe(l, {
             replace: a,
             unstable_mask: o,
             state: s,
@@ -65412,20 +65336,20 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             ...T,
             href: (E ? S : void 0) || y.absoluteURL || b,
             onClick: E ? te : e,
-            ref: WFe(m, w),
+            ref: UFe(m, w),
             target: c,
             "data-discover": !v && t === `render` ? `true` : void 0
         });
-        return C && !v ? N.createElement(N.Fragment, null, ne, N.createElement(BFe, {
+        return C && !v ? N.createElement(N.Fragment, null, ne, N.createElement(zFe, {
             page: b
         })) : ne;
     });
     K9.displayName = `Link`;
-    var JFe = N.forwardRef(function({ "aria-current": e = `page`, caseSensitive: t = !1, className: n = ``, end: r = !1, style: i, to: a, viewTransition: o, children: s, ...c }, l) {
-        let u = v9(a, {
+    var qFe = N.forwardRef(function({ "aria-current": e = `page`, caseSensitive: t = !1, className: n = ``, end: r = !1, style: i, to: a, viewTransition: o, children: s, ...c }, l) {
+        let u = y9(a, {
             relative: c.relative
-        }), d = h9(), f = N.useContext(o9), { navigator: p, basename: m } = N.useContext(l9), h = f != null && aIe(u) && o === !0, g = p.encodeLocation ? p.encodeLocation(u).pathname : u.pathname, _ = d.pathname, v = f && f.navigation && f.navigation.location ? f.navigation.location.pathname : null;
-        t || (_ = _.toLowerCase(), v = v ? v.toLowerCase() : null, g = g.toLowerCase()), v && m && (v = X7(v, m) || v);
+        }), d = g9(), f = N.useContext(s9), { navigator: p, basename: m } = N.useContext(u9), h = f != null && iIe(u) && o === !0, g = p.encodeLocation ? p.encodeLocation(u).pathname : u.pathname, _ = d.pathname, v = f && f.navigation && f.navigation.location ? f.navigation.location.pathname : null;
+        t || (_ = _.toLowerCase(), v = v ? v.toLowerCase() : null, g = g.toLowerCase()), v && m && (v = Z7(v, m) || v);
         let y = g !== `/` && g.endsWith(`/`) ? g.length - 1 : g.length, b = _ === g || !r && _.startsWith(g) && _.charAt(y) === `/`, x = v != null && (v === g || !r && v.startsWith(g) && v.charAt(g.length) === `/`), S = {
             isActive: b,
             isPending: x,
@@ -65448,9 +65372,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             viewTransition: o
         }, typeof s == `function` ? s(S) : s);
     });
-    JFe.displayName = `NavLink`;
-    var YFe = N.forwardRef(({ discover: e = `render`, fetcherKey: t, navigate: n, reloadDocument: r, replace: i, state: a, method: o = j9, action: s, onSubmit: c, relative: l, preventScrollReset: u, viewTransition: d, unstable_defaultShouldRevalidate: f, ...p }, m)=>{
-        let { unstable_useTransitions: h } = N.useContext(l9), g = tIe(), _ = nIe(s, {
+    qFe.displayName = `NavLink`;
+    var JFe = N.forwardRef(({ discover: e = `render`, fetcherKey: t, navigate: n, reloadDocument: r, replace: i, state: a, method: o = M9, action: s, onSubmit: c, relative: l, preventScrollReset: u, viewTransition: d, unstable_defaultShouldRevalidate: f, ...p }, m)=>{
+        let { unstable_useTransitions: h } = N.useContext(u9), g = eIe(), _ = tIe(s, {
             relative: l
         }), v = o.toLowerCase() === `get` ? `get` : `post`, y = typeof s == `string` && G9.test(s);
         return N.createElement(`form`, {
@@ -65477,10 +65401,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             "data-discover": !y && e === `render` ? `true` : void 0
         });
     });
-    YFe.displayName = `Form`;
-    function XFe({ getKey: e, storageKey: t, ...n }) {
-        let r = N.useContext(H9), { basename: i } = N.useContext(l9), a = h9(), o = T9();
-        rIe({
+    JFe.displayName = `Form`;
+    function YFe({ getKey: e, storageKey: t, ...n }) {
+        let r = N.useContext(H9), { basename: i } = N.useContext(u9), a = g9(), o = E9();
+        nIe({
             getKey: e,
             storageKey: t
         });
@@ -65508,30 +65432,30 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             ...n,
             suppressHydrationWarning: !0,
             dangerouslySetInnerHTML: {
-                __html: `(${c})(${I9(JSON.stringify(t || Y9))}, ${I9(JSON.stringify(s))})`
+                __html: `(${c})(${L9(JSON.stringify(t || Y9))}, ${L9(JSON.stringify(s))})`
             }
         });
     }
-    XFe.displayName = `ScrollRestoration`;
+    YFe.displayName = `ScrollRestoration`;
     function q9(e) {
         return `${e} must be used within a data router.  See https://reactrouter.com/en/main/routers/picking-a-router.`;
     }
     function J9(e) {
-        let t = N.useContext(a9);
-        return z7(t, q9(e)), t;
-    }
-    function ZFe(e) {
         let t = N.useContext(o9);
-        return z7(t, q9(e)), t;
+        return B7(t, q9(e)), t;
     }
-    function QFe(e, { target: t, replace: n, unstable_mask: r, state: i, preventScrollReset: a, relative: o, viewTransition: s, unstable_defaultShouldRevalidate: c, unstable_useTransitions: l } = {}) {
-        let u = aFe(), d = h9(), f = v9(e, {
+    function XFe(e) {
+        let t = N.useContext(s9);
+        return B7(t, q9(e)), t;
+    }
+    function ZFe(e, { target: t, replace: n, unstable_mask: r, state: i, preventScrollReset: a, relative: o, viewTransition: s, unstable_defaultShouldRevalidate: c, unstable_useTransitions: l } = {}) {
+        let u = rFe(), d = g9(), f = y9(e, {
             relative: o
         });
         return N.useCallback((p)=>{
-            if (TFe(p, t)) {
+            if (CFe(p, t)) {
                 p.preventDefault();
-                let t = n === void 0 ? U7(d) === U7(f) : n, m = ()=>u(e, {
+                let t = n === void 0 ? W7(d) === W7(f) : n, m = ()=>u(e, {
                         replace: t,
                         unstable_mask: r,
                         state: i,
@@ -65558,12 +65482,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             l
         ]);
     }
-    var $Fe = 0, eIe = ()=>`__${String(++$Fe)}__`;
-    function tIe() {
-        let { router: e } = J9(`useSubmit`), { basename: t } = N.useContext(l9), n = hFe(), r = e.fetch, i = e.navigate;
+    var QFe = 0, $Fe = ()=>`__${String(++QFe)}__`;
+    function eIe() {
+        let { router: e } = J9(`useSubmit`), { basename: t } = N.useContext(u9), n = pFe(), r = e.fetch, i = e.navigate;
         return N.useCallback(async (e, a = {})=>{
-            let { action: o, method: s, encType: c, formData: l, body: u } = OFe(e, t);
-            a.navigate === !1 ? await r(a.fetcherKey || eIe(), n, a.action || o, {
+            let { action: o, method: s, encType: c, formData: l, body: u } = EFe(e, t);
+            a.navigate === !1 ? await r(a.fetcherKey || $Fe(), n, a.action || o, {
                 unstable_defaultShouldRevalidate: a.unstable_defaultShouldRevalidate,
                 preventScrollReset: a.preventScrollReset,
                 formData: l,
@@ -65591,14 +65515,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             n
         ]);
     }
-    function nIe(e, { relative: t } = {}) {
-        let { basename: n } = N.useContext(l9), r = N.useContext(d9);
-        z7(r, `useFormAction must be used inside a RouteContext`);
+    function tIe(e, { relative: t } = {}) {
+        let { basename: n } = N.useContext(u9), r = N.useContext(f9);
+        B7(r, `useFormAction must be used inside a RouteContext`);
         let [i] = r.matches.slice(-1), a = {
-            ...v9(e || `.`, {
+            ...y9(e || `.`, {
                 relative: t
             })
-        }, o = h9();
+        }, o = g9();
         if (e == null) {
             a.search = o.search;
             let e = new URLSearchParams(a.search), t = e.getAll(`index`);
@@ -65608,24 +65532,24 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                 a.search = n ? `?${n}` : ``;
             }
         }
-        return (!e || e === `.`) && i.route.index && (a.search = a.search ? a.search.replace(/^\?/, `?index&`) : `?index`), n !== `/` && (a.pathname = a.pathname === `/` ? n : t9([
+        return (!e || e === `.`) && i.route.index && (a.search = a.search ? a.search.replace(/^\?/, `?index&`) : `?index`), n !== `/` && (a.pathname = a.pathname === `/` ? n : n9([
             n,
             a.pathname
-        ])), U7(a);
+        ])), W7(a);
     }
     var Y9 = `react-router-scroll-positions`, X9 = {};
     function Z9(e, t, n, r) {
         let i = null;
         return r && (i = r(n === `/` ? e : {
             ...e,
-            pathname: X7(e.pathname, n) || e.pathname
+            pathname: Z7(e.pathname, n) || e.pathname
         }, t)), i ??= e.key, i;
     }
-    function rIe({ getKey: e, storageKey: t } = {}) {
-        let { router: n } = J9(`useScrollRestoration`), { restoreScrollPosition: r, preventScrollReset: i } = ZFe(`useScrollRestoration`), { basename: a } = N.useContext(l9), o = h9(), s = T9(), c = gFe();
+    function nIe({ getKey: e, storageKey: t } = {}) {
+        let { router: n } = J9(`useScrollRestoration`), { restoreScrollPosition: r, preventScrollReset: i } = XFe(`useScrollRestoration`), { basename: a } = N.useContext(u9), o = g9(), s = E9(), c = mFe();
         N.useEffect(()=>(window.history.scrollRestoration = `manual`, ()=>{
                 window.history.scrollRestoration = `auto`;
-            }), []), iIe(N.useCallback(()=>{
+            }), []), rIe(N.useCallback(()=>{
             if (c.state === `idle`) {
                 let t = Z9(o, s, a, e);
                 X9[t] = window.scrollY;
@@ -65633,7 +65557,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             try {
                 sessionStorage.setItem(t || Y9, JSON.stringify(X9));
             } catch (e) {
-                B7(!1, `Failed to save scroll positions in sessionStorage, <ScrollRestoration /> will not work properly (${e}).`);
+                V7(!1, `Failed to save scroll positions in sessionStorage, <ScrollRestoration /> will not work properly (${e}).`);
             }
             window.history.scrollRestoration = `auto`;
         }, [
@@ -65672,7 +65596,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                         }
                     }
                 } catch  {
-                    B7(!1, `"${o.hash.slice(1)}" is not a decodable element ID. The view will not scroll to it.`);
+                    V7(!1, `"${o.hash.slice(1)}" is not a decodable element ID. The view will not scroll to it.`);
                 }
                 i !== !0 && window.scrollTo(0, 0);
             }
@@ -65682,7 +65606,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             i
         ]));
     }
-    function iIe(e, t) {
+    function rIe(e, t) {
         let { capture: n } = t || {};
         N.useEffect(()=>{
             let t = n == null ? void 0 : {
@@ -65696,17 +65620,105 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             n
         ]);
     }
-    function aIe(e, { relative: t } = {}) {
-        let n = N.useContext(c9);
-        z7(n != null, "`useViewTransitionState` must be used within `react-router-dom`'s `RouterProvider`.  Did you accidentally import `RouterProvider` from `react-router`?");
-        let { basename: r } = J9(`useViewTransitionState`), i = v9(e, {
+    function iIe(e, { relative: t } = {}) {
+        let n = N.useContext(l9);
+        B7(n != null, "`useViewTransitionState` must be used within `react-router-dom`'s `RouterProvider`.  Did you accidentally import `RouterProvider` from `react-router`?");
+        let { basename: r } = J9(`useViewTransitionState`), i = y9(e, {
             relative: t
         });
         if (!n.isTransitioning) return !1;
-        let a = X7(n.currentLocation.pathname, r) || n.currentLocation.pathname, o = X7(n.nextLocation.pathname, r) || n.nextLocation.pathname;
-        return Y7(i.pathname, o) != null || Y7(i.pathname, a) != null;
+        let a = Z7(n.currentLocation.pathname, r) || n.currentLocation.pathname, o = Z7(n.nextLocation.pathname, r) || n.nextLocation.pathname;
+        return X7(i.pathname, o) != null || X7(i.pathname, a) != null;
     }
-    var oIe = [
+    var aIe = ({ vaxApi: e })=>{
+        let [t, n] = (0, N.useState)(null), r = g9(), i = new URLSearchParams(r.search).get(`code`);
+        return i ? (0, b.jsxs)(`main`, {
+            className: `pt-12 px-6 max-w-screen-md mx-auto`,
+            children: [
+                (0, b.jsx)(`section`, {
+                    className: `mb-7`,
+                    children: (0, b.jsx)(`h2`, {
+                        className: `text-4xl font-extrabold tracking-tight text-on-surface mb-2`,
+                        style: {},
+                        children: `Adicionar como Admin`
+                    })
+                }),
+                (0, b.jsx)(`div`, {
+                    className: `space-y-16`,
+                    children: (0, b.jsx)(`div`, {
+                        className: `bg-surface-container-low p-8 rounded-xl shadow-sm border-none relative overflow-hidden`,
+                        children: (0, b.jsxs)(`form`, {
+                            onSubmit: async (t)=>{
+                                if (t.preventDefault(), e) try {
+                                    await e.acceptInviteAdmin(i.trim());
+                                } catch (e) {
+                                    if (console.error(`Contract failed:`, e), e && typeof e == `object` && `cause` in e) {
+                                        console.log(`aqui!`);
+                                        let t = e.cause;
+                                        n(t?.failure?.message ? String(t?.failure?.message) : ``);
+                                    }
+                                }
+                            },
+                            className: `space-y-8 relative z-10`,
+                            children: [
+                                (0, b.jsxs)(`div`, {
+                                    className: `bg-secondary-container/20 p-5 rounded-lg border-none flex items-start gap-4 mt-12`,
+                                    style: {
+                                        background: `rgb(161 190 253 / 0.2)`
+                                    },
+                                    children: [
+                                        (0, b.jsx)(`div`, {
+                                            className: `w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0`,
+                                            children: (0, b.jsx)(`span`, {
+                                                className: `material-symbols-outlined text-on-secondary-container`,
+                                                children: `verified_user`
+                                            })
+                                        }),
+                                        (0, b.jsxs)(`div`, {
+                                            children: [
+                                                (0, b.jsx)(`h4`, {
+                                                    className: `font-bold text-on-secondary-container text-sm`,
+                                                    children: `Registro Seguro`
+                                                }),
+                                                (0, b.jsx)(`p`, {
+                                                    className: `text-xs text-on-secondary-container/80 leading-relaxed`,
+                                                    children: `Suas informações de saúde são criptografadas e utilizadas apenas para o seu controle pessoal de imunização.`
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                }),
+                                t && (0, b.jsx)(`p`, {
+                                    className: `text-error text-sm mt-3 px-1`,
+                                    children: t
+                                }),
+                                (0, b.jsx)(`div`, {
+                                    className: `pt-6`,
+                                    children: (0, b.jsxs)(`button`, {
+                                        className: `w-full py-4 bg-gradient-to-r from-primary to-primary-container text-white font-bold text-lg rounded-full shadow-lg shadow-primary/20 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2`,
+                                        style: {
+                                            background: `#0070eb`
+                                        },
+                                        type: `submit`,
+                                        children: [
+                                            (0, b.jsx)(`span`, {
+                                                className: ``,
+                                                children: `Salvar Registro`
+                                            }),
+                                            (0, b.jsx)(`span`, {
+                                                className: `material-symbols-outlined`,
+                                                children: `check_circle`
+                                            })
+                                        ]
+                                    })
+                                })
+                            ]
+                        })
+                    })
+                })
+            ]
+        }) : `code is necessary`;
+    }, oIe = [
         {
             code: `en`,
             label: `EN`,
@@ -65744,18 +65756,18 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
     function sIe() {
         let [e, t] = (0, N.useState)(!1), [n, r] = (0, N.useState)(null), [i, a] = (0, N.useState)(null), [o, s] = (0, N.useState)(null), c = async (e, n)=>{
             console.log(`loading...`);
-            let i = await k7(n, ml), o = new Uint8Array(32);
-            s(await O7.join(i, gl(), o)), r(e), a(n), t(!0);
+            let i = await A7(n, ml), o = new Uint8Array(32);
+            s(await k7.join(i, gl(), o)), r(e), a(n), t(!0);
         }, l = ()=>{
             t(!1), r(null), a(null);
         };
-        return (0, b.jsx)(KFe, {
-            children: (0, b.jsxs)(bFe, {
+        return (0, b.jsx)(GFe, {
+            children: (0, b.jsxs)(vFe, {
                 children: [
-                    (0, b.jsx)(O9, {
+                    (0, b.jsx)(k9, {
                         path: `/invite`,
                         element: (0, b.jsx)(b.Fragment, {
-                            children: e ? (0, b.jsx)(yPe, {
+                            children: e ? (0, b.jsx)(aIe, {
                                 vaxApi: o
                             }) : (0, b.jsxs)(b.Fragment, {
                                 children: [
@@ -65769,15 +65781,15 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                             })
                         })
                     }),
-                    (0, b.jsx)(O9, {
+                    (0, b.jsx)(k9, {
                         path: `/`,
                         element: (0, b.jsx)(b.Fragment, {
                             children: e ? (0, b.jsx)(b.Fragment, {
-                                children: gl() ? (0, b.jsx)(_Pe, {
+                                children: gl() ? (0, b.jsx)(gPe, {
                                     onLogout: l,
                                     walletAddress: n,
                                     connectedApi: i
-                                }) : (0, b.jsx)(vPe, {
+                                }) : (0, b.jsx)(_Pe, {
                                     onLogout: l,
                                     walletAddress: n
                                 })
