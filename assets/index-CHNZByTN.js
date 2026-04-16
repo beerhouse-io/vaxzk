@@ -68496,6 +68496,14 @@ ${h(e)}
                                     })
                                 ]
                             }),
+                            (0, b.jsx)(`div`, {
+                                className: `h-20 w-20 rounded-full border-4 border-primary/20 border-t-primary animate-spin-slow`
+                            })
+                        ]
+                    }),
+                    (0, b.jsxs)(`div`, {
+                        className: `md:col-span-2 bg-surface-container-highest rounded-xl p-8 flex items-center justify-between shadow-sm`,
+                        children: [
                             (0, b.jsxs)(`div`, {
                                 className: `space-y-1`,
                                 children: [
