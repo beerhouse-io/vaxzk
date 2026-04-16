@@ -15176,7 +15176,7 @@ perfecta armonía.`,
                 registerInviteAdmin: (...e)=>{
                     if (e.length !== 2) throw new S(`registerInviteAdmin: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`registerInviteAdmin`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 10 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`registerInviteAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 10 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`registerInviteAdmin`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 9 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`registerInviteAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 9 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: hc()
@@ -15202,7 +15202,7 @@ perfecta armonía.`,
                 acceptInviteAdmin: (...e)=>{
                     if (e.length !== 2) throw new S(`acceptInviteAdmin: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`acceptInviteAdmin`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 14 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`acceptInviteAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 14 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`acceptInviteAdmin`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 13 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`acceptInviteAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 13 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: hc()
@@ -16806,7 +16806,7 @@ perfecta armonía.`,
                 }
             ]).value), `Invalid invite code`);
             let r = this._ownPublicKey_0(e, t), i = this._getShieldedId_0(r.bytes);
-            return C(tu.fromValue(M(e, t, [
+            return C(!tu.fromValue(M(e, t, [
                 {
                     dup: {
                         n: 0
@@ -16843,7 +16843,7 @@ perfecta armonía.`,
                         result: void 0
                     }
                 }
-            ]).value), `Admin ID is not in the admins list`), M(e, t, [
+            ]).value), `user is already an admin`), M(e, t, [
                 {
                     idx: {
                         cached: !1,

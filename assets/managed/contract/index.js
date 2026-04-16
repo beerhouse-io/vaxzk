@@ -260,14 +260,14 @@ export class Contract {
         if (!(typeof(contextOrig_0) === 'object' && contextOrig_0.currentQueryContext != undefined)) {
           __compactRuntime.typeError('registerInviteAdmin',
                                      'argument 1 (as invoked from Typescript)',
-                                     'Invites.compact line 10 char 1',
+                                     'Invites.compact line 9 char 1',
                                      'CircuitContext',
                                      contextOrig_0)
         }
         if (!(inviteCode_0.buffer instanceof ArrayBuffer && inviteCode_0.BYTES_PER_ELEMENT === 1 && inviteCode_0.length === 32)) {
           __compactRuntime.typeError('registerInviteAdmin',
                                      'argument 1 (argument 2 as invoked from Typescript)',
-                                     'Invites.compact line 10 char 1',
+                                     'Invites.compact line 9 char 1',
                                      'Bytes<32>',
                                      inviteCode_0)
         }
@@ -296,14 +296,14 @@ export class Contract {
         if (!(typeof(contextOrig_0) === 'object' && contextOrig_0.currentQueryContext != undefined)) {
           __compactRuntime.typeError('acceptInviteAdmin',
                                      'argument 1 (as invoked from Typescript)',
-                                     'Invites.compact line 14 char 1',
+                                     'Invites.compact line 13 char 1',
                                      'CircuitContext',
                                      contextOrig_0)
         }
         if (!(inviteCode_0.buffer instanceof ArrayBuffer && inviteCode_0.BYTES_PER_ELEMENT === 1 && inviteCode_0.length === 32)) {
           __compactRuntime.typeError('acceptInviteAdmin',
                                      'argument 1 (argument 2 as invoked from Typescript)',
-                                     'Invites.compact line 14 char 1',
+                                     'Invites.compact line 13 char 1',
                                      'Bytes<32>',
                                      inviteCode_0)
         }
@@ -1146,23 +1146,23 @@ export class Contract {
                             'Invalid invite code');
     const own_0 = this._ownPublicKey_0(context, partialProofData);
     const adminId_0 = this._getShieldedId_0(own_0.bytes);
-    __compactRuntime.assert(_descriptor_4.fromValue(__compactRuntime.queryLedgerState(context,
-                                                                                      partialProofData,
-                                                                                      [
-                                                                                       { dup: { n: 0 } },
-                                                                                       { idx: { cached: false,
-                                                                                                pushPath: false,
-                                                                                                path: [
-                                                                                                       { tag: 'value',
-                                                                                                         value: { value: _descriptor_24.toValue(0n),
-                                                                                                                  alignment: _descriptor_24.alignment() } }] } },
-                                                                                       { push: { storage: false,
-                                                                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(adminId_0),
-                                                                                                                                              alignment: _descriptor_0.alignment() }).encode() } },
-                                                                                       'member',
-                                                                                       { popeq: { cached: true,
-                                                                                                  result: undefined } }]).value),
-                            'Admin ID is not in the admins list');
+    __compactRuntime.assert(!_descriptor_4.fromValue(__compactRuntime.queryLedgerState(context,
+                                                                                       partialProofData,
+                                                                                       [
+                                                                                        { dup: { n: 0 } },
+                                                                                        { idx: { cached: false,
+                                                                                                 pushPath: false,
+                                                                                                 path: [
+                                                                                                        { tag: 'value',
+                                                                                                          value: { value: _descriptor_24.toValue(0n),
+                                                                                                                   alignment: _descriptor_24.alignment() } }] } },
+                                                                                        { push: { storage: false,
+                                                                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(adminId_0),
+                                                                                                                                               alignment: _descriptor_0.alignment() }).encode() } },
+                                                                                        'member',
+                                                                                        { popeq: { cached: true,
+                                                                                                   result: undefined } }]).value),
+                            'user is already an admin');
     __compactRuntime.queryLedgerState(context,
                                       partialProofData,
                                       [
