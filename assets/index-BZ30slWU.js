@@ -68488,7 +68488,7 @@ ${h(e)}
                                 children: [
                                     (0, b.jsx)(`p`, {
                                         className: `text-on-surface-variant font-medium`,
-                                        children: `Pending Staff Invites`
+                                        children: `Pending Admin Invites`
                                     }),
                                     (0, b.jsx)(`h2`, {
                                         className: `text-5xl font-extrabold tracking-tight`,
