@@ -63147,7 +63147,7 @@ ${h(e)}
                                     r(!0), a(null), l(``);
                                     try {
                                         let e = hPe(), t = await o.registerInviteAdmin(e);
-                                        console.log(`txData`, t), l(hl + `/invite/` + e);
+                                        console.log(`txData`, t), l(hl + `/invite?code=` + e);
                                     } catch (e) {
                                         console.error(`Failed to add vaccine:`, e), e instanceof Error ? a(`Erro ao adicionar vacina: ` + e.message) : a(`Erro ao adicionar vacina: ` + String(e));
                                     } finally{
@@ -63968,9 +63968,104 @@ ${h(e)}
                 })
             ]
         });
-    }, yPe = `modulepreload`, bPe = function(e) {
+    }, yPe = ({ connectedApi: e })=>{
+        let t = new URLSearchParams(window.location.search).get(`code`);
+        if (!t) return `code is necessary`;
+        let [n, r] = (0, N.useState)(null);
+        return (0, N.useEffect)(()=>{
+            async function t() {
+                let t = gl();
+                if (!(!e || !t)) try {
+                    let n = await k7(e, ml), i = new Uint8Array(32);
+                    r(await O7.join(n, t, i));
+                } catch (e) {
+                    console.error(`Failed to join contract:`, e);
+                }
+            }
+            return t(), ()=>{};
+        }, [
+            e
+        ]), (0, b.jsxs)(`main`, {
+            className: `pt-12 px-6 max-w-screen-md mx-auto`,
+            children: [
+                (0, b.jsx)(`section`, {
+                    className: `mb-7`,
+                    children: (0, b.jsx)(`h2`, {
+                        className: `text-4xl font-extrabold tracking-tight text-on-surface mb-2`,
+                        style: {},
+                        children: `Adicionar como Admin`
+                    })
+                }),
+                (0, b.jsx)(`div`, {
+                    className: `space-y-16`,
+                    children: (0, b.jsx)(`div`, {
+                        className: `bg-surface-container-low p-8 rounded-xl shadow-sm border-none relative overflow-hidden`,
+                        children: (0, b.jsxs)(`form`, {
+                            onSubmit: async (e)=>{
+                                if (e.preventDefault(), console.log(`a`), console.log(t), n) try {
+                                    await n.acceptInviteAdmin(t.trim());
+                                } catch (e) {
+                                    console.error(`Failed to add vaccine:`, e);
+                                }
+                            },
+                            className: `space-y-8 relative z-10`,
+                            children: [
+                                (0, b.jsxs)(`div`, {
+                                    className: `bg-secondary-container/20 p-5 rounded-lg border-none flex items-start gap-4 mt-12`,
+                                    style: {
+                                        background: `rgb(161 190 253 / 0.2)`
+                                    },
+                                    children: [
+                                        (0, b.jsx)(`div`, {
+                                            className: `w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0`,
+                                            children: (0, b.jsx)(`span`, {
+                                                className: `material-symbols-outlined text-on-secondary-container`,
+                                                children: `verified_user`
+                                            })
+                                        }),
+                                        (0, b.jsxs)(`div`, {
+                                            children: [
+                                                (0, b.jsx)(`h4`, {
+                                                    className: `font-bold text-on-secondary-container text-sm`,
+                                                    children: `Registro Seguro`
+                                                }),
+                                                (0, b.jsx)(`p`, {
+                                                    className: `text-xs text-on-secondary-container/80 leading-relaxed`,
+                                                    children: `Suas informações de saúde são criptografadas e utilizadas apenas para o seu controle pessoal de imunização.`
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                }),
+                                (0, b.jsx)(`div`, {
+                                    className: `pt-6`,
+                                    children: (0, b.jsxs)(`button`, {
+                                        className: `w-full py-4 bg-gradient-to-r from-primary to-primary-container text-white font-bold text-lg rounded-full shadow-lg shadow-primary/20 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2`,
+                                        style: {
+                                            background: `#0070eb`
+                                        },
+                                        type: `submit`,
+                                        children: [
+                                            (0, b.jsx)(`span`, {
+                                                className: ``,
+                                                children: `Salvar Registro`
+                                            }),
+                                            (0, b.jsx)(`span`, {
+                                                className: `material-symbols-outlined`,
+                                                children: `check_circle`
+                                            })
+                                        ]
+                                    })
+                                })
+                            ]
+                        })
+                    })
+                })
+            ]
+        });
+    }, bPe = `modulepreload`, xPe = function(e) {
         return `/` + e;
-    }, I7 = {}, xPe = function(e, t, n) {
+    }, I7 = {}, SPe = function(e, t, n) {
         let r = Promise.resolve();
         if (t && t.length > 0) {
             let e = document.getElementsByTagName(`link`), i = document.querySelector(`meta[property=csp-nonce]`), a = i?.nonce || i?.getAttribute(`nonce`);
@@ -63984,7 +64079,7 @@ ${h(e)}
                         }))));
             }
             r = o(t.map((t)=>{
-                if (t = bPe(t, n), t in I7) return;
+                if (t = xPe(t, n), t in I7) return;
                 I7[t] = !0;
                 let r = t.endsWith(`.css`), i = r ? `[rel="stylesheet"]` : ``;
                 if (n) for(let n = e.length - 1; n >= 0; n--){
@@ -63993,7 +64088,7 @@ ${h(e)}
                 }
                 else if (document.querySelector(`link[href="${t}"]${i}`)) return;
                 let o = document.createElement(`link`);
-                if (o.rel = r ? `stylesheet` : yPe, r || (o.as = `script`), o.crossOrigin = ``, o.href = t, a && o.setAttribute(`nonce`, a), document.head.appendChild(o), r) return new Promise((e, n)=>{
+                if (o.rel = r ? `stylesheet` : bPe, r || (o.as = `script`), o.crossOrigin = ``, o.href = t, a && o.setAttribute(`nonce`, a), document.head.appendChild(o), r) return new Promise((e, n)=>{
                     o.addEventListener(`load`, e), o.addEventListener(`error`, ()=>n(Error(`Unable to preload CSS for ${t}`)));
                 });
             }));
@@ -64012,7 +64107,7 @@ ${h(e)}
     function R7(e) {
         return typeof e == `object` && !!e && `pathname` in e && `search` in e && `hash` in e && `state` in e && `key` in e;
     }
-    function SPe(e = {}) {
+    function CPe(e = {}) {
         function t(e, t) {
             let n = t.state?.masked, { pathname: r, search: i, hash: a } = n || e.location;
             return H7(``, {
@@ -64028,7 +64123,7 @@ ${h(e)}
         function n(e, t) {
             return typeof t == `string` ? t : U7(t);
         }
-        return wPe(t, n, null, e);
+        return TPe(t, n, null, e);
     }
     function z7(e, t) {
         if (e === !1 || e == null) throw Error(t);
@@ -64041,7 +64136,7 @@ ${h(e)}
             } catch  {}
         }
     }
-    function CPe() {
+    function wPe() {
         return Math.random().toString(36).substring(2, 10);
     }
     function V7(e, t) {
@@ -64063,7 +64158,7 @@ ${h(e)}
             hash: ``,
             ...typeof t == `string` ? W7(t) : t,
             state: n,
-            key: t && t.key || r || CPe(),
+            key: t && t.key || r || wPe(),
             unstable_mask: i
         };
     }
@@ -64080,7 +64175,7 @@ ${h(e)}
         }
         return t;
     }
-    function wPe(e, t, n, r = {}) {
+    function TPe(e, t, n, r = {}) {
         let { window: i = document.defaultView, v5Compat: a = !1 } = r, o = i.history, s = `POP`, c = null, l = u();
         l ?? (l = 0, o.replaceState({
             ...o.state,
@@ -64129,7 +64224,7 @@ ${h(e)}
             });
         }
         function m(e) {
-            return TPe(e);
+            return EPe(e);
         }
         let h = {
             get action () {
@@ -64164,28 +64259,28 @@ ${h(e)}
         };
         return h;
     }
-    function TPe(e, t = !1) {
+    function EPe(e, t = !1) {
         let n = `http://localhost`;
         typeof window < `u` && (n = window.location.origin === `null` ? window.location.href : window.location.origin), z7(n, `No window.location.(origin|href) available to create URL`);
         let r = typeof e == `string` ? e : U7(e);
         return r = r.replace(/ $/, `%20`), !t && r.startsWith(`//`) && (r = n + r), new URL(r, n);
     }
     function G7(e, t, n = `/`) {
-        return EPe(e, t, n, !1);
+        return DPe(e, t, n, !1);
     }
-    function EPe(e, t, n, r) {
+    function DPe(e, t, n, r) {
         let i = X7((typeof t == `string` ? W7(t) : t).pathname || `/`, n);
         if (i == null) return null;
         let a = K7(e);
-        OPe(a);
+        kPe(a);
         let o = null;
         for(let e = 0; o == null && e < a.length; ++e){
-            let t = zPe(i);
-            o = LPe(a[e], t, r);
+            let t = BPe(i);
+            o = RPe(a[e], t, r);
         }
         return o;
     }
-    function DPe(e, t) {
+    function OPe(e, t) {
         let { route: n, pathname: r, params: i } = e;
         return {
             id: n.id,
@@ -64214,7 +64309,7 @@ ${h(e)}
             ]), u = n.concat(c);
             e.children && e.children.length > 0 && (z7(e.index !== !0, `Index routes must not have child routes. Please remove all child routes from route path "${l}".`), K7(e.children, t, u, l, o)), !(e.path == null && !e.index) && t.push({
                 path: l,
-                score: FPe(l, e.index),
+                score: IPe(l, e.index),
                 routesMeta: u
             });
         };
@@ -64239,18 +64334,18 @@ ${h(e)}
                 e
             ].join(`/`))), i && s.push(...o), s.map((t)=>e.startsWith(`/`) && t === `` ? `/` : t);
     }
-    function OPe(e) {
-        e.sort((e, t)=>e.score === t.score ? IPe(e.routesMeta.map((e)=>e.childrenIndex), t.routesMeta.map((e)=>e.childrenIndex)) : t.score - e.score);
+    function kPe(e) {
+        e.sort((e, t)=>e.score === t.score ? LPe(e.routesMeta.map((e)=>e.childrenIndex), t.routesMeta.map((e)=>e.childrenIndex)) : t.score - e.score);
     }
-    var kPe = /^:[\w-]+$/, APe = 3, jPe = 2, MPe = 1, NPe = 10, PPe = -2, J7 = (e)=>e === `*`;
-    function FPe(e, t) {
-        let n = e.split(`/`), r = n.length;
-        return n.some(J7) && (r += PPe), t && (r += jPe), n.filter((e)=>!J7(e)).reduce((e, t)=>e + (kPe.test(t) ? APe : t === `` ? MPe : NPe), r);
-    }
+    var APe = /^:[\w-]+$/, jPe = 3, MPe = 2, NPe = 1, PPe = 10, FPe = -2, J7 = (e)=>e === `*`;
     function IPe(e, t) {
+        let n = e.split(`/`), r = n.length;
+        return n.some(J7) && (r += FPe), t && (r += MPe), n.filter((e)=>!J7(e)).reduce((e, t)=>e + (APe.test(t) ? jPe : t === `` ? NPe : PPe), r);
+    }
+    function LPe(e, t) {
         return e.length === t.length && e.slice(0, -1).every((e, n)=>e === t[n]) ? e[e.length - 1] - t[t.length - 1] : 0;
     }
-    function LPe(e, t, n = !1) {
+    function RPe(e, t, n = !1) {
         let { routesMeta: r } = e, i = {}, a = `/`, o = [];
         for(let e = 0; e < r.length; ++e){
             let s = r[e], c = e === r.length - 1, l = a === `/` ? t : t.slice(a.length) || `/`, u = Y7({
@@ -64269,7 +64364,7 @@ ${h(e)}
                     a,
                     u.pathname
                 ]),
-                pathnameBase: UPe(t9([
+                pathnameBase: WPe(t9([
                     a,
                     u.pathnameBase
                 ])),
@@ -64287,7 +64382,7 @@ ${h(e)}
             caseSensitive: !1,
             end: !0
         });
-        let [n, r] = RPe(e.path, e.caseSensitive, e.end), i = t.match(n);
+        let [n, r] = zPe(e.path, e.caseSensitive, e.end), i = t.match(n);
         if (!i) return null;
         let a = i[0], o = a.replace(/(.)\/+$/, `$1`), s = i.slice(1);
         return {
@@ -64304,7 +64399,7 @@ ${h(e)}
             pattern: e
         };
     }
-    function RPe(e, t = !1, n = !0) {
+    function zPe(e, t = !1, n = !0) {
         B7(e === `*` || !e.endsWith(`*`) || e.endsWith(`/*`), `Route path "${e}" will be treated as if it were "${e.replace(/\*$/, `/*`)}" because the \`*\` character must always follow a \`/\` in the pattern. To get rid of this warning, please change the route path to "${e.replace(/\*$/, `/*`)}".`);
         let r = [], i = `^` + e.replace(/\/*\*?$/, ``).replace(/^\/*/, `/`).replace(/[\\.*+^${}|()[\]]/g, `\\$&`).replace(/\/:([\w-]+)(\?)?/g, (e, t, n, i, a)=>{
             if (r.push({
@@ -64323,7 +64418,7 @@ ${h(e)}
             r
         ];
     }
-    function zPe(e) {
+    function BPe(e) {
         try {
             return e.split(`/`).map((e)=>decodeURIComponent(e).replace(/\//g, `%2F`)).join(`/`);
         } catch (t) {
@@ -64336,13 +64431,13 @@ ${h(e)}
         let n = t.endsWith(`/`) ? t.length - 1 : t.length, r = e.charAt(n);
         return r && r !== `/` ? null : e.slice(n) || `/`;
     }
-    var BPe = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
-    function VPe(e, t = `/`) {
+    var VPe = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
+    function HPe(e, t = `/`) {
         let { pathname: n, search: r = ``, hash: i = `` } = typeof e == `string` ? W7(e) : e, a;
         return n ? (n = n.replace(/\/\/+/g, `/`), a = n.startsWith(`/`) ? Z7(n.substring(1), `/`) : Z7(n, t)) : a = t, {
             pathname: a,
-            search: WPe(r),
-            hash: GPe(i)
+            search: GPe(r),
+            hash: KPe(i)
         };
     }
     function Z7(e, t) {
@@ -64354,11 +64449,11 @@ ${h(e)}
     function Q7(e, t, n, r) {
         return `Cannot include a '${e}' character in a manually specified \`to.${t}\` field [${JSON.stringify(r)}].  Please separate it out to the \`to.${n}\` field. Alternatively you may provide the full path as a string in <Link to="..."> and the router will parse it for you.`;
     }
-    function HPe(e) {
+    function UPe(e) {
         return e.filter((e, t)=>t === 0 || e.route.path && e.route.path.length > 0);
     }
     function $7(e) {
-        let t = HPe(e);
+        let t = UPe(e);
         return t.map((e, n)=>n === t.length - 1 ? e.pathname : e.pathnameBase);
     }
     function e9(e, t, n, r = !1) {
@@ -64377,24 +64472,24 @@ ${h(e)}
             }
             s = e >= 0 ? t[e] : `/`;
         }
-        let c = VPe(i, s), l = o && o !== `/` && o.endsWith(`/`), u = (a || o === `.`) && n.endsWith(`/`);
+        let c = HPe(i, s), l = o && o !== `/` && o.endsWith(`/`), u = (a || o === `.`) && n.endsWith(`/`);
         return !c.pathname.endsWith(`/`) && (l || u) && (c.pathname += `/`), c;
     }
-    var t9 = (e)=>e.join(`/`).replace(/\/\/+/g, `/`), UPe = (e)=>e.replace(/\/+$/, ``).replace(/^\/*/, `/`), WPe = (e)=>!e || e === `?` ? `` : e.startsWith(`?`) ? e : `?` + e, GPe = (e)=>!e || e === `#` ? `` : e.startsWith(`#`) ? e : `#` + e, KPe = class {
+    var t9 = (e)=>e.join(`/`).replace(/\/\/+/g, `/`), WPe = (e)=>e.replace(/\/+$/, ``).replace(/^\/*/, `/`), GPe = (e)=>!e || e === `?` ? `` : e.startsWith(`?`) ? e : `?` + e, KPe = (e)=>!e || e === `#` ? `` : e.startsWith(`#`) ? e : `#` + e, qPe = class {
         constructor(e, t, n, r = !1){
             this.status = e, this.statusText = t || ``, this.internal = r, n instanceof Error ? (this.data = n.toString(), this.error = n) : this.data = n;
         }
     };
-    function qPe(e) {
+    function JPe(e) {
         return e != null && typeof e.status == `number` && typeof e.statusText == `string` && typeof e.internal == `boolean` && `data` in e;
     }
-    function JPe(e) {
+    function YPe(e) {
         return e.map((e)=>e.route.path).filter(Boolean).join(`/`).replace(/\/\/*/g, `/`) || `/`;
     }
     var n9 = typeof window < `u` && window.document !== void 0 && window.document.createElement !== void 0;
     function r9(e, t) {
         let n = e;
-        if (typeof n != `string` || !BPe.test(n)) return {
+        if (typeof n != `string` || !VPe.test(n)) return {
             absoluteURL: void 0,
             isExternal: !1,
             to: n
@@ -64420,27 +64515,27 @@ ${h(e)}
         `DELETE`
     ];
     new Set(i9);
-    var YPe = [
+    var XPe = [
         `GET`,
         ...i9
     ];
-    new Set(YPe);
+    new Set(XPe);
     var a9 = N.createContext(null);
     a9.displayName = `DataRouter`;
     var o9 = N.createContext(null);
     o9.displayName = `DataRouterState`;
     var s9 = N.createContext(!1);
-    function XPe() {
+    function ZPe() {
         return N.useContext(s9);
     }
     var c9 = N.createContext({
         isTransitioning: !1
     });
     c9.displayName = `ViewTransition`;
-    var ZPe = N.createContext(new Map);
-    ZPe.displayName = `Fetchers`;
-    var QPe = N.createContext(null);
-    QPe.displayName = `Await`;
+    var QPe = N.createContext(new Map);
+    QPe.displayName = `Fetchers`;
+    var $Pe = N.createContext(null);
+    $Pe.displayName = `Await`;
     var l9 = N.createContext(null);
     l9.displayName = `Navigation`;
     var u9 = N.createContext(null);
@@ -64453,20 +64548,20 @@ ${h(e)}
     d9.displayName = `Route`;
     var f9 = N.createContext(null);
     f9.displayName = `RouteError`;
-    var p9 = `REACT_ROUTER_ERROR`, $Pe = `REDIRECT`, eFe = `ROUTE_ERROR_RESPONSE`;
-    function tFe(e) {
-        if (e.startsWith(`${p9}:${$Pe}:{`)) try {
+    var p9 = `REACT_ROUTER_ERROR`, eFe = `REDIRECT`, tFe = `ROUTE_ERROR_RESPONSE`;
+    function nFe(e) {
+        if (e.startsWith(`${p9}:${eFe}:{`)) try {
             let t = JSON.parse(e.slice(28));
             if (typeof t == `object` && t && typeof t.status == `number` && typeof t.statusText == `string` && typeof t.location == `string` && typeof t.reloadDocument == `boolean` && typeof t.replace == `boolean`) return t;
         } catch  {}
     }
-    function nFe(e) {
-        if (e.startsWith(`${p9}:${eFe}:{`)) try {
+    function rFe(e) {
+        if (e.startsWith(`${p9}:${tFe}:{`)) try {
             let t = JSON.parse(e.slice(40));
-            if (typeof t == `object` && t && typeof t.status == `number` && typeof t.statusText == `string`) return new KPe(t.status, t.statusText, t.data);
+            if (typeof t == `object` && t && typeof t.status == `number` && typeof t.statusText == `string`) return new qPe(t.status, t.statusText, t.data);
         } catch  {}
     }
-    function rFe(e, { relative: t } = {}) {
+    function iFe(e, { relative: t } = {}) {
         z7(m9(), `useHref() may be used only in the context of a <Router> component.`);
         let { basename: n, navigator: r } = N.useContext(l9), { hash: i, pathname: a, search: o } = v9(e, {
             relative: t
@@ -64490,11 +64585,11 @@ ${h(e)}
     function _9(e) {
         N.useContext(l9).static || N.useLayoutEffect(e);
     }
-    function iFe() {
-        let { isDataRoute: e } = N.useContext(d9);
-        return e ? vFe() : aFe();
-    }
     function aFe() {
+        let { isDataRoute: e } = N.useContext(d9);
+        return e ? vFe() : oFe();
+    }
+    function oFe() {
         z7(m9(), `useNavigate() may be used only in the context of a <Router> component.`);
         let e = N.useContext(a9), { basename: t, navigator: n } = N.useContext(l9), { matches: r } = N.useContext(d9), { pathname: i } = h9(), a = JSON.stringify($7(r)), o = N.useRef(!1);
         return _9(()=>{
@@ -64519,10 +64614,6 @@ ${h(e)}
         ]);
     }
     N.createContext(null);
-    function oFe() {
-        let { matches: e } = N.useContext(d9), t = e[e.length - 1];
-        return t ? t.params : {};
-    }
     function v9(e, { relative: t } = {}) {
         let { matches: n } = N.useContext(d9), { pathname: r } = h9(), i = JSON.stringify($7(n));
         return N.useMemo(()=>e9(e, JSON.parse(i), r, t === `path`), [
@@ -64585,7 +64676,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         }, h) : h;
     }
     function cFe() {
-        let e = _Fe(), t = qPe(e) ? `${e.status} ${e.statusText}` : e instanceof Error ? e.message : JSON.stringify(e), n = e instanceof Error ? e.stack : null, r = `rgba(200,200,200, 0.5)`, i = {
+        let e = _Fe(), t = JPe(e) ? `${e.status} ${e.statusText}` : e instanceof Error ? e.message : JSON.stringify(e), n = e instanceof Error ? e.stack : null, r = `rgba(200,200,200, 0.5)`, i = {
             padding: `0.5rem`,
             backgroundColor: r
         }, a = {
@@ -64634,7 +64725,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         render() {
             let e = this.state.error;
             if (this.context && typeof e == `object` && e && `digest` in e && typeof e.digest == `string`) {
-                let t = nFe(e.digest);
+                let t = rFe(e.digest);
                 t && (e = t);
             }
             let t = e === void 0 ? this.props.children : N.createElement(d9.Provider, {
@@ -64653,7 +64744,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
     function uFe({ children: e, error: t }) {
         let { basename: n } = N.useContext(l9);
         if (typeof t == `object` && t && `digest` in t && typeof t.digest == `string`) {
-            let e = tFe(t.digest);
+            let e = nFe(t.digest);
             if (e) {
                 let r = x9.get(t);
                 if (r) throw r;
@@ -64712,7 +64803,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             c(e, {
                 location: r.location,
                 params: r.matches?.[0]?.params ?? {},
-                unstable_pattern: JPe(r.matches),
+                unstable_pattern: YPe(r.matches),
                 errorInfo: t
             });
         } : void 0;
@@ -64773,7 +64864,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
     }
     function T9() {
         let { matches: e, loaderData: t } = C9(`useMatches`);
-        return N.useMemo(()=>e.map((e)=>DPe(e, t)), [
+        return N.useMemo(()=>e.map((e)=>OPe(e, t)), [
             e,
             t
         ]);
@@ -64979,7 +65070,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
     async function z9(e, t) {
         if (e.id in t) return t[e.id];
         try {
-            let n = await xPe(()=>import(e.module).then(async (m)=>{
+            let n = await SPe(()=>import(e.module).then(async (m)=>{
                     await m.__tla;
                     return m;
                 }), []);
@@ -65135,7 +65226,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         };
     }
     function BFe({ page: e, ...t }) {
-        let n = XPe(), { router: r } = V9(), i = N.useMemo(()=>G7(r.routes, e, r.basename), [
+        let n = ZPe(), { router: r } = V9(), i = N.useMemo(()=>G7(r.routes, e, r.basename), [
             r.routes,
             e,
             r.basename
@@ -65258,7 +65349,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
     } catch  {}
     function KFe({ basename: e, children: t, unstable_useTransitions: n, window: r }) {
         let i = N.useRef();
-        i.current ??= SPe({
+        i.current ??= CPe({
             window: r,
             v5Compat: !0
         });
@@ -65307,7 +65398,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
     var G9 = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i, K9 = N.forwardRef(function({ onClick: e, discover: t = `render`, prefetch: n = `none`, relative: r, reloadDocument: i, replace: a, unstable_mask: o, state: s, target: c, to: l, preventScrollReset: u, viewTransition: d, unstable_defaultShouldRevalidate: f, ...p }, m) {
         let { basename: h, navigator: g, unstable_useTransitions: _ } = N.useContext(l9), v = typeof l == `string` && G9.test(l), y = r9(l, h);
         l = y.to;
-        let b = rFe(l, {
+        let b = iFe(l, {
             relative: r
         }), x = h9(), S = null;
         if (o) {
@@ -65449,7 +65540,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         return z7(t, q9(e)), t;
     }
     function QFe(e, { target: t, replace: n, unstable_mask: r, state: i, preventScrollReset: a, relative: o, viewTransition: s, unstable_defaultShouldRevalidate: c, unstable_useTransitions: l } = {}) {
-        let u = iFe(), d = h9(), f = v9(e, {
+        let u = aFe(), d = h9(), f = v9(e, {
             relative: o
         });
         return N.useCallback((p)=>{
@@ -65630,102 +65721,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         let a = X7(n.currentLocation.pathname, r) || n.currentLocation.pathname, o = X7(n.nextLocation.pathname, r) || n.nextLocation.pathname;
         return Y7(i.pathname, o) != null || Y7(i.pathname, a) != null;
     }
-    var oIe = ({ connectedApi: e })=>{
-        let { uuid: t } = oFe();
-        if (!t) return `code is necessary`;
-        let [n, r] = (0, N.useState)(null);
-        return (0, N.useEffect)(()=>{
-            async function t() {
-                let t = gl();
-                if (!(!e || !t)) try {
-                    let n = await k7(e, ml), i = new Uint8Array(32);
-                    r(await O7.join(n, t, i));
-                } catch (e) {
-                    console.error(`Failed to join contract:`, e);
-                }
-            }
-            return t(), ()=>{};
-        }, [
-            e
-        ]), (0, b.jsxs)(`main`, {
-            className: `pt-12 px-6 max-w-screen-md mx-auto`,
-            children: [
-                (0, b.jsx)(`section`, {
-                    className: `mb-7`,
-                    children: (0, b.jsx)(`h2`, {
-                        className: `text-4xl font-extrabold tracking-tight text-on-surface mb-2`,
-                        style: {},
-                        children: `Adicionar como Admin`
-                    })
-                }),
-                (0, b.jsx)(`div`, {
-                    className: `space-y-16`,
-                    children: (0, b.jsx)(`div`, {
-                        className: `bg-surface-container-low p-8 rounded-xl shadow-sm border-none relative overflow-hidden`,
-                        children: (0, b.jsxs)(`form`, {
-                            onSubmit: async (e)=>{
-                                if (e.preventDefault(), console.log(`a`), console.log(t), n) try {
-                                    await n.acceptInviteAdmin(t.trim());
-                                } catch (e) {
-                                    console.error(`Failed to add vaccine:`, e);
-                                }
-                            },
-                            className: `space-y-8 relative z-10`,
-                            children: [
-                                (0, b.jsxs)(`div`, {
-                                    className: `bg-secondary-container/20 p-5 rounded-lg border-none flex items-start gap-4 mt-12`,
-                                    style: {
-                                        background: `rgb(161 190 253 / 0.2)`
-                                    },
-                                    children: [
-                                        (0, b.jsx)(`div`, {
-                                            className: `w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0`,
-                                            children: (0, b.jsx)(`span`, {
-                                                className: `material-symbols-outlined text-on-secondary-container`,
-                                                children: `verified_user`
-                                            })
-                                        }),
-                                        (0, b.jsxs)(`div`, {
-                                            children: [
-                                                (0, b.jsx)(`h4`, {
-                                                    className: `font-bold text-on-secondary-container text-sm`,
-                                                    children: `Registro Seguro`
-                                                }),
-                                                (0, b.jsx)(`p`, {
-                                                    className: `text-xs text-on-secondary-container/80 leading-relaxed`,
-                                                    children: `Suas informações de saúde são criptografadas e utilizadas apenas para o seu controle pessoal de imunização.`
-                                                })
-                                            ]
-                                        })
-                                    ]
-                                }),
-                                (0, b.jsx)(`div`, {
-                                    className: `pt-6`,
-                                    children: (0, b.jsxs)(`button`, {
-                                        className: `w-full py-4 bg-gradient-to-r from-primary to-primary-container text-white font-bold text-lg rounded-full shadow-lg shadow-primary/20 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2`,
-                                        style: {
-                                            background: `#0070eb`
-                                        },
-                                        type: `submit`,
-                                        children: [
-                                            (0, b.jsx)(`span`, {
-                                                className: ``,
-                                                children: `Salvar Registro`
-                                            }),
-                                            (0, b.jsx)(`span`, {
-                                                className: `material-symbols-outlined`,
-                                                children: `check_circle`
-                                            })
-                                        ]
-                                    })
-                                })
-                            ]
-                        })
-                    })
-                })
-            ]
-        });
-    }, sIe = [
+    var oIe = [
         {
             code: `en`,
             label: `EN`,
@@ -65746,7 +65742,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         let { language: t, setLanguage: n } = pl();
         return (0, b.jsx)(`div`, {
             className: `flex items-center gap-1 bg-white/80 backdrop-blur-md rounded-full px-2 py-1 shadow-sm border border-slate-200/60 ${e ? `fixed top-3 right-4 z-[100]` : ``}`,
-            children: sIe.map(({ code: e, label: r, flag: i })=>(0, b.jsxs)(`button`, {
+            children: oIe.map(({ code: e, label: r, flag: i })=>(0, b.jsxs)(`button`, {
                     onClick: ()=>n(e),
                     className: `flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-bold transition-colors ${t === e ? `bg-primary` : `text-slate-500 hover:text-slate-800`}`,
                     children: [
@@ -65760,7 +65756,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                 }, e))
         });
     }
-    function cIe() {
+    function sIe() {
         let [e, t] = (0, N.useState)(!1), [n, r] = (0, N.useState)(null), [i, a] = (0, N.useState)(null), o = (e, n)=>{
             r(e), a(n), t(!0);
         }, s = ()=>{
@@ -65772,8 +65768,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                     children: (0, b.jsxs)(bFe, {
                         children: [
                             (0, b.jsx)(O9, {
-                                path: `/invite/:uuid`,
-                                element: (0, b.jsx)(oIe, {
+                                path: `/invite`,
+                                element: (0, b.jsx)(yPe, {
                                     connectedApi: i
                                 })
                             }),
@@ -65803,19 +65799,19 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             })
         });
     }
-    function lIe() {
+    function cIe() {
         return (0, b.jsx)(fl, {
             children: (0, b.jsx)(Sl, {
-                children: (0, b.jsx)(cIe, {})
+                children: (0, b.jsx)(sIe, {})
             })
         });
     }
     globalThis.Buffer = y.Buffer;
-    var $9 = new Map, uIe = Vs.fromValue.bind(Vs);
+    var $9 = new Map, lIe = Vs.fromValue.bind(Vs);
     Vs.fromValue = function(e) {
-        let t = uIe(e), n = `${t.x},${t.y}`;
+        let t = lIe(e), n = `${t.x},${t.y}`;
         return $9.has(n) || $9.set(n, t), $9.get(n);
     }, (0, ll.createRoot)(document.getElementById(`root`)).render((0, b.jsx)(N.StrictMode, {
-        children: (0, b.jsx)(lIe, {})
+        children: (0, b.jsx)(cIe, {})
     }));
 })();
