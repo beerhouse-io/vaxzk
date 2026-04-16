@@ -13155,7 +13155,7 @@ perfecta armonía.`,
         });
     }, pl = ()=>(0, N.useContext)(dl), ml = `preprod`, hl = `https://vaxzk.beerhouse.io`;
     function gl() {
-        return `a6aad2963e80f2d0e6f1498e24c0f4133b853c13ef7305b74584af2338271eb3`;
+        return `8734f073740250d39fb50a988f021803fa44896261a612ba2eb1289d3fd81083`;
     }
     var _l = (()=>{
         if (window.midnight) return Object.values(window.midnight).find((e)=>!!e && typeof e == `object` && `apiVersion` in e);
@@ -63091,22 +63091,9 @@ ${h(e)}
     function mPe(e, t, n) {
         return P7.randomUUID && !t && !e ? P7.randomUUID() : pPe(e, t, n);
     }
-    var hPe = ({ connectedApi: e })=>{
-        let { t } = pl(), [n, r] = (0, N.useState)(!1), [i, a] = (0, N.useState)(null), [o, s] = (0, N.useState)(null), [c, l] = (0, N.useState)(null);
-        return (0, N.useEffect)(()=>{
-            async function t() {
-                let t = gl();
-                if (!(!e || !t)) try {
-                    let n = await A7(e, ml), r = new Uint8Array(32);
-                    s(await k7.join(n, t, r));
-                } catch (e) {
-                    e instanceof Error ? a(`Erro ao criar um novo convite: ` + e.message) : a(`Erro ao criar um novo convite: ` + String(e));
-                }
-            }
-            return t(), ()=>{};
-        }, [
-            e
-        ]), (0, b.jsxs)(`main`, {
+    var hPe = ({ vaxApi: e })=>{
+        let { t } = pl(), [n, r] = (0, N.useState)(!1), [i, a] = (0, N.useState)(null), [o, s] = (0, N.useState)(null);
+        return (0, b.jsxs)(`main`, {
             className: `pt-24 pb-32 px-6 max-w-screen-xl mx-auto`,
             children: [
                 (0, b.jsxs)(`section`, {
@@ -63142,12 +63129,12 @@ ${h(e)}
                             children: t.accessAddAdminDesc
                         }),
                         (0, b.jsxs)(`form`, {
-                            onSubmit: async (e)=>{
-                                if (e.preventDefault(), o) {
-                                    r(!0), a(null), l(``);
+                            onSubmit: async (t)=>{
+                                if (t.preventDefault(), e) {
+                                    r(!0), a(null), s(``);
                                     try {
-                                        let e = mPe(), t = await o.registerInviteAdmin(e);
-                                        console.log(`txData`, t), l(hl + `/#/invite?code=` + e);
+                                        let t = mPe(), n = await e.registerInviteAdmin(t);
+                                        console.log(`txData`, n), s(hl + `/#/invite?code=` + t);
                                     } catch (e) {
                                         console.error(`Failed to add vaccine:`, e), e instanceof Error ? a(`Erro ao criar um novo convite: ` + e.message) : a(`Erro ao criar um novo convite: ` + String(e));
                                     } finally{
@@ -63187,7 +63174,7 @@ ${h(e)}
                                     className: `text-error text-sm mt-3 px-1`,
                                     children: i
                                 }),
-                                c && (0, b.jsxs)(`div`, {
+                                o && (0, b.jsxs)(`div`, {
                                     className: `bg-green-50 border border-green-200 rounded-xl p-5 flex flex-col gap-3`,
                                     children: [
                                         (0, b.jsxs)(`div`, {
@@ -63215,13 +63202,13 @@ ${h(e)}
                                                 }),
                                                 (0, b.jsx)(`code`, {
                                                     className: `text-xs font-mono text-green-900 break-all select-all flex-1`,
-                                                    children: c
+                                                    children: o
                                                 }),
                                                 (0, b.jsx)(`button`, {
                                                     type: `button`,
                                                     title: `Copy address`,
                                                     className: `shrink-0 p-1 rounded hover:bg-green-100 transition-colors`,
-                                                    onClick: ()=>navigator.clipboard.writeText(c),
+                                                    onClick: ()=>navigator.clipboard.writeText(o),
                                                     children: (0, b.jsx)(`span`, {
                                                         className: `material-symbols-outlined text-green-600 text-base`,
                                                         children: `content_copy`
@@ -63237,15 +63224,13 @@ ${h(e)}
                 })
             ]
         });
-    }, F7 = ({ connectedApi: e })=>{
-        let { t } = pl(), [n, r] = (0, N.useState)([]), [i, a] = (0, N.useState)(``), [o, s] = (0, N.useState)(!1), [c, l] = (0, N.useState)(null), [u, d] = (0, N.useState)(null);
+    }, F7 = ({ vaxApi: e })=>{
+        let { t } = pl(), [n, r] = (0, N.useState)([]), [i, a] = (0, N.useState)(``), [o, s] = (0, N.useState)(!1), [c, l] = (0, N.useState)(null);
         (0, N.useEffect)(()=>{
             let t;
             async function n() {
-                let n = gl();
-                if (!(!e || !n)) try {
-                    let i = await A7(e, ml), a = new Uint8Array(32), o = await k7.join(i, n, a);
-                    d(o), t = o.state$.subscribe((e)=>{
+                try {
+                    t = e.state$.subscribe((e)=>{
                         r(e.vaccines);
                     });
                 } catch (e) {
@@ -63255,27 +63240,25 @@ ${h(e)}
             return n(), ()=>{
                 t && t.unsubscribe();
             };
-        }, [
-            e
-        ]);
-        let f = async (e)=>{
-            if (e.preventDefault(), !(!u || !i.trim())) {
+        }, []);
+        let u = async (t)=>{
+            if (t.preventDefault(), !(!e || !i.trim())) {
                 s(!0), l(null);
                 try {
-                    await u.addVaccine(i.trim()), a(``);
+                    await e.addVaccine(i.trim()), a(``);
                 } catch (e) {
                     console.error(`Failed to add vaccine:`, e), e instanceof Error ? l(`Erro ao adicionar vacina: ` + e.message) : l(`Erro ao adicionar vacina: ` + String(e));
                 } finally{
                     s(!1);
                 }
             }
-        }, p = async (e)=>{
-            e.preventDefault();
-            let t = e.currentTarget.dataset.name;
-            if (!(!u || !t || !t.trim())) {
+        }, d = async (t)=>{
+            t.preventDefault();
+            let n = t.currentTarget.dataset.name;
+            if (!(!e || !n || !n.trim())) {
                 s(!0), l(null);
                 try {
-                    await u.delVaccine(t.trim()), a(``);
+                    await e.delVaccine(n.trim()), a(``);
                 } catch (e) {
                     console.error(`Failed to add vaccine:`, e), e instanceof Error ? l(`Erro ao adicionar vacina: ` + e.message) : l(`Erro ao adicionar vacina: ` + String(e));
                 } finally{
@@ -63311,7 +63294,7 @@ ${h(e)}
                     className: `bg-white p-8 rounded-xl shadow-sm border border-slate-100 mb-12 text-left`,
                     children: [
                         (0, b.jsxs)(`form`, {
-                            onSubmit: f,
+                            onSubmit: u,
                             className: `flex flex-col sm:flex-row gap-4`,
                             children: [
                                 (0, b.jsxs)(`div`, {
@@ -63406,7 +63389,7 @@ ${h(e)}
                                         (0, b.jsx)(`a`, {
                                             href: `#`,
                                             "data-name": e,
-                                            onClick: p,
+                                            onClick: d,
                                             children: (0, b.jsx)(`span`, {
                                                 className: `material-symbols-outlined`,
                                                 children: `delete`
@@ -63434,9 +63417,9 @@ ${h(e)}
                     ]
                 })
             })
-        }), gPe = ({ onLogout: e, walletAddress: t, connectedApi: n })=>{
-        let { t: r } = pl(), { profile: i, activeTab: a, setActiveTab: o } = Cl(), s = (e)=>{
-            o(e);
+        }), gPe = ({ onLogout: e, walletAddress: t, connectedApi: n, vaxApi: r })=>{
+        let { t: i } = pl(), { profile: a, activeTab: o, setActiveTab: s } = Cl(), c = (e)=>{
+            s(e);
         };
         return (0, b.jsxs)(`div`, {
             className: `bg-background text-on-background min-h-screen`,
@@ -63457,9 +63440,9 @@ ${h(e)}
                                                 (0, b.jsxs)(`span`, {
                                                     className: `text-xs font-medium text-slate-500`,
                                                     children: [
-                                                        r.loggedInAs,
+                                                        i.loggedInAs,
                                                         ` `,
-                                                        i
+                                                        a
                                                     ]
                                                 }),
                                                 (0, b.jsxs)(`span`, {
@@ -63513,7 +63496,7 @@ ${h(e)}
                                             }),
                                             (0, b.jsx)(`span`, {
                                                 className: `hidden sm:inline`,
-                                                children: r.logout
+                                                children: i.logout
                                             })
                                         ]
                                     })
@@ -63523,7 +63506,7 @@ ${h(e)}
                     })
                 }),
                 (()=>{
-                    switch(a){
+                    switch(o){
                         case `home`:
                             return (0, b.jsx)(wl, {
                                 walletAddress: t
@@ -63542,17 +63525,17 @@ ${h(e)}
                             return (0, b.jsx)(I7, {});
                         case `access`:
                             return (0, b.jsx)(hPe, {
-                                connectedApi: n
+                                vaxApi: r
                             });
                         case `adminvaccine`:
                             return (0, b.jsx)(F7, {
-                                connectedApi: n
+                                vaxApi: r
                             });
                         default:
-                            switch(i){
+                            switch(a){
                                 case `admin`:
                                     return (0, b.jsx)(F7, {
-                                        connectedApi: n
+                                        vaxApi: r
                                     });
                                 case `clinic`:
                                     return (0, b.jsx)(j7, {
@@ -63568,14 +63551,14 @@ ${h(e)}
                 (0, b.jsxs)(`nav`, {
                     className: `fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-slate-50/70 backdrop-blur-xl z-50 rounded-t-3xl shadow-[0_-4px_20px_rgba(0,0,0,0.05)] md:flex`,
                     children: [
-                        i == `user` && (0, b.jsxs)(`button`, {
-                            onClick: ()=>s(`home`),
-                            className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all ${a === `home` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
+                        a == `user` && (0, b.jsxs)(`button`, {
+                            onClick: ()=>c(`home`),
+                            className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all ${o === `home` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
                                     className: `material-symbols-outlined`,
                                     style: {
-                                        fontVariationSettings: a === `home` ? `'FILL' 1` : void 0
+                                        fontVariationSettings: o === `home` ? `'FILL' 1` : void 0
                                     },
                                     children: `home`
                                 }),
@@ -63585,14 +63568,14 @@ ${h(e)}
                                 })
                             ]
                         }),
-                        i == `user` && (0, b.jsxs)(`button`, {
-                            onClick: ()=>s(`wallet`),
-                            className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all ${a === `wallet` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
+                        a == `user` && (0, b.jsxs)(`button`, {
+                            onClick: ()=>c(`wallet`),
+                            className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all ${o === `wallet` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
                                     className: `material-symbols-outlined`,
                                     style: {
-                                        fontVariationSettings: a === `wallet` ? `'FILL' 1` : void 0
+                                        fontVariationSettings: o === `wallet` ? `'FILL' 1` : void 0
                                     },
                                     children: `account_balance_wallet`
                                 }),
@@ -63602,14 +63585,14 @@ ${h(e)}
                                 })
                             ]
                         }),
-                        i == `user` && (0, b.jsxs)(`button`, {
-                            onClick: ()=>s(`listclinics`),
-                            className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all ${a === `listclinics` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
+                        a == `user` && (0, b.jsxs)(`button`, {
+                            onClick: ()=>c(`listclinics`),
+                            className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all ${o === `listclinics` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
                                     className: `material-symbols-outlined`,
                                     style: {
-                                        fontVariationSettings: a === `listclinics` ? `'FILL' 1` : void 0
+                                        fontVariationSettings: o === `listclinics` ? `'FILL' 1` : void 0
                                     },
                                     children: `local_hospital`
                                 }),
@@ -63619,14 +63602,14 @@ ${h(e)}
                                 })
                             ]
                         }),
-                        i == `user` && (0, b.jsxs)(`button`, {
-                            onClick: ()=>s(`userprofile`),
-                            className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all ${a === `userprofile` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
+                        a == `user` && (0, b.jsxs)(`button`, {
+                            onClick: ()=>c(`userprofile`),
+                            className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all ${o === `userprofile` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
                                     className: `material-symbols-outlined`,
                                     style: {
-                                        fontVariationSettings: a === `userprofile` ? `'FILL' 1` : void 0
+                                        fontVariationSettings: o === `userprofile` ? `'FILL' 1` : void 0
                                     },
                                     children: `person`
                                 }),
@@ -63636,14 +63619,14 @@ ${h(e)}
                                 })
                             ]
                         }),
-                        i == `clinic` && (0, b.jsxs)(`button`, {
-                            onClick: ()=>s(`addvaccine`),
-                            className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all ${a === `addvaccine` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
+                        a == `clinic` && (0, b.jsxs)(`button`, {
+                            onClick: ()=>c(`addvaccine`),
+                            className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all ${o === `addvaccine` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
                                     className: `material-symbols-outlined`,
                                     style: {
-                                        fontVariationSettings: a === `addvaccine` ? `'FILL' 1` : void 0
+                                        fontVariationSettings: o === `addvaccine` ? `'FILL' 1` : void 0
                                     },
                                     children: `add_circle`
                                 }),
@@ -63653,14 +63636,14 @@ ${h(e)}
                                 })
                             ]
                         }),
-                        i == `clinic` && (0, b.jsxs)(`button`, {
-                            onClick: ()=>s(`clinicprofile`),
-                            className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all ${a === `clinicprofile` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
+                        a == `clinic` && (0, b.jsxs)(`button`, {
+                            onClick: ()=>c(`clinicprofile`),
+                            className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all ${o === `clinicprofile` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
                                     className: `material-symbols-outlined`,
                                     style: {
-                                        fontVariationSettings: a === `clinicprofile` ? `'FILL' 1` : void 0
+                                        fontVariationSettings: o === `clinicprofile` ? `'FILL' 1` : void 0
                                     },
                                     children: `local_hospital`
                                 }),
@@ -63670,14 +63653,14 @@ ${h(e)}
                                 })
                             ]
                         }),
-                        i == `admin` && (0, b.jsxs)(`button`, {
-                            onClick: ()=>s(`access`),
-                            className: `flex flex-col items-center justify-center px-3 py-2 active:scale-90 duration-150 transition-all ${a === `access` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
+                        a == `admin` && (0, b.jsxs)(`button`, {
+                            onClick: ()=>c(`access`),
+                            className: `flex flex-col items-center justify-center px-3 py-2 active:scale-90 duration-150 transition-all ${o === `access` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
                                     className: `material-symbols-outlined`,
                                     style: {
-                                        fontVariationSettings: a === `access` ? `'FILL' 1` : void 0
+                                        fontVariationSettings: o === `access` ? `'FILL' 1` : void 0
                                     },
                                     children: `admin_panel_settings`
                                 }),
@@ -63687,14 +63670,14 @@ ${h(e)}
                                 })
                             ]
                         }),
-                        i == `admin` && (0, b.jsxs)(`button`, {
-                            onClick: ()=>s(`adminvaccine`),
-                            className: `flex flex-col items-center justify-center px-3 py-2 active:scale-90 duration-150 transition-all ${a === `adminvaccine` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
+                        a == `admin` && (0, b.jsxs)(`button`, {
+                            onClick: ()=>c(`adminvaccine`),
+                            className: `flex flex-col items-center justify-center px-3 py-2 active:scale-90 duration-150 transition-all ${o === `adminvaccine` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
                             children: [
                                 (0, b.jsx)(`span`, {
                                     className: `material-symbols-outlined`,
                                     style: {
-                                        fontVariationSettings: a === `adminvaccine` ? `'FILL' 1` : void 0
+                                        fontVariationSettings: o === `adminvaccine` ? `'FILL' 1` : void 0
                                     },
                                     children: `vaccines`
                                 }),
@@ -65784,7 +65767,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                                 children: e ? (0, b.jsx)(gPe, {
                                     onLogout: l,
                                     walletAddress: n,
-                                    connectedApi: i
+                                    connectedApi: i,
+                                    vaxApi: o
                                 }) : (0, b.jsxs)(b.Fragment, {
                                     children: [
                                         (0, b.jsx)(Q9, {
