@@ -69,7 +69,7 @@
       "proof": true,
       "arguments": [
         {
-          "name": "secret",
+          "name": "inviteCode",
           "type": {
             "type-name": "Bytes",
             "length": 32
@@ -77,8 +77,28 @@
         }
       ],
       "result-type": {
-        "type-name": "Bytes",
-        "length": 32
+        "type-name": "Tuple",
+        "types": [
+        ]
+      }
+    },
+    {
+      "name": "acceptInviteAdmin",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+        {
+          "name": "inviteCode",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        }
+      ],
+      "result-type": {
+        "type-name": "Tuple",
+        "types": [
+        ]
       }
     },
     {
@@ -411,15 +431,6 @@
             "maxval": 452312848583266388373324160190187140051835877600158453279131187530910662655
           }
         ]
-      }
-    },
-    {
-      "name": "inviteNonce",
-      "arguments": [
-      ],
-      "result type": {
-        "type-name": "Bytes",
-        "length": 32
       }
     },
     {

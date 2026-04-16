@@ -36,13 +36,14 @@ export type SchnorrSignature = { announcement: __compactRuntime.JubjubPoint;
 export type Witnesses<PS> = {
   getSchnorrReduction(context: __compactRuntime.WitnessContext<Ledger, PS>,
                       challengeHash_0: bigint): [PS, [bigint, bigint]];
-  inviteNonce(context: __compactRuntime.WitnessContext<Ledger, PS>): [PS, Uint8Array];
   getAttestedCertProofWitness(context: __compactRuntime.WitnessContext<Ledger, PS>): [PS, VaxZkProof];
 }
 
 export type ImpureCircuits<PS> = {
   registerInviteAdmin(context: __compactRuntime.CircuitContext<PS>,
-                      secret_0: Uint8Array): __compactRuntime.CircuitResults<PS, Uint8Array>;
+                      inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
+  acceptInviteAdmin(context: __compactRuntime.CircuitContext<PS>,
+                    inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeAdmin(context: __compactRuntime.CircuitContext<PS>,
               adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   addClinic(context: __compactRuntime.CircuitContext<PS>,
@@ -63,7 +64,9 @@ export type ImpureCircuits<PS> = {
 
 export type ProvableCircuits<PS> = {
   registerInviteAdmin(context: __compactRuntime.CircuitContext<PS>,
-                      secret_0: Uint8Array): __compactRuntime.CircuitResults<PS, Uint8Array>;
+                      inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
+  acceptInviteAdmin(context: __compactRuntime.CircuitContext<PS>,
+                    inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeAdmin(context: __compactRuntime.CircuitContext<PS>,
               adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   addClinic(context: __compactRuntime.CircuitContext<PS>,
@@ -101,7 +104,9 @@ export type Circuits<PS> = {
                         expirationDate_0: bigint,
                         userPubKey_0: Uint8Array): __compactRuntime.CircuitResults<PS, bigint>;
   registerInviteAdmin(context: __compactRuntime.CircuitContext<PS>,
-                      secret_0: Uint8Array): __compactRuntime.CircuitResults<PS, Uint8Array>;
+                      inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
+  acceptInviteAdmin(context: __compactRuntime.CircuitContext<PS>,
+                    inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   getShieldedId(context: __compactRuntime.CircuitContext<PS>, id_0: Uint8Array): __compactRuntime.CircuitResults<PS, Uint8Array>;
   revokeAdmin(context: __compactRuntime.CircuitContext<PS>,
               adminId_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
@@ -122,12 +127,6 @@ export type Circuits<PS> = {
 }
 
 export type Ledger = {
-  admins: {
-    isEmpty(): boolean;
-    size(): bigint;
-    member(elem_0: Uint8Array): boolean;
-    [Symbol.iterator](): Iterator<Uint8Array>
-  };
   clinics: {
     isEmpty(): boolean;
     size(): bigint;
