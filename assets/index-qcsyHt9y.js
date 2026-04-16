@@ -68496,6 +68496,19 @@ ${h(e)}
                                     })
                                 ]
                             }),
+                            (0, b.jsxs)(`div`, {
+                                className: `space-y-1`,
+                                children: [
+                                    (0, b.jsx)(`p`, {
+                                        className: `text-on-surface-variant font-medium`,
+                                        children: `Pending Clinic Invites`
+                                    }),
+                                    (0, b.jsx)(`h2`, {
+                                        className: `text-5xl font-extrabold tracking-tight`,
+                                        children: r
+                                    })
+                                ]
+                            }),
                             (0, b.jsx)(`div`, {
                                 className: `h-20 w-20 rounded-full border-4 border-primary/20 border-t-primary animate-spin-slow`
                             })
