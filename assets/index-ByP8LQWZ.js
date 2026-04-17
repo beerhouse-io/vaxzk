@@ -68207,7 +68207,7 @@ ${h(e)}
         return N7.randomUUID && !t && !e ? N7.randomUUID() : vPe(e, t, n);
     }
     var yPe = ({ vaxApi: e })=>{
-        let { t } = dl(), [n, r] = (0, F.useState)(!1), [i, a] = (0, F.useState)(null), [o, s] = (0, F.useState)(null), [c, l] = (0, F.useState)(null);
+        let { t } = dl(), [n, r] = (0, F.useState)(!1), [i, a] = (0, F.useState)(null), [o, s] = (0, F.useState)(null), [c, l] = (0, F.useState)(null), [u, d] = (0, F.useState)(null);
         return (0, b.jsxs)(`main`, {
             className: `pt-24 pb-32 px-6 max-w-screen-xl mx-auto`,
             children: [
@@ -68246,10 +68246,10 @@ ${h(e)}
                         (0, b.jsxs)(`form`, {
                             onSubmit: async (t)=>{
                                 if (t.preventDefault(), e) {
-                                    r(!0), a(null), s(``);
+                                    r(!0), a(null), l(``);
                                     try {
                                         let t = P7(), n = await e.registerInviteAdmin(t);
-                                        console.log(`txData`, n), s(pl + `/#/invite?code=` + t);
+                                        console.log(`txData`, n), l(pl + `/#/invite?role=admin&code=` + t);
                                     } catch (e) {
                                         console.error(`Failed to add vaccine:`, e), e instanceof Error ? a(`Erro ao criar um novo convite: ` + e.message) : a(`Erro ao criar um novo convite: ` + String(e));
                                     } finally{
@@ -68281,111 +68281,6 @@ ${h(e)}
                                             }),
                                             (0, b.jsx)(`span`, {
                                                 children: t.accessAddAdminLink
-                                            })
-                                        ]
-                                    })
-                                }),
-                                i && (0, b.jsx)(`p`, {
-                                    className: `text-error text-sm mt-3 px-1`,
-                                    children: i
-                                }),
-                                o && (0, b.jsxs)(`div`, {
-                                    className: `bg-green-50 border border-green-200 rounded-xl p-5 flex flex-col gap-3`,
-                                    children: [
-                                        (0, b.jsxs)(`div`, {
-                                            className: `flex items-center gap-2 text-green-700 font-bold`,
-                                            children: [
-                                                (0, b.jsx)(`span`, {
-                                                    className: `material-symbols-outlined`,
-                                                    children: `check_circle`
-                                                }),
-                                                (0, b.jsx)(`span`, {
-                                                    children: `Contract deployed & saved!`
-                                                })
-                                            ]
-                                        }),
-                                        (0, b.jsx)(`p`, {
-                                            className: `text-xs text-green-800/70`,
-                                            children: `This address is stored in your browser. All views will use it automatically on the next page load.`
-                                        }),
-                                        (0, b.jsxs)(`div`, {
-                                            className: `flex items-center gap-2 bg-white border border-green-100 rounded-lg px-4 py-3`,
-                                            children: [
-                                                (0, b.jsx)(`span`, {
-                                                    className: `material-symbols-outlined text-green-600 text-base shrink-0`,
-                                                    children: `link`
-                                                }),
-                                                (0, b.jsx)(`code`, {
-                                                    className: `text-xs font-mono text-green-900 break-all select-all flex-1`,
-                                                    children: o
-                                                }),
-                                                (0, b.jsx)(`button`, {
-                                                    type: `button`,
-                                                    title: `Copy address`,
-                                                    className: `shrink-0 p-1 rounded hover:bg-green-100 transition-colors`,
-                                                    onClick: ()=>navigator.clipboard.writeText(o),
-                                                    children: (0, b.jsx)(`span`, {
-                                                        className: `material-symbols-outlined text-green-600 text-base`,
-                                                        children: `content_copy`
-                                                    })
-                                                })
-                                            ]
-                                        })
-                                    ]
-                                })
-                            ]
-                        })
-                    ]
-                }),
-                (0, b.jsxs)(`div`, {
-                    className: `bg-white p-8 rounded-xl shadow-sm border border-slate-100 mb-12 text-left`,
-                    children: [
-                        (0, b.jsx)(`h3`, {
-                            className: `text-lg font-semibold text-on-surface mb-4`,
-                            children: t.accessAddClinicTitle
-                        }),
-                        (0, b.jsx)(`p`, {
-                            className: `text-on-surface-variant text-sm mb-4`,
-                            children: t.accessAddClinicDesc
-                        }),
-                        (0, b.jsxs)(`form`, {
-                            onSubmit: async (t)=>{
-                                if (t.preventDefault(), e) {
-                                    r(!0), a(null), l(``);
-                                    try {
-                                        let t = P7(), n = await e.registerInviteAdmin(t);
-                                        console.log(`txData`, n), l(pl + `/#/invite?code=` + t);
-                                    } catch (e) {
-                                        console.error(`Failed to add vaccine:`, e), e instanceof Error ? a(`Erro ao criar um novo convite: ` + e.message) : a(`Erro ao criar um novo convite: ` + String(e));
-                                    } finally{
-                                        r(!1);
-                                    }
-                                }
-                            },
-                            className: `flex flex-col gap-4`,
-                            children: [
-                                (0, b.jsx)(`button`, {
-                                    className: `px-8 py-4 bg-secondary font-bold rounded-lg shadow-lg active:scale-95 transition-all duration-200 disabled:opacity-50 flex items-center gap-2`,
-                                    type: `submit`,
-                                    disabled: n,
-                                    children: n ? (0, b.jsxs)(b.Fragment, {
-                                        children: [
-                                            (0, b.jsx)(`span`, {
-                                                className: `material-symbols-outlined animate-spin`,
-                                                children: `sync`
-                                            }),
-                                            (0, b.jsx)(`span`, {
-                                                children: t.loading
-                                            })
-                                        ]
-                                    }) : (0, b.jsxs)(b.Fragment, {
-                                        children: [
-                                            (0, b.jsx)(`span`, {
-                                                className: `material-symbols-outlined`,
-                                                children: `verified_user`
-                                            }),
-                                            (0, b.jsx)(`span`, {
-                                                children: t.accessAddAClinicLink
                                             })
                                         ]
                                     })
@@ -68429,6 +68324,111 @@ ${h(e)}
                                                     title: `Copy address`,
                                                     className: `shrink-0 p-1 rounded hover:bg-green-100 transition-colors`,
                                                     onClick: ()=>navigator.clipboard.writeText(c),
+                                                    children: (0, b.jsx)(`span`, {
+                                                        className: `material-symbols-outlined text-green-600 text-base`,
+                                                        children: `content_copy`
+                                                    })
+                                                })
+                                            ]
+                                        })
+                                    ]
+                                })
+                            ]
+                        })
+                    ]
+                }),
+                (0, b.jsxs)(`div`, {
+                    className: `bg-white p-8 rounded-xl shadow-sm border border-slate-100 mb-12 text-left`,
+                    children: [
+                        (0, b.jsx)(`h3`, {
+                            className: `text-lg font-semibold text-on-surface mb-4`,
+                            children: t.accessAddClinicTitle
+                        }),
+                        (0, b.jsx)(`p`, {
+                            className: `text-on-surface-variant text-sm mb-4`,
+                            children: t.accessAddClinicDesc
+                        }),
+                        (0, b.jsxs)(`form`, {
+                            onSubmit: async (t)=>{
+                                if (t.preventDefault(), e) {
+                                    r(!0), s(null), d(``);
+                                    try {
+                                        let t = P7(), n = await e.registerInviteAdmin(t);
+                                        console.log(`txData`, n), d(pl + `/#/invite?role=clinic&code=` + t);
+                                    } catch (e) {
+                                        console.error(`Failed to add vaccine:`, e), e instanceof Error ? s(`Erro ao criar um novo convite: ` + e.message) : s(`Erro ao criar um novo convite: ` + String(e));
+                                    } finally{
+                                        r(!1);
+                                    }
+                                }
+                            },
+                            className: `flex flex-col gap-4`,
+                            children: [
+                                (0, b.jsx)(`button`, {
+                                    className: `px-8 py-4 bg-secondary font-bold rounded-lg shadow-lg active:scale-95 transition-all duration-200 disabled:opacity-50 flex items-center gap-2`,
+                                    type: `submit`,
+                                    disabled: n,
+                                    children: n ? (0, b.jsxs)(b.Fragment, {
+                                        children: [
+                                            (0, b.jsx)(`span`, {
+                                                className: `material-symbols-outlined animate-spin`,
+                                                children: `sync`
+                                            }),
+                                            (0, b.jsx)(`span`, {
+                                                children: t.loading
+                                            })
+                                        ]
+                                    }) : (0, b.jsxs)(b.Fragment, {
+                                        children: [
+                                            (0, b.jsx)(`span`, {
+                                                className: `material-symbols-outlined`,
+                                                children: `verified_user`
+                                            }),
+                                            (0, b.jsx)(`span`, {
+                                                children: t.accessAddAClinicLink
+                                            })
+                                        ]
+                                    })
+                                }),
+                                o && (0, b.jsx)(`p`, {
+                                    className: `text-error text-sm mt-3 px-1`,
+                                    children: o
+                                }),
+                                u && (0, b.jsxs)(`div`, {
+                                    className: `bg-green-50 border border-green-200 rounded-xl p-5 flex flex-col gap-3`,
+                                    children: [
+                                        (0, b.jsxs)(`div`, {
+                                            className: `flex items-center gap-2 text-green-700 font-bold`,
+                                            children: [
+                                                (0, b.jsx)(`span`, {
+                                                    className: `material-symbols-outlined`,
+                                                    children: `check_circle`
+                                                }),
+                                                (0, b.jsx)(`span`, {
+                                                    children: `Contract deployed & saved!`
+                                                })
+                                            ]
+                                        }),
+                                        (0, b.jsx)(`p`, {
+                                            className: `text-xs text-green-800/70`,
+                                            children: `This address is stored in your browser. All views will use it automatically on the next page load.`
+                                        }),
+                                        (0, b.jsxs)(`div`, {
+                                            className: `flex items-center gap-2 bg-white border border-green-100 rounded-lg px-4 py-3`,
+                                            children: [
+                                                (0, b.jsx)(`span`, {
+                                                    className: `material-symbols-outlined text-green-600 text-base shrink-0`,
+                                                    children: `link`
+                                                }),
+                                                (0, b.jsx)(`code`, {
+                                                    className: `text-xs font-mono text-green-900 break-all select-all flex-1`,
+                                                    children: u
+                                                }),
+                                                (0, b.jsx)(`button`, {
+                                                    type: `button`,
+                                                    title: `Copy address`,
+                                                    className: `shrink-0 p-1 rounded hover:bg-green-100 transition-colors`,
+                                                    onClick: ()=>navigator.clipboard.writeText(u),
                                                     children: (0, b.jsx)(`span`, {
                                                         className: `material-symbols-outlined text-green-600 text-base`,
                                                         children: `content_copy`
