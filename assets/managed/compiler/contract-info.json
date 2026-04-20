@@ -114,6 +114,25 @@
       }
     },
     {
+      "name": "registerInviteClinic",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+        {
+          "name": "inviteCode",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        }
+      ],
+      "result-type": {
+        "type-name": "Tuple",
+        "types": [
+        ]
+      }
+    },
+    {
       "name": "getShieldedId",
       "pure": true,
       "proof": false,
@@ -276,31 +295,6 @@
       "result-type": {
         "type-name": "Bytes",
         "length": 32
-      }
-    },
-    {
-      "name": "getProfile",
-      "pure": false,
-      "proof": true,
-      "arguments": [
-      ],
-      "result-type": {
-        "type-name": "Struct",
-        "name": "UserProfile",
-        "elements": [
-          {
-            "name": "isAdmin",
-            "type": {
-              "type-name": "Boolean"
-            }
-          },
-          {
-            "name": "isClinic",
-            "type": {
-              "type-name": "Boolean"
-            }
-          }
-        ]
       }
     },
     {
