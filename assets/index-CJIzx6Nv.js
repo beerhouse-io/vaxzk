@@ -33701,23 +33701,23 @@ perfecta armonía.`,
         return ZM;
     }
     var Iye = c({
-        __externref_drop_slice: ()=>eCe,
-        __externref_table_alloc: ()=>XSe,
-        __externref_table_dealloc: ()=>rCe,
+        __externref_drop_slice: ()=>$Se,
+        __externref_table_alloc: ()=>YSe,
+        __externref_table_dealloc: ()=>nCe,
         __wbg_authorizedclaim_free: ()=>Rye,
         __wbg_binding_free: ()=>zye,
-        __wbg_chargedstate_free: ()=>pB,
+        __wbg_chargedstate_free: ()=>mB,
         __wbg_claimrewardstransaction_free: ()=>Bye,
         __wbg_coinsecretkey_free: ()=>Vye,
         __wbg_contractcall_free: ()=>Hye,
         __wbg_contractcallprototype_free: ()=>Uye,
         __wbg_contractdeploy_free: ()=>Wye,
-        __wbg_contractmaintenanceauthority_free: ()=>mB,
-        __wbg_contractoperation_free: ()=>hB,
+        __wbg_contractmaintenanceauthority_free: ()=>hB,
+        __wbg_contractoperation_free: ()=>gB,
         __wbg_contractoperationversion_free: ()=>Gye,
         __wbg_contractoperationversionedverifierkey_free: ()=>Kye,
-        __wbg_contractstate_free: ()=>gB,
-        __wbg_costmodel_free: ()=>_B,
+        __wbg_contractstate_free: ()=>_B,
+        __wbg_costmodel_free: ()=>vB,
         __wbg_dustactions_free: ()=>qye,
         __wbg_dustgenerationstate_free: ()=>Jye,
         __wbg_dustlocalstate_free: ()=>Yye,
@@ -33732,28 +33732,28 @@ perfecta armonía.`,
         __wbg_encryptionsecretkey_free: ()=>ibe,
         __wbg_event_free: ()=>abe,
         __wbg_intent_free: ()=>obe,
-        __wbg_intounderlyingbytesource_free: ()=>ISe,
-        __wbg_intounderlyingsink_free: ()=>LSe,
-        __wbg_intounderlyingsource_free: ()=>RSe,
+        __wbg_intounderlyingbytesource_free: ()=>FSe,
+        __wbg_intounderlyingsink_free: ()=>ISe,
+        __wbg_intounderlyingsource_free: ()=>LSe,
         __wbg_ledgerparameters_free: ()=>sbe,
         __wbg_ledgerstate_free: ()=>cbe,
         __wbg_maintenanceupdate_free: ()=>lbe,
         __wbg_merkletreecollapsedupdate_free: ()=>ube,
         __wbg_nobinding_free: ()=>dbe,
-        __wbg_noproof_free: ()=>dB,
+        __wbg_noproof_free: ()=>fB,
         __wbg_prebinding_free: ()=>fbe,
         __wbg_prepartitioncontractcall_free: ()=>pbe,
         __wbg_preproof_free: ()=>mbe,
         __wbg_pretranscript_free: ()=>hbe,
         __wbg_proof_free: ()=>gbe,
-        __wbg_querycontext_free: ()=>vB,
-        __wbg_queryresults_free: ()=>yB,
+        __wbg_querycontext_free: ()=>yB,
+        __wbg_queryresults_free: ()=>bB,
         __wbg_replaceauthority_free: ()=>_be,
         __wbg_signatureenabled_free: ()=>vbe,
-        __wbg_signatureerased_free: ()=>uB,
-        __wbg_stateboundedmerkletree_free: ()=>bB,
-        __wbg_statemap_free: ()=>xB,
-        __wbg_statevalue_free: ()=>SB,
+        __wbg_signatureerased_free: ()=>dB,
+        __wbg_stateboundedmerkletree_free: ()=>xB,
+        __wbg_statemap_free: ()=>SB,
+        __wbg_statevalue_free: ()=>CB,
         __wbg_systemtransaction_free: ()=>ybe,
         __wbg_transaction_free: ()=>bbe,
         __wbg_transactioncontext_free: ()=>xbe,
@@ -33764,9 +33764,9 @@ perfecta armonía.`,
         __wbg_utxostate_free: ()=>Ebe,
         __wbg_verifiedtransaction_free: ()=>Dbe,
         __wbg_verifierkeyinsert_free: ()=>Obe,
-        __wbg_verifierkeyremove_free: ()=>fB,
-        __wbg_vmresults_free: ()=>CB,
-        __wbg_vmstack_free: ()=>wB,
+        __wbg_verifierkeyremove_free: ()=>pB,
+        __wbg_vmresults_free: ()=>wB,
+        __wbg_vmstack_free: ()=>TB,
         __wbg_wellformedstrictness_free: ()=>kbe,
         __wbg_zswapchainstate_free: ()=>Abe,
         __wbg_zswapinput_free: ()=>jbe,
@@ -33777,13 +33777,13 @@ perfecta armonía.`,
         __wbg_zswapsecretkeys_free: ()=>Ibe,
         __wbg_zswapstatechanges_free: ()=>Lbe,
         __wbg_zswaptransient_free: ()=>Rbe,
-        __wbindgen_exn_store: ()=>YSe,
-        __wbindgen_export_2: ()=>ZSe,
-        __wbindgen_export_7: ()=>nCe,
-        __wbindgen_free: ()=>tCe,
-        __wbindgen_malloc: ()=>QSe,
-        __wbindgen_realloc: ()=>$Se,
-        __wbindgen_start: ()=>mH,
+        __wbindgen_exn_store: ()=>JSe,
+        __wbindgen_export_2: ()=>XSe,
+        __wbindgen_export_7: ()=>tCe,
+        __wbindgen_free: ()=>eCe,
+        __wbindgen_malloc: ()=>ZSe,
+        __wbindgen_realloc: ()=>QSe,
+        __wbindgen_start: ()=>hH,
         addressFromKey: ()=>zbe,
         authorizedclaim_coin: ()=>Bbe,
         authorizedclaim_deserialize: ()=>Vbe,
@@ -33792,16 +33792,16 @@ perfecta armonía.`,
         authorizedclaim_recipient: ()=>Wbe,
         authorizedclaim_serialize: ()=>Gbe,
         authorizedclaim_toString: ()=>Kbe,
-        bigIntModFr: ()=>TB,
-        bigIntToValue: ()=>EB,
+        bigIntModFr: ()=>EB,
+        bigIntToValue: ()=>DB,
         binding_deserialize: ()=>qbe,
         binding_instance: ()=>Jbe,
         binding_new: ()=>Ybe,
         binding_serialize: ()=>Xbe,
         binding_toString: ()=>Zbe,
-        chargedstate_new: ()=>DB,
-        chargedstate_state: ()=>OB,
-        chargedstate_toString: ()=>kB,
+        chargedstate_new: ()=>OB,
+        chargedstate_state: ()=>kB,
+        chargedstate_toString: ()=>AB,
         claimrewardstransaction_addSignature: ()=>Qbe,
         claimrewardstransaction_construct: ()=>$be,
         claimrewardstransaction_dataToSign: ()=>exe,
@@ -33815,17 +33815,17 @@ perfecta armonía.`,
         claimrewardstransaction_signature: ()=>cxe,
         claimrewardstransaction_toString: ()=>lxe,
         claimrewardstransaction_value: ()=>uxe,
-        closure3109_externref_shim: ()=>iCe,
-        closure3155_externref_shim: ()=>aCe,
-        closure3158_externref_shim: ()=>oCe,
+        closure3109_externref_shim: ()=>rCe,
+        closure3155_externref_shim: ()=>iCe,
+        closure3158_externref_shim: ()=>aCe,
         coinCommitment: ()=>dxe,
         coinNullifier: ()=>fxe,
         coinsecretkey_clear: ()=>pxe,
         coinsecretkey_new: ()=>mxe,
         coinsecretkey_public_key: ()=>hxe,
         coinsecretkey_yesIKnowTheSecurityImplicationsOfThis_serialize: ()=>gxe,
-        communicationCommitment: ()=>AB,
-        communicationCommitmentRandomness: ()=>jB,
+        communicationCommitment: ()=>jB,
+        communicationCommitmentRandomness: ()=>MB,
         contractcall_address: ()=>_xe,
         contractcall_communicationCommitment: ()=>vxe,
         contractcall_entryPoint: ()=>yxe,
@@ -33841,19 +33841,19 @@ perfecta armonía.`,
         contractdeploy_initialState: ()=>kxe,
         contractdeploy_new: ()=>Axe,
         contractdeploy_toString: ()=>jxe,
-        contractmaintenanceauthority_committee: ()=>MB,
-        contractmaintenanceauthority_counter: ()=>NB,
-        contractmaintenanceauthority_deserialize: ()=>PB,
-        contractmaintenanceauthority_new: ()=>FB,
-        contractmaintenanceauthority_serialize: ()=>IB,
-        contractmaintenanceauthority_threshold: ()=>LB,
-        contractmaintenanceauthority_toString: ()=>RB,
-        contractoperation_deserialize: ()=>zB,
-        contractoperation_new: ()=>BB,
-        contractoperation_serialize: ()=>VB,
-        contractoperation_set_verifier_key: ()=>HB,
-        contractoperation_toString: ()=>UB,
-        contractoperation_verifier_key: ()=>WB,
+        contractmaintenanceauthority_committee: ()=>NB,
+        contractmaintenanceauthority_counter: ()=>PB,
+        contractmaintenanceauthority_deserialize: ()=>FB,
+        contractmaintenanceauthority_new: ()=>IB,
+        contractmaintenanceauthority_serialize: ()=>LB,
+        contractmaintenanceauthority_threshold: ()=>RB,
+        contractmaintenanceauthority_toString: ()=>zB,
+        contractoperation_deserialize: ()=>BB,
+        contractoperation_new: ()=>VB,
+        contractoperation_serialize: ()=>HB,
+        contractoperation_set_verifier_key: ()=>UB,
+        contractoperation_toString: ()=>WB,
+        contractoperation_verifier_key: ()=>GB,
         contractoperationversion_new: ()=>Mxe,
         contractoperationversion_toString: ()=>Nxe,
         contractoperationversion_version: ()=>Pxe,
@@ -33861,514 +33861,514 @@ perfecta armonía.`,
         contractoperationversionedverifierkey_raw_vk: ()=>Ixe,
         contractoperationversionedverifierkey_toString: ()=>Lxe,
         contractoperationversionedverifierkey_version: ()=>Rxe,
-        contractstate_balance: ()=>GB,
-        contractstate_data: ()=>KB,
-        contractstate_deserialize: ()=>qB,
-        contractstate_maintenance_authority: ()=>JB,
-        contractstate_new: ()=>YB,
-        contractstate_operation: ()=>XB,
-        contractstate_operations: ()=>ZB,
-        contractstate_query: ()=>QB,
-        contractstate_serialize: ()=>$B,
-        contractstate_setOperation: ()=>eV,
-        contractstate_set_balance: ()=>tV,
-        contractstate_set_data: ()=>nV,
-        contractstate_set_maintenance_authority: ()=>rV,
-        contractstate_toString: ()=>iV,
-        costmodel_initialCostModel: ()=>aV,
-        costmodel_new: ()=>oV,
-        costmodel_toString: ()=>sV,
+        contractstate_balance: ()=>KB,
+        contractstate_data: ()=>qB,
+        contractstate_deserialize: ()=>JB,
+        contractstate_maintenance_authority: ()=>YB,
+        contractstate_new: ()=>XB,
+        contractstate_operation: ()=>ZB,
+        contractstate_operations: ()=>QB,
+        contractstate_query: ()=>$B,
+        contractstate_serialize: ()=>eV,
+        contractstate_setOperation: ()=>tV,
+        contractstate_set_balance: ()=>nV,
+        contractstate_set_data: ()=>rV,
+        contractstate_set_maintenance_authority: ()=>iV,
+        contractstate_toString: ()=>aV,
+        costmodel_initialCostModel: ()=>oV,
+        costmodel_new: ()=>sV,
+        costmodel_toString: ()=>cV,
         createCheckPayload: ()=>zxe,
         createCoinInfo: ()=>Bxe,
         createProvingPayload: ()=>Vxe,
         createProvingTransactionPayload: ()=>Hxe,
         createShieldedCoinInfo: ()=>Uxe,
-        decodeCoinPublicKey: ()=>cV,
-        decodeContractAddress: ()=>lV,
-        decodeQualifiedShieldedCoinInfo: ()=>uV,
-        decodeRawTokenType: ()=>dV,
-        decodeShieldedCoinInfo: ()=>fV,
-        decodeUserAddress: ()=>pV,
-        degradeToTransient: ()=>mV,
-        dummyContractAddress: ()=>hV,
-        dummyUserAddress: ()=>gV,
+        decodeCoinPublicKey: ()=>lV,
+        decodeContractAddress: ()=>uV,
+        decodeQualifiedShieldedCoinInfo: ()=>dV,
+        decodeRawTokenType: ()=>fV,
+        decodeShieldedCoinInfo: ()=>pV,
+        decodeUserAddress: ()=>mV,
+        degradeToTransient: ()=>hV,
+        dummyContractAddress: ()=>gV,
+        dummyUserAddress: ()=>_V,
         dustactions_ctime: ()=>Wxe,
-        dustactions_deserialize: ()=>Gxe,
-        dustactions_new: ()=>SN,
-        dustactions_registrations: ()=>CN,
-        dustactions_serialize: ()=>wN,
-        dustactions_set_ctime: ()=>TN,
-        dustactions_set_registrations: ()=>EN,
-        dustactions_set_spends: ()=>DN,
-        dustactions_spends: ()=>ON,
-        dustactions_toString: ()=>kN,
-        dustgenerationstate_deserialize: ()=>AN,
-        dustgenerationstate_new: ()=>jN,
-        dustgenerationstate_serialize: ()=>MN,
-        dustgenerationstate_toString: ()=>NN,
-        dustlocalstate_deserialize: ()=>PN,
-        dustlocalstate_generationInfo: ()=>FN,
-        dustlocalstate_new: ()=>IN,
-        dustlocalstate_params: ()=>LN,
-        dustlocalstate_processTtls: ()=>RN,
-        dustlocalstate_replayEvents: ()=>zN,
-        dustlocalstate_replayEventsWithChanges: ()=>BN,
-        dustlocalstate_serialize: ()=>VN,
-        dustlocalstate_spend: ()=>HN,
-        dustlocalstate_syncTime: ()=>UN,
-        dustlocalstate_toString: ()=>WN,
-        dustlocalstate_utxos: ()=>GN,
-        dustlocalstate_walletBalance: ()=>KN,
-        dustlocalstatewithchanges_changes: ()=>qN,
-        dustlocalstatewithchanges_state: ()=>JN,
-        dustparameters_deserialize: ()=>YN,
-        dustparameters_dustGracePeriodSeconds: ()=>XN,
-        dustparameters_generationDecayRate: ()=>ZN,
-        dustparameters_new: ()=>QN,
-        dustparameters_nightDustRatio: ()=>$N,
-        dustparameters_serialize: ()=>eP,
-        dustparameters_set_dustGracePeriodSeconds: ()=>tP,
-        dustparameters_set_generationDecayRate: ()=>nP,
-        dustparameters_set_nightDustRatio: ()=>rP,
-        dustparameters_timeToCapSeconds: ()=>iP,
-        dustparameters_toString: ()=>aP,
-        dustregistration_allowFeePayment: ()=>oP,
-        dustregistration_deserialize: ()=>sP,
-        dustregistration_dustAddress: ()=>cP,
-        dustregistration_new: ()=>lP,
-        dustregistration_nightKey: ()=>uP,
-        dustregistration_serialize: ()=>dP,
-        dustregistration_set_allowFeePayment: ()=>fP,
-        dustregistration_set_dustAddress: ()=>pP,
-        dustregistration_set_nightKey: ()=>mP,
-        dustregistration_set_signature: ()=>hP,
-        dustregistration_signature: ()=>gP,
-        dustregistration_toString: ()=>_P,
-        dustsecretkey_clear: ()=>vP,
-        dustsecretkey_fromBigint: ()=>yP,
-        dustsecretkey_fromSeed: ()=>bP,
-        dustsecretkey_new: ()=>xP,
-        dustsecretkey_publicKey: ()=>SP,
-        dustspend_new: ()=>CP,
-        dustspend_newCommitment: ()=>wP,
-        dustspend_oldNullifier: ()=>TP,
-        dustspend_proof: ()=>EP,
-        dustspend_toString: ()=>DP,
-        dustspend_vFee: ()=>OP,
-        duststate_deserialize: ()=>kP,
-        duststate_generation: ()=>AP,
-        duststate_new: ()=>jP,
-        duststate_serialize: ()=>MP,
-        duststate_toString: ()=>NP,
-        duststate_utxo: ()=>PP,
-        duststatechanges_receivedUtxos: ()=>FP,
-        duststatechanges_source: ()=>IP,
-        duststatechanges_spentUtxos: ()=>LP,
-        dustutxostate_deserialize: ()=>RP,
-        dustutxostate_new: ()=>zP,
-        dustutxostate_serialize: ()=>BP,
-        dustutxostate_toString: ()=>VP,
-        ecAdd: ()=>_V,
-        ecMul: ()=>vV,
-        ecMulGenerator: ()=>yV,
-        encodeCoinPublicKey: ()=>bV,
-        encodeContractAddress: ()=>xV,
-        encodeQualifiedShieldedCoinInfo: ()=>SV,
-        encodeRawTokenType: ()=>CV,
-        encodeShieldedCoinInfo: ()=>wV,
-        encodeUserAddress: ()=>TV,
-        encryptionsecretkey_clear: ()=>HP,
-        encryptionsecretkey_deserialize: ()=>UP,
-        encryptionsecretkey_new: ()=>WP,
-        encryptionsecretkey_public_key: ()=>GP,
-        encryptionsecretkey_taggedDeserialize: ()=>KP,
-        encryptionsecretkey_test: ()=>qP,
-        encryptionsecretkey_yesIKnowTheSecurityImplicationsOfThis_serialize: ()=>JP,
-        encryptionsecretkey_yesIKnowTheSecurityImplicationsOfThis_taggedSerialize: ()=>YP,
-        entryPointHash: ()=>EV,
-        event_deserialize: ()=>XP,
-        event_new: ()=>ZP,
-        event_serialize: ()=>QP,
-        event_toString: ()=>$P,
-        feeToken: ()=>eF,
-        hashToCurve: ()=>DV,
-        intent_actions: ()=>tF,
-        intent_addCall: ()=>nF,
-        intent_addDeploy: ()=>rF,
-        intent_addMaintenanceUpdate: ()=>iF,
-        intent_bind: ()=>aF,
-        intent_binding: ()=>oF,
-        intent_construct: ()=>sF,
-        intent_deserialize: ()=>cF,
-        intent_dustActions: ()=>lF,
-        intent_eraseProofs: ()=>uF,
-        intent_eraseSignatures: ()=>dF,
-        intent_fallibleUnshieldedOffer: ()=>fF,
-        intent_guaranteedUnshieldedOffer: ()=>pF,
-        intent_intentHash: ()=>mF,
-        intent_new: ()=>hF,
-        intent_serialize: ()=>gF,
-        intent_set_actions: ()=>_F,
-        intent_set_dustActions: ()=>vF,
-        intent_set_fallibleUnshieldedOffer: ()=>yF,
-        intent_set_guaranteedUnshieldedOffer: ()=>bF,
-        intent_set_ttl: ()=>xF,
-        intent_signatureData: ()=>SF,
-        intent_toString: ()=>CF,
-        intent_ttl: ()=>wF,
-        intounderlyingbytesource_autoAllocateChunkSize: ()=>zSe,
-        intounderlyingbytesource_cancel: ()=>BSe,
-        intounderlyingbytesource_pull: ()=>VSe,
-        intounderlyingbytesource_start: ()=>HSe,
-        intounderlyingbytesource_type: ()=>USe,
-        intounderlyingsink_abort: ()=>WSe,
-        intounderlyingsink_close: ()=>GSe,
-        intounderlyingsink_write: ()=>KSe,
-        intounderlyingsource_cancel: ()=>qSe,
-        intounderlyingsource_pull: ()=>JSe,
-        leafHash: ()=>OV,
-        ledgerparameters_deserialize: ()=>TF,
-        ledgerparameters_dust: ()=>EF,
-        ledgerparameters_feePrices: ()=>DF,
-        ledgerparameters_initialParameters: ()=>OF,
-        ledgerparameters_maxPriceAdjustment: ()=>kF,
-        ledgerparameters_new: ()=>AF,
-        ledgerparameters_normalizeFullness: ()=>jF,
-        ledgerparameters_serialize: ()=>MF,
-        ledgerparameters_toString: ()=>NF,
-        ledgerparameters_transactionCostModel: ()=>PF,
-        ledgerstate_apply: ()=>FF,
-        ledgerstate_applySystemTx: ()=>IF,
-        ledgerstate_blank: ()=>LF,
-        ledgerstate_block_reward_pool: ()=>RF,
-        ledgerstate_bridgeReceiving: ()=>zF,
-        ledgerstate_deserialize: ()=>BF,
-        ledgerstate_dust: ()=>VF,
-        ledgerstate_index: ()=>HF,
-        ledgerstate_locked_pool: ()=>UF,
-        ledgerstate_new: ()=>WF,
-        ledgerstate_parameters: ()=>GF,
-        ledgerstate_postBlockUpdate: ()=>KF,
-        ledgerstate_reserve_pool: ()=>qF,
-        ledgerstate_serialize: ()=>JF,
-        ledgerstate_set_parameters: ()=>YF,
-        ledgerstate_testingDistributeNight: ()=>XF,
-        ledgerstate_toString: ()=>ZF,
-        ledgerstate_treasuryBalance: ()=>QF,
-        ledgerstate_unclaimedBlockRewards: ()=>$F,
-        ledgerstate_updateIndex: ()=>eI,
-        ledgerstate_utxo: ()=>tI,
-        ledgerstate_zswap: ()=>nI,
-        maintenanceupdate_addSignature: ()=>rI,
-        maintenanceupdate_address: ()=>iI,
-        maintenanceupdate_counter: ()=>aI,
-        maintenanceupdate_data_to_sign: ()=>oI,
-        maintenanceupdate_new: ()=>sI,
-        maintenanceupdate_signatures: ()=>cI,
-        maintenanceupdate_toString: ()=>lI,
-        maintenanceupdate_updates: ()=>uI,
-        maxAlignedSize: ()=>kV,
-        maxField: ()=>AV,
+        dustactions_deserialize: ()=>SN,
+        dustactions_new: ()=>CN,
+        dustactions_registrations: ()=>wN,
+        dustactions_serialize: ()=>TN,
+        dustactions_set_ctime: ()=>EN,
+        dustactions_set_registrations: ()=>DN,
+        dustactions_set_spends: ()=>ON,
+        dustactions_spends: ()=>kN,
+        dustactions_toString: ()=>AN,
+        dustgenerationstate_deserialize: ()=>jN,
+        dustgenerationstate_new: ()=>MN,
+        dustgenerationstate_serialize: ()=>NN,
+        dustgenerationstate_toString: ()=>PN,
+        dustlocalstate_deserialize: ()=>FN,
+        dustlocalstate_generationInfo: ()=>IN,
+        dustlocalstate_new: ()=>LN,
+        dustlocalstate_params: ()=>RN,
+        dustlocalstate_processTtls: ()=>zN,
+        dustlocalstate_replayEvents: ()=>BN,
+        dustlocalstate_replayEventsWithChanges: ()=>VN,
+        dustlocalstate_serialize: ()=>HN,
+        dustlocalstate_spend: ()=>UN,
+        dustlocalstate_syncTime: ()=>WN,
+        dustlocalstate_toString: ()=>GN,
+        dustlocalstate_utxos: ()=>KN,
+        dustlocalstate_walletBalance: ()=>qN,
+        dustlocalstatewithchanges_changes: ()=>JN,
+        dustlocalstatewithchanges_state: ()=>YN,
+        dustparameters_deserialize: ()=>XN,
+        dustparameters_dustGracePeriodSeconds: ()=>ZN,
+        dustparameters_generationDecayRate: ()=>QN,
+        dustparameters_new: ()=>$N,
+        dustparameters_nightDustRatio: ()=>eP,
+        dustparameters_serialize: ()=>tP,
+        dustparameters_set_dustGracePeriodSeconds: ()=>nP,
+        dustparameters_set_generationDecayRate: ()=>rP,
+        dustparameters_set_nightDustRatio: ()=>iP,
+        dustparameters_timeToCapSeconds: ()=>aP,
+        dustparameters_toString: ()=>oP,
+        dustregistration_allowFeePayment: ()=>sP,
+        dustregistration_deserialize: ()=>cP,
+        dustregistration_dustAddress: ()=>lP,
+        dustregistration_new: ()=>uP,
+        dustregistration_nightKey: ()=>dP,
+        dustregistration_serialize: ()=>fP,
+        dustregistration_set_allowFeePayment: ()=>pP,
+        dustregistration_set_dustAddress: ()=>mP,
+        dustregistration_set_nightKey: ()=>hP,
+        dustregistration_set_signature: ()=>gP,
+        dustregistration_signature: ()=>_P,
+        dustregistration_toString: ()=>vP,
+        dustsecretkey_clear: ()=>yP,
+        dustsecretkey_fromBigint: ()=>bP,
+        dustsecretkey_fromSeed: ()=>xP,
+        dustsecretkey_new: ()=>SP,
+        dustsecretkey_publicKey: ()=>CP,
+        dustspend_new: ()=>wP,
+        dustspend_newCommitment: ()=>TP,
+        dustspend_oldNullifier: ()=>EP,
+        dustspend_proof: ()=>DP,
+        dustspend_toString: ()=>OP,
+        dustspend_vFee: ()=>kP,
+        duststate_deserialize: ()=>AP,
+        duststate_generation: ()=>jP,
+        duststate_new: ()=>MP,
+        duststate_serialize: ()=>NP,
+        duststate_toString: ()=>PP,
+        duststate_utxo: ()=>FP,
+        duststatechanges_receivedUtxos: ()=>IP,
+        duststatechanges_source: ()=>LP,
+        duststatechanges_spentUtxos: ()=>RP,
+        dustutxostate_deserialize: ()=>zP,
+        dustutxostate_new: ()=>BP,
+        dustutxostate_serialize: ()=>VP,
+        dustutxostate_toString: ()=>HP,
+        ecAdd: ()=>vV,
+        ecMul: ()=>yV,
+        ecMulGenerator: ()=>bV,
+        encodeCoinPublicKey: ()=>xV,
+        encodeContractAddress: ()=>SV,
+        encodeQualifiedShieldedCoinInfo: ()=>CV,
+        encodeRawTokenType: ()=>wV,
+        encodeShieldedCoinInfo: ()=>TV,
+        encodeUserAddress: ()=>EV,
+        encryptionsecretkey_clear: ()=>UP,
+        encryptionsecretkey_deserialize: ()=>WP,
+        encryptionsecretkey_new: ()=>GP,
+        encryptionsecretkey_public_key: ()=>KP,
+        encryptionsecretkey_taggedDeserialize: ()=>qP,
+        encryptionsecretkey_test: ()=>JP,
+        encryptionsecretkey_yesIKnowTheSecurityImplicationsOfThis_serialize: ()=>YP,
+        encryptionsecretkey_yesIKnowTheSecurityImplicationsOfThis_taggedSerialize: ()=>XP,
+        entryPointHash: ()=>DV,
+        event_deserialize: ()=>ZP,
+        event_new: ()=>QP,
+        event_serialize: ()=>$P,
+        event_toString: ()=>eF,
+        feeToken: ()=>tF,
+        hashToCurve: ()=>OV,
+        intent_actions: ()=>nF,
+        intent_addCall: ()=>rF,
+        intent_addDeploy: ()=>iF,
+        intent_addMaintenanceUpdate: ()=>aF,
+        intent_bind: ()=>oF,
+        intent_binding: ()=>sF,
+        intent_construct: ()=>cF,
+        intent_deserialize: ()=>lF,
+        intent_dustActions: ()=>uF,
+        intent_eraseProofs: ()=>dF,
+        intent_eraseSignatures: ()=>fF,
+        intent_fallibleUnshieldedOffer: ()=>pF,
+        intent_guaranteedUnshieldedOffer: ()=>mF,
+        intent_intentHash: ()=>hF,
+        intent_new: ()=>gF,
+        intent_serialize: ()=>_F,
+        intent_set_actions: ()=>vF,
+        intent_set_dustActions: ()=>yF,
+        intent_set_fallibleUnshieldedOffer: ()=>bF,
+        intent_set_guaranteedUnshieldedOffer: ()=>xF,
+        intent_set_ttl: ()=>SF,
+        intent_signatureData: ()=>CF,
+        intent_toString: ()=>wF,
+        intent_ttl: ()=>TF,
+        intounderlyingbytesource_autoAllocateChunkSize: ()=>RSe,
+        intounderlyingbytesource_cancel: ()=>zSe,
+        intounderlyingbytesource_pull: ()=>BSe,
+        intounderlyingbytesource_start: ()=>VSe,
+        intounderlyingbytesource_type: ()=>HSe,
+        intounderlyingsink_abort: ()=>USe,
+        intounderlyingsink_close: ()=>WSe,
+        intounderlyingsink_write: ()=>GSe,
+        intounderlyingsource_cancel: ()=>KSe,
+        intounderlyingsource_pull: ()=>qSe,
+        leafHash: ()=>kV,
+        ledgerparameters_deserialize: ()=>EF,
+        ledgerparameters_dust: ()=>DF,
+        ledgerparameters_feePrices: ()=>OF,
+        ledgerparameters_initialParameters: ()=>kF,
+        ledgerparameters_maxPriceAdjustment: ()=>AF,
+        ledgerparameters_new: ()=>jF,
+        ledgerparameters_normalizeFullness: ()=>MF,
+        ledgerparameters_serialize: ()=>NF,
+        ledgerparameters_toString: ()=>PF,
+        ledgerparameters_transactionCostModel: ()=>FF,
+        ledgerstate_apply: ()=>IF,
+        ledgerstate_applySystemTx: ()=>LF,
+        ledgerstate_blank: ()=>RF,
+        ledgerstate_block_reward_pool: ()=>zF,
+        ledgerstate_bridgeReceiving: ()=>BF,
+        ledgerstate_deserialize: ()=>VF,
+        ledgerstate_dust: ()=>HF,
+        ledgerstate_index: ()=>UF,
+        ledgerstate_locked_pool: ()=>WF,
+        ledgerstate_new: ()=>GF,
+        ledgerstate_parameters: ()=>KF,
+        ledgerstate_postBlockUpdate: ()=>qF,
+        ledgerstate_reserve_pool: ()=>JF,
+        ledgerstate_serialize: ()=>YF,
+        ledgerstate_set_parameters: ()=>XF,
+        ledgerstate_testingDistributeNight: ()=>ZF,
+        ledgerstate_toString: ()=>QF,
+        ledgerstate_treasuryBalance: ()=>$F,
+        ledgerstate_unclaimedBlockRewards: ()=>eI,
+        ledgerstate_updateIndex: ()=>tI,
+        ledgerstate_utxo: ()=>nI,
+        ledgerstate_zswap: ()=>rI,
+        maintenanceupdate_addSignature: ()=>iI,
+        maintenanceupdate_address: ()=>aI,
+        maintenanceupdate_counter: ()=>oI,
+        maintenanceupdate_data_to_sign: ()=>sI,
+        maintenanceupdate_new: ()=>cI,
+        maintenanceupdate_signatures: ()=>lI,
+        maintenanceupdate_toString: ()=>uI,
+        maintenanceupdate_updates: ()=>dI,
+        maxAlignedSize: ()=>AV,
+        maxField: ()=>jV,
         memory: ()=>Lye,
-        merkletreecollapsedupdate_deserialize: ()=>dI,
-        merkletreecollapsedupdate_new: ()=>fI,
-        merkletreecollapsedupdate_serialize: ()=>pI,
-        merkletreecollapsedupdate_toString: ()=>mI,
-        nativeToken: ()=>hI,
-        nobinding_deserialize: ()=>gI,
-        nobinding_instance: ()=>_I,
-        nobinding_new: ()=>vI,
-        nobinding_serialize: ()=>yI,
-        nobinding_toString: ()=>bI,
-        noproof_instance: ()=>xI,
-        noproof_new: ()=>SI,
-        noproof_toString: ()=>CI,
-        parseCheckResult: ()=>wI,
-        partitionTranscripts: ()=>TI,
-        persistentCommit: ()=>jV,
-        persistentHash: ()=>MV,
-        prebinding_deserialize: ()=>EI,
-        prebinding_instance: ()=>DI,
-        prebinding_new: ()=>OI,
-        prebinding_serialize: ()=>kI,
-        prebinding_toString: ()=>AI,
-        prepartitioncontractcall_new: ()=>jI,
-        prepartitioncontractcall_toString: ()=>MI,
-        preproof_deserialize: ()=>NI,
-        preproof_instance: ()=>PI,
-        preproof_new: ()=>FI,
-        preproof_serialize: ()=>II,
-        preproof_toString: ()=>LI,
-        pretranscript_new: ()=>RI,
-        pretranscript_toString: ()=>zI,
-        proofDataIntoSerializedPreimage: ()=>NV,
-        proof_deserialize: ()=>BI,
-        proof_instance: ()=>VI,
-        proof_new: ()=>HI,
-        proof_serialize: ()=>UI,
-        proof_toString: ()=>WI,
-        querycontext_address: ()=>PV,
-        querycontext_block: ()=>FV,
-        querycontext_com_indices: ()=>IV,
-        querycontext_effects: ()=>LV,
-        querycontext_insertCommitment: ()=>RV,
-        querycontext_new: ()=>zV,
-        querycontext_qualify: ()=>BV,
-        querycontext_query: ()=>VV,
-        querycontext_runTranscript: ()=>HV,
-        querycontext_set_block: ()=>UV,
-        querycontext_set_effects: ()=>WV,
-        querycontext_state: ()=>GV,
-        querycontext_toString: ()=>KV,
-        querycontext_toVmStack: ()=>qV,
-        queryresults_context: ()=>JV,
-        queryresults_events: ()=>YV,
-        queryresults_gas_cost: ()=>XV,
-        queryresults_new: ()=>ZV,
-        queryresults_toString: ()=>QV,
-        rawTokenType: ()=>$V,
-        replaceauthority_authority: ()=>GI,
-        replaceauthority_new: ()=>KI,
-        replaceauthority_toString: ()=>qI,
-        runProgram: ()=>eH,
-        runtimeCoinCommitment: ()=>tH,
-        runtimeCoinNullifier: ()=>nH,
-        sampleCoinPublicKey: ()=>JI,
-        sampleContractAddress: ()=>rH,
-        sampleDustSecretKey: ()=>YI,
-        sampleEncryptionPublicKey: ()=>XI,
-        sampleIntentHash: ()=>ZI,
-        sampleRawTokenType: ()=>iH,
-        sampleSigningKey: ()=>aH,
-        sampleUserAddress: ()=>oH,
-        shieldedToken: ()=>QI,
-        signData: ()=>sH,
-        signatureVerifyingKey: ()=>cH,
-        signatureenabled_deserialize: ()=>$I,
-        signatureenabled_instance: ()=>eL,
-        signatureenabled_new: ()=>tL,
-        signatureenabled_serialize: ()=>nL,
-        signatureenabled_toString: ()=>rL,
-        signatureerased_instance: ()=>iL,
-        signatureerased_new: ()=>cB,
-        signatureerased_toString: ()=>aL,
-        signingKeyFromBip340: ()=>lH,
-        stateboundedmerkletree_blank: ()=>uH,
-        stateboundedmerkletree_collapse: ()=>dH,
-        stateboundedmerkletree_findPathForLeaf: ()=>fH,
-        stateboundedmerkletree_height: ()=>pH,
-        stateboundedmerkletree_pathForLeaf: ()=>Kxe,
-        stateboundedmerkletree_rehash: ()=>qxe,
-        stateboundedmerkletree_root: ()=>Jxe,
-        stateboundedmerkletree_toString: ()=>Yxe,
-        stateboundedmerkletree_update: ()=>Xxe,
-        statemap_get: ()=>Zxe,
-        statemap_insert: ()=>Qxe,
-        statemap_keys: ()=>$xe,
-        statemap_new: ()=>eSe,
-        statemap_remove: ()=>tSe,
-        statemap_toString: ()=>nSe,
-        statevalue_arrayPush: ()=>rSe,
-        statevalue_asArray: ()=>iSe,
-        statevalue_asBoundedMerkleTree: ()=>aSe,
-        statevalue_asCell: ()=>oSe,
-        statevalue_asMap: ()=>sSe,
-        statevalue_decode: ()=>cSe,
-        statevalue_encode: ()=>lSe,
-        statevalue_logSize: ()=>uSe,
-        statevalue_new: ()=>dSe,
-        statevalue_newArray: ()=>fSe,
-        statevalue_newBoundedMerkleTree: ()=>pSe,
-        statevalue_newCell: ()=>mSe,
-        statevalue_newMap: ()=>hSe,
-        statevalue_newNull: ()=>gSe,
-        statevalue_toString: ()=>_Se,
-        statevalue_type: ()=>vSe,
-        systemtransaction_deserialize: ()=>oL,
-        systemtransaction_new: ()=>sL,
-        systemtransaction_serialize: ()=>cL,
-        systemtransaction_toString: ()=>lL,
-        transaction_addCalls: ()=>uL,
-        transaction_bind: ()=>dL,
-        transaction_bindingRandomness: ()=>fL,
-        transaction_cost: ()=>pL,
-        transaction_deserialize: ()=>mL,
-        transaction_eraseProofs: ()=>hL,
-        transaction_eraseSignatures: ()=>gL,
-        transaction_fallibleOffer: ()=>_L,
-        transaction_fees: ()=>vL,
-        transaction_feesWithMargin: ()=>yL,
-        transaction_fromParts: ()=>bL,
-        transaction_fromPartsRandomized: ()=>xL,
-        transaction_fromRewards: ()=>SL,
-        transaction_guaranteedOffer: ()=>CL,
-        transaction_identifiers: ()=>wL,
-        transaction_imbalances: ()=>TL,
-        transaction_intents: ()=>EL,
-        transaction_merge: ()=>DL,
-        transaction_mockProve: ()=>OL,
-        transaction_new: ()=>kL,
-        transaction_prove: ()=>AL,
-        transaction_rewards: ()=>jL,
-        transaction_serialize: ()=>ML,
-        transaction_set_fallibleOffer: ()=>NL,
-        transaction_set_guaranteedOffer: ()=>PL,
-        transaction_set_intents: ()=>FL,
-        transaction_toString: ()=>IL,
-        transaction_transactionHash: ()=>LL,
-        transaction_wellFormed: ()=>RL,
-        transactioncontext_new: ()=>zL,
-        transactioncontext_toString: ()=>BL,
-        transactioncostmodel_baselineCost: ()=>VL,
-        transactioncostmodel_deserialize: ()=>HL,
-        transactioncostmodel_initialTransactionCostModel: ()=>UL,
-        transactioncostmodel_new: ()=>WL,
-        transactioncostmodel_runtimeCostModel: ()=>GL,
-        transactioncostmodel_serialize: ()=>KL,
-        transactioncostmodel_toString: ()=>qL,
-        transactionresult_error: ()=>JL,
-        transactionresult_events: ()=>YL,
-        transactionresult_new: ()=>XL,
-        transactionresult_successfulSegments: ()=>ZL,
-        transactionresult_toString: ()=>QL,
-        transactionresult_type_: ()=>$L,
-        transientCommit: ()=>ySe,
-        transientHash: ()=>bSe,
-        unshieldedToken: ()=>lB,
-        unshieldedoffer_addSignatures: ()=>eR,
-        unshieldedoffer_construct: ()=>tR,
-        unshieldedoffer_eraseSignatures: ()=>nR,
-        unshieldedoffer_inputs: ()=>rR,
-        unshieldedoffer_new: ()=>iR,
-        unshieldedoffer_outputs: ()=>aR,
-        unshieldedoffer_signatures: ()=>oR,
-        unshieldedoffer_toString: ()=>sR,
-        updatedValue: ()=>cR,
-        upgradeFromTransient: ()=>xSe,
-        utxometa_ctime: ()=>lR,
-        utxometa_new: ()=>uR,
-        utxometa_set_ctime: ()=>dR,
-        utxostate_delta: ()=>fR,
-        utxostate_filter: ()=>pR,
-        utxostate_lookupMeta: ()=>mR,
-        utxostate_new: ()=>hR,
-        utxostate_utxos: ()=>gR,
-        valueToBigInt: ()=>SSe,
-        verifiedtransaction_transaction: ()=>_R,
-        verifierkeyinsert_new: ()=>vR,
-        verifierkeyinsert_operation: ()=>yR,
-        verifierkeyinsert_toString: ()=>bR,
-        verifierkeyinsert_vk: ()=>xR,
-        verifierkeyremove_new: ()=>SR,
-        verifierkeyremove_operation: ()=>CR,
-        verifierkeyremove_toString: ()=>wR,
-        verifierkeyremove_version: ()=>TR,
-        verifySignature: ()=>CSe,
-        vmresults_events: ()=>wSe,
-        vmresults_gas_cost: ()=>TSe,
-        vmresults_new: ()=>ESe,
-        vmresults_stack: ()=>DSe,
-        vmresults_toString: ()=>OSe,
-        vmstack_get: ()=>kSe,
-        vmstack_isStrong: ()=>ASe,
-        vmstack_length: ()=>jSe,
-        vmstack_new: ()=>MSe,
-        vmstack_push: ()=>NSe,
-        vmstack_removeLast: ()=>PSe,
-        vmstack_toString: ()=>FSe,
-        wellformedstrictness_enforce_balancing: ()=>ER,
-        wellformedstrictness_enforce_limits: ()=>DR,
-        wellformedstrictness_new: ()=>OR,
-        wellformedstrictness_set_enforce_balancing: ()=>kR,
-        wellformedstrictness_set_enforce_limits: ()=>AR,
-        wellformedstrictness_set_verify_contract_proofs: ()=>jR,
-        wellformedstrictness_set_verify_native_proofs: ()=>MR,
-        wellformedstrictness_set_verify_signatures: ()=>NR,
-        wellformedstrictness_verify_contract_proofs: ()=>PR,
-        wellformedstrictness_verify_native_proofs: ()=>FR,
-        wellformedstrictness_verify_signatures: ()=>IR,
-        zswapchainstate_deserialize: ()=>LR,
-        zswapchainstate_deserializeFromLedgerState: ()=>RR,
-        zswapchainstate_filter: ()=>zR,
-        zswapchainstate_firstFree: ()=>BR,
-        zswapchainstate_new: ()=>VR,
-        zswapchainstate_postBlockUpdate: ()=>HR,
-        zswapchainstate_serialize: ()=>UR,
-        zswapchainstate_toString: ()=>WR,
-        zswapchainstate_tryApply: ()=>GR,
-        zswapinput_contractAddress: ()=>KR,
-        zswapinput_deserialize: ()=>qR,
-        zswapinput_new: ()=>JR,
-        zswapinput_newContractOwned: ()=>YR,
-        zswapinput_nullifier: ()=>XR,
-        zswapinput_proof: ()=>ZR,
-        zswapinput_serialize: ()=>QR,
-        zswapinput_toString: ()=>$R,
-        zswaplocalstate_apply: ()=>ez,
-        zswaplocalstate_applyCollapsedUpdate: ()=>tz,
-        zswaplocalstate_applyFailed: ()=>nz,
-        zswaplocalstate_clearPending: ()=>rz,
-        zswaplocalstate_coins: ()=>iz,
-        zswaplocalstate_deserialize: ()=>az,
-        zswaplocalstate_firstFree: ()=>oz,
-        zswaplocalstate_new: ()=>sz,
-        zswaplocalstate_pendingOutputs: ()=>cz,
-        zswaplocalstate_pendingSpends: ()=>lz,
-        zswaplocalstate_replayEvents: ()=>uz,
-        zswaplocalstate_replayEventsWithChanges: ()=>dz,
-        zswaplocalstate_revertTransaction: ()=>fz,
-        zswaplocalstate_serialize: ()=>pz,
-        zswaplocalstate_spend: ()=>mz,
-        zswaplocalstate_spendFromOutput: ()=>hz,
-        zswaplocalstate_toString: ()=>gz,
-        zswaplocalstate_watchFor: ()=>_z,
-        zswaplocalstatewithchanges_changes: ()=>vz,
-        zswaplocalstatewithchanges_state: ()=>yz,
-        zswapoffer_deltas: ()=>bz,
-        zswapoffer_deserialize: ()=>xz,
-        zswapoffer_fromInput: ()=>Sz,
-        zswapoffer_fromOutput: ()=>Cz,
-        zswapoffer_fromTransient: ()=>wz,
-        zswapoffer_inputs: ()=>Tz,
-        zswapoffer_merge: ()=>Ez,
-        zswapoffer_new: ()=>Dz,
-        zswapoffer_outputs: ()=>Oz,
-        zswapoffer_serialize: ()=>kz,
-        zswapoffer_toString: ()=>Az,
-        zswapoffer_transients: ()=>jz,
-        zswapoutput_commitment: ()=>Mz,
-        zswapoutput_construct: ()=>Nz,
-        zswapoutput_contractAddress: ()=>Pz,
-        zswapoutput_deserialize: ()=>Fz,
-        zswapoutput_new: ()=>Iz,
-        zswapoutput_newContractOwned: ()=>Lz,
-        zswapoutput_proof: ()=>Rz,
-        zswapoutput_serialize: ()=>zz,
-        zswapoutput_toString: ()=>Bz,
-        zswapsecretkeys_clear: ()=>Vz,
-        zswapsecretkeys_coinPublicKey: ()=>Hz,
-        zswapsecretkeys_coinSecretKey: ()=>Uz,
-        zswapsecretkeys_encryptionPublicKey: ()=>Wz,
-        zswapsecretkeys_encryptionSecretKey: ()=>Gz,
-        zswapsecretkeys_fromSeed: ()=>Kz,
-        zswapsecretkeys_fromSeedRng: ()=>qz,
-        zswapsecretkeys_new: ()=>Jz,
-        zswapstatechanges_receivedCoins: ()=>Yz,
-        zswapstatechanges_source: ()=>Xz,
-        zswapstatechanges_spentCoins: ()=>Zz,
-        zswaptransient_commitment: ()=>Qz,
-        zswaptransient_contractAddress: ()=>$z,
-        zswaptransient_deserialize: ()=>eB,
-        zswaptransient_inputProof: ()=>tB,
-        zswaptransient_new: ()=>nB,
-        zswaptransient_newFromContractOwnedOutput: ()=>rB,
-        zswaptransient_nullifier: ()=>iB,
-        zswaptransient_outputProof: ()=>aB,
-        zswaptransient_serialize: ()=>oB,
-        zswaptransient_toString: ()=>sB
+        merkletreecollapsedupdate_deserialize: ()=>fI,
+        merkletreecollapsedupdate_new: ()=>pI,
+        merkletreecollapsedupdate_serialize: ()=>mI,
+        merkletreecollapsedupdate_toString: ()=>hI,
+        nativeToken: ()=>gI,
+        nobinding_deserialize: ()=>_I,
+        nobinding_instance: ()=>vI,
+        nobinding_new: ()=>yI,
+        nobinding_serialize: ()=>bI,
+        nobinding_toString: ()=>xI,
+        noproof_instance: ()=>SI,
+        noproof_new: ()=>CI,
+        noproof_toString: ()=>wI,
+        parseCheckResult: ()=>TI,
+        partitionTranscripts: ()=>EI,
+        persistentCommit: ()=>MV,
+        persistentHash: ()=>NV,
+        prebinding_deserialize: ()=>DI,
+        prebinding_instance: ()=>OI,
+        prebinding_new: ()=>kI,
+        prebinding_serialize: ()=>AI,
+        prebinding_toString: ()=>jI,
+        prepartitioncontractcall_new: ()=>MI,
+        prepartitioncontractcall_toString: ()=>NI,
+        preproof_deserialize: ()=>PI,
+        preproof_instance: ()=>FI,
+        preproof_new: ()=>II,
+        preproof_serialize: ()=>LI,
+        preproof_toString: ()=>RI,
+        pretranscript_new: ()=>zI,
+        pretranscript_toString: ()=>BI,
+        proofDataIntoSerializedPreimage: ()=>PV,
+        proof_deserialize: ()=>VI,
+        proof_instance: ()=>HI,
+        proof_new: ()=>UI,
+        proof_serialize: ()=>WI,
+        proof_toString: ()=>GI,
+        querycontext_address: ()=>FV,
+        querycontext_block: ()=>IV,
+        querycontext_com_indices: ()=>LV,
+        querycontext_effects: ()=>RV,
+        querycontext_insertCommitment: ()=>zV,
+        querycontext_new: ()=>BV,
+        querycontext_qualify: ()=>VV,
+        querycontext_query: ()=>HV,
+        querycontext_runTranscript: ()=>UV,
+        querycontext_set_block: ()=>WV,
+        querycontext_set_effects: ()=>GV,
+        querycontext_state: ()=>KV,
+        querycontext_toString: ()=>qV,
+        querycontext_toVmStack: ()=>JV,
+        queryresults_context: ()=>YV,
+        queryresults_events: ()=>XV,
+        queryresults_gas_cost: ()=>ZV,
+        queryresults_new: ()=>QV,
+        queryresults_toString: ()=>$V,
+        rawTokenType: ()=>eH,
+        replaceauthority_authority: ()=>KI,
+        replaceauthority_new: ()=>qI,
+        replaceauthority_toString: ()=>JI,
+        runProgram: ()=>tH,
+        runtimeCoinCommitment: ()=>nH,
+        runtimeCoinNullifier: ()=>rH,
+        sampleCoinPublicKey: ()=>YI,
+        sampleContractAddress: ()=>iH,
+        sampleDustSecretKey: ()=>XI,
+        sampleEncryptionPublicKey: ()=>ZI,
+        sampleIntentHash: ()=>QI,
+        sampleRawTokenType: ()=>aH,
+        sampleSigningKey: ()=>oH,
+        sampleUserAddress: ()=>sH,
+        shieldedToken: ()=>$I,
+        signData: ()=>cH,
+        signatureVerifyingKey: ()=>lH,
+        signatureenabled_deserialize: ()=>eL,
+        signatureenabled_instance: ()=>tL,
+        signatureenabled_new: ()=>nL,
+        signatureenabled_serialize: ()=>rL,
+        signatureenabled_toString: ()=>iL,
+        signatureerased_instance: ()=>aL,
+        signatureerased_new: ()=>lB,
+        signatureerased_toString: ()=>oL,
+        signingKeyFromBip340: ()=>uH,
+        stateboundedmerkletree_blank: ()=>dH,
+        stateboundedmerkletree_collapse: ()=>fH,
+        stateboundedmerkletree_findPathForLeaf: ()=>pH,
+        stateboundedmerkletree_height: ()=>mH,
+        stateboundedmerkletree_pathForLeaf: ()=>Gxe,
+        stateboundedmerkletree_rehash: ()=>Kxe,
+        stateboundedmerkletree_root: ()=>qxe,
+        stateboundedmerkletree_toString: ()=>Jxe,
+        stateboundedmerkletree_update: ()=>Yxe,
+        statemap_get: ()=>Xxe,
+        statemap_insert: ()=>Zxe,
+        statemap_keys: ()=>Qxe,
+        statemap_new: ()=>$xe,
+        statemap_remove: ()=>eSe,
+        statemap_toString: ()=>tSe,
+        statevalue_arrayPush: ()=>nSe,
+        statevalue_asArray: ()=>rSe,
+        statevalue_asBoundedMerkleTree: ()=>iSe,
+        statevalue_asCell: ()=>aSe,
+        statevalue_asMap: ()=>oSe,
+        statevalue_decode: ()=>sSe,
+        statevalue_encode: ()=>cSe,
+        statevalue_logSize: ()=>lSe,
+        statevalue_new: ()=>uSe,
+        statevalue_newArray: ()=>dSe,
+        statevalue_newBoundedMerkleTree: ()=>fSe,
+        statevalue_newCell: ()=>pSe,
+        statevalue_newMap: ()=>mSe,
+        statevalue_newNull: ()=>hSe,
+        statevalue_toString: ()=>gSe,
+        statevalue_type: ()=>_Se,
+        systemtransaction_deserialize: ()=>sL,
+        systemtransaction_new: ()=>cL,
+        systemtransaction_serialize: ()=>lL,
+        systemtransaction_toString: ()=>uL,
+        transaction_addCalls: ()=>dL,
+        transaction_bind: ()=>fL,
+        transaction_bindingRandomness: ()=>pL,
+        transaction_cost: ()=>mL,
+        transaction_deserialize: ()=>hL,
+        transaction_eraseProofs: ()=>gL,
+        transaction_eraseSignatures: ()=>_L,
+        transaction_fallibleOffer: ()=>vL,
+        transaction_fees: ()=>yL,
+        transaction_feesWithMargin: ()=>bL,
+        transaction_fromParts: ()=>xL,
+        transaction_fromPartsRandomized: ()=>SL,
+        transaction_fromRewards: ()=>CL,
+        transaction_guaranteedOffer: ()=>wL,
+        transaction_identifiers: ()=>TL,
+        transaction_imbalances: ()=>EL,
+        transaction_intents: ()=>DL,
+        transaction_merge: ()=>OL,
+        transaction_mockProve: ()=>kL,
+        transaction_new: ()=>AL,
+        transaction_prove: ()=>jL,
+        transaction_rewards: ()=>ML,
+        transaction_serialize: ()=>NL,
+        transaction_set_fallibleOffer: ()=>PL,
+        transaction_set_guaranteedOffer: ()=>FL,
+        transaction_set_intents: ()=>IL,
+        transaction_toString: ()=>LL,
+        transaction_transactionHash: ()=>RL,
+        transaction_wellFormed: ()=>zL,
+        transactioncontext_new: ()=>BL,
+        transactioncontext_toString: ()=>VL,
+        transactioncostmodel_baselineCost: ()=>HL,
+        transactioncostmodel_deserialize: ()=>UL,
+        transactioncostmodel_initialTransactionCostModel: ()=>WL,
+        transactioncostmodel_new: ()=>GL,
+        transactioncostmodel_runtimeCostModel: ()=>KL,
+        transactioncostmodel_serialize: ()=>qL,
+        transactioncostmodel_toString: ()=>JL,
+        transactionresult_error: ()=>YL,
+        transactionresult_events: ()=>XL,
+        transactionresult_new: ()=>ZL,
+        transactionresult_successfulSegments: ()=>QL,
+        transactionresult_toString: ()=>$L,
+        transactionresult_type_: ()=>eR,
+        transientCommit: ()=>vSe,
+        transientHash: ()=>ySe,
+        unshieldedToken: ()=>uB,
+        unshieldedoffer_addSignatures: ()=>tR,
+        unshieldedoffer_construct: ()=>nR,
+        unshieldedoffer_eraseSignatures: ()=>rR,
+        unshieldedoffer_inputs: ()=>iR,
+        unshieldedoffer_new: ()=>aR,
+        unshieldedoffer_outputs: ()=>oR,
+        unshieldedoffer_signatures: ()=>sR,
+        unshieldedoffer_toString: ()=>cR,
+        updatedValue: ()=>lR,
+        upgradeFromTransient: ()=>bSe,
+        utxometa_ctime: ()=>uR,
+        utxometa_new: ()=>dR,
+        utxometa_set_ctime: ()=>fR,
+        utxostate_delta: ()=>pR,
+        utxostate_filter: ()=>mR,
+        utxostate_lookupMeta: ()=>hR,
+        utxostate_new: ()=>gR,
+        utxostate_utxos: ()=>_R,
+        valueToBigInt: ()=>xSe,
+        verifiedtransaction_transaction: ()=>vR,
+        verifierkeyinsert_new: ()=>yR,
+        verifierkeyinsert_operation: ()=>bR,
+        verifierkeyinsert_toString: ()=>xR,
+        verifierkeyinsert_vk: ()=>SR,
+        verifierkeyremove_new: ()=>CR,
+        verifierkeyremove_operation: ()=>wR,
+        verifierkeyremove_toString: ()=>TR,
+        verifierkeyremove_version: ()=>ER,
+        verifySignature: ()=>SSe,
+        vmresults_events: ()=>CSe,
+        vmresults_gas_cost: ()=>wSe,
+        vmresults_new: ()=>TSe,
+        vmresults_stack: ()=>ESe,
+        vmresults_toString: ()=>DSe,
+        vmstack_get: ()=>OSe,
+        vmstack_isStrong: ()=>kSe,
+        vmstack_length: ()=>ASe,
+        vmstack_new: ()=>jSe,
+        vmstack_push: ()=>MSe,
+        vmstack_removeLast: ()=>NSe,
+        vmstack_toString: ()=>PSe,
+        wellformedstrictness_enforce_balancing: ()=>DR,
+        wellformedstrictness_enforce_limits: ()=>OR,
+        wellformedstrictness_new: ()=>kR,
+        wellformedstrictness_set_enforce_balancing: ()=>AR,
+        wellformedstrictness_set_enforce_limits: ()=>jR,
+        wellformedstrictness_set_verify_contract_proofs: ()=>MR,
+        wellformedstrictness_set_verify_native_proofs: ()=>NR,
+        wellformedstrictness_set_verify_signatures: ()=>PR,
+        wellformedstrictness_verify_contract_proofs: ()=>FR,
+        wellformedstrictness_verify_native_proofs: ()=>IR,
+        wellformedstrictness_verify_signatures: ()=>LR,
+        zswapchainstate_deserialize: ()=>RR,
+        zswapchainstate_deserializeFromLedgerState: ()=>zR,
+        zswapchainstate_filter: ()=>BR,
+        zswapchainstate_firstFree: ()=>VR,
+        zswapchainstate_new: ()=>HR,
+        zswapchainstate_postBlockUpdate: ()=>UR,
+        zswapchainstate_serialize: ()=>WR,
+        zswapchainstate_toString: ()=>GR,
+        zswapchainstate_tryApply: ()=>KR,
+        zswapinput_contractAddress: ()=>qR,
+        zswapinput_deserialize: ()=>JR,
+        zswapinput_new: ()=>YR,
+        zswapinput_newContractOwned: ()=>XR,
+        zswapinput_nullifier: ()=>ZR,
+        zswapinput_proof: ()=>QR,
+        zswapinput_serialize: ()=>$R,
+        zswapinput_toString: ()=>ez,
+        zswaplocalstate_apply: ()=>tz,
+        zswaplocalstate_applyCollapsedUpdate: ()=>nz,
+        zswaplocalstate_applyFailed: ()=>rz,
+        zswaplocalstate_clearPending: ()=>iz,
+        zswaplocalstate_coins: ()=>az,
+        zswaplocalstate_deserialize: ()=>oz,
+        zswaplocalstate_firstFree: ()=>sz,
+        zswaplocalstate_new: ()=>cz,
+        zswaplocalstate_pendingOutputs: ()=>lz,
+        zswaplocalstate_pendingSpends: ()=>uz,
+        zswaplocalstate_replayEvents: ()=>dz,
+        zswaplocalstate_replayEventsWithChanges: ()=>fz,
+        zswaplocalstate_revertTransaction: ()=>pz,
+        zswaplocalstate_serialize: ()=>mz,
+        zswaplocalstate_spend: ()=>hz,
+        zswaplocalstate_spendFromOutput: ()=>gz,
+        zswaplocalstate_toString: ()=>_z,
+        zswaplocalstate_watchFor: ()=>vz,
+        zswaplocalstatewithchanges_changes: ()=>yz,
+        zswaplocalstatewithchanges_state: ()=>bz,
+        zswapoffer_deltas: ()=>xz,
+        zswapoffer_deserialize: ()=>Sz,
+        zswapoffer_fromInput: ()=>Cz,
+        zswapoffer_fromOutput: ()=>wz,
+        zswapoffer_fromTransient: ()=>Tz,
+        zswapoffer_inputs: ()=>Ez,
+        zswapoffer_merge: ()=>Dz,
+        zswapoffer_new: ()=>Oz,
+        zswapoffer_outputs: ()=>kz,
+        zswapoffer_serialize: ()=>Az,
+        zswapoffer_toString: ()=>jz,
+        zswapoffer_transients: ()=>Mz,
+        zswapoutput_commitment: ()=>Nz,
+        zswapoutput_construct: ()=>Pz,
+        zswapoutput_contractAddress: ()=>Fz,
+        zswapoutput_deserialize: ()=>Iz,
+        zswapoutput_new: ()=>Lz,
+        zswapoutput_newContractOwned: ()=>Rz,
+        zswapoutput_proof: ()=>zz,
+        zswapoutput_serialize: ()=>Bz,
+        zswapoutput_toString: ()=>Vz,
+        zswapsecretkeys_clear: ()=>Hz,
+        zswapsecretkeys_coinPublicKey: ()=>Uz,
+        zswapsecretkeys_coinSecretKey: ()=>Wz,
+        zswapsecretkeys_encryptionPublicKey: ()=>Gz,
+        zswapsecretkeys_encryptionSecretKey: ()=>Kz,
+        zswapsecretkeys_fromSeed: ()=>qz,
+        zswapsecretkeys_fromSeedRng: ()=>Jz,
+        zswapsecretkeys_new: ()=>Yz,
+        zswapstatechanges_receivedCoins: ()=>Xz,
+        zswapstatechanges_source: ()=>Zz,
+        zswapstatechanges_spentCoins: ()=>Qz,
+        zswaptransient_commitment: ()=>$z,
+        zswaptransient_contractAddress: ()=>eB,
+        zswaptransient_deserialize: ()=>tB,
+        zswaptransient_inputProof: ()=>nB,
+        zswaptransient_new: ()=>rB,
+        zswaptransient_newFromContractOwnedOutput: ()=>iB,
+        zswaptransient_nullifier: ()=>aB,
+        zswaptransient_outputProof: ()=>oB,
+        zswaptransient_serialize: ()=>sB,
+        zswaptransient_toString: ()=>cB
     });
     URL = globalThis.URL;
-    var { memory: Lye, __wbg_authorizedclaim_free: Rye, __wbg_binding_free: zye, __wbg_claimrewardstransaction_free: Bye, __wbg_coinsecretkey_free: Vye, __wbg_contractcall_free: Hye, __wbg_contractcallprototype_free: Uye, __wbg_contractdeploy_free: Wye, __wbg_contractoperationversion_free: Gye, __wbg_contractoperationversionedverifierkey_free: Kye, __wbg_dustactions_free: qye, __wbg_dustgenerationstate_free: Jye, __wbg_dustlocalstate_free: Yye, __wbg_dustlocalstatewithchanges_free: Xye, __wbg_dustparameters_free: Zye, __wbg_dustregistration_free: Qye, __wbg_dustsecretkey_free: $ye, __wbg_dustspend_free: ebe, __wbg_duststate_free: tbe, __wbg_duststatechanges_free: nbe, __wbg_dustutxostate_free: rbe, __wbg_encryptionsecretkey_free: ibe, __wbg_event_free: abe, __wbg_intent_free: obe, __wbg_ledgerparameters_free: sbe, __wbg_ledgerstate_free: cbe, __wbg_maintenanceupdate_free: lbe, __wbg_merkletreecollapsedupdate_free: ube, __wbg_nobinding_free: dbe, __wbg_prebinding_free: fbe, __wbg_prepartitioncontractcall_free: pbe, __wbg_preproof_free: mbe, __wbg_pretranscript_free: hbe, __wbg_proof_free: gbe, __wbg_replaceauthority_free: _be, __wbg_signatureenabled_free: vbe, __wbg_systemtransaction_free: ybe, __wbg_transaction_free: bbe, __wbg_transactioncontext_free: xbe, __wbg_transactioncostmodel_free: Sbe, __wbg_transactionresult_free: Cbe, __wbg_unshieldedoffer_free: wbe, __wbg_utxometa_free: Tbe, __wbg_utxostate_free: Ebe, __wbg_verifiedtransaction_free: Dbe, __wbg_verifierkeyinsert_free: Obe, __wbg_wellformedstrictness_free: kbe, __wbg_zswapchainstate_free: Abe, __wbg_zswapinput_free: jbe, __wbg_zswaplocalstate_free: Mbe, __wbg_zswaplocalstatewithchanges_free: Nbe, __wbg_zswapoffer_free: Pbe, __wbg_zswapoutput_free: Fbe, __wbg_zswapsecretkeys_free: Ibe, __wbg_zswapstatechanges_free: Lbe, __wbg_zswaptransient_free: Rbe, addressFromKey: zbe, authorizedclaim_coin: Bbe, authorizedclaim_deserialize: Vbe, authorizedclaim_eraseProof: Hbe, authorizedclaim_new: Ube, authorizedclaim_recipient: Wbe, authorizedclaim_serialize: Gbe, authorizedclaim_toString: Kbe, binding_deserialize: qbe, binding_instance: Jbe, binding_new: Ybe, binding_serialize: Xbe, binding_toString: Zbe, claimrewardstransaction_addSignature: Qbe, claimrewardstransaction_construct: $be, claimrewardstransaction_dataToSign: exe, claimrewardstransaction_deserialize: txe, claimrewardstransaction_eraseSignatures: nxe, claimrewardstransaction_kind: rxe, claimrewardstransaction_new: ixe, claimrewardstransaction_nonce: axe, claimrewardstransaction_owner: oxe, claimrewardstransaction_serialize: sxe, claimrewardstransaction_signature: cxe, claimrewardstransaction_toString: lxe, claimrewardstransaction_value: uxe, coinCommitment: dxe, coinNullifier: fxe, coinsecretkey_clear: pxe, coinsecretkey_new: mxe, coinsecretkey_public_key: hxe, coinsecretkey_yesIKnowTheSecurityImplicationsOfThis_serialize: gxe, contractcall_address: _xe, contractcall_communicationCommitment: vxe, contractcall_entryPoint: yxe, contractcall_fallibleTranscript: bxe, contractcall_guaranteedTranscript: xxe, contractcall_new: Sxe, contractcall_proof: Cxe, contractcall_toString: wxe, contractcallprototype_intoCall: Txe, contractcallprototype_new: Exe, contractcallprototype_toString: Dxe, contractdeploy_address: Oxe, contractdeploy_initialState: kxe, contractdeploy_new: Axe, contractdeploy_toString: jxe, contractoperationversion_new: Mxe, contractoperationversion_toString: Nxe, contractoperationversion_version: Pxe, contractoperationversionedverifierkey_new: Fxe, contractoperationversionedverifierkey_raw_vk: Ixe, contractoperationversionedverifierkey_toString: Lxe, contractoperationversionedverifierkey_version: Rxe, createCheckPayload: zxe, createCoinInfo: Bxe, createProvingPayload: Vxe, createProvingTransactionPayload: Hxe, createShieldedCoinInfo: Uxe, dustactions_ctime: Wxe, dustactions_deserialize: Gxe, dustactions_new: SN, dustactions_registrations: CN, dustactions_serialize: wN, dustactions_set_ctime: TN, dustactions_set_registrations: EN, dustactions_set_spends: DN, dustactions_spends: ON, dustactions_toString: kN, dustgenerationstate_deserialize: AN, dustgenerationstate_new: jN, dustgenerationstate_serialize: MN, dustgenerationstate_toString: NN, dustlocalstate_deserialize: PN, dustlocalstate_generationInfo: FN, dustlocalstate_new: IN, dustlocalstate_params: LN, dustlocalstate_processTtls: RN, dustlocalstate_replayEvents: zN, dustlocalstate_replayEventsWithChanges: BN, dustlocalstate_serialize: VN, dustlocalstate_spend: HN, dustlocalstate_syncTime: UN, dustlocalstate_toString: WN, dustlocalstate_utxos: GN, dustlocalstate_walletBalance: KN, dustlocalstatewithchanges_changes: qN, dustlocalstatewithchanges_state: JN, dustparameters_deserialize: YN, dustparameters_dustGracePeriodSeconds: XN, dustparameters_generationDecayRate: ZN, dustparameters_new: QN, dustparameters_nightDustRatio: $N, dustparameters_serialize: eP, dustparameters_set_dustGracePeriodSeconds: tP, dustparameters_set_generationDecayRate: nP, dustparameters_set_nightDustRatio: rP, dustparameters_timeToCapSeconds: iP, dustparameters_toString: aP, dustregistration_allowFeePayment: oP, dustregistration_deserialize: sP, dustregistration_dustAddress: cP, dustregistration_new: lP, dustregistration_nightKey: uP, dustregistration_serialize: dP, dustregistration_set_allowFeePayment: fP, dustregistration_set_dustAddress: pP, dustregistration_set_nightKey: mP, dustregistration_set_signature: hP, dustregistration_signature: gP, dustregistration_toString: _P, dustsecretkey_clear: vP, dustsecretkey_fromBigint: yP, dustsecretkey_fromSeed: bP, dustsecretkey_new: xP, dustsecretkey_publicKey: SP, dustspend_new: CP, dustspend_newCommitment: wP, dustspend_oldNullifier: TP, dustspend_proof: EP, dustspend_toString: DP, dustspend_vFee: OP, duststate_deserialize: kP, duststate_generation: AP, duststate_new: jP, duststate_serialize: MP, duststate_toString: NP, duststate_utxo: PP, duststatechanges_receivedUtxos: FP, duststatechanges_source: IP, duststatechanges_spentUtxos: LP, dustutxostate_deserialize: RP, dustutxostate_new: zP, dustutxostate_serialize: BP, dustutxostate_toString: VP, encryptionsecretkey_clear: HP, encryptionsecretkey_deserialize: UP, encryptionsecretkey_new: WP, encryptionsecretkey_public_key: GP, encryptionsecretkey_taggedDeserialize: KP, encryptionsecretkey_test: qP, encryptionsecretkey_yesIKnowTheSecurityImplicationsOfThis_serialize: JP, encryptionsecretkey_yesIKnowTheSecurityImplicationsOfThis_taggedSerialize: YP, event_deserialize: XP, event_new: ZP, event_serialize: QP, event_toString: $P, feeToken: eF, intent_actions: tF, intent_addCall: nF, intent_addDeploy: rF, intent_addMaintenanceUpdate: iF, intent_bind: aF, intent_binding: oF, intent_construct: sF, intent_deserialize: cF, intent_dustActions: lF, intent_eraseProofs: uF, intent_eraseSignatures: dF, intent_fallibleUnshieldedOffer: fF, intent_guaranteedUnshieldedOffer: pF, intent_intentHash: mF, intent_new: hF, intent_serialize: gF, intent_set_actions: _F, intent_set_dustActions: vF, intent_set_fallibleUnshieldedOffer: yF, intent_set_guaranteedUnshieldedOffer: bF, intent_set_ttl: xF, intent_signatureData: SF, intent_toString: CF, intent_ttl: wF, ledgerparameters_deserialize: TF, ledgerparameters_dust: EF, ledgerparameters_feePrices: DF, ledgerparameters_initialParameters: OF, ledgerparameters_maxPriceAdjustment: kF, ledgerparameters_new: AF, ledgerparameters_normalizeFullness: jF, ledgerparameters_serialize: MF, ledgerparameters_toString: NF, ledgerparameters_transactionCostModel: PF, ledgerstate_apply: FF, ledgerstate_applySystemTx: IF, ledgerstate_blank: LF, ledgerstate_block_reward_pool: RF, ledgerstate_bridgeReceiving: zF, ledgerstate_deserialize: BF, ledgerstate_dust: VF, ledgerstate_index: HF, ledgerstate_locked_pool: UF, ledgerstate_new: WF, ledgerstate_parameters: GF, ledgerstate_postBlockUpdate: KF, ledgerstate_reserve_pool: qF, ledgerstate_serialize: JF, ledgerstate_set_parameters: YF, ledgerstate_testingDistributeNight: XF, ledgerstate_toString: ZF, ledgerstate_treasuryBalance: QF, ledgerstate_unclaimedBlockRewards: $F, ledgerstate_updateIndex: eI, ledgerstate_utxo: tI, ledgerstate_zswap: nI, maintenanceupdate_addSignature: rI, maintenanceupdate_address: iI, maintenanceupdate_counter: aI, maintenanceupdate_data_to_sign: oI, maintenanceupdate_new: sI, maintenanceupdate_signatures: cI, maintenanceupdate_toString: lI, maintenanceupdate_updates: uI, merkletreecollapsedupdate_deserialize: dI, merkletreecollapsedupdate_new: fI, merkletreecollapsedupdate_serialize: pI, merkletreecollapsedupdate_toString: mI, nativeToken: hI, nobinding_deserialize: gI, nobinding_instance: _I, nobinding_new: vI, nobinding_serialize: yI, nobinding_toString: bI, noproof_instance: xI, noproof_new: SI, noproof_toString: CI, parseCheckResult: wI, partitionTranscripts: TI, prebinding_deserialize: EI, prebinding_instance: DI, prebinding_new: OI, prebinding_serialize: kI, prebinding_toString: AI, prepartitioncontractcall_new: jI, prepartitioncontractcall_toString: MI, preproof_deserialize: NI, preproof_instance: PI, preproof_new: FI, preproof_serialize: II, preproof_toString: LI, pretranscript_new: RI, pretranscript_toString: zI, proof_deserialize: BI, proof_instance: VI, proof_new: HI, proof_serialize: UI, proof_toString: WI, replaceauthority_authority: GI, replaceauthority_new: KI, replaceauthority_toString: qI, sampleCoinPublicKey: JI, sampleDustSecretKey: YI, sampleEncryptionPublicKey: XI, sampleIntentHash: ZI, shieldedToken: QI, signatureenabled_deserialize: $I, signatureenabled_instance: eL, signatureenabled_new: tL, signatureenabled_serialize: nL, signatureenabled_toString: rL, signatureerased_instance: iL, signatureerased_toString: aL, systemtransaction_deserialize: oL, systemtransaction_new: sL, systemtransaction_serialize: cL, systemtransaction_toString: lL, transaction_addCalls: uL, transaction_bind: dL, transaction_bindingRandomness: fL, transaction_cost: pL, transaction_deserialize: mL, transaction_eraseProofs: hL, transaction_eraseSignatures: gL, transaction_fallibleOffer: _L, transaction_fees: vL, transaction_feesWithMargin: yL, transaction_fromParts: bL, transaction_fromPartsRandomized: xL, transaction_fromRewards: SL, transaction_guaranteedOffer: CL, transaction_identifiers: wL, transaction_imbalances: TL, transaction_intents: EL, transaction_merge: DL, transaction_mockProve: OL, transaction_new: kL, transaction_prove: AL, transaction_rewards: jL, transaction_serialize: ML, transaction_set_fallibleOffer: NL, transaction_set_guaranteedOffer: PL, transaction_set_intents: FL, transaction_toString: IL, transaction_transactionHash: LL, transaction_wellFormed: RL, transactioncontext_new: zL, transactioncontext_toString: BL, transactioncostmodel_baselineCost: VL, transactioncostmodel_deserialize: HL, transactioncostmodel_initialTransactionCostModel: UL, transactioncostmodel_new: WL, transactioncostmodel_runtimeCostModel: GL, transactioncostmodel_serialize: KL, transactioncostmodel_toString: qL, transactionresult_error: JL, transactionresult_events: YL, transactionresult_new: XL, transactionresult_successfulSegments: ZL, transactionresult_toString: QL, transactionresult_type_: $L, unshieldedoffer_addSignatures: eR, unshieldedoffer_construct: tR, unshieldedoffer_eraseSignatures: nR, unshieldedoffer_inputs: rR, unshieldedoffer_new: iR, unshieldedoffer_outputs: aR, unshieldedoffer_signatures: oR, unshieldedoffer_toString: sR, updatedValue: cR, utxometa_ctime: lR, utxometa_new: uR, utxometa_set_ctime: dR, utxostate_delta: fR, utxostate_filter: pR, utxostate_lookupMeta: mR, utxostate_new: hR, utxostate_utxos: gR, verifiedtransaction_transaction: _R, verifierkeyinsert_new: vR, verifierkeyinsert_operation: yR, verifierkeyinsert_toString: bR, verifierkeyinsert_vk: xR, verifierkeyremove_new: SR, verifierkeyremove_operation: CR, verifierkeyremove_toString: wR, verifierkeyremove_version: TR, wellformedstrictness_enforce_balancing: ER, wellformedstrictness_enforce_limits: DR, wellformedstrictness_new: OR, wellformedstrictness_set_enforce_balancing: kR, wellformedstrictness_set_enforce_limits: AR, wellformedstrictness_set_verify_contract_proofs: jR, wellformedstrictness_set_verify_native_proofs: MR, wellformedstrictness_set_verify_signatures: NR, wellformedstrictness_verify_contract_proofs: PR, wellformedstrictness_verify_native_proofs: FR, wellformedstrictness_verify_signatures: IR, zswapchainstate_deserialize: LR, zswapchainstate_deserializeFromLedgerState: RR, zswapchainstate_filter: zR, zswapchainstate_firstFree: BR, zswapchainstate_new: VR, zswapchainstate_postBlockUpdate: HR, zswapchainstate_serialize: UR, zswapchainstate_toString: WR, zswapchainstate_tryApply: GR, zswapinput_contractAddress: KR, zswapinput_deserialize: qR, zswapinput_new: JR, zswapinput_newContractOwned: YR, zswapinput_nullifier: XR, zswapinput_proof: ZR, zswapinput_serialize: QR, zswapinput_toString: $R, zswaplocalstate_apply: ez, zswaplocalstate_applyCollapsedUpdate: tz, zswaplocalstate_applyFailed: nz, zswaplocalstate_clearPending: rz, zswaplocalstate_coins: iz, zswaplocalstate_deserialize: az, zswaplocalstate_firstFree: oz, zswaplocalstate_new: sz, zswaplocalstate_pendingOutputs: cz, zswaplocalstate_pendingSpends: lz, zswaplocalstate_replayEvents: uz, zswaplocalstate_replayEventsWithChanges: dz, zswaplocalstate_revertTransaction: fz, zswaplocalstate_serialize: pz, zswaplocalstate_spend: mz, zswaplocalstate_spendFromOutput: hz, zswaplocalstate_toString: gz, zswaplocalstate_watchFor: _z, zswaplocalstatewithchanges_changes: vz, zswaplocalstatewithchanges_state: yz, zswapoffer_deltas: bz, zswapoffer_deserialize: xz, zswapoffer_fromInput: Sz, zswapoffer_fromOutput: Cz, zswapoffer_fromTransient: wz, zswapoffer_inputs: Tz, zswapoffer_merge: Ez, zswapoffer_new: Dz, zswapoffer_outputs: Oz, zswapoffer_serialize: kz, zswapoffer_toString: Az, zswapoffer_transients: jz, zswapoutput_commitment: Mz, zswapoutput_construct: Nz, zswapoutput_contractAddress: Pz, zswapoutput_deserialize: Fz, zswapoutput_new: Iz, zswapoutput_newContractOwned: Lz, zswapoutput_proof: Rz, zswapoutput_serialize: zz, zswapoutput_toString: Bz, zswapsecretkeys_clear: Vz, zswapsecretkeys_coinPublicKey: Hz, zswapsecretkeys_coinSecretKey: Uz, zswapsecretkeys_encryptionPublicKey: Wz, zswapsecretkeys_encryptionSecretKey: Gz, zswapsecretkeys_fromSeed: Kz, zswapsecretkeys_fromSeedRng: qz, zswapsecretkeys_new: Jz, zswapstatechanges_receivedCoins: Yz, zswapstatechanges_source: Xz, zswapstatechanges_spentCoins: Zz, zswaptransient_commitment: Qz, zswaptransient_contractAddress: $z, zswaptransient_deserialize: eB, zswaptransient_inputProof: tB, zswaptransient_new: nB, zswaptransient_newFromContractOwnedOutput: rB, zswaptransient_nullifier: iB, zswaptransient_outputProof: aB, zswaptransient_serialize: oB, zswaptransient_toString: sB, signatureerased_new: cB, unshieldedToken: lB, __wbg_signatureerased_free: uB, __wbg_noproof_free: dB, __wbg_verifierkeyremove_free: fB, __wbg_chargedstate_free: pB, __wbg_contractmaintenanceauthority_free: mB, __wbg_contractoperation_free: hB, __wbg_contractstate_free: gB, __wbg_costmodel_free: _B, __wbg_querycontext_free: vB, __wbg_queryresults_free: yB, __wbg_stateboundedmerkletree_free: bB, __wbg_statemap_free: xB, __wbg_statevalue_free: SB, __wbg_vmresults_free: CB, __wbg_vmstack_free: wB, bigIntModFr: TB, bigIntToValue: EB, chargedstate_new: DB, chargedstate_state: OB, chargedstate_toString: kB, communicationCommitment: AB, communicationCommitmentRandomness: jB, contractmaintenanceauthority_committee: MB, contractmaintenanceauthority_counter: NB, contractmaintenanceauthority_deserialize: PB, contractmaintenanceauthority_new: FB, contractmaintenanceauthority_serialize: IB, contractmaintenanceauthority_threshold: LB, contractmaintenanceauthority_toString: RB, contractoperation_deserialize: zB, contractoperation_new: BB, contractoperation_serialize: VB, contractoperation_set_verifier_key: HB, contractoperation_toString: UB, contractoperation_verifier_key: WB, contractstate_balance: GB, contractstate_data: KB, contractstate_deserialize: qB, contractstate_maintenance_authority: JB, contractstate_new: YB, contractstate_operation: XB, contractstate_operations: ZB, contractstate_query: QB, contractstate_serialize: $B, contractstate_setOperation: eV, contractstate_set_balance: tV, contractstate_set_data: nV, contractstate_set_maintenance_authority: rV, contractstate_toString: iV, costmodel_initialCostModel: aV, costmodel_new: oV, costmodel_toString: sV, decodeCoinPublicKey: cV, decodeContractAddress: lV, decodeQualifiedShieldedCoinInfo: uV, decodeRawTokenType: dV, decodeShieldedCoinInfo: fV, decodeUserAddress: pV, degradeToTransient: mV, dummyContractAddress: hV, dummyUserAddress: gV, ecAdd: _V, ecMul: vV, ecMulGenerator: yV, encodeCoinPublicKey: bV, encodeContractAddress: xV, encodeQualifiedShieldedCoinInfo: SV, encodeRawTokenType: CV, encodeShieldedCoinInfo: wV, encodeUserAddress: TV, entryPointHash: EV, hashToCurve: DV, leafHash: OV, maxAlignedSize: kV, maxField: AV, persistentCommit: jV, persistentHash: MV, proofDataIntoSerializedPreimage: NV, querycontext_address: PV, querycontext_block: FV, querycontext_com_indices: IV, querycontext_effects: LV, querycontext_insertCommitment: RV, querycontext_new: zV, querycontext_qualify: BV, querycontext_query: VV, querycontext_runTranscript: HV, querycontext_set_block: UV, querycontext_set_effects: WV, querycontext_state: GV, querycontext_toString: KV, querycontext_toVmStack: qV, queryresults_context: JV, queryresults_events: YV, queryresults_gas_cost: XV, queryresults_new: ZV, queryresults_toString: QV, rawTokenType: $V, runProgram: eH, runtimeCoinCommitment: tH, runtimeCoinNullifier: nH, sampleContractAddress: rH, sampleRawTokenType: iH, sampleSigningKey: aH, sampleUserAddress: oH, signData: sH, signatureVerifyingKey: cH, signingKeyFromBip340: lH, stateboundedmerkletree_blank: uH, stateboundedmerkletree_collapse: dH, stateboundedmerkletree_findPathForLeaf: fH, stateboundedmerkletree_height: pH, stateboundedmerkletree_pathForLeaf: Kxe, stateboundedmerkletree_rehash: qxe, stateboundedmerkletree_root: Jxe, stateboundedmerkletree_toString: Yxe, stateboundedmerkletree_update: Xxe, statemap_get: Zxe, statemap_insert: Qxe, statemap_keys: $xe, statemap_new: eSe, statemap_remove: tSe, statemap_toString: nSe, statevalue_arrayPush: rSe, statevalue_asArray: iSe, statevalue_asBoundedMerkleTree: aSe, statevalue_asCell: oSe, statevalue_asMap: sSe, statevalue_decode: cSe, statevalue_encode: lSe, statevalue_logSize: uSe, statevalue_new: dSe, statevalue_newArray: fSe, statevalue_newBoundedMerkleTree: pSe, statevalue_newCell: mSe, statevalue_newMap: hSe, statevalue_newNull: gSe, statevalue_toString: _Se, statevalue_type: vSe, transientCommit: ySe, transientHash: bSe, upgradeFromTransient: xSe, valueToBigInt: SSe, verifySignature: CSe, vmresults_events: wSe, vmresults_gas_cost: TSe, vmresults_new: ESe, vmresults_stack: DSe, vmresults_toString: OSe, vmstack_get: kSe, vmstack_isStrong: ASe, vmstack_length: jSe, vmstack_new: MSe, vmstack_push: NSe, vmstack_removeLast: PSe, vmstack_toString: FSe, __wbg_intounderlyingbytesource_free: ISe, __wbg_intounderlyingsink_free: LSe, __wbg_intounderlyingsource_free: RSe, intounderlyingbytesource_autoAllocateChunkSize: zSe, intounderlyingbytesource_cancel: BSe, intounderlyingbytesource_pull: VSe, intounderlyingbytesource_start: HSe, intounderlyingbytesource_type: USe, intounderlyingsink_abort: WSe, intounderlyingsink_close: GSe, intounderlyingsink_write: KSe, intounderlyingsource_cancel: qSe, intounderlyingsource_pull: JSe, __wbindgen_exn_store: YSe, __externref_table_alloc: XSe, __wbindgen_export_2: ZSe, __wbindgen_malloc: QSe, __wbindgen_realloc: $Se, __externref_drop_slice: eCe, __wbindgen_free: tCe, __wbindgen_export_7: nCe, __externref_table_dealloc: rCe, closure3109_externref_shim: iCe, closure3155_externref_shim: aCe, closure3158_externref_shim: oCe, __wbindgen_start: mH } = await st({
+    var { memory: Lye, __wbg_authorizedclaim_free: Rye, __wbg_binding_free: zye, __wbg_claimrewardstransaction_free: Bye, __wbg_coinsecretkey_free: Vye, __wbg_contractcall_free: Hye, __wbg_contractcallprototype_free: Uye, __wbg_contractdeploy_free: Wye, __wbg_contractoperationversion_free: Gye, __wbg_contractoperationversionedverifierkey_free: Kye, __wbg_dustactions_free: qye, __wbg_dustgenerationstate_free: Jye, __wbg_dustlocalstate_free: Yye, __wbg_dustlocalstatewithchanges_free: Xye, __wbg_dustparameters_free: Zye, __wbg_dustregistration_free: Qye, __wbg_dustsecretkey_free: $ye, __wbg_dustspend_free: ebe, __wbg_duststate_free: tbe, __wbg_duststatechanges_free: nbe, __wbg_dustutxostate_free: rbe, __wbg_encryptionsecretkey_free: ibe, __wbg_event_free: abe, __wbg_intent_free: obe, __wbg_ledgerparameters_free: sbe, __wbg_ledgerstate_free: cbe, __wbg_maintenanceupdate_free: lbe, __wbg_merkletreecollapsedupdate_free: ube, __wbg_nobinding_free: dbe, __wbg_prebinding_free: fbe, __wbg_prepartitioncontractcall_free: pbe, __wbg_preproof_free: mbe, __wbg_pretranscript_free: hbe, __wbg_proof_free: gbe, __wbg_replaceauthority_free: _be, __wbg_signatureenabled_free: vbe, __wbg_systemtransaction_free: ybe, __wbg_transaction_free: bbe, __wbg_transactioncontext_free: xbe, __wbg_transactioncostmodel_free: Sbe, __wbg_transactionresult_free: Cbe, __wbg_unshieldedoffer_free: wbe, __wbg_utxometa_free: Tbe, __wbg_utxostate_free: Ebe, __wbg_verifiedtransaction_free: Dbe, __wbg_verifierkeyinsert_free: Obe, __wbg_wellformedstrictness_free: kbe, __wbg_zswapchainstate_free: Abe, __wbg_zswapinput_free: jbe, __wbg_zswaplocalstate_free: Mbe, __wbg_zswaplocalstatewithchanges_free: Nbe, __wbg_zswapoffer_free: Pbe, __wbg_zswapoutput_free: Fbe, __wbg_zswapsecretkeys_free: Ibe, __wbg_zswapstatechanges_free: Lbe, __wbg_zswaptransient_free: Rbe, addressFromKey: zbe, authorizedclaim_coin: Bbe, authorizedclaim_deserialize: Vbe, authorizedclaim_eraseProof: Hbe, authorizedclaim_new: Ube, authorizedclaim_recipient: Wbe, authorizedclaim_serialize: Gbe, authorizedclaim_toString: Kbe, binding_deserialize: qbe, binding_instance: Jbe, binding_new: Ybe, binding_serialize: Xbe, binding_toString: Zbe, claimrewardstransaction_addSignature: Qbe, claimrewardstransaction_construct: $be, claimrewardstransaction_dataToSign: exe, claimrewardstransaction_deserialize: txe, claimrewardstransaction_eraseSignatures: nxe, claimrewardstransaction_kind: rxe, claimrewardstransaction_new: ixe, claimrewardstransaction_nonce: axe, claimrewardstransaction_owner: oxe, claimrewardstransaction_serialize: sxe, claimrewardstransaction_signature: cxe, claimrewardstransaction_toString: lxe, claimrewardstransaction_value: uxe, coinCommitment: dxe, coinNullifier: fxe, coinsecretkey_clear: pxe, coinsecretkey_new: mxe, coinsecretkey_public_key: hxe, coinsecretkey_yesIKnowTheSecurityImplicationsOfThis_serialize: gxe, contractcall_address: _xe, contractcall_communicationCommitment: vxe, contractcall_entryPoint: yxe, contractcall_fallibleTranscript: bxe, contractcall_guaranteedTranscript: xxe, contractcall_new: Sxe, contractcall_proof: Cxe, contractcall_toString: wxe, contractcallprototype_intoCall: Txe, contractcallprototype_new: Exe, contractcallprototype_toString: Dxe, contractdeploy_address: Oxe, contractdeploy_initialState: kxe, contractdeploy_new: Axe, contractdeploy_toString: jxe, contractoperationversion_new: Mxe, contractoperationversion_toString: Nxe, contractoperationversion_version: Pxe, contractoperationversionedverifierkey_new: Fxe, contractoperationversionedverifierkey_raw_vk: Ixe, contractoperationversionedverifierkey_toString: Lxe, contractoperationversionedverifierkey_version: Rxe, createCheckPayload: zxe, createCoinInfo: Bxe, createProvingPayload: Vxe, createProvingTransactionPayload: Hxe, createShieldedCoinInfo: Uxe, dustactions_ctime: Wxe, dustactions_deserialize: SN, dustactions_new: CN, dustactions_registrations: wN, dustactions_serialize: TN, dustactions_set_ctime: EN, dustactions_set_registrations: DN, dustactions_set_spends: ON, dustactions_spends: kN, dustactions_toString: AN, dustgenerationstate_deserialize: jN, dustgenerationstate_new: MN, dustgenerationstate_serialize: NN, dustgenerationstate_toString: PN, dustlocalstate_deserialize: FN, dustlocalstate_generationInfo: IN, dustlocalstate_new: LN, dustlocalstate_params: RN, dustlocalstate_processTtls: zN, dustlocalstate_replayEvents: BN, dustlocalstate_replayEventsWithChanges: VN, dustlocalstate_serialize: HN, dustlocalstate_spend: UN, dustlocalstate_syncTime: WN, dustlocalstate_toString: GN, dustlocalstate_utxos: KN, dustlocalstate_walletBalance: qN, dustlocalstatewithchanges_changes: JN, dustlocalstatewithchanges_state: YN, dustparameters_deserialize: XN, dustparameters_dustGracePeriodSeconds: ZN, dustparameters_generationDecayRate: QN, dustparameters_new: $N, dustparameters_nightDustRatio: eP, dustparameters_serialize: tP, dustparameters_set_dustGracePeriodSeconds: nP, dustparameters_set_generationDecayRate: rP, dustparameters_set_nightDustRatio: iP, dustparameters_timeToCapSeconds: aP, dustparameters_toString: oP, dustregistration_allowFeePayment: sP, dustregistration_deserialize: cP, dustregistration_dustAddress: lP, dustregistration_new: uP, dustregistration_nightKey: dP, dustregistration_serialize: fP, dustregistration_set_allowFeePayment: pP, dustregistration_set_dustAddress: mP, dustregistration_set_nightKey: hP, dustregistration_set_signature: gP, dustregistration_signature: _P, dustregistration_toString: vP, dustsecretkey_clear: yP, dustsecretkey_fromBigint: bP, dustsecretkey_fromSeed: xP, dustsecretkey_new: SP, dustsecretkey_publicKey: CP, dustspend_new: wP, dustspend_newCommitment: TP, dustspend_oldNullifier: EP, dustspend_proof: DP, dustspend_toString: OP, dustspend_vFee: kP, duststate_deserialize: AP, duststate_generation: jP, duststate_new: MP, duststate_serialize: NP, duststate_toString: PP, duststate_utxo: FP, duststatechanges_receivedUtxos: IP, duststatechanges_source: LP, duststatechanges_spentUtxos: RP, dustutxostate_deserialize: zP, dustutxostate_new: BP, dustutxostate_serialize: VP, dustutxostate_toString: HP, encryptionsecretkey_clear: UP, encryptionsecretkey_deserialize: WP, encryptionsecretkey_new: GP, encryptionsecretkey_public_key: KP, encryptionsecretkey_taggedDeserialize: qP, encryptionsecretkey_test: JP, encryptionsecretkey_yesIKnowTheSecurityImplicationsOfThis_serialize: YP, encryptionsecretkey_yesIKnowTheSecurityImplicationsOfThis_taggedSerialize: XP, event_deserialize: ZP, event_new: QP, event_serialize: $P, event_toString: eF, feeToken: tF, intent_actions: nF, intent_addCall: rF, intent_addDeploy: iF, intent_addMaintenanceUpdate: aF, intent_bind: oF, intent_binding: sF, intent_construct: cF, intent_deserialize: lF, intent_dustActions: uF, intent_eraseProofs: dF, intent_eraseSignatures: fF, intent_fallibleUnshieldedOffer: pF, intent_guaranteedUnshieldedOffer: mF, intent_intentHash: hF, intent_new: gF, intent_serialize: _F, intent_set_actions: vF, intent_set_dustActions: yF, intent_set_fallibleUnshieldedOffer: bF, intent_set_guaranteedUnshieldedOffer: xF, intent_set_ttl: SF, intent_signatureData: CF, intent_toString: wF, intent_ttl: TF, ledgerparameters_deserialize: EF, ledgerparameters_dust: DF, ledgerparameters_feePrices: OF, ledgerparameters_initialParameters: kF, ledgerparameters_maxPriceAdjustment: AF, ledgerparameters_new: jF, ledgerparameters_normalizeFullness: MF, ledgerparameters_serialize: NF, ledgerparameters_toString: PF, ledgerparameters_transactionCostModel: FF, ledgerstate_apply: IF, ledgerstate_applySystemTx: LF, ledgerstate_blank: RF, ledgerstate_block_reward_pool: zF, ledgerstate_bridgeReceiving: BF, ledgerstate_deserialize: VF, ledgerstate_dust: HF, ledgerstate_index: UF, ledgerstate_locked_pool: WF, ledgerstate_new: GF, ledgerstate_parameters: KF, ledgerstate_postBlockUpdate: qF, ledgerstate_reserve_pool: JF, ledgerstate_serialize: YF, ledgerstate_set_parameters: XF, ledgerstate_testingDistributeNight: ZF, ledgerstate_toString: QF, ledgerstate_treasuryBalance: $F, ledgerstate_unclaimedBlockRewards: eI, ledgerstate_updateIndex: tI, ledgerstate_utxo: nI, ledgerstate_zswap: rI, maintenanceupdate_addSignature: iI, maintenanceupdate_address: aI, maintenanceupdate_counter: oI, maintenanceupdate_data_to_sign: sI, maintenanceupdate_new: cI, maintenanceupdate_signatures: lI, maintenanceupdate_toString: uI, maintenanceupdate_updates: dI, merkletreecollapsedupdate_deserialize: fI, merkletreecollapsedupdate_new: pI, merkletreecollapsedupdate_serialize: mI, merkletreecollapsedupdate_toString: hI, nativeToken: gI, nobinding_deserialize: _I, nobinding_instance: vI, nobinding_new: yI, nobinding_serialize: bI, nobinding_toString: xI, noproof_instance: SI, noproof_new: CI, noproof_toString: wI, parseCheckResult: TI, partitionTranscripts: EI, prebinding_deserialize: DI, prebinding_instance: OI, prebinding_new: kI, prebinding_serialize: AI, prebinding_toString: jI, prepartitioncontractcall_new: MI, prepartitioncontractcall_toString: NI, preproof_deserialize: PI, preproof_instance: FI, preproof_new: II, preproof_serialize: LI, preproof_toString: RI, pretranscript_new: zI, pretranscript_toString: BI, proof_deserialize: VI, proof_instance: HI, proof_new: UI, proof_serialize: WI, proof_toString: GI, replaceauthority_authority: KI, replaceauthority_new: qI, replaceauthority_toString: JI, sampleCoinPublicKey: YI, sampleDustSecretKey: XI, sampleEncryptionPublicKey: ZI, sampleIntentHash: QI, shieldedToken: $I, signatureenabled_deserialize: eL, signatureenabled_instance: tL, signatureenabled_new: nL, signatureenabled_serialize: rL, signatureenabled_toString: iL, signatureerased_instance: aL, signatureerased_toString: oL, systemtransaction_deserialize: sL, systemtransaction_new: cL, systemtransaction_serialize: lL, systemtransaction_toString: uL, transaction_addCalls: dL, transaction_bind: fL, transaction_bindingRandomness: pL, transaction_cost: mL, transaction_deserialize: hL, transaction_eraseProofs: gL, transaction_eraseSignatures: _L, transaction_fallibleOffer: vL, transaction_fees: yL, transaction_feesWithMargin: bL, transaction_fromParts: xL, transaction_fromPartsRandomized: SL, transaction_fromRewards: CL, transaction_guaranteedOffer: wL, transaction_identifiers: TL, transaction_imbalances: EL, transaction_intents: DL, transaction_merge: OL, transaction_mockProve: kL, transaction_new: AL, transaction_prove: jL, transaction_rewards: ML, transaction_serialize: NL, transaction_set_fallibleOffer: PL, transaction_set_guaranteedOffer: FL, transaction_set_intents: IL, transaction_toString: LL, transaction_transactionHash: RL, transaction_wellFormed: zL, transactioncontext_new: BL, transactioncontext_toString: VL, transactioncostmodel_baselineCost: HL, transactioncostmodel_deserialize: UL, transactioncostmodel_initialTransactionCostModel: WL, transactioncostmodel_new: GL, transactioncostmodel_runtimeCostModel: KL, transactioncostmodel_serialize: qL, transactioncostmodel_toString: JL, transactionresult_error: YL, transactionresult_events: XL, transactionresult_new: ZL, transactionresult_successfulSegments: QL, transactionresult_toString: $L, transactionresult_type_: eR, unshieldedoffer_addSignatures: tR, unshieldedoffer_construct: nR, unshieldedoffer_eraseSignatures: rR, unshieldedoffer_inputs: iR, unshieldedoffer_new: aR, unshieldedoffer_outputs: oR, unshieldedoffer_signatures: sR, unshieldedoffer_toString: cR, updatedValue: lR, utxometa_ctime: uR, utxometa_new: dR, utxometa_set_ctime: fR, utxostate_delta: pR, utxostate_filter: mR, utxostate_lookupMeta: hR, utxostate_new: gR, utxostate_utxos: _R, verifiedtransaction_transaction: vR, verifierkeyinsert_new: yR, verifierkeyinsert_operation: bR, verifierkeyinsert_toString: xR, verifierkeyinsert_vk: SR, verifierkeyremove_new: CR, verifierkeyremove_operation: wR, verifierkeyremove_toString: TR, verifierkeyremove_version: ER, wellformedstrictness_enforce_balancing: DR, wellformedstrictness_enforce_limits: OR, wellformedstrictness_new: kR, wellformedstrictness_set_enforce_balancing: AR, wellformedstrictness_set_enforce_limits: jR, wellformedstrictness_set_verify_contract_proofs: MR, wellformedstrictness_set_verify_native_proofs: NR, wellformedstrictness_set_verify_signatures: PR, wellformedstrictness_verify_contract_proofs: FR, wellformedstrictness_verify_native_proofs: IR, wellformedstrictness_verify_signatures: LR, zswapchainstate_deserialize: RR, zswapchainstate_deserializeFromLedgerState: zR, zswapchainstate_filter: BR, zswapchainstate_firstFree: VR, zswapchainstate_new: HR, zswapchainstate_postBlockUpdate: UR, zswapchainstate_serialize: WR, zswapchainstate_toString: GR, zswapchainstate_tryApply: KR, zswapinput_contractAddress: qR, zswapinput_deserialize: JR, zswapinput_new: YR, zswapinput_newContractOwned: XR, zswapinput_nullifier: ZR, zswapinput_proof: QR, zswapinput_serialize: $R, zswapinput_toString: ez, zswaplocalstate_apply: tz, zswaplocalstate_applyCollapsedUpdate: nz, zswaplocalstate_applyFailed: rz, zswaplocalstate_clearPending: iz, zswaplocalstate_coins: az, zswaplocalstate_deserialize: oz, zswaplocalstate_firstFree: sz, zswaplocalstate_new: cz, zswaplocalstate_pendingOutputs: lz, zswaplocalstate_pendingSpends: uz, zswaplocalstate_replayEvents: dz, zswaplocalstate_replayEventsWithChanges: fz, zswaplocalstate_revertTransaction: pz, zswaplocalstate_serialize: mz, zswaplocalstate_spend: hz, zswaplocalstate_spendFromOutput: gz, zswaplocalstate_toString: _z, zswaplocalstate_watchFor: vz, zswaplocalstatewithchanges_changes: yz, zswaplocalstatewithchanges_state: bz, zswapoffer_deltas: xz, zswapoffer_deserialize: Sz, zswapoffer_fromInput: Cz, zswapoffer_fromOutput: wz, zswapoffer_fromTransient: Tz, zswapoffer_inputs: Ez, zswapoffer_merge: Dz, zswapoffer_new: Oz, zswapoffer_outputs: kz, zswapoffer_serialize: Az, zswapoffer_toString: jz, zswapoffer_transients: Mz, zswapoutput_commitment: Nz, zswapoutput_construct: Pz, zswapoutput_contractAddress: Fz, zswapoutput_deserialize: Iz, zswapoutput_new: Lz, zswapoutput_newContractOwned: Rz, zswapoutput_proof: zz, zswapoutput_serialize: Bz, zswapoutput_toString: Vz, zswapsecretkeys_clear: Hz, zswapsecretkeys_coinPublicKey: Uz, zswapsecretkeys_coinSecretKey: Wz, zswapsecretkeys_encryptionPublicKey: Gz, zswapsecretkeys_encryptionSecretKey: Kz, zswapsecretkeys_fromSeed: qz, zswapsecretkeys_fromSeedRng: Jz, zswapsecretkeys_new: Yz, zswapstatechanges_receivedCoins: Xz, zswapstatechanges_source: Zz, zswapstatechanges_spentCoins: Qz, zswaptransient_commitment: $z, zswaptransient_contractAddress: eB, zswaptransient_deserialize: tB, zswaptransient_inputProof: nB, zswaptransient_new: rB, zswaptransient_newFromContractOwnedOutput: iB, zswaptransient_nullifier: aB, zswaptransient_outputProof: oB, zswaptransient_serialize: sB, zswaptransient_toString: cB, signatureerased_new: lB, unshieldedToken: uB, __wbg_signatureerased_free: dB, __wbg_noproof_free: fB, __wbg_verifierkeyremove_free: pB, __wbg_chargedstate_free: mB, __wbg_contractmaintenanceauthority_free: hB, __wbg_contractoperation_free: gB, __wbg_contractstate_free: _B, __wbg_costmodel_free: vB, __wbg_querycontext_free: yB, __wbg_queryresults_free: bB, __wbg_stateboundedmerkletree_free: xB, __wbg_statemap_free: SB, __wbg_statevalue_free: CB, __wbg_vmresults_free: wB, __wbg_vmstack_free: TB, bigIntModFr: EB, bigIntToValue: DB, chargedstate_new: OB, chargedstate_state: kB, chargedstate_toString: AB, communicationCommitment: jB, communicationCommitmentRandomness: MB, contractmaintenanceauthority_committee: NB, contractmaintenanceauthority_counter: PB, contractmaintenanceauthority_deserialize: FB, contractmaintenanceauthority_new: IB, contractmaintenanceauthority_serialize: LB, contractmaintenanceauthority_threshold: RB, contractmaintenanceauthority_toString: zB, contractoperation_deserialize: BB, contractoperation_new: VB, contractoperation_serialize: HB, contractoperation_set_verifier_key: UB, contractoperation_toString: WB, contractoperation_verifier_key: GB, contractstate_balance: KB, contractstate_data: qB, contractstate_deserialize: JB, contractstate_maintenance_authority: YB, contractstate_new: XB, contractstate_operation: ZB, contractstate_operations: QB, contractstate_query: $B, contractstate_serialize: eV, contractstate_setOperation: tV, contractstate_set_balance: nV, contractstate_set_data: rV, contractstate_set_maintenance_authority: iV, contractstate_toString: aV, costmodel_initialCostModel: oV, costmodel_new: sV, costmodel_toString: cV, decodeCoinPublicKey: lV, decodeContractAddress: uV, decodeQualifiedShieldedCoinInfo: dV, decodeRawTokenType: fV, decodeShieldedCoinInfo: pV, decodeUserAddress: mV, degradeToTransient: hV, dummyContractAddress: gV, dummyUserAddress: _V, ecAdd: vV, ecMul: yV, ecMulGenerator: bV, encodeCoinPublicKey: xV, encodeContractAddress: SV, encodeQualifiedShieldedCoinInfo: CV, encodeRawTokenType: wV, encodeShieldedCoinInfo: TV, encodeUserAddress: EV, entryPointHash: DV, hashToCurve: OV, leafHash: kV, maxAlignedSize: AV, maxField: jV, persistentCommit: MV, persistentHash: NV, proofDataIntoSerializedPreimage: PV, querycontext_address: FV, querycontext_block: IV, querycontext_com_indices: LV, querycontext_effects: RV, querycontext_insertCommitment: zV, querycontext_new: BV, querycontext_qualify: VV, querycontext_query: HV, querycontext_runTranscript: UV, querycontext_set_block: WV, querycontext_set_effects: GV, querycontext_state: KV, querycontext_toString: qV, querycontext_toVmStack: JV, queryresults_context: YV, queryresults_events: XV, queryresults_gas_cost: ZV, queryresults_new: QV, queryresults_toString: $V, rawTokenType: eH, runProgram: tH, runtimeCoinCommitment: nH, runtimeCoinNullifier: rH, sampleContractAddress: iH, sampleRawTokenType: aH, sampleSigningKey: oH, sampleUserAddress: sH, signData: cH, signatureVerifyingKey: lH, signingKeyFromBip340: uH, stateboundedmerkletree_blank: dH, stateboundedmerkletree_collapse: fH, stateboundedmerkletree_findPathForLeaf: pH, stateboundedmerkletree_height: mH, stateboundedmerkletree_pathForLeaf: Gxe, stateboundedmerkletree_rehash: Kxe, stateboundedmerkletree_root: qxe, stateboundedmerkletree_toString: Jxe, stateboundedmerkletree_update: Yxe, statemap_get: Xxe, statemap_insert: Zxe, statemap_keys: Qxe, statemap_new: $xe, statemap_remove: eSe, statemap_toString: tSe, statevalue_arrayPush: nSe, statevalue_asArray: rSe, statevalue_asBoundedMerkleTree: iSe, statevalue_asCell: aSe, statevalue_asMap: oSe, statevalue_decode: sSe, statevalue_encode: cSe, statevalue_logSize: lSe, statevalue_new: uSe, statevalue_newArray: dSe, statevalue_newBoundedMerkleTree: fSe, statevalue_newCell: pSe, statevalue_newMap: mSe, statevalue_newNull: hSe, statevalue_toString: gSe, statevalue_type: _Se, transientCommit: vSe, transientHash: ySe, upgradeFromTransient: bSe, valueToBigInt: xSe, verifySignature: SSe, vmresults_events: CSe, vmresults_gas_cost: wSe, vmresults_new: TSe, vmresults_stack: ESe, vmresults_toString: DSe, vmstack_get: OSe, vmstack_isStrong: kSe, vmstack_length: ASe, vmstack_new: jSe, vmstack_push: MSe, vmstack_removeLast: NSe, vmstack_toString: PSe, __wbg_intounderlyingbytesource_free: FSe, __wbg_intounderlyingsink_free: ISe, __wbg_intounderlyingsource_free: LSe, intounderlyingbytesource_autoAllocateChunkSize: RSe, intounderlyingbytesource_cancel: zSe, intounderlyingbytesource_pull: BSe, intounderlyingbytesource_start: VSe, intounderlyingbytesource_type: HSe, intounderlyingsink_abort: USe, intounderlyingsink_close: WSe, intounderlyingsink_write: GSe, intounderlyingsource_cancel: KSe, intounderlyingsource_pull: qSe, __wbindgen_exn_store: JSe, __externref_table_alloc: YSe, __wbindgen_export_2: XSe, __wbindgen_malloc: ZSe, __wbindgen_realloc: QSe, __externref_drop_slice: $Se, __wbindgen_free: eCe, __wbindgen_export_7: tCe, __externref_table_dealloc: nCe, closure3109_externref_shim: rCe, closure3155_externref_shim: iCe, closure3158_externref_shim: aCe, __wbindgen_start: hH } = await st({
         "./snippets/midnight-ledger-wasm-5979ca4215261931/inline0.js": {
             PreTranscript_: _ge
         },
@@ -34575,27 +34575,27 @@ perfecta armonía.`,
             VerifierKeyRemove_: Fye
         }
     }, gge);
-    yge(Iye), mH();
-    var hH = Symbol.for(`platform-js/effect/IntegerRange`), sCe = fu({
+    yge(Iye), hH();
+    var gH = Symbol.for(`platform-js/effect/IntegerRange`), oCe = fu({
         value: fu({
             _tag: su,
             min: cu,
             max: cu
         })
-    }), gH = (e)=>Du(e, hH), cCe = (e)=>e.value._tag === `Inclusive`, lCe = B(2, (e, t)=>sCe(e, t)), _H = B(2, (e, t)=>{
-        if (cCe(e)) return _H(vH([
+    }), _H = (e)=>Du(e, gH), sCe = (e)=>e.value._tag === `Inclusive`, cCe = B(2, (e, t)=>oCe(e, t)), vH = B(2, (e, t)=>{
+        if (sCe(e)) return vH(yH([
             e.value.min,
             e.value.max + 1
         ]), t);
         let { min: n, max: r } = e.value;
         return t >= n && t < r;
-    }), vH = (e)=>pCe(e), uCe = /(?<n>\d*)\.\.(?<inc>\=?)(?<x>\d*)/, dCe = `Exclusive`, fCe = {
-        [hH]: hH,
+    }), yH = (e)=>fCe(e), lCe = /(?<n>\d*)\.\.(?<inc>\=?)(?<x>\d*)/, uCe = `Exclusive`, dCe = {
+        [gH]: gH,
         [ed] () {
             return dd(this, ld(this.value));
         },
         [fd] (e) {
-            return gH(e) && lCe(this, e);
+            return _H(e) && cCe(this, e);
         },
         toString () {
             let { min: e, max: t, _tag: n } = this.value;
@@ -34613,18 +34613,18 @@ perfecta armonía.`,
         pipe () {
             return ru(this, arguments);
         }
-    }, pCe = (e, t)=>{
-        let n = Object.create(fCe);
-        if (gH(e)) n.value = e.value;
+    }, fCe = (e, t)=>{
+        let n = Object.create(dCe);
+        if (_H(e)) n.value = e.value;
         else if (Array.isArray(e) && e.length === 2 && e.every(vu)) {
             let [r, i] = e;
             n.value = {
-                _tag: t ?? dCe,
+                _tag: t ?? uCe,
                 min: r,
                 max: i
             };
         } else if (_u(e)) {
-            let t = e.match(uCe);
+            let t = e.match(lCe);
             if (!t || !t.groups) throw Error(`Invalid IntegerRange: ${e}`);
             let { n: r, inc: i, x: a } = t.groups, o = Number(r), s = Number(a);
             if (!vu(o) || !vu(s)) throw TypeError(`Invalid IntegerRange: ${e}`);
@@ -34635,16 +34635,16 @@ perfecta armonía.`,
             };
         } else throw Error(`Invalid IntegerRange`);
         return n;
-    }, mCe = Symbol.for(`platform-js/effect/ParseError`), hCe = class extends xA(mCe, `ParseError`) {
-    }, yH = (e, t, n, r)=>new hCe({
+    }, pCe = Symbol.for(`platform-js/effect/ParseError`), mCe = class extends xA(pCe, `ParseError`) {
+    }, bH = (e, t, n, r)=>new mCe({
             message: e,
             source: t,
             meta: n,
             cause: r
-        }), gCe = /^(?<prefix>(0x)?)(?<byteChars>([0-9A-Fa-f]{2})*)(?<incompleteChars>.*)$/, _Ce = (e)=>{
-        if (!e) return kf(yH(`Source string must have non-zero length`, e));
-        let t = e.match(gCe);
-        if (!t || !t.groups) return kf(yH(`Source string '${e}' is not a valid hex-string`, e));
+        }), hCe = /^(?<prefix>(0x)?)(?<byteChars>([0-9A-Fa-f]{2})*)(?<incompleteChars>.*)$/, gCe = (e)=>{
+        if (!e) return kf(bH(`Source string must have non-zero length`, e));
+        let t = e.match(hCe);
+        if (!t || !t.groups) return kf(bH(`Source string '${e}' is not a valid hex-string`, e));
         let { prefix: n, byteChars: r, incompleteChars: i } = t.groups, a = {
             hasPrefix: !!n,
             byteChars: r || ``,
@@ -34654,46 +34654,46 @@ perfecta armonía.`,
             [_d]: ()=>t.groups
         };
         if (a.incompleteChars) {
-            if (a.incompleteChars.length % 2 > 0) return kf(yH(`Last byte of source string '${e}' is incomplete`, e, a));
+            if (a.incompleteChars.length % 2 > 0) return kf(bH(`Last byte of source string '${e}' is incomplete`, e, a));
             let t = a.byteChars.length + (a.hasPrefix ? 2 : 0);
-            return kf(yH(`Invalid hex-digit '${e[t]}' found in source string at index ${t}`, e, a));
+            return kf(bH(`Invalid hex-digit '${e[t]}' found in source string at index ${t}`, e, a));
         }
-        return a.byteChars ? Of(a) : kf(yH(`Source string '${e}' is not a valid hex-string`, e, a));
-    }, vCe = {
+        return a.byteChars ? Of(a) : kf(bH(`Source string '${e}' is not a valid hex-string`, e, a));
+    }, _Ce = {
         requirePrefix: !1
-    }, bH = (e)=>{
+    }, xH = (e)=>{
         let t = {
-            ...vCe,
+            ..._Ce,
             ...e
         };
-        return Uh((e)=>Rf(_Ce(e), {
+        return Uh((e)=>Rf(gCe(e), {
                 onLeft: (e)=>qf(Hh(e.message, e.meta)),
                 onRight: (n)=>{
                     if (t.requirePrefix && !n.hasPrefix) return qf(Hh(`Source string '${e}' requires a '0x' prefix`));
                     if (!t.requirePrefix && n.hasPrefix) return qf(Hh(`Source string '${e}' has a '0x' prefix but prefixes are not allowed`));
                     if (t.byteLength) {
-                        let r = gH(t.byteLength) ? t.byteLength : vH(t.byteLength), i = n.byteChars.length / 2;
-                        if (!_H(r, i)) return qf(Hh(`Source string '${e}' has a byte length of ${i}, but expected ${r.toString()}`));
+                        let r = _H(t.byteLength) ? t.byteLength : yH(t.byteLength), i = n.byteChars.length / 2;
+                        if (!vH(r, i)) return qf(Hh(`Source string '${e}' has a byte length of ${i}, but expected ${r.toString()}`));
                     }
                     return H();
                 }
             }));
     };
-    bH({
+    xH({
         requirePrefix: !0
     });
-    var yCe = bH({
+    var vCe = xH({
         requirePrefix: !1
-    }), xH = (e)=>bH({
+    }), SH = (e)=>xH({
             requirePrefix: !1,
             ...e
-        }), SH = Gh(Wh(), yCe), CH = Wh(), wH = (e)=>SH.is(e) ? e : (CH.is(e), SH(e)), bCe = /^[a-zA-Z0-9-]+$/, TH = Uh((e)=>e.match(bCe) ? H() : qf(Hh(`Source string '${e}' is not a valid network identifier`))), xCe = TH(`main`), EH = Symbol.for(`platform-js/effect/NetworkId`), DH = Symbol.for(`platform-js/effect/NetworkId#NetworkMoniker`), SCe = lu((e, t)=>pd(e, t), (e)=>e[DH]), OH = (e)=>Du(e, EH), CCe = B(2, (e, t)=>SCe(e, t)), kH = (e)=>({
-            [EH]: EH,
+        }), CH = Gh(Wh(), vCe), wH = Wh(), TH = (e)=>CH.is(e) ? e : (wH.is(e), CH(e)), yCe = /^[a-zA-Z0-9-]+$/, EH = Uh((e)=>e.match(yCe) ? H() : qf(Hh(`Source string '${e}' is not a valid network identifier`))), bCe = EH(`main`), DH = Symbol.for(`platform-js/effect/NetworkId`), OH = Symbol.for(`platform-js/effect/NetworkId#NetworkMoniker`), xCe = lu((e, t)=>pd(e, t), (e)=>e[OH]), kH = (e)=>Du(e, DH), SCe = B(2, (e, t)=>xCe(e, t)), AH = (e)=>({
+            [DH]: DH,
             [fd] (e) {
-                return OH(e) && CCe(this, e);
+                return kH(e) && SCe(this, e);
             },
             toString () {
-                return this[DH] === !0 ? xCe : this[DH];
+                return this[OH] === !0 ? bCe : this[OH];
             },
             toJSON () {
                 return {
@@ -34704,42 +34704,42 @@ perfecta armonía.`,
             [_d] () {
                 return this.toJSON();
             },
-            [DH]: e,
+            [OH]: e,
             isMainNet () {
-                return this[DH] === !0;
+                return this[OH] === !0;
             }
-        }), wCe = Object.create(kH(!0)), TCe = (e)=>Object.create(kH(OH(e) ? e[DH] : e)), AH = Gh(Wh(), xH({
+        }), CCe = Object.create(AH(!0)), wCe = (e)=>Object.create(AH(kH(e) ? e[OH] : e)), jH = Gh(Wh(), SH({
         byteLength: `32..=35`
-    })), jH = class extends dg(`@midnight-ntwrk/platform-js/Configuration#Keys`)() {
-    }, MH = class extends dg(`@midnight-ntwrk/platform-js/Configuration#Network`)() {
-    }, ECe = Fpe([
-        hA(`coinPublic`, BO(IO.pipe(AO(SH)), IO.pipe(AO(CH)))),
-        xD(hA(`signing`, IO.pipe(AO(AH))))
-    ]).pipe(Lpe(`keys`)), DCe = xD(hA(`network`, IO.pipe(AO(TH)))), OCe = cD(sD(jH, QE(function*() {
-        let [e, t] = yield* ECe;
-        return jH.of({
+    })), MH = class extends dg(`@midnight-ntwrk/platform-js/Configuration#Keys`)() {
+    }, NH = class extends dg(`@midnight-ntwrk/platform-js/Configuration#Network`)() {
+    }, TCe = Fpe([
+        hA(`coinPublic`, BO(IO.pipe(AO(CH)), IO.pipe(AO(wH)))),
+        xD(hA(`signing`, IO.pipe(AO(jH))))
+    ]).pipe(Lpe(`keys`)), ECe = xD(hA(`network`, IO.pipe(AO(EH)))), DCe = cD(sD(MH, QE(function*() {
+        let [e, t] = yield* TCe;
+        return MH.of({
             coinPublicKey: e,
             getSigningKey: ()=>t
         });
-    })), sD(MH, QE(function*() {
-        return MH.of(TCe(Zf(yield* DCe, {
+    })), sD(NH, QE(function*() {
+        return NH.of(wCe(Zf(yield* ECe, {
             onSome: Zl,
-            onNone: ()=>wCe
+            onNone: ()=>CCe
         })));
-    }))), kCe = Symbol.for(`compact-js/effect/ContractRuntimeError`), ACe = class extends xA(kCe, `ContractRuntimeError`) {
-    }, NH = (e, t)=>new ACe({
+    }))), OCe = Symbol.for(`compact-js/effect/ContractRuntimeError`), kCe = class extends xA(OCe, `ContractRuntimeError`) {
+    }, PH = (e, t)=>new kCe({
             message: e,
             cause: t
-        }), PH = class extends dg(`compact-js/ZKConfiguration`)() {
-    }, jCe = 1, MCe = 0n, NCe = (e)=>{
+        }), FH = class extends dg(`compact-js/ZKConfiguration`)() {
+    }, ACe = 1, jCe = 0n, MCe = (e)=>{
         let t = new hM(new KA(kM.decode(e.state.state.encode())), e.address);
         return t.block = e.block, t.effects = e.effects, t;
-    }, PCe = (e, t, n, r)=>{
+    }, NCe = (e, t, n, r)=>{
         let i = Cge([
-            new dM(Array.from(t.comIndices).reduce((e, t)=>e.insertCommitment(...t), NCe(e)), n)
+            new dM(Array.from(t.comIndices).reduce((e, t)=>e.insertCommitment(...t), MCe(e)), n)
         ], r ?? qj.initialParameters());
         return i.length === 1 ? Of(i[0]) : kf(Error(`Expected one transcript partition pair, received: ${i.length}`));
-    }, FH = class {
+    }, IH = class {
         compiledContract;
         transform;
         constructor(e, t = Zl){
@@ -34750,19 +34750,19 @@ perfecta armonía.`,
         }
         initialize(e, ...t) {
             return XE({
-                zkConfigReader: PH.pipe(gpe((e)=>e.createReader(this.compiledContract))),
-                keyConfig: jH,
+                zkConfigReader: FH.pipe(gpe((e)=>e.createReader(this.compiledContract))),
+                keyConfig: MH,
                 contract: this.createContract()
             }).pipe(aD(({ zkConfigReader: n, keyConfig: r, contract: i })=>tD({
                     try: ()=>{
-                        let { currentContractState: n, currentPrivateState: a, currentZswapLocalState: o } = i.initialState(sc(e, wH(r.coinPublicKey)), ...t);
+                        let { currentContractState: n, currentPrivateState: a, currentZswapLocalState: o } = i.initialState(sc(e, TH(r.coinPublicKey)), ...t);
                         return {
                             contractState: n,
                             privateState: a,
                             zswapLocalState: ac(o)
                         };
                     },
-                    catch: (e)=>e instanceof S ? NH(`Failed to initialize contract`, e) : CA(`Failed to configure constructor context with coin public key`, void 0, e)
+                    catch: (e)=>e instanceof S ? PH(`Failed to initialize contract`, e) : CA(`Failed to configure constructor context with coin public key`, void 0, e)
                 }).pipe(aD(({ contractState: e, privateState: t, zswapLocalState: a })=>QE(this, function*() {
                         let o = yield* n.getVerifierKeys(bA(i));
                         for (let [t, n] of o){
@@ -34790,13 +34790,13 @@ perfecta armonía.`,
         }
         circuit(e, t, ...n) {
             return XE({
-                keyConfig: jH,
+                keyConfig: MH,
                 contract: this.createContract()
             }).pipe(aD(({ keyConfig: r, contract: i })=>tD({
                     try: ()=>{
                         let a = i.provableCircuits[e];
                         if (!a) throw Error(`Circuit ${this.compiledContract.tag}#${e} could not be found.`);
-                        let o = t.zswapLocalState ? ic(t.zswapLocalState) : tc(wH(r.coinPublicKey)), s = fc(t.address, o, t.contractState, t.privateState), c = s.currentQueryContext;
+                        let o = t.zswapLocalState ? ic(t.zswapLocalState) : tc(TH(r.coinPublicKey)), s = fc(t.address, o, t.contractState, t.privateState), c = s.currentQueryContext;
                         return {
                             ...a(s, ...n),
                             initialTxContext: c
@@ -34808,7 +34808,7 @@ perfecta armonía.`,
                             public: {
                                 contractState: r.currentQueryContext.state.state,
                                 publicTranscript: i.publicTranscript,
-                                partitionedTranscript: yield* PCe(e, r.currentQueryContext, i.publicTranscript, t.ledgerParameters)
+                                partitionedTranscript: yield* NCe(e, r.currentQueryContext, i.publicTranscript, t.ledgerParameters)
                             },
                             private: {
                                 result: n,
@@ -34819,14 +34819,14 @@ perfecta armonía.`,
                                 zswapLocalState: ac(r.currentZswapLocalState)
                             }
                         };
-                    })), rD((t)=>NH(`Error executing circuit '${e}'`, t)))), this.transform);
+                    })), rD((t)=>PH(`Error executing circuit '${e}'`, t)))), this.transform);
         }
         getProvableCircuitIds() {
             return bA(oD(this.createContract()));
         }
         replaceContractMaintenanceAuthority(e, t) {
             return XE({
-                keyConfig: jH
+                keyConfig: MH
             }).pipe(aD(({ keyConfig: n })=>QE(this, function*() {
                     let { contractState: r } = t, [i, a] = yield* this.createMaintenanceAuthority(e, r), o = ij.deserialize(i.serialize()), s = yield* this.createSignedMaintenanceUpdate(()=>Of([
                             new yM(o)
@@ -34842,7 +34842,7 @@ perfecta armonía.`,
         }
         removeContractOperation(e, t) {
             return XE({
-                keyConfig: jH
+                keyConfig: MH
             }).pipe(aD(({ keyConfig: n })=>QE(this, function*() {
                     return yield* this.createSignedMaintenanceUpdate(()=>Of([
                             new ZM(e, new cj(`v3`))
@@ -34851,7 +34851,7 @@ perfecta armonía.`,
         }
         addOrReplaceContractOperation(e, t, n) {
             return XE({
-                keyConfig: jH
+                keyConfig: MH
             }).pipe(aD(({ keyConfig: r })=>QE(this, function*() {
                     return yield* this.createSignedMaintenanceUpdate(()=>Of([
                             new YM(e, new uj(`v3`, t))
@@ -34866,7 +34866,7 @@ perfecta armonía.`,
             let s = new Zj(r, Vf(o), i.maintenanceAuthority.counter);
             return Of({
                 public: {
-                    maintenanceUpdate: s.addSignature(MCe, Oge(op(a), s.dataToSign))
+                    maintenanceUpdate: s.addSignature(jCe, Oge(op(a), s.dataToSign))
                 },
                 private: {
                     signingKey: op(a)
@@ -34876,13 +34876,13 @@ perfecta armonía.`,
         createMaintenanceAuthority(e, t) {
             let n = Zf(e, {
                 onSome: Zl,
-                onNone: ()=>AH(It())
+                onNone: ()=>jH(It())
             });
             try {
                 return Of([
                     new tn([
                         jt(n)
-                    ], jCe, t ? t.maintenanceAuthority.counter + 1n : 0n),
+                    ], ACe, t ? t.maintenanceAuthority.counter + 1n : 0n),
                     n
                 ]);
             } catch (e) {
@@ -34890,24 +34890,24 @@ perfecta armonía.`,
             }
         }
         createContract() {
-            return this.contract ??= sge(this.compiledContract).pipe(rD((e)=>NH(String(e), e)), upe, oD);
+            return this.contract ??= sge(this.compiledContract).pipe(rD((e)=>PH(String(e), e)), upe, oD);
         }
         contract;
-    }, IH = (e)=>new FH(e);
-    B(2, (e, t)=>new FH(e.compiledContract, (e)=>hpe(e, t)));
-    var FCe = (e)=>Tme(e), ICe = Symbol.for(`compact-js/effect/ZKConfigurationReadError`), LCe = class extends xA(ICe, `ZKConfigurationReadError`) {
-    }, RCe = (e, t, n, r)=>new LCe({
+    }, LH = (e)=>new IH(e);
+    B(2, (e, t)=>new IH(e.compiledContract, (e)=>hpe(e, t)));
+    var PCe = (e)=>Tme(e), FCe = Symbol.for(`compact-js/effect/ZKConfigurationReadError`), ICe = class extends xA(FCe, `ZKConfigurationReadError`) {
+    }, LCe = (e, t, n, r)=>new ICe({
             contractTag: e,
             provableCircuitId: t,
             assetType: n,
             message: `Failed to read ${n.replaceAll(`-`, ` `)} for ${e}#${t}`,
             cause: r
-        }), LH = Gh(Wh(), xH({
+        }), RH = Gh(Wh(), SH({
         byteLength: `32..=32`
-    })), zCe = (e)=>(t)=>QE(function*() {
+    })), RCe = (e)=>(t)=>QE(function*() {
                 let n = (n)=>ppe({
                         try: ()=>e.getVerifierKey(n).then((e)=>qf(vA(e))),
-                        catch: (e)=>RCe(t.tag, n, `verifier-key`, e)
+                        catch: (e)=>LCe(t.tag, n, `verifier-key`, e)
                     });
                 return {
                     getVerifierKey: n,
@@ -34919,11 +34919,11 @@ perfecta armonía.`,
                             discard: !1
                         })
                 };
-            }), BCe = (e, t)=>cD(ype(PH, PH.of({
-            createReader: zCe(e)
-        })), OCe).pipe(bpe(xpe(zpe(t, {
+            }), zCe = (e, t)=>cD(ype(FH, FH.of({
+            createReader: RCe(e)
+        })), DCe).pipe(bpe(xpe(zpe(t, {
             pathDelim: `_`
-        }).pipe(Bpe)))), RH = (e, t)=>{
+        }).pipe(Bpe)))), zH = (e, t)=>{
         let n = [
             [
                 `KEYS_COIN_PUBLIC`,
@@ -34935,27 +34935,27 @@ perfecta armonía.`,
                 `KEYS_SIGNING`,
                 t.signingKey
             ]
-        ])), FCe(BCe(e, new Map(n)));
-    }, zH = (e)=>Doe(e, {
+        ])), PCe(zCe(e, new Map(n)));
+    }, BH = (e)=>Doe(e, {
             onSuccess: (e)=>e,
             onFailure: (e)=>{
                 throw jT(e) ? e.error : Error(`Unexpected error: ${NT(e)}`);
             }
-        }), VCe = (e)=>qf(e), BH = (e)=>LH(e), VH = class extends Error {
+        }), BCe = (e)=>qf(e), VH = (e)=>RH(e), HH = class extends Error {
         invalidScheme;
         allowableSchemes;
         constructor(e, t){
             super(`Invalid protocol scheme: '${e}'. Allowable schemes are one of: ${t.join(`,`)}`), this.invalidScheme = e, this.allowableSchemes = t;
         }
-    }, HCe;
+    }, VCe;
     (function(e) {
         e.INFO = `info`, e.WARN = `warn`, e.ERROR = `error`, e.FATAL = `fatal`, e.DEBUG = `debug`, e.TRACE = `trace`;
-    })(HCe ||= {});
-    var UCe = (e)=>e, WCe = (e)=>e, GCe = (e)=>e, KCe = (e)=>({
+    })(VCe ||= {});
+    var HCe = (e)=>e, UCe = (e)=>e, WCe = (e)=>e, GCe = (e)=>({
             proverKey: e.proverKey,
             verifierKey: e.verifierKey,
             ir: e.zkir
-        }), qCe = `SegmentFail`, JCe = `SegmentSuccess`, YCe = `FailEntirely`, XCe = `FailFallible`, ZCe = `SucceedEntirely`, QCe = class {
+        }), KCe = `SegmentFail`, qCe = `SegmentSuccess`, JCe = `FailEntirely`, YCe = `FailFallible`, XCe = `SucceedEntirely`, ZCe = class {
         async getVerifierKeys(e) {
             return Promise.all(e.map(async (e)=>[
                     e,
@@ -34973,7 +34973,7 @@ perfecta armonía.`,
         asKeyMaterialProvider() {
             return this;
         }
-    }, HH = u(s(((e, t)=>{
+    }, UH = u(s(((e, t)=>{
         var n = typeof globalThis < `u` && globalThis || typeof self < `u` && self || typeof globalThis < `u` && globalThis, r = (function() {
             function e() {
                 this.fetch = !1, this.DOMException = n.DOMException;
@@ -35303,13 +35303,13 @@ perfecta armonía.`,
         })(r), r.fetch.ponyfill = !0, delete r.fetch.polyfill;
         var i = n.fetch ? n : r;
         e = i.fetch, e.default = i.fetch, e.fetch = i.fetch, e.Headers = i.Headers, e.Request = i.Request, e.Response = i.Response, t.exports = e;
-    }))(), 1), UH = `keys`, $Ce = `.prover`, ewe = `.verifier`, twe = `zkir`, nwe = `.bzkir`, rwe = class extends QCe {
+    }))(), 1), WH = `keys`, QCe = `.prover`, $Ce = `.verifier`, ewe = `zkir`, twe = `.bzkir`, nwe = class extends ZCe {
         baseURL;
         fetchFunc;
-        constructor(e, t = HH.fetch){
+        constructor(e, t = UH.fetch){
             super(), this.baseURL = e, this.fetchFunc = t;
             let n = new URL(e);
-            if (n.protocol !== `http:` && n.protocol !== `https:`) throw new VH(n.protocol, [
+            if (n.protocol !== `http:` && n.protocol !== `https:`) throw new HH(n.protocol, [
                 `http:`,
                 `https:`
             ]);
@@ -35322,75 +35322,75 @@ perfecta armonía.`,
             throw Error(i.statusText);
         }
         getProverKey(e) {
-            return this.sendRequest(UH, e, $Ce, `arraybuffer`).then(UCe);
+            return this.sendRequest(WH, e, QCe, `arraybuffer`).then(HCe);
         }
         getVerifierKey(e) {
-            return this.sendRequest(UH, e, ewe, `arraybuffer`).then(WCe);
+            return this.sendRequest(WH, e, $Ce, `arraybuffer`).then(UCe);
         }
         getZKIR(e) {
-            return this.sendRequest(twe, e, nwe, `arraybuffer`).then(GCe);
+            return this.sendRequest(ewe, e, twe, `arraybuffer`).then(WCe);
         }
-    }, WH = c({
-        __addDisposableResource: ()=>vU,
+    }, GH = c({
+        __addDisposableResource: ()=>yU,
         __assign: ()=>Y,
-        __asyncDelegator: ()=>uU,
-        __asyncGenerator: ()=>lU,
-        __asyncValues: ()=>dU,
-        __await: ()=>cU,
-        __awaiter: ()=>eU,
-        __classPrivateFieldGet: ()=>hU,
-        __classPrivateFieldIn: ()=>_U,
-        __classPrivateFieldSet: ()=>gU,
-        __createBinding: ()=>SU,
-        __decorate: ()=>qH,
-        __disposeResources: ()=>yU,
-        __esDecorate: ()=>YH,
-        __exportStar: ()=>nU,
-        __extends: ()=>GH,
-        __generator: ()=>tU,
-        __importDefault: ()=>mU,
-        __importStar: ()=>pU,
-        __makeTemplateObject: ()=>fU,
-        __metadata: ()=>$H,
-        __param: ()=>JH,
-        __propKey: ()=>ZH,
-        __read: ()=>iU,
-        __rest: ()=>KH,
-        __rewriteRelativeImportExtension: ()=>bU,
-        __runInitializers: ()=>XH,
-        __setFunctionName: ()=>QH,
-        __spread: ()=>aU,
-        __spreadArray: ()=>sU,
-        __spreadArrays: ()=>oU,
-        __values: ()=>rU,
-        default: ()=>EU
+        __asyncDelegator: ()=>dU,
+        __asyncGenerator: ()=>uU,
+        __asyncValues: ()=>fU,
+        __await: ()=>lU,
+        __awaiter: ()=>tU,
+        __classPrivateFieldGet: ()=>gU,
+        __classPrivateFieldIn: ()=>vU,
+        __classPrivateFieldSet: ()=>_U,
+        __createBinding: ()=>CU,
+        __decorate: ()=>JH,
+        __disposeResources: ()=>bU,
+        __esDecorate: ()=>XH,
+        __exportStar: ()=>rU,
+        __extends: ()=>KH,
+        __generator: ()=>nU,
+        __importDefault: ()=>hU,
+        __importStar: ()=>mU,
+        __makeTemplateObject: ()=>pU,
+        __metadata: ()=>eU,
+        __param: ()=>YH,
+        __propKey: ()=>QH,
+        __read: ()=>aU,
+        __rest: ()=>qH,
+        __rewriteRelativeImportExtension: ()=>xU,
+        __runInitializers: ()=>ZH,
+        __setFunctionName: ()=>$H,
+        __spread: ()=>oU,
+        __spreadArray: ()=>cU,
+        __spreadArrays: ()=>sU,
+        __values: ()=>iU,
+        default: ()=>DU
     });
-    function GH(e, t) {
+    function KH(e, t) {
         if (typeof t != `function` && t !== null) throw TypeError(`Class extends value ` + String(t) + ` is not a constructor or null`);
-        xU(e, t);
+        SU(e, t);
         function n() {
             this.constructor = e;
         }
         e.prototype = t === null ? Object.create(t) : (n.prototype = t.prototype, new n);
     }
-    function KH(e, t) {
+    function qH(e, t) {
         var n = {};
         for(var r in e)Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
         if (e != null && typeof Object.getOwnPropertySymbols == `function`) for(var i = 0, r = Object.getOwnPropertySymbols(e); i < r.length; i++)t.indexOf(r[i]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[i]) && (n[r[i]] = e[r[i]]);
         return n;
     }
-    function qH(e, t, n, r) {
+    function JH(e, t, n, r) {
         var i = arguments.length, a = i < 3 ? t : r === null ? r = Object.getOwnPropertyDescriptor(t, n) : r, o;
         if (typeof Reflect == `object` && typeof Reflect.decorate == `function`) a = Reflect.decorate(e, t, n, r);
         else for(var s = e.length - 1; s >= 0; s--)(o = e[s]) && (a = (i < 3 ? o(a) : i > 3 ? o(t, n, a) : o(t, n)) || a);
         return i > 3 && a && Object.defineProperty(t, n, a), a;
     }
-    function JH(e, t) {
+    function YH(e, t) {
         return function(n, r) {
             t(n, r, e);
         };
     }
-    function YH(e, t, n, r, i, a) {
+    function XH(e, t, n, r, i, a) {
         function o(e) {
             if (e !== void 0 && typeof e != `function`) throw TypeError(`Function expected`);
             return e;
@@ -35415,23 +35415,23 @@ perfecta armonía.`,
         }
         l && Object.defineProperty(l, r.name, u), f = !0;
     }
-    function XH(e, t, n) {
+    function ZH(e, t, n) {
         for(var r = arguments.length > 2, i = 0; i < t.length; i++)n = r ? t[i].call(e, n) : t[i].call(e);
         return r ? n : void 0;
     }
-    function ZH(e) {
+    function QH(e) {
         return typeof e == `symbol` ? e : `${e}`;
     }
-    function QH(e, t, n) {
+    function $H(e, t, n) {
         return typeof t == `symbol` && (t = t.description ? `[${t.description}]` : ``), Object.defineProperty(e, `name`, {
             configurable: !0,
             value: n ? `${n} ${t}` : t
         });
     }
-    function $H(e, t) {
+    function eU(e, t) {
         if (typeof Reflect == `object` && typeof Reflect.metadata == `function`) return Reflect.metadata(e, t);
     }
-    function eU(e, t, n, r) {
+    function tU(e, t, n, r) {
         function i(e) {
             return e instanceof n ? e : new n(function(t) {
                 t(e);
@@ -35458,7 +35458,7 @@ perfecta armonía.`,
             c((r = r.apply(e, t || [])).next());
         });
     }
-    function tU(e, t) {
+    function nU(e, t) {
         var n = {
             label: 0,
             sent: function() {
@@ -35540,10 +35540,10 @@ perfecta armonía.`,
             };
         }
     }
-    function nU(e, t) {
-        for(var n in e)n !== `default` && !Object.prototype.hasOwnProperty.call(t, n) && SU(t, e, n);
+    function rU(e, t) {
+        for(var n in e)n !== `default` && !Object.prototype.hasOwnProperty.call(t, n) && CU(t, e, n);
     }
-    function rU(e) {
+    function iU(e) {
         var t = typeof Symbol == `function` && Symbol.iterator, n = t && e[t], r = 0;
         if (n) return n.call(e);
         if (e && typeof e.length == `number`) return {
@@ -35556,7 +35556,7 @@ perfecta armonía.`,
         };
         throw TypeError(t ? `Object is not iterable.` : `Symbol.iterator is not defined.`);
     }
-    function iU(e, t) {
+    function aU(e, t) {
         var n = typeof Symbol == `function` && e[Symbol.iterator];
         if (!n) return e;
         var r = n.call(e), i, a = [], o;
@@ -35575,23 +35575,23 @@ perfecta armonía.`,
         }
         return a;
     }
-    function aU() {
-        for(var e = [], t = 0; t < arguments.length; t++)e = e.concat(iU(arguments[t]));
+    function oU() {
+        for(var e = [], t = 0; t < arguments.length; t++)e = e.concat(aU(arguments[t]));
         return e;
     }
-    function oU() {
+    function sU() {
         for(var e = 0, t = 0, n = arguments.length; t < n; t++)e += arguments[t].length;
         for(var r = Array(e), i = 0, t = 0; t < n; t++)for(var a = arguments[t], o = 0, s = a.length; o < s; o++, i++)r[i] = a[o];
         return r;
     }
-    function sU(e, t, n) {
+    function cU(e, t, n) {
         if (n || arguments.length === 2) for(var r = 0, i = t.length, a; r < i; r++)(a || !(r in t)) && (a ||= Array.prototype.slice.call(t, 0, r), a[r] = t[r]);
         return e.concat(a || Array.prototype.slice.call(t));
     }
-    function cU(e) {
-        return this instanceof cU ? (this.v = e, this) : new cU(e);
+    function lU(e) {
+        return this instanceof lU ? (this.v = e, this) : new lU(e);
     }
-    function lU(e, t, n) {
+    function uU(e, t, n) {
         if (!Symbol.asyncIterator) throw TypeError(`Symbol.asyncIterator is not defined.`);
         var r = n.apply(e, t || []), i, a = [];
         return i = Object.create((typeof AsyncIterator == `function` ? AsyncIterator : Object).prototype), s(`next`), s(`throw`), s(`return`, o), i[Symbol.asyncIterator] = function() {
@@ -35622,7 +35622,7 @@ perfecta armonía.`,
             }
         }
         function l(e) {
-            e.value instanceof cU ? Promise.resolve(e.value.v).then(u, d) : f(a[0][2], e);
+            e.value instanceof lU ? Promise.resolve(e.value.v).then(u, d) : f(a[0][2], e);
         }
         function u(e) {
             c(`next`, e);
@@ -35634,7 +35634,7 @@ perfecta armonía.`,
             e(t), a.shift(), a.length && c(a[0][0], a[0][1]);
         }
     }
-    function uU(e) {
+    function dU(e) {
         var t, n;
         return t = {}, r(`next`), r(`throw`, function(e) {
             throw e;
@@ -35644,16 +35644,16 @@ perfecta armonía.`,
         function r(r, i) {
             t[r] = e[r] ? function(t) {
                 return (n = !n) ? {
-                    value: cU(e[r](t)),
+                    value: lU(e[r](t)),
                     done: !1
                 } : i ? i(t) : t;
             } : i;
         }
     }
-    function dU(e) {
+    function fU(e) {
         if (!Symbol.asyncIterator) throw TypeError(`Symbol.asyncIterator is not defined.`);
         var t = e[Symbol.asyncIterator], n;
-        return t ? t.call(e) : (e = typeof rU == `function` ? rU(e) : e[Symbol.iterator](), n = {}, r(`next`), r(`throw`), r(`return`), n[Symbol.asyncIterator] = function() {
+        return t ? t.call(e) : (e = typeof iU == `function` ? iU(e) : e[Symbol.iterator](), n = {}, r(`next`), r(`throw`), r(`return`), n[Symbol.asyncIterator] = function() {
             return this;
         }, n);
         function r(t) {
@@ -35672,38 +35672,38 @@ perfecta armonía.`,
             }, t);
         }
     }
-    function fU(e, t) {
+    function pU(e, t) {
         return Object.defineProperty ? Object.defineProperty(e, `raw`, {
             value: t
         }) : e.raw = t, e;
     }
-    function pU(e) {
+    function mU(e) {
         if (e && e.__esModule) return e;
         var t = {};
-        if (e != null) for(var n = wU(e), r = 0; r < n.length; r++)n[r] !== `default` && SU(t, e, n[r]);
-        return CU(t, e), t;
+        if (e != null) for(var n = TU(e), r = 0; r < n.length; r++)n[r] !== `default` && CU(t, e, n[r]);
+        return wU(t, e), t;
     }
-    function mU(e) {
+    function hU(e) {
         return e && e.__esModule ? e : {
             default: e
         };
     }
-    function hU(e, t, n, r) {
+    function gU(e, t, n, r) {
         if (n === `a` && !r) throw TypeError(`Private accessor was defined without a getter`);
         if (typeof t == `function` ? e !== t || !r : !t.has(e)) throw TypeError(`Cannot read private member from an object whose class did not declare it`);
         return n === `m` ? r : n === `a` ? r.call(e) : r ? r.value : t.get(e);
     }
-    function gU(e, t, n, r, i) {
+    function _U(e, t, n, r, i) {
         if (r === `m`) throw TypeError(`Private method is not writable`);
         if (r === `a` && !i) throw TypeError(`Private accessor was defined without a setter`);
         if (typeof t == `function` ? e !== t || !i : !t.has(e)) throw TypeError(`Cannot write private member to an object whose class did not declare it`);
         return r === `a` ? i.call(e, n) : i ? i.value = n : t.set(e, n), n;
     }
-    function _U(e, t) {
+    function vU(e, t) {
         if (t === null || typeof t != `object` && typeof t != `function`) throw TypeError(`Cannot use 'in' operator on non-object`);
         return typeof e == `function` ? t === e : e.has(t);
     }
-    function vU(e, t, n) {
+    function yU(e, t, n) {
         if (t != null) {
             if (typeof t != `object` && typeof t != `function`) throw TypeError(`Object expected.`);
             var r, i;
@@ -35732,9 +35732,9 @@ perfecta armonía.`,
         });
         return t;
     }
-    function yU(e) {
+    function bU(e) {
         function t(t) {
-            e.error = e.hasError ? new TU(t, e.error, `An error was suppressed during disposal.`) : t, e.hasError = !0;
+            e.error = e.hasError ? new EU(t, e.error, `An error was suppressed during disposal.`) : t, e.hasError = !0;
         }
         var n, r = 0;
         function i() {
@@ -35754,26 +35754,26 @@ perfecta armonía.`,
         }
         return i();
     }
-    function bU(e, t) {
+    function xU(e, t) {
         return typeof e == `string` && /^\.\.?\//.test(e) ? e.replace(/\.(tsx)$|((?:\.d)?)((?:\.[^./]+?)?)\.([cm]?)ts$/i, function(e, n, r, i, a) {
             return n ? t ? `.jsx` : `.js` : r && (!i || !a) ? e : r + i + `.` + a.toLowerCase() + `js`;
         }) : e;
     }
-    var xU, Y, SU, CU, wU, TU, EU, DU = o((()=>{
-        xU = function(e, t) {
-            return xU = Object.setPrototypeOf || {
+    var SU, Y, CU, wU, TU, EU, DU, OU = o((()=>{
+        SU = function(e, t) {
+            return SU = Object.setPrototypeOf || {
                 __proto__: []
             } instanceof Array && function(e, t) {
                 e.__proto__ = t;
             } || function(e, t) {
                 for(var n in t)Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n]);
-            }, xU(e, t);
+            }, SU(e, t);
         }, Y = function() {
             return Y = Object.assign || function(e) {
                 for(var t, n = 1, r = arguments.length; n < r; n++)for(var i in t = arguments[n], t)Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
                 return e;
             }, Y.apply(this, arguments);
-        }, SU = Object.create ? (function(e, t, n, r) {
+        }, CU = Object.create ? (function(e, t, n, r) {
             r === void 0 && (r = n);
             var i = Object.getOwnPropertyDescriptor(t, n);
             (!i || (`get` in i ? !t.__esModule : i.writable || i.configurable)) && (i = {
@@ -35784,220 +35784,220 @@ perfecta armonía.`,
             }), Object.defineProperty(e, r, i);
         }) : (function(e, t, n, r) {
             r === void 0 && (r = n), e[r] = t[n];
-        }), CU = Object.create ? (function(e, t) {
+        }), wU = Object.create ? (function(e, t) {
             Object.defineProperty(e, `default`, {
                 enumerable: !0,
                 value: t
             });
         }) : function(e, t) {
             e.default = t;
-        }, wU = function(e) {
-            return wU = Object.getOwnPropertyNames || function(e) {
+        }, TU = function(e) {
+            return TU = Object.getOwnPropertyNames || function(e) {
                 var t = [];
                 for(var n in e)Object.prototype.hasOwnProperty.call(e, n) && (t[t.length] = n);
                 return t;
-            }, wU(e);
-        }, TU = typeof SuppressedError == `function` ? SuppressedError : function(e, t, n) {
+            }, TU(e);
+        }, EU = typeof SuppressedError == `function` ? SuppressedError : function(e, t, n) {
             var r = Error(n);
             return r.name = `SuppressedError`, r.error = e, r.suppressed = t, r;
-        }, EU = {
-            __extends: GH,
+        }, DU = {
+            __extends: KH,
             __assign: Y,
-            __rest: KH,
-            __decorate: qH,
-            __param: JH,
-            __esDecorate: YH,
-            __runInitializers: XH,
-            __propKey: ZH,
-            __setFunctionName: QH,
-            __metadata: $H,
-            __awaiter: eU,
-            __generator: tU,
-            __createBinding: SU,
-            __exportStar: nU,
-            __values: rU,
-            __read: iU,
-            __spread: aU,
-            __spreadArrays: oU,
-            __spreadArray: sU,
-            __await: cU,
-            __asyncGenerator: lU,
-            __asyncDelegator: uU,
-            __asyncValues: dU,
-            __makeTemplateObject: fU,
-            __importStar: pU,
-            __importDefault: mU,
-            __classPrivateFieldGet: hU,
-            __classPrivateFieldSet: gU,
-            __classPrivateFieldIn: _U,
-            __addDisposableResource: vU,
-            __disposeResources: yU,
-            __rewriteRelativeImportExtension: bU
+            __rest: qH,
+            __decorate: JH,
+            __param: YH,
+            __esDecorate: XH,
+            __runInitializers: ZH,
+            __propKey: QH,
+            __setFunctionName: $H,
+            __metadata: eU,
+            __awaiter: tU,
+            __generator: nU,
+            __createBinding: CU,
+            __exportStar: rU,
+            __values: iU,
+            __read: aU,
+            __spread: oU,
+            __spreadArrays: sU,
+            __spreadArray: cU,
+            __await: lU,
+            __asyncGenerator: uU,
+            __asyncDelegator: dU,
+            __asyncValues: fU,
+            __makeTemplateObject: pU,
+            __importStar: mU,
+            __importDefault: hU,
+            __classPrivateFieldGet: gU,
+            __classPrivateFieldSet: _U,
+            __classPrivateFieldIn: vU,
+            __addDisposableResource: yU,
+            __disposeResources: bU,
+            __rewriteRelativeImportExtension: xU
         };
-    })), iwe = c({
-        InvariantError: ()=>NU,
-        default: ()=>IU,
-        invariant: ()=>OU,
-        setVerbosity: ()=>awe
+    })), rwe = c({
+        InvariantError: ()=>PU,
+        default: ()=>LU,
+        invariant: ()=>kU,
+        setVerbosity: ()=>iwe
     });
-    function OU(e, t) {
-        if (!e) throw new NU(t);
+    function kU(e, t) {
+        if (!e) throw new PU(t);
     }
-    function kU(e) {
+    function AU(e) {
         return function() {
-            if (PU.indexOf(e) >= FU) return (console[e] || console.log).apply(console, arguments);
+            if (FU.indexOf(e) >= IU) return (console[e] || console.log).apply(console, arguments);
         };
     }
-    function awe(e) {
-        var t = PU[FU];
-        return FU = Math.max(0, PU.indexOf(e)), t;
+    function iwe(e) {
+        var t = FU[IU];
+        return IU = Math.max(0, FU.indexOf(e)), t;
     }
-    var AU, jU, MU, NU, PU, FU, IU, LU = o((()=>{
-        DU(), AU = `Invariant Violation`, jU = Object.setPrototypeOf, MU = jU === void 0 ? function(e, t) {
+    var jU, MU, NU, PU, FU, IU, LU, RU = o((()=>{
+        OU(), jU = `Invariant Violation`, MU = Object.setPrototypeOf, NU = MU === void 0 ? function(e, t) {
             return e.__proto__ = t, e;
-        } : jU, NU = function(e) {
-            GH(t, e);
+        } : MU, PU = function(e) {
+            KH(t, e);
             function t(n) {
-                n === void 0 && (n = AU);
-                var r = e.call(this, typeof n == `number` ? AU + `: ` + n + ` (see https://github.com/apollographql/invariant-packages)` : n) || this;
-                return r.framesToPop = 1, r.name = AU, MU(r, t.prototype), r;
+                n === void 0 && (n = jU);
+                var r = e.call(this, typeof n == `number` ? jU + `: ` + n + ` (see https://github.com/apollographql/invariant-packages)` : n) || this;
+                return r.framesToPop = 1, r.name = jU, NU(r, t.prototype), r;
             }
             return t;
-        }(Error), PU = [
+        }(Error), FU = [
             `debug`,
             `log`,
             `warn`,
             `error`,
             `silent`
-        ], FU = PU.indexOf(`log`), (function(e) {
-            e.debug = kU(`debug`), e.log = kU(`log`), e.warn = kU(`warn`), e.error = kU(`error`);
-        })(OU ||= {}), IU = OU;
-    })), RU, owe = o((()=>{
-        RU = `3.14.1`;
+        ], IU = FU.indexOf(`log`), (function(e) {
+            e.debug = AU(`debug`), e.log = AU(`log`), e.warn = AU(`warn`), e.error = AU(`error`);
+        })(kU ||= {}), LU = kU;
+    })), zU, awe = o((()=>{
+        zU = `3.14.1`;
     }));
-    function zU(e) {
+    function BU(e) {
         try {
             return e();
         } catch  {}
     }
-    var BU = o((()=>{})), VU, HU = o((()=>{
-        BU(), VU = zU(function() {
+    var VU = o((()=>{})), HU, UU = o((()=>{
+        VU(), HU = BU(function() {
             return globalThis;
-        }) || zU(function() {
+        }) || BU(function() {
             return window;
-        }) || zU(function() {
+        }) || BU(function() {
             return self;
-        }) || zU(function() {
+        }) || BU(function() {
             return globalThis;
-        }) || zU(function() {
-            return zU.constructor(`return this`)();
+        }) || BU(function() {
+            return BU.constructor(`return this`)();
         });
     }));
-    function UU(e) {
-        var t = WU.get(e) || 1;
-        return WU.set(e, t + 1), `${e}:${t}:${Math.random().toString(36).slice(2)}`;
+    function WU(e) {
+        var t = GU.get(e) || 1;
+        return GU.set(e, t + 1), `${e}:${t}:${Math.random().toString(36).slice(2)}`;
     }
-    var WU, GU = o((()=>{
-        WU = new Map;
+    var GU, KU = o((()=>{
+        GU = new Map;
     }));
-    function KU(e, t) {
+    function qU(e, t) {
         t === void 0 && (t = 0);
-        var n = UU(`stringifyForDisplay`);
+        var n = WU(`stringifyForDisplay`);
         return JSON.stringify(e, function(e, t) {
             return t === void 0 ? n : t;
         }, t).split(JSON.stringify(n)).join(`<undefined>`);
     }
-    var qU = o((()=>{
-        GU();
+    var JU = o((()=>{
+        KU();
     }));
-    function JU(e) {
+    function YU(e) {
         return function(t) {
             var n = [
                 ...arguments
             ].slice(1);
             if (typeof t == `number`) {
                 var r = t;
-                t = ZU(r), t || (t = QU(r, n), n = []);
+                t = QU(r), t || (t = $U(r, n), n = []);
             }
             e.apply(void 0, [
                 t
             ].concat(n));
         };
     }
-    function YU(e) {
+    function XU(e) {
         var t = [
             ...arguments
         ].slice(1);
-        return new NU(ZU(e, t) || QU(e, t));
+        return new PU(QU(e, t) || $U(e, t));
     }
-    function XU(e) {
+    function ZU(e) {
         if (typeof e == `string`) return e;
         try {
-            return KU(e, 2).slice(0, 1e3);
+            return qU(e, 2).slice(0, 1e3);
         } catch  {
             return `<non-serializable>`;
         }
     }
-    function ZU(e, t) {
-        if (t === void 0 && (t = []), e) return VU[eW] && VU[eW](e, t.map(XU));
-    }
     function QU(e, t) {
+        if (t === void 0 && (t = []), e) return HU[tW] && HU[tW](e, t.map(ZU));
+    }
+    function $U(e, t) {
         if (t === void 0 && (t = []), e) return `An error occurred! For more details, see the full error text at https://go.apollo.dev/c/err#${encodeURIComponent(JSON.stringify({
-            version: RU,
+            version: zU,
             message: e,
-            args: t.map(XU)
+            args: t.map(ZU)
         }))}`;
     }
-    var $U, eW, swe = o((()=>{
-        LU(), owe(), HU(), qU(), $U = Object.assign(function(e, t) {
+    var eW, tW, owe = o((()=>{
+        RU(), awe(), UU(), JU(), eW = Object.assign(function(e, t) {
             var n = [
                 ...arguments
             ].slice(2);
-            e || OU(e, ZU(t, n) || QU(t, n));
+            e || kU(e, QU(t, n) || $U(t, n));
         }, {
-            debug: JU(OU.debug),
-            log: JU(OU.log),
-            warn: JU(OU.warn),
-            error: JU(OU.error)
-        }), eW = Symbol.for(`ApolloErrorMessageHandler_` + RU);
-    })), tW = c({
-        DEV: ()=>nW,
-        InvariantError: ()=>NU,
-        __DEV__: ()=>nW,
-        global: ()=>VU,
-        invariant: ()=>$U,
-        maybe: ()=>zU,
-        newInvariantError: ()=>YU
-    }), nW, rW = o((()=>{
-        swe(), BU(), HU(), nW = globalThis.__DEV__ !== !1;
-    })), iW, aW, cwe = o((()=>{
-        iW = `16.13.2`, aW = Object.freeze({
+            debug: YU(kU.debug),
+            log: YU(kU.log),
+            warn: YU(kU.warn),
+            error: YU(kU.error)
+        }), tW = Symbol.for(`ApolloErrorMessageHandler_` + zU);
+    })), nW = c({
+        DEV: ()=>rW,
+        InvariantError: ()=>PU,
+        __DEV__: ()=>rW,
+        global: ()=>HU,
+        invariant: ()=>eW,
+        maybe: ()=>BU,
+        newInvariantError: ()=>XU
+    }), rW, iW = o((()=>{
+        owe(), VU(), UU(), rW = globalThis.__DEV__ !== !1;
+    })), aW, oW, swe = o((()=>{
+        aW = `16.13.2`, oW = Object.freeze({
             major: 16,
             minor: 13,
             patch: 2,
             preReleaseTag: null
         });
     }));
-    function oW(e, t) {
+    function sW(e, t) {
         if (!e) throw Error(t);
     }
-    var sW = o((()=>{}));
-    function cW(e) {
+    var cW = o((()=>{}));
+    function lW(e) {
         return typeof e?.then == `function`;
     }
-    var lW = o((()=>{}));
-    function uW(e) {
+    var uW = o((()=>{}));
+    function dW(e) {
         return typeof e == `object` && !!e;
     }
-    var dW = o((()=>{}));
-    function fW(e, t) {
+    var fW = o((()=>{}));
+    function pW(e, t) {
         if (!e) throw Error(t ?? `Unexpected invariant triggered.`);
     }
-    var pW = o((()=>{}));
-    function mW(e, t) {
+    var mW = o((()=>{}));
+    function hW(e, t) {
         let n = 0, r = 1;
-        for (let i of e.body.matchAll(hW)){
-            if (typeof i.index == `number` || fW(!1), i.index >= t) break;
+        for (let i of e.body.matchAll(gW)){
+            if (typeof i.index == `number` || pW(!1), i.index >= t) break;
             n = i.index + i[0].length, r += 1;
         }
         return {
@@ -36005,18 +36005,18 @@ perfecta armonía.`,
             column: t + 1 - n
         };
     }
-    var hW, gW = o((()=>{
-        pW(), hW = /\r\n|[\n\r]/g;
+    var gW, _W = o((()=>{
+        mW(), gW = /\r\n|[\n\r]/g;
     }));
-    function _W(e) {
-        return vW(e.source, mW(e.source, e.start));
+    function vW(e) {
+        return yW(e.source, hW(e.source, e.start));
     }
-    function vW(e, t) {
+    function yW(e, t) {
         let n = e.locationOffset.column - 1, r = ``.padStart(n) + e.body, i = t.line - 1, a = e.locationOffset.line - 1, o = t.line + a, s = t.line === 1 ? n : 0, c = t.column + s, l = `${e.name}:${o}:${c}\n`, u = r.split(/\r\n|[\n\r]/g), d = u[i];
         if (d.length > 120) {
             let e = Math.floor(c / 80), t = c % 80, n = [];
             for(let e = 0; e < d.length; e += 80)n.push(d.slice(e, e + 80));
-            return l + yW([
+            return l + bW([
                 [
                     `${o} |`,
                     n[0]
@@ -36035,7 +36035,7 @@ perfecta armonía.`,
                 ]
             ]);
         }
-        return l + yW([
+        return l + bW([
             [
                 `${o - 1} |`,
                 u[i - 1]
@@ -36054,15 +36054,15 @@ perfecta armonía.`,
             ]
         ]);
     }
-    function yW(e) {
+    function bW(e) {
         let t = e.filter(([e, t])=>t !== void 0), n = Math.max(...t.map(([e])=>e.length));
         return t.map(([e, t])=>e.padStart(n) + (t ? ` ` + t : ``)).join(`
 `);
     }
-    var bW = o((()=>{
-        gW();
+    var xW = o((()=>{
+        _W();
     }));
-    function lwe(e) {
+    function cwe(e) {
         let t = e[0];
         return t == null || `kind` in t || `length` in t ? {
             nodes: t,
@@ -36073,25 +36073,25 @@ perfecta armonía.`,
             extensions: e[5]
         } : t;
     }
-    function xW(e) {
+    function SW(e) {
         return e === void 0 || e.length === 0 ? void 0 : e;
     }
-    function uwe(e) {
+    function lwe(e) {
         return e.toString();
     }
-    function dwe(e) {
+    function uwe(e) {
         return e.toJSON();
     }
-    var X, SW = o((()=>{
-        dW(), gW(), bW(), X = class e extends Error {
+    var X, CW = o((()=>{
+        fW(), _W(), xW(), X = class e extends Error {
             constructor(t, ...n){
-                let { nodes: r, source: i, positions: a, path: o, originalError: s, extensions: c } = lwe(n);
-                super(t), this.name = `GraphQLError`, this.path = o ?? void 0, this.originalError = s ?? void 0, this.nodes = xW(Array.isArray(r) ? r : r ? [
+                let { nodes: r, source: i, positions: a, path: o, originalError: s, extensions: c } = cwe(n);
+                super(t), this.name = `GraphQLError`, this.path = o ?? void 0, this.originalError = s ?? void 0, this.nodes = SW(Array.isArray(r) ? r : r ? [
                     r
                 ] : void 0);
-                let l = xW(this.nodes?.map((e)=>e.loc).filter((e)=>e != null));
-                this.source = i ?? l?.[0]?.source, this.positions = a ?? l?.map((e)=>e.start), this.locations = a && i ? a.map((e)=>mW(i, e)) : l?.map((e)=>mW(e.source, e.start));
-                let u = uW(s?.extensions) ? s?.extensions : void 0;
+                let l = SW(this.nodes?.map((e)=>e.loc).filter((e)=>e != null));
+                this.source = i ?? l?.[0]?.source, this.positions = a ?? l?.map((e)=>e.start), this.locations = a && i ? a.map((e)=>hW(i, e)) : l?.map((e)=>hW(e.source, e.start));
+                let u = dW(s?.extensions) ? s?.extensions : void 0;
                 this.extensions = c ?? u ?? Object.create(null), Object.defineProperties(this, {
                     message: {
                         writable: !0,
@@ -36129,10 +36129,10 @@ perfecta armonía.`,
                 let e = this.message;
                 if (this.nodes) for (let t of this.nodes)t.loc && (e += `
 
-` + _W(t.loc));
+` + vW(t.loc));
                 else if (this.source && this.locations) for (let t of this.locations)e += `
 
-` + vW(this.source, t);
+` + yW(this.source, t);
                 return e;
             }
             toJSON() {
@@ -36143,7 +36143,7 @@ perfecta armonía.`,
             }
         };
     }));
-    function CW(e, t, n) {
+    function wW(e, t, n) {
         return new X(`Syntax Error: ${n}`, {
             source: e,
             positions: [
@@ -36151,15 +36151,15 @@ perfecta armonía.`,
             ]
         });
     }
-    var wW = o((()=>{
-        SW();
+    var TW = o((()=>{
+        CW();
     }));
-    function TW(e) {
+    function EW(e) {
         let t = e?.kind;
-        return typeof t == `string` && kW.has(t);
+        return typeof t == `string` && AW.has(t);
     }
-    var EW, DW, OW, kW, AW, jW = o((()=>{
-        EW = class {
+    var DW, OW, kW, AW, jW, MW = o((()=>{
+        DW = class {
             constructor(e, t, n){
                 this.start = e.start, this.end = t.end, this.startToken = e, this.endToken = t, this.source = n;
             }
@@ -36172,7 +36172,7 @@ perfecta armonía.`,
                     end: this.end
                 };
             }
-        }, DW = class {
+        }, OW = class {
             constructor(e, t, n, r, i, a){
                 this.kind = e, this.start = t, this.end = n, this.line = r, this.column = i, this.value = a, this.prev = null, this.next = null;
             }
@@ -36187,7 +36187,7 @@ perfecta armonía.`,
                     column: this.column
                 };
             }
-        }, OW = {
+        }, kW = {
             Name: [],
             Document: [
                 `definitions`
@@ -36393,48 +36393,48 @@ perfecta armonía.`,
                 `name`,
                 `argumentName`
             ]
-        }, kW = new Set(Object.keys(OW)), (function(e) {
+        }, AW = new Set(Object.keys(kW)), (function(e) {
             e.QUERY = `query`, e.MUTATION = `mutation`, e.SUBSCRIPTION = `subscription`;
-        })(AW ||= {});
-    })), MW, NW = o((()=>{
+        })(jW ||= {});
+    })), NW, PW = o((()=>{
         (function(e) {
             e.QUERY = `QUERY`, e.MUTATION = `MUTATION`, e.SUBSCRIPTION = `SUBSCRIPTION`, e.FIELD = `FIELD`, e.FRAGMENT_DEFINITION = `FRAGMENT_DEFINITION`, e.FRAGMENT_SPREAD = `FRAGMENT_SPREAD`, e.INLINE_FRAGMENT = `INLINE_FRAGMENT`, e.VARIABLE_DEFINITION = `VARIABLE_DEFINITION`, e.SCHEMA = `SCHEMA`, e.SCALAR = `SCALAR`, e.OBJECT = `OBJECT`, e.FIELD_DEFINITION = `FIELD_DEFINITION`, e.ARGUMENT_DEFINITION = `ARGUMENT_DEFINITION`, e.INTERFACE = `INTERFACE`, e.UNION = `UNION`, e.ENUM = `ENUM`, e.ENUM_VALUE = `ENUM_VALUE`, e.INPUT_OBJECT = `INPUT_OBJECT`, e.INPUT_FIELD_DEFINITION = `INPUT_FIELD_DEFINITION`;
-        })(MW ||= {});
-    })), Z, PW = o((()=>{
+        })(NW ||= {});
+    })), Z, FW = o((()=>{
         (function(e) {
             e.NAME = `Name`, e.DOCUMENT = `Document`, e.OPERATION_DEFINITION = `OperationDefinition`, e.VARIABLE_DEFINITION = `VariableDefinition`, e.SELECTION_SET = `SelectionSet`, e.FIELD = `Field`, e.ARGUMENT = `Argument`, e.FRAGMENT_SPREAD = `FragmentSpread`, e.INLINE_FRAGMENT = `InlineFragment`, e.FRAGMENT_DEFINITION = `FragmentDefinition`, e.VARIABLE = `Variable`, e.INT = `IntValue`, e.FLOAT = `FloatValue`, e.STRING = `StringValue`, e.BOOLEAN = `BooleanValue`, e.NULL = `NullValue`, e.ENUM = `EnumValue`, e.LIST = `ListValue`, e.OBJECT = `ObjectValue`, e.OBJECT_FIELD = `ObjectField`, e.DIRECTIVE = `Directive`, e.NAMED_TYPE = `NamedType`, e.LIST_TYPE = `ListType`, e.NON_NULL_TYPE = `NonNullType`, e.SCHEMA_DEFINITION = `SchemaDefinition`, e.OPERATION_TYPE_DEFINITION = `OperationTypeDefinition`, e.SCALAR_TYPE_DEFINITION = `ScalarTypeDefinition`, e.OBJECT_TYPE_DEFINITION = `ObjectTypeDefinition`, e.FIELD_DEFINITION = `FieldDefinition`, e.INPUT_VALUE_DEFINITION = `InputValueDefinition`, e.INTERFACE_TYPE_DEFINITION = `InterfaceTypeDefinition`, e.UNION_TYPE_DEFINITION = `UnionTypeDefinition`, e.ENUM_TYPE_DEFINITION = `EnumTypeDefinition`, e.ENUM_VALUE_DEFINITION = `EnumValueDefinition`, e.INPUT_OBJECT_TYPE_DEFINITION = `InputObjectTypeDefinition`, e.DIRECTIVE_DEFINITION = `DirectiveDefinition`, e.SCHEMA_EXTENSION = `SchemaExtension`, e.SCALAR_TYPE_EXTENSION = `ScalarTypeExtension`, e.OBJECT_TYPE_EXTENSION = `ObjectTypeExtension`, e.INTERFACE_TYPE_EXTENSION = `InterfaceTypeExtension`, e.UNION_TYPE_EXTENSION = `UnionTypeExtension`, e.ENUM_TYPE_EXTENSION = `EnumTypeExtension`, e.INPUT_OBJECT_TYPE_EXTENSION = `InputObjectTypeExtension`, e.TYPE_COORDINATE = `TypeCoordinate`, e.MEMBER_COORDINATE = `MemberCoordinate`, e.ARGUMENT_COORDINATE = `ArgumentCoordinate`, e.DIRECTIVE_COORDINATE = `DirectiveCoordinate`, e.DIRECTIVE_ARGUMENT_COORDINATE = `DirectiveArgumentCoordinate`;
         })(Z ||= {});
     }));
-    function FW(e) {
+    function IW(e) {
         return e === 9 || e === 32;
     }
-    function IW(e) {
+    function LW(e) {
         return e >= 48 && e <= 57;
     }
-    function LW(e) {
+    function RW(e) {
         return e >= 97 && e <= 122 || e >= 65 && e <= 90;
     }
-    function RW(e) {
-        return LW(e) || e === 95;
-    }
     function zW(e) {
-        return LW(e) || IW(e) || e === 95;
+        return RW(e) || e === 95;
     }
-    var BW = o((()=>{}));
-    function fwe(e) {
+    function BW(e) {
+        return RW(e) || LW(e) || e === 95;
+    }
+    var VW = o((()=>{}));
+    function dwe(e) {
         let t = 2 ** 53 - 1, n = null, r = -1;
         for(let i = 0; i < e.length; ++i){
-            let a = e[i], o = pwe(a);
+            let a = e[i], o = fwe(a);
             o !== a.length && (n ??= i, r = i, i !== 0 && o < t && (t = o));
         }
         return e.map((e, n)=>n === 0 ? e : e.slice(t)).slice(n ?? 0, r + 1);
     }
-    function pwe(e) {
+    function fwe(e) {
         let t = 0;
-        for(; t < e.length && FW(e.charCodeAt(t));)++t;
+        for(; t < e.length && IW(e.charCodeAt(t));)++t;
         return t;
     }
-    function mwe(e) {
+    function pwe(e) {
         if (e === ``) return !0;
         let t = !0, n = !1, r = !0, i = !1;
         for(let a = 0; a < e.length; ++a)switch(e.codePointAt(a)){
@@ -36467,35 +36467,35 @@ perfecta armonía.`,
         }
         return !(t || r && i);
     }
-    function VW(e, t) {
-        let n = e.replace(/"""/g, `\\"""`), r = n.split(/\r\n|[\n\r]/g), i = r.length === 1, a = r.length > 1 && r.slice(1).every((e)=>e.length === 0 || FW(e.charCodeAt(0))), o = n.endsWith(`\\"""`), s = e.endsWith(`"`) && !o, c = e.endsWith(`\\`), l = s || c, u = !(t != null && t.minimize) && (!i || e.length > 70 || l || a || o), d = ``, f = i && FW(e.charCodeAt(0));
+    function HW(e, t) {
+        let n = e.replace(/"""/g, `\\"""`), r = n.split(/\r\n|[\n\r]/g), i = r.length === 1, a = r.length > 1 && r.slice(1).every((e)=>e.length === 0 || IW(e.charCodeAt(0))), o = n.endsWith(`\\"""`), s = e.endsWith(`"`) && !o, c = e.endsWith(`\\`), l = s || c, u = !(t != null && t.minimize) && (!i || e.length > 70 || l || a || o), d = ``, f = i && IW(e.charCodeAt(0));
         return (u && !f || a) && (d += `
 `), d += n, (u || l) && (d += `
 `), `"""` + d + `"""`;
     }
-    var HW = o((()=>{
-        BW();
-    })), Q, UW = o((()=>{
+    var UW = o((()=>{
+        VW();
+    })), Q, WW = o((()=>{
         (function(e) {
             e.SOF = `<SOF>`, e.EOF = `<EOF>`, e.BANG = `!`, e.DOLLAR = `$`, e.AMP = `&`, e.PAREN_L = `(`, e.PAREN_R = `)`, e.DOT = `.`, e.SPREAD = `...`, e.COLON = `:`, e.EQUALS = `=`, e.AT = `@`, e.BRACKET_L = `[`, e.BRACKET_R = `]`, e.BRACE_L = `{`, e.PIPE = `|`, e.BRACE_R = `}`, e.NAME = `Name`, e.INT = `Int`, e.FLOAT = `Float`, e.STRING = `String`, e.BLOCK_STRING = `BlockString`, e.COMMENT = `Comment`;
         })(Q ||= {});
     }));
-    function WW(e) {
+    function GW(e) {
         return e === Q.BANG || e === Q.DOLLAR || e === Q.AMP || e === Q.PAREN_L || e === Q.PAREN_R || e === Q.DOT || e === Q.SPREAD || e === Q.COLON || e === Q.EQUALS || e === Q.AT || e === Q.BRACKET_L || e === Q.BRACKET_R || e === Q.BRACE_L || e === Q.PIPE || e === Q.BRACE_R;
     }
-    function GW(e) {
+    function KW(e) {
         return e >= 0 && e <= 55295 || e >= 57344 && e <= 1114111;
     }
-    function KW(e, t) {
-        return qW(e.charCodeAt(t)) && JW(e.charCodeAt(t + 1));
-    }
-    function qW(e) {
-        return e >= 55296 && e <= 56319;
+    function qW(e, t) {
+        return JW(e.charCodeAt(t)) && YW(e.charCodeAt(t + 1));
     }
     function JW(e) {
+        return e >= 55296 && e <= 56319;
+    }
+    function YW(e) {
         return e >= 56320 && e <= 57343;
     }
-    function YW(e, t) {
+    function XW(e, t) {
         let n = e.source.body.codePointAt(t);
         if (n === void 0) return Q.EOF;
         if (n >= 32 && n <= 126) {
@@ -36504,11 +36504,11 @@ perfecta armonía.`,
         }
         return `U+` + n.toString(16).toUpperCase().padStart(4, `0`);
     }
-    function XW(e, t, n, r, i) {
+    function ZW(e, t, n, r, i) {
         let a = e.line;
-        return new DW(t, n, r, a, 1 + n - e.lineStart, i);
+        return new OW(t, n, r, a, 1 + n - e.lineStart, i);
     }
-    function hwe(e, t) {
+    function mwe(e, t) {
         let n = e.source.body, r = n.length, i = t;
         for(; i < r;){
             let t = n.charCodeAt(i);
@@ -36526,125 +36526,125 @@ perfecta armonía.`,
                     n.charCodeAt(i + 1) === 10 ? i += 2 : ++i, ++e.line, e.lineStart = i;
                     continue;
                 case 35:
-                    return gwe(e, i);
+                    return hwe(e, i);
                 case 33:
-                    return XW(e, Q.BANG, i, i + 1);
+                    return ZW(e, Q.BANG, i, i + 1);
                 case 36:
-                    return XW(e, Q.DOLLAR, i, i + 1);
+                    return ZW(e, Q.DOLLAR, i, i + 1);
                 case 38:
-                    return XW(e, Q.AMP, i, i + 1);
+                    return ZW(e, Q.AMP, i, i + 1);
                 case 40:
-                    return XW(e, Q.PAREN_L, i, i + 1);
+                    return ZW(e, Q.PAREN_L, i, i + 1);
                 case 41:
-                    return XW(e, Q.PAREN_R, i, i + 1);
+                    return ZW(e, Q.PAREN_R, i, i + 1);
                 case 46:
-                    if (n.charCodeAt(i + 1) === 46 && n.charCodeAt(i + 2) === 46) return XW(e, Q.SPREAD, i, i + 3);
+                    if (n.charCodeAt(i + 1) === 46 && n.charCodeAt(i + 2) === 46) return ZW(e, Q.SPREAD, i, i + 3);
                     break;
                 case 58:
-                    return XW(e, Q.COLON, i, i + 1);
+                    return ZW(e, Q.COLON, i, i + 1);
                 case 61:
-                    return XW(e, Q.EQUALS, i, i + 1);
+                    return ZW(e, Q.EQUALS, i, i + 1);
                 case 64:
-                    return XW(e, Q.AT, i, i + 1);
+                    return ZW(e, Q.AT, i, i + 1);
                 case 91:
-                    return XW(e, Q.BRACKET_L, i, i + 1);
+                    return ZW(e, Q.BRACKET_L, i, i + 1);
                 case 93:
-                    return XW(e, Q.BRACKET_R, i, i + 1);
+                    return ZW(e, Q.BRACKET_R, i, i + 1);
                 case 123:
-                    return XW(e, Q.BRACE_L, i, i + 1);
+                    return ZW(e, Q.BRACE_L, i, i + 1);
                 case 124:
-                    return XW(e, Q.PIPE, i, i + 1);
+                    return ZW(e, Q.PIPE, i, i + 1);
                 case 125:
-                    return XW(e, Q.BRACE_R, i, i + 1);
+                    return ZW(e, Q.BRACE_R, i, i + 1);
                 case 34:
-                    return n.charCodeAt(i + 1) === 34 && n.charCodeAt(i + 2) === 34 ? Swe(e, i) : vwe(e, i);
+                    return n.charCodeAt(i + 1) === 34 && n.charCodeAt(i + 2) === 34 ? xwe(e, i) : _we(e, i);
             }
-            if (IW(t) || t === 45) return _we(e, i, t);
-            if (RW(t)) return eG(e, i);
-            throw CW(e.source, i, t === 39 ? `Unexpected single quote character ('), did you mean to use a double quote (")?` : GW(t) || KW(n, i) ? `Unexpected character: ${YW(e, i)}.` : `Invalid character: ${YW(e, i)}.`);
+            if (LW(t) || t === 45) return gwe(e, i, t);
+            if (zW(t)) return tG(e, i);
+            throw wW(e.source, i, t === 39 ? `Unexpected single quote character ('), did you mean to use a double quote (")?` : KW(t) || qW(n, i) ? `Unexpected character: ${XW(e, i)}.` : `Invalid character: ${XW(e, i)}.`);
         }
-        return XW(e, Q.EOF, r, r);
+        return ZW(e, Q.EOF, r, r);
     }
-    function gwe(e, t) {
+    function hwe(e, t) {
         let n = e.source.body, r = n.length, i = t + 1;
         for(; i < r;){
             let e = n.charCodeAt(i);
             if (e === 10 || e === 13) break;
-            if (GW(e)) ++i;
-            else if (KW(n, i)) i += 2;
+            if (KW(e)) ++i;
+            else if (qW(n, i)) i += 2;
             else break;
         }
-        return XW(e, Q.COMMENT, t, i, n.slice(t + 1, i));
+        return ZW(e, Q.COMMENT, t, i, n.slice(t + 1, i));
     }
-    function _we(e, t, n) {
+    function gwe(e, t, n) {
         let r = e.source.body, i = t, a = n, o = !1;
         if (a === 45 && (a = r.charCodeAt(++i)), a === 48) {
-            if (a = r.charCodeAt(++i), IW(a)) throw CW(e.source, i, `Invalid number, unexpected digit after 0: ${YW(e, i)}.`);
-        } else i = ZW(e, i, a), a = r.charCodeAt(i);
-        if (a === 46 && (o = !0, a = r.charCodeAt(++i), i = ZW(e, i, a), a = r.charCodeAt(i)), (a === 69 || a === 101) && (o = !0, a = r.charCodeAt(++i), (a === 43 || a === 45) && (a = r.charCodeAt(++i)), i = ZW(e, i, a), a = r.charCodeAt(i)), a === 46 || RW(a)) throw CW(e.source, i, `Invalid number, expected digit but got: ${YW(e, i)}.`);
-        return XW(e, o ? Q.FLOAT : Q.INT, t, i, r.slice(t, i));
+            if (a = r.charCodeAt(++i), LW(a)) throw wW(e.source, i, `Invalid number, unexpected digit after 0: ${XW(e, i)}.`);
+        } else i = QW(e, i, a), a = r.charCodeAt(i);
+        if (a === 46 && (o = !0, a = r.charCodeAt(++i), i = QW(e, i, a), a = r.charCodeAt(i)), (a === 69 || a === 101) && (o = !0, a = r.charCodeAt(++i), (a === 43 || a === 45) && (a = r.charCodeAt(++i)), i = QW(e, i, a), a = r.charCodeAt(i)), a === 46 || zW(a)) throw wW(e.source, i, `Invalid number, expected digit but got: ${XW(e, i)}.`);
+        return ZW(e, o ? Q.FLOAT : Q.INT, t, i, r.slice(t, i));
     }
-    function ZW(e, t, n) {
-        if (!IW(n)) throw CW(e.source, t, `Invalid number, expected digit but got: ${YW(e, t)}.`);
+    function QW(e, t, n) {
+        if (!LW(n)) throw wW(e.source, t, `Invalid number, expected digit but got: ${XW(e, t)}.`);
         let r = e.source.body, i = t + 1;
-        for(; IW(r.charCodeAt(i));)++i;
+        for(; LW(r.charCodeAt(i));)++i;
         return i;
     }
-    function vwe(e, t) {
+    function _we(e, t) {
         let n = e.source.body, r = n.length, i = t + 1, a = i, o = ``;
         for(; i < r;){
             let r = n.charCodeAt(i);
-            if (r === 34) return o += n.slice(a, i), XW(e, Q.STRING, t, i + 1, o);
+            if (r === 34) return o += n.slice(a, i), ZW(e, Q.STRING, t, i + 1, o);
             if (r === 92) {
                 o += n.slice(a, i);
-                let t = n.charCodeAt(i + 1) === 117 ? n.charCodeAt(i + 2) === 123 ? ywe(e, i) : bwe(e, i) : xwe(e, i);
+                let t = n.charCodeAt(i + 1) === 117 ? n.charCodeAt(i + 2) === 123 ? vwe(e, i) : ywe(e, i) : bwe(e, i);
                 o += t.value, i += t.size, a = i;
                 continue;
             }
             if (r === 10 || r === 13) break;
-            if (GW(r)) ++i;
-            else if (KW(n, i)) i += 2;
-            else throw CW(e.source, i, `Invalid character within String: ${YW(e, i)}.`);
+            if (KW(r)) ++i;
+            else if (qW(n, i)) i += 2;
+            else throw wW(e.source, i, `Invalid character within String: ${XW(e, i)}.`);
         }
-        throw CW(e.source, i, `Unterminated string.`);
+        throw wW(e.source, i, `Unterminated string.`);
     }
-    function ywe(e, t) {
+    function vwe(e, t) {
         let n = e.source.body, r = 0, i = 3;
         for(; i < 12;){
             let e = n.charCodeAt(t + i++);
             if (e === 125) {
-                if (i < 5 || !GW(r)) break;
+                if (i < 5 || !KW(r)) break;
                 return {
                     value: String.fromCodePoint(r),
                     size: i
                 };
             }
-            if (r = r << 4 | $W(e), r < 0) break;
+            if (r = r << 4 | eG(e), r < 0) break;
         }
-        throw CW(e.source, t, `Invalid Unicode escape sequence: "${n.slice(t, t + i)}".`);
+        throw wW(e.source, t, `Invalid Unicode escape sequence: "${n.slice(t, t + i)}".`);
     }
-    function bwe(e, t) {
-        let n = e.source.body, r = QW(n, t + 2);
-        if (GW(r)) return {
+    function ywe(e, t) {
+        let n = e.source.body, r = $W(n, t + 2);
+        if (KW(r)) return {
             value: String.fromCodePoint(r),
             size: 6
         };
-        if (qW(r) && n.charCodeAt(t + 6) === 92 && n.charCodeAt(t + 7) === 117) {
-            let e = QW(n, t + 8);
-            if (JW(e)) return {
+        if (JW(r) && n.charCodeAt(t + 6) === 92 && n.charCodeAt(t + 7) === 117) {
+            let e = $W(n, t + 8);
+            if (YW(e)) return {
                 value: String.fromCodePoint(r, e),
                 size: 12
             };
         }
-        throw CW(e.source, t, `Invalid Unicode escape sequence: "${n.slice(t, t + 6)}".`);
+        throw wW(e.source, t, `Invalid Unicode escape sequence: "${n.slice(t, t + 6)}".`);
     }
-    function QW(e, t) {
-        return $W(e.charCodeAt(t)) << 12 | $W(e.charCodeAt(t + 1)) << 8 | $W(e.charCodeAt(t + 2)) << 4 | $W(e.charCodeAt(t + 3));
+    function $W(e, t) {
+        return eG(e.charCodeAt(t)) << 12 | eG(e.charCodeAt(t + 1)) << 8 | eG(e.charCodeAt(t + 2)) << 4 | eG(e.charCodeAt(t + 3));
     }
-    function $W(e) {
+    function eG(e) {
         return e >= 48 && e <= 57 ? e - 48 : e >= 65 && e <= 70 ? e - 55 : e >= 97 && e <= 102 ? e - 87 : -1;
     }
-    function xwe(e, t) {
+    function bwe(e, t) {
         let n = e.source.body;
         switch(n.charCodeAt(t + 1)){
             case 34:
@@ -36689,15 +36689,15 @@ perfecta armonía.`,
                     size: 2
                 };
         }
-        throw CW(e.source, t, `Invalid character escape sequence: "${n.slice(t, t + 2)}".`);
+        throw wW(e.source, t, `Invalid character escape sequence: "${n.slice(t, t + 2)}".`);
     }
-    function Swe(e, t) {
+    function xwe(e, t) {
         let n = e.source.body, r = n.length, i = e.lineStart, a = t + 3, o = a, s = ``, c = [];
         for(; a < r;){
             let r = n.charCodeAt(a);
             if (r === 34 && n.charCodeAt(a + 1) === 34 && n.charCodeAt(a + 2) === 34) {
                 s += n.slice(o, a), c.push(s);
-                let r = XW(e, Q.BLOCK_STRING, t, a + 3, fwe(c).join(`
+                let r = ZW(e, Q.BLOCK_STRING, t, a + 3, dwe(c).join(`
 `));
                 return e.line += c.length - 1, e.lineStart = i, r;
             }
@@ -36709,21 +36709,21 @@ perfecta armonía.`,
                 s += n.slice(o, a), c.push(s), r === 13 && n.charCodeAt(a + 1) === 10 ? a += 2 : ++a, s = ``, o = a, i = a;
                 continue;
             }
-            if (GW(r)) ++a;
-            else if (KW(n, a)) a += 2;
-            else throw CW(e.source, a, `Invalid character within String: ${YW(e, a)}.`);
+            if (KW(r)) ++a;
+            else if (qW(n, a)) a += 2;
+            else throw wW(e.source, a, `Invalid character within String: ${XW(e, a)}.`);
         }
-        throw CW(e.source, a, `Unterminated string.`);
+        throw wW(e.source, a, `Unterminated string.`);
     }
-    function eG(e, t) {
+    function tG(e, t) {
         let n = e.source.body, r = n.length, i = t + 1;
-        for(; i < r && zW(n.charCodeAt(i));)++i;
-        return XW(e, Q.NAME, t, i, n.slice(t, i));
+        for(; i < r && BW(n.charCodeAt(i));)++i;
+        return ZW(e, Q.NAME, t, i, n.slice(t, i));
     }
-    var tG, nG = o((()=>{
-        wW(), jW(), HW(), BW(), UW(), tG = class {
+    var nG, rG = o((()=>{
+        TW(), MW(), UW(), VW(), WW(), nG = class {
             constructor(e){
-                let t = new DW(Q.SOF, 0, 0, 0, 0);
+                let t = new OW(Q.SOF, 0, 0, 0, 0);
                 this.source = e, this.lastToken = t, this.token = t, this.line = 1, this.lineStart = 0;
             }
             get [Symbol.toStringTag]() {
@@ -36736,7 +36736,7 @@ perfecta armonía.`,
                 let e = this.token;
                 if (e.kind !== Q.EOF) do if (e.next) e = e.next;
                 else {
-                    let t = hwe(this, e.end);
+                    let t = mwe(this, e.end);
                     e.next = t, t.prev = e, e = t;
                 }
                 while (e.kind === Q.COMMENT);
@@ -36744,33 +36744,33 @@ perfecta armonía.`,
             }
         };
     }));
-    function Cwe(e, t) {
+    function Swe(e, t) {
         let n = e.source.body, r = n.length, i = t;
         if (i < r) {
             let t = n.charCodeAt(i);
             switch(t){
                 case 46:
-                    return XW(e, Q.DOT, i, i + 1);
+                    return ZW(e, Q.DOT, i, i + 1);
                 case 40:
-                    return XW(e, Q.PAREN_L, i, i + 1);
+                    return ZW(e, Q.PAREN_L, i, i + 1);
                 case 41:
-                    return XW(e, Q.PAREN_R, i, i + 1);
+                    return ZW(e, Q.PAREN_R, i, i + 1);
                 case 58:
-                    return XW(e, Q.COLON, i, i + 1);
+                    return ZW(e, Q.COLON, i, i + 1);
                 case 64:
-                    return XW(e, Q.AT, i, i + 1);
+                    return ZW(e, Q.AT, i, i + 1);
             }
-            if (RW(t)) return eG(e, i);
-            throw CW(e.source, i, `Invalid character: ${YW(e, i)}.`);
+            if (zW(t)) return tG(e, i);
+            throw wW(e.source, i, `Invalid character: ${XW(e, i)}.`);
         }
-        return XW(e, Q.EOF, r, r);
+        return ZW(e, Q.EOF, r, r);
     }
-    var rG, wwe = o((()=>{
-        wW(), jW(), BW(), nG(), UW(), rG = class {
+    var iG, Cwe = o((()=>{
+        TW(), MW(), VW(), rG(), WW(), iG = class {
             line = 1;
             lineStart = 0;
             constructor(e){
-                let t = new DW(Q.SOF, 0, 0, 0, 0);
+                let t = new OW(Q.SOF, 0, 0, 0, 0);
                 this.source = e, this.lastToken = t, this.token = t;
             }
             get [Symbol.toStringTag]() {
@@ -36782,7 +36782,7 @@ perfecta armonía.`,
             lookahead() {
                 let e = this.token;
                 if (e.kind !== Q.EOF) {
-                    let t = Cwe(this, e.end);
+                    let t = Swe(this, e.end);
                     e.next = t, t.prev = e, e = t;
                 }
                 return e;
@@ -36790,48 +36790,48 @@ perfecta armonía.`,
         };
     }));
     function $(e) {
-        return iG(e, []);
+        return aG(e, []);
     }
-    function iG(e, t) {
+    function aG(e, t) {
         switch(typeof e){
             case `string`:
                 return JSON.stringify(e);
             case `function`:
                 return e.name ? `[function ${e.name}]` : `[function]`;
             case `object`:
-                return Twe(e, t);
+                return wwe(e, t);
             default:
                 return String(e);
         }
     }
-    function Twe(e, t) {
+    function wwe(e, t) {
         if (e === null) return `null`;
         if (t.includes(e)) return `[Circular]`;
         let n = [
             ...t,
             e
         ];
-        if (Ewe(e)) {
+        if (Twe(e)) {
             let t = e.toJSON();
-            if (t !== e) return typeof t == `string` ? t : iG(t, n);
-        } else if (Array.isArray(e)) return Owe(e, n);
-        return Dwe(e, n);
+            if (t !== e) return typeof t == `string` ? t : aG(t, n);
+        } else if (Array.isArray(e)) return Dwe(e, n);
+        return Ewe(e, n);
     }
-    function Ewe(e) {
+    function Twe(e) {
         return typeof e.toJSON == `function`;
     }
-    function Dwe(e, t) {
+    function Ewe(e, t) {
         let n = Object.entries(e);
-        return n.length === 0 ? `{}` : t.length > oG ? `[` + kwe(e) + `]` : `{ ` + n.map(([e, n])=>e + `: ` + iG(n, t)).join(`, `) + ` }`;
+        return n.length === 0 ? `{}` : t.length > sG ? `[` + Owe(e) + `]` : `{ ` + n.map(([e, n])=>e + `: ` + aG(n, t)).join(`, `) + ` }`;
     }
-    function Owe(e, t) {
+    function Dwe(e, t) {
         if (e.length === 0) return `[]`;
-        if (t.length > oG) return `[Array]`;
-        let n = Math.min(aG, e.length), r = e.length - n, i = [];
-        for(let r = 0; r < n; ++r)i.push(iG(e[r], t));
+        if (t.length > sG) return `[Array]`;
+        let n = Math.min(oG, e.length), r = e.length - n, i = [];
+        for(let r = 0; r < n; ++r)i.push(aG(e[r], t));
         return r === 1 ? i.push(`... 1 more item`) : r > 1 && i.push(`... ${r} more items`), `[` + i.join(`, `) + `]`;
     }
-    function kwe(e) {
+    function Owe(e) {
         let t = Object.prototype.toString.call(e).replace(/^\[object /, ``).replace(/]$/, ``);
         if (t === `Object` && typeof e.constructor == `function`) {
             let t = e.constructor.name;
@@ -36839,10 +36839,10 @@ perfecta armonía.`,
         }
         return t;
     }
-    var aG, oG, sG = o((()=>{
-        aG = 10, oG = 2;
-    })), cG, lG, uG = o((()=>{
-        sG(), cG = globalThis.process && !0, lG = cG ? function(e, t) {
+    var oG, sG, cG = o((()=>{
+        oG = 10, sG = 2;
+    })), lG, uG, dG = o((()=>{
+        cG(), lG = globalThis.process && !0, uG = lG ? function(e, t) {
             return e instanceof t;
         } : function(e, t) {
             if (e instanceof t) return !0;
@@ -36867,67 +36867,67 @@ spurious results.`);
             return !1;
         };
     }));
-    function dG(e) {
-        return lG(e, fG);
+    function fG(e) {
+        return uG(e, pG);
     }
-    var fG, pG = o((()=>{
-        sW(), sG(), uG(), fG = class {
+    var pG, mG = o((()=>{
+        cW(), cG(), dG(), pG = class {
             constructor(e, t = `GraphQL request`, n = {
                 line: 1,
                 column: 1
             }){
-                typeof e == `string` || oW(!1, `Body must be a string. Received: ${$(e)}.`), this.body = e, this.name = t, this.locationOffset = n, this.locationOffset.line > 0 || oW(!1, `line in locationOffset is 1-indexed and must be positive.`), this.locationOffset.column > 0 || oW(!1, `column in locationOffset is 1-indexed and must be positive.`);
+                typeof e == `string` || sW(!1, `Body must be a string. Received: ${$(e)}.`), this.body = e, this.name = t, this.locationOffset = n, this.locationOffset.line > 0 || sW(!1, `line in locationOffset is 1-indexed and must be positive.`), this.locationOffset.column > 0 || sW(!1, `column in locationOffset is 1-indexed and must be positive.`);
             }
             get [Symbol.toStringTag]() {
                 return `Source`;
             }
         };
     }));
-    function mG(e, t) {
-        let n = new yG(e, t), r = n.parseDocument();
+    function hG(e, t) {
+        let n = new bG(e, t), r = n.parseDocument();
         return Object.defineProperty(r, `tokenCount`, {
             enumerable: !1,
             value: n.tokenCount
         }), r;
     }
-    function hG(e, t) {
-        let n = new yG(e, t);
+    function gG(e, t) {
+        let n = new bG(e, t);
         n.expectToken(Q.SOF);
         let r = n.parseValueLiteral(!1);
         return n.expectToken(Q.EOF), r;
     }
-    function Awe(e, t) {
-        let n = new yG(e, t);
+    function kwe(e, t) {
+        let n = new bG(e, t);
         n.expectToken(Q.SOF);
         let r = n.parseConstValueLiteral();
         return n.expectToken(Q.EOF), r;
     }
-    function jwe(e, t) {
-        let n = new yG(e, t);
+    function Awe(e, t) {
+        let n = new bG(e, t);
         n.expectToken(Q.SOF);
         let r = n.parseTypeReference();
         return n.expectToken(Q.EOF), r;
     }
-    function gG(e) {
-        let t = new yG(e, {
-            lexer: new rG(dG(e) ? e : new fG(e))
+    function _G(e) {
+        let t = new bG(e, {
+            lexer: new iG(fG(e) ? e : new pG(e))
         });
         t.expectToken(Q.SOF);
         let n = t.parseSchemaCoordinate();
         return t.expectToken(Q.EOF), n;
     }
-    function _G(e) {
-        let t = e.value;
-        return vG(e.kind) + (t == null ? `` : ` "${t}"`);
-    }
     function vG(e) {
-        return WW(e) ? `"${e}"` : e;
+        let t = e.value;
+        return yG(e.kind) + (t == null ? `` : ` "${t}"`);
     }
-    var yG, bG = o((()=>{
-        wW(), jW(), NW(), PW(), nG(), wwe(), pG(), UW(), yG = class {
+    function yG(e) {
+        return GW(e) ? `"${e}"` : e;
+    }
+    var bG, xG = o((()=>{
+        TW(), MW(), PW(), FW(), rG(), Cwe(), mG(), WW(), bG = class {
             constructor(e, t = {}){
                 let { lexer: n, ...r } = t;
-                n ? this._lexer = n : this._lexer = new tG(dG(e) ? e : new fG(e)), this._options = r, this._tokenCounter = 0;
+                n ? this._lexer = n : this._lexer = new nG(fG(e) ? e : new pG(e)), this._options = r, this._tokenCounter = 0;
             }
             get tokenCount() {
                 return this._tokenCounter;
@@ -36948,7 +36948,7 @@ spurious results.`);
             parseDefinition() {
                 if (this.peek(Q.BRACE_L)) return this.parseOperationDefinition();
                 let e = this.peekDescription(), t = e ? this._lexer.lookahead() : this._lexer.token;
-                if (e && t.kind === Q.BRACE_L) throw CW(this._lexer.source, this._lexer.token.start, `Unexpected description, descriptions are not supported on shorthand queries.`);
+                if (e && t.kind === Q.BRACE_L) throw wW(this._lexer.source, this._lexer.token.start, `Unexpected description, descriptions are not supported on shorthand queries.`);
                 if (t.kind === Q.NAME) {
                     switch(t.value){
                         case `schema`:
@@ -36976,7 +36976,7 @@ spurious results.`);
                         case `fragment`:
                             return this.parseFragmentDefinition();
                     }
-                    if (e) throw CW(this._lexer.source, this._lexer.token.start, `Unexpected description, only GraphQL definitions support descriptions.`);
+                    if (e) throw wW(this._lexer.source, this._lexer.token.start, `Unexpected description, only GraphQL definitions support descriptions.`);
                     switch(t.value){
                         case `extend`:
                             return this.parseTypeSystemExtension();
@@ -36988,7 +36988,7 @@ spurious results.`);
                 let e = this._lexer.token;
                 if (this.peek(Q.BRACE_L)) return this.node(e, {
                     kind: Z.OPERATION_DEFINITION,
-                    operation: AW.QUERY,
+                    operation: jW.QUERY,
                     description: void 0,
                     name: void 0,
                     variableDefinitions: [],
@@ -37010,11 +37010,11 @@ spurious results.`);
                 let e = this.expectToken(Q.NAME);
                 switch(e.value){
                     case `query`:
-                        return AW.QUERY;
+                        return jW.QUERY;
                     case `mutation`:
-                        return AW.MUTATION;
+                        return jW.MUTATION;
                     case `subscription`:
-                        return AW.SUBSCRIPTION;
+                        return jW.SUBSCRIPTION;
                 }
                 throw this.unexpected(e);
             }
@@ -37156,7 +37156,7 @@ spurious results.`);
                     case Q.DOLLAR:
                         if (e) if (this.expectToken(Q.DOLLAR), this._lexer.token.kind === Q.NAME) {
                             let e = this._lexer.token.value;
-                            throw CW(this._lexer.source, t.start, `Unexpected variable "$${e}" in constant value.`);
+                            throw wW(this._lexer.source, t.start, `Unexpected variable "$${e}" in constant value.`);
                         } else throw this.unexpected(t);
                         return this.parseVariable();
                     default:
@@ -37371,7 +37371,7 @@ spurious results.`);
                 });
             }
             parseEnumValueName() {
-                if (this._lexer.token.value === `true` || this._lexer.token.value === `false` || this._lexer.token.value === `null`) throw CW(this._lexer.source, this._lexer.token.start, `${_G(this._lexer.token)} is reserved and cannot be used for an enum value.`);
+                if (this._lexer.token.value === `true` || this._lexer.token.value === `false` || this._lexer.token.value === `null`) throw wW(this._lexer.source, this._lexer.token.start, `${vG(this._lexer.token)} is reserved and cannot be used for an enum value.`);
                 return this.parseName();
             }
             parseInputObjectTypeDefinition() {
@@ -37513,7 +37513,7 @@ spurious results.`);
             }
             parseDirectiveLocation() {
                 let e = this._lexer.token, t = this.parseName();
-                if (Object.prototype.hasOwnProperty.call(MW, t.value)) return t;
+                if (Object.prototype.hasOwnProperty.call(NW, t.value)) return t;
                 throw this.unexpected(e);
             }
             parseSchemaCoordinate() {
@@ -37542,7 +37542,7 @@ spurious results.`);
                 });
             }
             node(e, t) {
-                return this._options.noLocation !== !0 && (t.loc = new EW(e, this._lexer.lastToken, this._lexer.source)), t;
+                return this._options.noLocation !== !0 && (t.loc = new DW(e, this._lexer.lastToken, this._lexer.source)), t;
             }
             peek(e) {
                 return this._lexer.token.kind === e;
@@ -37550,7 +37550,7 @@ spurious results.`);
             expectToken(e) {
                 let t = this._lexer.token;
                 if (t.kind === e) return this.advanceLexer(), t;
-                throw CW(this._lexer.source, t.start, `Expected ${vG(e)}, found ${_G(t)}.`);
+                throw wW(this._lexer.source, t.start, `Expected ${yG(e)}, found ${vG(t)}.`);
             }
             expectOptionalToken(e) {
                 return this._lexer.token.kind === e ? (this.advanceLexer(), !0) : !1;
@@ -37558,7 +37558,7 @@ spurious results.`);
             expectKeyword(e) {
                 let t = this._lexer.token;
                 if (t.kind === Q.NAME && t.value === e) this.advanceLexer();
-                else throw CW(this._lexer.source, t.start, `Expected "${e}", found ${_G(t)}.`);
+                else throw wW(this._lexer.source, t.start, `Expected "${e}", found ${vG(t)}.`);
             }
             expectOptionalKeyword(e) {
                 let t = this._lexer.token;
@@ -37566,7 +37566,7 @@ spurious results.`);
             }
             unexpected(e) {
                 let t = e ?? this._lexer.token;
-                return CW(this._lexer.source, t.start, `Unexpected ${_G(t)}.`);
+                return wW(this._lexer.source, t.start, `Unexpected ${vG(t)}.`);
             }
             any(e, t, n) {
                 this.expectToken(e);
@@ -37599,11 +37599,11 @@ spurious results.`);
             }
             advanceLexer() {
                 let { maxTokens: e } = this._options, t = this._lexer.advance();
-                if (t.kind !== Q.EOF && (++this._tokenCounter, e !== void 0 && this._tokenCounter > e)) throw CW(this._lexer.source, t.start, `Document contains more that ${e} tokens. Parsing aborted.`);
+                if (t.kind !== Q.EOF && (++this._tokenCounter, e !== void 0 && this._tokenCounter > e)) throw wW(this._lexer.source, t.start, `Document contains more that ${e} tokens. Parsing aborted.`);
             }
         };
     }));
-    function xG(e, t) {
+    function SG(e, t) {
         let [n, r] = t ? [
             e,
             t
@@ -37621,45 +37621,45 @@ spurious results.`);
             case 2:
                 return i + a[0] + ` or ` + a[1] + `?`;
         }
-        let o = a.slice(0, SG), s = o.pop();
+        let o = a.slice(0, CG), s = o.pop();
         return i + o.join(`, `) + `, or ` + s + `?`;
     }
-    var SG, CG = o((()=>{
-        SG = 5;
+    var CG, wG = o((()=>{
+        CG = 5;
     }));
-    function wG(e) {
+    function TG(e) {
         return e;
     }
-    var Mwe = o((()=>{}));
-    function TG(e, t) {
+    var jwe = o((()=>{}));
+    function EG(e, t) {
         let n = Object.create(null);
         for (let r of e)n[t(r)] = r;
         return n;
     }
-    var EG = o((()=>{}));
-    function DG(e, t, n) {
+    var DG = o((()=>{}));
+    function OG(e, t, n) {
         let r = Object.create(null);
         for (let i of e)r[t(i)] = n(i);
         return r;
     }
-    var OG = o((()=>{}));
-    function kG(e, t) {
+    var kG = o((()=>{}));
+    function AG(e, t) {
         let n = Object.create(null);
         for (let r of Object.keys(e))n[r] = t(e[r], r);
         return n;
     }
-    var AG = o((()=>{}));
-    function jG(e, t) {
+    var jG = o((()=>{}));
+    function MG(e, t) {
         let n = 0, r = 0;
         for(; n < e.length && r < t.length;){
             let i = e.charCodeAt(n), a = t.charCodeAt(r);
-            if (MG(i) && MG(a)) {
+            if (NG(i) && NG(a)) {
                 let o = 0;
-                do ++n, o = o * 10 + i - NG, i = e.charCodeAt(n);
-                while (MG(i) && o > 0);
+                do ++n, o = o * 10 + i - PG, i = e.charCodeAt(n);
+                while (NG(i) && o > 0);
                 let s = 0;
-                do ++r, s = s * 10 + a - NG, a = t.charCodeAt(r);
-                while (MG(a) && s > 0);
+                do ++r, s = s * 10 + a - PG, a = t.charCodeAt(r);
+                while (NG(a) && s > 0);
                 if (o < s) return -1;
                 if (o > s) return 1;
             } else {
@@ -37670,32 +37670,32 @@ spurious results.`);
         }
         return e.length - t.length;
     }
-    function MG(e) {
-        return !isNaN(e) && NG <= e && e <= PG;
+    function NG(e) {
+        return !isNaN(e) && PG <= e && e <= FG;
     }
-    var NG, PG, FG = o((()=>{
-        NG = 48, PG = 57;
+    var PG, FG, IG = o((()=>{
+        PG = 48, FG = 57;
     }));
-    function IG(e, t) {
-        let n = Object.create(null), r = new RG(e), i = Math.floor(e.length * .4) + 1;
+    function LG(e, t) {
+        let n = Object.create(null), r = new zG(e), i = Math.floor(e.length * .4) + 1;
         for (let e of t){
             let t = r.measure(e, i);
             t !== void 0 && (n[e] = t);
         }
         return Object.keys(n).sort((e, t)=>{
             let r = n[e] - n[t];
-            return r === 0 ? jG(e, t) : r;
+            return r === 0 ? MG(e, t) : r;
         });
     }
-    function LG(e) {
+    function RG(e) {
         let t = e.length, n = Array(t);
         for(let r = 0; r < t; ++r)n[r] = e.charCodeAt(r);
         return n;
     }
-    var RG, zG = o((()=>{
-        FG(), RG = class {
+    var zG, BG = o((()=>{
+        IG(), zG = class {
             constructor(e){
-                this._input = e, this._inputLowerCase = e.toLowerCase(), this._inputArray = LG(this._inputLowerCase), this._rows = [
+                this._input = e, this._inputLowerCase = e.toLowerCase(), this._inputArray = RG(this._inputLowerCase), this._rows = [
                     Array(e.length + 1).fill(0),
                     Array(e.length + 1).fill(0),
                     Array(e.length + 1).fill(0)
@@ -37705,7 +37705,7 @@ spurious results.`);
                 if (this._input === e) return 0;
                 let n = e.toLowerCase();
                 if (this._inputLowerCase === n) return 1;
-                let r = LG(n), i = this._inputArray;
+                let r = RG(n), i = this._inputArray;
                 if (r.length < i.length) {
                     let e = r;
                     r = i, i = e;
@@ -37731,26 +37731,26 @@ spurious results.`);
             }
         };
     }));
-    function BG(e) {
+    function VG(e) {
         if (e == null) return Object.create(null);
         if (Object.getPrototypeOf(e) === null) return e;
         let t = Object.create(null);
         for (let [n, r] of Object.entries(e))t[n] = r;
         return t;
     }
-    var VG = o((()=>{}));
+    var HG = o((()=>{}));
+    function Mwe(e) {
+        return `"${e.replace(UG, Nwe)}"`;
+    }
     function Nwe(e) {
-        return `"${e.replace(HG, Pwe)}"`;
+        return WG[e.charCodeAt(0)];
     }
-    function Pwe(e) {
-        return UG[e.charCodeAt(0)];
-    }
-    var HG, UG, Fwe = o((()=>{
-        HG = /[\x00-\x1f\x22\x5c\x7f-\x9f]/g, UG = `\\u0000.\\u0001.\\u0002.\\u0003.\\u0004.\\u0005.\\u0006.\\u0007.\\b.\\t.\\n.\\u000B.\\f.\\r.\\u000E.\\u000F.\\u0010.\\u0011.\\u0012.\\u0013.\\u0014.\\u0015.\\u0016.\\u0017.\\u0018.\\u0019.\\u001A.\\u001B.\\u001C.\\u001D.\\u001E.\\u001F...\\"..........................................................\\\\...................................\\u007F.\\u0080.\\u0081.\\u0082.\\u0083.\\u0084.\\u0085.\\u0086.\\u0087.\\u0088.\\u0089.\\u008A.\\u008B.\\u008C.\\u008D.\\u008E.\\u008F.\\u0090.\\u0091.\\u0092.\\u0093.\\u0094.\\u0095.\\u0096.\\u0097.\\u0098.\\u0099.\\u009A.\\u009B.\\u009C.\\u009D.\\u009E.\\u009F`.split(`.`);
+    var UG, WG, Pwe = o((()=>{
+        UG = /[\x00-\x1f\x22\x5c\x7f-\x9f]/g, WG = `\\u0000.\\u0001.\\u0002.\\u0003.\\u0004.\\u0005.\\u0006.\\u0007.\\b.\\t.\\n.\\u000B.\\f.\\r.\\u000E.\\u000F.\\u0010.\\u0011.\\u0012.\\u0013.\\u0014.\\u0015.\\u0016.\\u0017.\\u0018.\\u0019.\\u001A.\\u001B.\\u001C.\\u001D.\\u001E.\\u001F...\\"..........................................................\\\\...................................\\u007F.\\u0080.\\u0081.\\u0082.\\u0083.\\u0084.\\u0085.\\u0086.\\u0087.\\u0088.\\u0089.\\u008A.\\u008B.\\u008C.\\u008D.\\u008E.\\u008F.\\u0090.\\u0091.\\u0092.\\u0093.\\u0094.\\u0095.\\u0096.\\u0097.\\u0098.\\u0099.\\u009A.\\u009B.\\u009C.\\u009D.\\u009E.\\u009F`.split(`.`);
     }));
-    function WG(e, t, n = OW) {
+    function GG(e, t, n = kW) {
         let r = new Map;
-        for (let e of Object.values(Z))r.set(e, KG(t, e));
+        for (let e of Object.values(Z))r.set(e, qG(t, e));
         let i, a = Array.isArray(e), o = [
             e
         ], s = -1, c = [], l = e, u, d, f = [], p = [];
@@ -37778,7 +37778,7 @@ spurious results.`);
             }
             let h;
             if (!Array.isArray(l)) {
-                if (TW(l) || oW(!1, `Invalid AST Node: ${$(l)}.`), h = (e ? r.get(l.kind)?.leave : r.get(l.kind)?.enter)?.call(t, l, u, d, f, p), h === qG) break;
+                if (EW(l) || sW(!1, `Invalid AST Node: ${$(l)}.`), h = (e ? r.get(l.kind)?.leave : r.get(l.kind)?.enter)?.call(t, l, u, d, f, p), h === JG) break;
                 if (h === !1) {
                     if (!e) {
                         f.pop();
@@ -37787,7 +37787,7 @@ spurious results.`);
                 } else if (h !== void 0 && (c.push([
                     u,
                     h
-                ]), !e)) if (TW(h)) l = h;
+                ]), !e)) if (EW(h)) l = h;
                 else {
                     f.pop();
                     continue;
@@ -37806,12 +37806,12 @@ spurious results.`);
         }while (i !== void 0);
         return c.length === 0 ? e : c[c.length - 1][1];
     }
-    function GG(e) {
+    function KG(e) {
         let t = Array(e.length).fill(null), n = Object.create(null);
         for (let r of Object.values(Z)){
             let i = !1, a = Array(e.length).fill(void 0), o = Array(e.length).fill(void 0);
             for(let t = 0; t < e.length; ++t){
-                let { enter: n, leave: s } = KG(e[t], r);
+                let { enter: n, leave: s } = qG(e[t], r);
                 i ||= n != null || s != null, a[t] = n, o[t] = s;
             }
             i && (n[r] = {
@@ -37820,7 +37820,7 @@ spurious results.`);
                     for(let i = 0; i < e.length; i++)if (t[i] === null) {
                         let o = a[i]?.apply(e[i], n);
                         if (o === !1) t[i] = r;
-                        else if (o === qG) t[i] = qG;
+                        else if (o === JG) t[i] = JG;
                         else if (o !== void 0) return o;
                     }
                 },
@@ -37828,7 +37828,7 @@ spurious results.`);
                     let r = n[0];
                     for(let i = 0; i < e.length; i++)if (t[i] === null) {
                         let r = o[i]?.apply(e[i], n);
-                        if (r === qG) t[i] = qG;
+                        if (r === JG) t[i] = JG;
                         else if (r !== void 0 && r !== !1) return r;
                     } else t[i] === r && (t[i] = null);
                 }
@@ -37836,7 +37836,7 @@ spurious results.`);
         }
         return n;
     }
-    function KG(e, t) {
+    function qG(e, t) {
         let n = e[t];
         return typeof n == `object` ? n : typeof n == `function` ? {
             enter: n,
@@ -37846,38 +37846,38 @@ spurious results.`);
             leave: e.leave
         };
     }
-    function Iwe(e, t, n) {
-        let { enter: r, leave: i } = KG(e, t);
+    function Fwe(e, t, n) {
+        let { enter: r, leave: i } = qG(e, t);
         return n ? i : r;
     }
-    var qG, JG = o((()=>{
-        sW(), sG(), jW(), PW(), qG = Object.freeze({});
+    var JG, YG = o((()=>{
+        cW(), cG(), MW(), FW(), JG = Object.freeze({});
     }));
-    function YG(e) {
-        return WG(e, nK);
+    function XG(e) {
+        return GG(e, rK);
     }
-    function XG(e, t = ``) {
+    function ZG(e, t = ``) {
         return e?.filter((e)=>e).join(t) ?? ``;
     }
-    function ZG(e) {
-        return QG(`{
-`, $G(XG(e, `
+    function QG(e) {
+        return $G(`{
+`, eK(ZG(e, `
 `)), `
 }`);
     }
-    function QG(e, t, n = ``) {
+    function $G(e, t, n = ``) {
         return t != null && t !== `` ? e + t + n : ``;
     }
-    function $G(e) {
-        return QG(`  `, e.replace(/\n/g, `
+    function eK(e) {
+        return $G(`  `, e.replace(/\n/g, `
   `));
     }
-    function eK(e) {
+    function tK(e) {
         return e?.some((e)=>e.includes(`
 `)) ?? !1;
     }
-    var tK, nK, rK = o((()=>{
-        HW(), Fwe(), JG(), tK = 80, nK = {
+    var nK, rK, iK = o((()=>{
+        UW(), Pwe(), YG(), nK = 80, rK = {
             Name: {
                 leave: (e)=>e.value
             },
@@ -37885,43 +37885,43 @@ spurious results.`);
                 leave: (e)=>`$` + e.name
             },
             Document: {
-                leave: (e)=>XG(e.definitions, `
+                leave: (e)=>ZG(e.definitions, `
 
 `)
             },
             OperationDefinition: {
                 leave (e) {
-                    let t = eK(e.variableDefinitions) ? QG(`(
-`, XG(e.variableDefinitions, `
+                    let t = tK(e.variableDefinitions) ? $G(`(
+`, ZG(e.variableDefinitions, `
 `), `
-)`) : QG(`(`, XG(e.variableDefinitions, `, `), `)`), n = QG(``, e.description, `
-`) + XG([
+)`) : $G(`(`, ZG(e.variableDefinitions, `, `), `)`), n = $G(``, e.description, `
+`) + ZG([
                         e.operation,
-                        XG([
+                        ZG([
                             e.name,
                             t
                         ]),
-                        XG(e.directives, ` `)
+                        ZG(e.directives, ` `)
                     ], ` `);
                     return (n === `query` ? `` : n + ` `) + e.selectionSet;
                 }
             },
             VariableDefinition: {
-                leave: ({ variable: e, type: t, defaultValue: n, directives: r, description: i })=>QG(``, i, `
-`) + e + `: ` + t + QG(` = `, n) + QG(` `, XG(r, ` `))
+                leave: ({ variable: e, type: t, defaultValue: n, directives: r, description: i })=>$G(``, i, `
+`) + e + `: ` + t + $G(` = `, n) + $G(` `, ZG(r, ` `))
             },
             SelectionSet: {
-                leave: ({ selections: e })=>ZG(e)
+                leave: ({ selections: e })=>QG(e)
             },
             Field: {
                 leave ({ alias: e, name: t, arguments: n, directives: r, selectionSet: i }) {
-                    let a = QG(``, e, `: `) + t, o = a + QG(`(`, XG(n, `, `), `)`);
-                    return o.length > tK && (o = a + QG(`(
-`, $G(XG(n, `
+                    let a = $G(``, e, `: `) + t, o = a + $G(`(`, ZG(n, `, `), `)`);
+                    return o.length > nK && (o = a + $G(`(
+`, eK(ZG(n, `
 `)), `
-)`)), XG([
+)`)), ZG([
                         o,
-                        XG(r, ` `),
+                        ZG(r, ` `),
                         i
                     ], ` `);
                 }
@@ -37930,19 +37930,19 @@ spurious results.`);
                 leave: ({ name: e, value: t })=>e + `: ` + t
             },
             FragmentSpread: {
-                leave: ({ name: e, directives: t })=>`...` + e + QG(` `, XG(t, ` `))
+                leave: ({ name: e, directives: t })=>`...` + e + $G(` `, ZG(t, ` `))
             },
             InlineFragment: {
-                leave: ({ typeCondition: e, directives: t, selectionSet: n })=>XG([
+                leave: ({ typeCondition: e, directives: t, selectionSet: n })=>ZG([
                         `...`,
-                        QG(`on `, e),
-                        XG(t, ` `),
+                        $G(`on `, e),
+                        ZG(t, ` `),
                         n
                     ], ` `)
             },
             FragmentDefinition: {
-                leave: ({ name: e, typeCondition: t, variableDefinitions: n, directives: r, selectionSet: i, description: a })=>QG(``, a, `
-`) + `fragment ${e}${QG(`(`, XG(n, `, `), `)`)} on ${t} ${QG(``, XG(r, ` `), ` `)}` + i
+                leave: ({ name: e, typeCondition: t, variableDefinitions: n, directives: r, selectionSet: i, description: a })=>$G(``, a, `
+`) + `fragment ${e}${$G(`(`, ZG(n, `, `), `)`)} on ${t} ${$G(``, ZG(r, ` `), ` `)}` + i
             },
             IntValue: {
                 leave: ({ value: e })=>e
@@ -37951,7 +37951,7 @@ spurious results.`);
                 leave: ({ value: e })=>e
             },
             StringValue: {
-                leave: ({ value: e, block: t })=>t ? VW(e) : Nwe(e)
+                leave: ({ value: e, block: t })=>t ? HW(e) : Mwe(e)
             },
             BooleanValue: {
                 leave: ({ value: e })=>e ? `true` : `false`
@@ -37963,16 +37963,16 @@ spurious results.`);
                 leave: ({ value: e })=>e
             },
             ListValue: {
-                leave: ({ values: e })=>`[` + XG(e, `, `) + `]`
+                leave: ({ values: e })=>`[` + ZG(e, `, `) + `]`
             },
             ObjectValue: {
-                leave: ({ fields: e })=>`{` + XG(e, `, `) + `}`
+                leave: ({ fields: e })=>`{` + ZG(e, `, `) + `}`
             },
             ObjectField: {
                 leave: ({ name: e, value: t })=>e + `: ` + t
             },
             Directive: {
-                leave: ({ name: e, arguments: t })=>`@` + e + QG(`(`, XG(t, `, `), `)`)
+                leave: ({ name: e, arguments: t })=>`@` + e + $G(`(`, ZG(t, `, `), `)`)
             },
             NamedType: {
                 leave: ({ name: e })=>e
@@ -37984,188 +37984,188 @@ spurious results.`);
                 leave: ({ type: e })=>e + `!`
             },
             SchemaDefinition: {
-                leave: ({ description: e, directives: t, operationTypes: n })=>QG(``, e, `
-`) + XG([
+                leave: ({ description: e, directives: t, operationTypes: n })=>$G(``, e, `
+`) + ZG([
                         `schema`,
-                        XG(t, ` `),
-                        ZG(n)
+                        ZG(t, ` `),
+                        QG(n)
                     ], ` `)
             },
             OperationTypeDefinition: {
                 leave: ({ operation: e, type: t })=>e + `: ` + t
             },
             ScalarTypeDefinition: {
-                leave: ({ description: e, name: t, directives: n })=>QG(``, e, `
-`) + XG([
+                leave: ({ description: e, name: t, directives: n })=>$G(``, e, `
+`) + ZG([
                         `scalar`,
                         t,
-                        XG(n, ` `)
+                        ZG(n, ` `)
                     ], ` `)
             },
             ObjectTypeDefinition: {
-                leave: ({ description: e, name: t, interfaces: n, directives: r, fields: i })=>QG(``, e, `
-`) + XG([
+                leave: ({ description: e, name: t, interfaces: n, directives: r, fields: i })=>$G(``, e, `
+`) + ZG([
                         `type`,
                         t,
-                        QG(`implements `, XG(n, ` & `)),
-                        XG(r, ` `),
-                        ZG(i)
+                        $G(`implements `, ZG(n, ` & `)),
+                        ZG(r, ` `),
+                        QG(i)
                     ], ` `)
             },
             FieldDefinition: {
-                leave: ({ description: e, name: t, arguments: n, type: r, directives: i })=>QG(``, e, `
-`) + t + (eK(n) ? QG(`(
-`, $G(XG(n, `
+                leave: ({ description: e, name: t, arguments: n, type: r, directives: i })=>$G(``, e, `
+`) + t + (tK(n) ? $G(`(
+`, eK(ZG(n, `
 `)), `
-)`) : QG(`(`, XG(n, `, `), `)`)) + `: ` + r + QG(` `, XG(i, ` `))
+)`) : $G(`(`, ZG(n, `, `), `)`)) + `: ` + r + $G(` `, ZG(i, ` `))
             },
             InputValueDefinition: {
-                leave: ({ description: e, name: t, type: n, defaultValue: r, directives: i })=>QG(``, e, `
-`) + XG([
+                leave: ({ description: e, name: t, type: n, defaultValue: r, directives: i })=>$G(``, e, `
+`) + ZG([
                         t + `: ` + n,
-                        QG(`= `, r),
-                        XG(i, ` `)
+                        $G(`= `, r),
+                        ZG(i, ` `)
                     ], ` `)
             },
             InterfaceTypeDefinition: {
-                leave: ({ description: e, name: t, interfaces: n, directives: r, fields: i })=>QG(``, e, `
-`) + XG([
+                leave: ({ description: e, name: t, interfaces: n, directives: r, fields: i })=>$G(``, e, `
+`) + ZG([
                         `interface`,
                         t,
-                        QG(`implements `, XG(n, ` & `)),
-                        XG(r, ` `),
-                        ZG(i)
+                        $G(`implements `, ZG(n, ` & `)),
+                        ZG(r, ` `),
+                        QG(i)
                     ], ` `)
             },
             UnionTypeDefinition: {
-                leave: ({ description: e, name: t, directives: n, types: r })=>QG(``, e, `
-`) + XG([
+                leave: ({ description: e, name: t, directives: n, types: r })=>$G(``, e, `
+`) + ZG([
                         `union`,
                         t,
-                        XG(n, ` `),
-                        QG(`= `, XG(r, ` | `))
+                        ZG(n, ` `),
+                        $G(`= `, ZG(r, ` | `))
                     ], ` `)
             },
             EnumTypeDefinition: {
-                leave: ({ description: e, name: t, directives: n, values: r })=>QG(``, e, `
-`) + XG([
+                leave: ({ description: e, name: t, directives: n, values: r })=>$G(``, e, `
+`) + ZG([
                         `enum`,
                         t,
-                        XG(n, ` `),
-                        ZG(r)
+                        ZG(n, ` `),
+                        QG(r)
                     ], ` `)
             },
             EnumValueDefinition: {
-                leave: ({ description: e, name: t, directives: n })=>QG(``, e, `
-`) + XG([
+                leave: ({ description: e, name: t, directives: n })=>$G(``, e, `
+`) + ZG([
                         t,
-                        XG(n, ` `)
+                        ZG(n, ` `)
                     ], ` `)
             },
             InputObjectTypeDefinition: {
-                leave: ({ description: e, name: t, directives: n, fields: r })=>QG(``, e, `
-`) + XG([
+                leave: ({ description: e, name: t, directives: n, fields: r })=>$G(``, e, `
+`) + ZG([
                         `input`,
                         t,
-                        XG(n, ` `),
-                        ZG(r)
+                        ZG(n, ` `),
+                        QG(r)
                     ], ` `)
             },
             DirectiveDefinition: {
-                leave: ({ description: e, name: t, arguments: n, repeatable: r, locations: i })=>QG(``, e, `
-`) + `directive @` + t + (eK(n) ? QG(`(
-`, $G(XG(n, `
+                leave: ({ description: e, name: t, arguments: n, repeatable: r, locations: i })=>$G(``, e, `
+`) + `directive @` + t + (tK(n) ? $G(`(
+`, eK(ZG(n, `
 `)), `
-)`) : QG(`(`, XG(n, `, `), `)`)) + (r ? ` repeatable` : ``) + ` on ` + XG(i, ` | `)
+)`) : $G(`(`, ZG(n, `, `), `)`)) + (r ? ` repeatable` : ``) + ` on ` + ZG(i, ` | `)
             },
             SchemaExtension: {
-                leave: ({ directives: e, operationTypes: t })=>XG([
+                leave: ({ directives: e, operationTypes: t })=>ZG([
                         `extend schema`,
-                        XG(e, ` `),
-                        ZG(t)
+                        ZG(e, ` `),
+                        QG(t)
                     ], ` `)
             },
             ScalarTypeExtension: {
-                leave: ({ name: e, directives: t })=>XG([
+                leave: ({ name: e, directives: t })=>ZG([
                         `extend scalar`,
                         e,
-                        XG(t, ` `)
+                        ZG(t, ` `)
                     ], ` `)
             },
             ObjectTypeExtension: {
-                leave: ({ name: e, interfaces: t, directives: n, fields: r })=>XG([
+                leave: ({ name: e, interfaces: t, directives: n, fields: r })=>ZG([
                         `extend type`,
                         e,
-                        QG(`implements `, XG(t, ` & `)),
-                        XG(n, ` `),
-                        ZG(r)
+                        $G(`implements `, ZG(t, ` & `)),
+                        ZG(n, ` `),
+                        QG(r)
                     ], ` `)
             },
             InterfaceTypeExtension: {
-                leave: ({ name: e, interfaces: t, directives: n, fields: r })=>XG([
+                leave: ({ name: e, interfaces: t, directives: n, fields: r })=>ZG([
                         `extend interface`,
                         e,
-                        QG(`implements `, XG(t, ` & `)),
-                        XG(n, ` `),
-                        ZG(r)
+                        $G(`implements `, ZG(t, ` & `)),
+                        ZG(n, ` `),
+                        QG(r)
                     ], ` `)
             },
             UnionTypeExtension: {
-                leave: ({ name: e, directives: t, types: n })=>XG([
+                leave: ({ name: e, directives: t, types: n })=>ZG([
                         `extend union`,
                         e,
-                        XG(t, ` `),
-                        QG(`= `, XG(n, ` | `))
+                        ZG(t, ` `),
+                        $G(`= `, ZG(n, ` | `))
                     ], ` `)
             },
             EnumTypeExtension: {
-                leave: ({ name: e, directives: t, values: n })=>XG([
+                leave: ({ name: e, directives: t, values: n })=>ZG([
                         `extend enum`,
                         e,
-                        XG(t, ` `),
-                        ZG(n)
+                        ZG(t, ` `),
+                        QG(n)
                     ], ` `)
             },
             InputObjectTypeExtension: {
-                leave: ({ name: e, directives: t, fields: n })=>XG([
+                leave: ({ name: e, directives: t, fields: n })=>ZG([
                         `extend input`,
                         e,
-                        XG(t, ` `),
-                        ZG(n)
+                        ZG(t, ` `),
+                        QG(n)
                     ], ` `)
             },
             TypeCoordinate: {
                 leave: ({ name: e })=>e
             },
             MemberCoordinate: {
-                leave: ({ name: e, memberName: t })=>XG([
+                leave: ({ name: e, memberName: t })=>ZG([
                         e,
-                        QG(`.`, t)
+                        $G(`.`, t)
                     ])
             },
             ArgumentCoordinate: {
-                leave: ({ name: e, fieldName: t, argumentName: n })=>XG([
+                leave: ({ name: e, fieldName: t, argumentName: n })=>ZG([
                         e,
-                        QG(`.`, t),
-                        QG(`(`, n, `:)`)
+                        $G(`.`, t),
+                        $G(`(`, n, `:)`)
                     ])
             },
             DirectiveCoordinate: {
-                leave: ({ name: e })=>XG([
+                leave: ({ name: e })=>ZG([
                         `@`,
                         e
                     ])
             },
             DirectiveArgumentCoordinate: {
-                leave: ({ name: e, argumentName: t })=>XG([
+                leave: ({ name: e, argumentName: t })=>ZG([
                         `@`,
                         e,
-                        QG(`(`, t, `:)`)
+                        $G(`(`, t, `:)`)
                     ])
             }
         };
     }));
-    function iK(e, t) {
+    function aK(e, t) {
         switch(e.kind){
             case Z.NULL:
                 return null;
@@ -38178,205 +38178,205 @@ spurious results.`);
             case Z.BOOLEAN:
                 return e.value;
             case Z.LIST:
-                return e.values.map((e)=>iK(e, t));
+                return e.values.map((e)=>aK(e, t));
             case Z.OBJECT:
-                return DG(e.fields, (e)=>e.name.value, (e)=>iK(e.value, t));
+                return OG(e.fields, (e)=>e.name.value, (e)=>aK(e.value, t));
             case Z.VARIABLE:
                 return t?.[e.name.value];
         }
     }
-    var aK = o((()=>{
-        OG(), PW();
+    var oK = o((()=>{
+        kG(), FW();
     }));
-    function oK(e) {
-        if (e ?? oW(!1, `Must provide name.`), typeof e == `string` || oW(!1, `Expected name to be a string.`), e.length === 0) throw new X(`Expected name to be a non-empty string.`);
-        for(let t = 1; t < e.length; ++t)if (!zW(e.charCodeAt(t))) throw new X(`Names must only contain [_a-zA-Z0-9] but "${e}" does not.`);
-        if (!RW(e.charCodeAt(0))) throw new X(`Names must start with [_a-zA-Z] but "${e}" does not.`);
-        return e;
-    }
     function sK(e) {
-        if (e === `true` || e === `false` || e === `null`) throw new X(`Enum values cannot be named: ${e}`);
-        return oK(e);
-    }
-    var cK = o((()=>{
-        sW(), SW(), BW();
-    }));
-    function lK(e) {
-        return uK(e) || dK(e) || pK(e) || hK(e) || gK(e) || _K(e) || vK(e) || yK(e);
-    }
-    function Lwe(e) {
-        if (!lK(e)) throw Error(`Expected ${$(e)} to be a GraphQL type.`);
+        if (e ?? sW(!1, `Must provide name.`), typeof e == `string` || sW(!1, `Expected name to be a string.`), e.length === 0) throw new X(`Expected name to be a non-empty string.`);
+        for(let t = 1; t < e.length; ++t)if (!BW(e.charCodeAt(t))) throw new X(`Names must only contain [_a-zA-Z0-9] but "${e}" does not.`);
+        if (!zW(e.charCodeAt(0))) throw new X(`Names must start with [_a-zA-Z] but "${e}" does not.`);
         return e;
     }
-    function uK(e) {
-        return lG(e, GK);
+    function cK(e) {
+        if (e === `true` || e === `false` || e === `null`) throw new X(`Enum values cannot be named: ${e}`);
+        return sK(e);
     }
-    function Rwe(e) {
-        if (!uK(e)) throw Error(`Expected ${$(e)} to be a GraphQL Scalar type.`);
+    var lK = o((()=>{
+        cW(), CW(), VW();
+    }));
+    function uK(e) {
+        return dK(e) || fK(e) || mK(e) || gK(e) || _K(e) || vK(e) || yK(e) || bK(e);
+    }
+    function Iwe(e) {
+        if (!uK(e)) throw Error(`Expected ${$(e)} to be a GraphQL type.`);
         return e;
     }
     function dK(e) {
-        return lG(e, KK);
+        return uG(e, KK);
+    }
+    function Lwe(e) {
+        if (!dK(e)) throw Error(`Expected ${$(e)} to be a GraphQL Scalar type.`);
+        return e;
     }
     function fK(e) {
-        if (!dK(e)) throw Error(`Expected ${$(e)} to be a GraphQL Object type.`);
-        return e;
+        return uG(e, qK);
     }
     function pK(e) {
-        return lG(e, qK);
-    }
-    function mK(e) {
-        if (!pK(e)) throw Error(`Expected ${$(e)} to be a GraphQL Interface type.`);
+        if (!fK(e)) throw Error(`Expected ${$(e)} to be a GraphQL Object type.`);
         return e;
     }
-    function hK(e) {
-        return lG(e, JK);
+    function mK(e) {
+        return uG(e, JK);
     }
-    function zwe(e) {
-        if (!hK(e)) throw Error(`Expected ${$(e)} to be a GraphQL Union type.`);
+    function hK(e) {
+        if (!mK(e)) throw Error(`Expected ${$(e)} to be a GraphQL Interface type.`);
         return e;
     }
     function gK(e) {
-        return lG(e, YK);
+        return uG(e, YK);
     }
-    function Bwe(e) {
-        if (!gK(e)) throw Error(`Expected ${$(e)} to be a GraphQL Enum type.`);
+    function Rwe(e) {
+        if (!gK(e)) throw Error(`Expected ${$(e)} to be a GraphQL Union type.`);
         return e;
     }
     function _K(e) {
-        return lG(e, XK);
+        return uG(e, XK);
     }
-    function Vwe(e) {
-        if (!_K(e)) throw Error(`Expected ${$(e)} to be a GraphQL Input Object type.`);
+    function zwe(e) {
+        if (!_K(e)) throw Error(`Expected ${$(e)} to be a GraphQL Enum type.`);
         return e;
     }
     function vK(e) {
-        return lG(e, UK);
+        return uG(e, ZK);
     }
-    function Hwe(e) {
-        if (!vK(e)) throw Error(`Expected ${$(e)} to be a GraphQL List type.`);
+    function Bwe(e) {
+        if (!vK(e)) throw Error(`Expected ${$(e)} to be a GraphQL Input Object type.`);
         return e;
     }
     function yK(e) {
-        return lG(e, WK);
+        return uG(e, WK);
     }
-    function Uwe(e) {
-        if (!yK(e)) throw Error(`Expected ${$(e)} to be a GraphQL Non-Null type.`);
+    function Vwe(e) {
+        if (!yK(e)) throw Error(`Expected ${$(e)} to be a GraphQL List type.`);
         return e;
     }
     function bK(e) {
-        return uK(e) || gK(e) || _K(e) || TK(e) && bK(e.ofType);
+        return uG(e, GK);
     }
-    function Wwe(e) {
-        if (!bK(e)) throw Error(`Expected ${$(e)} to be a GraphQL input type.`);
+    function Hwe(e) {
+        if (!bK(e)) throw Error(`Expected ${$(e)} to be a GraphQL Non-Null type.`);
         return e;
     }
     function xK(e) {
-        return uK(e) || dK(e) || pK(e) || hK(e) || gK(e) || TK(e) && xK(e.ofType);
+        return dK(e) || _K(e) || vK(e) || EK(e) && xK(e.ofType);
     }
-    function Gwe(e) {
-        if (!xK(e)) throw Error(`Expected ${$(e)} to be a GraphQL output type.`);
+    function Uwe(e) {
+        if (!xK(e)) throw Error(`Expected ${$(e)} to be a GraphQL input type.`);
         return e;
     }
     function SK(e) {
-        return uK(e) || gK(e);
+        return dK(e) || fK(e) || mK(e) || gK(e) || _K(e) || EK(e) && SK(e.ofType);
     }
-    function Kwe(e) {
-        if (!SK(e)) throw Error(`Expected ${$(e)} to be a GraphQL leaf type.`);
+    function Wwe(e) {
+        if (!SK(e)) throw Error(`Expected ${$(e)} to be a GraphQL output type.`);
         return e;
     }
     function CK(e) {
-        return dK(e) || pK(e) || hK(e);
+        return dK(e) || _K(e);
     }
-    function qwe(e) {
-        if (!CK(e)) throw Error(`Expected ${$(e)} to be a GraphQL composite type.`);
+    function Gwe(e) {
+        if (!CK(e)) throw Error(`Expected ${$(e)} to be a GraphQL leaf type.`);
         return e;
     }
     function wK(e) {
-        return pK(e) || hK(e);
+        return fK(e) || mK(e) || gK(e);
     }
-    function Jwe(e) {
-        if (!wK(e)) throw Error(`Expected ${$(e)} to be a GraphQL abstract type.`);
+    function Kwe(e) {
+        if (!wK(e)) throw Error(`Expected ${$(e)} to be a GraphQL composite type.`);
         return e;
     }
     function TK(e) {
-        return vK(e) || yK(e);
+        return mK(e) || gK(e);
     }
-    function Ywe(e) {
-        if (!TK(e)) throw Error(`Expected ${$(e)} to be a GraphQL wrapping type.`);
+    function qwe(e) {
+        if (!TK(e)) throw Error(`Expected ${$(e)} to be a GraphQL abstract type.`);
         return e;
     }
     function EK(e) {
-        return lK(e) && !yK(e);
+        return yK(e) || bK(e);
+    }
+    function Jwe(e) {
+        if (!EK(e)) throw Error(`Expected ${$(e)} to be a GraphQL wrapping type.`);
+        return e;
     }
     function DK(e) {
-        if (!EK(e)) throw Error(`Expected ${$(e)} to be a GraphQL nullable type.`);
-        return e;
+        return uK(e) && !bK(e);
     }
     function OK(e) {
-        if (e) return yK(e) ? e.ofType : e;
-    }
-    function kK(e) {
-        return uK(e) || dK(e) || pK(e) || hK(e) || gK(e) || _K(e);
-    }
-    function Xwe(e) {
-        if (!kK(e)) throw Error(`Expected ${$(e)} to be a GraphQL named type.`);
+        if (!DK(e)) throw Error(`Expected ${$(e)} to be a GraphQL nullable type.`);
         return e;
     }
+    function kK(e) {
+        if (e) return bK(e) ? e.ofType : e;
+    }
     function AK(e) {
-        if (e) {
-            let t = e;
-            for(; TK(t);)t = t.ofType;
-            return t;
-        }
+        return dK(e) || fK(e) || mK(e) || gK(e) || _K(e) || vK(e);
+    }
+    function Ywe(e) {
+        if (!AK(e)) throw Error(`Expected ${$(e)} to be a GraphQL named type.`);
+        return e;
     }
     function jK(e) {
-        return typeof e == `function` ? e() : e;
+        if (e) {
+            let t = e;
+            for(; EK(t);)t = t.ofType;
+            return t;
+        }
     }
     function MK(e) {
         return typeof e == `function` ? e() : e;
     }
     function NK(e) {
-        let t = jK(e.interfaces ?? []);
-        return Array.isArray(t) || oW(!1, `${e.name} interfaces must be an Array or a function which returns an Array.`), t;
+        return typeof e == `function` ? e() : e;
     }
     function PK(e) {
-        let t = MK(e.fields);
-        return IK(t) || oW(!1, `${e.name} fields must be an object with field names as keys or a function which returns such an object.`), kG(t, (t, n)=>{
-            IK(t) || oW(!1, `${e.name}.${n} field config must be an object.`), t.resolve == null || typeof t.resolve == `function` || oW(!1, `${e.name}.${n} field resolver must be a function if provided, but got: ${$(t.resolve)}.`);
+        let t = MK(e.interfaces ?? []);
+        return Array.isArray(t) || sW(!1, `${e.name} interfaces must be an Array or a function which returns an Array.`), t;
+    }
+    function FK(e) {
+        let t = NK(e.fields);
+        return LK(t) || sW(!1, `${e.name} fields must be an object with field names as keys or a function which returns such an object.`), AG(t, (t, n)=>{
+            LK(t) || sW(!1, `${e.name}.${n} field config must be an object.`), t.resolve == null || typeof t.resolve == `function` || sW(!1, `${e.name}.${n} field resolver must be a function if provided, but got: ${$(t.resolve)}.`);
             let r = t.args ?? {};
-            return IK(r) || oW(!1, `${e.name}.${n} args must be an object with argument names as keys.`), {
-                name: oK(n),
+            return LK(r) || sW(!1, `${e.name}.${n} args must be an object with argument names as keys.`), {
+                name: sK(n),
                 description: t.description,
                 type: t.type,
-                args: FK(r),
+                args: IK(r),
                 resolve: t.resolve,
                 subscribe: t.subscribe,
                 deprecationReason: t.deprecationReason,
-                extensions: BG(t.extensions),
+                extensions: VG(t.extensions),
                 astNode: t.astNode
             };
         });
     }
-    function FK(e) {
+    function IK(e) {
         return Object.entries(e).map(([e, t])=>({
-                name: oK(e),
+                name: sK(e),
                 description: t.description,
                 type: t.type,
                 defaultValue: t.defaultValue,
                 deprecationReason: t.deprecationReason,
-                extensions: BG(t.extensions),
+                extensions: VG(t.extensions),
                 astNode: t.astNode
             }));
     }
-    function IK(e) {
-        return uW(e) && !Array.isArray(e);
-    }
     function LK(e) {
-        return kG(e, (e)=>({
+        return dW(e) && !Array.isArray(e);
+    }
+    function RK(e) {
+        return AG(e, (e)=>({
                 description: e.description,
                 type: e.type,
-                args: RK(e.args),
+                args: zK(e.args),
                 resolve: e.resolve,
                 subscribe: e.subscribe,
                 deprecationReason: e.deprecationReason,
@@ -38384,8 +38384,8 @@ spurious results.`);
                 astNode: e.astNode
             }));
     }
-    function RK(e) {
-        return DG(e, (e)=>e.name, (e)=>({
+    function zK(e) {
+        return OG(e, (e)=>e.name, (e)=>({
                 description: e.description,
                 type: e.type,
                 defaultValue: e.defaultValue,
@@ -38394,45 +38394,45 @@ spurious results.`);
                 astNode: e.astNode
             }));
     }
-    function zK(e) {
-        return yK(e.type) && e.defaultValue === void 0;
+    function BK(e) {
+        return bK(e.type) && e.defaultValue === void 0;
     }
-    function Zwe(e) {
-        let t = jK(e.types);
-        return Array.isArray(t) || oW(!1, `Must provide Array of types or a function which returns such an array for Union ${e.name}.`), t;
-    }
-    function BK(e, t) {
-        return xG(`the enum value`, IG(t, e.getValues().map((e)=>e.name)));
+    function Xwe(e) {
+        let t = MK(e.types);
+        return Array.isArray(t) || sW(!1, `Must provide Array of types or a function which returns such an array for Union ${e.name}.`), t;
     }
     function VK(e, t) {
-        return IK(t) || oW(!1, `${e} values must be an object with value names as keys.`), Object.entries(t).map(([t, n])=>(IK(n) || oW(!1, `${e}.${t} must refer to an object with a "value" key representing an internal value but got: ${$(n)}.`), {
-                name: sK(t),
+        return SG(`the enum value`, LG(t, e.getValues().map((e)=>e.name)));
+    }
+    function HK(e, t) {
+        return LK(t) || sW(!1, `${e} values must be an object with value names as keys.`), Object.entries(t).map(([t, n])=>(LK(n) || sW(!1, `${e}.${t} must refer to an object with a "value" key representing an internal value but got: ${$(n)}.`), {
+                name: cK(t),
                 description: n.description,
                 value: n.value === void 0 ? t : n.value,
                 deprecationReason: n.deprecationReason,
-                extensions: BG(n.extensions),
+                extensions: VG(n.extensions),
                 astNode: n.astNode
             }));
     }
-    function Qwe(e) {
-        let t = MK(e.fields);
-        return IK(t) || oW(!1, `${e.name} fields must be an object with field names as keys or a function which returns such an object.`), kG(t, (t, n)=>(!(`resolve` in t) || oW(!1, `${e.name}.${n} field has a resolve property, but Input Types cannot define resolvers.`), {
-                name: oK(n),
+    function Zwe(e) {
+        let t = NK(e.fields);
+        return LK(t) || sW(!1, `${e.name} fields must be an object with field names as keys or a function which returns such an object.`), AG(t, (t, n)=>(!(`resolve` in t) || sW(!1, `${e.name}.${n} field has a resolve property, but Input Types cannot define resolvers.`), {
+                name: sK(n),
                 description: t.description,
                 type: t.type,
                 defaultValue: t.defaultValue,
                 deprecationReason: t.deprecationReason,
-                extensions: BG(t.extensions),
+                extensions: VG(t.extensions),
                 astNode: t.astNode
             }));
     }
-    function HK(e) {
-        return yK(e.type) && e.defaultValue === void 0;
+    function UK(e) {
+        return bK(e.type) && e.defaultValue === void 0;
     }
-    var UK, WK, GK, KK, qK, JK, YK, XK, ZK = o((()=>{
-        sW(), CG(), Mwe(), sG(), uG(), dW(), EG(), OG(), AG(), zG(), VG(), SW(), PW(), rK(), aK(), cK(), UK = class {
+    var WK, GK, KK, qK, JK, YK, XK, ZK, QK = o((()=>{
+        cW(), wG(), jwe(), cG(), dG(), fW(), DG(), kG(), jG(), BG(), HG(), CW(), FW(), iK(), oK(), lK(), WK = class {
             constructor(e){
-                lK(e) || oW(!1, `Expected ${$(e)} to be a GraphQL type.`), this.ofType = e;
+                uK(e) || sW(!1, `Expected ${$(e)} to be a GraphQL type.`), this.ofType = e;
             }
             get [Symbol.toStringTag]() {
                 return `GraphQLList`;
@@ -38443,9 +38443,9 @@ spurious results.`);
             toJSON() {
                 return this.toString();
             }
-        }, WK = class {
+        }, GK = class {
             constructor(e){
-                EK(e) || oW(!1, `Expected ${$(e)} to be a GraphQL nullable type.`), this.ofType = e;
+                DK(e) || sW(!1, `Expected ${$(e)} to be a GraphQL nullable type.`), this.ofType = e;
             }
             get [Symbol.toStringTag]() {
                 return `GraphQLNonNull`;
@@ -38456,10 +38456,10 @@ spurious results.`);
             toJSON() {
                 return this.toString();
             }
-        }, GK = class {
+        }, KK = class {
             constructor(e){
-                let t = e.parseValue ?? wG;
-                this.name = oK(e.name), this.description = e.description, this.specifiedByURL = e.specifiedByURL, this.serialize = e.serialize ?? wG, this.parseValue = t, this.parseLiteral = e.parseLiteral ?? ((e, n)=>t(iK(e, n))), this.extensions = BG(e.extensions), this.astNode = e.astNode, this.extensionASTNodes = e.extensionASTNodes ?? [], e.specifiedByURL == null || typeof e.specifiedByURL == `string` || oW(!1, `${this.name} must provide "specifiedByURL" as a string, but got: ${$(e.specifiedByURL)}.`), e.serialize == null || typeof e.serialize == `function` || oW(!1, `${this.name} must provide "serialize" function. If this custom Scalar is also used as an input type, ensure "parseValue" and "parseLiteral" functions are also provided.`), e.parseLiteral && (typeof e.parseValue == `function` && typeof e.parseLiteral == `function` || oW(!1, `${this.name} must provide both "parseValue" and "parseLiteral" functions.`));
+                let t = e.parseValue ?? TG;
+                this.name = sK(e.name), this.description = e.description, this.specifiedByURL = e.specifiedByURL, this.serialize = e.serialize ?? TG, this.parseValue = t, this.parseLiteral = e.parseLiteral ?? ((e, n)=>t(aK(e, n))), this.extensions = VG(e.extensions), this.astNode = e.astNode, this.extensionASTNodes = e.extensionASTNodes ?? [], e.specifiedByURL == null || typeof e.specifiedByURL == `string` || sW(!1, `${this.name} must provide "specifiedByURL" as a string, but got: ${$(e.specifiedByURL)}.`), e.serialize == null || typeof e.serialize == `function` || sW(!1, `${this.name} must provide "serialize" function. If this custom Scalar is also used as an input type, ensure "parseValue" and "parseLiteral" functions are also provided.`), e.parseLiteral && (typeof e.parseValue == `function` && typeof e.parseLiteral == `function` || sW(!1, `${this.name} must provide both "parseValue" and "parseLiteral" functions.`));
             }
             get [Symbol.toStringTag]() {
                 return `GraphQLScalarType`;
@@ -38483,9 +38483,9 @@ spurious results.`);
             toJSON() {
                 return this.toString();
             }
-        }, KK = class {
+        }, qK = class {
             constructor(e){
-                this.name = oK(e.name), this.description = e.description, this.isTypeOf = e.isTypeOf, this.extensions = BG(e.extensions), this.astNode = e.astNode, this.extensionASTNodes = e.extensionASTNodes ?? [], this._fields = ()=>PK(e), this._interfaces = ()=>NK(e), e.isTypeOf == null || typeof e.isTypeOf == `function` || oW(!1, `${this.name} must provide "isTypeOf" as a function, but got: ${$(e.isTypeOf)}.`);
+                this.name = sK(e.name), this.description = e.description, this.isTypeOf = e.isTypeOf, this.extensions = VG(e.extensions), this.astNode = e.astNode, this.extensionASTNodes = e.extensionASTNodes ?? [], this._fields = ()=>FK(e), this._interfaces = ()=>PK(e), e.isTypeOf == null || typeof e.isTypeOf == `function` || sW(!1, `${this.name} must provide "isTypeOf" as a function, but got: ${$(e.isTypeOf)}.`);
             }
             get [Symbol.toStringTag]() {
                 return `GraphQLObjectType`;
@@ -38501,7 +38501,7 @@ spurious results.`);
                     name: this.name,
                     description: this.description,
                     interfaces: this.getInterfaces(),
-                    fields: LK(this.getFields()),
+                    fields: RK(this.getFields()),
                     isTypeOf: this.isTypeOf,
                     extensions: this.extensions,
                     astNode: this.astNode,
@@ -38514,9 +38514,9 @@ spurious results.`);
             toJSON() {
                 return this.toString();
             }
-        }, qK = class {
+        }, JK = class {
             constructor(e){
-                this.name = oK(e.name), this.description = e.description, this.resolveType = e.resolveType, this.extensions = BG(e.extensions), this.astNode = e.astNode, this.extensionASTNodes = e.extensionASTNodes ?? [], this._fields = PK.bind(void 0, e), this._interfaces = NK.bind(void 0, e), e.resolveType == null || typeof e.resolveType == `function` || oW(!1, `${this.name} must provide "resolveType" as a function, but got: ${$(e.resolveType)}.`);
+                this.name = sK(e.name), this.description = e.description, this.resolveType = e.resolveType, this.extensions = VG(e.extensions), this.astNode = e.astNode, this.extensionASTNodes = e.extensionASTNodes ?? [], this._fields = FK.bind(void 0, e), this._interfaces = PK.bind(void 0, e), e.resolveType == null || typeof e.resolveType == `function` || sW(!1, `${this.name} must provide "resolveType" as a function, but got: ${$(e.resolveType)}.`);
             }
             get [Symbol.toStringTag]() {
                 return `GraphQLInterfaceType`;
@@ -38532,7 +38532,7 @@ spurious results.`);
                     name: this.name,
                     description: this.description,
                     interfaces: this.getInterfaces(),
-                    fields: LK(this.getFields()),
+                    fields: RK(this.getFields()),
                     resolveType: this.resolveType,
                     extensions: this.extensions,
                     astNode: this.astNode,
@@ -38545,9 +38545,9 @@ spurious results.`);
             toJSON() {
                 return this.toString();
             }
-        }, JK = class {
+        }, YK = class {
             constructor(e){
-                this.name = oK(e.name), this.description = e.description, this.resolveType = e.resolveType, this.extensions = BG(e.extensions), this.astNode = e.astNode, this.extensionASTNodes = e.extensionASTNodes ?? [], this._types = Zwe.bind(void 0, e), e.resolveType == null || typeof e.resolveType == `function` || oW(!1, `${this.name} must provide "resolveType" as a function, but got: ${$(e.resolveType)}.`);
+                this.name = sK(e.name), this.description = e.description, this.resolveType = e.resolveType, this.extensions = VG(e.extensions), this.astNode = e.astNode, this.extensionASTNodes = e.extensionASTNodes ?? [], this._types = Xwe.bind(void 0, e), e.resolveType == null || typeof e.resolveType == `function` || sW(!1, `${this.name} must provide "resolveType" as a function, but got: ${$(e.resolveType)}.`);
             }
             get [Symbol.toStringTag]() {
                 return `GraphQLUnionType`;
@@ -38572,18 +38572,18 @@ spurious results.`);
             toJSON() {
                 return this.toString();
             }
-        }, YK = class {
+        }, XK = class {
             constructor(e){
-                this.name = oK(e.name), this.description = e.description, this.extensions = BG(e.extensions), this.astNode = e.astNode, this.extensionASTNodes = e.extensionASTNodes ?? [], this._values = typeof e.values == `function` ? e.values : VK(this.name, e.values), this._valueLookup = null, this._nameLookup = null;
+                this.name = sK(e.name), this.description = e.description, this.extensions = VG(e.extensions), this.astNode = e.astNode, this.extensionASTNodes = e.extensionASTNodes ?? [], this._values = typeof e.values == `function` ? e.values : HK(this.name, e.values), this._valueLookup = null, this._nameLookup = null;
             }
             get [Symbol.toStringTag]() {
                 return `GraphQLEnumType`;
             }
             getValues() {
-                return typeof this._values == `function` && (this._values = VK(this.name, this._values())), this._values;
+                return typeof this._values == `function` && (this._values = HK(this.name, this._values())), this._values;
             }
             getValue(e) {
-                return this._nameLookup === null && (this._nameLookup = TG(this.getValues(), (e)=>e.name)), this._nameLookup[e];
+                return this._nameLookup === null && (this._nameLookup = EG(this.getValues(), (e)=>e.name)), this._nameLookup[e];
             }
             serialize(e) {
                 this._valueLookup === null && (this._valueLookup = new Map(this.getValues().map((e)=>[
@@ -38597,30 +38597,30 @@ spurious results.`);
             parseValue(e) {
                 if (typeof e != `string`) {
                     let t = $(e);
-                    throw new X(`Enum "${this.name}" cannot represent non-string value: ${t}.` + BK(this, t));
+                    throw new X(`Enum "${this.name}" cannot represent non-string value: ${t}.` + VK(this, t));
                 }
                 let t = this.getValue(e);
-                if (t == null) throw new X(`Value "${e}" does not exist in "${this.name}" enum.` + BK(this, e));
+                if (t == null) throw new X(`Value "${e}" does not exist in "${this.name}" enum.` + VK(this, e));
                 return t.value;
             }
             parseLiteral(e, t) {
                 if (e.kind !== Z.ENUM) {
-                    let t = YG(e);
-                    throw new X(`Enum "${this.name}" cannot represent non-enum value: ${t}.` + BK(this, t), {
+                    let t = XG(e);
+                    throw new X(`Enum "${this.name}" cannot represent non-enum value: ${t}.` + VK(this, t), {
                         nodes: e
                     });
                 }
                 let n = this.getValue(e.value);
                 if (n == null) {
-                    let t = YG(e);
-                    throw new X(`Value "${t}" does not exist in "${this.name}" enum.` + BK(this, t), {
+                    let t = XG(e);
+                    throw new X(`Value "${t}" does not exist in "${this.name}" enum.` + VK(this, t), {
                         nodes: e
                     });
                 }
                 return n.value;
             }
             toConfig() {
-                let e = DG(this.getValues(), (e)=>e.name, (e)=>({
+                let e = OG(this.getValues(), (e)=>e.name, (e)=>({
                         description: e.description,
                         value: e.value,
                         deprecationReason: e.deprecationReason,
@@ -38642,9 +38642,9 @@ spurious results.`);
             toJSON() {
                 return this.toString();
             }
-        }, XK = class {
+        }, ZK = class {
             constructor(e){
-                this.name = oK(e.name), this.description = e.description, this.extensions = BG(e.extensions), this.astNode = e.astNode, this.extensionASTNodes = e.extensionASTNodes ?? [], this.isOneOf = e.isOneOf ?? !1, this._fields = Qwe.bind(void 0, e);
+                this.name = sK(e.name), this.description = e.description, this.extensions = VG(e.extensions), this.astNode = e.astNode, this.extensionASTNodes = e.extensionASTNodes ?? [], this.isOneOf = e.isOneOf ?? !1, this._fields = Zwe.bind(void 0, e);
             }
             get [Symbol.toStringTag]() {
                 return `GraphQLInputObjectType`;
@@ -38653,7 +38653,7 @@ spurious results.`);
                 return typeof this._fields == `function` && (this._fields = this._fields()), this._fields;
             }
             toConfig() {
-                let e = kG(this.getFields(), (e)=>({
+                let e = AG(this.getFields(), (e)=>({
                         description: e.description,
                         type: e.type,
                         defaultValue: e.defaultValue,
@@ -38679,37 +38679,37 @@ spurious results.`);
             }
         };
     }));
-    function QK(e, t) {
-        return e === t ? !0 : yK(e) && yK(t) || vK(e) && vK(t) ? QK(e.ofType, t.ofType) : !1;
-    }
-    function $K(e, t, n) {
-        return t === n ? !0 : yK(n) ? yK(t) ? $K(e, t.ofType, n.ofType) : !1 : yK(t) ? $K(e, t.ofType, n) : vK(n) ? vK(t) ? $K(e, t.ofType, n.ofType) : !1 : vK(t) ? !1 : wK(n) && (pK(t) || dK(t)) && e.isSubType(n, t);
+    function $K(e, t) {
+        return e === t ? !0 : bK(e) && bK(t) || yK(e) && yK(t) ? $K(e.ofType, t.ofType) : !1;
     }
     function eq(e, t, n) {
-        return t === n ? !0 : wK(t) ? wK(n) ? e.getPossibleTypes(t).some((t)=>e.isSubType(n, t)) : e.isSubType(t, n) : wK(n) ? e.isSubType(n, t) : !1;
+        return t === n ? !0 : bK(n) ? bK(t) ? eq(e, t.ofType, n.ofType) : !1 : bK(t) ? eq(e, t.ofType, n) : yK(n) ? yK(t) ? eq(e, t.ofType, n.ofType) : !1 : yK(t) ? !1 : TK(n) && (mK(t) || fK(t)) && e.isSubType(n, t);
     }
-    var tq = o((()=>{
-        ZK();
+    function tq(e, t, n) {
+        return t === n ? !0 : TK(t) ? TK(n) ? e.getPossibleTypes(t).some((t)=>e.isSubType(n, t)) : e.isSubType(t, n) : TK(n) ? e.isSubType(n, t) : !1;
+    }
+    var nq = o((()=>{
+        QK();
     }));
-    function nq(e) {
-        return dq.some(({ name: t })=>e.name === t);
-    }
     function rq(e) {
-        if (uW(e)) {
+        return fq.some(({ name: t })=>e.name === t);
+    }
+    function iq(e) {
+        if (dW(e)) {
             if (typeof e.valueOf == `function`) {
                 let t = e.valueOf();
-                if (!uW(t)) return t;
+                if (!dW(t)) return t;
             }
             if (typeof e.toJSON == `function`) return e.toJSON();
         }
         return e;
     }
-    var iq, aq, oq, sq, cq, lq, uq, dq, fq = o((()=>{
-        sG(), dW(), SW(), PW(), rK(), ZK(), iq = 2147483647, aq = -2147483648, oq = new GK({
+    var aq, oq, sq, cq, lq, uq, dq, fq, pq = o((()=>{
+        cG(), fW(), CW(), FW(), iK(), QK(), aq = 2147483647, oq = -2147483648, sq = new KK({
             name: `Int`,
             description: "The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.",
             serialize (e) {
-                let t = rq(e);
+                let t = iq(e);
                 if (typeof t == `boolean`) return +!!t;
                 let n = t;
                 if (typeof t == `string` && t !== `` && (n = Number(t)), typeof n != `number` || !Number.isInteger(n)) throw new X(`Int cannot represent non-integer value: ${$(t)}`);
@@ -38722,7 +38722,7 @@ spurious results.`);
                 return e;
             },
             parseLiteral (e) {
-                if (e.kind !== Z.INT) throw new X(`Int cannot represent non-integer value: ${YG(e)}`, {
+                if (e.kind !== Z.INT) throw new X(`Int cannot represent non-integer value: ${XG(e)}`, {
                     nodes: e
                 });
                 let t = parseInt(e.value, 10);
@@ -38731,11 +38731,11 @@ spurious results.`);
                 });
                 return t;
             }
-        }), sq = new GK({
+        }), cq = new KK({
             name: `Float`,
             description: "The `Float` scalar type represents signed double-precision fractional values as specified by [IEEE 754](https://en.wikipedia.org/wiki/IEEE_floating_point).",
             serialize (e) {
-                let t = rq(e);
+                let t = iq(e);
                 if (typeof t == `boolean`) return +!!t;
                 let n = t;
                 if (typeof t == `string` && t !== `` && (n = Number(t)), typeof n != `number` || !Number.isFinite(n)) throw new X(`Float cannot represent non numeric value: ${$(t)}`);
@@ -38746,14 +38746,14 @@ spurious results.`);
                 return e;
             },
             parseLiteral (e) {
-                if (e.kind !== Z.FLOAT && e.kind !== Z.INT) throw new X(`Float cannot represent non numeric value: ${YG(e)}`, e);
+                if (e.kind !== Z.FLOAT && e.kind !== Z.INT) throw new X(`Float cannot represent non numeric value: ${XG(e)}`, e);
                 return parseFloat(e.value);
             }
-        }), cq = new GK({
+        }), lq = new KK({
             name: `String`,
             description: "The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.",
             serialize (e) {
-                let t = rq(e);
+                let t = iq(e);
                 if (typeof t == `string`) return t;
                 if (typeof t == `boolean`) return t ? `true` : `false`;
                 if (typeof t == `number` && Number.isFinite(t)) return t.toString();
@@ -38764,16 +38764,16 @@ spurious results.`);
                 return e;
             },
             parseLiteral (e) {
-                if (e.kind !== Z.STRING) throw new X(`String cannot represent a non string value: ${YG(e)}`, {
+                if (e.kind !== Z.STRING) throw new X(`String cannot represent a non string value: ${XG(e)}`, {
                     nodes: e
                 });
                 return e.value;
             }
-        }), lq = new GK({
+        }), uq = new KK({
             name: `Boolean`,
             description: "The `Boolean` scalar type represents `true` or `false`.",
             serialize (e) {
-                let t = rq(e);
+                let t = iq(e);
                 if (typeof t == `boolean`) return t;
                 if (Number.isFinite(t)) return t !== 0;
                 throw new X(`Boolean cannot represent a non boolean value: ${$(t)}`);
@@ -38783,16 +38783,16 @@ spurious results.`);
                 return e;
             },
             parseLiteral (e) {
-                if (e.kind !== Z.BOOLEAN) throw new X(`Boolean cannot represent a non boolean value: ${YG(e)}`, {
+                if (e.kind !== Z.BOOLEAN) throw new X(`Boolean cannot represent a non boolean value: ${XG(e)}`, {
                     nodes: e
                 });
                 return e.value;
             }
-        }), uq = new GK({
+        }), dq = new KK({
             name: `ID`,
             description: 'The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `"4"`) or integer (such as `4`) input value will be accepted as an ID.',
             serialize (e) {
-                let t = rq(e);
+                let t = iq(e);
                 if (typeof t == `string`) return t;
                 if (Number.isInteger(t)) return String(t);
                 throw new X(`ID cannot represent value: ${$(e)}`);
@@ -38803,35 +38803,35 @@ spurious results.`);
                 throw new X(`ID cannot represent value: ${$(e)}`);
             },
             parseLiteral (e) {
-                if (e.kind !== Z.STRING && e.kind !== Z.INT) throw new X(`ID cannot represent a non-string and non-integer value: ` + YG(e), {
+                if (e.kind !== Z.STRING && e.kind !== Z.INT) throw new X(`ID cannot represent a non-string and non-integer value: ` + XG(e), {
                     nodes: e
                 });
                 return e.value;
             }
-        }), dq = Object.freeze([
-            cq,
-            oq,
-            sq,
+        }), fq = Object.freeze([
             lq,
-            uq
+            sq,
+            cq,
+            uq,
+            dq
         ]);
     }));
-    function pq(e) {
-        return lG(e, hq);
+    function mq(e) {
+        return uG(e, gq);
     }
-    function $we(e) {
-        if (!pq(e)) throw Error(`Expected ${$(e)} to be a GraphQL directive.`);
+    function Qwe(e) {
+        if (!mq(e)) throw Error(`Expected ${$(e)} to be a GraphQL directive.`);
         return e;
     }
-    function mq(e) {
-        return Sq.some(({ name: t })=>t === e.name);
+    function hq(e) {
+        return Cq.some(({ name: t })=>t === e.name);
     }
-    var hq, gq, _q, vq, yq, bq, xq, Sq, Cq = o((()=>{
-        sW(), sG(), uG(), dW(), VG(), NW(), cK(), ZK(), fq(), hq = class {
+    var gq, _q, vq, yq, bq, xq, Sq, Cq, wq = o((()=>{
+        cW(), cG(), dG(), fW(), HG(), PW(), lK(), QK(), pq(), gq = class {
             constructor(e){
-                this.name = oK(e.name), this.description = e.description, this.locations = e.locations, this.isRepeatable = e.isRepeatable ?? !1, this.extensions = BG(e.extensions), this.astNode = e.astNode, Array.isArray(e.locations) || oW(!1, `@${e.name} locations must be an Array.`);
+                this.name = sK(e.name), this.description = e.description, this.locations = e.locations, this.isRepeatable = e.isRepeatable ?? !1, this.extensions = VG(e.extensions), this.astNode = e.astNode, Array.isArray(e.locations) || sW(!1, `@${e.name} locations must be an Array.`);
                 let t = e.args ?? {};
-                uW(t) && !Array.isArray(t) || oW(!1, `@${e.name} args must be an object with argument names as keys.`), this.args = FK(t);
+                dW(t) && !Array.isArray(t) || sW(!1, `@${e.name} args must be an object with argument names as keys.`), this.args = IK(t);
             }
             get [Symbol.toStringTag]() {
                 return `GraphQLDirective`;
@@ -38841,7 +38841,7 @@ spurious results.`);
                     name: this.name,
                     description: this.description,
                     locations: this.locations,
-                    args: RK(this.args),
+                    args: zK(this.args),
                     isRepeatable: this.isRepeatable,
                     extensions: this.extensions,
                     astNode: this.astNode
@@ -38853,96 +38853,96 @@ spurious results.`);
             toJSON() {
                 return this.toString();
             }
-        }, gq = new hq({
+        }, _q = new gq({
             name: `include`,
             description: "Directs the executor to include this field or fragment only when the `if` argument is true.",
             locations: [
-                MW.FIELD,
-                MW.FRAGMENT_SPREAD,
-                MW.INLINE_FRAGMENT
+                NW.FIELD,
+                NW.FRAGMENT_SPREAD,
+                NW.INLINE_FRAGMENT
             ],
             args: {
                 if: {
-                    type: new WK(lq),
+                    type: new GK(uq),
                     description: `Included when true.`
                 }
             }
-        }), _q = new hq({
+        }), vq = new gq({
             name: `skip`,
             description: "Directs the executor to skip this field or fragment when the `if` argument is true.",
             locations: [
-                MW.FIELD,
-                MW.FRAGMENT_SPREAD,
-                MW.INLINE_FRAGMENT
+                NW.FIELD,
+                NW.FRAGMENT_SPREAD,
+                NW.INLINE_FRAGMENT
             ],
             args: {
                 if: {
-                    type: new WK(lq),
+                    type: new GK(uq),
                     description: `Skipped when true.`
                 }
             }
-        }), vq = `No longer supported`, yq = new hq({
+        }), yq = `No longer supported`, bq = new gq({
             name: `deprecated`,
             description: `Marks an element of a GraphQL schema as no longer supported.`,
             locations: [
-                MW.FIELD_DEFINITION,
-                MW.ARGUMENT_DEFINITION,
-                MW.INPUT_FIELD_DEFINITION,
-                MW.ENUM_VALUE
+                NW.FIELD_DEFINITION,
+                NW.ARGUMENT_DEFINITION,
+                NW.INPUT_FIELD_DEFINITION,
+                NW.ENUM_VALUE
             ],
             args: {
                 reason: {
-                    type: cq,
+                    type: lq,
                     description: `Explains why this element was deprecated, usually also including a suggestion for how to access supported similar data. Formatted using the Markdown syntax, as specified by [CommonMark](https://commonmark.org/).`,
-                    defaultValue: vq
+                    defaultValue: yq
                 }
             }
-        }), bq = new hq({
+        }), xq = new gq({
             name: `specifiedBy`,
             description: `Exposes a URL that specifies the behavior of this scalar.`,
             locations: [
-                MW.SCALAR
+                NW.SCALAR
             ],
             args: {
                 url: {
-                    type: new WK(cq),
+                    type: new GK(lq),
                     description: `The URL that specifies the behavior of this scalar.`
                 }
             }
-        }), xq = new hq({
+        }), Sq = new gq({
             name: `oneOf`,
             description: "Indicates exactly one field must be supplied and this field must not be `null`.",
             locations: [
-                MW.INPUT_OBJECT
+                NW.INPUT_OBJECT
             ],
             args: {}
-        }), Sq = Object.freeze([
-            gq,
+        }), Cq = Object.freeze([
             _q,
-            yq,
+            vq,
             bq,
-            xq
+            xq,
+            Sq
         ]);
     }));
-    function wq(e) {
+    function Tq(e) {
         return typeof e == `object` && typeof e?.[Symbol.iterator] == `function`;
     }
-    var Tq = o((()=>{}));
-    function Eq(e, t) {
-        if (yK(t)) {
-            let n = Eq(e, t.ofType);
+    var Eq = o((()=>{}));
+    function Dq(e, t) {
+        if (bK(t)) {
+            let n = Dq(e, t.ofType);
             return n?.kind === Z.NULL ? null : n;
         }
         if (e === null) return {
             kind: Z.NULL
         };
         if (e === void 0) return null;
-        if (vK(t)) {
+        if (yK(t)) {
             let n = t.ofType;
-            if (wq(e)) {
+            if (Tq(e)) {
                 let t = [];
                 for (let r of e){
-                    let e = Eq(r, n);
+                    let e = Dq(r, n);
                     e != null && t.push(e);
                 }
                 return {
@@ -38950,13 +38950,13 @@ spurious results.`);
                     values: t
                 };
             }
-            return Eq(e, n);
+            return Dq(e, n);
         }
-        if (_K(t)) {
-            if (!uW(e)) return null;
+        if (vK(t)) {
+            if (!dW(e)) return null;
             let n = [];
             for (let r of Object.values(t.getFields())){
-                let t = Eq(e[r.name], r.type);
+                let t = Dq(e[r.name], r.type);
                 t && n.push({
                     kind: Z.OBJECT_FIELD,
                     name: {
@@ -38971,7 +38971,7 @@ spurious results.`);
                 fields: n
             };
         }
-        if (SK(t)) {
+        if (CK(t)) {
             let n = t.serialize(e);
             if (n == null) return null;
             if (typeof n == `boolean`) return {
@@ -38980,7 +38980,7 @@ spurious results.`);
             };
             if (typeof n == `number` && Number.isFinite(n)) {
                 let e = String(n);
-                return Dq.test(e) ? {
+                return Oq.test(e) ? {
                     kind: Z.INT,
                     value: e
                 } : {
@@ -38988,10 +38988,10 @@ spurious results.`);
                     value: e
                 };
             }
-            if (typeof n == `string`) return gK(t) ? {
+            if (typeof n == `string`) return _K(t) ? {
                 kind: Z.ENUM,
                 value: n
-            } : t === uq && Dq.test(n) ? {
+            } : t === dq && Oq.test(n) ? {
                 kind: Z.INT,
                 value: n
             } : {
@@ -39000,78 +39000,78 @@ spurious results.`);
             };
             throw TypeError(`Cannot convert value to AST: ${$(n)}.`);
         }
-        fW(!1, `Unexpected input type: ` + $(t));
+        pW(!1, `Unexpected input type: ` + $(t));
     }
-    var Dq, Oq = o((()=>{
-        sG(), pW(), Tq(), dW(), PW(), ZK(), fq(), Dq = /^-?(?:0|[1-9][0-9]*)$/;
+    var Oq, kq = o((()=>{
+        cG(), mW(), Eq(), fW(), FW(), QK(), pq(), Oq = /^-?(?:0|[1-9][0-9]*)$/;
     }));
-    function kq(e) {
-        return Hq.some(({ name: t })=>e.name === t);
+    function Aq(e) {
+        return Uq.some(({ name: t })=>e.name === t);
     }
-    var Aq, jq, Mq, Nq, Pq, Fq, Iq, Lq, Rq, zq, Bq, Vq, Hq, Uq = o((()=>{
-        sG(), pW(), NW(), rK(), Oq(), ZK(), fq(), Aq = new KK({
+    var jq, Mq, Nq, Pq, Fq, Iq, Lq, Rq, zq, Bq, Vq, Hq, Uq, Wq = o((()=>{
+        cG(), mW(), PW(), iK(), kq(), QK(), pq(), jq = new qK({
             name: `__Schema`,
             description: `A GraphQL Schema defines the capabilities of a GraphQL server. It exposes all available types and directives on the server, as well as the entry points for query, mutation, and subscription operations.`,
             fields: ()=>({
                     description: {
-                        type: cq,
+                        type: lq,
                         resolve: (e)=>e.description
                     },
                     types: {
                         description: `A list of all types supported by this server.`,
-                        type: new WK(new UK(new WK(Nq))),
+                        type: new GK(new WK(new GK(Pq))),
                         resolve (e) {
                             return Object.values(e.getTypeMap());
                         }
                     },
                     queryType: {
                         description: `The type that query operations will be rooted at.`,
-                        type: new WK(Nq),
+                        type: new GK(Pq),
                         resolve: (e)=>e.getQueryType()
                     },
                     mutationType: {
                         description: `If this server supports mutation, the type that mutation operations will be rooted at.`,
-                        type: Nq,
+                        type: Pq,
                         resolve: (e)=>e.getMutationType()
                     },
                     subscriptionType: {
                         description: `If this server support subscription, the type that subscription operations will be rooted at.`,
-                        type: Nq,
+                        type: Pq,
                         resolve: (e)=>e.getSubscriptionType()
                     },
                     directives: {
                         description: `A list of all directives supported by this server.`,
-                        type: new WK(new UK(new WK(jq))),
+                        type: new GK(new WK(new GK(Mq))),
                         resolve: (e)=>e.getDirectives()
                     }
                 })
-        }), jq = new KK({
+        }), Mq = new qK({
             name: `__Directive`,
             description: `A Directive provides a way to describe alternate runtime execution and type validation behavior in a GraphQL document.
 
 In some cases, you need to provide options to alter GraphQL's execution behavior in ways field arguments will not suffice, such as conditionally including or skipping a field. Directives provide this by describing additional information to the executor.`,
             fields: ()=>({
                     name: {
-                        type: new WK(cq),
+                        type: new GK(lq),
                         resolve: (e)=>e.name
                     },
                     description: {
-                        type: cq,
+                        type: lq,
                         resolve: (e)=>e.description
                     },
                     isRepeatable: {
-                        type: new WK(lq),
+                        type: new GK(uq),
                         resolve: (e)=>e.isRepeatable
                     },
                     locations: {
-                        type: new WK(new UK(new WK(Mq))),
+                        type: new GK(new WK(new GK(Nq))),
                         resolve: (e)=>e.locations
                     },
                     args: {
-                        type: new WK(new UK(new WK(Fq))),
+                        type: new GK(new WK(new GK(Iq))),
                         args: {
                             includeDeprecated: {
-                                type: lq,
+                                type: uq,
                                 defaultValue: !1
                             }
                         },
@@ -39080,202 +39080,202 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                         }
                     }
                 })
-        }), Mq = new YK({
+        }), Nq = new XK({
             name: `__DirectiveLocation`,
             description: `A Directive can be adjacent to many parts of the GraphQL language, a __DirectiveLocation describes one such possible adjacencies.`,
             values: {
                 QUERY: {
-                    value: MW.QUERY,
+                    value: NW.QUERY,
                     description: `Location adjacent to a query operation.`
                 },
                 MUTATION: {
-                    value: MW.MUTATION,
+                    value: NW.MUTATION,
                     description: `Location adjacent to a mutation operation.`
                 },
                 SUBSCRIPTION: {
-                    value: MW.SUBSCRIPTION,
+                    value: NW.SUBSCRIPTION,
                     description: `Location adjacent to a subscription operation.`
                 },
                 FIELD: {
-                    value: MW.FIELD,
+                    value: NW.FIELD,
                     description: `Location adjacent to a field.`
                 },
                 FRAGMENT_DEFINITION: {
-                    value: MW.FRAGMENT_DEFINITION,
+                    value: NW.FRAGMENT_DEFINITION,
                     description: `Location adjacent to a fragment definition.`
                 },
                 FRAGMENT_SPREAD: {
-                    value: MW.FRAGMENT_SPREAD,
+                    value: NW.FRAGMENT_SPREAD,
                     description: `Location adjacent to a fragment spread.`
                 },
                 INLINE_FRAGMENT: {
-                    value: MW.INLINE_FRAGMENT,
+                    value: NW.INLINE_FRAGMENT,
                     description: `Location adjacent to an inline fragment.`
                 },
                 VARIABLE_DEFINITION: {
-                    value: MW.VARIABLE_DEFINITION,
+                    value: NW.VARIABLE_DEFINITION,
                     description: `Location adjacent to a variable definition.`
                 },
                 SCHEMA: {
-                    value: MW.SCHEMA,
+                    value: NW.SCHEMA,
                     description: `Location adjacent to a schema definition.`
                 },
                 SCALAR: {
-                    value: MW.SCALAR,
+                    value: NW.SCALAR,
                     description: `Location adjacent to a scalar definition.`
                 },
                 OBJECT: {
-                    value: MW.OBJECT,
+                    value: NW.OBJECT,
                     description: `Location adjacent to an object type definition.`
                 },
                 FIELD_DEFINITION: {
-                    value: MW.FIELD_DEFINITION,
+                    value: NW.FIELD_DEFINITION,
                     description: `Location adjacent to a field definition.`
                 },
                 ARGUMENT_DEFINITION: {
-                    value: MW.ARGUMENT_DEFINITION,
+                    value: NW.ARGUMENT_DEFINITION,
                     description: `Location adjacent to an argument definition.`
                 },
                 INTERFACE: {
-                    value: MW.INTERFACE,
+                    value: NW.INTERFACE,
                     description: `Location adjacent to an interface definition.`
                 },
                 UNION: {
-                    value: MW.UNION,
+                    value: NW.UNION,
                     description: `Location adjacent to a union definition.`
                 },
                 ENUM: {
-                    value: MW.ENUM,
+                    value: NW.ENUM,
                     description: `Location adjacent to an enum definition.`
                 },
                 ENUM_VALUE: {
-                    value: MW.ENUM_VALUE,
+                    value: NW.ENUM_VALUE,
                     description: `Location adjacent to an enum value definition.`
                 },
                 INPUT_OBJECT: {
-                    value: MW.INPUT_OBJECT,
+                    value: NW.INPUT_OBJECT,
                     description: `Location adjacent to an input object type definition.`
                 },
                 INPUT_FIELD_DEFINITION: {
-                    value: MW.INPUT_FIELD_DEFINITION,
+                    value: NW.INPUT_FIELD_DEFINITION,
                     description: `Location adjacent to an input object field definition.`
                 }
             }
-        }), Nq = new KK({
+        }), Pq = new qK({
             name: `__Type`,
             description: "The fundamental unit of any GraphQL Schema is the type. There are many kinds of types in GraphQL as represented by the `__TypeKind` enum.\n\nDepending on the kind of a type, certain fields describe information about that type. Scalar types provide no information beyond a name, description and optional `specifiedByURL`, while Enum types provide their values. Object and Interface types provide the fields they describe. Abstract types, Union and Interface, provide the Object types possible at runtime. List and NonNull types compose other types.",
             fields: ()=>({
                     kind: {
-                        type: new WK(Rq),
+                        type: new GK(zq),
                         resolve (e) {
-                            if (uK(e)) return Lq.SCALAR;
-                            if (dK(e)) return Lq.OBJECT;
-                            if (pK(e)) return Lq.INTERFACE;
-                            if (hK(e)) return Lq.UNION;
-                            if (gK(e)) return Lq.ENUM;
-                            if (_K(e)) return Lq.INPUT_OBJECT;
-                            if (vK(e)) return Lq.LIST;
-                            if (yK(e)) return Lq.NON_NULL;
-                            fW(!1, `Unexpected type: "${$(e)}".`);
+                            if (dK(e)) return Rq.SCALAR;
+                            if (fK(e)) return Rq.OBJECT;
+                            if (mK(e)) return Rq.INTERFACE;
+                            if (gK(e)) return Rq.UNION;
+                            if (_K(e)) return Rq.ENUM;
+                            if (vK(e)) return Rq.INPUT_OBJECT;
+                            if (yK(e)) return Rq.LIST;
+                            if (bK(e)) return Rq.NON_NULL;
+                            pW(!1, `Unexpected type: "${$(e)}".`);
                         }
                     },
                     name: {
-                        type: cq,
+                        type: lq,
                         resolve: (e)=>`name` in e ? e.name : void 0
                     },
                     description: {
-                        type: cq,
+                        type: lq,
                         resolve: (e)=>`description` in e ? e.description : void 0
                     },
                     specifiedByURL: {
-                        type: cq,
+                        type: lq,
                         resolve: (e)=>`specifiedByURL` in e ? e.specifiedByURL : void 0
                     },
                     fields: {
-                        type: new UK(new WK(Pq)),
+                        type: new WK(new GK(Fq)),
                         args: {
                             includeDeprecated: {
-                                type: lq,
+                                type: uq,
                                 defaultValue: !1
                             }
                         },
                         resolve (e, { includeDeprecated: t }) {
-                            if (dK(e) || pK(e)) {
+                            if (fK(e) || mK(e)) {
                                 let n = Object.values(e.getFields());
                                 return t ? n : n.filter((e)=>e.deprecationReason == null);
                             }
                         }
                     },
                     interfaces: {
-                        type: new UK(new WK(Nq)),
+                        type: new WK(new GK(Pq)),
                         resolve (e) {
-                            if (dK(e) || pK(e)) return e.getInterfaces();
+                            if (fK(e) || mK(e)) return e.getInterfaces();
                         }
                     },
                     possibleTypes: {
-                        type: new UK(new WK(Nq)),
+                        type: new WK(new GK(Pq)),
                         resolve (e, t, n, { schema: r }) {
-                            if (wK(e)) return r.getPossibleTypes(e);
+                            if (TK(e)) return r.getPossibleTypes(e);
                         }
                     },
                     enumValues: {
-                        type: new UK(new WK(Iq)),
+                        type: new WK(new GK(Lq)),
                         args: {
                             includeDeprecated: {
-                                type: lq,
+                                type: uq,
                                 defaultValue: !1
                             }
                         },
                         resolve (e, { includeDeprecated: t }) {
-                            if (gK(e)) {
+                            if (_K(e)) {
                                 let n = e.getValues();
                                 return t ? n : n.filter((e)=>e.deprecationReason == null);
                             }
                         }
                     },
                     inputFields: {
-                        type: new UK(new WK(Fq)),
+                        type: new WK(new GK(Iq)),
                         args: {
                             includeDeprecated: {
-                                type: lq,
+                                type: uq,
                                 defaultValue: !1
                             }
                         },
                         resolve (e, { includeDeprecated: t }) {
-                            if (_K(e)) {
+                            if (vK(e)) {
                                 let n = Object.values(e.getFields());
                                 return t ? n : n.filter((e)=>e.deprecationReason == null);
                             }
                         }
                     },
                     ofType: {
-                        type: Nq,
+                        type: Pq,
                         resolve: (e)=>`ofType` in e ? e.ofType : void 0
                     },
                     isOneOf: {
-                        type: lq,
+                        type: uq,
                         resolve: (e)=>{
-                            if (_K(e)) return e.isOneOf;
+                            if (vK(e)) return e.isOneOf;
                         }
                     }
                 })
-        }), Pq = new KK({
+        }), Fq = new qK({
             name: `__Field`,
             description: `Object and Interface types are described by a list of Fields, each of which has a name, potentially a list of arguments, and a return type.`,
             fields: ()=>({
                     name: {
-                        type: new WK(cq),
+                        type: new GK(lq),
                         resolve: (e)=>e.name
                     },
                     description: {
-                        type: cq,
+                        type: lq,
                         resolve: (e)=>e.description
                     },
                     args: {
-                        type: new WK(new UK(new WK(Fq))),
+                        type: new GK(new WK(new GK(Iq))),
                         args: {
                             includeDeprecated: {
-                                type: lq,
+                                type: uq,
                                 defaultValue: !1
                             }
                         },
@@ -39284,129 +39284,129 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                         }
                     },
                     type: {
-                        type: new WK(Nq),
+                        type: new GK(Pq),
                         resolve: (e)=>e.type
                     },
                     isDeprecated: {
-                        type: new WK(lq),
+                        type: new GK(uq),
                         resolve: (e)=>e.deprecationReason != null
                     },
                     deprecationReason: {
-                        type: cq,
+                        type: lq,
                         resolve: (e)=>e.deprecationReason
                     }
                 })
-        }), Fq = new KK({
+        }), Iq = new qK({
             name: `__InputValue`,
             description: `Arguments provided to Fields or Directives and the input fields of an InputObject are represented as Input Values which describe their type and optionally a default value.`,
             fields: ()=>({
                     name: {
-                        type: new WK(cq),
+                        type: new GK(lq),
                         resolve: (e)=>e.name
                     },
                     description: {
-                        type: cq,
+                        type: lq,
                         resolve: (e)=>e.description
                     },
                     type: {
-                        type: new WK(Nq),
+                        type: new GK(Pq),
                         resolve: (e)=>e.type
                     },
                     defaultValue: {
-                        type: cq,
+                        type: lq,
                         description: `A GraphQL-formatted string representing the default value for this input value.`,
                         resolve (e) {
-                            let { type: t, defaultValue: n } = e, r = Eq(n, t);
-                            return r ? YG(r) : null;
+                            let { type: t, defaultValue: n } = e, r = Dq(n, t);
+                            return r ? XG(r) : null;
                         }
                     },
                     isDeprecated: {
-                        type: new WK(lq),
+                        type: new GK(uq),
                         resolve: (e)=>e.deprecationReason != null
                     },
                     deprecationReason: {
-                        type: cq,
+                        type: lq,
                         resolve: (e)=>e.deprecationReason
                     }
                 })
-        }), Iq = new KK({
+        }), Lq = new qK({
             name: `__EnumValue`,
             description: `One possible value for a given Enum. Enum values are unique values, not a placeholder for a string or numeric value. However an Enum value is returned in a JSON response as a string.`,
             fields: ()=>({
                     name: {
-                        type: new WK(cq),
+                        type: new GK(lq),
                         resolve: (e)=>e.name
                     },
                     description: {
-                        type: cq,
+                        type: lq,
                         resolve: (e)=>e.description
                     },
                     isDeprecated: {
-                        type: new WK(lq),
+                        type: new GK(uq),
                         resolve: (e)=>e.deprecationReason != null
                     },
                     deprecationReason: {
-                        type: cq,
+                        type: lq,
                         resolve: (e)=>e.deprecationReason
                     }
                 })
         }), (function(e) {
             e.SCALAR = `SCALAR`, e.OBJECT = `OBJECT`, e.INTERFACE = `INTERFACE`, e.UNION = `UNION`, e.ENUM = `ENUM`, e.INPUT_OBJECT = `INPUT_OBJECT`, e.LIST = `LIST`, e.NON_NULL = `NON_NULL`;
-        })(Lq ||= {}), Rq = new YK({
+        })(Rq ||= {}), zq = new XK({
             name: `__TypeKind`,
             description: "An enum describing what kind of type a given `__Type` is.",
             values: {
                 SCALAR: {
-                    value: Lq.SCALAR,
+                    value: Rq.SCALAR,
                     description: `Indicates this type is a scalar.`
                 },
                 OBJECT: {
-                    value: Lq.OBJECT,
+                    value: Rq.OBJECT,
                     description: "Indicates this type is an object. `fields` and `interfaces` are valid fields."
                 },
                 INTERFACE: {
-                    value: Lq.INTERFACE,
+                    value: Rq.INTERFACE,
                     description: "Indicates this type is an interface. `fields`, `interfaces`, and `possibleTypes` are valid fields."
                 },
                 UNION: {
-                    value: Lq.UNION,
+                    value: Rq.UNION,
                     description: "Indicates this type is a union. `possibleTypes` is a valid field."
                 },
                 ENUM: {
-                    value: Lq.ENUM,
+                    value: Rq.ENUM,
                     description: "Indicates this type is an enum. `enumValues` is a valid field."
                 },
                 INPUT_OBJECT: {
-                    value: Lq.INPUT_OBJECT,
+                    value: Rq.INPUT_OBJECT,
                     description: "Indicates this type is an input object. `inputFields` is a valid field."
                 },
                 LIST: {
-                    value: Lq.LIST,
+                    value: Rq.LIST,
                     description: "Indicates this type is a list. `ofType` is a valid field."
                 },
                 NON_NULL: {
-                    value: Lq.NON_NULL,
+                    value: Rq.NON_NULL,
                     description: "Indicates this type is a non-null. `ofType` is a valid field."
                 }
             }
-        }), zq = {
+        }), Bq = {
             name: `__schema`,
-            type: new WK(Aq),
+            type: new GK(jq),
             description: `Access the current type schema of this server.`,
             args: [],
             resolve: (e, t, n, { schema: r })=>r,
             deprecationReason: void 0,
             extensions: Object.create(null),
             astNode: void 0
-        }, Bq = {
+        }, Vq = {
             name: `__type`,
-            type: Nq,
+            type: Pq,
             description: `Request the type information of a single type.`,
             args: [
                 {
                     name: `name`,
                     description: void 0,
-                    type: new WK(cq),
+                    type: new GK(lq),
                     defaultValue: void 0,
                     deprecationReason: void 0,
                     extensions: Object.create(null),
@@ -39417,70 +39417,70 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             deprecationReason: void 0,
             extensions: Object.create(null),
             astNode: void 0
-        }, Vq = {
+        }, Hq = {
             name: `__typename`,
-            type: new WK(cq),
+            type: new GK(lq),
             description: `The name of the current Object type at runtime.`,
             args: [],
             resolve: (e, t, n, { parentType: r })=>r.name,
             deprecationReason: void 0,
             extensions: Object.create(null),
             astNode: void 0
-        }, Hq = Object.freeze([
-            Aq,
+        }, Uq = Object.freeze([
             jq,
             Mq,
             Nq,
             Pq,
             Fq,
             Iq,
-            Rq
+            Lq,
+            zq
         ]);
     }));
-    function Wq(e) {
-        return lG(e, qq);
-    }
     function Gq(e) {
-        if (!Wq(e)) throw Error(`Expected ${$(e)} to be a GraphQL schema.`);
+        return uG(e, Jq);
+    }
+    function Kq(e) {
+        if (!Gq(e)) throw Error(`Expected ${$(e)} to be a GraphQL schema.`);
         return e;
     }
-    function Kq(e, t) {
-        let n = AK(e);
+    function qq(e, t) {
+        let n = jK(e);
         if (!t.has(n)) {
-            if (t.add(n), hK(n)) for (let e of n.getTypes())Kq(e, t);
-            else if (dK(n) || pK(n)) {
-                for (let e of n.getInterfaces())Kq(e, t);
+            if (t.add(n), gK(n)) for (let e of n.getTypes())qq(e, t);
+            else if (fK(n) || mK(n)) {
+                for (let e of n.getInterfaces())qq(e, t);
                 for (let e of Object.values(n.getFields())){
-                    Kq(e.type, t);
-                    for (let n of e.args)Kq(n.type, t);
+                    qq(e.type, t);
+                    for (let n of e.args)qq(n.type, t);
                 }
-            } else if (_K(n)) for (let e of Object.values(n.getFields()))Kq(e.type, t);
+            } else if (vK(n)) for (let e of Object.values(n.getFields()))qq(e.type, t);
         }
         return t;
     }
-    var qq, Jq = o((()=>{
-        sW(), sG(), uG(), dW(), VG(), jW(), ZK(), Cq(), Uq(), qq = class {
+    var Jq, Yq = o((()=>{
+        cW(), cG(), dG(), fW(), HG(), MW(), QK(), wq(), Wq(), Jq = class {
             constructor(e){
-                this.__validationErrors = e.assumeValid === !0 ? [] : void 0, uW(e) || oW(!1, `Must provide configuration object.`), !e.types || Array.isArray(e.types) || oW(!1, `"types" must be Array if provided but got: ${$(e.types)}.`), !e.directives || Array.isArray(e.directives) || oW(!1, `"directives" must be Array if provided but got: ${$(e.directives)}.`), this.description = e.description, this.extensions = BG(e.extensions), this.astNode = e.astNode, this.extensionASTNodes = e.extensionASTNodes ?? [], this._queryType = e.query, this._mutationType = e.mutation, this._subscriptionType = e.subscription, this._directives = e.directives ?? Sq;
+                this.__validationErrors = e.assumeValid === !0 ? [] : void 0, dW(e) || sW(!1, `Must provide configuration object.`), !e.types || Array.isArray(e.types) || sW(!1, `"types" must be Array if provided but got: ${$(e.types)}.`), !e.directives || Array.isArray(e.directives) || sW(!1, `"directives" must be Array if provided but got: ${$(e.directives)}.`), this.description = e.description, this.extensions = VG(e.extensions), this.astNode = e.astNode, this.extensionASTNodes = e.extensionASTNodes ?? [], this._queryType = e.query, this._mutationType = e.mutation, this._subscriptionType = e.subscription, this._directives = e.directives ?? Cq;
                 let t = new Set(e.types);
-                if (e.types != null) for (let n of e.types)t.delete(n), Kq(n, t);
-                this._queryType != null && Kq(this._queryType, t), this._mutationType != null && Kq(this._mutationType, t), this._subscriptionType != null && Kq(this._subscriptionType, t);
-                for (let e of this._directives)if (pq(e)) for (let n of e.args)Kq(n.type, t);
-                Kq(Aq, t), this._typeMap = Object.create(null), this._subTypeMap = Object.create(null), this._implementationsMap = Object.create(null);
+                if (e.types != null) for (let n of e.types)t.delete(n), qq(n, t);
+                this._queryType != null && qq(this._queryType, t), this._mutationType != null && qq(this._mutationType, t), this._subscriptionType != null && qq(this._subscriptionType, t);
+                for (let e of this._directives)if (mq(e)) for (let n of e.args)qq(n.type, t);
+                qq(jq, t), this._typeMap = Object.create(null), this._subTypeMap = Object.create(null), this._implementationsMap = Object.create(null);
                 for (let e of t){
                     if (e == null) continue;
                     let t = e.name;
-                    if (t || oW(!1, `One of the provided types for building the Schema is missing a name.`), this._typeMap[t] !== void 0) throw Error(`Schema must contain uniquely named types but contains multiple types named "${t}".`);
-                    if (this._typeMap[t] = e, pK(e)) {
-                        for (let t of e.getInterfaces())if (pK(t)) {
+                    if (t || sW(!1, `One of the provided types for building the Schema is missing a name.`), this._typeMap[t] !== void 0) throw Error(`Schema must contain uniquely named types but contains multiple types named "${t}".`);
+                    if (this._typeMap[t] = e, mK(e)) {
+                        for (let t of e.getInterfaces())if (mK(t)) {
                             let n = this._implementationsMap[t.name];
                             n === void 0 && (n = this._implementationsMap[t.name] = {
                                 objects: [],
                                 interfaces: []
                             }), n.interfaces.push(e);
                         }
-                    } else if (dK(e)) {
-                        for (let t of e.getInterfaces())if (pK(t)) {
+                    } else if (fK(e)) {
+                        for (let t of e.getInterfaces())if (mK(t)) {
                             let n = this._implementationsMap[t.name];
                             n === void 0 && (n = this._implementationsMap[t.name] = {
                                 objects: [],
@@ -39504,11 +39504,11 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             }
             getRootType(e) {
                 switch(e){
-                    case AW.QUERY:
+                    case jW.QUERY:
                         return this.getQueryType();
-                    case AW.MUTATION:
+                    case jW.MUTATION:
                         return this.getMutationType();
-                    case AW.SUBSCRIPTION:
+                    case jW.SUBSCRIPTION:
                         return this.getSubscriptionType();
                 }
             }
@@ -39519,7 +39519,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 return this.getTypeMap()[e];
             }
             getPossibleTypes(e) {
-                return hK(e) ? e.getTypes() : this.getImplementations(e).objects;
+                return gK(e) ? e.getTypes() : this.getImplementations(e).objects;
             }
             getImplementations(e) {
                 return this._implementationsMap[e.name] ?? {
@@ -39530,7 +39530,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             isSubType(e, t) {
                 let n = this._subTypeMap[e.name];
                 if (n === void 0) {
-                    if (n = Object.create(null), hK(e)) for (let t of e.getTypes())n[t.name] = !0;
+                    if (n = Object.create(null), gK(e)) for (let t of e.getTypes())n[t.name] = !0;
                     else {
                         let t = this.getImplementations(e);
                         for (let e of t.objects)n[e.name] = !0;
@@ -39562,26 +39562,26 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             }
         };
     }));
-    function Yq(e) {
-        if (Gq(e), e.__validationErrors) return e.__validationErrors;
+    function Xq(e) {
+        if (Kq(e), e.__validationErrors) return e.__validationErrors;
         let t = new rJ(e);
-        Zq(t), eTe(t), tTe(t);
+        $we(t), eTe(t), tTe(t);
         let n = t.getErrors();
         return e.__validationErrors = n, n;
     }
-    function Xq(e) {
-        let t = Yq(e);
+    function Zq(e) {
+        let t = Xq(e);
         if (t.length !== 0) throw Error(t.map((e)=>e.message).join(`
 
 `));
     }
-    function Zq(e) {
+    function $we(e) {
         let t = e.schema, n = t.getQueryType();
-        n ? dK(n) || e.reportError(`Query root type must be Object type, it cannot be ${$(n)}.`, Qq(t, AW.QUERY) ?? n.astNode) : e.reportError(`Query root type must be provided.`, t.astNode);
+        n ? fK(n) || e.reportError(`Query root type must be Object type, it cannot be ${$(n)}.`, Qq(t, jW.QUERY) ?? n.astNode) : e.reportError(`Query root type must be provided.`, t.astNode);
         let r = t.getMutationType();
-        r && !dK(r) && e.reportError(`Mutation root type must be Object type if provided, it cannot be ${$(r)}.`, Qq(t, AW.MUTATION) ?? r.astNode);
+        r && !fK(r) && e.reportError(`Mutation root type must be Object type if provided, it cannot be ${$(r)}.`, Qq(t, jW.MUTATION) ?? r.astNode);
         let i = t.getSubscriptionType();
-        i && !dK(i) && e.reportError(`Subscription root type must be Object type if provided, it cannot be ${$(i)}.`, Qq(t, AW.SUBSCRIPTION) ?? i.astNode);
+        i && !fK(i) && e.reportError(`Subscription root type must be Object type if provided, it cannot be ${$(i)}.`, Qq(t, jW.SUBSCRIPTION) ?? i.astNode);
     }
     function Qq(e, t) {
         return [
@@ -39591,12 +39591,12 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
     }
     function eTe(e) {
         for (let t of e.schema.getDirectives()){
-            if (!pq(t)) {
+            if (!mq(t)) {
                 e.reportError(`Expected directive but got: ${$(t)}.`, t?.astNode);
                 continue;
             }
             $q(e, t), t.locations.length === 0 && e.reportError(`Directive @${t.name} must include 1 or more locations.`, t.astNode);
-            for (let n of t.args)$q(e, n), bK(n.type) || e.reportError(`The type of @${t.name}(${n.name}:) must be Input Type but got: ${$(n.type)}.`, n.astNode), zK(n) && n.deprecationReason != null && e.reportError(`Required argument @${t.name}(${n.name}:) cannot be deprecated.`, [
+            for (let n of t.args)$q(e, n), xK(n.type) || e.reportError(`The type of @${t.name}(${n.name}:) must be Input Type but got: ${$(n.type)}.`, n.astNode), BK(n) && n.deprecationReason != null && e.reportError(`Required argument @${t.name}(${n.name}:) cannot be deprecated.`, [
                 nJ(n.astNode),
                 n.astNode?.type
             ]);
@@ -39608,11 +39608,11 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
     function tTe(e) {
         let t = uTe(e), n = e.schema.getTypeMap();
         for (let r of Object.values(n)){
-            if (!kK(r)) {
+            if (!AK(r)) {
                 e.reportError(`Expected GraphQL named type but got: ${$(r)}.`, r.astNode);
                 continue;
             }
-            kq(r) || $q(e, r), dK(r) || pK(r) ? (nTe(e, r), rTe(e, r)) : hK(r) ? oTe(e, r) : gK(r) ? sTe(e, r) : _K(r) && (cTe(e, r), t(r));
+            Aq(r) || $q(e, r), fK(r) || mK(r) ? (nTe(e, r), rTe(e, r)) : gK(r) ? oTe(e, r) : _K(r) ? sTe(e, r) : vK(r) && (cTe(e, r), t(r));
         }
     }
     function nTe(e, t) {
@@ -39622,10 +39622,10 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             ...t.extensionASTNodes
         ]);
         for (let r of n){
-            $q(e, r), !xK(r.type) && e.reportError(`The type of ${t.name}.${r.name} must be Output Type but got: ${$(r.type)}.`, r.astNode?.type);
+            $q(e, r), !SK(r.type) && e.reportError(`The type of ${t.name}.${r.name} must be Output Type but got: ${$(r.type)}.`, r.astNode?.type);
             for (let n of r.args){
                 let i = n.name;
-                $q(e, n), !bK(n.type) && e.reportError(`The type of ${t.name}.${r.name}(${i}:) must be Input Type but got: ${$(n.type)}.`, n.astNode?.type), zK(n) && n.deprecationReason != null && e.reportError(`Required argument ${t.name}.${r.name}(${i}:) cannot be deprecated.`, [
+                $q(e, n), !xK(n.type) && e.reportError(`The type of ${t.name}.${r.name}(${i}:) must be Input Type but got: ${$(n.type)}.`, n.astNode?.type), BK(n) && n.deprecationReason != null && e.reportError(`Required argument ${t.name}.${r.name}(${i}:) cannot be deprecated.`, [
                     nJ(n.astNode),
                     n.astNode?.type
                 ]);
@@ -39635,7 +39635,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
     function rTe(e, t) {
         let n = Object.create(null);
         for (let r of t.getInterfaces()){
-            if (!pK(r)) {
+            if (!mK(r)) {
                 e.reportError(`Type ${$(t)} must only implement Interface types, it cannot implement ${$(r)}.`, eJ(t, r));
                 continue;
             }
@@ -39662,7 +39662,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 ]);
                 continue;
             }
-            $K(e.schema, o.type, i.type) || e.reportError(`Interface field ${n.name}.${a} expects type ${$(i.type)} but ${t.name}.${a} is type ${$(o.type)}.`, [
+            eq(e.schema, o.type, i.type) || e.reportError(`Interface field ${n.name}.${a} expects type ${$(i.type)} but ${t.name}.${a} is type ${$(o.type)}.`, [
                 i.astNode?.type,
                 o.astNode?.type
             ]);
@@ -39675,14 +39675,14 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                     ]);
                     continue;
                 }
-                QK(r.type, s.type) || e.reportError(`Interface field argument ${n.name}.${a}(${i}:) expects type ${$(r.type)} but ${t.name}.${a}(${i}:) is type ${$(s.type)}.`, [
+                $K(r.type, s.type) || e.reportError(`Interface field argument ${n.name}.${a}(${i}:) expects type ${$(r.type)} but ${t.name}.${a}(${i}:) is type ${$(s.type)}.`, [
                     r.astNode?.type,
                     s.astNode?.type
                 ]);
             }
             for (let r of o.args){
                 let o = r.name;
-                !i.args.find((e)=>e.name === o) && zK(r) && e.reportError(`Object field ${t.name}.${a} includes required argument ${o} that is missing from the Interface field ${n.name}.${a}.`, [
+                !i.args.find((e)=>e.name === o) && BK(r) && e.reportError(`Object field ${t.name}.${a} includes required argument ${o} that is missing from the Interface field ${n.name}.${a}.`, [
                     r.astNode,
                     i.astNode
                 ]);
@@ -39708,7 +39708,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 e.reportError(`Union type ${t.name} can only include type ${i.name} once.`, tJ(t, i.name));
                 continue;
             }
-            r[i.name] = !0, dK(i) || e.reportError(`Union type ${t.name} can only include Object types, it cannot include ${$(i)}.`, tJ(t, String(i)));
+            r[i.name] = !0, fK(i) || e.reportError(`Union type ${t.name} can only include Object types, it cannot include ${$(i)}.`, tJ(t, String(i)));
         }
     }
     function sTe(e, t) {
@@ -39725,13 +39725,13 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             t.astNode,
             ...t.extensionASTNodes
         ]);
-        for (let r of n)$q(e, r), !bK(r.type) && e.reportError(`The type of ${t.name}.${r.name} must be Input Type but got: ${$(r.type)}.`, r.astNode?.type), HK(r) && r.deprecationReason != null && e.reportError(`Required input field ${t.name}.${r.name} cannot be deprecated.`, [
+        for (let r of n)$q(e, r), !xK(r.type) && e.reportError(`The type of ${t.name}.${r.name} must be Input Type but got: ${$(r.type)}.`, r.astNode?.type), UK(r) && r.deprecationReason != null && e.reportError(`Required input field ${t.name}.${r.name} cannot be deprecated.`, [
             nJ(r.astNode),
             r.astNode?.type
         ]), t.isOneOf && lTe(t, r, e);
     }
     function lTe(e, t, n) {
-        yK(t.type) && n.reportError(`OneOf input field ${e.name}.${t.name} must be nullable.`, t.astNode?.type), t.defaultValue !== void 0 && n.reportError(`OneOf input field ${e.name}.${t.name} cannot have a default value.`, t.astNode);
+        bK(t.type) && n.reportError(`OneOf input field ${e.name}.${t.name} must be nullable.`, t.astNode?.type), t.defaultValue !== void 0 && n.reportError(`OneOf input field ${e.name}.${t.name} cannot have a default value.`, t.astNode);
     }
     function uTe(e) {
         let t = Object.create(null), n = [], r = Object.create(null);
@@ -39740,7 +39740,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             if (t[a.name]) return;
             t[a.name] = !0, r[a.name] = n.length;
             let o = Object.values(a.getFields());
-            for (let t of o)if (yK(t.type) && _K(t.type.ofType)) {
+            for (let t of o)if (bK(t.type) && vK(t.type.ofType)) {
                 let a = t.type.ofType, o = r[a.name];
                 if (n.push(t), o === void 0) i(a);
                 else {
@@ -39767,10 +39767,10 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         ]).flatMap((e)=>e.types ?? []).filter((e)=>e.name.value === t);
     }
     function nJ(e) {
-        return e?.directives?.find((e)=>e.name.value === yq.name);
+        return e?.directives?.find((e)=>e.name.value === bq.name);
     }
     var rJ, iJ = o((()=>{
-        sG(), SW(), jW(), tq(), ZK(), Cq(), Uq(), Jq(), rJ = class {
+        cG(), CW(), MW(), nq(), QK(), wq(), Wq(), Yq(), rJ = class {
             constructor(e){
                 this._errors = [], this.schema = e;
             }
@@ -39790,48 +39790,48 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             case Z.LIST_TYPE:
                 {
                     let n = aJ(e, t.type);
-                    return n && new UK(n);
+                    return n && new WK(n);
                 }
             case Z.NON_NULL_TYPE:
                 {
                     let n = aJ(e, t.type);
-                    return n && new WK(n);
+                    return n && new GK(n);
                 }
             case Z.NAMED_TYPE:
                 return e.getType(t.name.value);
         }
     }
     var oJ = o((()=>{
-        PW(), ZK();
+        FW(), QK();
     }));
     function dTe(e, t, n) {
         let r = n.name.value;
-        if (r === zq.name && e.getQueryType() === t) return zq;
         if (r === Bq.name && e.getQueryType() === t) return Bq;
-        if (r === Vq.name && CK(t)) return Vq;
-        if (dK(t) || pK(t)) return t.getFields()[r];
+        if (r === Vq.name && e.getQueryType() === t) return Vq;
+        if (r === Hq.name && wK(t)) return Hq;
+        if (fK(t) || mK(t)) return t.getFields()[r];
     }
     function sJ(e, t) {
         return {
             enter (...n) {
                 let r = n[0];
                 e.enter(r);
-                let i = KG(t, r.kind).enter;
+                let i = qG(t, r.kind).enter;
                 if (i) {
                     let a = i.apply(t, n);
-                    return a !== void 0 && (e.leave(r), TW(a) && e.enter(a)), a;
+                    return a !== void 0 && (e.leave(r), EW(a) && e.enter(a)), a;
                 }
             },
             leave (...n) {
-                let r = n[0], i = KG(t, r.kind).leave, a;
+                let r = n[0], i = qG(t, r.kind).leave, a;
                 return i && (a = i.apply(t, n)), e.leave(r), a;
             }
         };
     }
     var cJ, lJ = o((()=>{
-        jW(), PW(), JG(), ZK(), Uq(), oJ(), cJ = class {
+        MW(), FW(), YG(), QK(), Wq(), oJ(), cJ = class {
             constructor(e, t, n){
-                this._schema = e, this._typeStack = [], this._parentTypeStack = [], this._inputTypeStack = [], this._fieldDefStack = [], this._defaultValueStack = [], this._directive = null, this._argument = null, this._enumValue = null, this._getFieldDef = n ?? dTe, t && (bK(t) && this._inputTypeStack.push(t), CK(t) && this._parentTypeStack.push(t), xK(t) && this._typeStack.push(t));
+                this._schema = e, this._typeStack = [], this._parentTypeStack = [], this._inputTypeStack = [], this._fieldDefStack = [], this._defaultValueStack = [], this._directive = null, this._argument = null, this._enumValue = null, this._getFieldDef = n ?? dTe, t && (xK(t) && this._inputTypeStack.push(t), wK(t) && this._parentTypeStack.push(t), SK(t) && this._typeStack.push(t));
             }
             get [Symbol.toStringTag]() {
                 return `TypeInfo`;
@@ -39868,14 +39868,14 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 switch(e.kind){
                     case Z.SELECTION_SET:
                         {
-                            let e = AK(this.getType());
-                            this._parentTypeStack.push(CK(e) ? e : void 0);
+                            let e = jK(this.getType());
+                            this._parentTypeStack.push(wK(e) ? e : void 0);
                             break;
                         }
                     case Z.FIELD:
                         {
                             let n = this.getParentType(), r, i;
-                            n && (r = this._getFieldDef(t, n, e), r && (i = r.type)), this._fieldDefStack.push(r), this._typeStack.push(xK(i) ? i : void 0);
+                            n && (r = this._getFieldDef(t, n, e), r && (i = r.type)), this._fieldDefStack.push(r), this._typeStack.push(SK(i) ? i : void 0);
                             break;
                         }
                     case Z.DIRECTIVE:
@@ -39884,44 +39884,44 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                     case Z.OPERATION_DEFINITION:
                         {
                             let n = t.getRootType(e.operation);
-                            this._typeStack.push(dK(n) ? n : void 0);
+                            this._typeStack.push(fK(n) ? n : void 0);
                             break;
                         }
                     case Z.INLINE_FRAGMENT:
                     case Z.FRAGMENT_DEFINITION:
                         {
-                            let n = e.typeCondition, r = n ? aJ(t, n) : AK(this.getType());
-                            this._typeStack.push(xK(r) ? r : void 0);
+                            let n = e.typeCondition, r = n ? aJ(t, n) : jK(this.getType());
+                            this._typeStack.push(SK(r) ? r : void 0);
                             break;
                         }
                     case Z.VARIABLE_DEFINITION:
                         {
                             let n = aJ(t, e.type);
-                            this._inputTypeStack.push(bK(n) ? n : void 0);
+                            this._inputTypeStack.push(xK(n) ? n : void 0);
                             break;
                         }
                     case Z.ARGUMENT:
                         {
                             let t, n, r = this.getDirective() ?? this.getFieldDef();
-                            r && (t = r.args.find((t)=>t.name === e.name.value), t && (n = t.type)), this._argument = t, this._defaultValueStack.push(t ? t.defaultValue : void 0), this._inputTypeStack.push(bK(n) ? n : void 0);
+                            r && (t = r.args.find((t)=>t.name === e.name.value), t && (n = t.type)), this._argument = t, this._defaultValueStack.push(t ? t.defaultValue : void 0), this._inputTypeStack.push(xK(n) ? n : void 0);
                             break;
                         }
                     case Z.LIST:
                         {
-                            let e = OK(this.getInputType()), t = vK(e) ? e.ofType : e;
-                            this._defaultValueStack.push(void 0), this._inputTypeStack.push(bK(t) ? t : void 0);
+                            let e = kK(this.getInputType()), t = yK(e) ? e.ofType : e;
+                            this._defaultValueStack.push(void 0), this._inputTypeStack.push(xK(t) ? t : void 0);
                             break;
                         }
                     case Z.OBJECT_FIELD:
                         {
-                            let t = AK(this.getInputType()), n, r;
-                            _K(t) && (r = t.getFields()[e.name.value], r && (n = r.type)), this._defaultValueStack.push(r ? r.defaultValue : void 0), this._inputTypeStack.push(bK(n) ? n : void 0);
+                            let t = jK(this.getInputType()), n, r;
+                            vK(t) && (r = t.getFields()[e.name.value], r && (n = r.type)), this._defaultValueStack.push(r ? r.defaultValue : void 0), this._inputTypeStack.push(xK(n) ? n : void 0);
                             break;
                         }
                     case Z.ENUM:
                         {
-                            let t = AK(this.getInputType()), n;
-                            gK(t) && (n = t.getValue(e.value)), this._enumValue = n;
+                            let t = jK(this.getInputType()), n;
+                            _K(t) && (n = t.getValue(e.value)), this._enumValue = n;
                             break;
                         }
                     default:
@@ -39995,7 +39995,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         return e.kind === Z.TYPE_COORDINATE || e.kind === Z.MEMBER_COORDINATE || e.kind === Z.ARGUMENT_COORDINATE || e.kind === Z.DIRECTIVE_COORDINATE || e.kind === Z.DIRECTIVE_ARGUMENT_COORDINATE;
     }
     var _J = o((()=>{
-        PW();
+        FW();
     }));
     function vJ(e) {
         return {
@@ -40011,15 +40011,15 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     var yJ = o((()=>{
-        SW(), PW(), _J();
+        CW(), FW(), _J();
     }));
     function bJ(e) {
         return {
             Field (t) {
                 let n = e.getParentType();
                 if (n && !e.getFieldDef()) {
-                    let r = e.getSchema(), i = t.name.value, a = xG(`to use an inline fragment on`, gTe(r, n, i));
-                    a === `` && (a = xG(_Te(n, i))), e.reportError(new X(`Cannot query field "${i}" on type "${n.name}".` + a, {
+                    let r = e.getSchema(), i = t.name.value, a = SG(`to use an inline fragment on`, gTe(r, n, i));
+                    a === `` && (a = SG(_Te(n, i))), e.reportError(new X(`Cannot query field "${i}" on type "${n.name}".` + a, {
                         nodes: t
                     }));
                 }
@@ -40027,7 +40027,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     function gTe(e, t, n) {
-        if (!wK(t)) return [];
+        if (!TK(t)) return [];
         let r = new Set, i = Object.create(null);
         for (let a of e.getPossibleTypes(t))if (a.getFields()[n]) {
             r.add(a), i[a.name] = 1;
@@ -40037,14 +40037,14 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             ...r
         ].sort((t, n)=>{
             let r = i[n.name] - i[t.name];
-            return r === 0 ? pK(t) && e.isSubType(t, n) ? -1 : pK(n) && e.isSubType(n, t) ? 1 : jG(t.name, n.name) : r;
+            return r === 0 ? mK(t) && e.isSubType(t, n) ? -1 : mK(n) && e.isSubType(n, t) ? 1 : MG(t.name, n.name) : r;
         }).map((e)=>e.name);
     }
     function _Te(e, t) {
-        return dK(e) || pK(e) ? IG(t, Object.keys(e.getFields())) : [];
+        return fK(e) || mK(e) ? LG(t, Object.keys(e.getFields())) : [];
     }
     var xJ = o((()=>{
-        CG(), FG(), zG(), SW(), ZK();
+        wG(), IG(), BG(), CW(), QK();
     }));
     function SJ(e) {
         return {
@@ -40052,8 +40052,8 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 let n = t.typeCondition;
                 if (n) {
                     let t = aJ(e.getSchema(), n);
-                    if (t && !CK(t)) {
-                        let t = YG(n);
+                    if (t && !wK(t)) {
+                        let t = XG(n);
                         e.reportError(new X(`Fragment cannot condition on non composite type "${t}".`, {
                             nodes: n
                         }));
@@ -40062,8 +40062,8 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             },
             FragmentDefinition (t) {
                 let n = aJ(e.getSchema(), t.typeCondition);
-                if (n && !CK(n)) {
-                    let n = YG(t.typeCondition);
+                if (n && !wK(n)) {
+                    let n = XG(t.typeCondition);
                     e.reportError(new X(`Fragment "${t.name.value}" cannot condition on non composite type "${n}".`, {
                         nodes: t.typeCondition
                     }));
@@ -40072,7 +40072,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     var CJ = o((()=>{
-        SW(), rK(), ZK(), oJ();
+        CW(), iK(), QK(), oJ();
     }));
     function wJ(e) {
         return {
@@ -40080,8 +40080,8 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             Argument (t) {
                 let n = e.getArgument(), r = e.getFieldDef(), i = e.getParentType();
                 if (!n && r && i) {
-                    let n = t.name.value, a = IG(n, r.args.map((e)=>e.name));
-                    e.reportError(new X(`Unknown argument "${n}" on field "${i.name}.${r.name}".` + xG(a), {
+                    let n = t.name.value, a = LG(n, r.args.map((e)=>e.name));
+                    e.reportError(new X(`Unknown argument "${n}" on field "${i.name}.${r.name}".` + SG(a), {
                         nodes: t
                     }));
                 }
@@ -40089,7 +40089,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     function TJ(e) {
-        let t = Object.create(null), n = e.getSchema(), r = n ? n.getDirectives() : Sq;
+        let t = Object.create(null), n = e.getSchema(), r = n ? n.getDirectives() : Cq;
         for (let e of r)t[e.name] = e.args.map((e)=>e.name);
         let i = e.getDocument().definitions;
         for (let e of i)if (e.kind === Z.DIRECTIVE_DEFINITION) {
@@ -40102,8 +40102,8 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 if (n.arguments && i) for (let t of n.arguments){
                     let n = t.name.value;
                     if (!i.includes(n)) {
-                        let a = IG(n, i);
-                        e.reportError(new X(`Unknown argument "${n}" on directive "@${r}".` + xG(a), {
+                        let a = LG(n, i);
+                        e.reportError(new X(`Unknown argument "${n}" on directive "@${r}".` + SG(a), {
                             nodes: t
                         }));
                     }
@@ -40113,10 +40113,10 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     var EJ = o((()=>{
-        CG(), zG(), SW(), PW(), Cq();
+        wG(), BG(), CW(), FW(), wq();
     }));
     function DJ(e) {
-        let t = Object.create(null), n = e.getSchema(), r = n ? n.getDirectives() : Sq;
+        let t = Object.create(null), n = e.getSchema(), r = n ? n.getDirectives() : Cq;
         for (let e of r)t[e.name] = e.locations;
         let i = e.getDocument().definitions;
         for (let e of i)e.kind === Z.DIRECTIVE_DEFINITION && (t[e.name.value] = e.locations.map((e)=>e.value));
@@ -40138,65 +40138,65 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
     }
     function vTe(e) {
         let t = e[e.length - 1];
-        switch(`kind` in t || fW(!1), t.kind){
+        switch(`kind` in t || pW(!1), t.kind){
             case Z.OPERATION_DEFINITION:
                 return yTe(t.operation);
             case Z.FIELD:
-                return MW.FIELD;
+                return NW.FIELD;
             case Z.FRAGMENT_SPREAD:
-                return MW.FRAGMENT_SPREAD;
+                return NW.FRAGMENT_SPREAD;
             case Z.INLINE_FRAGMENT:
-                return MW.INLINE_FRAGMENT;
+                return NW.INLINE_FRAGMENT;
             case Z.FRAGMENT_DEFINITION:
-                return MW.FRAGMENT_DEFINITION;
+                return NW.FRAGMENT_DEFINITION;
             case Z.VARIABLE_DEFINITION:
-                return MW.VARIABLE_DEFINITION;
+                return NW.VARIABLE_DEFINITION;
             case Z.SCHEMA_DEFINITION:
             case Z.SCHEMA_EXTENSION:
-                return MW.SCHEMA;
+                return NW.SCHEMA;
             case Z.SCALAR_TYPE_DEFINITION:
             case Z.SCALAR_TYPE_EXTENSION:
-                return MW.SCALAR;
+                return NW.SCALAR;
             case Z.OBJECT_TYPE_DEFINITION:
             case Z.OBJECT_TYPE_EXTENSION:
-                return MW.OBJECT;
+                return NW.OBJECT;
             case Z.FIELD_DEFINITION:
-                return MW.FIELD_DEFINITION;
+                return NW.FIELD_DEFINITION;
             case Z.INTERFACE_TYPE_DEFINITION:
             case Z.INTERFACE_TYPE_EXTENSION:
-                return MW.INTERFACE;
+                return NW.INTERFACE;
             case Z.UNION_TYPE_DEFINITION:
             case Z.UNION_TYPE_EXTENSION:
-                return MW.UNION;
+                return NW.UNION;
             case Z.ENUM_TYPE_DEFINITION:
             case Z.ENUM_TYPE_EXTENSION:
-                return MW.ENUM;
+                return NW.ENUM;
             case Z.ENUM_VALUE_DEFINITION:
-                return MW.ENUM_VALUE;
+                return NW.ENUM_VALUE;
             case Z.INPUT_OBJECT_TYPE_DEFINITION:
             case Z.INPUT_OBJECT_TYPE_EXTENSION:
-                return MW.INPUT_OBJECT;
+                return NW.INPUT_OBJECT;
             case Z.INPUT_VALUE_DEFINITION:
                 {
                     let t = e[e.length - 3];
-                    return `kind` in t || fW(!1), t.kind === Z.INPUT_OBJECT_TYPE_DEFINITION ? MW.INPUT_FIELD_DEFINITION : MW.ARGUMENT_DEFINITION;
+                    return `kind` in t || pW(!1), t.kind === Z.INPUT_OBJECT_TYPE_DEFINITION ? NW.INPUT_FIELD_DEFINITION : NW.ARGUMENT_DEFINITION;
                 }
             default:
-                fW(!1, `Unexpected kind: ` + $(t.kind));
+                pW(!1, `Unexpected kind: ` + $(t.kind));
         }
     }
     function yTe(e) {
         switch(e){
-            case AW.QUERY:
-                return MW.QUERY;
-            case AW.MUTATION:
-                return MW.MUTATION;
-            case AW.SUBSCRIPTION:
-                return MW.SUBSCRIPTION;
+            case jW.QUERY:
+                return NW.QUERY;
+            case jW.MUTATION:
+                return NW.MUTATION;
+            case jW.SUBSCRIPTION:
+                return NW.SUBSCRIPTION;
         }
     }
     var OJ = o((()=>{
-        sG(), pW(), SW(), jW(), NW(), PW(), Cq();
+        cG(), mW(), CW(), MW(), PW(), FW(), wq();
     }));
     function kJ(e) {
         return {
@@ -40209,7 +40209,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     var AJ = o((()=>{
-        SW();
+        CW();
     }));
     function jJ(e) {
         let t = e.getSchema(), n = t ? t.getTypeMap() : Object.create(null), r = Object.create(null);
@@ -40224,8 +40224,8 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 if (!n[l] && !r[l]) {
                     let n = c[2] ?? o, r = n != null && bTe(n);
                     if (r && MJ.includes(l)) return;
-                    let a = IG(l, r ? MJ.concat(i) : i);
-                    e.reportError(new X(`Unknown type "${l}".` + xG(a), {
+                    let a = LG(l, r ? MJ.concat(i) : i);
+                    e.reportError(new X(`Unknown type "${l}".` + SG(a), {
                         nodes: t
                     }));
                 }
@@ -40236,9 +40236,9 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         return `kind` in e && (pJ(e) || hJ(e));
     }
     var MJ, NJ = o((()=>{
-        CG(), zG(), SW(), _J(), Uq(), fq(), MJ = [
-            ...dq,
-            ...Hq
+        wG(), BG(), CW(), _J(), Wq(), pq(), MJ = [
+            ...fq,
+            ...Uq
         ].map((e)=>e.name);
     }));
     function PJ(e) {
@@ -40255,7 +40255,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     var FJ = o((()=>{
-        SW(), PW();
+        CW(), FW();
     }));
     function IJ(e) {
         let t = e.getSchema(), n = t?.astNode ?? t?.getQueryType() ?? t?.getMutationType() ?? t?.getSubscriptionType(), r = 0;
@@ -40274,7 +40274,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     var LJ = o((()=>{
-        SW();
+        CW();
     }));
     function RJ(e) {
         function t(n, r = Object.create(null), i = 0) {
@@ -40306,7 +40306,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     var zJ, BJ = o((()=>{
-        SW(), PW(), zJ = 3;
+        CW(), FW(), zJ = 3;
     }));
     function VJ(e) {
         let t = Object.create(null), n = [], r = Object.create(null);
@@ -40341,7 +40341,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         }
     }
     var HJ = o((()=>{
-        SW();
+        CW();
     }));
     function UJ(e) {
         let t = Object.create(null);
@@ -40369,7 +40369,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     var WJ = o((()=>{
-        SW();
+        CW();
     }));
     function GJ(e) {
         let t = [], n = [];
@@ -40395,7 +40395,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     var KJ = o((()=>{
-        SW();
+        CW();
     }));
     function qJ(e) {
         let t = [];
@@ -40421,7 +40421,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     var JJ = o((()=>{
-        SW();
+        CW();
     }));
     function YJ(e) {
         switch(e.kind){
@@ -40449,10 +40449,10 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         return e.map((e)=>({
                 ...e,
                 value: YJ(e.value)
-            })).sort((e, t)=>jG(e.name.value, t.name.value));
+            })).sort((e, t)=>MG(e.name.value, t.name.value));
     }
     var XJ = o((()=>{
-        FG(), PW();
+        IG(), FW();
     }));
     function ZJ(e) {
         return Array.isArray(e) ? e.map(([e, t])=>`subfields "${e}" conflict because ` + ZJ(t)).join(` and `) : e;
@@ -40524,7 +40524,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         }
     }
     function nY(e, t, n, r, i, a, o, s) {
-        let [c, l, u] = o, [d, f, p] = s, m = i || c !== d && dK(c) && dK(d);
+        let [c, l, u] = o, [d, f, p] = s, m = i || c !== d && fK(c) && fK(d);
         if (!m) {
             let e = l.name.value, t = f.name.value;
             if (e !== t) return [
@@ -40566,7 +40566,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             ]
         ];
         let _ = l.selectionSet, v = f.selectionSet;
-        if (_ && v) return ETe(CTe(e, t, n, r, m, AK(h), _, AK(g), v), a, l, f);
+        if (_ && v) return ETe(CTe(e, t, n, r, m, jK(h), _, jK(g), v), a, l, f);
     }
     function TTe(e, t) {
         let n = e.arguments, r = t.arguments;
@@ -40582,10 +40582,10 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         });
     }
     function rY(e) {
-        return YG(YJ(e));
+        return XG(YJ(e));
     }
     function iY(e, t) {
-        return vK(e) ? vK(t) ? iY(e.ofType, t.ofType) : !0 : vK(t) ? !0 : yK(e) ? yK(t) ? iY(e.ofType, t.ofType) : !0 : yK(t) ? !0 : SK(e) || SK(t) ? e !== t : !1;
+        return yK(e) ? yK(t) ? iY(e.ofType, t.ofType) : !0 : yK(t) ? !0 : bK(e) ? bK(t) ? iY(e.ofType, t.ofType) : !0 : bK(t) ? !0 : CK(e) || CK(t) ? e !== t : !1;
     }
     function aY(e, t, n, r) {
         let i = t.get(r);
@@ -40606,7 +40606,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             case Z.FIELD:
                 {
                     let e = a.name.value, n;
-                    (dK(t) || pK(t)) && (n = t.getFields()[e]);
+                    (fK(t) || mK(t)) && (n = t.getFields()[e]);
                     let i = a.alias ? a.alias.value : e;
                     r[i] || (r[i] = []), r[i].push([
                         t,
@@ -40643,7 +40643,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         ];
     }
     var cY, lY, uY = o((()=>{
-        sG(), SW(), PW(), rK(), ZK(), XJ(), oJ(), cY = class {
+        cG(), CW(), FW(), iK(), QK(), XJ(), oJ(), cY = class {
             constructor(){
                 this._data = new Map;
             }
@@ -40676,7 +40676,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         return {
             InlineFragment (t) {
                 let n = e.getType(), r = e.getParentType();
-                if (CK(n) && CK(r) && !eq(e.getSchema(), n, r)) {
+                if (wK(n) && wK(r) && !tq(e.getSchema(), n, r)) {
                     let i = $(r), a = $(n);
                     e.reportError(new X(`Fragment cannot be spread here as objects of type "${i}" can never be of type "${a}".`, {
                         nodes: t
@@ -40685,7 +40685,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             },
             FragmentSpread (t) {
                 let n = t.name.value, r = DTe(e, n), i = e.getParentType();
-                if (r && i && !eq(e.getSchema(), r, i)) {
+                if (r && i && !tq(e.getSchema(), r, i)) {
                     let a = $(i), o = $(r);
                     e.reportError(new X(`Fragment "${n}" cannot be spread here as objects of type "${a}" can never be of type "${o}".`, {
                         nodes: t
@@ -40698,11 +40698,11 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         let n = e.getFragment(t);
         if (n) {
             let t = aJ(e.getSchema(), n.typeCondition);
-            if (CK(t)) return t;
+            if (wK(t)) return t;
         }
     }
     var fY = o((()=>{
-        sG(), SW(), ZK(), tq(), oJ();
+        cG(), CW(), QK(), nq(), oJ();
     }));
     function pY(e) {
         let t = e.getSchema(), n = Object.create(null);
@@ -40728,24 +40728,24 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                     }));
                 }
             } else {
-                let a = IG(i, Object.keys({
+                let a = LG(i, Object.keys({
                     ...n,
                     ...t?.getTypeMap()
                 }));
-                e.reportError(new X(`Cannot extend type "${i}" because it is not defined.` + xG(a), {
+                e.reportError(new X(`Cannot extend type "${i}" because it is not defined.` + SG(a), {
                     nodes: r.name
                 }));
             }
         }
     }
     function OTe(e) {
-        if (uK(e)) return Z.SCALAR_TYPE_EXTENSION;
-        if (dK(e)) return Z.OBJECT_TYPE_EXTENSION;
-        if (pK(e)) return Z.INTERFACE_TYPE_EXTENSION;
-        if (hK(e)) return Z.UNION_TYPE_EXTENSION;
-        if (gK(e)) return Z.ENUM_TYPE_EXTENSION;
-        if (_K(e)) return Z.INPUT_OBJECT_TYPE_EXTENSION;
-        fW(!1, `Unexpected type: ` + $(e));
+        if (dK(e)) return Z.SCALAR_TYPE_EXTENSION;
+        if (fK(e)) return Z.OBJECT_TYPE_EXTENSION;
+        if (mK(e)) return Z.INTERFACE_TYPE_EXTENSION;
+        if (gK(e)) return Z.UNION_TYPE_EXTENSION;
+        if (_K(e)) return Z.ENUM_TYPE_EXTENSION;
+        if (vK(e)) return Z.INPUT_OBJECT_TYPE_EXTENSION;
+        pW(!1, `Unexpected type: ` + $(e));
     }
     function kTe(e) {
         switch(e){
@@ -40762,11 +40762,11 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             case Z.INPUT_OBJECT_TYPE_EXTENSION:
                 return `input object`;
             default:
-                fW(!1, `Unexpected kind: ` + $(e));
+                pW(!1, `Unexpected kind: ` + $(e));
         }
     }
     var mY, hY = o((()=>{
-        CG(), sG(), pW(), zG(), SW(), PW(), _J(), ZK(), mY = {
+        wG(), cG(), mW(), BG(), CW(), FW(), _J(), QK(), mY = {
             [Z.SCALAR_TYPE_DEFINITION]: Z.SCALAR_TYPE_EXTENSION,
             [Z.OBJECT_TYPE_DEFINITION]: Z.OBJECT_TYPE_EXTENSION,
             [Z.INTERFACE_TYPE_DEFINITION]: Z.INTERFACE_TYPE_EXTENSION,
@@ -40783,7 +40783,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                     let n = e.getFieldDef();
                     if (!n) return !1;
                     let r = new Set(t.arguments?.map((e)=>e.name.value));
-                    for (let i of n.args)if (!r.has(i.name) && zK(i)) {
+                    for (let i of n.args)if (!r.has(i.name) && BK(i)) {
                         let r = $(i.type);
                         e.reportError(new X(`Field "${n.name}" argument "${i.name}" of type "${r}" is required, but it was not provided.`, {
                             nodes: t
@@ -40794,12 +40794,12 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     function _Y(e) {
-        let t = Object.create(null), n = e.getSchema()?.getDirectives() ?? Sq;
-        for (let e of n)t[e.name] = TG(e.args.filter(zK), (e)=>e.name);
+        let t = Object.create(null), n = e.getSchema()?.getDirectives() ?? Cq;
+        for (let e of n)t[e.name] = EG(e.args.filter(BK), (e)=>e.name);
         let r = e.getDocument().definitions;
         for (let e of r)if (e.kind === Z.DIRECTIVE_DEFINITION) {
             let n = e.arguments ?? [];
-            t[e.name.value] = TG(n.filter(ATe), (e)=>e.name.value);
+            t[e.name.value] = EG(n.filter(ATe), (e)=>e.name.value);
         }
         return {
             Directive: {
@@ -40808,7 +40808,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                     if (i) {
                         let t = n.arguments ?? [], a = new Set(t.map((e)=>e.name.value));
                         for (let [t, o] of Object.entries(i))if (!a.has(t)) {
-                            let i = lK(o.type) ? $(o.type) : YG(o.type);
+                            let i = uK(o.type) ? $(o.type) : XG(o.type);
                             e.reportError(new X(`Directive "@${r}" argument "${t}" of type "${i}" is required, but it was not provided.`, {
                                 nodes: n
                             }));
@@ -40822,14 +40822,14 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         return e.type.kind === Z.NON_NULL_TYPE && e.defaultValue == null;
     }
     var vY = o((()=>{
-        sG(), EG(), SW(), PW(), rK(), ZK(), Cq();
+        cG(), DG(), CW(), FW(), iK(), QK(), wq();
     }));
     function yY(e) {
         return {
             Field (t) {
                 let n = e.getType(), r = t.selectionSet;
                 if (n) {
-                    if (SK(AK(n))) {
+                    if (CK(jK(n))) {
                         if (r) {
                             let i = t.name.value, a = $(n);
                             e.reportError(new X(`Field "${i}" must not have a selection since type "${a}" has no subfields.`, {
@@ -40852,7 +40852,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     var bY = o((()=>{
-        sG(), SW(), ZK();
+        cG(), CW(), QK();
     }));
     function xY(e) {
         return e.map((e)=>typeof e == `number` ? `[` + e.toString() + `]` : `.` + e).join(``);
@@ -40879,20 +40879,20 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         throw e.length > 0 && (r += ` at "value${xY(e)}"`), n.message = r + `: ` + n.message, n;
     }
     function DY(e, t, n, r) {
-        if (yK(t)) {
+        if (bK(t)) {
             if (e != null) return DY(e, t.ofType, n, r);
             n(wY(r), e, new X(`Expected non-nullable type "${$(t)}" not to be null.`));
             return;
         }
         if (e == null) return null;
-        if (vK(t)) {
+        if (yK(t)) {
             let i = t.ofType;
-            return wq(e) ? Array.from(e, (e, t)=>DY(e, i, n, CY(r, t, void 0))) : [
+            return Tq(e) ? Array.from(e, (e, t)=>DY(e, i, n, CY(r, t, void 0))) : [
                 DY(e, i, n, r)
             ];
         }
-        if (_K(t)) {
-            if (!uW(e) || Array.isArray(e)) {
+        if (vK(t)) {
+            if (!dW(e) || Array.isArray(e)) {
                 n(wY(r), e, new X(`Expected type "${t.name}" to be an object.`));
                 return;
             }
@@ -40901,7 +40901,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 let a = e[o.name];
                 if (a === void 0) {
                     if (o.defaultValue !== void 0) i[o.name] = o.defaultValue;
-                    else if (yK(o.type)) {
+                    else if (bK(o.type)) {
                         let t = $(o.type);
                         n(wY(r), e, new X(`Field "${o.name}" of required type "${t}" was not provided.`));
                     }
@@ -40910,8 +40910,8 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 i[o.name] = DY(a, o.type, n, CY(r, o.name, t.name));
             }
             for (let i of Object.keys(e))if (!a[i]) {
-                let a = IG(i, Object.keys(t.getFields()));
-                n(wY(r), e, new X(`Field "${i}" is not defined by type "${t.name}".` + xG(a)));
+                let a = LG(i, Object.keys(t.getFields()));
+                n(wY(r), e, new X(`Field "${i}" is not defined by type "${t.name}".` + SG(a)));
             }
             if (t.isOneOf) {
                 let a = Object.keys(i);
@@ -40923,7 +40923,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 ...i
             };
         }
-        if (SK(t)) {
+        if (CK(t)) {
             let i;
             try {
                 i = t.parseValue(e);
@@ -40935,10 +40935,10 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             }
             return i === void 0 && n(wY(r), e, new X(`Expected type "${t.name}".`)), i;
         }
-        fW(!1, `Unexpected input type: ` + $(t));
+        pW(!1, `Unexpected input type: ` + $(t));
     }
     var OY = o((()=>{
-        CG(), sG(), pW(), Tq(), dW(), TY(), SY(), zG(), SW(), ZK();
+        wG(), cG(), mW(), Eq(), fW(), TY(), SY(), BG(), CW(), QK();
     }));
     function kY(e, t, n) {
         if (e) {
@@ -40946,16 +40946,16 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 let r = e.name.value;
                 if (n == null || n[r] === void 0) return;
                 let i = n[r];
-                return i === null && yK(t) ? void 0 : i;
+                return i === null && bK(t) ? void 0 : i;
             }
-            if (yK(t)) return e.kind === Z.NULL ? void 0 : kY(e, t.ofType, n);
+            if (bK(t)) return e.kind === Z.NULL ? void 0 : kY(e, t.ofType, n);
             if (e.kind === Z.NULL) return null;
-            if (vK(t)) {
+            if (yK(t)) {
                 let r = t.ofType;
                 if (e.kind === Z.LIST) {
                     let t = [];
                     for (let i of e.values)if (AY(i, n)) {
-                        if (yK(r)) return;
+                        if (bK(r)) return;
                         t.push(null);
                     } else {
                         let e = kY(i, r, n);
@@ -40969,14 +40969,14 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                     i
                 ];
             }
-            if (_K(t)) {
+            if (vK(t)) {
                 if (e.kind !== Z.OBJECT) return;
-                let r = Object.create(null), i = TG(e.fields, (e)=>e.name.value);
+                let r = Object.create(null), i = EG(e.fields, (e)=>e.name.value);
                 for (let e of Object.values(t.getFields())){
                     let t = i[e.name];
                     if (!t || AY(t.value, n)) {
                         if (e.defaultValue !== void 0) r[e.name] = e.defaultValue;
-                        else if (yK(e.type)) return;
+                        else if (bK(e.type)) return;
                         continue;
                     }
                     let a = kY(t.value, e.type, n);
@@ -40989,7 +40989,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 }
                 return r;
             }
-            if (SK(t)) {
+            if (CK(t)) {
                 let r;
                 try {
                     r = t.parseLiteral(e, n);
@@ -40998,14 +40998,14 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 }
                 return r === void 0 ? void 0 : r;
             }
-            fW(!1, `Unexpected input type: ` + $(t));
+            pW(!1, `Unexpected input type: ` + $(t));
         }
     }
     function AY(e, t) {
         return e.kind === Z.VARIABLE && (t == null || t[e.name.value] === void 0);
     }
     var jY = o((()=>{
-        sG(), pW(), EG(), PW(), ZK();
+        cG(), mW(), DG(), FW(), QK();
     }));
     function MY(e, t, n, r) {
         let i = [], a = r?.maxErrors;
@@ -41028,20 +41028,20 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         let i = Object.create(null);
         for (let a of t){
             let t = a.variable.name.value, o = aJ(e, a.type);
-            if (!bK(o)) {
-                r(new X(`Variable "$${t}" expected value of type "${YG(a.type)}" which cannot be used as an input type.`, {
+            if (!xK(o)) {
+                r(new X(`Variable "$${t}" expected value of type "${XG(a.type)}" which cannot be used as an input type.`, {
                     nodes: a.type
                 }));
                 continue;
             }
             if (!FY(n, t)) {
-                a.defaultValue ? i[t] = kY(a.defaultValue, o) : yK(o) && r(new X(`Variable "$${t}" of required type "${$(o)}" was not provided.`, {
+                a.defaultValue ? i[t] = kY(a.defaultValue, o) : bK(o) && r(new X(`Variable "$${t}" of required type "${$(o)}" was not provided.`, {
                     nodes: a
                 }));
                 continue;
             }
             let s = n[t];
-            if (s === null && yK(o)) {
+            if (s === null && bK(o)) {
                 r(new X(`Variable "$${t}" of non-null type "${$(o)}" must not be null.`, {
                     nodes: a
                 }));
@@ -41060,12 +41060,12 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     function NY(e, t, n) {
-        let r = Object.create(null), i = TG(t.arguments ?? [], (e)=>e.name.value);
+        let r = Object.create(null), i = EG(t.arguments ?? [], (e)=>e.name.value);
         for (let a of e.args){
             let e = a.name, o = a.type, s = i[e];
             if (!s) {
                 if (a.defaultValue !== void 0) r[e] = a.defaultValue;
-                else if (yK(o)) throw new X(`Argument "${e}" of required type "${$(o)}" was not provided.`, {
+                else if (bK(o)) throw new X(`Argument "${e}" of required type "${$(o)}" was not provided.`, {
                     nodes: t
                 });
                 continue;
@@ -41075,18 +41075,18 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 let t = c.name.value;
                 if (n == null || !FY(n, t)) {
                     if (a.defaultValue !== void 0) r[e] = a.defaultValue;
-                    else if (yK(o)) throw new X(`Argument "${e}" of required type "${$(o)}" was provided the variable "$${t}" which was not provided a runtime value.`, {
+                    else if (bK(o)) throw new X(`Argument "${e}" of required type "${$(o)}" was provided the variable "$${t}" which was not provided a runtime value.`, {
                         nodes: c
                     });
                     continue;
                 }
                 l = n[t] == null;
             }
-            if (l && yK(o)) throw new X(`Argument "${e}" of non-null type "${$(o)}" must not be null.`, {
+            if (l && bK(o)) throw new X(`Argument "${e}" of non-null type "${$(o)}" must not be null.`, {
                 nodes: c
             });
             let u = kY(c, o, n);
-            if (u === void 0) throw new X(`Argument "${e}" has invalid value ${YG(c)}.`, {
+            if (u === void 0) throw new X(`Argument "${e}" has invalid value ${XG(c)}.`, {
                 nodes: c
             });
             r[e] = u;
@@ -41103,7 +41103,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         return Object.prototype.hasOwnProperty.call(e, t);
     }
     var IY = o((()=>{
-        sG(), EG(), SY(), SW(), PW(), rK(), ZK(), OY(), oJ(), jY();
+        cG(), DG(), SY(), CW(), FW(), iK(), QK(), OY(), oJ(), jY();
     }));
     function LY(e, t, n, r, i) {
         let a = new Map;
@@ -41142,19 +41142,19 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         }
     }
     function zY(e, t) {
-        return PY(_q, t, e)?.if === !0 ? !1 : PY(gq, t, e)?.if !== !1;
+        return PY(vq, t, e)?.if === !0 ? !1 : PY(_q, t, e)?.if !== !1;
     }
     function BY(e, t, n) {
         let r = t.typeCondition;
         if (!r) return !0;
         let i = aJ(e, r);
-        return i === n ? !0 : wK(i) ? e.isSubType(i, n) : !1;
+        return i === n ? !0 : TK(i) ? e.isSubType(i, n) : !1;
     }
     function PTe(e) {
         return e.alias ? e.alias.value : e.name.value;
     }
     var VY = o((()=>{
-        PW(), ZK(), Cq(), oJ(), IY();
+        FW(), QK(), wq(), oJ(), IY();
     }));
     function HY(e) {
         return {
@@ -41182,7 +41182,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     var UY = o((()=>{
-        SW(), PW(), VY();
+        CW(), FW(), VY();
     }));
     function WY(e, t) {
         let n = new Map;
@@ -41223,7 +41223,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         }
     }
     var qY = o((()=>{
-        GY(), SW();
+        GY(), CW();
     }));
     function JY(e) {
         return {
@@ -41238,7 +41238,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         }
     }
     var YY = o((()=>{
-        GY(), SW();
+        GY(), CW();
     }));
     function XY(e) {
         let t = Object.create(null), n = e.getSchema();
@@ -41261,10 +41261,10 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     var ZY = o((()=>{
-        SW();
+        CW();
     }));
     function QY(e) {
-        let t = Object.create(null), n = e.getSchema(), r = n ? n.getDirectives() : Sq;
+        let t = Object.create(null), n = e.getSchema(), r = n ? n.getDirectives() : Cq;
         for (let e of r)t[e.name] = !e.isRepeatable;
         let i = e.getDocument().definitions;
         for (let e of i)e.kind === Z.DIRECTIVE_DEFINITION && (t[e.name.value] = !e.repeatable);
@@ -41291,7 +41291,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     var $Y = o((()=>{
-        SW(), PW(), _J(), Cq();
+        CW(), FW(), _J(), wq();
     }));
     function eX(e) {
         let t = e.getSchema(), n = t ? t.getTypeMap() : Object.create(null), r = Object.create(null);
@@ -41305,7 +41305,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             let a = t.values ?? [], o = r[i];
             for (let t of a){
                 let r = t.name.value, a = n[i];
-                gK(a) && a.getValue(r) ? e.reportError(new X(`Enum value "${i}.${r}" already exists in the schema. It cannot also be defined in this type extension.`, {
+                _K(a) && a.getValue(r) ? e.reportError(new X(`Enum value "${i}.${r}" already exists in the schema. It cannot also be defined in this type extension.`, {
                     nodes: t.name
                 })) : o[r] ? e.reportError(new X(`Enum value "${i}.${r}" can only be defined once.`, {
                     nodes: [
@@ -41318,7 +41318,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         }
     }
     var tX = o((()=>{
-        SW(), ZK();
+        CW(), QK();
     }));
     function nX(e) {
         let t = e.getSchema(), n = t ? t.getTypeMap() : Object.create(null), r = Object.create(null);
@@ -41349,10 +41349,10 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         }
     }
     function FTe(e, t) {
-        return dK(e) || pK(e) || _K(e) ? e.getFields()[t] != null : !1;
+        return fK(e) || mK(e) || vK(e) ? e.getFields()[t] != null : !1;
     }
     var rX = o((()=>{
-        SW(), ZK();
+        CW(), QK();
     }));
     function iX(e) {
         let t = Object.create(null);
@@ -41370,7 +41370,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     var aX = o((()=>{
-        SW();
+        CW();
     }));
     function oX(e) {
         let t = [], n = Object.create(null);
@@ -41381,7 +41381,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 },
                 leave () {
                     let e = t.pop();
-                    e || fW(!1), n = e;
+                    e || pW(!1), n = e;
                 }
             },
             ObjectField (t) {
@@ -41396,7 +41396,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     var sX = o((()=>{
-        pW(), SW();
+        mW(), CW();
     }));
     function cX(e) {
         let t = Object.create(null);
@@ -41414,7 +41414,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     var lX = o((()=>{
-        SW();
+        CW();
     }));
     function uX(e) {
         let t = e.getSchema(), n = Object.create(null), r = t ? {
@@ -41443,7 +41443,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         }
     }
     var dX = o((()=>{
-        SW();
+        CW();
     }));
     function fX(e) {
         let t = Object.create(null), n = e.getSchema();
@@ -41472,7 +41472,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         }
     }
     var pX = o((()=>{
-        SW();
+        CW();
     }));
     function mX(e) {
         return {
@@ -41485,18 +41485,18 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     var hX = o((()=>{
-        GY(), SW();
+        GY(), CW();
     }));
     function gX(e) {
         return {
             ListValue (t) {
-                if (!vK(OK(e.getParentInputType()))) return _X(e, t), !1;
+                if (!yK(kK(e.getParentInputType()))) return _X(e, t), !1;
             },
             ObjectValue (t) {
-                let n = AK(e.getInputType());
-                if (!_K(n)) return _X(e, t), !1;
-                let r = TG(t.fields, (e)=>e.name.value);
-                for (let i of Object.values(n.getFields()))if (!r[i.name] && HK(i)) {
+                let n = jK(e.getInputType());
+                if (!vK(n)) return _X(e, t), !1;
+                let r = EG(t.fields, (e)=>e.name.value);
+                for (let i of Object.values(n.getFields()))if (!r[i.name] && UK(i)) {
                     let r = $(i.type);
                     e.reportError(new X(`Field "${n.name}.${i.name}" of required type "${r}" was not provided.`, {
                         nodes: t
@@ -41505,17 +41505,17 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 n.isOneOf && ITe(e, t, n, r);
             },
             ObjectField (t) {
-                let n = AK(e.getParentInputType());
-                if (!e.getInputType() && _K(n)) {
-                    let r = IG(t.name.value, Object.keys(n.getFields()));
-                    e.reportError(new X(`Field "${t.name.value}" is not defined by type "${n.name}".` + xG(r), {
+                let n = jK(e.getParentInputType());
+                if (!e.getInputType() && vK(n)) {
+                    let r = LG(t.name.value, Object.keys(n.getFields()));
+                    e.reportError(new X(`Field "${t.name.value}" is not defined by type "${n.name}".` + SG(r), {
                         nodes: t
                     }));
                 }
             },
             NullValue (t) {
                 let n = e.getInputType();
-                yK(n) && e.reportError(new X(`Expected value of type "${$(n)}", found ${YG(t)}.`, {
+                bK(n) && e.reportError(new X(`Expected value of type "${$(n)}", found ${XG(t)}.`, {
                     nodes: t
                 }));
             },
@@ -41529,10 +41529,10 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
     function _X(e, t) {
         let n = e.getInputType();
         if (!n) return;
-        let r = AK(n);
-        if (!SK(r)) {
+        let r = jK(n);
+        if (!CK(r)) {
             let r = $(n);
-            e.reportError(new X(`Expected value of type "${r}", found ${YG(t)}.`, {
+            e.reportError(new X(`Expected value of type "${r}", found ${XG(t)}.`, {
                 nodes: t
             }));
             return;
@@ -41540,13 +41540,13 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         try {
             if (r.parseLiteral(t, void 0) === void 0) {
                 let r = $(n);
-                e.reportError(new X(`Expected value of type "${r}", found ${YG(t)}.`, {
+                e.reportError(new X(`Expected value of type "${r}", found ${XG(t)}.`, {
                     nodes: t
                 }));
             }
         } catch (r) {
             let i = $(n);
-            r instanceof X ? e.reportError(r) : e.reportError(new X(`Expected value of type "${i}", found ${YG(t)}; ` + r.message, {
+            r instanceof X ? e.reportError(r) : e.reportError(new X(`Expected value of type "${i}", found ${XG(t)}; ` + r.message, {
                 nodes: t,
                 originalError: r
             }));
@@ -41570,14 +41570,14 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         }));
     }
     var vX = o((()=>{
-        CG(), sG(), EG(), zG(), SW(), PW(), rK(), ZK();
+        wG(), cG(), DG(), BG(), CW(), FW(), iK(), QK();
     }));
     function yX(e) {
         return {
             VariableDefinition (t) {
                 let n = aJ(e.getSchema(), t.type);
-                if (n !== void 0 && !bK(n)) {
-                    let n = t.variable.name.value, r = YG(t.type);
+                if (n !== void 0 && !xK(n)) {
+                    let n = t.variable.name.value, r = XG(t.type);
                     e.reportError(new X(`Variable "$${n}" cannot be non-input type "${r}".`, {
                         nodes: t.type
                     }));
@@ -41586,7 +41586,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     var bX = o((()=>{
-        SW(), rK(), ZK(), oJ();
+        CW(), iK(), QK(), oJ();
     }));
     function xX(e) {
         let t = Object.create(null);
@@ -41610,7 +41610,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                                     ]
                                 }));
                             }
-                            _K(o) && o.isOneOf && EK(c) && e.reportError(new X(`Variable "$${r}" is of type "${c}" but must be non-nullable to be used for OneOf Input Object "${o}".`, {
+                            vK(o) && o.isOneOf && DK(c) && e.reportError(new X(`Variable "$${r}" is of type "${c}" but must be non-nullable to be used for OneOf Input Object "${o}".`, {
                                 nodes: [
                                     s,
                                     n
@@ -41626,15 +41626,15 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     function LTe(e, t, n, r, i) {
-        if (yK(r) && !yK(t)) {
+        if (bK(r) && !bK(t)) {
             if (!(n != null && n.kind !== Z.NULL) && i === void 0) return !1;
             let a = r.ofType;
-            return $K(e, t, a);
+            return eq(e, t, a);
         }
-        return $K(e, t, r);
+        return eq(e, t, r);
     }
     var SX = o((()=>{
-        sG(), SW(), PW(), ZK(), tq(), oJ();
+        cG(), CW(), FW(), QK(), nq(), oJ();
     })), CX, wX, TX, EX = o((()=>{
         yJ(), xJ(), CJ(), EJ(), OJ(), AJ(), NJ(), FJ(), LJ(), BJ(), HJ(), WJ(), KJ(), JJ(), uY(), fY(), hY(), vY(), bY(), UY(), qY(), YY(), ZY(), $Y(), tX(), rX(), aX(), sX(), lX(), dX(), pX(), hX(), vX(), bX(), SX(), CX = Object.freeze([
             RJ
@@ -41684,7 +41684,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             _Y
         ]);
     })), DX, OX, kX, AX = o((()=>{
-        PW(), JG(), lJ(), DX = class {
+        FW(), YG(), lJ(), DX = class {
             constructor(e, t){
                 this._ast = e, this._fragments = void 0, this._fragmentSpreads = new Map, this._recursivelyReferencedFragments = new Map, this._onError = t;
             }
@@ -41762,7 +41762,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 let t = this._variableUsages.get(e);
                 if (!t) {
                     let n = [], r = new cJ(this._schema);
-                    WG(e, sJ(r, {
+                    GG(e, sJ(r, {
                         VariableDefinition: ()=>!1,
                         Variable (e) {
                             n.push({
@@ -41813,13 +41813,13 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
     }));
     function jX(e, t, n = wX, r, i = new cJ(e)) {
         let a = r?.maxErrors ?? 100;
-        t || oW(!1, `Must provide document.`), Xq(e);
+        t || sW(!1, `Must provide document.`), Zq(e);
         let o = Object.freeze({}), s = [], c = new kX(e, t, i, (e)=>{
             if (s.length >= a) throw s.push(new X(`Too many validation errors, error limit reached. Validation aborted.`)), o;
             s.push(e);
-        }), l = GG(n.map((e)=>e(c)));
+        }), l = KG(n.map((e)=>e(c)));
         try {
-            WG(t, sJ(i, l), NX);
+            GG(t, sJ(i, l), NX);
         } catch (e) {
             if (e !== o) throw e;
         }
@@ -41829,7 +41829,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         let r = [], i = new OX(e, t, (e)=>{
             r.push(e);
         });
-        return WG(e, GG(n.map((e)=>e(i)))), r;
+        return GG(e, KG(n.map((e)=>e(i)))), r;
     }
     function RTe(e) {
         let t = MX(e);
@@ -41844,7 +41844,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
 `));
     }
     var NX, PX = o((()=>{
-        sW(), AG(), SW(), jW(), JG(), iJ(), lJ(), EX(), AX(), NX = kG(OW, (e)=>e.filter((e)=>e !== `description`));
+        cW(), jG(), CW(), MW(), YG(), iJ(), lJ(), EX(), AX(), NX = AG(kW, (e)=>e.filter((e)=>e !== `description`));
     }));
     function BTe(e) {
         let t;
@@ -41869,17 +41869,17 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
     var HTe = o((()=>{}));
     function UTe(e, t, n) {
         let r = n;
-        for (let n of e)r = cW(r) ? r.then((e)=>t(e, n)) : t(r, n);
+        for (let n of e)r = lW(r) ? r.then((e)=>t(e, n)) : t(r, n);
         return r;
     }
     var WTe = o((()=>{
-        lW();
+        uW();
     }));
     function GTe(e) {
         return e instanceof Error ? e : new IX(e);
     }
     var IX, KTe = o((()=>{
-        sG(), IX = class extends Error {
+        cG(), IX = class extends Error {
             constructor(e){
                 super(`Unexpected error value: ` + $(e)), this.name = `NonErrorThrown`, this.thrownValue = e;
             }
@@ -41899,10 +41899,10 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         return Array.isArray(e.path);
     }
     var RX = o((()=>{
-        KTe(), SW();
+        KTe(), CW();
     }));
     function zX(e) {
-        arguments.length < 2 || oW(!1, `graphql@16 dropped long-deprecated support for positional arguments, please pass an object instead.`);
+        arguments.length < 2 || sW(!1, `graphql@16 dropped long-deprecated support for positional arguments, please pass an object instead.`);
         let { schema: t, document: n, variableValues: r, rootValue: i } = e;
         HX(t, n, r);
         let a = UX(e);
@@ -41911,14 +41911,14 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
         try {
             let { operation: e } = a, t = JTe(a, e, i);
-            return cW(t) ? t.then((e)=>VX(e, a.collectedErrors.errors), (e)=>(a.collectedErrors.add(e, void 0), VX(null, a.collectedErrors.errors))) : VX(t, a.collectedErrors.errors);
+            return lW(t) ? t.then((e)=>VX(e, a.collectedErrors.errors), (e)=>(a.collectedErrors.add(e, void 0), VX(null, a.collectedErrors.errors))) : VX(t, a.collectedErrors.errors);
         } catch (e) {
             return a.collectedErrors.add(e, void 0), VX(null, a.collectedErrors.errors);
         }
     }
     function BX(e) {
         let t = zX(e);
-        if (cW(t)) throw Error(`GraphQL execution failed to complete synchronously.`);
+        if (lW(t)) throw Error(`GraphQL execution failed to complete synchronously.`);
         return t;
     }
     function VX(e, t) {
@@ -41930,7 +41930,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     function HX(e, t, n) {
-        t || oW(!1, `Must provide document.`), Xq(e), n == null || uW(n) || oW(!1, `Variables must be provided as an Object where each property is a variable value. Perhaps look to see if an unparsed JSON string was provided.`);
+        t || sW(!1, `Must provide document.`), Zq(e), n == null || dW(n) || sW(!1, `Variables must be provided as an Object where each property is a variable value. Perhaps look to see if an unparsed JSON string was provided.`);
     }
     function UX(e) {
         let { schema: t, document: n, rootValue: r, contextValue: i, variableValues: a, operationName: o, fieldResolver: s, typeResolver: c, subscribeFieldResolver: l, options: u } = e, d, f = Object.create(null);
@@ -41976,18 +41976,18 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         });
         let i = LY(e.schema, e.fragments, e.variableValues, r, t.selectionSet);
         switch(t.operation){
-            case AW.QUERY:
+            case jW.QUERY:
                 return WX(e, r, n, void 0, i);
-            case AW.MUTATION:
+            case jW.MUTATION:
                 return YTe(e, r, n, void 0, i);
-            case AW.SUBSCRIPTION:
+            case jW.SUBSCRIPTION:
                 return WX(e, r, n, void 0, i);
         }
     }
     function YTe(e, t, n, r, i) {
         return UTe(i.entries(), (i, [a, o])=>{
             let s = GX(e, t, n, o, CY(r, a, t.name));
-            return s === void 0 ? i : cW(s) ? s.then((e)=>(i[a] = e, i)) : (i[a] = s, i);
+            return s === void 0 ? i : lW(s) ? s.then((e)=>(i[a] = e, i)) : (i[a] = s, i);
         }, Object.create(null));
     }
     function WX(e, t, n, r, i) {
@@ -41995,7 +41995,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         try {
             for (let [s, c] of i.entries()){
                 let i = GX(e, t, n, c, CY(r, s, t.name));
-                i !== void 0 && (a[s] = i, cW(i) && (o = !0));
+                i !== void 0 && (a[s] = i, lW(i) && (o = !0));
             }
         } catch (e) {
             if (o) return FX(a).finally(()=>{
@@ -42011,7 +42011,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         let o = a.type, s = a.resolve ?? e.fieldResolver, c = KX(e, a, r, t, i);
         try {
             let t = NY(a, r[0], e.variableValues), l = e.contextValue, u = s(n, t, l, c), d;
-            return d = cW(u) ? u.then((t)=>JX(e, o, r, c, i, t)) : JX(e, o, r, c, i, u), cW(d) ? d.then(void 0, (t)=>qX(LX(t, r, wY(i)), o, i, e)) : d;
+            return d = lW(u) ? u.then((t)=>JX(e, o, r, c, i, t)) : JX(e, o, r, c, i, u), lW(d) ? d.then(void 0, (t)=>qX(LX(t, r, wY(i)), o, i, e)) : d;
         } catch (t) {
             return qX(LX(t, r, wY(i)), o, i, e);
         }
@@ -42031,30 +42031,30 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     function qX(e, t, n, r) {
-        if (yK(t)) throw e;
+        if (bK(t)) throw e;
         return r.collectedErrors.add(e, n), null;
     }
     function JX(e, t, n, r, i, a) {
         if (a instanceof Error) throw a;
-        if (yK(t)) {
+        if (bK(t)) {
             let o = JX(e, t.ofType, n, r, i, a);
             if (o === null) throw Error(`Cannot return null for non-nullable field ${r.parentType.name}.${r.fieldName}.`);
             return o;
         }
         if (a == null) return null;
-        if (vK(t)) return XTe(e, t, n, r, i, a);
-        if (SK(t)) return ZTe(t, a);
-        if (wK(t)) return QTe(e, t, n, r, i, a);
-        if (dK(t)) return XX(e, t, n, r, i, a);
-        fW(!1, `Cannot complete value of unexpected output type: ` + $(t));
+        if (yK(t)) return XTe(e, t, n, r, i, a);
+        if (CK(t)) return ZTe(t, a);
+        if (TK(t)) return QTe(e, t, n, r, i, a);
+        if (fK(t)) return XX(e, t, n, r, i, a);
+        pW(!1, `Cannot complete value of unexpected output type: ` + $(t));
     }
     function XTe(e, t, n, r, i, a) {
-        if (!wq(a)) throw new X(`Expected Iterable, but did not find one for field "${r.parentType.name}.${r.fieldName}".`);
+        if (!Tq(a)) throw new X(`Expected Iterable, but did not find one for field "${r.parentType.name}.${r.fieldName}".`);
         let o = t.ofType, s = !1, c = Array.from(a, (t, a)=>{
             let c = CY(i, a, void 0);
             try {
                 let i;
-                return i = cW(t) ? t.then((t)=>JX(e, o, n, r, c, t)) : JX(e, o, n, r, c, t), cW(i) ? (s = !0, i.then(void 0, (t)=>qX(LX(t, n, wY(c)), o, c, e))) : i;
+                return i = lW(t) ? t.then((t)=>JX(e, o, n, r, c, t)) : JX(e, o, n, r, c, t), lW(i) ? (s = !0, i.then(void 0, (t)=>qX(LX(t, n, wY(c)), o, c, e))) : i;
             } catch (t) {
                 return qX(LX(t, n, wY(c)), o, c, e);
             }
@@ -42068,17 +42068,17 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
     }
     function QTe(e, t, n, r, i, a) {
         let o = t.resolveType ?? e.typeResolver, s = e.contextValue, c = o(a, s, r, t);
-        return cW(c) ? c.then((o)=>XX(e, YX(o, e, t, n, r, a), n, r, i, a)) : XX(e, YX(c, e, t, n, r, a), n, r, i, a);
+        return lW(c) ? c.then((o)=>XX(e, YX(o, e, t, n, r, a), n, r, i, a)) : XX(e, YX(c, e, t, n, r, a), n, r, i, a);
     }
     function YX(e, t, n, r, i, a) {
         if (e == null) throw new X(`Abstract type "${n.name}" must resolve to an Object type at runtime for field "${i.parentType.name}.${i.fieldName}". Either the "${n.name}" type should provide a "resolveType" function or each possible type should provide an "isTypeOf" function.`, r);
-        if (dK(e)) throw new X(`Support for returning GraphQLObjectType from resolveType was removed in graphql-js@16.0.0 please return type name instead.`);
+        if (fK(e)) throw new X(`Support for returning GraphQLObjectType from resolveType was removed in graphql-js@16.0.0 please return type name instead.`);
         if (typeof e != `string`) throw new X(`Abstract type "${n.name}" must resolve to an Object type at runtime for field "${i.parentType.name}.${i.fieldName}" with value ${$(a)}, received "${$(e)}".`);
         let o = t.schema.getType(e);
         if (o == null) throw new X(`Abstract type "${n.name}" was resolved to a type "${e}" that does not exist inside the schema.`, {
             nodes: r
         });
-        if (!dK(o)) throw new X(`Abstract type "${n.name}" was resolved to a non-object type "${e}".`, {
+        if (!fK(o)) throw new X(`Abstract type "${n.name}" was resolved to a non-object type "${e}".`, {
             nodes: r
         });
         if (!t.schema.isSubType(n, o)) throw new X(`Runtime Object type "${o.name}" is not a possible type for "${n.name}".`, {
@@ -42090,7 +42090,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         let o = $X(e, t, n);
         if (t.isTypeOf) {
             let s = t.isTypeOf(a, e.contextValue, r);
-            if (cW(s)) return s.then((r)=>{
+            if (lW(s)) return s.then((r)=>{
                 if (!r) throw ZX(t, a, n);
                 return WX(e, t, a, i, o);
             });
@@ -42105,10 +42105,10 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
     }
     function QX(e, t, n) {
         let r = n.name.value;
-        return r === zq.name && e.getQueryType() === t ? zq : r === Bq.name && e.getQueryType() === t ? Bq : r === Vq.name ? Vq : t.getFields()[r];
+        return r === Bq.name && e.getQueryType() === t ? Bq : r === Vq.name && e.getQueryType() === t ? Vq : r === Hq.name ? Hq : t.getFields()[r];
     }
     var $X, eZ, tZ, nZ, rZ = o((()=>{
-        sW(), sG(), pW(), Tq(), dW(), lW(), VTe(), TY(), HTe(), WTe(), SW(), RX(), jW(), PW(), ZK(), Uq(), iJ(), VY(), IY(), $X = BTe((e, t, n)=>NTe(e.schema, e.fragments, e.variableValues, t, n)), eZ = class {
+        cW(), cG(), mW(), Eq(), fW(), uW(), VTe(), TY(), HTe(), WTe(), CW(), RX(), MW(), FW(), QK(), Wq(), iJ(), VY(), IY(), $X = BTe((e, t, n)=>NTe(e.schema, e.fragments, e.variableValues, t, n)), eZ = class {
             constructor(){
                 this._errorPositions = new Set, this._errors = [];
             }
@@ -42127,13 +42127,13 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 return this._errorPositions.has(void 0);
             }
         }, tZ = function(e, t, n, r) {
-            if (uW(e) && typeof e.__typename == `string`) return e.__typename;
+            if (dW(e) && typeof e.__typename == `string`) return e.__typename;
             let i = n.schema.getPossibleTypes(r), a = [];
             for(let r = 0; r < i.length; r++){
                 let o = i[r];
                 if (o.isTypeOf) {
                     let i = o.isTypeOf(e, t, n);
-                    if (cW(i)) a[r] = i;
+                    if (lW(i)) a[r] = i;
                     else if (i) return a.length && Promise.allSettled(a).catch(()=>{}), o.name;
                 }
             }
@@ -42141,7 +42141,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 for(let t = 0; t < e.length; t++)if (e[t]) return i[t].name;
             });
         }, nZ = function(e, t, n, r) {
-            if (uW(e) || typeof e == `function`) {
+            if (dW(e) || typeof e == `function`) {
                 let i = e[r.fieldName];
                 return typeof i == `function` ? e[r.fieldName](t, n, r) : i;
             }
@@ -42152,18 +42152,18 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
     }
     function eEe(e) {
         let t = iZ(e);
-        if (cW(t)) throw Error(`GraphQL execution failed to complete synchronously.`);
+        if (lW(t)) throw Error(`GraphQL execution failed to complete synchronously.`);
         return t;
     }
     function iZ(e) {
-        arguments.length < 2 || oW(!1, `graphql@16 dropped long-deprecated support for positional arguments, please pass an object instead.`);
-        let { schema: t, source: n, rootValue: r, contextValue: i, variableValues: a, operationName: o, fieldResolver: s, typeResolver: c } = e, l = Yq(t);
+        arguments.length < 2 || sW(!1, `graphql@16 dropped long-deprecated support for positional arguments, please pass an object instead.`);
+        let { schema: t, source: n, rootValue: r, contextValue: i, variableValues: a, operationName: o, fieldResolver: s, typeResolver: c } = e, l = Xq(t);
         if (l.length > 0) return {
             errors: l
         };
         let u;
         try {
-            u = mG(n);
+            u = hG(n);
         } catch (e) {
             return {
                 errors: [
@@ -42186,11 +42186,11 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         });
     }
     var tEe = o((()=>{
-        sW(), lW(), bG(), iJ(), PX(), rZ();
+        cW(), uW(), xG(), iJ(), PX(), rZ();
     })), nEe = o((()=>{
-        Jq(), ZK(), Cq(), fq(), Uq(), iJ(), cK();
+        Yq(), QK(), wq(), pq(), Wq(), iJ(), lK();
     })), rEe = o((()=>{
-        pG(), gW(), bW(), PW(), UW(), nG(), bG(), rK(), JG(), jW(), _J(), NW();
+        mG(), _W(), xW(), FW(), WW(), rG(), xG(), iK(), YG(), MW(), _J(), PW();
     }));
     function aZ(e) {
         return typeof e?.[Symbol.asyncIterator] == `function`;
@@ -42233,7 +42233,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
     }
     var oEe = o((()=>{}));
     async function sEe(e) {
-        arguments.length < 2 || oW(!1, `graphql@16 dropped long-deprecated support for positional arguments, please pass an object instead.`);
+        arguments.length < 2 || sW(!1, `graphql@16 dropped long-deprecated support for positional arguments, please pass an object instead.`);
         let t = await oZ(e);
         return aZ(t) ? aEe(t, (t)=>zX({
                 ...e,
@@ -42296,7 +42296,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         }
     }
     var uEe = o((()=>{
-        sW(), sG(), iEe(), TY(), SW(), RX(), VY(), rZ(), oEe(), IY();
+        cW(), cG(), iEe(), TY(), CW(), RX(), VY(), rZ(), oEe(), IY();
     })), dEe = o((()=>{
         TY(), rZ(), uEe(), IY();
     }));
@@ -42306,7 +42306,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 let n = e.getFieldDef(), r = n?.deprecationReason;
                 if (n && r != null) {
                     let i = e.getParentType();
-                    i ?? fW(!1), e.reportError(new X(`The field ${i.name}.${n.name} is deprecated. ${r}`, {
+                    i ?? pW(!1), e.reportError(new X(`The field ${i.name}.${n.name} is deprecated. ${r}`, {
                         nodes: t
                     }));
                 }
@@ -42320,15 +42320,15 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                     }));
                     else {
                         let i = e.getParentType(), a = e.getFieldDef();
-                        i != null && a != null || fW(!1), e.reportError(new X(`Field "${i.name}.${a.name}" argument "${n.name}" is deprecated. ${r}`, {
+                        i != null && a != null || pW(!1), e.reportError(new X(`Field "${i.name}.${a.name}" argument "${n.name}" is deprecated. ${r}`, {
                             nodes: t
                         }));
                     }
                 }
             },
             ObjectField (t) {
-                let n = AK(e.getParentInputType());
-                if (_K(n)) {
+                let n = jK(e.getParentInputType());
+                if (vK(n)) {
                     let r = n.getFields()[t.name.value], i = r?.deprecationReason;
                     i != null && e.reportError(new X(`The input field ${n.name}.${r.name} is deprecated. ${i}`, {
                         nodes: t
@@ -42338,8 +42338,8 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             EnumValue (t) {
                 let n = e.getEnumValue(), r = n?.deprecationReason;
                 if (n && r != null) {
-                    let i = AK(e.getInputType());
-                    i ?? fW(!1), e.reportError(new X(`The enum value "${i.name}.${n.name}" is deprecated. ${r}`, {
+                    let i = jK(e.getInputType());
+                    i ?? pW(!1), e.reportError(new X(`The enum value "${i.name}.${n.name}" is deprecated. ${r}`, {
                         nodes: t
                     }));
                 }
@@ -42347,24 +42347,24 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     var pEe = o((()=>{
-        pW(), SW(), ZK();
+        mW(), CW(), QK();
     }));
     function mEe(e) {
         return {
             Field (t) {
-                let n = AK(e.getType());
-                n && kq(n) && e.reportError(new X(`GraphQL introspection has been disabled, but the requested query contained the field "${t.name.value}".`, {
+                let n = jK(e.getType());
+                n && Aq(n) && e.reportError(new X(`GraphQL introspection has been disabled, but the requested query contained the field "${t.name.value}".`, {
                     nodes: t
                 }));
             }
         };
     }
     var hEe = o((()=>{
-        SW(), ZK(), Uq();
+        CW(), QK(), Wq();
     })), gEe = o((()=>{
         PX(), AX(), EX(), yJ(), xJ(), CJ(), EJ(), OJ(), AJ(), NJ(), FJ(), HJ(), WJ(), KJ(), JJ(), uY(), fY(), vY(), bY(), UY(), YY(), $Y(), aX(), sX(), lX(), hX(), vX(), bX(), SX(), BJ(), LJ(), dX(), pX(), tX(), rX(), qY(), ZY(), hY(), pEe(), hEe();
     })), _Ee = o((()=>{
-        SW(), wW(), RX();
+        CW(), TW(), RX();
     }));
     function sZ(e) {
         let t = {
@@ -42500,7 +42500,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         return n;
     }
     var yEe = o((()=>{
-        PW();
+        FW();
     }));
     function bEe(e, t) {
         if (t.operation === `query`) {
@@ -42529,12 +42529,12 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         });
     }
     var xEe = o((()=>{
-        SW();
+        CW();
     }));
     function SEe(e, t) {
         let n = BX({
             schema: e,
-            document: mG(sZ({
+            document: hG(sZ({
                 specifiedByUrl: !0,
                 directiveIsRepeatable: !0,
                 schemaDescription: !0,
@@ -42543,20 +42543,20 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 ...t
             }))
         });
-        return !n.errors && n.data || fW(!1), n.data;
+        return !n.errors && n.data || pW(!1), n.data;
     }
     var CEe = o((()=>{
-        pW(), bG(), rZ(), cZ();
+        mW(), xG(), rZ(), cZ();
     }));
     function wEe(e, t) {
-        uW(e) && uW(e.__schema) || oW(!1, `Invalid or incomplete introspection result. Ensure that you are passing "data" property of introspection response and no "errors" was returned alongside: ${$(e)}.`);
-        let n = e.__schema, r = DG(n.types, (e)=>e.name, (e)=>f(e));
+        dW(e) && dW(e.__schema) || sW(!1, `Invalid or incomplete introspection result. Ensure that you are passing "data" property of introspection response and no "errors" was returned alongside: ${$(e)}.`);
+        let n = e.__schema, r = OG(n.types, (e)=>e.name, (e)=>f(e));
         for (let e of [
-            ...dq,
-            ...Hq
+            ...fq,
+            ...Uq
         ])r[e.name] && (r[e.name] = e);
         let i = n.queryType ? u(n.queryType) : null, a = n.mutationType ? u(n.mutationType) : null, o = n.subscriptionType ? u(n.subscriptionType) : null, s = n.directives ? n.directives.map(w) : [];
-        return new qq({
+        return new Jq({
             description: n.description,
             query: i,
             mutation: a,
@@ -42566,15 +42566,15 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             assumeValid: t?.assumeValid
         });
         function c(e) {
-            if (e.kind === Lq.LIST) {
+            if (e.kind === Rq.LIST) {
                 let t = e.ofType;
                 if (!t) throw Error(`Decorated type deeper than introspection query.`);
-                return new UK(c(t));
+                return new WK(c(t));
             }
-            if (e.kind === Lq.NON_NULL) {
+            if (e.kind === Rq.NON_NULL) {
                 let t = e.ofType;
                 if (!t) throw Error(`Decorated type deeper than introspection query.`);
-                return new WK(DK(c(t)));
+                return new GK(OK(c(t)));
             }
             return l(e);
         }
@@ -42586,38 +42586,38 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             return n;
         }
         function u(e) {
-            return fK(l(e));
+            return pK(l(e));
         }
         function d(e) {
-            return mK(l(e));
+            return hK(l(e));
         }
         function f(e) {
             if (e != null && e.name != null && e.kind != null) switch(e.kind){
-                case Lq.SCALAR:
+                case Rq.SCALAR:
                     return p(e);
-                case Lq.OBJECT:
+                case Rq.OBJECT:
                     return h(e);
-                case Lq.INTERFACE:
+                case Rq.INTERFACE:
                     return g(e);
-                case Lq.UNION:
+                case Rq.UNION:
                     return _(e);
-                case Lq.ENUM:
+                case Rq.ENUM:
                     return v(e);
-                case Lq.INPUT_OBJECT:
+                case Rq.INPUT_OBJECT:
                     return y(e);
             }
             let t = $(e);
             throw Error(`Invalid or incomplete introspection result. Ensure that a full introspection query is used in order to build a client schema: ${t}.`);
         }
         function p(e) {
-            return new GK({
+            return new KK({
                 name: e.name,
                 description: e.description,
                 specifiedByURL: e.specifiedByURL
             });
         }
         function m(e) {
-            if (e.interfaces === null && e.kind === Lq.INTERFACE) return [];
+            if (e.interfaces === null && e.kind === Rq.INTERFACE) return [];
             if (!e.interfaces) {
                 let t = $(e);
                 throw Error(`Introspection result missing interfaces: ${t}.`);
@@ -42625,7 +42625,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             return e.interfaces.map(d);
         }
         function h(e) {
-            return new KK({
+            return new qK({
                 name: e.name,
                 description: e.description,
                 interfaces: ()=>m(e),
@@ -42633,7 +42633,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             });
         }
         function g(e) {
-            return new qK({
+            return new JK({
                 name: e.name,
                 description: e.description,
                 interfaces: ()=>m(e),
@@ -42645,7 +42645,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 let t = $(e);
                 throw Error(`Introspection result missing possibleTypes: ${t}.`);
             }
-            return new JK({
+            return new YK({
                 name: e.name,
                 description: e.description,
                 types: ()=>e.possibleTypes.map(u)
@@ -42656,10 +42656,10 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 let t = $(e);
                 throw Error(`Introspection result missing enumValues: ${t}.`);
             }
-            return new YK({
+            return new XK({
                 name: e.name,
                 description: e.description,
-                values: DG(e.enumValues, (e)=>e.name, (e)=>({
+                values: OG(e.enumValues, (e)=>e.name, (e)=>({
                         description: e.description,
                         deprecationReason: e.deprecationReason
                     }))
@@ -42670,7 +42670,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 let t = $(e);
                 throw Error(`Introspection result missing inputFields: ${t}.`);
             }
-            return new XK({
+            return new ZK({
                 name: e.name,
                 description: e.description,
                 fields: ()=>S(e.inputFields),
@@ -42679,11 +42679,11 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         }
         function b(e) {
             if (!e.fields) throw Error(`Introspection result missing fields: ${$(e)}.`);
-            return DG(e.fields, (e)=>e.name, x);
+            return OG(e.fields, (e)=>e.name, x);
         }
         function x(e) {
             let t = c(e.type);
-            if (!xK(t)) {
+            if (!SK(t)) {
                 let e = $(t);
                 throw Error(`Introspection must provide output type for fields, but received: ${e}.`);
             }
@@ -42699,15 +42699,15 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             };
         }
         function S(e) {
-            return DG(e, (e)=>e.name, C);
+            return OG(e, (e)=>e.name, C);
         }
         function C(e) {
             let t = c(e.type);
-            if (!bK(t)) {
+            if (!xK(t)) {
                 let e = $(t);
                 throw Error(`Introspection must provide input type for arguments, but received: ${e}.`);
             }
-            let n = e.defaultValue == null ? void 0 : kY(hG(e.defaultValue), t);
+            let n = e.defaultValue == null ? void 0 : kY(gG(e.defaultValue), t);
             return {
                 description: e.description,
                 type: t,
@@ -42724,7 +42724,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 let t = $(e);
                 throw Error(`Introspection result missing directive locations: ${t}.`);
             }
-            return new hq({
+            return new gq({
                 name: e.name,
                 description: e.description,
                 isRepeatable: e.isRepeatable,
@@ -42734,12 +42734,12 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         }
     }
     var TEe = o((()=>{
-        sW(), sG(), dW(), OG(), bG(), ZK(), Cq(), Uq(), fq(), Jq(), jY();
+        cW(), cG(), fW(), kG(), xG(), QK(), wq(), Wq(), pq(), Yq(), jY();
     }));
     function EEe(e, t, n) {
-        Gq(e), t != null && t.kind === Z.DOCUMENT || oW(!1, `Must provide valid Document AST.`), n?.assumeValid !== !0 && n?.assumeValidSDL !== !0 && zTe(t, e);
+        Kq(e), t != null && t.kind === Z.DOCUMENT || sW(!1, `Must provide valid Document AST.`), n?.assumeValid !== !0 && n?.assumeValidSDL !== !0 && zTe(t, e);
         let r = e.toConfig(), i = lZ(r, t, n);
-        return r === i ? e : new qq(i);
+        return r === i ? e : new Jq(i);
     }
     function lZ(e, t, n) {
         let r = [], i = Object.create(null), a = [], o, s = [];
@@ -42784,34 +42784,34 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             assumeValid: n?.assumeValid ?? !1
         };
         function u(e) {
-            return vK(e) ? new UK(u(e.ofType)) : yK(e) ? new WK(u(e.ofType)) : d(e);
+            return yK(e) ? new WK(u(e.ofType)) : bK(e) ? new GK(u(e.ofType)) : d(e);
         }
         function d(e) {
             return c[e.name];
         }
         function f(e) {
             let t = e.toConfig();
-            return new hq({
+            return new gq({
                 ...t,
-                args: kG(t.args, x)
+                args: AG(t.args, x)
             });
         }
         function p(e) {
-            if (kq(e) || nq(e)) return e;
-            if (uK(e)) return g(e);
-            if (dK(e)) return _(e);
-            if (pK(e)) return v(e);
-            if (hK(e)) return y(e);
-            if (gK(e)) return h(e);
-            if (_K(e)) return m(e);
-            fW(!1, `Unexpected type: ` + $(e));
+            if (Aq(e) || rq(e)) return e;
+            if (dK(e)) return g(e);
+            if (fK(e)) return _(e);
+            if (mK(e)) return v(e);
+            if (gK(e)) return y(e);
+            if (_K(e)) return h(e);
+            if (vK(e)) return m(e);
+            pW(!1, `Unexpected type: ` + $(e));
         }
         function m(e) {
             let t = e.toConfig(), n = i[t.name] ?? [];
-            return new XK({
+            return new ZK({
                 ...t,
                 fields: ()=>({
-                        ...kG(t.fields, (e)=>({
+                        ...AG(t.fields, (e)=>({
                                 ...e,
                                 type: u(e.type)
                             })),
@@ -42822,7 +42822,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         }
         function h(e) {
             let t = e.toConfig(), n = i[e.name] ?? [];
-            return new YK({
+            return new XK({
                 ...t,
                 values: {
                     ...t.values,
@@ -42834,28 +42834,13 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         function g(e) {
             let t = e.toConfig(), n = i[t.name] ?? [], r = t.specifiedByURL;
             for (let e of n)r = dZ(e) ?? r;
-            return new GK({
+            return new KK({
                 ...t,
                 specifiedByURL: r,
                 extensionASTNodes: t.extensionASTNodes.concat(n)
             });
         }
         function _(e) {
-            let t = e.toConfig(), n = i[t.name] ?? [];
-            return new KK({
-                ...t,
-                interfaces: ()=>[
-                        ...e.getInterfaces().map(d),
-                        ...te(n)
-                    ],
-                fields: ()=>({
-                        ...kG(t.fields, b),
-                        ...E(n)
-                    }),
-                extensionASTNodes: t.extensionASTNodes.concat(n)
-            });
-        }
-        function v(e) {
             let t = e.toConfig(), n = i[t.name] ?? [];
             return new qK({
                 ...t,
@@ -42864,7 +42849,22 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                         ...te(n)
                     ],
                 fields: ()=>({
-                        ...kG(t.fields, b),
+                        ...AG(t.fields, b),
+                        ...E(n)
+                    }),
+                extensionASTNodes: t.extensionASTNodes.concat(n)
+            });
+        }
+        function v(e) {
+            let t = e.toConfig(), n = i[t.name] ?? [];
+            return new JK({
+                ...t,
+                interfaces: ()=>[
+                        ...e.getInterfaces().map(d),
+                        ...te(n)
+                    ],
+                fields: ()=>({
+                        ...AG(t.fields, b),
                         ...E(n)
                     }),
                 extensionASTNodes: t.extensionASTNodes.concat(n)
@@ -42872,7 +42872,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         }
         function y(e) {
             let t = e.toConfig(), n = i[t.name] ?? [];
-            return new JK({
+            return new YK({
                 ...t,
                 types: ()=>[
                         ...e.getTypes().map(d),
@@ -42885,7 +42885,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             return {
                 ...e,
                 type: u(e.type),
-                args: e.args && kG(e.args, x)
+                args: e.args && AG(e.args, x)
             };
         }
         function x(e) {
@@ -42908,10 +42908,10 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             return n;
         }
         function w(e) {
-            return e.kind === Z.LIST_TYPE ? new UK(w(e.type)) : e.kind === Z.NON_NULL_TYPE ? new WK(w(e.type)) : C(e);
+            return e.kind === Z.LIST_TYPE ? new WK(w(e.type)) : e.kind === Z.NON_NULL_TYPE ? new GK(w(e.type)) : C(e);
         }
         function T(e) {
-            return new hq({
+            return new gq({
                 name: e.name.value,
                 description: e.description?.value,
                 locations: e.locations.map(({ value: e })=>e),
@@ -42992,7 +42992,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                             e,
                             ...n
                         ];
-                        return new KK({
+                        return new qK({
                             name: t,
                             description: e.description?.value,
                             interfaces: ()=>te(r),
@@ -43007,7 +43007,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                             e,
                             ...n
                         ];
-                        return new qK({
+                        return new JK({
                             name: t,
                             description: e.description?.value,
                             interfaces: ()=>te(r),
@@ -43022,7 +43022,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                             e,
                             ...n
                         ];
-                        return new YK({
+                        return new XK({
                             name: t,
                             description: e.description?.value,
                             values: ee(r),
@@ -43036,7 +43036,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                             e,
                             ...n
                         ];
-                        return new JK({
+                        return new YK({
                             name: t,
                             description: e.description?.value,
                             types: ()=>ne(r),
@@ -43045,7 +43045,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                         });
                     }
                 case Z.SCALAR_TYPE_DEFINITION:
-                    return new GK({
+                    return new KK({
                         name: t,
                         description: e.description?.value,
                         specifiedByURL: dZ(e),
@@ -43058,7 +43058,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                             e,
                             ...n
                         ];
-                        return new XK({
+                        return new ZK({
                             name: t,
                             description: e.description?.value,
                             fields: ()=>O(r),
@@ -43071,22 +43071,22 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         }
     }
     function uZ(e) {
-        return PY(yq, e)?.reason;
+        return PY(bq, e)?.reason;
     }
     function dZ(e) {
-        return PY(bq, e)?.url;
+        return PY(xq, e)?.url;
     }
     function DEe(e) {
-        return !!PY(xq, e);
+        return !!PY(Sq, e);
     }
     var fZ, pZ = o((()=>{
-        sW(), sG(), pW(), EG(), AG(), PW(), _J(), ZK(), Cq(), Uq(), fq(), Jq(), PX(), IY(), jY(), fZ = TG([
-            ...dq,
-            ...Hq
+        cW(), cG(), mW(), DG(), jG(), FW(), _J(), QK(), wq(), Wq(), pq(), Yq(), PX(), IY(), jY(), fZ = EG([
+            ...fq,
+            ...Uq
         ], (e)=>e.name);
     }));
     function mZ(e, t) {
-        e != null && e.kind === Z.DOCUMENT || oW(!1, `Must provide valid Document AST.`), t?.assumeValid !== !0 && t?.assumeValidSDL !== !0 && RTe(e);
+        e != null && e.kind === Z.DOCUMENT || sW(!1, `Must provide valid Document AST.`), t?.assumeValid !== !0 && t?.assumeValidSDL !== !0 && RTe(e);
         let n = lZ({
             description: void 0,
             types: [],
@@ -43108,15 +43108,15 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         }
         let r = [
             ...n.directives,
-            ...Sq.filter((e)=>n.directives.every((t)=>t.name !== e.name))
+            ...Cq.filter((e)=>n.directives.every((t)=>t.name !== e.name))
         ];
-        return new qq({
+        return new Jq({
             ...n,
             directives: r
         });
     }
     function OEe(e, t) {
-        return mZ(mG(e, {
+        return mZ(hG(e, {
             noLocation: t?.noLocation,
             allowLegacyFragmentVariables: t?.allowLegacyFragmentVariables
         }), {
@@ -43125,11 +43125,11 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         });
     }
     var kEe = o((()=>{
-        sW(), PW(), bG(), Cq(), Jq(), PX(), pZ();
+        cW(), FW(), xG(), wq(), Yq(), PX(), pZ();
     }));
     function AEe(e) {
-        let t = e.toConfig(), n = DG(gZ(t.types), (e)=>e.name, d);
-        return new qq({
+        let t = e.toConfig(), n = OG(gZ(t.types), (e)=>e.name, d);
+        return new Jq({
             ...t,
             types: Object.values(n),
             directives: gZ(t.directives).map(o),
@@ -43138,7 +43138,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             subscription: a(t.subscription)
         });
         function r(e) {
-            return vK(e) ? new UK(r(e.ofType)) : yK(e) ? new WK(r(e.ofType)) : i(e);
+            return yK(e) ? new WK(r(e.ofType)) : bK(e) ? new GK(r(e.ofType)) : i(e);
         }
         function i(e) {
             return n[e.name];
@@ -43148,7 +43148,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         }
         function o(e) {
             let t = e.toConfig();
-            return new hq({
+            return new gq({
                 ...t,
                 locations: _Z(t.locations, (e)=>e),
                 args: s(t.args)
@@ -43177,16 +43177,8 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             return gZ(e).map(i);
         }
         function d(e) {
-            if (uK(e) || kq(e)) return e;
-            if (dK(e)) {
-                let t = e.toConfig();
-                return new KK({
-                    ...t,
-                    interfaces: ()=>u(t.interfaces),
-                    fields: ()=>c(t.fields)
-                });
-            }
-            if (pK(e)) {
+            if (dK(e) || Aq(e)) return e;
+            if (fK(e)) {
                 let t = e.toConfig();
                 return new qK({
                     ...t,
@@ -43194,52 +43186,60 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                     fields: ()=>c(t.fields)
                 });
             }
-            if (hK(e)) {
+            if (mK(e)) {
                 let t = e.toConfig();
                 return new JK({
                     ...t,
-                    types: ()=>u(t.types)
+                    interfaces: ()=>u(t.interfaces),
+                    fields: ()=>c(t.fields)
                 });
             }
             if (gK(e)) {
                 let t = e.toConfig();
                 return new YK({
                     ...t,
-                    values: hZ(t.values, (e)=>e)
+                    types: ()=>u(t.types)
                 });
             }
             if (_K(e)) {
                 let t = e.toConfig();
                 return new XK({
                     ...t,
+                    values: hZ(t.values, (e)=>e)
+                });
+            }
+            if (vK(e)) {
+                let t = e.toConfig();
+                return new ZK({
+                    ...t,
                     fields: ()=>l(t.fields)
                 });
             }
-            fW(!1, `Unexpected type: ` + $(e));
+            pW(!1, `Unexpected type: ` + $(e));
         }
     }
     function hZ(e, t) {
         let n = Object.create(null);
-        for (let r of Object.keys(e).sort(jG))n[r] = t(e[r]);
+        for (let r of Object.keys(e).sort(MG))n[r] = t(e[r]);
         return n;
     }
     function gZ(e) {
         return _Z(e, (e)=>e.name);
     }
     function _Z(e, t) {
-        return e.slice().sort((e, n)=>jG(t(e), t(n)));
+        return e.slice().sort((e, n)=>MG(t(e), t(n)));
     }
     var jEe = o((()=>{
-        sG(), pW(), OG(), FG(), ZK(), Cq(), Uq(), Jq();
+        cG(), mW(), kG(), IG(), QK(), wq(), Wq(), Yq();
     }));
     function MEe(e) {
-        return vZ(e, (e)=>!mq(e), PEe);
+        return vZ(e, (e)=>!hq(e), PEe);
     }
     function NEe(e) {
-        return vZ(e, mq, kq);
+        return vZ(e, hq, Aq);
     }
     function PEe(e) {
-        return !nq(e) && !kq(e);
+        return !rq(e) && !Aq(e);
     }
     function vZ(e, t, n) {
         let r = e.getDirectives().filter(t), i = Object.values(e.getTypeMap()).filter(n);
@@ -43270,13 +43270,13 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         return !(r && r.name !== `Subscription`);
     }
     function yZ(e) {
-        if (uK(e)) return LEe(e);
-        if (dK(e)) return REe(e);
-        if (pK(e)) return zEe(e);
-        if (hK(e)) return BEe(e);
-        if (gK(e)) return VEe(e);
-        if (_K(e)) return HEe(e);
-        fW(!1, `Unexpected type: ` + $(e));
+        if (dK(e)) return LEe(e);
+        if (fK(e)) return REe(e);
+        if (mK(e)) return zEe(e);
+        if (gK(e)) return BEe(e);
+        if (_K(e)) return VEe(e);
+        if (vK(e)) return HEe(e);
+        pW(!1, `Unexpected type: ` + $(e));
     }
     function LEe(e) {
         return EZ(e) + `scalar ${e.name}` + WEe(e);
@@ -43319,20 +43319,20 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
 ` + t + `)`;
     }
     function wZ(e) {
-        let t = Eq(e.defaultValue, e.type), n = e.name + `: ` + String(e.type);
-        return t && (n += ` = ${YG(t)}`), n + TZ(e.deprecationReason);
+        let t = Dq(e.defaultValue, e.type), n = e.name + `: ` + String(e.type);
+        return t && (n += ` = ${XG(t)}`), n + TZ(e.deprecationReason);
     }
     function UEe(e) {
         return EZ(e) + `directive @` + e.name + CZ(e.args) + (e.isRepeatable ? ` repeatable` : ``) + ` on ` + e.locations.join(` | `);
     }
     function TZ(e) {
-        return e == null ? `` : e === `No longer supported` ? ` @deprecated` : ` @deprecated(reason: ${YG({
+        return e == null ? `` : e === `No longer supported` ? ` @deprecated` : ` @deprecated(reason: ${XG({
             kind: Z.STRING,
             value: e
         })})`;
     }
     function WEe(e) {
-        return e.specifiedByURL == null ? `` : ` @specifiedBy(url: ${YG({
+        return e.specifiedByURL == null ? `` : ` @specifiedBy(url: ${XG({
             kind: Z.STRING,
             value: e.specifiedByURL
         })})`;
@@ -43340,10 +43340,10 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
     function EZ(e, t = ``, n = !0) {
         let { description: r } = e;
         if (r == null) return ``;
-        let i = YG({
+        let i = XG({
             kind: Z.STRING,
             value: r,
-            block: mwe(r)
+            block: pwe(r)
         });
         return (t && !n ? `
 ` + t : t) + i.replace(/\n/g, `
@@ -43351,7 +43351,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
 `;
     }
     var GEe = o((()=>{
-        sG(), pW(), HW(), PW(), rK(), ZK(), Cq(), Uq(), fq(), Oq();
+        cG(), mW(), UW(), FW(), iK(), QK(), wq(), Wq(), pq(), kq();
     }));
     function KEe(e) {
         let t = [];
@@ -43362,7 +43362,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     var qEe = o((()=>{
-        PW();
+        FW();
     }));
     function JEe(e) {
         let t = [], n = Object.create(null);
@@ -43396,29 +43396,29 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
     }
     function OZ(e) {
         let t = [];
-        return WG(e, {
+        return GG(e, {
             FragmentSpread (e) {
                 t.push(e.name.value);
             }
         }), t;
     }
     var YEe = o((()=>{
-        PW(), JG();
+        FW(), YG();
     }));
     function XEe(e) {
-        let t = dG(e) ? e : new fG(e), n = t.body, r = new tG(t), i = ``, a = !1;
+        let t = fG(e) ? e : new pG(e), n = t.body, r = new nG(t), i = ``, a = !1;
         for(; r.advance().kind !== Q.EOF;){
-            let e = r.token, t = e.kind, o = !WW(e.kind);
+            let e = r.token, t = e.kind, o = !GW(e.kind);
             a && (o || e.kind === Q.SPREAD) && (i += ` `);
             let s = n.slice(e.start, e.end);
-            t === Q.BLOCK_STRING ? i += VW(e.value, {
+            t === Q.BLOCK_STRING ? i += HW(e.value, {
                 minimize: !0
             }) : i += s, a = o;
         }
         return i;
     }
     var ZEe = o((()=>{
-        HW(), nG(), pG(), UW();
+        UW(), rG(), mG(), WW();
     }));
     function QEe(e) {
         let t = kZ(e);
@@ -43426,15 +43426,15 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         return e;
     }
     function kZ(e) {
-        if (typeof e == `string` || oW(!1, `Expected name to be a string.`), e.startsWith(`__`)) return new X(`Name "${e}" must not begin with "__", which is reserved by GraphQL introspection.`);
+        if (typeof e == `string` || sW(!1, `Expected name to be a string.`), e.startsWith(`__`)) return new X(`Name "${e}" must not begin with "__", which is reserved by GraphQL introspection.`);
         try {
-            oK(e);
+            sK(e);
         } catch (e) {
             return e;
         }
     }
     var $Ee = o((()=>{
-        sW(), SW(), cK();
+        cW(), CW(), lK();
     }));
     function eDe(e, t) {
         return AZ(e, t).filter((e)=>e.type in IZ);
@@ -43456,7 +43456,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         });
         for (let [e, t] of r.persisted){
             let r = FZ(e.args, t.args);
-            for (let t of r.added)zK(t) && n.push({
+            for (let t of r.added)BK(t) && n.push({
                 type: IZ.REQUIRED_DIRECTIVE_ARG_ADDED,
                 description: `A required arg ${t.name} on directive ${e.name} was added.`
             });
@@ -43479,9 +43479,9 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         let n = [], r = FZ(Object.values(e.getTypeMap()), Object.values(t.getTypeMap()));
         for (let e of r.removed)n.push({
             type: IZ.TYPE_REMOVED,
-            description: nq(e) ? `Standard scalar ${e.name} was removed because it is not referenced anymore.` : `${e.name} was removed.`
+            description: rq(e) ? `Standard scalar ${e.name} was removed because it is not referenced anymore.` : `${e.name} was removed.`
         });
-        for (let [e, t] of r.persisted)gK(e) && gK(t) ? n.push(...oDe(e, t)) : hK(e) && hK(t) ? n.push(...aDe(e, t)) : _K(e) && _K(t) ? n.push(...iDe(e, t)) : dK(e) && dK(t) || pK(e) && pK(t) ? n.push(...cDe(e, t), ...sDe(e, t)) : e.constructor !== t.constructor && n.push({
+        for (let [e, t] of r.persisted)_K(e) && _K(t) ? n.push(...oDe(e, t)) : gK(e) && gK(t) ? n.push(...aDe(e, t)) : vK(e) && vK(t) ? n.push(...iDe(e, t)) : fK(e) && fK(t) || mK(e) && mK(t) ? n.push(...cDe(e, t), ...sDe(e, t)) : e.constructor !== t.constructor && n.push({
             type: IZ.TYPE_CHANGED_KIND,
             description: `${e.name} changed from ${NZ(e)} to ${NZ(t)}.`
         });
@@ -43489,7 +43489,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
     }
     function iDe(e, t) {
         let n = [], r = FZ(Object.values(e.getFields()), Object.values(t.getFields()));
-        for (let t of r.added)HK(t) ? n.push({
+        for (let t of r.added)UK(t) ? n.push({
             type: IZ.REQUIRED_INPUT_FIELD_ADDED,
             description: `A required field ${t.name} on input type ${e.name} was added.`
         }) : n.push({
@@ -43575,7 +43575,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 description: `${e.name}.${t.name} arg ${n.name} has changed defaultValue from ${i} to ${o}.`
             });
         }
-        for (let n of i.added)zK(n) ? r.push({
+        for (let n of i.added)BK(n) ? r.push({
             type: IZ.REQUIRED_ARG_ADDED,
             description: `A required arg ${n.name} on ${e.name}.${t.name} was added.`
         }) : r.push({
@@ -43585,26 +43585,26 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         return r;
     }
     function jZ(e, t) {
-        return vK(e) ? vK(t) && jZ(e.ofType, t.ofType) || yK(t) && jZ(e, t.ofType) : yK(e) ? yK(t) && jZ(e.ofType, t.ofType) : kK(t) && e.name === t.name || yK(t) && jZ(e, t.ofType);
+        return yK(e) ? yK(t) && jZ(e.ofType, t.ofType) || bK(t) && jZ(e, t.ofType) : bK(e) ? bK(t) && jZ(e.ofType, t.ofType) : AK(t) && e.name === t.name || bK(t) && jZ(e, t.ofType);
     }
     function MZ(e, t) {
-        return vK(e) ? vK(t) && MZ(e.ofType, t.ofType) : yK(e) ? yK(t) && MZ(e.ofType, t.ofType) || !yK(t) && MZ(e.ofType, t) : kK(t) && e.name === t.name;
+        return yK(e) ? yK(t) && MZ(e.ofType, t.ofType) : bK(e) ? bK(t) && MZ(e.ofType, t.ofType) || !bK(t) && MZ(e.ofType, t) : AK(t) && e.name === t.name;
     }
     function NZ(e) {
-        if (uK(e)) return `a Scalar type`;
-        if (dK(e)) return `an Object type`;
-        if (pK(e)) return `an Interface type`;
-        if (hK(e)) return `a Union type`;
-        if (gK(e)) return `an Enum type`;
-        if (_K(e)) return `an Input type`;
-        fW(!1, `Unexpected type: ` + $(e));
+        if (dK(e)) return `a Scalar type`;
+        if (fK(e)) return `an Object type`;
+        if (mK(e)) return `an Interface type`;
+        if (gK(e)) return `a Union type`;
+        if (_K(e)) return `an Enum type`;
+        if (vK(e)) return `an Input type`;
+        pW(!1, `Unexpected type: ` + $(e));
     }
     function PZ(e, t) {
-        let n = Eq(e, t);
-        return n ?? fW(!1), YG(YJ(n));
+        let n = Dq(e, t);
+        return n ?? pW(!1), XG(YJ(n));
     }
     function FZ(e, t) {
-        let n = [], r = [], i = [], a = TG(e, ({ name: e })=>e), o = TG(t, ({ name: e })=>e);
+        let n = [], r = [], i = [], a = EG(e, ({ name: e })=>e), o = EG(t, ({ name: e })=>e);
         for (let t of e){
             let e = o[t.name];
             e === void 0 ? r.push(t) : i.push([
@@ -43620,14 +43620,14 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     var IZ, LZ, uDe = o((()=>{
-        sG(), pW(), EG(), rK(), ZK(), fq(), Oq(), XJ(), (function(e) {
+        cG(), mW(), DG(), iK(), QK(), pq(), kq(), XJ(), (function(e) {
             e.TYPE_REMOVED = `TYPE_REMOVED`, e.TYPE_CHANGED_KIND = `TYPE_CHANGED_KIND`, e.TYPE_REMOVED_FROM_UNION = `TYPE_REMOVED_FROM_UNION`, e.VALUE_REMOVED_FROM_ENUM = `VALUE_REMOVED_FROM_ENUM`, e.REQUIRED_INPUT_FIELD_ADDED = `REQUIRED_INPUT_FIELD_ADDED`, e.IMPLEMENTED_INTERFACE_REMOVED = `IMPLEMENTED_INTERFACE_REMOVED`, e.FIELD_REMOVED = `FIELD_REMOVED`, e.FIELD_CHANGED_KIND = `FIELD_CHANGED_KIND`, e.REQUIRED_ARG_ADDED = `REQUIRED_ARG_ADDED`, e.ARG_REMOVED = `ARG_REMOVED`, e.ARG_CHANGED_KIND = `ARG_CHANGED_KIND`, e.DIRECTIVE_REMOVED = `DIRECTIVE_REMOVED`, e.DIRECTIVE_ARG_REMOVED = `DIRECTIVE_ARG_REMOVED`, e.REQUIRED_DIRECTIVE_ARG_ADDED = `REQUIRED_DIRECTIVE_ARG_ADDED`, e.DIRECTIVE_REPEATABLE_REMOVED = `DIRECTIVE_REPEATABLE_REMOVED`, e.DIRECTIVE_LOCATION_REMOVED = `DIRECTIVE_LOCATION_REMOVED`;
         })(IZ ||= {}), (function(e) {
             e.VALUE_ADDED_TO_ENUM = `VALUE_ADDED_TO_ENUM`, e.TYPE_ADDED_TO_UNION = `TYPE_ADDED_TO_UNION`, e.OPTIONAL_INPUT_FIELD_ADDED = `OPTIONAL_INPUT_FIELD_ADDED`, e.OPTIONAL_ARG_ADDED = `OPTIONAL_ARG_ADDED`, e.IMPLEMENTED_INTERFACE_ADDED = `IMPLEMENTED_INTERFACE_ADDED`, e.ARG_DEFAULT_VALUE_CHANGE = `ARG_DEFAULT_VALUE_CHANGE`;
         })(LZ ||= {});
     }));
     function dDe(e, t) {
-        return RZ(e, gG(t));
+        return RZ(e, _G(t));
     }
     function fDe(e, t) {
         let n = t.name.value, r = e.getType(n);
@@ -43639,8 +43639,8 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
     function pDe(e, t) {
         let n = t.name.value, r = e.getType(n);
         if (!r) throw Error(`Expected ${$(n)} to be defined as a type in the schema.`);
-        if (!gK(r) && !_K(r) && !dK(r) && !pK(r)) throw Error(`Expected ${$(n)} to be an Enum, Input Object, Object or Interface type.`);
-        if (gK(r)) {
+        if (!_K(r) && !vK(r) && !fK(r) && !mK(r)) throw Error(`Expected ${$(n)} to be an Enum, Input Object, Object or Interface type.`);
+        if (_K(r)) {
             let e = t.memberName.value, n = r.getValue(e);
             return n == null ? void 0 : {
                 kind: `EnumValue`,
@@ -43648,7 +43648,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 enumValue: n
             };
         }
-        if (_K(r)) {
+        if (vK(r)) {
             let e = t.memberName.value, n = r.getFields()[e];
             return n == null ? void 0 : {
                 kind: `InputField`,
@@ -43666,7 +43666,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
     function mDe(e, t) {
         let n = t.name.value, r = e.getType(n);
         if (r == null) throw Error(`Expected ${$(n)} to be defined as a type in the schema.`);
-        if (!dK(r) && !pK(r)) throw Error(`Expected ${$(n)} to be an object type or interface type.`);
+        if (!fK(r) && !mK(r)) throw Error(`Expected ${$(n)} to be an object type or interface type.`);
         let i = t.fieldName.value, a = r.getFields()[i];
         if (a == null) throw Error(`Expected ${$(i)} to exist as a field of type ${$(n)} in the schema.`);
         let o = t.argumentName.value, s = a.args.find((e)=>e.name === o);
@@ -43709,48 +43709,48 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         }
     }
     var _De = o((()=>{
-        sG(), PW(), bG(), ZK();
+        cG(), FW(), xG(), QK();
     })), vDe = o((()=>{
-        cZ(), yEe(), xEe(), CEe(), TEe(), kEe(), pZ(), jEe(), GEe(), oJ(), jY(), aK(), Oq(), lJ(), OY(), qEe(), YEe(), ZEe(), tq(), $Ee(), uDe(), _De();
+        cZ(), yEe(), xEe(), CEe(), TEe(), kEe(), pZ(), jEe(), GEe(), oJ(), jY(), oK(), kq(), lJ(), OY(), qEe(), YEe(), ZEe(), nq(), $Ee(), uDe(), _De();
     })), zZ = c({
-        BREAK: ()=>qG,
+        BREAK: ()=>JG,
         BreakingChangeType: ()=>IZ,
-        DEFAULT_DEPRECATION_REASON: ()=>vq,
+        DEFAULT_DEPRECATION_REASON: ()=>yq,
         DangerousChangeType: ()=>LZ,
-        DirectiveLocation: ()=>MW,
+        DirectiveLocation: ()=>NW,
         ExecutableDefinitionsRule: ()=>vJ,
         FieldsOnCorrectTypeRule: ()=>bJ,
         FragmentsOnCompositeTypesRule: ()=>SJ,
-        GRAPHQL_MAX_INT: ()=>iq,
-        GRAPHQL_MIN_INT: ()=>aq,
-        GraphQLBoolean: ()=>lq,
-        GraphQLDeprecatedDirective: ()=>yq,
-        GraphQLDirective: ()=>hq,
-        GraphQLEnumType: ()=>YK,
+        GRAPHQL_MAX_INT: ()=>aq,
+        GRAPHQL_MIN_INT: ()=>oq,
+        GraphQLBoolean: ()=>uq,
+        GraphQLDeprecatedDirective: ()=>bq,
+        GraphQLDirective: ()=>gq,
+        GraphQLEnumType: ()=>XK,
         GraphQLError: ()=>X,
-        GraphQLFloat: ()=>sq,
-        GraphQLID: ()=>uq,
-        GraphQLIncludeDirective: ()=>gq,
-        GraphQLInputObjectType: ()=>XK,
-        GraphQLInt: ()=>oq,
-        GraphQLInterfaceType: ()=>qK,
-        GraphQLList: ()=>UK,
-        GraphQLNonNull: ()=>WK,
-        GraphQLObjectType: ()=>KK,
-        GraphQLOneOfDirective: ()=>xq,
-        GraphQLScalarType: ()=>GK,
-        GraphQLSchema: ()=>qq,
-        GraphQLSkipDirective: ()=>_q,
-        GraphQLSpecifiedByDirective: ()=>bq,
-        GraphQLString: ()=>cq,
-        GraphQLUnionType: ()=>JK,
+        GraphQLFloat: ()=>cq,
+        GraphQLID: ()=>dq,
+        GraphQLIncludeDirective: ()=>_q,
+        GraphQLInputObjectType: ()=>ZK,
+        GraphQLInt: ()=>sq,
+        GraphQLInterfaceType: ()=>JK,
+        GraphQLList: ()=>WK,
+        GraphQLNonNull: ()=>GK,
+        GraphQLObjectType: ()=>qK,
+        GraphQLOneOfDirective: ()=>Sq,
+        GraphQLScalarType: ()=>KK,
+        GraphQLSchema: ()=>Jq,
+        GraphQLSkipDirective: ()=>vq,
+        GraphQLSpecifiedByDirective: ()=>xq,
+        GraphQLString: ()=>lq,
+        GraphQLUnionType: ()=>YK,
         Kind: ()=>Z,
         KnownArgumentNamesRule: ()=>wJ,
         KnownDirectivesRule: ()=>DJ,
         KnownFragmentNamesRule: ()=>kJ,
         KnownTypeNamesRule: ()=>jJ,
-        Lexer: ()=>tG,
-        Location: ()=>EW,
+        Lexer: ()=>nG,
+        Location: ()=>DW,
         LoneAnonymousOperationRule: ()=>PJ,
         LoneSchemaDefinitionRule: ()=>IJ,
         MaxIntrospectionDepthRule: ()=>RJ,
@@ -43760,21 +43760,21 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         NoUndefinedVariablesRule: ()=>UJ,
         NoUnusedFragmentsRule: ()=>GJ,
         NoUnusedVariablesRule: ()=>qJ,
-        OperationTypeNode: ()=>AW,
+        OperationTypeNode: ()=>jW,
         OverlappingFieldsCanBeMergedRule: ()=>QJ,
         PossibleFragmentSpreadsRule: ()=>dY,
         PossibleTypeExtensionsRule: ()=>pY,
         ProvidedRequiredArgumentsRule: ()=>gY,
         ScalarLeafsRule: ()=>yY,
-        SchemaMetaFieldDef: ()=>zq,
+        SchemaMetaFieldDef: ()=>Bq,
         SingleFieldSubscriptionsRule: ()=>HY,
-        Source: ()=>fG,
-        Token: ()=>DW,
+        Source: ()=>pG,
+        Token: ()=>OW,
         TokenKind: ()=>Q,
         TypeInfo: ()=>cJ,
-        TypeKind: ()=>Lq,
-        TypeMetaFieldDef: ()=>Bq,
-        TypeNameMetaFieldDef: ()=>Vq,
+        TypeKind: ()=>Rq,
+        TypeMetaFieldDef: ()=>Vq,
+        TypeNameMetaFieldDef: ()=>Hq,
         UniqueArgumentDefinitionNamesRule: ()=>KY,
         UniqueArgumentNamesRule: ()=>JY,
         UniqueDirectiveNamesRule: ()=>XY,
@@ -43791,38 +43791,38 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         ValuesOfCorrectTypeRule: ()=>gX,
         VariablesAreInputTypesRule: ()=>yX,
         VariablesInAllowedPositionRule: ()=>xX,
-        __Directive: ()=>jq,
-        __DirectiveLocation: ()=>Mq,
-        __EnumValue: ()=>Iq,
-        __Field: ()=>Pq,
-        __InputValue: ()=>Fq,
-        __Schema: ()=>Aq,
-        __Type: ()=>Nq,
-        __TypeKind: ()=>Rq,
-        assertAbstractType: ()=>Jwe,
-        assertCompositeType: ()=>qwe,
-        assertDirective: ()=>$we,
-        assertEnumType: ()=>Bwe,
-        assertEnumValueName: ()=>sK,
-        assertInputObjectType: ()=>Vwe,
-        assertInputType: ()=>Wwe,
-        assertInterfaceType: ()=>mK,
-        assertLeafType: ()=>Kwe,
-        assertListType: ()=>Hwe,
-        assertName: ()=>oK,
-        assertNamedType: ()=>Xwe,
-        assertNonNullType: ()=>Uwe,
-        assertNullableType: ()=>DK,
-        assertObjectType: ()=>fK,
-        assertOutputType: ()=>Gwe,
-        assertScalarType: ()=>Rwe,
-        assertSchema: ()=>Gq,
-        assertType: ()=>Lwe,
-        assertUnionType: ()=>zwe,
+        __Directive: ()=>Mq,
+        __DirectiveLocation: ()=>Nq,
+        __EnumValue: ()=>Lq,
+        __Field: ()=>Fq,
+        __InputValue: ()=>Iq,
+        __Schema: ()=>jq,
+        __Type: ()=>Pq,
+        __TypeKind: ()=>zq,
+        assertAbstractType: ()=>qwe,
+        assertCompositeType: ()=>Kwe,
+        assertDirective: ()=>Qwe,
+        assertEnumType: ()=>zwe,
+        assertEnumValueName: ()=>cK,
+        assertInputObjectType: ()=>Bwe,
+        assertInputType: ()=>Uwe,
+        assertInterfaceType: ()=>hK,
+        assertLeafType: ()=>Gwe,
+        assertListType: ()=>Vwe,
+        assertName: ()=>sK,
+        assertNamedType: ()=>Ywe,
+        assertNonNullType: ()=>Hwe,
+        assertNullableType: ()=>OK,
+        assertObjectType: ()=>pK,
+        assertOutputType: ()=>Wwe,
+        assertScalarType: ()=>Lwe,
+        assertSchema: ()=>Kq,
+        assertType: ()=>Iwe,
+        assertUnionType: ()=>Rwe,
         assertValidName: ()=>QEe,
-        assertValidSchema: ()=>Xq,
-        assertWrappingType: ()=>Ywe,
-        astFromValue: ()=>Eq,
+        assertValidSchema: ()=>Zq,
+        assertWrappingType: ()=>Jwe,
+        astFromValue: ()=>Dq,
         buildASTSchema: ()=>mZ,
         buildClientSchema: ()=>wEe,
         buildSchema: ()=>OEe,
@@ -43831,116 +43831,116 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         createSourceEventStream: ()=>oZ,
         defaultFieldResolver: ()=>nZ,
         defaultTypeResolver: ()=>tZ,
-        doTypesOverlap: ()=>eq,
+        doTypesOverlap: ()=>tq,
         execute: ()=>zX,
         executeSync: ()=>BX,
         extendSchema: ()=>EEe,
         findBreakingChanges: ()=>eDe,
         findDangerousChanges: ()=>tDe,
-        formatError: ()=>dwe,
+        formatError: ()=>uwe,
         getArgumentValues: ()=>NY,
         getDirectiveValues: ()=>PY,
-        getEnterLeaveForKind: ()=>KG,
+        getEnterLeaveForKind: ()=>qG,
         getIntrospectionQuery: ()=>sZ,
-        getLocation: ()=>mW,
-        getNamedType: ()=>AK,
-        getNullableType: ()=>OK,
+        getLocation: ()=>hW,
+        getNamedType: ()=>jK,
+        getNullableType: ()=>kK,
         getOperationAST: ()=>vEe,
         getOperationRootType: ()=>bEe,
         getVariableValues: ()=>MY,
-        getVisitFn: ()=>Iwe,
+        getVisitFn: ()=>Fwe,
         graphql: ()=>$Te,
         graphqlSync: ()=>eEe,
         introspectionFromSchema: ()=>SEe,
-        introspectionTypes: ()=>Hq,
-        isAbstractType: ()=>wK,
-        isCompositeType: ()=>CK,
+        introspectionTypes: ()=>Uq,
+        isAbstractType: ()=>TK,
+        isCompositeType: ()=>wK,
         isConstValueNode: ()=>fJ,
         isDefinitionNode: ()=>fTe,
-        isDirective: ()=>pq,
-        isEnumType: ()=>gK,
-        isEqualType: ()=>QK,
+        isDirective: ()=>mq,
+        isEnumType: ()=>_K,
+        isEqualType: ()=>$K,
         isExecutableDefinitionNode: ()=>uJ,
-        isInputObjectType: ()=>_K,
-        isInputType: ()=>bK,
-        isInterfaceType: ()=>pK,
-        isIntrospectionType: ()=>kq,
-        isLeafType: ()=>SK,
-        isListType: ()=>vK,
-        isNamedType: ()=>kK,
-        isNonNullType: ()=>yK,
-        isNullableType: ()=>EK,
-        isObjectType: ()=>dK,
-        isOutputType: ()=>xK,
-        isRequiredArgument: ()=>zK,
-        isRequiredInputField: ()=>HK,
-        isScalarType: ()=>uK,
-        isSchema: ()=>Wq,
+        isInputObjectType: ()=>vK,
+        isInputType: ()=>xK,
+        isInterfaceType: ()=>mK,
+        isIntrospectionType: ()=>Aq,
+        isLeafType: ()=>CK,
+        isListType: ()=>yK,
+        isNamedType: ()=>AK,
+        isNonNullType: ()=>bK,
+        isNullableType: ()=>DK,
+        isObjectType: ()=>fK,
+        isOutputType: ()=>SK,
+        isRequiredArgument: ()=>BK,
+        isRequiredInputField: ()=>UK,
+        isScalarType: ()=>dK,
+        isSchema: ()=>Gq,
         isSchemaCoordinateNode: ()=>hTe,
         isSelectionNode: ()=>pTe,
-        isSpecifiedDirective: ()=>mq,
-        isSpecifiedScalarType: ()=>nq,
-        isType: ()=>lK,
+        isSpecifiedDirective: ()=>hq,
+        isSpecifiedScalarType: ()=>rq,
+        isType: ()=>uK,
         isTypeDefinitionNode: ()=>mJ,
         isTypeExtensionNode: ()=>gJ,
         isTypeNode: ()=>mTe,
-        isTypeSubTypeOf: ()=>$K,
+        isTypeSubTypeOf: ()=>eq,
         isTypeSystemDefinitionNode: ()=>pJ,
         isTypeSystemExtensionNode: ()=>hJ,
-        isUnionType: ()=>hK,
+        isUnionType: ()=>gK,
         isValidNameError: ()=>kZ,
         isValueNode: ()=>dJ,
-        isWrappingType: ()=>TK,
+        isWrappingType: ()=>EK,
         lexicographicSortSchema: ()=>AEe,
         locatedError: ()=>LX,
-        parse: ()=>mG,
-        parseConstValue: ()=>Awe,
-        parseSchemaCoordinate: ()=>gG,
-        parseType: ()=>jwe,
-        parseValue: ()=>hG,
-        print: ()=>YG,
-        printError: ()=>uwe,
+        parse: ()=>hG,
+        parseConstValue: ()=>kwe,
+        parseSchemaCoordinate: ()=>_G,
+        parseType: ()=>Awe,
+        parseValue: ()=>gG,
+        print: ()=>XG,
+        printError: ()=>lwe,
         printIntrospectionSchema: ()=>NEe,
-        printLocation: ()=>_W,
+        printLocation: ()=>vW,
         printSchema: ()=>MEe,
-        printSourceLocation: ()=>vW,
+        printSourceLocation: ()=>yW,
         printType: ()=>yZ,
         recommendedRules: ()=>CX,
         resolveASTSchemaCoordinate: ()=>RZ,
-        resolveObjMapThunk: ()=>MK,
-        resolveReadonlyArrayThunk: ()=>jK,
+        resolveObjMapThunk: ()=>NK,
+        resolveReadonlyArrayThunk: ()=>MK,
         resolveSchemaCoordinate: ()=>dDe,
         responsePathAsArray: ()=>wY,
         separateOperations: ()=>JEe,
-        specifiedDirectives: ()=>Sq,
+        specifiedDirectives: ()=>Cq,
         specifiedRules: ()=>wX,
-        specifiedScalarTypes: ()=>dq,
+        specifiedScalarTypes: ()=>fq,
         stripIgnoredCharacters: ()=>XEe,
         subscribe: ()=>sEe,
-        syntaxError: ()=>CW,
+        syntaxError: ()=>wW,
         typeFromAST: ()=>aJ,
         validate: ()=>jX,
-        validateSchema: ()=>Yq,
+        validateSchema: ()=>Xq,
         valueFromAST: ()=>kY,
-        valueFromASTUntyped: ()=>iK,
-        version: ()=>iW,
-        versionInfo: ()=>aW,
-        visit: ()=>WG,
-        visitInParallel: ()=>GG,
+        valueFromASTUntyped: ()=>aK,
+        version: ()=>aW,
+        versionInfo: ()=>oW,
+        visit: ()=>GG,
+        visitInParallel: ()=>KG,
         visitWithTypeInfo: ()=>sJ
     }), BZ = o((()=>{
-        cwe(), tEe(), nEe(), rEe(), dEe(), gEe(), _Ee(), vDe();
+        swe(), tEe(), nEe(), rEe(), dEe(), gEe(), _Ee(), vDe();
     }));
     function VZ(e, t) {
         var n = e.directives;
         return !n || !n.length ? !0 : UZ(n).every(function(e) {
             var n = e.directive, r = e.ifArgument, i = !1;
-            return r.value.kind === `Variable` ? (i = t && t[r.value.name.value], $U(i !== void 0, 105, n.name.value)) : i = r.value.value, n.name.value === `skip` ? !i : i;
+            return r.value.kind === `Variable` ? (i = t && t[r.value.name.value], eW(i !== void 0, 105, n.name.value)) : i = r.value.value, n.name.value === `skip` ? !i : i;
         });
     }
     function yDe(e) {
         var t = [];
-        return WG(e, {
+        return GG(e, {
             Directive: function(e) {
                 t.push(e.name.value);
             }
@@ -43948,9 +43948,9 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
     }
     function HZ(e, t, n) {
         var r = new Set(e), i = r.size;
-        return WG(t, {
+        return GG(t, {
             Directive: function(e) {
-                if (r.delete(e.name.value) && (!n || !r.size)) return qG;
+                if (r.delete(e.name.value) && (!n || !r.size)) return JG;
             }
         }), n ? !r.size : r.size < i;
     }
@@ -43969,11 +43969,11 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         return e && e.length && e.forEach(function(e) {
             if (xDe(e)) {
                 var n = e.arguments, r = e.name.value;
-                $U(n && n.length === 1, 106, r);
+                eW(n && n.length === 1, 106, r);
                 var i = n[0];
-                $U(i.name && i.name.value === `if`, 107, r);
+                eW(i.name && i.name.value === `if`, 107, r);
                 var a = i.value;
-                $U(a && (a.kind === `Variable` || a.kind === `BooleanValue`), 108, r), t.push({
+                eW(a && (a.kind === `Variable` || a.kind === `BooleanValue`), 108, r), t.push({
                     directive: e,
                     ifArgument: i
                 });
@@ -43988,10 +43988,10 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         var n = t.arguments?.find(function(e) {
             return e.name.value === `mode`;
         });
-        return globalThis.__DEV__ !== !1 && n && (n.value.kind === Z.VARIABLE ? globalThis.__DEV__ !== !1 && $U.warn(109) : n.value.kind === Z.STRING ? n.value.value !== `migrate` && globalThis.__DEV__ !== !1 && $U.warn(111, n.value.value) : globalThis.__DEV__ !== !1 && $U.warn(110)), n && `value` in n.value && n.value.value === `migrate` ? `migrate` : `unmask`;
+        return globalThis.__DEV__ !== !1 && n && (n.value.kind === Z.VARIABLE ? globalThis.__DEV__ !== !1 && eW.warn(109) : n.value.kind === Z.STRING ? n.value.value !== `migrate` && globalThis.__DEV__ !== !1 && eW.warn(111, n.value.value) : globalThis.__DEV__ !== !1 && eW.warn(110)), n && `value` in n.value && n.value.value === `migrate` ? `migrate` : `unmask`;
     }
     var GZ, KZ, SDe = o((()=>{
-        rW(), BZ(), GZ = function(e, t) {
+        iW(), BZ(), GZ = function(e, t) {
             return HZ(e, t, !1);
         }, KZ = function(e, t) {
             return HZ(e, t, !0);
@@ -44051,11 +44051,11 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             }
         };
     })), eQ, tQ, nQ, rQ, iQ, aQ, oQ, sQ, cQ = o((()=>{
-        rW(), eQ = zU(function() {
+        iW(), eQ = BU(function() {
             return navigator.product;
-        }) == `ReactNative`, tQ = typeof WeakMap == `function` && !(eQ && !globalThis.HermesInternal), nQ = typeof WeakSet == `function`, rQ = typeof Symbol == `function` && typeof Symbol.for == `function`, iQ = rQ && Symbol.asyncIterator, aQ = typeof zU(function() {
+        }) == `ReactNative`, tQ = typeof WeakMap == `function` && !(eQ && !globalThis.HermesInternal), nQ = typeof WeakSet == `function`, rQ = typeof Symbol == `function` && typeof Symbol.for == `function`, iQ = rQ && Symbol.asyncIterator, aQ = typeof BU(function() {
             return window.document.createElement;
-        }) == `function`, oQ = zU(function() {
+        }) == `function`, oQ = BU(function() {
             return navigator.userAgent.indexOf(`jsdom`) >= 0;
         }) || !1, sQ = (aQ || eQ) && !oQ;
     }));
@@ -44069,10 +44069,10 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
     function fQ(e, t) {
         var n = t, r = [];
         return e.definitions.forEach(function(e) {
-            if (e.kind === `OperationDefinition`) throw YU(112, e.operation, e.name ? ` named '${e.name.value}'` : ``);
+            if (e.kind === `OperationDefinition`) throw XU(112, e.operation, e.name ? ` named '${e.name.value}'` : ``);
             e.kind === `FragmentDefinition` && r.push(e);
-        }), n === void 0 && ($U(r.length === 1, 113, r.length), n = r[0].name.value), Y(Y({}, e), {
-            definitions: sU([
+        }), n === void 0 && (eW(r.length === 1, 113, r.length), n = r[0].name.value), Y(Y({}, e), {
+            definitions: cU([
                 {
                     kind: `OperationDefinition`,
                     operation: `query`,
@@ -44107,23 +44107,23 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 var n = e.name.value;
                 if (typeof t == `function`) return t(n);
                 var r = t && t[n];
-                return $U(r, 114, n), r || null;
+                return eW(r, 114, n), r || null;
             default:
                 return null;
         }
     }
     function wDe(e) {
         var t = !0;
-        return WG(e, {
+        return GG(e, {
             FragmentSpread: function(e) {
                 if (t = !!e.directives && e.directives.some(function(e) {
                     return e.name.value === `unmask`;
-                }), !t) return qG;
+                }), !t) return JG;
             }
         }), t;
     }
     var hQ = o((()=>{
-        DU(), rW(), BZ();
+        OU(), iW(), BZ();
     }));
     function TDe() {}
     var gQ, EDe = o((()=>{
@@ -44258,7 +44258,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             }, n;
         };
     })), kQ, AQ, jQ = o((()=>{
-        DU(), rW(), kQ = Symbol.for(`apollo.cacheSize`), AQ = Y({}, VU[kQ]);
+        OU(), iW(), kQ = Symbol.for(`apollo.cacheSize`), AQ = Y({}, HU[kQ]);
     })), MQ = o((()=>{
         kDe(), jQ();
     }));
@@ -44305,17 +44305,17 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         });
     }
     function LQ(e) {
-        return e ? sU(sU([
+        return e ? cU(cU([
             FQ(e?.performWork)
         ], LQ(e?.left), !0), LQ(e?.right), !0).filter(IQ) : [];
     }
     function RQ(e) {
-        return e ? sU(sU([
+        return e ? cU(cU([
             (e?.getMemoryInternals)?.call(e)
         ], RQ(e?.left), !0), RQ(e?.right), !0).filter(IQ) : [];
     }
     var zQ, BQ, VQ, HQ = o((()=>{
-        DU(), jQ(), zQ = {}, globalThis.__DEV__, BQ = globalThis.__DEV__ === !1 ? void 0 : ADe, VQ = globalThis.__DEV__ === !1 ? void 0 : PQ;
+        OU(), jQ(), zQ = {}, globalThis.__DEV__, BQ = globalThis.__DEV__ === !1 ? void 0 : ADe, VQ = globalThis.__DEV__ === !1 ? void 0 : PQ;
     }));
     function NDe(e, t) {
         if (t && typeof t == `object`) {
@@ -44406,7 +44406,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         });
         else if (UDe(n)) e[t.value] = n.value;
         else if (WDe(n)) e[t.value] = null;
-        else throw YU(123, t.value, n.kind);
+        else throw XU(123, t.value, n.kind);
     }
     function YQ(e, t) {
         var n = null;
@@ -44457,7 +44457,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         return e.kind === `InlineFragment`;
     }
     var e$, t$, n$, r$ = o((()=>{
-        rW(), dQ(), hQ(), GQ(), e$ = [
+        iW(), dQ(), hQ(), GQ(), e$ = [
             `connection`,
             `include`,
             `skip`,
@@ -44490,14 +44490,14 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         });
     }));
     function i$(e) {
-        $U(e && e.kind === `Document`, 115);
+        eW(e && e.kind === `Document`, 115);
         var t = e.definitions.filter(function(e) {
             return e.kind !== `FragmentDefinition`;
         }).map(function(e) {
-            if (e.kind !== `OperationDefinition`) throw YU(116, e.kind);
+            if (e.kind !== `OperationDefinition`) throw XU(116, e.kind);
             return e;
         });
-        return $U(t.length <= 1, 117, t.length), e;
+        return eW(t.length <= 1, 117, t.length), e;
     }
     function a$(e) {
         return i$(e), e.definitions.filter(function(e) {
@@ -44518,12 +44518,12 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
     }
     function c$(e) {
         var t = a$(e);
-        return $U(t && t.operation === `query`, 118), t;
+        return eW(t && t.operation === `query`, 118), t;
     }
     function l$(e) {
-        $U(e.kind === `Document`, 119), $U(e.definitions.length <= 1, 120);
+        eW(e.kind === `Document`, 119), eW(e.definitions.length <= 1, 120);
         var t = e.definitions[0];
-        return $U(t.kind === `FragmentDefinition`, 121), t;
+        return eW(t.kind === `FragmentDefinition`, 121), t;
     }
     function u$(e) {
         i$(e);
@@ -44536,7 +44536,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             i.kind === `FragmentDefinition` && !t && (t = i);
         }
         if (t) return t;
-        throw YU(122);
+        throw XU(122);
     }
     function d$(e) {
         var t = Object.create(null), n = e && e.variableDefinitions;
@@ -44545,7 +44545,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         }), t;
     }
     var f$ = o((()=>{
-        rW(), r$();
+        iW(), r$();
     }));
     function p$(e) {
         try {
@@ -44878,7 +44878,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         return e;
     }
     var $$, oOe = o((()=>{
-        $Z(), cQ(), f$(), rW(), wQ(), Q$(), MQ(), $$ = function() {
+        $Z(), cQ(), f$(), iW(), wQ(), Q$(), MQ(), $$ = function() {
             function e(e, t) {
                 t === void 0 && (t = Object.create(null)), this.resultCache = nQ ? new WeakSet : new Set, this.transform = e, t.getCacheKey && (this.getCacheKey = t.getCacheKey), this.cached = t.cache !== !1, this.resetCache();
             }
@@ -44906,7 +44906,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                     this.performWork = X$(e.prototype.performWork.bind(this), {
                         makeCacheKey: function(e) {
                             var r = t.getCacheKey(e);
-                            if (r) return $U(Array.isArray(r), 104), n.lookupArray(r);
+                            if (r) return eW(Array.isArray(r), 104), n.lookupArray(r);
                         },
                         max: AQ[`documentTransform.cache`],
                         cache: CQ
@@ -44933,7 +44933,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
     })), e1, t1, sOe = o((()=>{
         BZ(), MQ(), HQ(), t1 = Object.assign(function(e) {
             var t = e1.get(e);
-            return t || (t = YG(e), e1.set(e, t)), t;
+            return t || (t = XG(e), e1.set(e, t)), t;
         }, {
             reset: function() {
                 e1 = new DQ(AQ.print || 2e3);
@@ -44985,7 +44985,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 if (i.kind === Z.OPERATION_DEFINITION) return n(i.name && i.name.value);
                 if (i.kind === Z.FRAGMENT_DEFINITION) return r(i.name.value);
             }
-            return globalThis.__DEV__ !== !1 && $U.error(124), null;
+            return globalThis.__DEV__ !== !1 && eW.error(124), null;
         }, a = 0, o = t.definitions.length - 1; o >= 0; --o)t.definitions[o].kind === Z.OPERATION_DEFINITION && ++a;
         var s = cOe(e), c = function(e) {
             return n1(e) && e.map(s).some(function(e) {
@@ -44995,7 +44995,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
             enter: function(e) {
                 if (c(e.directives)) return u = !0, null;
             }
-        }, f = WG(t, {
+        }, f = GG(t, {
             Field: d,
             InlineFragment: d,
             VariableDefinition: {
@@ -45057,7 +45057,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 if (h(e.name.value)) return null;
             }
         };
-        return o1(WG(f, {
+        return o1(GG(f, {
             FragmentSpread: g,
             FragmentDefinition: g,
             OperationDefinition: {
@@ -45088,7 +45088,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
     }
     function dOe(e, t) {
         var n = uOe(e);
-        return o1(WG(t, {
+        return o1(GG(t, {
             OperationDefinition: {
                 enter: function(t) {
                     return Y(Y({}, t), {
@@ -45125,7 +45125,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 return e.name === t.name.value;
             })) return null;
         }
-        return o1(WG(t, {
+        return o1(GG(t, {
             FragmentSpread: {
                 enter: n
             },
@@ -45135,7 +45135,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         }));
     }
     function pOe(e) {
-        return u$(e).operation === `query` ? e : WG(e, {
+        return u$(e).operation === `query` ? e : GG(e, {
             OperationDefinition: {
                 enter: function(e) {
                     return Y(Y({}, e), {
@@ -45156,12 +45156,12 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         ], e);
     }
     function mOe(e) {
-        return i$(e), WG(e, {
+        return i$(e), GG(e, {
             FragmentSpread: function(e) {
                 if (!e.directives?.some(function(e) {
                     return e.name.value === `unmask`;
                 })) return Y(Y({}, e), {
-                    directives: sU(sU([], e.directives || [], !0), [
+                    directives: cU(cU([], e.directives || [], !0), [
                         {
                             kind: Z.DIRECTIVE,
                             name: {
@@ -45175,14 +45175,14 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         });
     }
     var u1, d1, f1, hOe = o((()=>{
-        DU(), rW(), BZ(), f$(), r$(), hQ(), i1(), u1 = {
+        OU(), iW(), BZ(), f$(), r$(), hQ(), i1(), u1 = {
             kind: Z.FIELD,
             name: {
                 kind: Z.NAME,
                 value: `__typename`
             }
         }, d1 = Object.assign(function(e) {
-            return WG(e, {
+            return GG(e, {
                 SelectionSet: {
                     enter: function(e, t, n) {
                         if (!(n && n.kind === Z.OPERATION_DEFINITION)) {
@@ -45194,7 +45194,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                                 if (!($Q(i) && i.directives && i.directives.some(function(e) {
                                     return e.name.value === `export`;
                                 }))) return Y(Y({}, e), {
-                                    selections: sU(sU([], r, !0), [
+                                    selections: cU(cU([], r, !0), [
                                         u1
                                     ], !1)
                                 });
@@ -45212,7 +45212,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                 var t = e.name.value === `connection`;
                 return t && (!e.arguments || !e.arguments.some(function(e) {
                     return e.name.value === `key`;
-                })) && globalThis.__DEV__ !== !1 && $U.warn(125), t;
+                })) && globalThis.__DEV__ !== !1 && eW.warn(125), t;
             }
         };
     }));
@@ -45242,7 +45242,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         return t;
     }
     var g1, _1, v1, y1 = o((()=>{
-        DU(), dQ(), g1 = Object.prototype.hasOwnProperty, _1 = function(e, t, n) {
+        OU(), dQ(), g1 = Object.prototype.hasOwnProperty, _1 = function(e, t, n) {
             return this.merge(e[n], t[n]);
         }, v1 = function() {
             function e(e) {
@@ -45254,7 +45254,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                     if (g1.call(e, i)) {
                         var a = e[i];
                         if (t[i] !== a) {
-                            var o = n.reconciler.apply(n, sU([
+                            var o = n.reconciler.apply(n, cU([
                                 e,
                                 t,
                                 i
@@ -45274,7 +45274,7 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         return e === void 0 && (e = !1), {
             keyArgs: e,
             merge: function(e, t) {
-                return e ? sU(sU([], e, !0), t, !0) : t;
+                return e ? cU(cU([], e, !0), t, !0) : t;
             }
         };
     }
@@ -45342,9 +45342,9 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
                     });
                     h = g < 0 ? m : m.slice(g), m = [];
                 } else t.edges && (m = []);
-                var _ = sU(sU(sU([], m, !0), o, !0), h, !0), v = Y(Y({}, t.pageInfo), e.pageInfo);
+                var _ = cU(cU(cU([], m, !0), o, !0), h, !0), v = Y(Y({}, t.pageInfo), e.pageInfo);
                 if (t.pageInfo) {
-                    var y = t.pageInfo, b = y.hasPreviousPage, x = y.hasNextPage, c = y.startCursor, l = y.endCursor, S = KH(y, [
+                    var y = t.pageInfo, b = y.hasPreviousPage, x = y.hasNextPage, c = y.startCursor, l = y.endCursor, S = qH(y, [
                         `hasPreviousPage`,
                         `hasNextPage`,
                         `startCursor`,
@@ -45371,8 +45371,8 @@ In some cases, you need to provide options to alter GraphQL's execution behavior
         };
     }
     var b1, x1, wOe = o((()=>{
-        DU(), y1(), b1 = function(e) {
-            return KH(e, x1);
+        OU(), y1(), b1 = function(e) {
+            return qH(e, x1);
         }, x1 = [
             `edges`,
             `pageInfo`
@@ -45955,8 +45955,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         return e && typeof e.then == `function`;
     }
     var i0, WOe = o((()=>{
-        DU(), q1(), e0(), n0(), i0 = function(e) {
-            GH(t, e);
+        OU(), q1(), e0(), n0(), i0 = function(e) {
+            KH(t, e);
             function t(t) {
                 var n = e.call(this, function(e) {
                     return n.addObserver(e), function() {
@@ -46079,7 +46079,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         });
     }
     var XOe = o((()=>{
-        DU(), d0();
+        OU(), d0();
     }));
     function f0(e, t) {
         return p0(e, t);
@@ -46122,7 +46122,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         var t = [
             ...arguments
         ].slice(1);
-        return x0.withValue.apply(x0, sU([
+        return x0.withValue.apply(x0, cU([
             Array.isArray(e) ? e : [
                 e
             ]
@@ -46130,19 +46130,19 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }
     function g0(e, t, n, r) {
         r === void 0 && (r = `Please remove this option.`), _0(t, function() {
-            t in e && globalThis.__DEV__ !== !1 && $U.warn(103, n, t, r);
+            t in e && globalThis.__DEV__ !== !1 && eW.warn(103, n, t, r);
         });
     }
     function _0(e, t) {
         $Oe(e) || t();
     }
     var v0, y0, b0, x0, eke = o((()=>{
-        DU(), Q$(), rW(), v0 = Symbol.for(`apollo.deprecations`), y0 = Symbol.for(`apollo.deprecations.slot`), b0 = VU, x0 = b0[y0] ?? (b0[y0] = new b$);
+        OU(), Q$(), iW(), v0 = Symbol.for(`apollo.deprecations`), y0 = Symbol.for(`apollo.deprecations.slot`), b0 = HU, x0 = b0[y0] ?? (b0[y0] = new b$);
     })), S0 = c({
         AutoCleanedStrongCache: ()=>OQ,
         AutoCleanedWeakCache: ()=>DQ,
         Concast: ()=>i0,
-        DEV: ()=>nW,
+        DEV: ()=>rW,
         DeepMerger: ()=>v1,
         DocumentTransform: ()=>$$,
         Observable: ()=>V1,
@@ -46206,8 +46206,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         isSubscriptionOperation: ()=>vOe,
         iterateObserversSafely: ()=>$1,
         makeReference: ()=>KQ,
-        makeUniqueId: ()=>UU,
-        maybe: ()=>zU,
+        makeUniqueId: ()=>WU,
+        maybe: ()=>BU,
         maybeDeepFreeze: ()=>Q1,
         mergeDeep: ()=>m1,
         mergeDeepArray: ()=>h1,
@@ -46227,14 +46227,14 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         resultKeyNameFromField: ()=>ZQ,
         shouldInclude: ()=>VZ,
         storeKeyNameFromField: ()=>YQ,
-        stringifyForDisplay: ()=>KU,
+        stringifyForDisplay: ()=>qU,
         stripTypename: ()=>ZOe,
         valueToObjectRepresentation: ()=>JQ,
         warnDeprecated: ()=>_0,
         warnRemovedOption: ()=>g0,
         wrapPromiseWithState: ()=>POe
     }), C0 = o((()=>{
-        rW(), SDe(), oOe(), hQ(), f$(), sOe(), r$(), hOe(), yOe(), wOe(), q1(), FOe(), LOe(), y1(), ROe(), VOe(), e0(), UOe(), WOe(), n0(), i1(), dQ(), JOe(), cQ(), d0(), GU(), qU(), XOe(), c0(), GQ(), m0(), QOe(), MQ(), eke();
+        iW(), SDe(), oOe(), hQ(), f$(), sOe(), r$(), hOe(), yOe(), wOe(), q1(), FOe(), LOe(), y1(), ROe(), VOe(), e0(), UOe(), WOe(), n0(), i1(), dQ(), JOe(), cQ(), d0(), KU(), JU(), XOe(), c0(), GQ(), m0(), QOe(), MQ(), eke();
     }));
     function w0(e) {
         return new V1(function(t) {
@@ -46249,14 +46249,14 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         return new Promise(function(n, r) {
             e.subscribe({
                 next: function(e) {
-                    t ? globalThis.__DEV__ !== !1 && $U.warn(57) : (t = !0, n(e));
+                    t ? globalThis.__DEV__ !== !1 && eW.warn(57) : (t = !0, n(e));
                 },
                 error: r
             });
         });
     }
     var rke = o((()=>{
-        rW();
+        iW();
     }));
     function ike(e) {
         return new V1(function(t) {
@@ -46282,12 +46282,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             `context`
         ], n = 0, r = Object.keys(e); n < r.length; n++){
             var i = r[n];
-            if (t.indexOf(i) < 0) throw YU(58, i);
+            if (t.indexOf(i) < 0) throw XU(58, i);
         }
         return e;
     }
     var ske = o((()=>{
-        rW();
+        iW();
     }));
     function D0(e, t) {
         var n = Y({}, e);
@@ -46304,7 +46304,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }), t;
     }
     var cke = o((()=>{
-        DU();
+        OU();
     }));
     function O0(e) {
         var t = {
@@ -46320,7 +46320,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }));
     function k0(e, t) {
         var n = Y({}, e), r = new Set(Object.keys(e));
-        return WG(t, {
+        return GG(t, {
             Variable: function(e, t, n) {
                 n && n.kind !== `VariableDefinition` && r.delete(e.name.value);
             }
@@ -46329,7 +46329,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }), n;
     }
     var uke = o((()=>{
-        DU(), BZ();
+        OU(), BZ();
     })), A0 = c({
         createOperation: ()=>D0,
         filterOperationVariables: ()=>k0,
@@ -46352,7 +46352,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         return e.request.length <= 1;
     }
     var F0, I0 = o((()=>{
-        rW(), C0(), j0(), F0 = function() {
+        iW(), C0(), j0(), F0 = function() {
             function e(e) {
                 e && (this.request = e);
             }
@@ -46378,7 +46378,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 return e.request(D0(t.context, O0(E0(t)))) || V1.of();
             }, e.concat = function(t, n) {
                 var r = N0(t);
-                if (P0(r)) return globalThis.__DEV__ !== !1 && $U.warn(47, r), r;
+                if (P0(r)) return globalThis.__DEV__ !== !1 && eW.warn(47, r), r;
                 var i = N0(n), a = P0(i) ? new e(function(e) {
                     return r.request(e, function(e) {
                         return i.request(e) || V1.of();
@@ -46397,14 +46397,14 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             }, e.prototype.concat = function(t) {
                 return e.concat(this, t);
             }, e.prototype.request = function(e, t) {
-                throw YU(48);
+                throw XU(48);
             }, e.prototype.onError = function(e, t) {
                 if (globalThis.__DEV__ !== !1 && _0(`onError`, function() {
-                    globalThis.__DEV__ !== !1 && $U.warn(49);
+                    globalThis.__DEV__ !== !1 && eW.warn(49);
                 }), t && t.error) return t.error(e), !1;
                 throw e;
             }, e.prototype.setOnError = function(e) {
-                return globalThis.__DEV__ !== !1 && globalThis.__DEV__ !== !1 && $U.warn(50), this.onError = e, this;
+                return globalThis.__DEV__ !== !1 && globalThis.__DEV__ !== !1 && eW.warn(50), this.onError = e, this;
             }, e;
         }();
     })), L0, dke = o((()=>{
@@ -46575,17 +46575,17 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         return e.hasOwnProperty(`graphQLErrors`);
     }
     var K0, q0, J0, Y0 = o((()=>{
-        DU(), C0(), K0 = Symbol(), q0 = function(e) {
-            var t = sU(sU(sU([], e.graphQLErrors, !0), e.clientErrors, !0), e.protocolErrors, !0);
+        OU(), C0(), K0 = Symbol(), q0 = function(e) {
+            var t = cU(cU(cU([], e.graphQLErrors, !0), e.clientErrors, !0), e.protocolErrors, !0);
             return e.networkError && t.push(e.networkError), t.map(function(e) {
                 return lQ(e) && e.message || `Error message not found.`;
             }).join(`
 `);
         }, J0 = function(e) {
-            GH(t, e);
+            KH(t, e);
             function t(n) {
                 var r = n.graphQLErrors, i = n.protocolErrors, a = n.clientErrors, o = n.networkError, s = n.errorMessage, c = n.extraInfo, l = e.call(this, s) || this;
-                return l.name = `ApolloError`, l.graphQLErrors = r || [], l.protocolErrors = i || [], l.clientErrors = a || [], l.networkError = o || null, l.message = s || q0(l), l.extraInfo = c, l.cause = sU(sU(sU([
+                return l.name = `ApolloError`, l.graphQLErrors = r || [], l.protocolErrors = i || [], l.clientErrors = a || [], l.networkError = o || null, l.message = s || q0(l), l.extraInfo = c, l.cause = cU(cU(cU([
                     o
                 ], r || [], !0), i || [], !0), a || [], !0).find(function(e) {
                     return !!e;
@@ -46595,9 +46595,9 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }(Error);
     }));
     function Nke(e, t) {
-        return eU(this, void 0, void 0, function() {
+        return tU(this, void 0, void 0, function() {
             var n, r, i, a, o, s, c, l, u, d, f, p, m, h, g, _, v, y, b, x, S, C, w;
-            return tU(this, function(T) {
+            return nU(this, function(T) {
                 switch(T.label){
                     case 0:
                         if (TextDecoder === void 0) throw Error(`TextDecoder must be defined in the environment: please import a polyfill.`);
@@ -46690,14 +46690,14 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         };
     }
     var Q0, $0 = o((()=>{
-        DU(), Ake(), j0(), Y0(), c0(), Q0 = Object.prototype.hasOwnProperty;
+        OU(), Ake(), j0(), Y0(), c0(), Q0 = Object.prototype.hasOwnProperty;
     })), e2, t2 = o((()=>{
-        rW(), e2 = function(e, t) {
+        iW(), e2 = function(e, t) {
             var n;
             try {
                 n = JSON.stringify(e);
             } catch (e) {
-                var r = YU(54, t, e.message);
+                var r = XU(54, t, e.message);
                 throw r.parseError = e, r;
             }
             return n;
@@ -46707,7 +46707,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         var n = [
             ...arguments
         ].slice(2);
-        return n.unshift(t), n2.apply(void 0, sU([
+        return n.unshift(t), n2.apply(void 0, cU([
             e,
             s2
         ], n, !1));
@@ -46750,7 +46750,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }), i;
     }
     var r2, i2, a2, o2, s2, c2 = o((()=>{
-        DU(), C0(), r2 = {
+        OU(), C0(), r2 = {
             includeQuery: !0,
             includeExtensions: !1,
             preserveHeaderCase: !1
@@ -46767,8 +46767,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             return t(e);
         };
     })), l2, u2 = o((()=>{
-        rW(), l2 = function(e) {
-            if (!e && typeof fetch > `u`) throw YU(51);
+        iW(), l2 = function(e) {
+            if (!e && typeof fetch > `u`) throw XU(51);
         };
     })), d2, Rke = o((()=>{
         d2 = function() {
@@ -46823,11 +46823,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     var h2 = o((()=>{
         t2();
     })), g2, _2, v2 = o((()=>{
-        DU(), rW(), U0(), C0(), t2(), p2(), $0(), u2(), c2(), h2(), j0(), g2 = zU(function() {
+        OU(), iW(), U0(), C0(), t2(), p2(), $0(), u2(), c2(), h2(), j0(), g2 = BU(function() {
             return fetch;
         }), _2 = function(e) {
             e === void 0 && (e = {});
-            var t = e.uri, n = t === void 0 ? `/graphql` : t, r = e.fetch, i = e.print, a = i === void 0 ? s2 : i, o = e.includeExtensions, s = e.preserveHeaderCase, c = e.useGETForQueries, l = e.includeUnusedVariables, u = l === void 0 ? !1 : l, d = KH(e, [
+            var t = e.uri, n = t === void 0 ? `/graphql` : t, r = e.fetch, i = e.print, a = i === void 0 ? s2 : i, o = e.includeExtensions, s = e.preserveHeaderCase, c = e.useGETForQueries, l = e.includeUnusedVariables, u = l === void 0 ? !1 : l, d = qH(e, [
                 `uri`,
                 `fetch`,
                 `print`,
@@ -46861,7 +46861,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 if (HZ([
                     `client`
                 ], e.query)) {
-                    globalThis.__DEV__ !== !1 && globalThis.__DEV__ !== !1 && $U.warn(52);
+                    globalThis.__DEV__ !== !1 && globalThis.__DEV__ !== !1 && eW.warn(52);
                     var h = l1(e.query);
                     if (!h) return w0(Error("HttpLink: Trying to send a client-only query to the server. To send to the server, ensure a non-client field is added to the query or set the `transformOptions.removeClientFields` option to `true`."));
                     e.query = h;
@@ -46880,7 +46880,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 if (c && !e.query.definitions.some(b) && (_.method = `GET`), S || x) {
                     _.headers = _.headers || {};
                     var C = `multipart/mixed;`;
-                    x && S && globalThis.__DEV__ !== !1 && $U.warn(53), x ? C += `boundary=graphql;subscriptionSpec=1.0,application/json` : S && (C += `deferSpec=20220824,application/json`), _.headers.accept = C;
+                    x && S && globalThis.__DEV__ !== !1 && eW.warn(53), x ? C += `boundary=graphql;subscriptionSpec=1.0,application/json` : S && (C += `deferSpec=20220824,application/json`), _.headers.accept = C;
                 }
                 if (_.method === `GET`) {
                     var w = m2(t, v), T = w.newURI, E = w.parseError;
@@ -46892,7 +46892,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                     return w0(e);
                 }
                 return new V1(function(n) {
-                    var i = r || zU(function() {
+                    var i = r || BU(function() {
                         return fetch;
                     }) || g2, a = n.next.bind(n);
                     return i(t, _).then(function(t) {
@@ -46912,8 +46912,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             });
         };
     })), y2, zke = o((()=>{
-        DU(), U0(), v2(), y2 = function(e) {
-            GH(t, e);
+        OU(), U0(), v2(), y2 = function(e) {
+            KH(t, e);
             function t(t) {
                 t === void 0 && (t = {});
                 var n = e.call(this, _2(t).request) || this;
@@ -47036,10 +47036,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         ({ toString: w2, hasOwnProperty: T2 } = Object.prototype), E2 = Function.prototype.toString, D2 = new Map, O2 = `{ [native code] }`;
     }));
     function Gke(e, t, n, r) {
-        var i = t.data, a = KH(t, [
+        var i = t.data, a = qH(t, [
             `data`
         ]), o = n.data;
-        return b2(a, KH(n, [
+        return b2(a, qH(n, [
             `data`
         ])) && A2(u$(e).selectionSet, i, o, {
             fragmentMap: pQ(s$(e)),
@@ -47076,13 +47076,13 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         return e.name.value === `nonreactive`;
     }
     var qke = o((()=>{
-        DU(), k2(), C0();
+        OU(), k2(), C0();
     }));
     function M2() {
-        I2 || (I2 = !0, globalThis.__DEV__ !== !1 && $U.warn(64));
+        I2 || (I2 = !0, globalThis.__DEV__ !== !1 && eW.warn(64));
     }
     var N2, P2, F2, I2, L2 = o((()=>{
-        Q$(), rW(), C0(), N2 = tQ ? WeakMap : Map, P2 = nQ ? WeakSet : Set, F2 = new b$, I2 = !1;
+        Q$(), iW(), C0(), N2 = tQ ? WeakMap : Map, P2 = nQ ? WeakSet : Set, F2 = new b$, I2 = !1;
     }));
     function R2(e, t, n) {
         return F2.withValue(!0, function() {
@@ -47122,7 +47122,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             }
             if (h.kind === Z.INLINE_FRAGMENT && (!h.typeCondition || n.cache.fragmentMatches(h, e.__typename)) && (g = z2(e, h.selectionSet, n, r, i)), h.kind === Z.FRAGMENT_SPREAD) {
                 var y = h.name.value, b = n.fragmentMap[y] || (n.fragmentMap[y] = n.cache.lookupFragment(y));
-                $U(b, 59, y);
+                eW(b, 59, y);
                 var x = WZ(h);
                 x !== `mask` && (g = z2(e, b.selectionSet, n, x === `migrate`, i));
             }
@@ -47132,7 +47132,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }
     function Yke(e, t, n, r, i) {
         var a = function() {
-            return F2.getValue() ? t : (globalThis.__DEV__ !== !1 && $U.warn(60, r ? `${i} '${r}'` : `anonymous ${i}`, `${n}.${e}`.replace(/^\./, ``)), a = function() {
+            return F2.getValue() ? t : (globalThis.__DEV__ !== !1 && eW.warn(60, r ? `${i} '${r}'` : `anonymous ${i}`, `${n}.${e}`.replace(/^\./, ``)), a = function() {
                 return t;
             }, t);
         };
@@ -47150,18 +47150,18 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         };
     }
     var B2 = o((()=>{
-        BZ(), C0(), L2(), rW();
+        BZ(), C0(), L2(), iW();
     }));
     function V2(e, t, n, r) {
         if (!n.fragmentMatches) return globalThis.__DEV__ !== !1 && M2(), e;
         var i = t.definitions.filter(function(e) {
             return e.kind === Z.FRAGMENT_DEFINITION;
         });
-        r === void 0 && ($U(i.length === 1, 61, i.length), r = i[0].name.value);
+        r === void 0 && (eW(i.length === 1, 61, i.length), r = i[0].name.value);
         var a = i.find(function(e) {
             return e.name.value === r;
         });
-        return $U(!!a, 62, r), e == null || b2(e, {}) ? e : R2(e, a.selectionSet, {
+        return eW(!!a, 62, r), e == null || b2(e, {}) ? e : R2(e, a.selectionSet, {
             operationType: `fragment`,
             operationName: a.name.value,
             fragmentMap: pQ(s$(t)),
@@ -47171,12 +47171,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         });
     }
     var Xke = o((()=>{
-        BZ(), L2(), rW(), k2(), B2(), C0();
+        BZ(), L2(), iW(), k2(), B2(), C0();
     }));
     function Zke(e, t, n) {
         if (!n.fragmentMatches) return globalThis.__DEV__ !== !1 && M2(), e;
         var r = a$(t);
-        return $U(r, 63), e == null ? e : R2(e, r.selectionSet, {
+        return eW(r, 63), e == null ? e : R2(e, r.selectionSet, {
             operationType: r.operation,
             operationName: r.name?.value,
             fragmentMap: pQ(s$(t)),
@@ -47186,7 +47186,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         });
     }
     var Qke = o((()=>{
-        rW(), C0(), B2(), L2();
+        iW(), C0(), B2(), L2();
     })), $ke = c({
         disableWarningsSlot: ()=>F2,
         maskFragment: ()=>V2,
@@ -47194,7 +47194,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     }), H2 = o((()=>{
         L2(), Xke(), Qke();
     })), U2, W2 = o((()=>{
-        DU(), Q$(), C0(), wQ(), HQ(), qke(), rW(), H2(), U2 = function() {
+        OU(), Q$(), C0(), wQ(), HQ(), qke(), iW(), H2(), U2 = function() {
             function e() {
                 this.assumeImmutableResults = !1, this.getFragmentDoc = X$(fQ, {
                     max: AQ[`cache.fragmentQueryDocuments`] || 1e3,
@@ -47227,7 +47227,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                     }));
                 });
             }, e.prototype.watchFragment = function(e) {
-                var t = this, n = e.fragment, r = e.fragmentName, i = e.from, a = e.optimistic, o = a === void 0 ? !0 : a, s = KH(e, [
+                var t = this, n = e.fragment, r = e.fragmentName, i = e.from, a = e.optimistic, o = a === void 0 ? !0 : a, s = qH(e, [
                     `fragment`,
                     `fragmentName`,
                     `from`,
@@ -47235,7 +47235,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 ]), c = this.getFragmentDoc(n, r), l = i === void 0 || typeof i == `string` ? i : this.identify(i), u = !!e[Symbol.for(`apollo.dataMasking`)];
                 if (globalThis.__DEV__ !== !1) {
                     var d = r || l$(n).name.value;
-                    l || globalThis.__DEV__ !== !1 && $U.warn(1, d);
+                    l || globalThis.__DEV__ !== !1 && eW.warn(1, d);
                 }
                 var f = Y(Y({}, s), {
                     returnPartialData: !0,
@@ -47276,7 +47276,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                     }));
                 });
             }, e.prototype.writeQuery = function(e) {
-                var t = e.id, n = e.data, r = KH(e, [
+                var t = e.id, n = e.data, r = qH(e, [
                     `id`,
                     `data`
                 ]);
@@ -47285,7 +47285,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                     result: n
                 }));
             }, e.prototype.writeFragment = function(e) {
-                var t = e.id, n = e.data, r = e.fragment, i = e.fragmentName, a = KH(e, [
+                var t = e.id, n = e.data, r = e.fragment, i = e.fragmentName, a = qH(e, [
                     `id`,
                     `data`,
                     `fragment`,
@@ -47323,8 +47323,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     })), G2, eAe = o((()=>{
         (function(e) {})(G2 ||= {});
     })), K2, q2 = o((()=>{
-        DU(), K2 = function(e) {
-            GH(t, e);
+        OU(), K2 = function(e) {
+            KH(t, e);
             function t(n, r, i, a) {
                 var o, s = e.call(this, n) || this;
                 if (s.message = n, s.path = r, s.query = i, s.variables = a, Array.isArray(s.path)) {
@@ -47410,7 +47410,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         return !!(e instanceof d4 && e.group.caching);
     }
     var c4, l4, u4, d4, f4, p4, m4, h4 = o((()=>{
-        DU(), rW(), Q$(), k2(), $Z(), C0(), i4(), c4 = Object.create(null), l4 = function() {
+        OU(), iW(), Q$(), k2(), $Z(), C0(), i4(), c4 = Object.create(null), l4 = function() {
             return c4;
         }, u4 = Object.create(null), d4 = function() {
             function e(e, t) {
@@ -47449,7 +47449,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 qQ(e) && (e = e.__ref), qQ(t) && (t = t.__ref);
                 var i = typeof e == `string` ? this.lookup(r = e) : e, a = typeof t == `string` ? this.lookup(r = t) : t;
                 if (a) {
-                    $U(typeof r == `string`, 2);
+                    eW(typeof r == `string`, 2);
                     var o = new v1(iAe).merge(i, a);
                     if (this.data[r] = o, o !== i && (delete this.refs[r], this.group.caching)) {
                         var s = Object.create(null);
@@ -47495,7 +47495,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                 if (f === u4) n.group.dirty(e, c);
                                 else if (f === c4 && (f = void 0), f !== u && (i[c] = f, a = !0, u = f, globalThis.__DEV__ !== !1)) {
                                     var p = function(e) {
-                                        if (n.lookup(e.__ref) === void 0) return globalThis.__DEV__ !== !1 && $U.warn(3, e), !0;
+                                        if (n.lookup(e.__ref) === void 0) return globalThis.__DEV__ !== !1 && eW.warn(3, e), !0;
                                     };
                                     if (qQ(f)) p(f);
                                     else if (Array.isArray(f)) for(var m = !1, h = void 0, g = 0, _ = f; g < _.length; g++){
@@ -47504,7 +47504,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                             if (m = !0, p(v)) break;
                                         } else typeof v == `object` && v && n.policies.identify(v)[0] && (h = v);
                                         if (m && h !== void 0) {
-                                            globalThis.__DEV__ !== !1 && $U.warn(4, h);
+                                            globalThis.__DEV__ !== !1 && eW.warn(4, h);
                                             break;
                                         }
                                     }
@@ -47543,7 +47543,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 if (Object.keys(this.data).forEach(function(n) {
                     e && t4.call(e, n) || t.delete(n);
                 }), e) {
-                    var n = e.__META, r = KH(e, [
+                    var n = e.__META, r = qH(e, [
                         `__META`
                     ]);
                     Object.keys(r).forEach(function(e) {
@@ -47608,7 +47608,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             }, e;
         }(), (function(e) {
             e.Root = function(e) {
-                GH(t, e);
+                KH(t, e);
                 function t(t) {
                     var n = t.policies, r = t.resultCaching, i = r === void 0 ? !0 : r, a = t.seed, o = e.call(this, n, new f4(i)) || this;
                     return o.stump = new m4(o), o.storageTrie = new QZ(tQ), a && o.replace(a), o;
@@ -47622,7 +47622,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 }, t;
             }(e);
         })(d4 ||= {}), p4 = function(e) {
-            GH(t, e);
+            KH(t, e);
             function t(t, n, r, i) {
                 var a = e.call(this, n.policies, i) || this;
                 return a.id = t, a.parent = n, a.replay = r, a.group = i, r(a), a;
@@ -47649,7 +47649,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 return e.getStorage.apply(e, arguments);
             }, t;
         }(d4), m4 = function(e) {
-            GH(t, e);
+            KH(t, e);
             function t(t) {
                 return e.call(this, `EntityStore.Stump`, t, function() {}, new f4(t.group.caching, t.group)) || this;
             }
@@ -47666,7 +47666,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }, e) : e;
     }
     var g4, oAe = o((()=>{
-        DU(), $Z(), C0(), i4(), g4 = function() {
+        OU(), $Z(), C0(), i4(), g4 = function() {
             function e() {
                 this.known = new (nQ ? WeakSet : Set), this.pool = new QZ(tQ), this.passes = new WeakMap, this.keysByJSON = new Map, this.empty = this.admit({});
             }
@@ -47748,12 +47748,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 n
             ]);
             r.forEach(function(n) {
-                lQ(n) && ($U(!qQ(n), 11, nAe(e, n), t.name.value), Object.values(n).forEach(r.add, r));
+                lQ(n) && (eW(!qQ(n), 11, nAe(e, n), t.name.value), Object.values(n).forEach(r.add, r));
             });
         }
     }
     var v4, lAe = o((()=>{
-        DU(), rW(), BZ(), Q$(), C0(), h4(), i4(), q2(), oAe(), v4 = function() {
+        OU(), iW(), BZ(), Q$(), C0(), h4(), i4(), q2(), oAe(), v4 = function() {
             function e(e) {
                 var t = this;
                 this.knownResults = new (tQ ? WeakMap : Map), this.config = u0(e, {
@@ -47851,7 +47851,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                         }), g)) : a.canonizeResults && (h = t.canon.pass(h)), h !== void 0 && l.push((m = {}, m[g] = h, m));
                     } else {
                         var _ = mQ(e, a.lookupFragment);
-                        if (!_ && e.kind === Z.FRAGMENT_SPREAD) throw YU(10, e.name.value);
+                        if (!_ && e.kind === Z.FRAGMENT_SPREAD) throw XU(10, e.name.value);
                         _ && s.fragmentMatches(_, c) && _.selectionSet.selections.forEach(p.add, p);
                     }
                 });
@@ -47949,7 +47949,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 return n.readField(t, e);
             }, i = n.keyObject = O4(e, function(e) {
                 var i = j4(n.storeObject, e, r);
-                return i === void 0 && t !== n.storeObject && t4.call(t, e[0]) && (i = j4(t, e, A4)), $U(i !== void 0, 5, e.join(`.`), t), i;
+                return i === void 0 && t !== n.storeObject && t4.call(t, e[0]) && (i = j4(t, e, A4)), eW(i !== void 0, 5, e.join(`.`), t), i;
             });
             return `${n.typename}:${JSON.stringify(i)}`;
         };
@@ -48020,7 +48020,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }) : e;
     }
     var N4, fAe = o((()=>{
-        rW(), C0(), i4(), N4 = Object.create(null);
+        iW(), C0(), i4(), N4 = Object.create(null);
     }));
     function P4(e) {
         return e.args === void 0 ? e.field ? XQ(e.field, e.variables) : null : e.args;
@@ -48049,11 +48049,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         return typeof r == `string` ? o = {
             fieldName: r,
             from: a > 1 ? i : t
-        } : (o = Y({}, r), t4.call(o, `from`) || (o.from = t)), globalThis.__DEV__ !== !1 && o.from === void 0 && globalThis.__DEV__ !== !1 && $U.warn(8, KU(Array.from(e))), o.variables === void 0 && (o.variables = n), o;
+        } : (o = Y({}, r), t4.call(o, `from`) || (o.from = t)), globalThis.__DEV__ !== !1 && o.from === void 0 && globalThis.__DEV__ !== !1 && eW.warn(8, qU(Array.from(e))), o.variables === void 0 && (o.variables = n), o;
     }
     function L4(e) {
         return function(t, n) {
-            if (r1(t) || r1(n)) throw YU(9);
+            if (r1(t) || r1(n)) throw XU(9);
             if (lQ(t) && lQ(n)) {
                 var r = e.getFieldValue(t, `__typename`), i = e.getFieldValue(n, `__typename`);
                 if (r && i && r !== i) return n;
@@ -48065,7 +48065,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         };
     }
     var R4, z4, B4, V4, H4, U4 = o((()=>{
-        DU(), rW(), C0(), i4(), w4(), fAe(), H2(), R4 = function() {}, z4 = function(e, t) {
+        OU(), iW(), C0(), i4(), w4(), fAe(), H2(), R4 = function() {}, z4 = function(e, t) {
             return t.fieldName;
         }, B4 = function(e, t, n) {
             var r = n.mergeObjects;
@@ -48112,7 +48112,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             }, e.prototype.addTypePolicies = function(e) {
                 var t = this;
                 Object.keys(e).forEach(function(n) {
-                    var r = e[n], i = r.queryType, a = r.mutationType, o = r.subscriptionType, s = KH(r, [
+                    var r = e[n], i = r.queryType, a = r.mutationType, o = r.subscriptionType, s = qH(r, [
                         `queryType`,
                         `mutationType`,
                         `subscriptionType`
@@ -48142,7 +48142,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             }, e.prototype.setRootTypename = function(e, t) {
                 t === void 0 && (t = e);
                 var n = `ROOT_` + e.toUpperCase(), r = this.rootTypenamesById[n];
-                t !== r && ($U(!r || r === e, 6, e), r && delete this.rootIdsByTypename[r], this.rootIdsByTypename[t] = n, this.rootTypenamesById[n] = t);
+                t !== r && (eW(!r || r === e, 6, e), r && delete this.rootIdsByTypename[r], this.rootIdsByTypename[t] = n, this.rootTypenamesById[n] = t);
             }, e.prototype.addPossibleTypes = function(e) {
                 var t = this;
                 this.usingPossibleTypes = !0, Object.keys(e).forEach(function(n) {
@@ -48166,7 +48166,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                             });
                         }
                     })), r && r.size && r.forEach(function(e) {
-                        var r = t.getTypePolicy(e), i = r.fields, a = KH(r, [
+                        var r = t.getTypePolicy(e), i = r.fields, a = qH(r, [
                             `fields`
                         ]);
                         Object.assign(n, a), Object.assign(n.fields, i);
@@ -48194,7 +48194,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                     t && t.size && s.indexOf(t) < 0 && s.push(t);
                 }, l = !!(n && this.fuzzySubtypes.size), u = !1, d = 0; d < s.length; ++d){
                     var f = s[d];
-                    if (f.has(a)) return o.has(a) || (u && globalThis.__DEV__ !== !1 && $U.warn(7, t, a), o.add(a)), !0;
+                    if (f.has(a)) return o.has(a) || (u && globalThis.__DEV__ !== !1 && eW.warn(7, t, a), o.add(a)), !0;
                     f.forEach(c), l && d === s.length - 1 && Q2(e.selectionSet, n, r) && (l = !1, u = !0, this.fuzzySubtypes.forEach(function(e, n) {
                         var r = t.match(e);
                         r && r[0] === t && c(n);
@@ -48311,13 +48311,13 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                     ].forEach(function(e) {
                         var t = r.getFieldValue(e, `__typename`);
                         typeof t == `string` && !u.includes(t) && u.push(t);
-                    }), globalThis.__DEV__ !== !1 && $U.warn(15, c, s, u.length ? `either ensure all objects of type ` + u.join(` and `) + ` have an ID or a custom merge function, or ` : ``, l, Y({}, a), Y({}, o));
+                    }), globalThis.__DEV__ !== !1 && eW.warn(15, c, s, u.length ? `either ensure all objects of type ` + u.join(` and `) + ` have an ID or a custom merge function, or ` : ``, l, Y({}, a), Y({}, o));
                 }
             }
         }
     }
     var Y4, X4, Z4, mAe = o((()=>{
-        DU(), rW(), k2(), $Z(), BZ(), C0(), i4(), U4(), Y4 = function() {
+        OU(), iW(), k2(), $Z(), BZ(), C0(), i4(), U4(), Y4 = function() {
             function e(e, t, n) {
                 this.cache = e, this.reader = t, this.fragments = n;
             }
@@ -48347,7 +48347,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                     },
                     context: u
                 });
-                if (!qQ(d)) throw YU(12, i);
+                if (!qQ(d)) throw XU(12, i);
                 return u.incomingById.forEach(function(t, r) {
                     var i = t.storeObject, a = t.mergeTree, o = t.fieldNodeSet, s = KQ(r);
                     if (a && a.map.size) {
@@ -48404,7 +48404,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                             typename: l,
                             merge: g
                         } : J4(o, f), c = e.merge(c, (i = {}, i[f] = m, i));
-                    } else globalThis.__DEV__ !== !1 && !e.clientOnly && !e.deferred && !d1.added(n) && !s.getReadFunction(l, n.name.value) && globalThis.__DEV__ !== !1 && $U.error(13, ZQ(n), r);
+                    } else globalThis.__DEV__ !== !1 && !e.clientOnly && !e.deferred && !d1.added(n) && !s.getReadFunction(l, n.name.value) && globalThis.__DEV__ !== !1 && eW.error(13, ZQ(n), r);
                 });
                 try {
                     var f = s.identify(r, {
@@ -48461,7 +48461,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                                 u && (s &&= u.clientOnly, l &&= u.deferred), i.set(o, W4(n, s, l));
                             } else {
                                 var d = mQ(o, n.lookupFragment);
-                                if (!d && o.kind === Z.FRAGMENT_SPREAD) throw YU(14, o.name.value);
+                                if (!d && o.kind === Z.FRAGMENT_SPREAD) throw XU(14, o.name.value);
                                 d && a.fragmentMatches(d, r, t, n.variables) && e(d.selectionSet, W4(n, s, l));
                             }
                         }
@@ -48482,7 +48482,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                         if (a !== void 0) {
                             i && i.push(t);
                             var d = o.applyMerges(e, n, a, r, i);
-                            d !== a && (l ||= new Map, l.set(t, d)), i && $U(i.pop() === t);
+                            d !== a && (l ||= new Map, l.set(t, d)), i && eW(i.pop() === t);
                         }
                     }), l && (n = r1(c) ? c.slice(0) : Y({}, c), l.forEach(function(e, t) {
                         n[t] = e;
@@ -48492,8 +48492,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             }, e;
         }(), X4 = [], Z4 = new Set;
     })), Q4, hAe = o((()=>{
-        DU(), rW(), Q$(), k2(), W2(), q2(), C0(), lAe(), mAe(), h4(), w4(), U4(), i4(), HQ(), Q4 = function(e) {
-            GH(t, e);
+        OU(), iW(), Q$(), k2(), W2(), q2(), C0(), lAe(), mAe(), h4(), w4(), U4(), i4(), HQ(), Q4 = function(e) {
+            KH(t, e);
             function t(t) {
                 t === void 0 && (t = {});
                 var n = e.call(this) || this;
@@ -48594,7 +48594,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 try {
                     return this.policies.identify(e)[0];
                 } catch (e) {
-                    globalThis.__DEV__ !== !1 && $U.warn(e);
+                    globalThis.__DEV__ !== !1 && eW.warn(e);
                 }
             }, t.prototype.evict = function(e) {
                 if (!e.id) {
@@ -48671,12 +48671,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         var e = [
             ...arguments
         ];
-        return new ($4.bind.apply($4, sU([
+        return new ($4.bind.apply($4, cU([
             void 0
         ], e, !1)));
     }
     var $4, _Ae = o((()=>{
-        DU(), BZ(), Q$(), C0(), wQ(), $4 = function() {
+        OU(), BZ(), Q$(), C0(), wQ(), $4 = function() {
             function e() {
                 var e = [
                     ...arguments
@@ -48741,7 +48741,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 return e;
             }, e.prototype.findFragmentSpreads = function(e) {
                 var t = Object.create(null);
-                return WG(e, {
+                return GG(e, {
                     FragmentSpread: function(e) {
                         t[e.name.value] = e;
                     }
@@ -48806,7 +48806,7 @@ this in the docs: http://dev.apollodata.com/core/fragments.html#unique-names`) :
     function wAe(e) {
         var t = e3(e);
         if (!o3.has(t)) {
-            var n = mG(e, {
+            var n = hG(e, {
                 experimentalFragmentVariables: l3,
                 allowLegacyFragmentVariables: l3
             });
@@ -48840,7 +48840,7 @@ this in the docs: http://dev.apollodata.com/core/fragments.html#unique-names`) :
         l3 = !1;
     }
     var o3, s3, c3, l3, u3, d3, TAe = o((()=>{
-        DU(), BZ(), o3 = new Map, s3 = new Map, c3 = !0, l3 = !1, u3 = {
+        OU(), BZ(), o3 = new Map, s3 = new Map, c3 = !0, l3 = !1, u3 = {
             gql: t3,
             resetCaches: n3,
             disableFragmentWarnings: r3,
@@ -48853,7 +48853,7 @@ this in the docs: http://dev.apollodata.com/core/fragments.html#unique-names`) :
         Object.defineProperty(e, `__esModule`, {
             value: !0
         });
-        var t = (DU(), d(WH)), n = (rW(), d(tW)), r = (U0(), d(H0)), i = (Vke(), d(Bke)), a = (k2(), d(Hke)), o = (C0(), d(S0)), s = (yAe(), d(vAe)), c = (Y0(), d(G0)), l = (Q$(), d(J$)), u = ($Z(), d(qZ)), f = (H2(), d($ke)), p = (BZ(), d(zZ)), m = (j0(), d(A0)), h = (LU(), d(iwe)), g = (TAe(), d(bAe));
+        var t = (OU(), d(GH)), n = (iW(), d(nW)), r = (U0(), d(H0)), i = (Vke(), d(Bke)), a = (k2(), d(Hke)), o = (C0(), d(S0)), s = (yAe(), d(vAe)), c = (Y0(), d(G0)), l = (Q$(), d(J$)), u = ($Z(), d(qZ)), f = (H2(), d($ke)), p = (BZ(), d(zZ)), m = (j0(), d(A0)), h = (RU(), d(rwe)), g = (TAe(), d(bAe));
         function _(e) {
             return e && typeof e == `object` && `default` in e ? e.default : e;
         }
@@ -50592,7 +50592,7 @@ this in the docs: http://dev.apollodata.com/core/fragments.html#unique-names`) :
         Object.defineProperty(e, `__esModule`, {
             value: !0
         });
-        var t = (rW(), d(tW)), n = (C0(), d(S0)), r = (j0(), d(A0));
+        var t = (iW(), d(nW)), n = (C0(), d(S0)), r = (j0(), d(A0));
         function i(e, t) {
             return t ? t(e) : n.Observable.of();
         }
@@ -50664,7 +50664,7 @@ this in the docs: http://dev.apollodata.com/core/fragments.html#unique-names`) :
         Object.defineProperty(e, `__esModule`, {
             value: !0
         });
-        var t = (rW(), d(tW)), n = (DU(), d(WH)), r = (C0(), d(S0)), i = (j0(), d(A0)), a = (Y0(), d(G0)), o = (U0(), d(H0));
+        var t = (iW(), d(nW)), n = (OU(), d(GH)), r = (C0(), d(S0)), i = (j0(), d(A0)), a = (Y0(), d(G0)), o = (U0(), d(H0));
         function s(e) {
             var t, n = e[Symbol.asyncIterator]();
             return t = {
@@ -51091,7 +51091,7 @@ this in the docs: http://dev.apollodata.com/core/fragments.html#unique-names`) :
         Object.defineProperty(e, `__esModule`, {
             value: !0
         });
-        var t = (DU(), d(WH)), n = (U0(), d(H0)), r = (C0(), d(S0)), i = (Y0(), d(G0));
+        var t = (OU(), d(GH)), n = (U0(), d(H0)), r = (C0(), d(S0)), i = (Y0(), d(G0));
         function a(e) {
             var t = e || {}, n = t.initial, r = n === void 0 ? 300 : n, i = t.jitter, a = i === void 0 ? !0 : i, o = t.max, s = o === void 0 ? 1 / 0 : o, c = a ? r : r / 2;
             return function(e) {
@@ -51175,7 +51175,7 @@ this in the docs: http://dev.apollodata.com/core/fragments.html#unique-names`) :
         Object.defineProperty(e, `__esModule`, {
             value: !0
         });
-        var t = (DU(), d(WH)), n = (C0(), d(S0)), r = (U0(), d(H0)), i = (Y0(), d(G0));
+        var t = (OU(), d(GH)), n = (C0(), d(S0)), r = (U0(), d(H0)), i = (Y0(), d(G0));
         function a(e) {
             return n.isNonNullObject(e) && `code` in e && `reason` in e;
         }
@@ -51213,7 +51213,7 @@ this in the docs: http://dev.apollodata.com/core/fragments.html#unique-names`) :
         Object.defineProperty(e, `__esModule`, {
             value: !0
         });
-        var t = (rW(), d(tW)), n = (BZ(), d(zZ)), r = ($Z(), d(qZ)), i = (DU(), d(WH)), a = (wQ(), d(ODe)), o = (Q$(), d(J$)), s = (H1(), d(TOe));
+        var t = (iW(), d(nW)), n = (BZ(), d(zZ)), r = ($Z(), d(qZ)), i = (OU(), d(GH)), a = (wQ(), d(ODe)), o = (Q$(), d(J$)), s = (H1(), d(TOe));
         W1();
         var c = t.maybe(function() {
             return navigator.product;
@@ -56205,7 +56205,7 @@ ${h(e)}
             0 <= n && e.splice(n, 1);
         }
     }
-    DU();
+    OU();
     var t8 = function() {
         function e(e) {
             this.initialTeardown = e, this.closed = !1, this._parentage = null, this._finalizers = null;
@@ -56216,7 +56216,7 @@ ${h(e)}
                 this.closed = !0;
                 var a = this._parentage;
                 if (a) if (this._parentage = null, Array.isArray(a)) try {
-                    for(var o = rU(a), s = o.next(); !s.done; s = o.next())s.value.remove(this);
+                    for(var o = iU(a), s = o.next(); !s.done; s = o.next())s.value.remove(this);
                 } catch (t) {
                     e = {
                         error: t
@@ -56241,12 +56241,12 @@ ${h(e)}
                 if (l) {
                     this._finalizers = null;
                     try {
-                        for(var u = rU(l), d = u.next(); !d.done; d = u.next()){
+                        for(var u = iU(l), d = u.next(); !d.done; d = u.next()){
                             var f = d.value;
                             try {
                                 i8(f);
                             } catch (e) {
-                                i ??= [], e instanceof $6 ? i = sU(sU([], iU(i)), iU(e.errors)) : i.push(e);
+                                i ??= [], e instanceof $6 ? i = cU(cU([], aU(i)), aU(e.errors)) : i.push(e);
                             }
                         }
                     } catch (e) {
@@ -56305,19 +56305,19 @@ ${h(e)}
         useDeprecatedSynchronousErrorHandling: !1,
         useDeprecatedNextContext: !1
     };
-    DU();
+    OU();
     var o8 = {
         setTimeout: function(e, t) {
             var n = [
                 ...arguments
             ].slice(2), r = o8.delegate;
-            return r?.setTimeout ? r.setTimeout.apply(r, sU([
+            return r?.setTimeout ? r.setTimeout.apply(r, cU([
                 e,
                 t
-            ], iU(n))) : setTimeout.apply(void 0, sU([
+            ], aU(n))) : setTimeout.apply(void 0, cU([
                 e,
                 t
-            ], iU(n)));
+            ], aU(n)));
         },
         clearTimeout: function(e) {
             return (o8.delegate?.clearTimeout || clearTimeout)(e);
@@ -56364,9 +56364,9 @@ ${h(e)}
     function Vje(e) {
         a8.useDeprecatedSynchronousErrorHandling && u8 && (u8.errorThrown = !0, u8.error = e);
     }
-    DU();
+    OU();
     var f8 = function(e) {
-        GH(t, e);
+        KH(t, e);
         function t(t) {
             var n = e.call(this) || this;
             return n.isStopped = !1, t ? (n.destination = t, r8(t) && t.add(n)) : n.destination = Gje, n;
@@ -56428,7 +56428,7 @@ ${h(e)}
             }
         }, e;
     }(), m8 = function(e) {
-        GH(t, e);
+        KH(t, e);
         function t(t, n, r) {
             var i = e.call(this) || this, a;
             if (Z6(t) || !t) a = {
@@ -56563,12 +56563,12 @@ ${h(e)}
             throw TypeError(`Unable to lift unknown Observable type`);
         };
     }
-    DU();
+    OU();
     function S8(e, t, n, r, i) {
         return new Xje(e, t, n, r, i);
     }
     var Xje = function(e) {
-        GH(t, e);
+        KH(t, e);
         function t(t, n, r, i, a, o) {
             var s = e.call(this, t) || this;
             return s.onFinalize = a, s.shouldUnsubscribe = o, s._next = n ? function(e) {
@@ -56607,9 +56607,9 @@ ${h(e)}
             e(this), this.name = `ObjectUnsubscribedError`, this.message = `object unsubscribed`;
         };
     });
-    DU();
+    OU();
     var C8 = function(e) {
-        GH(t, e);
+        KH(t, e);
         function t() {
             var t = e.call(this) || this;
             return t.closed = !1, t.currentObservers = null, t.observers = [], t.isStopped = !1, t.hasError = !1, t.thrownError = null, t;
@@ -56626,7 +56626,7 @@ ${h(e)}
                 if (t._throwIfClosed(), !t.isStopped) {
                     t.currentObservers ||= Array.from(t.observers);
                     try {
-                        for(var i = rU(t.currentObservers), a = i.next(); !a.done; a = i.next())a.value.next(e);
+                        for(var i = iU(t.currentObservers), a = i.next(); !a.done; a = i.next())a.value.next(e);
                     } catch (e) {
                         n = {
                             error: e
@@ -56683,7 +56683,7 @@ ${h(e)}
             return new w8(e, t);
         }, t;
     }(y8), w8 = function(e) {
-        GH(t, e);
+        KH(t, e);
         function t(t, n) {
             var r = e.call(this) || this;
             return r.destination = t, r.source = n, r;
@@ -56706,9 +56706,9 @@ ${h(e)}
         },
         delegate: void 0
     };
-    DU();
+    OU();
     var Qje = function(e) {
-        GH(t, e);
+        KH(t, e);
         function t(t, n, r) {
             t === void 0 && (t = 1 / 0), n === void 0 && (n = 1 / 0), r === void 0 && (r = T8);
             var i = e.call(this) || this;
@@ -56765,11 +56765,11 @@ ${h(e)}
     function F8(e) {
         return Z6(e?.[P8]);
     }
-    DU();
+    OU();
     function I8(e) {
-        return lU(this, arguments, function() {
+        return uU(this, arguments, function() {
             var t, n, r, i;
-            return tU(this, function(a) {
+            return nU(this, function(a) {
                 switch(a.label){
                     case 0:
                         t = e.getReader(), a.label = 1;
@@ -56783,12 +56783,12 @@ ${h(e)}
                     case 2:
                         return [
                             4,
-                            cU(t.read())
+                            lU(t.read())
                         ];
                     case 3:
                         return n = a.sent(), r = n.value, i = n.done, i ? [
                             4,
-                            cU(void 0)
+                            lU(void 0)
                         ] : [
                             3,
                             5
@@ -56801,7 +56801,7 @@ ${h(e)}
                     case 5:
                         return [
                             4,
-                            cU(r)
+                            lU(r)
                         ];
                     case 6:
                         return [
@@ -56833,7 +56833,7 @@ ${h(e)}
     function L8(e) {
         return Z6(e?.getReader);
     }
-    DU();
+    OU();
     function R8(e) {
         if (e instanceof y8) return e;
         if (e != null) {
@@ -56872,7 +56872,7 @@ ${h(e)}
         return new y8(function(t) {
             var n, r;
             try {
-                for(var i = rU(e), a = i.next(); !a.done; a = i.next()){
+                for(var i = iU(e), a = i.next(); !a.done; a = i.next()){
                     var o = a.value;
                     if (t.next(o), t.closed) return;
                 }
@@ -56902,9 +56902,9 @@ ${h(e)}
     }
     function sMe(e, t) {
         var n, r, i, a;
-        return eU(this, void 0, void 0, function() {
+        return tU(this, void 0, void 0, function() {
             var o, s;
-            return tU(this, function(c) {
+            return nU(this, function(c) {
                 switch(c.label){
                     case 0:
                         c.trys.push([
@@ -56912,7 +56912,7 @@ ${h(e)}
                             5,
                             6,
                             11
-                        ]), n = dU(e), c.label = 1;
+                        ]), n = fU(e), c.label = 1;
                     case 1:
                         return [
                             4,
@@ -57103,10 +57103,10 @@ ${h(e)}
             }));
         });
     }
-    DU();
+    OU();
     var hMe = Array.isArray;
     function gMe(e, t) {
-        return hMe(t) ? e.apply(void 0, sU([], iU(t))) : e(t);
+        return hMe(t) ? e.apply(void 0, cU([], aU(t))) : e(t);
     }
     function _Me(e) {
         return K8(function(t) {
@@ -57237,7 +57237,7 @@ ${h(e)}
             }));
         });
     }
-    DU();
+    OU();
     function jMe() {
         var e = [
             ...arguments
@@ -57259,7 +57259,7 @@ ${h(e)}
                         var o = r.map(function(e) {
                             return e.shift();
                         });
-                        e.next(t ? t.apply(void 0, sU([], iU(o))) : o), r.some(function(e, t) {
+                        e.next(t ? t.apply(void 0, cU([], aU(o))) : o), r.some(function(e, t) {
                             return !e.length && i[t];
                         }) && e.complete();
                     }
@@ -57285,7 +57285,7 @@ ${h(e)}
             }));
         });
     }
-    DU();
+    OU();
     function MMe(e) {
         e === void 0 && (e = {});
         var t = e.connector, n = t === void 0 ? function() {
@@ -57333,7 +57333,7 @@ ${h(e)}
                     r.unsubscribe(), e();
                 }
             });
-            return R8(t.apply(void 0, sU([], iU(n)))).subscribe(r);
+            return R8(t.apply(void 0, cU([], aU(n)))).subscribe(r);
         }
     }
     function NMe(e, t, n) {
@@ -60530,13 +60530,13 @@ ${h(e)}
                     height: e.data.transactions[0].block.height
                 }))).pipe(Z8(f5(e)), Z8(({ transactions: e })=>W8(e))), QMe = (e)=>({ identifiers: t, contractActions: n })=>jMe(t, n).pipe(PMe((t)=>t[0] !== e), K8((e)=>c5(e[1].state))), p5 = (e)=>{
         let t = e.status, n = {
-            FAILURE: YCe,
-            PARTIAL_SUCCESS: XCe,
-            SUCCESS: ZCe
+            FAILURE: JCe,
+            PARTIAL_SUCCESS: YCe,
+            SUCCESS: XCe
         };
         if (t === `FAILURE` || t === `PARTIAL_SUCCESS` || t === `SUCCESS`) return n[t];
         throw Error(`Unexpected 'status' value ${t}`);
-    }, $Me = (e)=>e ? JCe : qCe, m5 = (e)=>{
+    }, $Me = (e)=>e ? qCe : KCe, m5 = (e)=>{
         if (e.status === `PARTIAL_SUCCESS` && e.segments) return new Map(e.segments.map((e)=>[
                 e.id,
                 $Me(e.success)
@@ -60613,17 +60613,17 @@ ${h(e)}
                     return `unshieldedBalances` in t ? t.unshieldedBalances : `deploy` in t ? t.deploy.unshieldedBalances : [];
                 }).map(_5)), nNe = (e, t, n = void 0)=>{
         let r = new URL(e);
-        if (r.protocol !== `http:` && r.protocol !== `https:`) throw new VH(r.protocol, [
+        if (r.protocol !== `http:` && r.protocol !== `https:`) throw new HH(r.protocol, [
             `http:`,
             `https:`
         ]);
         let i = new URL(t);
-        if (i.protocol !== `ws:` && i.protocol !== `wss:`) throw new VH(i.protocol, [
+        if (i.protocol !== `ws:` && i.protocol !== `wss:`) throw new HH(i.protocol, [
             `ws:`,
             `wss:`
         ]);
         let a = (0, MAe.createHttpLink)({
-            fetch: HH.default,
+            fetch: UH.default,
             uri: e
         }), o = (0, p3.from)([
             new NAe.RetryLink({
@@ -60927,7 +60927,7 @@ ${h(e)}
             }
             return e;
         }));
-    }))(), 1).default)(HH.default, {
+    }))(), 1).default)(UH.default, {
         retries: 3,
         retryDelay: (e)=>2 ** e * 1e3,
         retryOn: [
@@ -60939,7 +60939,7 @@ ${h(e)}
         return n.pathname = n.pathname.replace(/\/$/, ``) + t, n;
     }, T5 = async (e, t)=>{
         try {
-            return KCe(await e.get(t));
+            return GCe(await e.get(t));
         } catch  {
             return;
         }
@@ -60957,11 +60957,11 @@ ${h(e)}
         return new Uint8Array(await i.arrayBuffer());
     }, sNe = (e, t, n)=>{
         let r = w5(e, aNe), i = w5(e, oNe);
-        if (r.protocol !== `http:` && r.protocol !== `https:`) throw new VH(r.protocol, [
+        if (r.protocol !== `http:` && r.protocol !== `https:`) throw new HH(r.protocol, [
             `http:`,
             `https:`
         ]);
-        if (i.protocol !== `http:` && i.protocol !== `https:`) throw new VH(i.protocol, [
+        if (i.protocol !== `http:` && i.protocol !== `https:`) throw new HH(i.protocol, [
             `http:`,
             `https:`
         ]);
@@ -61119,40 +61119,40 @@ ${h(e)}
             zswapChainState: r
         }), void 0, d);
     }, V5 = async (e)=>NM.fromParts(Yl(), void 0, void 0, Hj.new(P6()).addMaintenanceUpdate(await e())), DNe = (e, t, n, r, i, a, o)=>{
-        let s = IH(t), c = RH(e, {
+        let s = LH(t), c = zH(e, {
             coinPublicKey: o,
             signingKey: a
         });
-        return V5(async ()=>(await c.runPromise(s.replaceContractMaintenanceAuthority(VCe(r), {
-                address: BH(n),
+        return V5(async ()=>(await c.runPromise(s.replaceContractMaintenanceAuthority(BCe(r), {
+                address: VH(n),
                 contractState: i
             }))).public.maintenanceUpdate);
     }, ONe = (e, t, n, r, i, a, o)=>{
-        let s = IH(t), c = RH(e, {
+        let s = LH(t), c = zH(e, {
             coinPublicKey: o,
             signingKey: a
         });
         return V5(async ()=>(await c.runPromise(s.removeContractOperation(yA(r), {
-                address: BH(n),
+                address: VH(n),
                 contractState: i
             }))).public.maintenanceUpdate);
     }, kNe = (e, t, n, r, i, a, o, s)=>{
-        let c = IH(t), l = RH(e, {
+        let c = LH(t), l = zH(e, {
             coinPublicKey: s,
             signingKey: o
         });
         return V5(async ()=>(await l.runPromise(c.addOrReplaceContractOperation(yA(r), vA(i), {
-                address: BH(n),
+                address: VH(n),
                 contractState: a
             }))).public.maintenanceUpdate);
     };
     async function ANe(e, t, n, r) {
-        let i = IH(n.compiledContract), a = RH(e, {
+        let i = LH(n.compiledContract), a = zH(e, {
             coinPublicKey: t,
             signingKey: n.signingKey
         }), o = `initialPrivateState` in n ? n.initialPrivateState : void 0, s = `args` in n ? n.args : [], c = await a.runPromiseExit(i.initialize(o, ...s));
         try {
-            let { public: { contractState: e }, private: { privateState: i, signingKey: a, zswapLocalState: o } } = zH(c), [s, l, u] = TNe(e, o, N5(t, r, n.additionalCoinEncPublicKeyMappings));
+            let { public: { contractState: e }, private: { privateState: i, signingKey: a, zswapLocalState: o } } = BH(c), [s, l, u] = TNe(e, o, N5(t, r, n.additionalCoinEncPublicKeyMappings));
             return {
                 public: {
                     contractAddress: s,
@@ -61326,17 +61326,17 @@ ${h(e)}
     };
     async function X5(e, t, n) {
         let { compiledContract: r, contractAddress: i, coinPublicKey: a, initialContractState: o, initialZswapChainState: s, ledgerParameters: c } = t;
-        V6(i), N6(IH(t.compiledContract).getProvableCircuitIds().find((e)=>e === t.circuitId), `Circuit '${t.circuitId}' is undefined`);
-        let l = IH(r), u = RH(e, {
+        V6(i), N6(LH(t.compiledContract).getProvableCircuitIds().find((e)=>e === t.circuitId), `Circuit '${t.circuitId}' is undefined`);
+        let l = LH(r), u = zH(e, {
             coinPublicKey: t.coinPublicKey
         }), d = `initialPrivateState` in t ? t.initialPrivateState : void 0, f = `args` in t ? t.args : [], p = await u.runPromiseExit(l.circuit(yA(t.circuitId), {
-            address: LH(i),
+            address: RH(i),
             contractState: o,
             privateState: d,
             ledgerParameters: c
         }, ...f));
         try {
-            let { public: { contractState: e, partitionedTranscript: r, publicTranscript: c }, private: { input: l, output: u, privateState: d, privateTranscriptOutputs: f, result: m, zswapLocalState: h } } = zH(p);
+            let { public: { contractState: e, partitionedTranscript: r, publicTranscript: c }, private: { input: l, output: u, privateState: d, privateTranscriptOutputs: f, result: m, zswapLocalState: h } } = BH(p);
             return {
                 public: {
                     nextContractState: e,
@@ -61400,7 +61400,7 @@ ${h(e)}
         }, r), a;
     };
     async function zNe(e, t, n) {
-        V6(t.contractAddress), N6(IH(t.compiledContract).getProvableCircuitIds().find((e)=>e === t.circuitId), `Circuit '${t.circuitId}' is undefined`);
+        V6(t.contractAddress), N6(LH(t.compiledContract).getProvableCircuitIds().find((e)=>e === t.circuitId), `Circuit '${t.circuitId}' is undefined`);
         let r = `privateStateProvider` in e, i = `privateStateId` in t;
         if (i && !r) throw new A5;
         if (i && r) {
@@ -61411,7 +61411,7 @@ ${h(e)}
         return X5(e.zkConfigProvider, Z5(t, z6(e.walletProvider.getCoinPublicKey(), Yl()), s, o, a), e.walletProvider.getEncryptionPublicKey());
     }
     async function Q5(e, t, n) {
-        V6(t.contractAddress), N6(IH(t.compiledContract).getProvableCircuitIds().find((e)=>e === t.circuitId), `Circuit '${t.circuitId}' is undefined`);
+        V6(t.contractAddress), N6(LH(t.compiledContract).getProvableCircuitIds().find((e)=>e === t.circuitId), `Circuit '${t.circuitId}' is undefined`);
         let r = `privateStateProvider` in e, i = `privateStateId` in t;
         if (i && !r) throw new A5;
         r && e.privateStateProvider.setContractAddress(t.contractAddress);
@@ -61467,7 +61467,7 @@ ${h(e)}
             ...s,
             privateStateId: r
         } : s;
-    }, $5 = (e, t, n, r)=>(V6(n), e.privateStateProvider.setContractAddress(n), IH(t).getProvableCircuitIds().reduce((i, a)=>({
+    }, $5 = (e, t, n, r)=>(V6(n), e.privateStateProvider.setContractAddress(n), LH(t).getProvableCircuitIds().reduce((i, a)=>({
                 ...i,
                 [a]: (...i)=>{
                     let o = i.length > 0 && UNe(i[0]) ? i[0] : void 0, s = o ? i.slice(1) : i, c = WNe(t, a, n, r, o?.getAdditionalMappings(), s);
@@ -61480,7 +61480,7 @@ ${h(e)}
             insertVerifierKey (i) {
                 return BNe(e, n, r, t, i);
             }
-        }), e7 = (e, t, n)=>(V6(n), IH(t).getProvableCircuitIds().reduce((r, i)=>({
+        }), e7 = (e, t, n)=>(V6(n), LH(t).getProvableCircuitIds().reduce((r, i)=>({
                 ...r,
                 [i]: GNe(e, i, t, n)
             }), {})), t7 = (e, t, n)=>(V6(n), {
@@ -61532,7 +61532,7 @@ ${h(e)}
         let i = await e.publicDataProvider.watchForDeployTxData(r), a = await e.publicDataProvider.queryDeployContractState(r);
         N6(a, `No contract deployed at contract address '${r}'`);
         let o = await e.publicDataProvider.queryContractState(r);
-        return N6(o, `No contract deployed at contract address '${r}'`), ZNe(await e.zkConfigProvider.getVerifierKeys(IH(n).getProvableCircuitIds()), o), {
+        return N6(o, `No contract deployed at contract address '${r}'`), ZNe(await e.zkConfigProvider.getVerifierKeys(LH(n).getProvableCircuitIds()), o), {
             deployTxData: {
                 private: {
                     signingKey: await JNe(e.privateStateProvider, t),
@@ -61846,7 +61846,7 @@ ${h(e)}
     };
     async function l7(e, t) {
         Jl(t);
-        let n = await e.getConfiguration(), r = await e.getShieldedAddresses(), i = new rwe(window.location.origin, fetch.bind(window));
+        let n = await e.getConfiguration(), r = await e.getShieldedAddresses(), i = new nwe(window.location.origin, fetch.bind(window));
         return {
             privateStateProvider: nPe(),
             publicDataProvider: rNe(n.indexerUri, n.indexerWsUri),
@@ -68211,7 +68211,7 @@ ${h(e)}
                 })
             ]
         });
-    }, hPe = 1234567890123456789012345678901234567890123456789012345678901234n, k7 = ({ title: e, onClose: t, children: n })=>(0, b.jsxs)(`div`, {
+    }, hPe = ({ title: e, onClose: t, children: n })=>(0, b.jsxs)(`div`, {
             className: `fixed inset-0 z-50 flex items-center justify-center p-4`,
             children: [
                 (0, b.jsx)(`div`, {
@@ -68245,10 +68245,10 @@ ${h(e)}
                     ]
                 })
             ]
-        }), A7 = ({ connectedApi: e, triggerModal: t, onModalTriggered: n })=>{
-        let { t: r } = dl(), [i, a] = (0, F.useState)([]), [o, s] = (0, F.useState)(!0), [c, l] = (0, F.useState)(!1), [u, d] = (0, F.useState)(null), [f, p] = (0, F.useState)(``), [m, h] = (0, F.useState)(``), [g, _] = (0, F.useState)(``), [v, y] = (0, F.useState)(``), [x, S] = (0, F.useState)([]), [C, w] = (0, F.useState)(!1), [T, E] = (0, F.useState)(null), [D, O] = (0, F.useState)(``), [ee, te] = (0, F.useState)(``), [ne, k] = (0, F.useState)(``), [re, ie] = (0, F.useState)([]), [A, ae] = (0, F.useState)(null), [oe, se] = (0, F.useState)(!1), [ce, le] = (0, F.useState)(!1);
+        }), k7 = ({ connectedApi: e, triggerModal: t, onModalTriggered: n })=>{
+        let { t: r } = dl(), [i, a] = (0, F.useState)([]), [o, s] = (0, F.useState)(!0), [c, l] = (0, F.useState)([]), [u, d] = (0, F.useState)(!1), [f, p] = (0, F.useState)(null), [m, h] = (0, F.useState)(``), [g, _] = (0, F.useState)(``), [v, y] = (0, F.useState)(``), [x, S] = (0, F.useState)([]), [C, w] = (0, F.useState)(null), [T, E] = (0, F.useState)(!1);
         return (0, F.useEffect)(()=>{
-            t === `issuer` ? (d(null), se(!0), n?.()) : t === `proofReq` && (E(null), le(!0), n?.());
+            t === `proofReq` && (p(null), E(!0), n?.());
         }, [
             t
         ]), (0, F.useEffect)(()=>{
@@ -68257,11 +68257,11 @@ ${h(e)}
                 let n = ml();
                 if (!(!e || !n)) try {
                     let r = await l7(e, fl), i = new Uint8Array(32), o = await c7.join(r, n, i);
-                    ae(o), t = o.state$.subscribe((e)=>{
-                        a(e.issuers), S(e.vaccines), ie(e.vaccineProofReqs), s(!1);
+                    w(o), t = o.state$.subscribe((e)=>{
+                        a(e.issuers), l(e.vaccines), S(e.vaccineProofReqs), s(!1);
                     });
                 } catch (e) {
-                    console.error(`Failed to join contract:`, e), d(`Erro ao conectar ao contrato`);
+                    console.error(`Failed to join contract:`, e), p(`Erro ao conectar ao contrato`);
                 }
             }
             return n(), ()=>{
@@ -68296,127 +68296,6 @@ ${h(e)}
                             ]
                         }),
                         (0, b.jsxs)(`div`, {
-                            className: `bg-white p-8 rounded-xl shadow-sm border border-slate-100 mb-12 text-left`,
-                            children: [
-                                (0, b.jsx)(`h3`, {
-                                    className: `text-lg font-semibold text-on-surface mb-4`,
-                                    children: `Vaccination Certificate Issuers`
-                                }),
-                                o ? (0, b.jsxs)(`div`, {
-                                    className: `flex items-center gap-2 text-on-surface-variant text-sm py-2`,
-                                    children: [
-                                        (0, b.jsx)(`span`, {
-                                            className: `material-symbols-outlined animate-spin text-base`,
-                                            children: `sync`
-                                        }),
-                                        (0, b.jsx)(`span`, {
-                                            children: `Loading issuers...`
-                                        })
-                                    ]
-                                }) : i.length === 0 ? (0, b.jsxs)(`div`, {
-                                    className: `bg-surface-container-low p-8 rounded-xl border border-dashed border-slate-200 text-center`,
-                                    children: [
-                                        (0, b.jsx)(`span`, {
-                                            className: `material-symbols-outlined text-slate-300 text-5xl mb-3`,
-                                            children: `verified_user`
-                                        }),
-                                        (0, b.jsx)(`p`, {
-                                            className: `text-on-surface-variant italic text-sm`,
-                                            children: `No issuers registered yet.`
-                                        })
-                                    ]
-                                }) : (0, b.jsx)(`div`, {
-                                    className: `space-y-2`,
-                                    children: i.map((e)=>{
-                                        let t = I6(e.id);
-                                        return (0, b.jsxs)(`div`, {
-                                            className: `p-4 bg-surface-container-low rounded-lg space-y-2`,
-                                            children: [
-                                                (0, b.jsxs)(`div`, {
-                                                    className: `flex items-center gap-2`,
-                                                    children: [
-                                                        (0, b.jsx)(`span`, {
-                                                            className: `material-symbols-outlined text-secondary text-base`,
-                                                            children: `verified_user`
-                                                        }),
-                                                        (0, b.jsx)(`p`, {
-                                                            className: `font-semibold text-sm text-on-surface`,
-                                                            children: e.name
-                                                        })
-                                                    ]
-                                                }),
-                                                (0, b.jsxs)(`div`, {
-                                                    className: `grid grid-cols-1 gap-1 pl-1`,
-                                                    children: [
-                                                        (0, b.jsxs)(`div`, {
-                                                            children: [
-                                                                (0, b.jsxs)(`span`, {
-                                                                    className: `text-xs font-semibold text-on-surface-variant uppercase tracking-wide`,
-                                                                    children: [
-                                                                        `Issuer Shielded Id:`,
-                                                                        ` `
-                                                                    ]
-                                                                }),
-                                                                (0, b.jsx)(`span`, {
-                                                                    className: `text-xs text-on-surface-variant font-mono break-all`,
-                                                                    children: t
-                                                                })
-                                                            ]
-                                                        }),
-                                                        (0, b.jsxs)(`div`, {
-                                                            children: [
-                                                                (0, b.jsxs)(`span`, {
-                                                                    className: `text-xs font-semibold text-on-surface-variant uppercase tracking-wide`,
-                                                                    children: [
-                                                                        `Signature Public Key:`,
-                                                                        ` `
-                                                                    ]
-                                                                }),
-                                                                (0, b.jsx)(`span`, {
-                                                                    className: `text-xs text-on-surface-variant font-mono break-all`,
-                                                                    children: e.verifyingKeyHex
-                                                                })
-                                                            ]
-                                                        }),
-                                                        (0, b.jsxs)(`div`, {
-                                                            children: [
-                                                                (0, b.jsxs)(`span`, {
-                                                                    className: `text-xs font-semibold text-on-surface-variant uppercase tracking-wide`,
-                                                                    children: [
-                                                                        `URI:`,
-                                                                        ` `
-                                                                    ]
-                                                                }),
-                                                                (0, b.jsx)(`span`, {
-                                                                    className: `text-xs text-on-surface-variant break-all`,
-                                                                    children: e.uri
-                                                                })
-                                                            ]
-                                                        }),
-                                                        (0, b.jsxs)(`div`, {
-                                                            children: [
-                                                                (0, b.jsxs)(`span`, {
-                                                                    className: `text-xs font-semibold text-on-surface-variant uppercase tracking-wide`,
-                                                                    children: [
-                                                                        `Verification Endpoint:`,
-                                                                        ` `
-                                                                    ]
-                                                                }),
-                                                                (0, b.jsx)(`span`, {
-                                                                    className: `text-xs text-on-surface-variant break-all`,
-                                                                    children: e.verificationEndpoint
-                                                                })
-                                                            ]
-                                                        })
-                                                    ]
-                                                })
-                                            ]
-                                        }, t);
-                                    })
-                                })
-                            ]
-                        }),
-                        (0, b.jsxs)(`div`, {
                             className: `space-y-4 text-left mb-12`,
                             children: [
                                 (0, b.jsx)(`h3`, {
@@ -68434,7 +68313,7 @@ ${h(e)}
                                             children: `Loading proof requests...`
                                         })
                                     ]
-                                }) : re.length === 0 ? (0, b.jsxs)(`div`, {
+                                }) : x.length === 0 ? (0, b.jsxs)(`div`, {
                                     className: `bg-surface-container-low p-12 rounded-xl border border-dashed border-slate-200 text-center`,
                                     children: [
                                         (0, b.jsx)(`span`, {
@@ -68448,7 +68327,7 @@ ${h(e)}
                                     ]
                                 }) : (0, b.jsx)(`div`, {
                                     className: `space-y-4`,
-                                    children: re.map((e)=>{
+                                    children: x.map((e)=>{
                                         let t = I6(e.id), n = new TextDecoder().decode(e.vaccine).replace(/\0/g, ``).trim(), r = new TextDecoder().decode(e.personalId).replace(/\0/g, ``).trim(), a = i[0], o = a ? `${a.name} (${I6(a.id).slice(0, 16)}…)` : `No issuer registered`;
                                         return (0, b.jsxs)(`div`, {
                                             className: `bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex flex-row items-center gap-6`,
@@ -68537,155 +68416,9 @@ ${h(e)}
                         })
                     ]
                 }),
-                oe && (0, b.jsxs)(k7, {
-                    title: `Add Certificate Issuer`,
-                    onClose: ()=>se(!1),
-                    children: [
-                        (0, b.jsxs)(`div`, {
-                            className: `flex gap-3 bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6`,
-                            children: [
-                                (0, b.jsx)(`span`, {
-                                    className: `material-symbols-outlined text-blue-500 text-xl flex-shrink-0`,
-                                    children: `info`
-                                }),
-                                (0, b.jsx)(`p`, {
-                                    className: `text-blue-800 text-sm leading-relaxed`,
-                                    children: `To register a certificate issuer, contact the vaccine certificate provider/issuer to obtain their details (name, service URI, verification endpoint, and public key).`
-                                })
-                            ]
-                        }),
-                        (0, b.jsxs)(`div`, {
-                            className: `grid grid-cols-1 gap-4 mb-6`,
-                            children: [
-                                (0, b.jsxs)(`div`, {
-                                    children: [
-                                        (0, b.jsx)(`label`, {
-                                            className: `block text-xs font-semibold text-on-surface-variant uppercase tracking-wide mb-1`,
-                                            children: `Issuer Name`
-                                        }),
-                                        (0, b.jsx)(`input`, {
-                                            type: `text`,
-                                            value: f,
-                                            onChange: (e)=>p(e.target.value),
-                                            placeholder: `e.g. National Health Authority`,
-                                            className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-secondary`
-                                        })
-                                    ]
-                                }),
-                                (0, b.jsxs)(`div`, {
-                                    children: [
-                                        (0, b.jsx)(`label`, {
-                                            className: `block text-xs font-semibold text-on-surface-variant uppercase tracking-wide mb-1`,
-                                            children: `Issuer URI`
-                                        }),
-                                        (0, b.jsx)(`input`, {
-                                            type: `text`,
-                                            value: m,
-                                            onChange: (e)=>h(e.target.value),
-                                            placeholder: `e.g. https://issuer.example.com`,
-                                            className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-secondary`
-                                        })
-                                    ]
-                                }),
-                                (0, b.jsxs)(`div`, {
-                                    children: [
-                                        (0, b.jsx)(`label`, {
-                                            className: `block text-xs font-semibold text-on-surface-variant uppercase tracking-wide mb-1`,
-                                            children: `Verification Endpoint`
-                                        }),
-                                        (0, b.jsx)(`p`, {
-                                            className: `text-xs text-on-surface-variant mb-1`,
-                                            children: `URL used by administrative agents or personnel to verify the authenticity of a vaccination certificate.`
-                                        }),
-                                        (0, b.jsx)(`input`, {
-                                            type: `text`,
-                                            value: g,
-                                            onChange: (e)=>_(e.target.value),
-                                            placeholder: `e.g. https://issuer.example.com/verify`,
-                                            className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-secondary`
-                                        })
-                                    ]
-                                }),
-                                (0, b.jsxs)(`div`, {
-                                    children: [
-                                        (0, b.jsx)(`label`, {
-                                            className: `block text-xs font-semibold text-on-surface-variant uppercase tracking-wide mb-1`,
-                                            children: `Public Key`
-                                        }),
-                                        (0, b.jsx)(`input`, {
-                                            type: `text`,
-                                            value: v,
-                                            onChange: (e)=>y(e.target.value),
-                                            placeholder: `Public key provided by the issuer`,
-                                            className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-secondary`
-                                        })
-                                    ]
-                                })
-                            ]
-                        }),
-                        u && (0, b.jsx)(`p`, {
-                            className: `text-error text-sm mb-4 px-1`,
-                            children: u
-                        }),
-                        (0, b.jsxs)(`div`, {
-                            className: `flex gap-3 justify-end`,
-                            children: [
-                                (0, b.jsx)(`button`, {
-                                    className: `px-5 py-2.5 rounded-lg border border-slate-200 text-on-surface-variant text-sm font-semibold hover:bg-slate-50 transition-colors`,
-                                    onClick: ()=>se(!1),
-                                    disabled: c,
-                                    children: `Cancel`
-                                }),
-                                (0, b.jsx)(`button`, {
-                                    className: `px-6 py-2.5 bg-secondary font-bold rounded-lg shadow active:scale-95 transition-all duration-200 disabled:opacity-50 flex items-center gap-2 text-sm`,
-                                    onClick: async ()=>{
-                                        if (A) {
-                                            l(!0), d(null);
-                                            try {
-                                                let e = tPe(hPe);
-                                                await A.addCertificateIssuer({
-                                                    uri: m,
-                                                    name: f,
-                                                    key: e,
-                                                    verificationEndpoint: g
-                                                }), p(``), h(``), _(``), y(``), se(!1);
-                                            } catch (e) {
-                                                console.error(`Failed to add issuer:`, e), e instanceof Error ? d(`Erro ao adicionar emissor: ` + e.message) : d(`Erro ao adicionar emissor: ` + String(e));
-                                            } finally{
-                                                l(!1);
-                                            }
-                                        }
-                                    },
-                                    disabled: c || !f || !m || !g,
-                                    children: c ? (0, b.jsxs)(b.Fragment, {
-                                        children: [
-                                            (0, b.jsx)(`span`, {
-                                                className: `material-symbols-outlined animate-spin text-base`,
-                                                children: `sync`
-                                            }),
-                                            (0, b.jsx)(`span`, {
-                                                children: `Adding Issuer...`
-                                            })
-                                        ]
-                                    }) : (0, b.jsxs)(b.Fragment, {
-                                        children: [
-                                            (0, b.jsx)(`span`, {
-                                                className: `material-symbols-outlined text-base`,
-                                                children: `verified_user`
-                                            }),
-                                            (0, b.jsx)(`span`, {
-                                                children: `Add Issuer`
-                                            })
-                                        ]
-                                    })
-                                })
-                            ]
-                        })
-                    ]
-                }),
-                ce && (0, b.jsxs)(k7, {
+                T && (0, b.jsxs)(hPe, {
                     title: `New Vaccine Proof Request`,
-                    onClose: ()=>le(!1),
+                    onClose: ()=>E(!1),
                     children: [
                         (0, b.jsxs)(`div`, {
                             className: `grid grid-cols-1 gap-4 mb-6`,
@@ -68708,16 +68441,16 @@ ${h(e)}
                                                 })
                                             ]
                                         }) : (0, b.jsxs)(`select`, {
-                                            value: D,
-                                            onChange: (e)=>O(e.target.value),
-                                            disabled: x.length === 0,
+                                            value: m,
+                                            onChange: (e)=>h(e.target.value),
+                                            disabled: c.length === 0,
                                             className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-tertiary bg-white disabled:opacity-50`,
                                             children: [
                                                 (0, b.jsx)(`option`, {
                                                     value: ``,
-                                                    children: x.length === 0 ? `No vaccines registered` : `Select a vaccine...`
+                                                    children: c.length === 0 ? `No vaccines registered` : `Select a vaccine...`
                                                 }),
-                                                x.map((e)=>(0, b.jsx)(`option`, {
+                                                c.map((e)=>(0, b.jsx)(`option`, {
                                                         value: e,
                                                         children: e
                                                     }, e))
@@ -68733,8 +68466,8 @@ ${h(e)}
                                         }),
                                         (0, b.jsx)(`input`, {
                                             type: `text`,
-                                            value: ee,
-                                            onChange: (e)=>te(e.target.value.slice(0, 20)),
+                                            value: g,
+                                            onChange: (e)=>_(e.target.value.slice(0, 20)),
                                             placeholder: `e.g. PASSPORT-001`,
                                             maxLength: 20,
                                             className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-tertiary`
@@ -68749,52 +68482,52 @@ ${h(e)}
                                         }),
                                         (0, b.jsx)(`input`, {
                                             type: `date`,
-                                            value: ne,
-                                            onChange: (e)=>k(e.target.value),
+                                            value: v,
+                                            onChange: (e)=>y(e.target.value),
                                             className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-tertiary`
                                         })
                                     ]
                                 })
                             ]
                         }),
-                        T && (0, b.jsx)(`p`, {
+                        f && (0, b.jsx)(`p`, {
                             className: `text-error text-sm mb-4 px-1`,
-                            children: T
+                            children: f
                         }),
                         (0, b.jsxs)(`div`, {
                             className: `flex gap-3 justify-end`,
                             children: [
                                 (0, b.jsx)(`button`, {
                                     className: `px-5 py-2.5 rounded-lg border border-slate-200 text-on-surface-variant text-sm font-semibold hover:bg-slate-50 transition-colors`,
-                                    onClick: ()=>le(!1),
-                                    disabled: C,
+                                    onClick: ()=>E(!1),
+                                    disabled: u,
                                     children: `Cancel`
                                 }),
                                 (0, b.jsx)(`button`, {
                                     className: `px-6 py-2.5 bg-tertiary font-bold rounded-lg shadow active:scale-95 transition-all duration-200 disabled:opacity-50 flex items-center gap-2 text-sm`,
                                     onClick: async ()=>{
-                                        if (A) {
-                                            w(!0), E(null);
+                                        if (C) {
+                                            d(!0), p(null);
                                             try {
                                                 let e = new TextEncoder, t = new Uint8Array(20);
-                                                t.set(e.encode(D).slice(0, 20));
+                                                t.set(e.encode(m).slice(0, 20));
                                                 let n = new Uint8Array(20);
-                                                n.set(e.encode(ee).slice(0, 20));
-                                                let [r, i, a] = ne.split(`-`).map(Number), o = BigInt(Date.UTC(r, i - 1, a)) / 1000n;
-                                                await A.requestVaccineProof({
+                                                n.set(e.encode(g).slice(0, 20));
+                                                let [r, i, a] = v.split(`-`).map(Number), o = BigInt(Date.UTC(r, i - 1, a)) / 1000n;
+                                                await C.requestVaccineProof({
                                                     vaccine: t,
                                                     personalId: n,
                                                     validUntil: o
-                                                }), O(``), te(``), k(``), le(!1);
+                                                }), h(``), _(``), y(``), E(!1);
                                             } catch (e) {
-                                                console.error(`Failed to request vaccine proof:`, e), e instanceof Error ? E(`Erro ao solicitar prova de vacina: ` + e.message) : E(`Erro ao solicitar prova de vacina: ` + String(e));
+                                                console.error(`Failed to request vaccine proof:`, e), e instanceof Error ? p(`Erro ao solicitar prova de vacina: ` + e.message) : p(`Erro ao solicitar prova de vacina: ` + String(e));
                                             } finally{
-                                                w(!1);
+                                                d(!1);
                                             }
                                         }
                                     },
-                                    disabled: C || !D || !ee || !ne,
-                                    children: C ? (0, b.jsxs)(b.Fragment, {
+                                    disabled: u || !m || !g || !v,
+                                    children: u ? (0, b.jsxs)(b.Fragment, {
                                         children: [
                                             (0, b.jsx)(`span`, {
                                                 className: `material-symbols-outlined animate-spin text-base`,
@@ -68822,20 +68555,20 @@ ${h(e)}
                 })
             ]
         });
-    }, j7 = [];
-    for(let e = 0; e < 256; ++e)j7.push((e + 256).toString(16).slice(1));
+    }, A7 = [];
+    for(let e = 0; e < 256; ++e)A7.push((e + 256).toString(16).slice(1));
     function gPe(e, t = 0) {
-        return (j7[e[t + 0]] + j7[e[t + 1]] + j7[e[t + 2]] + j7[e[t + 3]] + `-` + j7[e[t + 4]] + j7[e[t + 5]] + `-` + j7[e[t + 6]] + j7[e[t + 7]] + `-` + j7[e[t + 8]] + j7[e[t + 9]] + `-` + j7[e[t + 10]] + j7[e[t + 11]] + j7[e[t + 12]] + j7[e[t + 13]] + j7[e[t + 14]] + j7[e[t + 15]]).toLowerCase();
+        return (A7[e[t + 0]] + A7[e[t + 1]] + A7[e[t + 2]] + A7[e[t + 3]] + `-` + A7[e[t + 4]] + A7[e[t + 5]] + `-` + A7[e[t + 6]] + A7[e[t + 7]] + `-` + A7[e[t + 8]] + A7[e[t + 9]] + `-` + A7[e[t + 10]] + A7[e[t + 11]] + A7[e[t + 12]] + A7[e[t + 13]] + A7[e[t + 14]] + A7[e[t + 15]]).toLowerCase();
     }
-    var M7, _Pe = new Uint8Array(16);
+    var j7, _Pe = new Uint8Array(16);
     function vPe() {
-        if (!M7) {
+        if (!j7) {
             if (typeof crypto > `u` || !crypto.getRandomValues) throw Error(`crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported`);
-            M7 = crypto.getRandomValues.bind(crypto);
+            j7 = crypto.getRandomValues.bind(crypto);
         }
-        return M7(_Pe);
+        return j7(_Pe);
     }
-    var N7 = {
+    var M7 = {
         randomUUID: typeof crypto < `u` && crypto.randomUUID && crypto.randomUUID.bind(crypto)
     };
     function yPe(e, t, n) {
@@ -68849,8 +68582,8 @@ ${h(e)}
         }
         return gPe(r);
     }
-    function P7(e, t, n) {
-        return N7.randomUUID && !t && !e ? N7.randomUUID() : yPe(e, t, n);
+    function N7(e, t, n) {
+        return M7.randomUUID && !t && !e ? M7.randomUUID() : yPe(e, t, n);
     }
     var bPe = ({ vaxApi: e })=>{
         let { t } = dl(), [n, r] = (0, F.useState)(!1), [i, a] = (0, F.useState)(null), [o, s] = (0, F.useState)(null), [c, l] = (0, F.useState)(null), [u, d] = (0, F.useState)(null);
@@ -68894,7 +68627,7 @@ ${h(e)}
                                 if (t.preventDefault(), e) {
                                     r(!0), a(null), l(``);
                                     try {
-                                        let t = P7(), n = await e.registerInviteAdmin(t);
+                                        let t = N7(), n = await e.registerInviteAdmin(t);
                                         console.log(`txData`, n), l(pl + `/#/invite?role=admin&code=` + t);
                                     } catch (e) {
                                         console.error(`Failed to add vaccine:`, e), e instanceof Error ? a(`Erro ao criar um novo convite: ` + e.message) : a(`Erro ao criar um novo convite: ` + String(e));
@@ -68999,7 +68732,7 @@ ${h(e)}
                                 if (t.preventDefault(), e) {
                                     r(!0), s(null), d(``);
                                     try {
-                                        let t = P7(), n = await e.registerInviteAdmin(t);
+                                        let t = N7(), n = await e.registerInviteAdmin(t);
                                         console.log(`txData`, n), d(pl + `/#/invite?role=clinic&code=` + t);
                                     } catch (e) {
                                         console.error(`Failed to add vaccine:`, e), e instanceof Error ? s(`Erro ao criar um novo convite: ` + e.message) : s(`Erro ao criar um novo convite: ` + String(e));
@@ -69090,7 +68823,7 @@ ${h(e)}
                 })
             ]
         });
-    }, F7 = ({ vaxApi: e })=>{
+    }, P7 = ({ vaxApi: e })=>{
         let [t, n] = (0, F.useState)(0n), [r, i] = (0, F.useState)(0n), [a, o] = (0, F.useState)(0n), [s, c] = (0, F.useState)(0), [l, u] = (0, F.useState)(0), [d, f] = (0, F.useState)(0n);
         return (0, F.useEffect)(()=>{
             let t;
@@ -69428,7 +69161,7 @@ ${h(e)}
             ]
         });
     };
-    function I7(e, t) {
+    function F7(e, t) {
         let n = new Uint8Array(t);
         return n.set(new TextEncoder().encode(e).slice(0, t)), n;
     }
@@ -69490,11 +69223,11 @@ ${h(e)}
                                     try {
                                         let e = globalThis.crypto.getRandomValues(new Uint8Array(32)), t = {
                                             ownerId: new Uint8Array(32),
-                                            name: I7(d.trim(), 32),
-                                            urlImage: I7(p.trim(), 64),
-                                            address: I7(h.trim(), 64),
-                                            latitud: I7(_.trim(), 20),
-                                            longitud: I7(y.trim(), 20),
+                                            name: F7(d.trim(), 32),
+                                            urlImage: F7(p.trim(), 64),
+                                            address: F7(h.trim(), 64),
+                                            latitud: F7(_.trim(), 20),
+                                            longitud: F7(y.trim(), 20),
                                             isOnline: S
                                         };
                                         await l.addClinic(e, t), f(``), m(``), g(``), v(``), x(``), C(!1);
@@ -69792,7 +69525,364 @@ ${h(e)}
                 })
             ]
         });
-    }, CPe = ()=>(0, b.jsx)(`main`, {
+    }, CPe = 1234567890123456789012345678901234567890123456789012345678901234n, wPe = ({ title: e, onClose: t, children: n })=>(0, b.jsxs)(`div`, {
+            className: `fixed inset-0 z-50 flex items-center justify-center p-4`,
+            children: [
+                (0, b.jsx)(`div`, {
+                    className: `absolute inset-0 bg-black/40 backdrop-blur-sm`,
+                    onClick: t
+                }),
+                (0, b.jsxs)(`div`, {
+                    className: `relative bg-white rounded-2xl shadow-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto`,
+                    children: [
+                        (0, b.jsxs)(`div`, {
+                            className: `flex items-center justify-between px-6 py-4 border-b border-slate-100`,
+                            children: [
+                                (0, b.jsx)(`h3`, {
+                                    className: `text-lg font-semibold text-on-surface`,
+                                    children: e
+                                }),
+                                (0, b.jsx)(`button`, {
+                                    onClick: t,
+                                    className: `p-1 rounded-lg hover:bg-slate-100 transition-colors`,
+                                    children: (0, b.jsx)(`span`, {
+                                        className: `material-symbols-outlined text-on-surface-variant`,
+                                        children: `close`
+                                    })
+                                })
+                            ]
+                        }),
+                        (0, b.jsx)(`div`, {
+                            className: `p-6`,
+                            children: n
+                        })
+                    ]
+                })
+            ]
+        }), TPe = ({ vaxApi: e })=>{
+        let [t, n] = (0, F.useState)([]), [r, i] = (0, F.useState)(!0), [a, o] = (0, F.useState)(!1), [s, c] = (0, F.useState)(!1), [l, u] = (0, F.useState)(null), [d, f] = (0, F.useState)(``), [p, m] = (0, F.useState)(``), [h, g] = (0, F.useState)(``), [_, v] = (0, F.useState)(``);
+        return (0, F.useEffect)(()=>{
+            let t;
+            try {
+                t = e.state$.subscribe((e)=>{
+                    n(e.issuers), i(!1);
+                });
+            } catch (e) {
+                console.error(`Failed to subscribe to contract state:`, e), i(!1);
+            }
+            return ()=>{
+                t && t.unsubscribe();
+            };
+        }, []), (0, b.jsxs)(b.Fragment, {
+            children: [
+                (0, b.jsxs)(`main`, {
+                    className: `pt-24 pb-32 px-6 max-w-screen-xl mx-auto`,
+                    children: [
+                        (0, b.jsxs)(`section`, {
+                            className: `mb-12 text-left`,
+                            children: [
+                                (0, b.jsxs)(`h2`, {
+                                    className: `text-4xl md:text-5xl font-extrabold text-on-surface tracking-tighter mb-4 max-w-2xl`,
+                                    children: [
+                                        (0, b.jsx)(`span`, {
+                                            className: `text-primary`,
+                                            children: `Manage`
+                                        }),
+                                        ` Certificate Issuers`
+                                    ]
+                                }),
+                                (0, b.jsx)(`p`, {
+                                    className: `text-on-surface-variant text-lg leading-relaxed`,
+                                    children: `Register and review the organizations authorized to issue vaccine certificates.`
+                                })
+                            ]
+                        }),
+                        (0, b.jsx)(`div`, {
+                            className: `mb-8 flex justify-end`,
+                            children: (0, b.jsxs)(`button`, {
+                                onClick: ()=>{
+                                    u(null), o(!0);
+                                },
+                                className: `flex items-center gap-2 px-6 py-3 bg-secondary font-bold rounded-lg shadow active:scale-95 transition-all duration-200 text-sm`,
+                                children: [
+                                    (0, b.jsx)(`span`, {
+                                        className: `material-symbols-outlined text-base`,
+                                        children: `verified_user`
+                                    }),
+                                    `Add Issuer`
+                                ]
+                            })
+                        }),
+                        (0, b.jsxs)(`div`, {
+                            className: `bg-white p-8 rounded-xl shadow-sm border border-slate-100 text-left`,
+                            children: [
+                                (0, b.jsx)(`h3`, {
+                                    className: `text-lg font-semibold text-on-surface mb-4`,
+                                    children: `Vaccination Certificate Issuers`
+                                }),
+                                r ? (0, b.jsxs)(`div`, {
+                                    className: `flex items-center gap-2 text-on-surface-variant text-sm py-2`,
+                                    children: [
+                                        (0, b.jsx)(`span`, {
+                                            className: `material-symbols-outlined animate-spin text-base`,
+                                            children: `sync`
+                                        }),
+                                        (0, b.jsx)(`span`, {
+                                            children: `Loading issuers...`
+                                        })
+                                    ]
+                                }) : t.length === 0 ? (0, b.jsxs)(`div`, {
+                                    className: `bg-surface-container-low p-8 rounded-xl border border-dashed border-slate-200 text-center`,
+                                    children: [
+                                        (0, b.jsx)(`span`, {
+                                            className: `material-symbols-outlined text-slate-300 text-5xl mb-3`,
+                                            children: `verified_user`
+                                        }),
+                                        (0, b.jsx)(`p`, {
+                                            className: `text-on-surface-variant italic text-sm`,
+                                            children: `No issuers registered yet.`
+                                        })
+                                    ]
+                                }) : (0, b.jsx)(`div`, {
+                                    className: `space-y-2`,
+                                    children: t.map((e)=>{
+                                        let t = I6(e.id);
+                                        return (0, b.jsxs)(`div`, {
+                                            className: `p-4 bg-surface-container-low rounded-lg space-y-2`,
+                                            children: [
+                                                (0, b.jsxs)(`div`, {
+                                                    className: `flex items-center gap-2`,
+                                                    children: [
+                                                        (0, b.jsx)(`span`, {
+                                                            className: `material-symbols-outlined text-secondary text-base`,
+                                                            children: `verified_user`
+                                                        }),
+                                                        (0, b.jsx)(`p`, {
+                                                            className: `font-semibold text-sm text-on-surface`,
+                                                            children: e.name
+                                                        })
+                                                    ]
+                                                }),
+                                                (0, b.jsxs)(`div`, {
+                                                    className: `grid grid-cols-1 gap-1 pl-1`,
+                                                    children: [
+                                                        (0, b.jsxs)(`div`, {
+                                                            children: [
+                                                                (0, b.jsxs)(`span`, {
+                                                                    className: `text-xs font-semibold text-on-surface-variant uppercase tracking-wide`,
+                                                                    children: [
+                                                                        `Issuer Shielded Id:`,
+                                                                        ` `
+                                                                    ]
+                                                                }),
+                                                                (0, b.jsx)(`span`, {
+                                                                    className: `text-xs text-on-surface-variant font-mono break-all`,
+                                                                    children: t
+                                                                })
+                                                            ]
+                                                        }),
+                                                        (0, b.jsxs)(`div`, {
+                                                            children: [
+                                                                (0, b.jsxs)(`span`, {
+                                                                    className: `text-xs font-semibold text-on-surface-variant uppercase tracking-wide`,
+                                                                    children: [
+                                                                        `Signature Public Key:`,
+                                                                        ` `
+                                                                    ]
+                                                                }),
+                                                                (0, b.jsx)(`span`, {
+                                                                    className: `text-xs text-on-surface-variant font-mono break-all`,
+                                                                    children: e.verifyingKeyHex
+                                                                })
+                                                            ]
+                                                        }),
+                                                        (0, b.jsxs)(`div`, {
+                                                            children: [
+                                                                (0, b.jsxs)(`span`, {
+                                                                    className: `text-xs font-semibold text-on-surface-variant uppercase tracking-wide`,
+                                                                    children: [
+                                                                        `URI:`,
+                                                                        ` `
+                                                                    ]
+                                                                }),
+                                                                (0, b.jsx)(`span`, {
+                                                                    className: `text-xs text-on-surface-variant break-all`,
+                                                                    children: e.uri
+                                                                })
+                                                            ]
+                                                        }),
+                                                        (0, b.jsxs)(`div`, {
+                                                            children: [
+                                                                (0, b.jsxs)(`span`, {
+                                                                    className: `text-xs font-semibold text-on-surface-variant uppercase tracking-wide`,
+                                                                    children: [
+                                                                        `Verification Endpoint:`,
+                                                                        ` `
+                                                                    ]
+                                                                }),
+                                                                (0, b.jsx)(`span`, {
+                                                                    className: `text-xs text-on-surface-variant break-all`,
+                                                                    children: e.verificationEndpoint
+                                                                })
+                                                            ]
+                                                        })
+                                                    ]
+                                                })
+                                            ]
+                                        }, t);
+                                    })
+                                })
+                            ]
+                        })
+                    ]
+                }),
+                a && (0, b.jsxs)(wPe, {
+                    title: `Add Certificate Issuer`,
+                    onClose: ()=>o(!1),
+                    children: [
+                        (0, b.jsxs)(`div`, {
+                            className: `flex gap-3 bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6`,
+                            children: [
+                                (0, b.jsx)(`span`, {
+                                    className: `material-symbols-outlined text-blue-500 text-xl flex-shrink-0`,
+                                    children: `info`
+                                }),
+                                (0, b.jsx)(`p`, {
+                                    className: `text-blue-800 text-sm leading-relaxed`,
+                                    children: `To register a certificate issuer, contact the vaccine certificate provider/issuer to obtain their details (name, service URI, verification endpoint, and public key).`
+                                })
+                            ]
+                        }),
+                        (0, b.jsxs)(`div`, {
+                            className: `grid grid-cols-1 gap-4 mb-6`,
+                            children: [
+                                (0, b.jsxs)(`div`, {
+                                    children: [
+                                        (0, b.jsx)(`label`, {
+                                            className: `block text-xs font-semibold text-on-surface-variant uppercase tracking-wide mb-1`,
+                                            children: `Issuer Name`
+                                        }),
+                                        (0, b.jsx)(`input`, {
+                                            type: `text`,
+                                            value: d,
+                                            onChange: (e)=>f(e.target.value),
+                                            placeholder: `e.g. National Health Authority`,
+                                            className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-secondary`
+                                        })
+                                    ]
+                                }),
+                                (0, b.jsxs)(`div`, {
+                                    children: [
+                                        (0, b.jsx)(`label`, {
+                                            className: `block text-xs font-semibold text-on-surface-variant uppercase tracking-wide mb-1`,
+                                            children: `Issuer URI`
+                                        }),
+                                        (0, b.jsx)(`input`, {
+                                            type: `text`,
+                                            value: p,
+                                            onChange: (e)=>m(e.target.value),
+                                            placeholder: `e.g. https://issuer.example.com`,
+                                            className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-secondary`
+                                        })
+                                    ]
+                                }),
+                                (0, b.jsxs)(`div`, {
+                                    children: [
+                                        (0, b.jsx)(`label`, {
+                                            className: `block text-xs font-semibold text-on-surface-variant uppercase tracking-wide mb-1`,
+                                            children: `Verification Endpoint`
+                                        }),
+                                        (0, b.jsx)(`p`, {
+                                            className: `text-xs text-on-surface-variant mb-1`,
+                                            children: `URL used by administrative agents or personnel to verify the authenticity of a vaccination certificate.`
+                                        }),
+                                        (0, b.jsx)(`input`, {
+                                            type: `text`,
+                                            value: h,
+                                            onChange: (e)=>g(e.target.value),
+                                            placeholder: `e.g. https://issuer.example.com/verify`,
+                                            className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-secondary`
+                                        })
+                                    ]
+                                }),
+                                (0, b.jsxs)(`div`, {
+                                    children: [
+                                        (0, b.jsx)(`label`, {
+                                            className: `block text-xs font-semibold text-on-surface-variant uppercase tracking-wide mb-1`,
+                                            children: `Public Key`
+                                        }),
+                                        (0, b.jsx)(`input`, {
+                                            type: `text`,
+                                            value: _,
+                                            onChange: (e)=>v(e.target.value),
+                                            placeholder: `Public key provided by the issuer`,
+                                            className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-secondary`
+                                        })
+                                    ]
+                                })
+                            ]
+                        }),
+                        l && (0, b.jsx)(`p`, {
+                            className: `text-error text-sm mb-4 px-1`,
+                            children: l
+                        }),
+                        (0, b.jsxs)(`div`, {
+                            className: `flex gap-3 justify-end`,
+                            children: [
+                                (0, b.jsx)(`button`, {
+                                    className: `px-5 py-2.5 rounded-lg border border-slate-200 text-on-surface-variant text-sm font-semibold hover:bg-slate-50 transition-colors`,
+                                    onClick: ()=>o(!1),
+                                    disabled: s,
+                                    children: `Cancel`
+                                }),
+                                (0, b.jsx)(`button`, {
+                                    className: `px-6 py-2.5 bg-secondary font-bold rounded-lg shadow active:scale-95 transition-all duration-200 disabled:opacity-50 flex items-center gap-2 text-sm`,
+                                    onClick: async ()=>{
+                                        c(!0), u(null);
+                                        try {
+                                            let t = tPe(CPe);
+                                            await e.addCertificateIssuer({
+                                                uri: p,
+                                                name: d,
+                                                key: t,
+                                                verificationEndpoint: h
+                                            }), f(``), m(``), g(``), v(``), o(!1);
+                                        } catch (e) {
+                                            console.error(`Failed to add issuer:`, e), u(`Failed to add issuer: ` + (e instanceof Error ? e.message : String(e)));
+                                        } finally{
+                                            c(!1);
+                                        }
+                                    },
+                                    disabled: s || !d || !p || !h,
+                                    children: s ? (0, b.jsxs)(b.Fragment, {
+                                        children: [
+                                            (0, b.jsx)(`span`, {
+                                                className: `material-symbols-outlined animate-spin text-base`,
+                                                children: `sync`
+                                            }),
+                                            (0, b.jsx)(`span`, {
+                                                children: `Adding Issuer...`
+                                            })
+                                        ]
+                                    }) : (0, b.jsxs)(b.Fragment, {
+                                        children: [
+                                            (0, b.jsx)(`span`, {
+                                                className: `material-symbols-outlined text-base`,
+                                                children: `verified_user`
+                                            }),
+                                            (0, b.jsx)(`span`, {
+                                                children: `Add Issuer`
+                                            })
+                                        ]
+                                    })
+                                })
+                            ]
+                        })
+                    ]
+                })
+            ]
+        });
+    }, EPe = ()=>(0, b.jsx)(`main`, {
             className: `pt-24 pb-32 px-6 max-w-screen-xl mx-auto`,
             children: (0, b.jsx)(`section`, {
                 className: `mb-12 text-left`,
@@ -69807,7 +69897,7 @@ ${h(e)}
                     ]
                 })
             })
-        }), wPe = ({ onLogout: e, walletAddress: t, connectedApi: n, vaxApi: r })=>{
+        }), DPe = ({ onLogout: e, walletAddress: t, connectedApi: n, vaxApi: r })=>{
         let { t: i } = dl(), { profile: a, activeTab: o, setActiveTab: s } = xl(), [c, l] = F.useState(null), u = (e)=>{
             s(e);
         };
@@ -69912,15 +70002,15 @@ ${h(e)}
                                 connectedApi: n
                             });
                         case `addvaccine`:
-                            return (0, b.jsx)(A7, {
+                            return (0, b.jsx)(k7, {
                                 connectedApi: n,
                                 triggerModal: c,
                                 onModalTriggered: ()=>l(null)
                             });
                         case `clinicprofile`:
-                            return (0, b.jsx)(CPe, {});
+                            return (0, b.jsx)(EPe, {});
                         case `metrics`:
-                            return (0, b.jsx)(F7, {
+                            return (0, b.jsx)(P7, {
                                 vaxApi: r
                             });
                         case `access`:
@@ -69935,14 +70025,18 @@ ${h(e)}
                             return (0, b.jsx)(SPe, {
                                 connectedApi: n
                             });
+                        case `adminissuers`:
+                            return (0, b.jsx)(TPe, {
+                                vaxApi: r
+                            });
                         default:
                             switch(a){
                                 case `admin`:
-                                    return (0, b.jsx)(F7, {
+                                    return (0, b.jsx)(P7, {
                                         vaxApi: r
                                     });
                                 case `clinic`:
-                                    return (0, b.jsx)(A7, {
+                                    return (0, b.jsx)(k7, {
                                         connectedApi: n,
                                         triggerModal: c,
                                         onModalTriggered: ()=>l(null)
@@ -70022,22 +70116,6 @@ ${h(e)}
                                 (0, b.jsx)(`span`, {
                                     className: `text-[11px] font-medium tracking-wide uppercase mt-1`,
                                     children: `My Proofs`
-                                })
-                            ]
-                        }),
-                        a == `clinic` && (0, b.jsxs)(`button`, {
-                            onClick: ()=>{
-                                u(`addvaccine`), l(`issuer`);
-                            },
-                            className: `flex flex-col items-center justify-center px-5 py-2 active:scale-90 duration-150 transition-all text-slate-400 hover:text-blue-600`,
-                            children: [
-                                (0, b.jsx)(`span`, {
-                                    className: `material-symbols-outlined`,
-                                    children: `verified_user`
-                                }),
-                                (0, b.jsx)(`span`, {
-                                    className: `text-[11px] font-medium tracking-wide uppercase mt-1`,
-                                    children: `Add Issuer`
                                 })
                             ]
                         }),
@@ -70141,12 +70219,29 @@ ${h(e)}
                                     children: `Clinics`
                                 })
                             ]
+                        }),
+                        a == `admin` && (0, b.jsxs)(`button`, {
+                            onClick: ()=>u(`adminissuers`),
+                            className: `flex flex-col items-center justify-center px-3 py-2 active:scale-90 duration-150 transition-all ${o === `adminissuers` ? `text-blue-700 bg-blue-100/50 rounded-2xl` : `text-slate-400 hover:text-blue-600`}`,
+                            children: [
+                                (0, b.jsx)(`span`, {
+                                    className: `material-symbols-outlined`,
+                                    style: {
+                                        fontVariationSettings: o === `adminissuers` ? `'FILL' 1` : void 0
+                                    },
+                                    children: `verified_user`
+                                }),
+                                (0, b.jsx)(`span`, {
+                                    className: `text-[11px] font-medium tracking-wide uppercase mt-1`,
+                                    children: `Issuers`
+                                })
+                            ]
                         })
                     ]
                 })
             ]
         });
-    }, TPe = ({ onLogout: e, walletAddress: t })=>{
+    }, OPe = ({ onLogout: e, walletAddress: t })=>{
         let { t: n } = dl(), [r, i] = (0, F.useState)(!1), [a, o] = (0, F.useState)(ml() || null), [s, c] = (0, F.useState)(null);
         return (0, b.jsxs)(`div`, {
             className: `bg-background text-on-background min-h-screen`,
@@ -70404,9 +70499,9 @@ ${h(e)}
                 })
             ]
         });
-    }, EPe = `modulepreload`, DPe = function(e) {
+    }, kPe = `modulepreload`, APe = function(e) {
         return `/` + e;
-    }, L7 = {}, OPe = function(e, t, n) {
+    }, I7 = {}, jPe = function(e, t, n) {
         let r = Promise.resolve();
         if (t && t.length > 0) {
             let e = document.getElementsByTagName(`link`), i = document.querySelector(`meta[property=csp-nonce]`), a = i?.nonce || i?.getAttribute(`nonce`);
@@ -70420,8 +70515,8 @@ ${h(e)}
                         }))));
             }
             r = o(t.map((t)=>{
-                if (t = DPe(t, n), t in L7) return;
-                L7[t] = !0;
+                if (t = APe(t, n), t in I7) return;
+                I7[t] = !0;
                 let r = t.endsWith(`.css`), i = r ? `[rel="stylesheet"]` : ``;
                 if (n) for(let n = e.length - 1; n >= 0; n--){
                     let i = e[n];
@@ -70429,7 +70524,7 @@ ${h(e)}
                 }
                 else if (document.querySelector(`link[href="${t}"]${i}`)) return;
                 let o = document.createElement(`link`);
-                if (o.rel = r ? `stylesheet` : EPe, r || (o.as = `script`), o.crossOrigin = ``, o.href = t, a && o.setAttribute(`nonce`, a), document.head.appendChild(o), r) return new Promise((e, n)=>{
+                if (o.rel = r ? `stylesheet` : kPe, r || (o.as = `script`), o.crossOrigin = ``, o.href = t, a && o.setAttribute(`nonce`, a), document.head.appendChild(o), r) return new Promise((e, n)=>{
                     o.addEventListener(`load`, e), o.addEventListener(`error`, ()=>n(Error(`Unable to preload CSS for ${t}`)));
                 });
             }));
@@ -70444,14 +70539,14 @@ ${h(e)}
             for (let e of t || [])e.status === `rejected` && i(e.reason);
             return e().catch(i);
         });
-    }, R7 = `popstate`;
-    function z7(e) {
+    }, L7 = `popstate`;
+    function R7(e) {
         return typeof e == `object` && !!e && `pathname` in e && `search` in e && `hash` in e && `state` in e && `key` in e;
     }
-    function kPe(e = {}) {
+    function MPe(e = {}) {
         function t(e, t) {
-            let { pathname: n = `/`, search: r = ``, hash: i = `` } = G7(e.location.hash.substring(1));
-            return !n.startsWith(`/`) && !n.startsWith(`.`) && (n = `/` + n), U7(``, {
+            let { pathname: n = `/`, search: r = ``, hash: i = `` } = W7(e.location.hash.substring(1));
+            return !n.startsWith(`/`) && !n.startsWith(`.`) && (n = `/` + n), H7(``, {
                 pathname: n,
                 search: r,
                 hash: i
@@ -70463,17 +70558,17 @@ ${h(e)}
                 let t = e.location.href, n = t.indexOf(`#`);
                 r = n === -1 ? t : t.slice(0, n);
             }
-            return r + `#` + (typeof t == `string` ? t : W7(t));
+            return r + `#` + (typeof t == `string` ? t : U7(t));
         }
         function r(e, t) {
-            V7(e.pathname.charAt(0) === `/`, `relative pathnames are not supported in hash history.push(${JSON.stringify(t)})`);
+            B7(e.pathname.charAt(0) === `/`, `relative pathnames are not supported in hash history.push(${JSON.stringify(t)})`);
         }
-        return jPe(t, n, r, e);
+        return PPe(t, n, r, e);
     }
-    function B7(e, t) {
+    function z7(e, t) {
         if (e === !1 || e == null) throw Error(t);
     }
-    function V7(e, t) {
+    function B7(e, t) {
         if (!e) {
             typeof console < `u` && console.warn(t);
             try {
@@ -70481,10 +70576,10 @@ ${h(e)}
             } catch  {}
         }
     }
-    function APe() {
+    function NPe() {
         return Math.random().toString(36).substring(2, 10);
     }
-    function H7(e, t) {
+    function V7(e, t) {
         return {
             usr: e.state,
             key: e.key,
@@ -70496,21 +70591,21 @@ ${h(e)}
             } : void 0
         };
     }
-    function U7(e, t, n = null, r, i) {
+    function H7(e, t, n = null, r, i) {
         return {
             pathname: typeof e == `string` ? e : e.pathname,
             search: ``,
             hash: ``,
-            ...typeof t == `string` ? G7(t) : t,
+            ...typeof t == `string` ? W7(t) : t,
             state: n,
-            key: t && t.key || r || APe(),
+            key: t && t.key || r || NPe(),
             unstable_mask: i
         };
     }
-    function W7({ pathname: e = `/`, search: t = ``, hash: n = `` }) {
+    function U7({ pathname: e = `/`, search: t = ``, hash: n = `` }) {
         return t && t !== `?` && (e += t.charAt(0) === `?` ? t : `?` + t), n && n !== `#` && (e += n.charAt(0) === `#` ? n : `#` + n), e;
     }
-    function G7(e) {
+    function W7(e) {
         let t = {};
         if (e) {
             let n = e.indexOf(`#`);
@@ -70520,7 +70615,7 @@ ${h(e)}
         }
         return t;
     }
-    function jPe(e, t, n, r = {}) {
+    function PPe(e, t, n, r = {}) {
         let { window: i = document.defaultView, v5Compat: a = !1 } = r, o = i.history, s = `POP`, c = null, l = u();
         l ?? (l = 0, o.replaceState({
             ...o.state,
@@ -70542,9 +70637,9 @@ ${h(e)}
         }
         function f(e, t) {
             s = `PUSH`;
-            let r = z7(e) ? e : U7(h.location, e, t);
+            let r = R7(e) ? e : H7(h.location, e, t);
             n && n(r, e), l = u() + 1;
-            let d = H7(r, l), f = h.createHref(r.unstable_mask || r);
+            let d = V7(r, l), f = h.createHref(r.unstable_mask || r);
             try {
                 o.pushState(d, ``, f);
             } catch (e) {
@@ -70559,9 +70654,9 @@ ${h(e)}
         }
         function p(e, t) {
             s = `REPLACE`;
-            let r = z7(e) ? e : U7(h.location, e, t);
+            let r = R7(e) ? e : H7(h.location, e, t);
             n && n(r, e), l = u();
-            let i = H7(r, l), d = h.createHref(r.unstable_mask || r);
+            let i = V7(r, l), d = h.createHref(r.unstable_mask || r);
             o.replaceState(i, ``, d), a && c && c({
                 action: s,
                 location: h.location,
@@ -70569,7 +70664,7 @@ ${h(e)}
             });
         }
         function m(e) {
-            return MPe(e);
+            return FPe(e);
         }
         let h = {
             get action () {
@@ -70580,8 +70675,8 @@ ${h(e)}
             },
             listen (e) {
                 if (c) throw Error(`A history only accepts one active listener`);
-                return i.addEventListener(R7, d), c = e, ()=>{
-                    i.removeEventListener(R7, d), c = null;
+                return i.addEventListener(L7, d), c = e, ()=>{
+                    i.removeEventListener(L7, d), c = null;
                 };
             },
             createHref (e) {
@@ -70604,28 +70699,28 @@ ${h(e)}
         };
         return h;
     }
-    function MPe(e, t = !1) {
+    function FPe(e, t = !1) {
         let n = `http://localhost`;
-        typeof window < `u` && (n = window.location.origin === `null` ? window.location.href : window.location.origin), B7(n, `No window.location.(origin|href) available to create URL`);
-        let r = typeof e == `string` ? e : W7(e);
+        typeof window < `u` && (n = window.location.origin === `null` ? window.location.href : window.location.origin), z7(n, `No window.location.(origin|href) available to create URL`);
+        let r = typeof e == `string` ? e : U7(e);
         return r = r.replace(/ $/, `%20`), !t && r.startsWith(`//`) && (r = n + r), new URL(r, n);
     }
-    function K7(e, t, n = `/`) {
-        return NPe(e, t, n, !1);
+    function G7(e, t, n = `/`) {
+        return IPe(e, t, n, !1);
     }
-    function NPe(e, t, n, r) {
-        let i = Z7((typeof t == `string` ? G7(t) : t).pathname || `/`, n);
+    function IPe(e, t, n, r) {
+        let i = X7((typeof t == `string` ? W7(t) : t).pathname || `/`, n);
         if (i == null) return null;
-        let a = q7(e);
-        FPe(a);
+        let a = K7(e);
+        RPe(a);
         let o = null;
         for(let e = 0; o == null && e < a.length; ++e){
-            let t = KPe(i);
-            o = WPe(a[e], t, r);
+            let t = YPe(i);
+            o = qPe(a[e], t, r);
         }
         return o;
     }
-    function PPe(e, t) {
+    function LPe(e, t) {
         let { route: n, pathname: r, params: i } = e;
         return {
             id: n.id,
@@ -70636,7 +70731,7 @@ ${h(e)}
             handle: n.handle
         };
     }
-    function q7(e, t = [], n = [], r = ``, i = !1) {
+    function K7(e, t = [], n = [], r = ``, i = !1) {
         let a = (e, a, o = i, s)=>{
             let c = {
                 relativePath: s === void 0 ? e.path || `` : s,
@@ -70646,24 +70741,24 @@ ${h(e)}
             };
             if (c.relativePath.startsWith(`/`)) {
                 if (!c.relativePath.startsWith(r) && o) return;
-                B7(c.relativePath.startsWith(r), `Absolute route path "${c.relativePath}" nested under path "${r}" is not valid. An absolute child route path must start with the combined path of all its parent routes.`), c.relativePath = c.relativePath.slice(r.length);
+                z7(c.relativePath.startsWith(r), `Absolute route path "${c.relativePath}" nested under path "${r}" is not valid. An absolute child route path must start with the combined path of all its parent routes.`), c.relativePath = c.relativePath.slice(r.length);
             }
-            let l = n9([
+            let l = t9([
                 r,
                 c.relativePath
             ]), u = n.concat(c);
-            e.children && e.children.length > 0 && (B7(e.index !== !0, `Index routes must not have child routes. Please remove all child routes from route path "${l}".`), q7(e.children, t, u, l, o)), !(e.path == null && !e.index) && t.push({
+            e.children && e.children.length > 0 && (z7(e.index !== !0, `Index routes must not have child routes. Please remove all child routes from route path "${l}".`), K7(e.children, t, u, l, o)), !(e.path == null && !e.index) && t.push({
                 path: l,
-                score: HPe(l, e.index),
+                score: GPe(l, e.index),
                 routesMeta: u
             });
         };
         return e.forEach((e, t)=>{
             if (e.path === `` || !e.path?.includes(`?`)) a(e, t);
-            else for (let n of J7(e.path))a(e, t, !0, n);
+            else for (let n of q7(e.path))a(e, t, !0, n);
         }), t;
     }
-    function J7(e) {
+    function q7(e) {
         let t = e.split(`/`);
         if (t.length === 0) return [];
         let [n, ...r] = t, i = n.endsWith(`?`), a = n.replace(/\?$/, ``);
@@ -70673,61 +70768,61 @@ ${h(e)}
         ] : [
             a
         ];
-        let o = J7(r.join(`/`)), s = [];
+        let o = q7(r.join(`/`)), s = [];
         return s.push(...o.map((e)=>e === `` ? a : [
                 a,
                 e
             ].join(`/`))), i && s.push(...o), s.map((t)=>e.startsWith(`/`) && t === `` ? `/` : t);
     }
-    function FPe(e) {
-        e.sort((e, t)=>e.score === t.score ? UPe(e.routesMeta.map((e)=>e.childrenIndex), t.routesMeta.map((e)=>e.childrenIndex)) : t.score - e.score);
+    function RPe(e) {
+        e.sort((e, t)=>e.score === t.score ? KPe(e.routesMeta.map((e)=>e.childrenIndex), t.routesMeta.map((e)=>e.childrenIndex)) : t.score - e.score);
     }
-    var IPe = /^:[\w-]+$/, LPe = 3, RPe = 2, zPe = 1, BPe = 10, VPe = -2, Y7 = (e)=>e === `*`;
-    function HPe(e, t) {
+    var zPe = /^:[\w-]+$/, BPe = 3, VPe = 2, HPe = 1, UPe = 10, WPe = -2, J7 = (e)=>e === `*`;
+    function GPe(e, t) {
         let n = e.split(`/`), r = n.length;
-        return n.some(Y7) && (r += VPe), t && (r += RPe), n.filter((e)=>!Y7(e)).reduce((e, t)=>e + (IPe.test(t) ? LPe : t === `` ? zPe : BPe), r);
+        return n.some(J7) && (r += WPe), t && (r += VPe), n.filter((e)=>!J7(e)).reduce((e, t)=>e + (zPe.test(t) ? BPe : t === `` ? HPe : UPe), r);
     }
-    function UPe(e, t) {
+    function KPe(e, t) {
         return e.length === t.length && e.slice(0, -1).every((e, n)=>e === t[n]) ? e[e.length - 1] - t[t.length - 1] : 0;
     }
-    function WPe(e, t, n = !1) {
+    function qPe(e, t, n = !1) {
         let { routesMeta: r } = e, i = {}, a = `/`, o = [];
         for(let e = 0; e < r.length; ++e){
-            let s = r[e], c = e === r.length - 1, l = a === `/` ? t : t.slice(a.length) || `/`, u = X7({
+            let s = r[e], c = e === r.length - 1, l = a === `/` ? t : t.slice(a.length) || `/`, u = Y7({
                 path: s.relativePath,
                 caseSensitive: s.caseSensitive,
                 end: c
             }, l), d = s.route;
-            if (!u && c && n && !r[r.length - 1].route.index && (u = X7({
+            if (!u && c && n && !r[r.length - 1].route.index && (u = Y7({
                 path: s.relativePath,
                 caseSensitive: s.caseSensitive,
                 end: !1
             }, l)), !u) return null;
             Object.assign(i, u.params), o.push({
                 params: i,
-                pathname: n9([
+                pathname: t9([
                     a,
                     u.pathname
                 ]),
-                pathnameBase: XPe(n9([
+                pathnameBase: $Pe(t9([
                     a,
                     u.pathnameBase
                 ])),
                 route: d
-            }), u.pathnameBase !== `/` && (a = n9([
+            }), u.pathnameBase !== `/` && (a = t9([
                 a,
                 u.pathnameBase
             ]));
         }
         return o;
     }
-    function X7(e, t) {
+    function Y7(e, t) {
         typeof e == `string` && (e = {
             path: e,
             caseSensitive: !1,
             end: !0
         });
-        let [n, r] = GPe(e.path, e.caseSensitive, e.end), i = t.match(n);
+        let [n, r] = JPe(e.path, e.caseSensitive, e.end), i = t.match(n);
         if (!i) return null;
         let a = i[0], o = a.replace(/(.)\/+$/, `$1`), s = i.slice(1);
         return {
@@ -70744,8 +70839,8 @@ ${h(e)}
             pattern: e
         };
     }
-    function GPe(e, t = !1, n = !0) {
-        V7(e === `*` || !e.endsWith(`*`) || e.endsWith(`/*`), `Route path "${e}" will be treated as if it were "${e.replace(/\*$/, `/*`)}" because the \`*\` character must always follow a \`/\` in the pattern. To get rid of this warning, please change the route path to "${e.replace(/\*$/, `/*`)}".`);
+    function JPe(e, t = !1, n = !0) {
+        B7(e === `*` || !e.endsWith(`*`) || e.endsWith(`/*`), `Route path "${e}" will be treated as if it were "${e.replace(/\*$/, `/*`)}" because the \`*\` character must always follow a \`/\` in the pattern. To get rid of this warning, please change the route path to "${e.replace(/\*$/, `/*`)}".`);
         let r = [], i = `^` + e.replace(/\/*\*?$/, ``).replace(/^\/*/, `/`).replace(/[\\.*+^${}|()[\]]/g, `\\$&`).replace(/\/:([\w-]+)(\?)?/g, (e, t, n, i, a)=>{
             if (r.push({
                 paramName: t,
@@ -70763,49 +70858,49 @@ ${h(e)}
             r
         ];
     }
-    function KPe(e) {
+    function YPe(e) {
         try {
             return e.split(`/`).map((e)=>decodeURIComponent(e).replace(/\//g, `%2F`)).join(`/`);
         } catch (t) {
-            return V7(!1, `The URL path "${e}" could not be decoded because it is a malformed URL segment. This is probably due to a bad percent encoding (${t}).`), e;
+            return B7(!1, `The URL path "${e}" could not be decoded because it is a malformed URL segment. This is probably due to a bad percent encoding (${t}).`), e;
         }
     }
-    function Z7(e, t) {
+    function X7(e, t) {
         if (t === `/`) return e;
         if (!e.toLowerCase().startsWith(t.toLowerCase())) return null;
         let n = t.endsWith(`/`) ? t.length - 1 : t.length, r = e.charAt(n);
         return r && r !== `/` ? null : e.slice(n) || `/`;
     }
-    var qPe = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
-    function JPe(e, t = `/`) {
-        let { pathname: n, search: r = ``, hash: i = `` } = typeof e == `string` ? G7(e) : e, a;
-        return n ? (n = n.replace(/\/\/+/g, `/`), a = n.startsWith(`/`) ? Q7(n.substring(1), `/`) : Q7(n, t)) : a = t, {
+    var XPe = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
+    function ZPe(e, t = `/`) {
+        let { pathname: n, search: r = ``, hash: i = `` } = typeof e == `string` ? W7(e) : e, a;
+        return n ? (n = n.replace(/\/\/+/g, `/`), a = n.startsWith(`/`) ? Z7(n.substring(1), `/`) : Z7(n, t)) : a = t, {
             pathname: a,
-            search: ZPe(r),
-            hash: QPe(i)
+            search: eFe(r),
+            hash: tFe(i)
         };
     }
-    function Q7(e, t) {
+    function Z7(e, t) {
         let n = t.replace(/\/+$/, ``).split(`/`);
         return e.split(`/`).forEach((e)=>{
             e === `..` ? n.length > 1 && n.pop() : e !== `.` && n.push(e);
         }), n.length > 1 ? n.join(`/`) : `/`;
     }
-    function $7(e, t, n, r) {
+    function Q7(e, t, n, r) {
         return `Cannot include a '${e}' character in a manually specified \`to.${t}\` field [${JSON.stringify(r)}].  Please separate it out to the \`to.${n}\` field. Alternatively you may provide the full path as a string in <Link to="..."> and the router will parse it for you.`;
     }
-    function YPe(e) {
+    function QPe(e) {
         return e.filter((e, t)=>t === 0 || e.route.path && e.route.path.length > 0);
     }
-    function e9(e) {
-        let t = YPe(e);
+    function $7(e) {
+        let t = QPe(e);
         return t.map((e, n)=>n === t.length - 1 ? e.pathname : e.pathnameBase);
     }
-    function t9(e, t, n, r = !1) {
+    function e9(e, t, n, r = !1) {
         let i;
-        typeof e == `string` ? i = G7(e) : (i = {
+        typeof e == `string` ? i = W7(e) : (i = {
             ...e
-        }, B7(!i.pathname || !i.pathname.includes(`?`), $7(`?`, `pathname`, `search`, i)), B7(!i.pathname || !i.pathname.includes(`#`), $7(`#`, `pathname`, `hash`, i)), B7(!i.search || !i.search.includes(`#`), $7(`#`, `search`, `hash`, i)));
+        }, z7(!i.pathname || !i.pathname.includes(`?`), Q7(`?`, `pathname`, `search`, i)), z7(!i.pathname || !i.pathname.includes(`#`), Q7(`#`, `pathname`, `hash`, i)), z7(!i.search || !i.search.includes(`#`), Q7(`#`, `search`, `hash`, i)));
         let a = e === `` || i.pathname === ``, o = a ? `/` : i.pathname, s;
         if (o == null) s = n;
         else {
@@ -70817,34 +70912,34 @@ ${h(e)}
             }
             s = e >= 0 ? t[e] : `/`;
         }
-        let c = JPe(i, s), l = o && o !== `/` && o.endsWith(`/`), u = (a || o === `.`) && n.endsWith(`/`);
+        let c = ZPe(i, s), l = o && o !== `/` && o.endsWith(`/`), u = (a || o === `.`) && n.endsWith(`/`);
         return !c.pathname.endsWith(`/`) && (l || u) && (c.pathname += `/`), c;
     }
-    var n9 = (e)=>e.join(`/`).replace(/\/\/+/g, `/`), XPe = (e)=>e.replace(/\/+$/, ``).replace(/^\/*/, `/`), ZPe = (e)=>!e || e === `?` ? `` : e.startsWith(`?`) ? e : `?` + e, QPe = (e)=>!e || e === `#` ? `` : e.startsWith(`#`) ? e : `#` + e, $Pe = class {
+    var t9 = (e)=>e.join(`/`).replace(/\/\/+/g, `/`), $Pe = (e)=>e.replace(/\/+$/, ``).replace(/^\/*/, `/`), eFe = (e)=>!e || e === `?` ? `` : e.startsWith(`?`) ? e : `?` + e, tFe = (e)=>!e || e === `#` ? `` : e.startsWith(`#`) ? e : `#` + e, nFe = class {
         constructor(e, t, n, r = !1){
             this.status = e, this.statusText = t || ``, this.internal = r, n instanceof Error ? (this.data = n.toString(), this.error = n) : this.data = n;
         }
     };
-    function eFe(e) {
+    function rFe(e) {
         return e != null && typeof e.status == `number` && typeof e.statusText == `string` && typeof e.internal == `boolean` && `data` in e;
     }
-    function tFe(e) {
+    function iFe(e) {
         return e.map((e)=>e.route.path).filter(Boolean).join(`/`).replace(/\/\/*/g, `/`) || `/`;
     }
-    var r9 = typeof window < `u` && window.document !== void 0 && window.document.createElement !== void 0;
-    function i9(e, t) {
+    var n9 = typeof window < `u` && window.document !== void 0 && window.document.createElement !== void 0;
+    function r9(e, t) {
         let n = e;
-        if (typeof n != `string` || !qPe.test(n)) return {
+        if (typeof n != `string` || !XPe.test(n)) return {
             absoluteURL: void 0,
             isExternal: !1,
             to: n
         };
         let r = n, i = !1;
-        if (r9) try {
-            let e = new URL(window.location.href), r = n.startsWith(`//`) ? new URL(e.protocol + n) : new URL(n), a = Z7(r.pathname, t);
+        if (n9) try {
+            let e = new URL(window.location.href), r = n.startsWith(`//`) ? new URL(e.protocol + n) : new URL(n), a = X7(r.pathname, t);
             r.origin === e.origin && a != null ? n = a + r.search + r.hash : i = !0;
         } catch  {
-            V7(!1, `<Link to="${n}"> contains an invalid URL which will probably break when clicked - please update to a valid URL path.`);
+            B7(!1, `<Link to="${n}"> contains an invalid URL which will probably break when clicked - please update to a valid URL path.`);
         }
         return {
             absoluteURL: r,
@@ -70853,65 +70948,65 @@ ${h(e)}
         };
     }
     Object.getOwnPropertyNames(Object.prototype).sort().join(`\0`);
-    var a9 = [
+    var i9 = [
         `POST`,
         `PUT`,
         `PATCH`,
         `DELETE`
     ];
-    new Set(a9);
-    var nFe = [
+    new Set(i9);
+    var aFe = [
         `GET`,
-        ...a9
+        ...i9
     ];
-    new Set(nFe);
+    new Set(aFe);
+    var a9 = F.createContext(null);
+    a9.displayName = `DataRouter`;
     var o9 = F.createContext(null);
-    o9.displayName = `DataRouter`;
-    var s9 = F.createContext(null);
-    s9.displayName = `DataRouterState`;
-    var c9 = F.createContext(!1);
-    function rFe() {
-        return F.useContext(c9);
+    o9.displayName = `DataRouterState`;
+    var s9 = F.createContext(!1);
+    function oFe() {
+        return F.useContext(s9);
     }
-    var l9 = F.createContext({
+    var c9 = F.createContext({
         isTransitioning: !1
     });
-    l9.displayName = `ViewTransition`;
-    var iFe = F.createContext(new Map);
-    iFe.displayName = `Fetchers`;
-    var aFe = F.createContext(null);
-    aFe.displayName = `Await`;
+    c9.displayName = `ViewTransition`;
+    var sFe = F.createContext(new Map);
+    sFe.displayName = `Fetchers`;
+    var cFe = F.createContext(null);
+    cFe.displayName = `Await`;
+    var l9 = F.createContext(null);
+    l9.displayName = `Navigation`;
     var u9 = F.createContext(null);
-    u9.displayName = `Navigation`;
-    var d9 = F.createContext(null);
-    d9.displayName = `Location`;
-    var f9 = F.createContext({
+    u9.displayName = `Location`;
+    var d9 = F.createContext({
         outlet: null,
         matches: [],
         isDataRoute: !1
     });
-    f9.displayName = `Route`;
-    var p9 = F.createContext(null);
-    p9.displayName = `RouteError`;
-    var m9 = `REACT_ROUTER_ERROR`, oFe = `REDIRECT`, sFe = `ROUTE_ERROR_RESPONSE`;
-    function cFe(e) {
-        if (e.startsWith(`${m9}:${oFe}:{`)) try {
+    d9.displayName = `Route`;
+    var f9 = F.createContext(null);
+    f9.displayName = `RouteError`;
+    var p9 = `REACT_ROUTER_ERROR`, lFe = `REDIRECT`, uFe = `ROUTE_ERROR_RESPONSE`;
+    function dFe(e) {
+        if (e.startsWith(`${p9}:${lFe}:{`)) try {
             let t = JSON.parse(e.slice(28));
             if (typeof t == `object` && t && typeof t.status == `number` && typeof t.statusText == `string` && typeof t.location == `string` && typeof t.reloadDocument == `boolean` && typeof t.replace == `boolean`) return t;
         } catch  {}
     }
-    function lFe(e) {
-        if (e.startsWith(`${m9}:${sFe}:{`)) try {
+    function fFe(e) {
+        if (e.startsWith(`${p9}:${uFe}:{`)) try {
             let t = JSON.parse(e.slice(40));
-            if (typeof t == `object` && t && typeof t.status == `number` && typeof t.statusText == `string`) return new $Pe(t.status, t.statusText, t.data);
+            if (typeof t == `object` && t && typeof t.status == `number` && typeof t.statusText == `string`) return new nFe(t.status, t.statusText, t.data);
         } catch  {}
     }
-    function uFe(e, { relative: t } = {}) {
-        B7(h9(), `useHref() may be used only in the context of a <Router> component.`);
-        let { basename: n, navigator: r } = F.useContext(u9), { hash: i, pathname: a, search: o } = y9(e, {
+    function pFe(e, { relative: t } = {}) {
+        z7(m9(), `useHref() may be used only in the context of a <Router> component.`);
+        let { basename: n, navigator: r } = F.useContext(l9), { hash: i, pathname: a, search: o } = v9(e, {
             relative: t
         }), s = a;
-        return n !== `/` && (s = a === `/` ? n : n9([
+        return n !== `/` && (s = a === `/` ? n : t9([
             n,
             a
         ])), r.createHref({
@@ -70920,33 +71015,33 @@ ${h(e)}
             hash: i
         });
     }
+    function m9() {
+        return F.useContext(u9) != null;
+    }
     function h9() {
-        return F.useContext(d9) != null;
+        return z7(m9(), `useLocation() may be used only in the context of a <Router> component.`), F.useContext(u9).location;
     }
-    function g9() {
-        return B7(h9(), `useLocation() may be used only in the context of a <Router> component.`), F.useContext(d9).location;
+    var g9 = `You should call navigate() in a React.useEffect(), not when your component is first rendered.`;
+    function _9(e) {
+        F.useContext(l9).static || F.useLayoutEffect(e);
     }
-    var _9 = `You should call navigate() in a React.useEffect(), not when your component is first rendered.`;
-    function v9(e) {
-        F.useContext(u9).static || F.useLayoutEffect(e);
+    function mFe() {
+        let { isDataRoute: e } = F.useContext(d9);
+        return e ? DFe() : hFe();
     }
-    function dFe() {
-        let { isDataRoute: e } = F.useContext(f9);
-        return e ? wFe() : fFe();
-    }
-    function fFe() {
-        B7(h9(), `useNavigate() may be used only in the context of a <Router> component.`);
-        let e = F.useContext(o9), { basename: t, navigator: n } = F.useContext(u9), { matches: r } = F.useContext(f9), { pathname: i } = g9(), a = JSON.stringify(e9(r)), o = F.useRef(!1);
-        return v9(()=>{
+    function hFe() {
+        z7(m9(), `useNavigate() may be used only in the context of a <Router> component.`);
+        let e = F.useContext(a9), { basename: t, navigator: n } = F.useContext(l9), { matches: r } = F.useContext(d9), { pathname: i } = h9(), a = JSON.stringify($7(r)), o = F.useRef(!1);
+        return _9(()=>{
             o.current = !0;
         }), F.useCallback((r, s = {})=>{
-            if (V7(o.current, _9), !o.current) return;
+            if (B7(o.current, g9), !o.current) return;
             if (typeof r == `number`) {
                 n.go(r);
                 return;
             }
-            let c = t9(r, JSON.parse(a), i, s.relative === `path`);
-            e == null && t !== `/` && (c.pathname = c.pathname === `/` ? t : n9([
+            let c = e9(r, JSON.parse(a), i, s.relative === `path`);
+            e == null && t !== `/` && (c.pathname = c.pathname === `/` ? t : t9([
                 t,
                 c.pathname
             ])), (s.replace ? n.replace : n.push)(c, s.state, s);
@@ -70959,53 +71054,53 @@ ${h(e)}
         ]);
     }
     F.createContext(null);
-    function y9(e, { relative: t } = {}) {
-        let { matches: n } = F.useContext(f9), { pathname: r } = g9(), i = JSON.stringify(e9(n));
-        return F.useMemo(()=>t9(e, JSON.parse(i), r, t === `path`), [
+    function v9(e, { relative: t } = {}) {
+        let { matches: n } = F.useContext(d9), { pathname: r } = h9(), i = JSON.stringify($7(n));
+        return F.useMemo(()=>e9(e, JSON.parse(i), r, t === `path`), [
             e,
             i,
             r,
             t
         ]);
     }
-    function pFe(e, t) {
-        return b9(e, t);
+    function gFe(e, t) {
+        return y9(e, t);
     }
-    function b9(e, t, n) {
-        B7(h9(), `useRoutes() may be used only in the context of a <Router> component.`);
-        let { navigator: r } = F.useContext(u9), { matches: i } = F.useContext(f9), a = i[i.length - 1], o = a ? a.params : {}, s = a ? a.pathname : `/`, c = a ? a.pathnameBase : `/`, l = a && a.route;
+    function y9(e, t, n) {
+        z7(m9(), `useRoutes() may be used only in the context of a <Router> component.`);
+        let { navigator: r } = F.useContext(l9), { matches: i } = F.useContext(d9), a = i[i.length - 1], o = a ? a.params : {}, s = a ? a.pathname : `/`, c = a ? a.pathnameBase : `/`, l = a && a.route;
         {
             let e = l && l.path || ``;
-            O9(s, !l || e.endsWith(`*`) || e.endsWith(`*?`), `You rendered descendant <Routes> (or called \`useRoutes()\`) at "${s}" (under <Route path="${e}">) but the parent route path has no trailing "*". This means if you navigate deeper, the parent won't match anymore and therefore the child routes will never render.
+            D9(s, !l || e.endsWith(`*`) || e.endsWith(`*?`), `You rendered descendant <Routes> (or called \`useRoutes()\`) at "${s}" (under <Route path="${e}">) but the parent route path has no trailing "*". This means if you navigate deeper, the parent won't match anymore and therefore the child routes will never render.
 
 Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` : `${e}/*`}">.`);
         }
-        let u = g9(), d;
+        let u = h9(), d;
         if (t) {
-            let e = typeof t == `string` ? G7(t) : t;
-            B7(c === `/` || e.pathname?.startsWith(c), `When overriding the location using \`<Routes location>\` or \`useRoutes(routes, location)\`, the location pathname must begin with the portion of the URL pathname that was matched by all parent routes. The current pathname base is "${c}" but pathname "${e.pathname}" was given in the \`location\` prop.`), d = e;
+            let e = typeof t == `string` ? W7(t) : t;
+            z7(c === `/` || e.pathname?.startsWith(c), `When overriding the location using \`<Routes location>\` or \`useRoutes(routes, location)\`, the location pathname must begin with the portion of the URL pathname that was matched by all parent routes. The current pathname base is "${c}" but pathname "${e.pathname}" was given in the \`location\` prop.`), d = e;
         } else d = u;
         let f = d.pathname || `/`, p = f;
         if (c !== `/`) {
             let e = c.replace(/^\//, ``).split(`/`);
             p = `/` + f.replace(/^\//, ``).split(`/`).slice(e.length).join(`/`);
         }
-        let m = K7(e, {
+        let m = G7(e, {
             pathname: p
         });
-        V7(l || m != null, `No routes matched location "${d.pathname}${d.search}${d.hash}" `), V7(m == null || m[m.length - 1].route.element !== void 0 || m[m.length - 1].route.Component !== void 0 || m[m.length - 1].route.lazy !== void 0, `Matched leaf route at location "${d.pathname}${d.search}${d.hash}" does not have an element or Component. This means it will render an <Outlet /> with a null value by default resulting in an "empty" page.`);
-        let h = vFe(m && m.map((e)=>Object.assign({}, e, {
+        B7(l || m != null, `No routes matched location "${d.pathname}${d.search}${d.hash}" `), B7(m == null || m[m.length - 1].route.element !== void 0 || m[m.length - 1].route.Component !== void 0 || m[m.length - 1].route.lazy !== void 0, `Matched leaf route at location "${d.pathname}${d.search}${d.hash}" does not have an element or Component. This means it will render an <Outlet /> with a null value by default resulting in an "empty" page.`);
+        let h = xFe(m && m.map((e)=>Object.assign({}, e, {
                 params: Object.assign({}, o, e.params),
-                pathname: n9([
+                pathname: t9([
                     c,
                     r.encodeLocation ? r.encodeLocation(e.pathname.replace(/%/g, `%25`).replace(/\?/g, `%3F`).replace(/#/g, `%23`)).pathname : e.pathname
                 ]),
-                pathnameBase: e.pathnameBase === `/` ? c : n9([
+                pathnameBase: e.pathnameBase === `/` ? c : t9([
                     c,
                     r.encodeLocation ? r.encodeLocation(e.pathnameBase.replace(/%/g, `%25`).replace(/\?/g, `%3F`).replace(/#/g, `%23`)).pathname : e.pathnameBase
                 ])
             })), i, n);
-        return t && h ? F.createElement(d9.Provider, {
+        return t && h ? F.createElement(u9.Provider, {
             value: {
                 location: {
                     pathname: `/`,
@@ -71020,8 +71115,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             }
         }, h) : h;
     }
-    function mFe() {
-        let e = CFe(), t = eFe(e) ? `${e.status} ${e.statusText}` : e instanceof Error ? e.message : JSON.stringify(e), n = e instanceof Error ? e.stack : null, r = `rgba(200,200,200, 0.5)`, i = {
+    function _Fe() {
+        let e = EFe(), t = rFe(e) ? `${e.status} ${e.statusText}` : e instanceof Error ? e.message : JSON.stringify(e), n = e instanceof Error ? e.stack : null, r = `rgba(200,200,200, 0.5)`, i = {
             padding: `0.5rem`,
             backgroundColor: r
         }, a = {
@@ -71040,7 +71135,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             style: i
         }, n) : null, o);
     }
-    var hFe = F.createElement(mFe, null), x9 = class extends F.Component {
+    var vFe = F.createElement(_Fe, null), b9 = class extends F.Component {
         constructor(e){
             super(e), this.state = {
                 location: e.location,
@@ -71070,36 +71165,36 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         render() {
             let e = this.state.error;
             if (this.context && typeof e == `object` && e && `digest` in e && typeof e.digest == `string`) {
-                let t = lFe(e.digest);
+                let t = fFe(e.digest);
                 t && (e = t);
             }
-            let t = e === void 0 ? this.props.children : F.createElement(f9.Provider, {
+            let t = e === void 0 ? this.props.children : F.createElement(d9.Provider, {
                 value: this.props.routeContext
-            }, F.createElement(p9.Provider, {
+            }, F.createElement(f9.Provider, {
                 value: e,
                 children: this.props.component
             }));
-            return this.context ? F.createElement(gFe, {
+            return this.context ? F.createElement(yFe, {
                 error: e
             }, t) : t;
         }
     };
-    x9.contextType = c9;
-    var S9 = new WeakMap;
-    function gFe({ children: e, error: t }) {
-        let { basename: n } = F.useContext(u9);
+    b9.contextType = s9;
+    var x9 = new WeakMap;
+    function yFe({ children: e, error: t }) {
+        let { basename: n } = F.useContext(l9);
         if (typeof t == `object` && t && `digest` in t && typeof t.digest == `string`) {
-            let e = cFe(t.digest);
+            let e = dFe(t.digest);
             if (e) {
-                let r = S9.get(t);
+                let r = x9.get(t);
                 if (r) throw r;
-                let i = i9(e.location, n);
-                if (r9 && !S9.get(t)) if (i.isExternal || e.reloadDocument) window.location.href = i.absoluteURL || i.to;
+                let i = r9(e.location, n);
+                if (n9 && !x9.get(t)) if (i.isExternal || e.reloadDocument) window.location.href = i.absoluteURL || i.to;
                 else {
                     let n = Promise.resolve().then(()=>window.__reactRouterDataRouter.navigate(i.to, {
                             replace: e.replace
                         }));
-                    throw S9.set(t, n), n;
+                    throw x9.set(t, n), n;
                 }
                 return F.createElement(`meta`, {
                     httpEquiv: `refresh`,
@@ -71109,13 +71204,13 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         }
         return e;
     }
-    function _Fe({ routeContext: e, match: t, children: n }) {
-        let r = F.useContext(o9);
-        return r && r.static && r.staticContext && (t.route.errorElement || t.route.ErrorBoundary) && (r.staticContext._deepestRenderedBoundaryId = t.route.id), F.createElement(f9.Provider, {
+    function bFe({ routeContext: e, match: t, children: n }) {
+        let r = F.useContext(a9);
+        return r && r.static && r.staticContext && (t.route.errorElement || t.route.ErrorBoundary) && (r.staticContext._deepestRenderedBoundaryId = t.route.id), F.createElement(d9.Provider, {
             value: e
         }, n);
     }
-    function vFe(e, t = [], n) {
+    function xFe(e, t = [], n) {
         let r = n?.state;
         if (e == null) {
             if (!r) return null;
@@ -71126,7 +71221,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         let i = e, a = r?.errors;
         if (a != null) {
             let e = i.findIndex((e)=>e.route.id && a?.[e.route.id] !== void 0);
-            B7(e >= 0, `Could not find a matching route for errors on route IDs: ${Object.keys(a).join(`,`)}`), i = i.slice(0, Math.min(i.length, e + 1));
+            z7(e >= 0, `Could not find a matching route for errors on route IDs: ${Object.keys(a).join(`,`)}`), i = i.slice(0, Math.min(i.length, e + 1));
         }
         let o = !1, s = -1;
         if (n && r) {
@@ -71148,16 +71243,16 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             c(e, {
                 location: r.location,
                 params: r.matches?.[0]?.params ?? {},
-                unstable_pattern: tFe(r.matches),
+                unstable_pattern: iFe(r.matches),
                 errorInfo: t
             });
         } : void 0;
         return i.reduceRight((e, n, c)=>{
             let u, d = !1, f = null, p = null;
-            r && (u = a && n.route.id ? a[n.route.id] : void 0, f = n.route.errorElement || hFe, o && (s < 0 && c === 0 ? (O9(`route-fallback`, !1, "No `HydrateFallback` element provided to render during initial hydration"), d = !0, p = null) : s === c && (d = !0, p = n.route.hydrateFallbackElement || null)));
+            r && (u = a && n.route.id ? a[n.route.id] : void 0, f = n.route.errorElement || vFe, o && (s < 0 && c === 0 ? (D9(`route-fallback`, !1, "No `HydrateFallback` element provided to render during initial hydration"), d = !0, p = null) : s === c && (d = !0, p = n.route.hydrateFallbackElement || null)));
             let m = t.concat(i.slice(0, c + 1)), h = ()=>{
                 let t;
-                return t = u ? f : d ? p : n.route.Component ? F.createElement(n.route.Component, null) : n.route.element ? n.route.element : e, F.createElement(_Fe, {
+                return t = u ? f : d ? p : n.route.Component ? F.createElement(n.route.Component, null) : n.route.element ? n.route.element : e, F.createElement(bFe, {
                     match: n,
                     routeContext: {
                         outlet: e,
@@ -71167,7 +71262,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                     children: t
                 });
             };
-            return r && (n.route.ErrorBoundary || n.route.errorElement || c === 0) ? F.createElement(x9, {
+            return r && (n.route.ErrorBoundary || n.route.errorElement || c === 0) ? F.createElement(b9, {
                 location: r.location,
                 revalidation: r.revalidation,
                 component: f,
@@ -71182,48 +71277,48 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             }) : h();
         }, null);
     }
-    function C9(e) {
+    function S9(e) {
         return `${e} must be used within a data router.  See https://reactrouter.com/en/main/routers/picking-a-router.`;
     }
-    function yFe(e) {
+    function SFe(e) {
+        let t = F.useContext(a9);
+        return z7(t, S9(e)), t;
+    }
+    function C9(e) {
         let t = F.useContext(o9);
-        return B7(t, C9(e)), t;
+        return z7(t, S9(e)), t;
+    }
+    function CFe(e) {
+        let t = F.useContext(d9);
+        return z7(t, S9(e)), t;
     }
     function w9(e) {
-        let t = F.useContext(s9);
-        return B7(t, C9(e)), t;
+        let t = CFe(e), n = t.matches[t.matches.length - 1];
+        return z7(n.route.id, `${e} can only be used on routes that contain a unique "id"`), n.route.id;
     }
-    function bFe(e) {
-        let t = F.useContext(f9);
-        return B7(t, C9(e)), t;
+    function wFe() {
+        return w9(`useRouteId`);
     }
-    function T9(e) {
-        let t = bFe(e), n = t.matches[t.matches.length - 1];
-        return B7(n.route.id, `${e} can only be used on routes that contain a unique "id"`), n.route.id;
+    function TFe() {
+        return C9(`useNavigation`).navigation;
     }
-    function xFe() {
-        return T9(`useRouteId`);
-    }
-    function SFe() {
-        return w9(`useNavigation`).navigation;
-    }
-    function E9() {
-        let { matches: e, loaderData: t } = w9(`useMatches`);
-        return F.useMemo(()=>e.map((e)=>PPe(e, t)), [
+    function T9() {
+        let { matches: e, loaderData: t } = C9(`useMatches`);
+        return F.useMemo(()=>e.map((e)=>LPe(e, t)), [
             e,
             t
         ]);
     }
-    function CFe() {
-        let e = F.useContext(p9), t = w9(`useRouteError`), n = T9(`useRouteError`);
+    function EFe() {
+        let e = F.useContext(f9), t = C9(`useRouteError`), n = w9(`useRouteError`);
         return e === void 0 ? t.errors?.[n] : e;
     }
-    function wFe() {
-        let { router: e } = yFe(`useNavigate`), t = T9(`useNavigate`), n = F.useRef(!1);
-        return v9(()=>{
+    function DFe() {
+        let { router: e } = SFe(`useNavigate`), t = w9(`useNavigate`), n = F.useRef(!1);
+        return _9(()=>{
             n.current = !0;
         }), F.useCallback(async (r, i = {})=>{
-            V7(n.current, _9), n.current && (typeof r == `number` ? await e.navigate(r) : await e.navigate(r, {
+            B7(n.current, g9), n.current && (typeof r == `number` ? await e.navigate(r) : await e.navigate(r, {
                 fromRouteId: t,
                 ...i
             }));
@@ -71232,24 +71327,24 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             t
         ]);
     }
-    var D9 = {};
-    function O9(e, t, n) {
-        !t && !D9[e] && (D9[e] = !0, V7(!1, n));
+    var E9 = {};
+    function D9(e, t, n) {
+        !t && !E9[e] && (E9[e] = !0, B7(!1, n));
     }
-    F.useOptimistic, F.memo(TFe);
-    function TFe({ routes: e, future: t, state: n, isStatic: r, onError: i }) {
-        return b9(e, void 0, {
+    F.useOptimistic, F.memo(OFe);
+    function OFe({ routes: e, future: t, state: n, isStatic: r, onError: i }) {
+        return y9(e, void 0, {
             state: n,
             isStatic: r,
             onError: i,
             future: t
         });
     }
-    function k9(e) {
-        B7(!1, `A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.`);
+    function O9(e) {
+        z7(!1, `A <Route> is only ever to be used as the child of <Routes> element, never rendered directly. Please wrap your <Route> in a <Routes>.`);
     }
-    function A9({ basename: e = `/`, children: t = null, location: n, navigationType: r = `POP`, navigator: i, static: a = !1, unstable_useTransitions: o }) {
-        B7(!h9(), `You cannot render a <Router> inside another <Router>. You should never have more than one in your app.`);
+    function k9({ basename: e = `/`, children: t = null, location: n, navigationType: r = `POP`, navigator: i, static: a = !1, unstable_useTransitions: o }) {
+        z7(!m9(), `You cannot render a <Router> inside another <Router>. You should never have more than one in your app.`);
         let s = e.replace(/^\/*/, `/`), c = F.useMemo(()=>({
                 basename: s,
                 navigator: i,
@@ -71262,9 +71357,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             a,
             o
         ]);
-        typeof n == `string` && (n = G7(n));
+        typeof n == `string` && (n = W7(n));
         let { pathname: l = `/`, search: u = ``, hash: d = ``, state: f = null, key: p = `default`, unstable_mask: m } = n, h = F.useMemo(()=>{
-            let e = Z7(l, s);
+            let e = X7(l, s);
             return e == null ? null : {
                 location: {
                     pathname: e,
@@ -71286,18 +71381,18 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             r,
             m
         ]);
-        return V7(h != null, `<Router basename="${s}"> is not able to match the URL "${l}${u}${d}" because it does not start with the basename, so the <Router> won't render anything.`), h == null ? null : F.createElement(u9.Provider, {
+        return B7(h != null, `<Router basename="${s}"> is not able to match the URL "${l}${u}${d}" because it does not start with the basename, so the <Router> won't render anything.`), h == null ? null : F.createElement(l9.Provider, {
             value: c
-        }, F.createElement(d9.Provider, {
+        }, F.createElement(u9.Provider, {
             children: t,
             value: h
         }));
     }
-    function EFe({ children: e, location: t }) {
-        return pFe(j9(e), t);
+    function kFe({ children: e, location: t }) {
+        return gFe(A9(e), t);
     }
     F.Component;
-    function j9(e, t = []) {
+    function A9(e, t = []) {
         let n = [];
         return F.Children.forEach(e, (e, r)=>{
             if (!F.isValidElement(e)) return;
@@ -71306,10 +71401,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                 r
             ];
             if (e.type === F.Fragment) {
-                n.push.apply(n, j9(e.props.children, i));
+                n.push.apply(n, A9(e.props.children, i));
                 return;
             }
-            B7(e.type === k9, `[${typeof e.type == `string` ? e.type : e.type.name}] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>`), B7(!e.props.index || !e.props.children, `An index route cannot have child routes.`);
+            z7(e.type === O9, `[${typeof e.type == `string` ? e.type : e.type.name}] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>`), z7(!e.props.index || !e.props.children, `An index route cannot have child routes.`);
             let a = {
                 id: e.props.id || i.join(`-`),
                 caseSensitive: e.props.caseSensitive,
@@ -71329,63 +71424,63 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                 handle: e.props.handle,
                 lazy: e.props.lazy
             };
-            e.props.children && (a.children = j9(e.props.children, i)), n.push(a);
+            e.props.children && (a.children = A9(e.props.children, i)), n.push(a);
         }), n;
     }
-    var M9 = `get`, N9 = `application/x-www-form-urlencoded`;
-    function P9(e) {
+    var j9 = `get`, M9 = `application/x-www-form-urlencoded`;
+    function N9(e) {
         return typeof HTMLElement < `u` && e instanceof HTMLElement;
     }
-    function DFe(e) {
-        return P9(e) && e.tagName.toLowerCase() === `button`;
-    }
-    function OFe(e) {
-        return P9(e) && e.tagName.toLowerCase() === `form`;
-    }
-    function kFe(e) {
-        return P9(e) && e.tagName.toLowerCase() === `input`;
-    }
     function AFe(e) {
+        return N9(e) && e.tagName.toLowerCase() === `button`;
+    }
+    function jFe(e) {
+        return N9(e) && e.tagName.toLowerCase() === `form`;
+    }
+    function MFe(e) {
+        return N9(e) && e.tagName.toLowerCase() === `input`;
+    }
+    function NFe(e) {
         return !!(e.metaKey || e.altKey || e.ctrlKey || e.shiftKey);
     }
-    function jFe(e, t) {
-        return e.button === 0 && (!t || t === `_self`) && !AFe(e);
+    function PFe(e, t) {
+        return e.button === 0 && (!t || t === `_self`) && !NFe(e);
     }
-    var F9 = null;
-    function MFe() {
-        if (F9 === null) try {
-            new FormData(document.createElement(`form`), 0), F9 = !1;
+    var P9 = null;
+    function FFe() {
+        if (P9 === null) try {
+            new FormData(document.createElement(`form`), 0), P9 = !1;
         } catch  {
-            F9 = !0;
+            P9 = !0;
         }
-        return F9;
+        return P9;
     }
-    var NFe = new Set([
+    var IFe = new Set([
         `application/x-www-form-urlencoded`,
         `multipart/form-data`,
         `text/plain`
     ]);
-    function I9(e) {
-        return e != null && !NFe.has(e) ? (V7(!1, `"${e}" is not a valid \`encType\` for \`<Form>\`/\`<fetcher.Form>\` and will default to "${N9}"`), null) : e;
+    function F9(e) {
+        return e != null && !IFe.has(e) ? (B7(!1, `"${e}" is not a valid \`encType\` for \`<Form>\`/\`<fetcher.Form>\` and will default to "${M9}"`), null) : e;
     }
-    function PFe(e, t) {
+    function LFe(e, t) {
         let n, r, i, a, o;
-        if (OFe(e)) {
+        if (jFe(e)) {
             let o = e.getAttribute(`action`);
-            r = o ? Z7(o, t) : null, n = e.getAttribute(`method`) || M9, i = I9(e.getAttribute(`enctype`)) || N9, a = new FormData(e);
-        } else if (DFe(e) || kFe(e) && (e.type === `submit` || e.type === `image`)) {
+            r = o ? X7(o, t) : null, n = e.getAttribute(`method`) || j9, i = F9(e.getAttribute(`enctype`)) || M9, a = new FormData(e);
+        } else if (AFe(e) || MFe(e) && (e.type === `submit` || e.type === `image`)) {
             let o = e.form;
             if (o == null) throw Error(`Cannot submit a <button> or <input type="submit"> without a <form>`);
             let s = e.getAttribute(`formaction`) || o.getAttribute(`action`);
-            if (r = s ? Z7(s, t) : null, n = e.getAttribute(`formmethod`) || o.getAttribute(`method`) || M9, i = I9(e.getAttribute(`formenctype`)) || I9(o.getAttribute(`enctype`)) || N9, a = new FormData(o, e), !MFe()) {
+            if (r = s ? X7(s, t) : null, n = e.getAttribute(`formmethod`) || o.getAttribute(`method`) || j9, i = F9(e.getAttribute(`formenctype`)) || F9(o.getAttribute(`enctype`)) || M9, a = new FormData(o, e), !FFe()) {
                 let { name: t, type: n, value: r } = e;
                 if (n === `image`) {
                     let e = t ? `${t}.` : ``;
                     a.append(`${e}x`, `0`), a.append(`${e}y`, `0`);
                 } else t && a.append(t, r);
             }
-        } else if (P9(e)) throw Error(`Cannot submit element that is not <form>, <button>, or <input type="submit|image">`);
-        else n = M9, r = null, i = N9, o = e;
+        } else if (N9(e)) throw Error(`Cannot submit element that is not <form>, <button>, or <input type="submit|image">`);
+        else n = j9, r = null, i = M9, o = e;
         return a && i === `text/plain` && (o = a, a = void 0), {
             action: r,
             method: n.toLowerCase(),
@@ -71395,27 +71490,27 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         };
     }
     Object.getOwnPropertyNames(Object.prototype).sort().join(`\0`);
-    var FFe = {
+    var RFe = {
         "&": `\\u0026`,
         ">": `\\u003e`,
         "<": `\\u003c`,
         "\u2028": `\\u2028`,
         "\u2029": `\\u2029`
-    }, IFe = /[&><\u2028\u2029]/g;
-    function L9(e) {
-        return e.replace(IFe, (e)=>FFe[e]);
+    }, zFe = /[&><\u2028\u2029]/g;
+    function I9(e) {
+        return e.replace(zFe, (e)=>RFe[e]);
     }
-    function R9(e, t) {
+    function L9(e, t) {
         if (e === !1 || e == null) throw Error(t);
     }
-    function z9(e, t, n, r) {
+    function R9(e, t, n, r) {
         let i = typeof e == `string` ? new URL(e, typeof window > `u` ? `server://singlefetch/` : window.location.origin) : e;
-        return n ? i.pathname.endsWith(`/`) ? i.pathname = `${i.pathname}_.${r}` : i.pathname = `${i.pathname}.${r}` : i.pathname === `/` ? i.pathname = `_root.${r}` : t && Z7(i.pathname, t) === `/` ? i.pathname = `${t.replace(/\/$/, ``)}/_root.${r}` : i.pathname = `${i.pathname.replace(/\/$/, ``)}.${r}`, i;
+        return n ? i.pathname.endsWith(`/`) ? i.pathname = `${i.pathname}_.${r}` : i.pathname = `${i.pathname}.${r}` : i.pathname === `/` ? i.pathname = `_root.${r}` : t && X7(i.pathname, t) === `/` ? i.pathname = `${t.replace(/\/$/, ``)}/_root.${r}` : i.pathname = `${i.pathname.replace(/\/$/, ``)}.${r}`, i;
     }
-    async function LFe(e, t) {
+    async function BFe(e, t) {
         if (e.id in t) return t[e.id];
         try {
-            let n = await OPe(()=>import(e.module).then(async (m)=>{
+            let n = await jPe(()=>import(e.module).then(async (m)=>{
                     await m.__tla;
                     return m;
                 }), []);
@@ -71424,21 +71519,21 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             return console.error(`Error loading route module \`${e.module}\`, reloading page...`), console.error(t), window.__reactRouterContext && window.__reactRouterContext.isSpaMode, window.location.reload(), new Promise(()=>{});
         }
     }
-    function RFe(e) {
+    function VFe(e) {
         return e != null && typeof e.page == `string`;
     }
-    function zFe(e) {
+    function z9(e) {
         return e == null ? !1 : e.href == null ? e.rel === `preload` && typeof e.imageSrcSet == `string` && typeof e.imageSizes == `string` : typeof e.rel == `string` && typeof e.href == `string`;
     }
-    async function BFe(e, t, n) {
-        return WFe((await Promise.all(e.map(async (e)=>{
+    async function HFe(e, t, n) {
+        return KFe((await Promise.all(e.map(async (e)=>{
             let r = t.routes[e.route.id];
             if (r) {
-                let e = await LFe(r, n);
+                let e = await BFe(r, n);
                 return e.links ? e.links() : [];
             }
             return [];
-        }))).flat(1).filter(zFe).filter((e)=>e.rel === `stylesheet` || e.rel === `preload`).map((e)=>e.rel === `stylesheet` ? {
+        }))).flat(1).filter(z9).filter((e)=>e.rel === `stylesheet` || e.rel === `preload`).map((e)=>e.rel === `stylesheet` ? {
                 ...e,
                 rel: `prefetch`,
                 as: `style`
@@ -71466,8 +71561,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             return !0;
         }) : [];
     }
-    function VFe(e, t, { includeHydrateFallback: n } = {}) {
-        return HFe(e.map((e)=>{
+    function UFe(e, t, { includeHydrateFallback: n } = {}) {
+        return WFe(e.map((e)=>{
             let r = t.routes[e.route.id];
             if (!r) return [];
             let i = [
@@ -71476,21 +71571,21 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             return r.clientActionModule && (i = i.concat(r.clientActionModule)), r.clientLoaderModule && (i = i.concat(r.clientLoaderModule)), n && r.hydrateFallbackModule && (i = i.concat(r.hydrateFallbackModule)), r.imports && (i = i.concat(r.imports)), i;
         }).flat(1));
     }
-    function HFe(e) {
+    function WFe(e) {
         return [
             ...new Set(e)
         ];
     }
-    function UFe(e) {
+    function GFe(e) {
         let t = {}, n = Object.keys(e).sort();
         for (let r of n)t[r] = e[r];
         return t;
     }
-    function WFe(e, t) {
+    function KFe(e, t) {
         let n = new Set, r = new Set(t);
         return e.reduce((e, i)=>{
-            if (t && !RFe(i) && i.as === `script` && i.href && r.has(i.href)) return e;
-            let a = JSON.stringify(UFe(i));
+            if (t && !VFe(i) && i.as === `script` && i.href && r.has(i.href)) return e;
+            let a = JSON.stringify(GFe(i));
             return n.has(a) || (n.add(a), e.push({
                 key: a,
                 link: i
@@ -71498,20 +71593,20 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         }, []);
     }
     function V9() {
-        let e = F.useContext(o9);
-        return R9(e, `You must render this element inside a <DataRouterContext.Provider> element`), e;
+        let e = F.useContext(a9);
+        return L9(e, `You must render this element inside a <DataRouterContext.Provider> element`), e;
     }
-    function GFe() {
-        let e = F.useContext(s9);
-        return R9(e, `You must render this element inside a <DataRouterStateContext.Provider> element`), e;
+    function qFe() {
+        let e = F.useContext(o9);
+        return L9(e, `You must render this element inside a <DataRouterStateContext.Provider> element`), e;
     }
     var H9 = F.createContext(void 0);
     H9.displayName = `FrameworkContext`;
     function U9() {
         let e = F.useContext(H9);
-        return R9(e, `You must render this element inside a <HydratedRouter> element`), e;
+        return L9(e, `You must render this element inside a <HydratedRouter> element`), e;
     }
-    function KFe(e, t) {
+    function JFe(e, t) {
         let n = F.useContext(H9), [r, i] = F.useState(!1), [a, o] = F.useState(!1), { onFocus: s, onBlur: c, onMouseEnter: l, onMouseLeave: u, onTouchStart: d } = t, f = F.useRef(null);
         F.useEffect(()=>{
             if (e === `render` && o(!0), e === `viewport`) {
@@ -71570,27 +71665,27 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             e && e(n), n.defaultPrevented || t(n);
         };
     }
-    function qFe({ page: e, ...t }) {
-        let n = rFe(), { router: r } = V9(), i = F.useMemo(()=>K7(r.routes, e, r.basename), [
+    function YFe({ page: e, ...t }) {
+        let n = oFe(), { router: r } = V9(), i = F.useMemo(()=>G7(r.routes, e, r.basename), [
             r.routes,
             e,
             r.basename
         ]);
-        return i ? n ? F.createElement(YFe, {
+        return i ? n ? F.createElement(ZFe, {
             page: e,
             matches: i,
             ...t
-        }) : F.createElement(XFe, {
+        }) : F.createElement(QFe, {
             page: e,
             matches: i,
             ...t
         }) : null;
     }
-    function JFe(e) {
+    function XFe(e) {
         let { manifest: t, routeModules: n } = U9(), [r, i] = F.useState([]);
         return F.useEffect(()=>{
             let r = !1;
-            return BFe(e, t, n).then((e)=>{
+            return HFe(e, t, n).then((e)=>{
                 r || i(e);
             }), ()=>{
                 r = !0;
@@ -71601,10 +71696,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             n
         ]), r;
     }
-    function YFe({ page: e, matches: t, ...n }) {
-        let r = g9(), { future: i } = U9(), { basename: a } = V9(), o = F.useMemo(()=>{
+    function ZFe({ page: e, matches: t, ...n }) {
+        let r = h9(), { future: i } = U9(), { basename: a } = V9(), o = F.useMemo(()=>{
             if (e === r.pathname + r.search + r.hash) return [];
-            let n = z9(e, a, i.unstable_trailingSlashAwareDataRequests, `rsc`), o = !1, s = [];
+            let n = R9(e, a, i.unstable_trailingSlashAwareDataRequests, `rsc`), o = !1, s = [];
             for (let e of t)typeof e.route.shouldRevalidate == `function` ? o = !0 : s.push(e.route.id);
             return o && s.length > 0 && n.searchParams.set(`_routes`, s.join(`,`)), [
                 n.pathname + n.search
@@ -71624,8 +71719,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                 ...n
             })));
     }
-    function XFe({ page: e, matches: t, ...n }) {
-        let r = g9(), { future: i, manifest: a, routeModules: o } = U9(), { basename: s } = V9(), { loaderData: c, matches: l } = GFe(), u = F.useMemo(()=>B9(e, t, l, a, r, `data`), [
+    function QFe({ page: e, matches: t, ...n }) {
+        let r = h9(), { future: i, manifest: a, routeModules: o } = U9(), { basename: s } = V9(), { loaderData: c, matches: l } = qFe(), u = F.useMemo(()=>B9(e, t, l, a, r, `data`), [
             e,
             t,
             l,
@@ -71644,7 +71739,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                 let t = a.routes[e.route.id];
                 !t || !t.hasLoader || (!u.some((t)=>t.route.id === e.route.id) && e.route.id in c && o[e.route.id]?.shouldRevalidate || t.hasClientLoader ? l = !0 : n.add(e.route.id));
             }), n.size === 0) return [];
-            let d = z9(e, s, i.unstable_trailingSlashAwareDataRequests, `data`);
+            let d = R9(e, s, i.unstable_trailingSlashAwareDataRequests, `data`);
             return l && n.size > 0 && d.searchParams.set(`_routes`, t.filter((e)=>n.has(e.route.id)).map((e)=>e.route.id).join(`,`)), [
                 d.pathname + d.search
             ];
@@ -71658,10 +71753,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             t,
             e,
             o
-        ]), p = F.useMemo(()=>VFe(d, a), [
+        ]), p = F.useMemo(()=>UFe(d, a), [
             d,
             a
-        ]), m = JFe(d);
+        ]), m = XFe(d);
         return F.createElement(F.Fragment, null, f.map((e)=>F.createElement(`link`, {
                 key: e,
                 rel: `prefetch`,
@@ -71680,7 +71775,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                 crossOrigin: t.crossOrigin ?? n.crossOrigin
             })));
     }
-    function ZFe(...e) {
+    function $Fe(...e) {
         return (t)=>{
             e.forEach((e)=>{
                 typeof e == `function` ? e(t) : e != null && (e.current = t);
@@ -71688,13 +71783,13 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         };
     }
     F.Component;
-    var QFe = typeof window < `u` && window.document !== void 0 && window.document.createElement !== void 0;
+    var eIe = typeof window < `u` && window.document !== void 0 && window.document.createElement !== void 0;
     try {
-        QFe && (window.__reactRouterVersion = `7.14.0`);
+        eIe && (window.__reactRouterVersion = `7.14.0`);
     } catch  {}
-    function $Fe({ basename: e, children: t, unstable_useTransitions: n, window: r }) {
+    function tIe({ basename: e, children: t, unstable_useTransitions: n, window: r }) {
         let i = F.useRef();
-        i.current ??= kPe({
+        i.current ??= MPe({
             window: r,
             v5Compat: !0
         });
@@ -71709,7 +71804,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         return F.useLayoutEffect(()=>a.listen(c), [
             a,
             c
-        ]), F.createElement(A9, {
+        ]), F.createElement(k9, {
             basename: e,
             children: t,
             location: o.location,
@@ -71718,7 +71813,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             unstable_useTransitions: n
         });
     }
-    function eIe({ basename: e, children: t, history: n, unstable_useTransitions: r }) {
+    function nIe({ basename: e, children: t, history: n, unstable_useTransitions: r }) {
         let [i, a] = F.useState({
             action: n.action,
             location: n.location
@@ -71730,7 +71825,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         return F.useLayoutEffect(()=>n.listen(o), [
             n,
             o
-        ]), F.createElement(A9, {
+        ]), F.createElement(k9, {
             basename: e,
             children: t,
             location: i.location,
@@ -71739,21 +71834,21 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             unstable_useTransitions: r
         });
     }
-    eIe.displayName = `unstable_HistoryRouter`;
+    nIe.displayName = `unstable_HistoryRouter`;
     var G9 = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i, K9 = F.forwardRef(function({ onClick: e, discover: t = `render`, prefetch: n = `none`, relative: r, reloadDocument: i, replace: a, unstable_mask: o, state: s, target: c, to: l, preventScrollReset: u, viewTransition: d, unstable_defaultShouldRevalidate: f, ...p }, m) {
-        let { basename: h, navigator: g, unstable_useTransitions: _ } = F.useContext(u9), v = typeof l == `string` && G9.test(l), y = i9(l, h);
+        let { basename: h, navigator: g, unstable_useTransitions: _ } = F.useContext(l9), v = typeof l == `string` && G9.test(l), y = r9(l, h);
         l = y.to;
-        let b = uFe(l, {
+        let b = pFe(l, {
             relative: r
-        }), x = g9(), S = null;
+        }), x = h9(), S = null;
         if (o) {
-            let e = t9(o, [], x.unstable_mask ? x.unstable_mask.pathname : `/`, !0);
-            h !== `/` && (e.pathname = e.pathname === `/` ? h : n9([
+            let e = e9(o, [], x.unstable_mask ? x.unstable_mask.pathname : `/`, !0);
+            h !== `/` && (e.pathname = e.pathname === `/` ? h : t9([
                 h,
                 e.pathname
             ])), S = g.createHref(e);
         }
-        let [C, w, T] = KFe(n, p), E = aIe(l, {
+        let [C, w, T] = JFe(n, p), E = sIe(l, {
             replace: a,
             unstable_mask: o,
             state: s,
@@ -71772,20 +71867,20 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             ...T,
             href: (O ? S : void 0) || y.absoluteURL || b,
             onClick: O ? D : e,
-            ref: ZFe(m, w),
+            ref: $Fe(m, w),
             target: c,
             "data-discover": !v && t === `render` ? `true` : void 0
         });
-        return C && !v ? F.createElement(F.Fragment, null, ee, F.createElement(qFe, {
+        return C && !v ? F.createElement(F.Fragment, null, ee, F.createElement(YFe, {
             page: b
         })) : ee;
     });
     K9.displayName = `Link`;
-    var tIe = F.forwardRef(function({ "aria-current": e = `page`, caseSensitive: t = !1, className: n = ``, end: r = !1, style: i, to: a, viewTransition: o, children: s, ...c }, l) {
-        let u = y9(a, {
+    var rIe = F.forwardRef(function({ "aria-current": e = `page`, caseSensitive: t = !1, className: n = ``, end: r = !1, style: i, to: a, viewTransition: o, children: s, ...c }, l) {
+        let u = v9(a, {
             relative: c.relative
-        }), d = g9(), f = F.useContext(s9), { navigator: p, basename: m } = F.useContext(u9), h = f != null && fIe(u) && o === !0, g = p.encodeLocation ? p.encodeLocation(u).pathname : u.pathname, _ = d.pathname, v = f && f.navigation && f.navigation.location ? f.navigation.location.pathname : null;
-        t || (_ = _.toLowerCase(), v = v ? v.toLowerCase() : null, g = g.toLowerCase()), v && m && (v = Z7(v, m) || v);
+        }), d = h9(), f = F.useContext(o9), { navigator: p, basename: m } = F.useContext(l9), h = f != null && mIe(u) && o === !0, g = p.encodeLocation ? p.encodeLocation(u).pathname : u.pathname, _ = d.pathname, v = f && f.navigation && f.navigation.location ? f.navigation.location.pathname : null;
+        t || (_ = _.toLowerCase(), v = v ? v.toLowerCase() : null, g = g.toLowerCase()), v && m && (v = X7(v, m) || v);
         let y = g !== `/` && g.endsWith(`/`) ? g.length - 1 : g.length, b = _ === g || !r && _.startsWith(g) && _.charAt(y) === `/`, x = v != null && (v === g || !r && v.startsWith(g) && v.charAt(g.length) === `/`), S = {
             isActive: b,
             isPending: x,
@@ -71808,9 +71903,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             viewTransition: o
         }, typeof s == `function` ? s(S) : s);
     });
-    tIe.displayName = `NavLink`;
-    var nIe = F.forwardRef(({ discover: e = `render`, fetcherKey: t, navigate: n, reloadDocument: r, replace: i, state: a, method: o = M9, action: s, onSubmit: c, relative: l, preventScrollReset: u, viewTransition: d, unstable_defaultShouldRevalidate: f, ...p }, m)=>{
-        let { unstable_useTransitions: h } = F.useContext(u9), g = cIe(), _ = lIe(s, {
+    rIe.displayName = `NavLink`;
+    var iIe = F.forwardRef(({ discover: e = `render`, fetcherKey: t, navigate: n, reloadDocument: r, replace: i, state: a, method: o = j9, action: s, onSubmit: c, relative: l, preventScrollReset: u, viewTransition: d, unstable_defaultShouldRevalidate: f, ...p }, m)=>{
+        let { unstable_useTransitions: h } = F.useContext(l9), g = uIe(), _ = dIe(s, {
             relative: l
         }), v = o.toLowerCase() === `get` ? `get` : `post`, y = typeof s == `string` && G9.test(s);
         return F.createElement(`form`, {
@@ -71837,10 +71932,10 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             "data-discover": !y && e === `render` ? `true` : void 0
         });
     });
-    nIe.displayName = `Form`;
-    function rIe({ getKey: e, storageKey: t, ...n }) {
-        let r = F.useContext(H9), { basename: i } = F.useContext(u9), a = g9(), o = E9();
-        uIe({
+    iIe.displayName = `Form`;
+    function aIe({ getKey: e, storageKey: t, ...n }) {
+        let r = F.useContext(H9), { basename: i } = F.useContext(l9), a = h9(), o = T9();
+        fIe({
             getKey: e,
             storageKey: t
         });
@@ -71868,30 +71963,30 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             ...n,
             suppressHydrationWarning: !0,
             dangerouslySetInnerHTML: {
-                __html: `(${c})(${L9(JSON.stringify(t || Y9))}, ${L9(JSON.stringify(s))})`
+                __html: `(${c})(${I9(JSON.stringify(t || Y9))}, ${I9(JSON.stringify(s))})`
             }
         });
     }
-    rIe.displayName = `ScrollRestoration`;
+    aIe.displayName = `ScrollRestoration`;
     function q9(e) {
         return `${e} must be used within a data router.  See https://reactrouter.com/en/main/routers/picking-a-router.`;
     }
     function J9(e) {
+        let t = F.useContext(a9);
+        return z7(t, q9(e)), t;
+    }
+    function oIe(e) {
         let t = F.useContext(o9);
-        return B7(t, q9(e)), t;
+        return z7(t, q9(e)), t;
     }
-    function iIe(e) {
-        let t = F.useContext(s9);
-        return B7(t, q9(e)), t;
-    }
-    function aIe(e, { target: t, replace: n, unstable_mask: r, state: i, preventScrollReset: a, relative: o, viewTransition: s, unstable_defaultShouldRevalidate: c, unstable_useTransitions: l } = {}) {
-        let u = dFe(), d = g9(), f = y9(e, {
+    function sIe(e, { target: t, replace: n, unstable_mask: r, state: i, preventScrollReset: a, relative: o, viewTransition: s, unstable_defaultShouldRevalidate: c, unstable_useTransitions: l } = {}) {
+        let u = mFe(), d = h9(), f = v9(e, {
             relative: o
         });
         return F.useCallback((p)=>{
-            if (jFe(p, t)) {
+            if (PFe(p, t)) {
                 p.preventDefault();
-                let t = n === void 0 ? W7(d) === W7(f) : n, m = ()=>u(e, {
+                let t = n === void 0 ? U7(d) === U7(f) : n, m = ()=>u(e, {
                         replace: t,
                         unstable_mask: r,
                         state: i,
@@ -71918,12 +72013,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             l
         ]);
     }
-    var oIe = 0, sIe = ()=>`__${String(++oIe)}__`;
-    function cIe() {
-        let { router: e } = J9(`useSubmit`), { basename: t } = F.useContext(u9), n = xFe(), r = e.fetch, i = e.navigate;
+    var cIe = 0, lIe = ()=>`__${String(++cIe)}__`;
+    function uIe() {
+        let { router: e } = J9(`useSubmit`), { basename: t } = F.useContext(l9), n = wFe(), r = e.fetch, i = e.navigate;
         return F.useCallback(async (e, a = {})=>{
-            let { action: o, method: s, encType: c, formData: l, body: u } = PFe(e, t);
-            a.navigate === !1 ? await r(a.fetcherKey || sIe(), n, a.action || o, {
+            let { action: o, method: s, encType: c, formData: l, body: u } = LFe(e, t);
+            a.navigate === !1 ? await r(a.fetcherKey || lIe(), n, a.action || o, {
                 unstable_defaultShouldRevalidate: a.unstable_defaultShouldRevalidate,
                 preventScrollReset: a.preventScrollReset,
                 formData: l,
@@ -71951,14 +72046,14 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             n
         ]);
     }
-    function lIe(e, { relative: t } = {}) {
-        let { basename: n } = F.useContext(u9), r = F.useContext(f9);
-        B7(r, `useFormAction must be used inside a RouteContext`);
+    function dIe(e, { relative: t } = {}) {
+        let { basename: n } = F.useContext(l9), r = F.useContext(d9);
+        z7(r, `useFormAction must be used inside a RouteContext`);
         let [i] = r.matches.slice(-1), a = {
-            ...y9(e || `.`, {
+            ...v9(e || `.`, {
                 relative: t
             })
-        }, o = g9();
+        }, o = h9();
         if (e == null) {
             a.search = o.search;
             let e = new URLSearchParams(a.search), t = e.getAll(`index`);
@@ -71968,24 +72063,24 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                 a.search = n ? `?${n}` : ``;
             }
         }
-        return (!e || e === `.`) && i.route.index && (a.search = a.search ? a.search.replace(/^\?/, `?index&`) : `?index`), n !== `/` && (a.pathname = a.pathname === `/` ? n : n9([
+        return (!e || e === `.`) && i.route.index && (a.search = a.search ? a.search.replace(/^\?/, `?index&`) : `?index`), n !== `/` && (a.pathname = a.pathname === `/` ? n : t9([
             n,
             a.pathname
-        ])), W7(a);
+        ])), U7(a);
     }
     var Y9 = `react-router-scroll-positions`, X9 = {};
     function Z9(e, t, n, r) {
         let i = null;
         return r && (i = r(n === `/` ? e : {
             ...e,
-            pathname: Z7(e.pathname, n) || e.pathname
+            pathname: X7(e.pathname, n) || e.pathname
         }, t)), i ??= e.key, i;
     }
-    function uIe({ getKey: e, storageKey: t } = {}) {
-        let { router: n } = J9(`useScrollRestoration`), { restoreScrollPosition: r, preventScrollReset: i } = iIe(`useScrollRestoration`), { basename: a } = F.useContext(u9), o = g9(), s = E9(), c = SFe();
+    function fIe({ getKey: e, storageKey: t } = {}) {
+        let { router: n } = J9(`useScrollRestoration`), { restoreScrollPosition: r, preventScrollReset: i } = oIe(`useScrollRestoration`), { basename: a } = F.useContext(l9), o = h9(), s = T9(), c = TFe();
         F.useEffect(()=>(window.history.scrollRestoration = `manual`, ()=>{
                 window.history.scrollRestoration = `auto`;
-            }), []), dIe(F.useCallback(()=>{
+            }), []), pIe(F.useCallback(()=>{
             if (c.state === `idle`) {
                 let t = Z9(o, s, a, e);
                 X9[t] = window.scrollY;
@@ -71993,7 +72088,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             try {
                 sessionStorage.setItem(t || Y9, JSON.stringify(X9));
             } catch (e) {
-                V7(!1, `Failed to save scroll positions in sessionStorage, <ScrollRestoration /> will not work properly (${e}).`);
+                B7(!1, `Failed to save scroll positions in sessionStorage, <ScrollRestoration /> will not work properly (${e}).`);
             }
             window.history.scrollRestoration = `auto`;
         }, [
@@ -72032,7 +72127,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                         }
                     }
                 } catch  {
-                    V7(!1, `"${o.hash.slice(1)}" is not a decodable element ID. The view will not scroll to it.`);
+                    B7(!1, `"${o.hash.slice(1)}" is not a decodable element ID. The view will not scroll to it.`);
                 }
                 i !== !0 && window.scrollTo(0, 0);
             }
@@ -72042,7 +72137,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             i
         ]));
     }
-    function dIe(e, t) {
+    function pIe(e, t) {
         let { capture: n } = t || {};
         F.useEffect(()=>{
             let t = n == null ? void 0 : {
@@ -72056,18 +72151,18 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             n
         ]);
     }
-    function fIe(e, { relative: t } = {}) {
-        let n = F.useContext(l9);
-        B7(n != null, "`useViewTransitionState` must be used within `react-router-dom`'s `RouterProvider`.  Did you accidentally import `RouterProvider` from `react-router`?");
-        let { basename: r } = J9(`useViewTransitionState`), i = y9(e, {
+    function mIe(e, { relative: t } = {}) {
+        let n = F.useContext(c9);
+        z7(n != null, "`useViewTransitionState` must be used within `react-router-dom`'s `RouterProvider`.  Did you accidentally import `RouterProvider` from `react-router`?");
+        let { basename: r } = J9(`useViewTransitionState`), i = v9(e, {
             relative: t
         });
         if (!n.isTransitioning) return !1;
-        let a = Z7(n.currentLocation.pathname, r) || n.currentLocation.pathname, o = Z7(n.nextLocation.pathname, r) || n.nextLocation.pathname;
-        return X7(i.pathname, o) != null || X7(i.pathname, a) != null;
+        let a = X7(n.currentLocation.pathname, r) || n.currentLocation.pathname, o = X7(n.nextLocation.pathname, r) || n.nextLocation.pathname;
+        return Y7(i.pathname, o) != null || Y7(i.pathname, a) != null;
     }
-    var pIe = ({ vaxApi: e })=>{
-        let [t, n] = (0, F.useState)(null), r = g9(), i = new URLSearchParams(r.search), a = i.get(`code`);
+    var hIe = ({ vaxApi: e })=>{
+        let [t, n] = (0, F.useState)(null), r = h9(), i = new URLSearchParams(r.search), a = i.get(`code`);
         return a ? i.get(`role`) ? (0, b.jsxs)(`main`, {
             className: `pt-12 px-6 max-w-screen-md mx-auto`,
             children: [
@@ -72150,7 +72245,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                 })
             ]
         }) : `role is necessary` : `code is necessary`;
-    }, mIe = [
+    }, gIe = [
         {
             code: `en`,
             label: `EN`,
@@ -72171,7 +72266,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         let { language: t, setLanguage: n } = dl();
         return (0, b.jsx)(`div`, {
             className: `flex items-center gap-1 bg-white/80 backdrop-blur-md rounded-full px-2 py-1 shadow-sm border border-slate-200/60 ${e ? `fixed top-3 right-4 z-[100]` : ``}`,
-            children: mIe.map(({ code: e, label: r, flag: i })=>(0, b.jsxs)(`button`, {
+            children: gIe.map(({ code: e, label: r, flag: i })=>(0, b.jsxs)(`button`, {
                     onClick: ()=>n(e),
                     className: `flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-bold transition-colors ${t === e ? `bg-primary` : `text-slate-500 hover:text-slate-800`}`,
                     children: [
@@ -72185,7 +72280,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                 }, e))
         });
     }
-    function hIe() {
+    function _Ie() {
         let [e, t] = (0, F.useState)(!1), [n, r] = (0, F.useState)(null), [i, a] = (0, F.useState)(null), [o, s] = (0, F.useState)(null), c = async (e, n)=>{
             if (console.log(`loading...`), ml()) {
                 let e = await l7(n, fl), t = new Uint8Array(32);
@@ -72195,20 +72290,20 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         }, l = ()=>{
             t(!1), r(null), a(null);
         };
-        return (0, b.jsx)($Fe, {
+        return (0, b.jsx)(tIe, {
             children: (0, b.jsx)(b.Fragment, {
                 children: e ? (0, b.jsx)(b.Fragment, {
-                    children: ml() ? (0, b.jsxs)(EFe, {
+                    children: ml() ? (0, b.jsxs)(kFe, {
                         children: [
-                            (0, b.jsx)(k9, {
+                            (0, b.jsx)(O9, {
                                 path: `/invite`,
-                                element: (0, b.jsx)(pIe, {
+                                element: (0, b.jsx)(hIe, {
                                     vaxApi: o
                                 })
                             }),
-                            (0, b.jsx)(k9, {
+                            (0, b.jsx)(O9, {
                                 path: `/`,
-                                element: (0, b.jsx)(wPe, {
+                                element: (0, b.jsx)(DPe, {
                                     onLogout: l,
                                     walletAddress: n,
                                     connectedApi: i,
@@ -72216,7 +72311,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                                 })
                             })
                         ]
-                    }) : (0, b.jsx)(TPe, {
+                    }) : (0, b.jsx)(OPe, {
                         onLogout: l,
                         walletAddress: n
                     })
@@ -72233,19 +72328,19 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
             })
         });
     }
-    function gIe() {
+    function vIe() {
         return (0, b.jsx)(ul, {
             children: (0, b.jsx)(bl, {
-                children: (0, b.jsx)(hIe, {})
+                children: (0, b.jsx)(_Ie, {})
             })
         });
     }
     globalThis.Buffer = y.Buffer;
-    var $9 = new Map, _Ie = zs.fromValue.bind(zs);
+    var $9 = new Map, yIe = zs.fromValue.bind(zs);
     zs.fromValue = function(e) {
-        let t = _Ie(e), n = `${t.x},${t.y}`;
+        let t = yIe(e), n = `${t.x},${t.y}`;
         return $9.has(n) || $9.set(n, t), $9.get(n);
     }, (0, sl.createRoot)(document.getElementById(`root`)).render((0, b.jsx)(F.StrictMode, {
-        children: (0, b.jsx)(gIe, {})
+        children: (0, b.jsx)(vIe, {})
     }));
 })();
