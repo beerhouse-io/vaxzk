@@ -1,6 +1,12 @@
 import * as __compactRuntime from '@midnight-ntwrk/compact-runtime';
 __compactRuntime.checkRuntimeVersion('0.15.0');
 
+export var Role;
+(function (Role) {
+  Role[Role['admin'] = 0] = 'admin';
+  Role[Role['clinic'] = 1] = 'clinic';
+})(Role || (Role = {}));
+
 const _descriptor_0 = new __compactRuntime.CompactTypeBytes(32);
 
 const _descriptor_1 = new __compactRuntime.CompactTypeBytes(20);
@@ -116,24 +122,7 @@ const _descriptor_13 = new __compactRuntime.CompactTypeUnsignedInteger(65535n, 2
 
 const _descriptor_14 = new __compactRuntime.CompactTypeUnsignedInteger(18446744073709551615n, 8);
 
-const _descriptor_15 = new __compactRuntime.CompactTypeUnsignedInteger(452312848583266388373324160190187140051835877600158453279131187530910662655n, 31);
-
-class _tuple_0 {
-  alignment() {
-    return _descriptor_6.alignment().concat(_descriptor_15.alignment());
-  }
-  fromValue(value_0) {
-    return [
-      _descriptor_6.fromValue(value_0),
-      _descriptor_15.fromValue(value_0)
-    ]
-  }
-  toValue(value_0) {
-    return _descriptor_6.toValue(value_0[0]).concat(_descriptor_15.toValue(value_0[1]));
-  }
-}
-
-const _descriptor_16 = new _tuple_0();
+const _descriptor_15 = new __compactRuntime.CompactTypeEnum(1, 1);
 
 class _ZswapCoinPublicKey_0 {
   alignment() {
@@ -149,9 +138,26 @@ class _ZswapCoinPublicKey_0 {
   }
 }
 
-const _descriptor_17 = new _ZswapCoinPublicKey_0();
+const _descriptor_16 = new _ZswapCoinPublicKey_0();
 
-const _descriptor_18 = new __compactRuntime.CompactTypeVector(2, _descriptor_0);
+const _descriptor_17 = new __compactRuntime.CompactTypeUnsignedInteger(452312848583266388373324160190187140051835877600158453279131187530910662655n, 31);
+
+class _tuple_0 {
+  alignment() {
+    return _descriptor_6.alignment().concat(_descriptor_17.alignment());
+  }
+  fromValue(value_0) {
+    return [
+      _descriptor_6.fromValue(value_0),
+      _descriptor_17.fromValue(value_0)
+    ]
+  }
+  toValue(value_0) {
+    return _descriptor_6.toValue(value_0[0]).concat(_descriptor_17.toValue(value_0[1]));
+  }
+}
+
+const _descriptor_18 = new _tuple_0();
 
 const _descriptor_19 = new __compactRuntime.CompactTypeVector(2, _descriptor_6);
 
@@ -176,6 +182,8 @@ class _VaxZkSchnorrHashInput_0 {
 
 const _descriptor_20 = new _VaxZkSchnorrHashInput_0();
 
+const _descriptor_21 = new __compactRuntime.CompactTypeVector(2, _descriptor_0);
+
 class _Either_0 {
   alignment() {
     return _descriptor_4.alignment().concat(_descriptor_0.alignment().concat(_descriptor_0.alignment()));
@@ -192,7 +200,7 @@ class _Either_0 {
   }
 }
 
-const _descriptor_21 = new _Either_0();
+const _descriptor_22 = new _Either_0();
 
 class _ContractAddress_0 {
   alignment() {
@@ -208,9 +216,9 @@ class _ContractAddress_0 {
   }
 }
 
-const _descriptor_22 = new _ContractAddress_0();
+const _descriptor_23 = new _ContractAddress_0();
 
-const _descriptor_23 = new __compactRuntime.CompactTypeUnsignedInteger(255n, 1);
+const _descriptor_24 = new __compactRuntime.CompactTypeUnsignedInteger(255n, 1);
 
 export class Contract {
   witnesses;
@@ -305,39 +313,48 @@ export class Contract {
         partialProofData.output = { value: [], alignment: [] };
         return { result: result_0, context: context, proofData: partialProofData, gasCost: context.gasCost };
       },
-      acceptInviteAdmin: (...args_1) => {
-        if (args_1.length !== 2) {
-          throw new __compactRuntime.CompactError(`acceptInviteAdmin: expected 2 arguments (as invoked from Typescript), received ${args_1.length}`);
+      acceptInvite: (...args_1) => {
+        if (args_1.length !== 3) {
+          throw new __compactRuntime.CompactError(`acceptInvite: expected 3 arguments (as invoked from Typescript), received ${args_1.length}`);
         }
         const contextOrig_0 = args_1[0];
-        const inviteCode_0 = args_1[1];
+        const role_0 = args_1[1];
+        const inviteCode_0 = args_1[2];
         if (!(typeof(contextOrig_0) === 'object' && contextOrig_0.currentQueryContext != undefined)) {
-          __compactRuntime.typeError('acceptInviteAdmin',
+          __compactRuntime.typeError('acceptInvite',
                                      'argument 1 (as invoked from Typescript)',
-                                     'Invites.compact line 58 char 1',
+                                     'Invites.compact line 45 char 1',
                                      'CircuitContext',
                                      contextOrig_0)
         }
-        if (!(inviteCode_0.buffer instanceof ArrayBuffer && inviteCode_0.BYTES_PER_ELEMENT === 1 && inviteCode_0.length === 32)) {
-          __compactRuntime.typeError('acceptInviteAdmin',
+        if (!(typeof(role_0) === 'number' && role_0 >= 0 && role_0 <= 1)) {
+          __compactRuntime.typeError('acceptInvite',
                                      'argument 1 (argument 2 as invoked from Typescript)',
-                                     'Invites.compact line 58 char 1',
+                                     'Invites.compact line 45 char 1',
+                                     'Enum<Role, admin, clinic>',
+                                     role_0)
+        }
+        if (!(inviteCode_0.buffer instanceof ArrayBuffer && inviteCode_0.BYTES_PER_ELEMENT === 1 && inviteCode_0.length === 32)) {
+          __compactRuntime.typeError('acceptInvite',
+                                     'argument 2 (argument 3 as invoked from Typescript)',
+                                     'Invites.compact line 45 char 1',
                                      'Bytes<32>',
                                      inviteCode_0)
         }
         const context = { ...contextOrig_0, gasCost: __compactRuntime.emptyRunningCost() };
         const partialProofData = {
           input: {
-            value: _descriptor_0.toValue(inviteCode_0),
-            alignment: _descriptor_0.alignment()
+            value: _descriptor_15.toValue(role_0).concat(_descriptor_0.toValue(inviteCode_0)),
+            alignment: _descriptor_15.alignment().concat(_descriptor_0.alignment())
           },
           output: undefined,
           publicTranscript: [],
           privateTranscriptOutputs: []
         };
-        const result_0 = this._acceptInviteAdmin_0(context,
-                                                   partialProofData,
-                                                   inviteCode_0);
+        const result_0 = this._acceptInvite_0(context,
+                                              partialProofData,
+                                              role_0,
+                                              inviteCode_0);
         partialProofData.output = { value: [], alignment: [] };
         return { result: result_0, context: context, proofData: partialProofData, gasCost: context.gasCost };
       },
@@ -349,7 +366,7 @@ export class Contract {
         if (!(typeof(contextOrig_0) === 'object' && contextOrig_0.currentQueryContext != undefined)) {
           __compactRuntime.typeError('revokeAdmin',
                                      'argument 1 (as invoked from Typescript)',
-                                     'Invites.compact line 73 char 1',
+                                     'Invites.compact line 74 char 1',
                                      'CircuitContext',
                                      contextOrig_0)
         }
@@ -628,7 +645,7 @@ export class Contract {
     this.impureCircuits = {
       registerInviteAdmin: this.circuits.registerInviteAdmin,
       registerInviteClinic: this.circuits.registerInviteClinic,
-      acceptInviteAdmin: this.circuits.acceptInviteAdmin,
+      acceptInvite: this.circuits.acceptInvite,
       revokeAdmin: this.circuits.revokeAdmin,
       addClinic: this.circuits.addClinic,
       revokeClinic: this.circuits.revokeClinic,
@@ -641,7 +658,7 @@ export class Contract {
     this.provableCircuits = {
       registerInviteAdmin: this.circuits.registerInviteAdmin,
       registerInviteClinic: this.circuits.registerInviteClinic,
-      acceptInviteAdmin: this.circuits.acceptInviteAdmin,
+      acceptInvite: this.circuits.acceptInvite,
       revokeAdmin: this.circuits.revokeAdmin,
       addClinic: this.circuits.addClinic,
       revokeClinic: this.circuits.revokeClinic,
@@ -689,7 +706,7 @@ export class Contract {
     state_0.data = new __compactRuntime.ChargedState(stateValue_0);
     state_0.setOperation('registerInviteAdmin', new __compactRuntime.ContractOperation());
     state_0.setOperation('registerInviteClinic', new __compactRuntime.ContractOperation());
-    state_0.setOperation('acceptInviteAdmin', new __compactRuntime.ContractOperation());
+    state_0.setOperation('acceptInvite', new __compactRuntime.ContractOperation());
     state_0.setOperation('revokeAdmin', new __compactRuntime.ContractOperation());
     state_0.setOperation('addClinic', new __compactRuntime.ContractOperation());
     state_0.setOperation('revokeClinic', new __compactRuntime.ContractOperation());
@@ -709,8 +726,8 @@ export class Contract {
                                       partialProofData,
                                       [
                                        { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_23.toValue(0n),
-                                                                                              alignment: _descriptor_23.alignment() }).encode() } },
+                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(0n),
+                                                                                              alignment: _descriptor_24.alignment() }).encode() } },
                                        { push: { storage: true,
                                                  value: __compactRuntime.StateValue.newMap(
                                                           new __compactRuntime.StateMap()
@@ -720,8 +737,8 @@ export class Contract {
                                       partialProofData,
                                       [
                                        { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_23.toValue(1n),
-                                                                                              alignment: _descriptor_23.alignment() }).encode() } },
+                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(1n),
+                                                                                              alignment: _descriptor_24.alignment() }).encode() } },
                                        { push: { storage: true,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_2.toValue(0n),
                                                                                               alignment: _descriptor_2.alignment() }).encode() } },
@@ -730,8 +747,8 @@ export class Contract {
                                       partialProofData,
                                       [
                                        { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_23.toValue(2n),
-                                                                                              alignment: _descriptor_23.alignment() }).encode() } },
+                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(2n),
+                                                                                              alignment: _descriptor_24.alignment() }).encode() } },
                                        { push: { storage: true,
                                                  value: __compactRuntime.StateValue.newMap(
                                                           new __compactRuntime.StateMap()
@@ -741,8 +758,8 @@ export class Contract {
                                       partialProofData,
                                       [
                                        { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_23.toValue(3n),
-                                                                                              alignment: _descriptor_23.alignment() }).encode() } },
+                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(3n),
+                                                                                              alignment: _descriptor_24.alignment() }).encode() } },
                                        { push: { storage: true,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_2.toValue(0n),
                                                                                               alignment: _descriptor_2.alignment() }).encode() } },
@@ -751,8 +768,8 @@ export class Contract {
                                       partialProofData,
                                       [
                                        { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_23.toValue(4n),
-                                                                                              alignment: _descriptor_23.alignment() }).encode() } },
+                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(4n),
+                                                                                              alignment: _descriptor_24.alignment() }).encode() } },
                                        { push: { storage: true,
                                                  value: __compactRuntime.StateValue.newMap(
                                                           new __compactRuntime.StateMap()
@@ -762,8 +779,8 @@ export class Contract {
                                       partialProofData,
                                       [
                                        { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_23.toValue(5n),
-                                                                                              alignment: _descriptor_23.alignment() }).encode() } },
+                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(5n),
+                                                                                              alignment: _descriptor_24.alignment() }).encode() } },
                                        { push: { storage: true,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_2.toValue(0n),
                                                                                               alignment: _descriptor_2.alignment() }).encode() } },
@@ -772,8 +789,8 @@ export class Contract {
                                       partialProofData,
                                       [
                                        { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_23.toValue(6n),
-                                                                                              alignment: _descriptor_23.alignment() }).encode() } },
+                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(6n),
+                                                                                              alignment: _descriptor_24.alignment() }).encode() } },
                                        { push: { storage: true,
                                                  value: __compactRuntime.StateValue.newMap(
                                                           new __compactRuntime.StateMap()
@@ -783,8 +800,8 @@ export class Contract {
                                       partialProofData,
                                       [
                                        { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_23.toValue(7n),
-                                                                                              alignment: _descriptor_23.alignment() }).encode() } },
+                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(7n),
+                                                                                              alignment: _descriptor_24.alignment() }).encode() } },
                                        { push: { storage: true,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_2.toValue(0n),
                                                                                               alignment: _descriptor_2.alignment() }).encode() } },
@@ -793,8 +810,8 @@ export class Contract {
                                       partialProofData,
                                       [
                                        { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_23.toValue(8n),
-                                                                                              alignment: _descriptor_23.alignment() }).encode() } },
+                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(8n),
+                                                                                              alignment: _descriptor_24.alignment() }).encode() } },
                                        { push: { storage: true,
                                                  value: __compactRuntime.StateValue.newMap(
                                                           new __compactRuntime.StateMap()
@@ -804,8 +821,8 @@ export class Contract {
                                       partialProofData,
                                       [
                                        { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_23.toValue(9n),
-                                                                                              alignment: _descriptor_23.alignment() }).encode() } },
+                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(9n),
+                                                                                              alignment: _descriptor_24.alignment() }).encode() } },
                                        { push: { storage: true,
                                                  value: __compactRuntime.StateValue.newMap(
                                                           new __compactRuntime.StateMap()
@@ -815,8 +832,8 @@ export class Contract {
                                       partialProofData,
                                       [
                                        { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_23.toValue(10n),
-                                                                                              alignment: _descriptor_23.alignment() }).encode() } },
+                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(10n),
+                                                                                              alignment: _descriptor_24.alignment() }).encode() } },
                                        { push: { storage: true,
                                                  value: __compactRuntime.StateValue.newMap(
                                                           new __compactRuntime.StateMap()
@@ -826,8 +843,8 @@ export class Contract {
                                       partialProofData,
                                       [
                                        { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_23.toValue(11n),
-                                                                                              alignment: _descriptor_23.alignment() }).encode() } },
+                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(11n),
+                                                                                              alignment: _descriptor_24.alignment() }).encode() } },
                                        { push: { storage: true,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_14.toValue(0n),
                                                                                               alignment: _descriptor_14.alignment() }).encode() } },
@@ -836,8 +853,8 @@ export class Contract {
                                       partialProofData,
                                       [
                                        { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_23.toValue(12n),
-                                                                                              alignment: _descriptor_23.alignment() }).encode() } },
+                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(12n),
+                                                                                              alignment: _descriptor_24.alignment() }).encode() } },
                                        { push: { storage: true,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_14.toValue(0n),
                                                                                               alignment: _descriptor_14.alignment() }).encode() } },
@@ -846,8 +863,8 @@ export class Contract {
                                       partialProofData,
                                       [
                                        { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_23.toValue(13n),
-                                                                                              alignment: _descriptor_23.alignment() }).encode() } },
+                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(13n),
+                                                                                              alignment: _descriptor_24.alignment() }).encode() } },
                                        { push: { storage: true,
                                                  value: __compactRuntime.StateValue.newMap(
                                                           new __compactRuntime.StateMap()
@@ -857,8 +874,8 @@ export class Contract {
                                       partialProofData,
                                       [
                                        { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_23.toValue(14n),
-                                                                                              alignment: _descriptor_23.alignment() }).encode() } },
+                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(14n),
+                                                                                              alignment: _descriptor_24.alignment() }).encode() } },
                                        { push: { storage: true,
                                                  value: __compactRuntime.StateValue.newMap(
                                                           new __compactRuntime.StateMap()
@@ -873,8 +890,8 @@ export class Contract {
                                                 pushPath: true,
                                                 path: [
                                                        { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(0n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                         value: { value: _descriptor_24.toValue(0n),
+                                                                  alignment: _descriptor_24.alignment() } }] } },
                                        { push: { storage: false,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(adminId_0),
                                                                                               alignment: _descriptor_0.alignment() }).encode() } },
@@ -890,8 +907,8 @@ export class Contract {
                                                 pushPath: true,
                                                 path: [
                                                        { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(11n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                         value: { value: _descriptor_24.toValue(11n),
+                                                                  alignment: _descriptor_24.alignment() } }] } },
                                        { addi: { immediate: parseInt(__compactRuntime.valueToBigInt(
                                                               { value: _descriptor_13.toValue(tmp_0),
                                                                 alignment: _descriptor_13.alignment() }
@@ -906,8 +923,8 @@ export class Contract {
                                                 pushPath: true,
                                                 path: [
                                                        { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(12n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                         value: { value: _descriptor_24.toValue(12n),
+                                                                  alignment: _descriptor_24.alignment() } }] } },
                                        { addi: { immediate: parseInt(__compactRuntime.valueToBigInt(
                                                               { value: _descriptor_13.toValue(tmp_1),
                                                                 alignment: _descriptor_13.alignment() }
@@ -921,8 +938,8 @@ export class Contract {
                                                 pushPath: true,
                                                 path: [
                                                        { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(9n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                         value: { value: _descriptor_24.toValue(9n),
+                                                                  alignment: _descriptor_24.alignment() } }] } },
                                        { push: { storage: false,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_1.toValue(new Uint8Array([72, 101, 112, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])),
                                                                                               alignment: _descriptor_1.alignment() }).encode() } },
@@ -937,8 +954,8 @@ export class Contract {
                                                 pushPath: true,
                                                 path: [
                                                        { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(9n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                         value: { value: _descriptor_24.toValue(9n),
+                                                                  alignment: _descriptor_24.alignment() } }] } },
                                        { push: { storage: false,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_1.toValue(new Uint8Array([80, 67, 86, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])),
                                                                                               alignment: _descriptor_1.alignment() }).encode() } },
@@ -953,8 +970,8 @@ export class Contract {
                                                 pushPath: true,
                                                 path: [
                                                        { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(9n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                         value: { value: _descriptor_24.toValue(9n),
+                                                                  alignment: _descriptor_24.alignment() } }] } },
                                        { push: { storage: false,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_1.toValue(new Uint8Array([84, 100, 97, 112, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])),
                                                                                               alignment: _descriptor_1.alignment() }).encode() } },
@@ -979,8 +996,8 @@ export class Contract {
                                                 pushPath: true,
                                                 path: [
                                                        { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(8n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                         value: { value: _descriptor_24.toValue(8n),
+                                                                  alignment: _descriptor_24.alignment() } }] } },
                                        { push: { storage: false,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(new Uint8Array([99, 108, 105, 110, 105, 99, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])),
                                                                                               alignment: _descriptor_0.alignment() }).encode() } },
@@ -1006,8 +1023,8 @@ export class Contract {
                                                 pushPath: true,
                                                 path: [
                                                        { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(8n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                         value: { value: _descriptor_24.toValue(8n),
+                                                                  alignment: _descriptor_24.alignment() } }] } },
                                        { push: { storage: false,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(new Uint8Array([99, 108, 105, 110, 105, 99, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])),
                                                                                               alignment: _descriptor_0.alignment() }).encode() } },
@@ -1023,8 +1040,8 @@ export class Contract {
                                                 pushPath: true,
                                                 path: [
                                                        { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(4n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                         value: { value: _descriptor_24.toValue(4n),
+                                                                  alignment: _descriptor_24.alignment() } }] } },
                                        { push: { storage: false,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(adminId_0),
                                                                                               alignment: _descriptor_0.alignment() }).encode() } },
@@ -1040,8 +1057,8 @@ export class Contract {
                                                                                        pushPath: false,
                                                                                        path: [
                                                                                               { tag: 'value',
-                                                                                                value: { value: _descriptor_23.toValue(0n),
-                                                                                                         alignment: _descriptor_23.alignment() } }] } },
+                                                                                                value: { value: _descriptor_24.toValue(0n),
+                                                                                                         alignment: _descriptor_24.alignment() } }] } },
                                                                               'size',
                                                                               { popeq: { cached: true,
                                                                                          result: undefined } }]).value);
@@ -1049,8 +1066,8 @@ export class Contract {
                                       partialProofData,
                                       [
                                        { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_23.toValue(1n),
-                                                                                              alignment: _descriptor_23.alignment() }).encode() } },
+                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(1n),
+                                                                                              alignment: _descriptor_24.alignment() }).encode() } },
                                        { push: { storage: true,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_2.toValue(tmp_4),
                                                                                               alignment: _descriptor_2.alignment() }).encode() } },
@@ -1063,8 +1080,8 @@ export class Contract {
                                                                                        pushPath: false,
                                                                                        path: [
                                                                                               { tag: 'value',
-                                                                                                value: { value: _descriptor_23.toValue(4n),
-                                                                                                         alignment: _descriptor_23.alignment() } }] } },
+                                                                                                value: { value: _descriptor_24.toValue(4n),
+                                                                                                         alignment: _descriptor_24.alignment() } }] } },
                                                                               'size',
                                                                               { popeq: { cached: true,
                                                                                          result: undefined } }]).value);
@@ -1072,8 +1089,8 @@ export class Contract {
                                       partialProofData,
                                       [
                                        { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_23.toValue(5n),
-                                                                                              alignment: _descriptor_23.alignment() }).encode() } },
+                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(5n),
+                                                                                              alignment: _descriptor_24.alignment() }).encode() } },
                                        { push: { storage: true,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_2.toValue(tmp_5),
                                                                                               alignment: _descriptor_2.alignment() }).encode() } },
@@ -1090,7 +1107,7 @@ export class Contract {
     return result_0;
   }
   _persistentHash_0(value_0) {
-    const result_0 = __compactRuntime.persistentHash(_descriptor_18, value_0);
+    const result_0 = __compactRuntime.persistentHash(_descriptor_21, value_0);
     return result_0;
   }
   _persistentHash_1(value_0) {
@@ -1112,8 +1129,8 @@ export class Contract {
   _ownPublicKey_0(context, partialProofData) {
     const result_0 = __compactRuntime.ownPublicKey(context);
     partialProofData.privateTranscriptOutputs.push({
-      value: _descriptor_17.toValue(result_0),
-      alignment: _descriptor_17.alignment()
+      value: _descriptor_16.toValue(result_0),
+      alignment: _descriptor_16.alignment()
     });
     return result_0;
   }
@@ -1130,8 +1147,8 @@ export class Contract {
                                  result_0)
     }
     partialProofData.privateTranscriptOutputs.push({
-      value: _descriptor_16.toValue(result_0),
-      alignment: _descriptor_16.alignment()
+      value: _descriptor_18.toValue(result_0),
+      alignment: _descriptor_18.alignment()
     });
     return result_0;
   }
@@ -1197,8 +1214,8 @@ export class Contract {
                                                                                                 pushPath: false,
                                                                                                 path: [
                                                                                                        { tag: 'value',
-                                                                                                         value: { value: _descriptor_23.toValue(0n),
-                                                                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                                                                         value: { value: _descriptor_24.toValue(0n),
+                                                                                                                  alignment: _descriptor_24.alignment() } }] } },
                                                                                        { push: { storage: false,
                                                                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(adminId_0),
                                                                                                                                               alignment: _descriptor_0.alignment() }).encode() } },
@@ -1219,8 +1236,8 @@ export class Contract {
                                                                                                 pushPath: false,
                                                                                                 path: [
                                                                                                        { tag: 'value',
-                                                                                                         value: { value: _descriptor_23.toValue(4n),
-                                                                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                                                                         value: { value: _descriptor_24.toValue(4n),
+                                                                                                                  alignment: _descriptor_24.alignment() } }] } },
                                                                                        { push: { storage: false,
                                                                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(ownerId_0),
                                                                                                                                               alignment: _descriptor_0.alignment() }).encode() } },
@@ -1239,8 +1256,8 @@ export class Contract {
                                                 pushPath: true,
                                                 path: [
                                                        { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(2n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                         value: { value: _descriptor_24.toValue(2n),
+                                                                  alignment: _descriptor_24.alignment() } }] } },
                                        { push: { storage: false,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(inviteCode_0),
                                                                                               alignment: _descriptor_0.alignment() }).encode() } },
@@ -1256,8 +1273,8 @@ export class Contract {
                                                                                        pushPath: false,
                                                                                        path: [
                                                                                               { tag: 'value',
-                                                                                                value: { value: _descriptor_23.toValue(2n),
-                                                                                                         alignment: _descriptor_23.alignment() } }] } },
+                                                                                                value: { value: _descriptor_24.toValue(2n),
+                                                                                                         alignment: _descriptor_24.alignment() } }] } },
                                                                               'size',
                                                                               { popeq: { cached: true,
                                                                                          result: undefined } }]).value);
@@ -1265,8 +1282,8 @@ export class Contract {
                                       partialProofData,
                                       [
                                        { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_23.toValue(3n),
-                                                                                              alignment: _descriptor_23.alignment() }).encode() } },
+                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(3n),
+                                                                                              alignment: _descriptor_24.alignment() }).encode() } },
                                        { push: { storage: true,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_2.toValue(tmp_0),
                                                                                               alignment: _descriptor_2.alignment() }).encode() } },
@@ -1282,8 +1299,8 @@ export class Contract {
                                                 pushPath: true,
                                                 path: [
                                                        { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(6n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                         value: { value: _descriptor_24.toValue(6n),
+                                                                  alignment: _descriptor_24.alignment() } }] } },
                                        { push: { storage: false,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(inviteCode_0),
                                                                                               alignment: _descriptor_0.alignment() }).encode() } },
@@ -1299,8 +1316,8 @@ export class Contract {
                                                                                        pushPath: false,
                                                                                        path: [
                                                                                               { tag: 'value',
-                                                                                                value: { value: _descriptor_23.toValue(6n),
-                                                                                                         alignment: _descriptor_23.alignment() } }] } },
+                                                                                                value: { value: _descriptor_24.toValue(6n),
+                                                                                                         alignment: _descriptor_24.alignment() } }] } },
                                                                               'size',
                                                                               { popeq: { cached: true,
                                                                                          result: undefined } }]).value);
@@ -1308,127 +1325,243 @@ export class Contract {
                                       partialProofData,
                                       [
                                        { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_23.toValue(7n),
-                                                                                              alignment: _descriptor_23.alignment() }).encode() } },
+                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(7n),
+                                                                                              alignment: _descriptor_24.alignment() }).encode() } },
                                        { push: { storage: true,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_2.toValue(tmp_0),
                                                                                               alignment: _descriptor_2.alignment() }).encode() } },
                                        { ins: { cached: false, n: 1 } }]);
     return [];
   }
-  _acceptInviteAdmin_0(context, partialProofData, inviteCode_0) {
-    __compactRuntime.assert(_descriptor_4.fromValue(__compactRuntime.queryLedgerState(context,
-                                                                                      partialProofData,
-                                                                                      [
-                                                                                       { dup: { n: 0 } },
-                                                                                       { idx: { cached: false,
-                                                                                                pushPath: false,
-                                                                                                path: [
-                                                                                                       { tag: 'value',
-                                                                                                         value: { value: _descriptor_23.toValue(2n),
-                                                                                                                  alignment: _descriptor_23.alignment() } }] } },
-                                                                                       { push: { storage: false,
-                                                                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(inviteCode_0),
-                                                                                                                                              alignment: _descriptor_0.alignment() }).encode() } },
-                                                                                       'member',
-                                                                                       { popeq: { cached: true,
-                                                                                                  result: undefined } }]).value),
-                            'Invalid invite code');
+  _acceptInvite_0(context, partialProofData, role_0, inviteCode_0) {
+    const d_role_0 = role_0;
+    const d_inviteCode_0 = inviteCode_0;
     const own_0 = this._ownPublicKey_0(context, partialProofData);
-    const adminId_0 = this._getShieldedId_0(own_0.bytes);
-    __compactRuntime.assert(!_descriptor_4.fromValue(__compactRuntime.queryLedgerState(context,
-                                                                                       partialProofData,
-                                                                                       [
-                                                                                        { dup: { n: 0 } },
-                                                                                        { idx: { cached: false,
-                                                                                                 pushPath: false,
-                                                                                                 path: [
-                                                                                                        { tag: 'value',
-                                                                                                          value: { value: _descriptor_23.toValue(0n),
-                                                                                                                   alignment: _descriptor_23.alignment() } }] } },
-                                                                                        { push: { storage: false,
-                                                                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(adminId_0),
-                                                                                                                                               alignment: _descriptor_0.alignment() }).encode() } },
-                                                                                        'member',
-                                                                                        { popeq: { cached: true,
-                                                                                                   result: undefined } }]).value),
-                            'user is already an admin');
-    __compactRuntime.queryLedgerState(context,
-                                      partialProofData,
-                                      [
-                                       { idx: { cached: false,
-                                                pushPath: true,
-                                                path: [
-                                                       { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(0n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
-                                       { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(adminId_0),
-                                                                                              alignment: _descriptor_0.alignment() }).encode() } },
-                                       { push: { storage: true,
-                                                 value: __compactRuntime.StateValue.newNull().encode() } },
-                                       { ins: { cached: false, n: 1 } },
-                                       { ins: { cached: true, n: 1 } }]);
-    __compactRuntime.queryLedgerState(context,
-                                      partialProofData,
-                                      [
-                                       { idx: { cached: false,
-                                                pushPath: true,
-                                                path: [
-                                                       { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(2n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
-                                       { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(inviteCode_0),
-                                                                                              alignment: _descriptor_0.alignment() }).encode() } },
-                                       { rem: { cached: false } },
-                                       { ins: { cached: true, n: 1 } }]);
-    const tmp_0 = _descriptor_14.fromValue(__compactRuntime.queryLedgerState(context,
-                                                                             partialProofData,
-                                                                             [
-                                                                              { dup: { n: 0 } },
-                                                                              { idx: { cached: false,
-                                                                                       pushPath: false,
-                                                                                       path: [
-                                                                                              { tag: 'value',
-                                                                                                value: { value: _descriptor_23.toValue(0n),
-                                                                                                         alignment: _descriptor_23.alignment() } }] } },
-                                                                              'size',
-                                                                              { popeq: { cached: true,
-                                                                                         result: undefined } }]).value);
-    __compactRuntime.queryLedgerState(context,
-                                      partialProofData,
-                                      [
-                                       { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_23.toValue(1n),
-                                                                                              alignment: _descriptor_23.alignment() }).encode() } },
-                                       { push: { storage: true,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_2.toValue(tmp_0),
-                                                                                              alignment: _descriptor_2.alignment() }).encode() } },
-                                       { ins: { cached: false, n: 1 } }]);
-    const tmp_1 = _descriptor_14.fromValue(__compactRuntime.queryLedgerState(context,
-                                                                             partialProofData,
-                                                                             [
-                                                                              { dup: { n: 0 } },
-                                                                              { idx: { cached: false,
-                                                                                       pushPath: false,
-                                                                                       path: [
-                                                                                              { tag: 'value',
-                                                                                                value: { value: _descriptor_23.toValue(2n),
-                                                                                                         alignment: _descriptor_23.alignment() } }] } },
-                                                                              'size',
-                                                                              { popeq: { cached: true,
-                                                                                         result: undefined } }]).value);
-    __compactRuntime.queryLedgerState(context,
-                                      partialProofData,
-                                      [
-                                       { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_23.toValue(3n),
-                                                                                              alignment: _descriptor_23.alignment() }).encode() } },
-                                       { push: { storage: true,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_2.toValue(tmp_1),
-                                                                                              alignment: _descriptor_2.alignment() }).encode() } },
-                                       { ins: { cached: false, n: 1 } }]);
+    if (d_role_0 === 1) {
+      __compactRuntime.assert(_descriptor_4.fromValue(__compactRuntime.queryLedgerState(context,
+                                                                                        partialProofData,
+                                                                                        [
+                                                                                         { dup: { n: 0 } },
+                                                                                         { idx: { cached: false,
+                                                                                                  pushPath: false,
+                                                                                                  path: [
+                                                                                                         { tag: 'value',
+                                                                                                           value: { value: _descriptor_24.toValue(6n),
+                                                                                                                    alignment: _descriptor_24.alignment() } }] } },
+                                                                                         { push: { storage: false,
+                                                                                                   value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(d_inviteCode_0),
+                                                                                                                                                alignment: _descriptor_0.alignment() }).encode() } },
+                                                                                         'member',
+                                                                                         { popeq: { cached: true,
+                                                                                                    result: undefined } }]).value),
+                              'Invalid clinic invite code');
+      const ownerId_0 = this._getShieldedId_0(own_0.bytes);
+      __compactRuntime.assert(!_descriptor_4.fromValue(__compactRuntime.queryLedgerState(context,
+                                                                                         partialProofData,
+                                                                                         [
+                                                                                          { dup: { n: 0 } },
+                                                                                          { idx: { cached: false,
+                                                                                                   pushPath: false,
+                                                                                                   path: [
+                                                                                                          { tag: 'value',
+                                                                                                            value: { value: _descriptor_24.toValue(4n),
+                                                                                                                     alignment: _descriptor_24.alignment() } }] } },
+                                                                                          { push: { storage: false,
+                                                                                                    value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(ownerId_0),
+                                                                                                                                                 alignment: _descriptor_0.alignment() }).encode() } },
+                                                                                          'member',
+                                                                                          { popeq: { cached: true,
+                                                                                                     result: undefined } }]).value),
+                              'user is already a clinic');
+      __compactRuntime.queryLedgerState(context,
+                                        partialProofData,
+                                        [
+                                         { idx: { cached: false,
+                                                  pushPath: true,
+                                                  path: [
+                                                         { tag: 'value',
+                                                           value: { value: _descriptor_24.toValue(4n),
+                                                                    alignment: _descriptor_24.alignment() } }] } },
+                                         { push: { storage: false,
+                                                   value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(ownerId_0),
+                                                                                                alignment: _descriptor_0.alignment() }).encode() } },
+                                         { push: { storage: true,
+                                                   value: __compactRuntime.StateValue.newNull().encode() } },
+                                         { ins: { cached: false, n: 1 } },
+                                         { ins: { cached: true, n: 1 } }]);
+      __compactRuntime.queryLedgerState(context,
+                                        partialProofData,
+                                        [
+                                         { idx: { cached: false,
+                                                  pushPath: true,
+                                                  path: [
+                                                         { tag: 'value',
+                                                           value: { value: _descriptor_24.toValue(6n),
+                                                                    alignment: _descriptor_24.alignment() } }] } },
+                                         { push: { storage: false,
+                                                   value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(d_inviteCode_0),
+                                                                                                alignment: _descriptor_0.alignment() }).encode() } },
+                                         { rem: { cached: false } },
+                                         { ins: { cached: true, n: 1 } }]);
+      const tmp_0 = _descriptor_14.fromValue(__compactRuntime.queryLedgerState(context,
+                                                                               partialProofData,
+                                                                               [
+                                                                                { dup: { n: 0 } },
+                                                                                { idx: { cached: false,
+                                                                                         pushPath: false,
+                                                                                         path: [
+                                                                                                { tag: 'value',
+                                                                                                  value: { value: _descriptor_24.toValue(4n),
+                                                                                                           alignment: _descriptor_24.alignment() } }] } },
+                                                                                'size',
+                                                                                { popeq: { cached: true,
+                                                                                           result: undefined } }]).value);
+      __compactRuntime.queryLedgerState(context,
+                                        partialProofData,
+                                        [
+                                         { push: { storage: false,
+                                                   value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(5n),
+                                                                                                alignment: _descriptor_24.alignment() }).encode() } },
+                                         { push: { storage: true,
+                                                   value: __compactRuntime.StateValue.newCell({ value: _descriptor_2.toValue(tmp_0),
+                                                                                                alignment: _descriptor_2.alignment() }).encode() } },
+                                         { ins: { cached: false, n: 1 } }]);
+      const tmp_1 = _descriptor_14.fromValue(__compactRuntime.queryLedgerState(context,
+                                                                               partialProofData,
+                                                                               [
+                                                                                { dup: { n: 0 } },
+                                                                                { idx: { cached: false,
+                                                                                         pushPath: false,
+                                                                                         path: [
+                                                                                                { tag: 'value',
+                                                                                                  value: { value: _descriptor_24.toValue(6n),
+                                                                                                           alignment: _descriptor_24.alignment() } }] } },
+                                                                                'size',
+                                                                                { popeq: { cached: true,
+                                                                                           result: undefined } }]).value);
+      __compactRuntime.queryLedgerState(context,
+                                        partialProofData,
+                                        [
+                                         { push: { storage: false,
+                                                   value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(7n),
+                                                                                                alignment: _descriptor_24.alignment() }).encode() } },
+                                         { push: { storage: true,
+                                                   value: __compactRuntime.StateValue.newCell({ value: _descriptor_2.toValue(tmp_1),
+                                                                                                alignment: _descriptor_2.alignment() }).encode() } },
+                                         { ins: { cached: false, n: 1 } }]);
+    } else {
+      __compactRuntime.assert(_descriptor_4.fromValue(__compactRuntime.queryLedgerState(context,
+                                                                                        partialProofData,
+                                                                                        [
+                                                                                         { dup: { n: 0 } },
+                                                                                         { idx: { cached: false,
+                                                                                                  pushPath: false,
+                                                                                                  path: [
+                                                                                                         { tag: 'value',
+                                                                                                           value: { value: _descriptor_24.toValue(2n),
+                                                                                                                    alignment: _descriptor_24.alignment() } }] } },
+                                                                                         { push: { storage: false,
+                                                                                                   value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(d_inviteCode_0),
+                                                                                                                                                alignment: _descriptor_0.alignment() }).encode() } },
+                                                                                         'member',
+                                                                                         { popeq: { cached: true,
+                                                                                                    result: undefined } }]).value),
+                              'Invalid admin invite code');
+      const adminId_0 = this._getShieldedId_0(own_0.bytes);
+      __compactRuntime.assert(!_descriptor_4.fromValue(__compactRuntime.queryLedgerState(context,
+                                                                                         partialProofData,
+                                                                                         [
+                                                                                          { dup: { n: 0 } },
+                                                                                          { idx: { cached: false,
+                                                                                                   pushPath: false,
+                                                                                                   path: [
+                                                                                                          { tag: 'value',
+                                                                                                            value: { value: _descriptor_24.toValue(0n),
+                                                                                                                     alignment: _descriptor_24.alignment() } }] } },
+                                                                                          { push: { storage: false,
+                                                                                                    value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(adminId_0),
+                                                                                                                                                 alignment: _descriptor_0.alignment() }).encode() } },
+                                                                                          'member',
+                                                                                          { popeq: { cached: true,
+                                                                                                     result: undefined } }]).value),
+                              'user is already an admin');
+      __compactRuntime.queryLedgerState(context,
+                                        partialProofData,
+                                        [
+                                         { idx: { cached: false,
+                                                  pushPath: true,
+                                                  path: [
+                                                         { tag: 'value',
+                                                           value: { value: _descriptor_24.toValue(0n),
+                                                                    alignment: _descriptor_24.alignment() } }] } },
+                                         { push: { storage: false,
+                                                   value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(adminId_0),
+                                                                                                alignment: _descriptor_0.alignment() }).encode() } },
+                                         { push: { storage: true,
+                                                   value: __compactRuntime.StateValue.newNull().encode() } },
+                                         { ins: { cached: false, n: 1 } },
+                                         { ins: { cached: true, n: 1 } }]);
+      __compactRuntime.queryLedgerState(context,
+                                        partialProofData,
+                                        [
+                                         { idx: { cached: false,
+                                                  pushPath: true,
+                                                  path: [
+                                                         { tag: 'value',
+                                                           value: { value: _descriptor_24.toValue(2n),
+                                                                    alignment: _descriptor_24.alignment() } }] } },
+                                         { push: { storage: false,
+                                                   value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(d_inviteCode_0),
+                                                                                                alignment: _descriptor_0.alignment() }).encode() } },
+                                         { rem: { cached: false } },
+                                         { ins: { cached: true, n: 1 } }]);
+      const tmp_2 = _descriptor_14.fromValue(__compactRuntime.queryLedgerState(context,
+                                                                               partialProofData,
+                                                                               [
+                                                                                { dup: { n: 0 } },
+                                                                                { idx: { cached: false,
+                                                                                         pushPath: false,
+                                                                                         path: [
+                                                                                                { tag: 'value',
+                                                                                                  value: { value: _descriptor_24.toValue(0n),
+                                                                                                           alignment: _descriptor_24.alignment() } }] } },
+                                                                                'size',
+                                                                                { popeq: { cached: true,
+                                                                                           result: undefined } }]).value);
+      __compactRuntime.queryLedgerState(context,
+                                        partialProofData,
+                                        [
+                                         { push: { storage: false,
+                                                   value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(1n),
+                                                                                                alignment: _descriptor_24.alignment() }).encode() } },
+                                         { push: { storage: true,
+                                                   value: __compactRuntime.StateValue.newCell({ value: _descriptor_2.toValue(tmp_2),
+                                                                                                alignment: _descriptor_2.alignment() }).encode() } },
+                                         { ins: { cached: false, n: 1 } }]);
+      const tmp_3 = _descriptor_14.fromValue(__compactRuntime.queryLedgerState(context,
+                                                                               partialProofData,
+                                                                               [
+                                                                                { dup: { n: 0 } },
+                                                                                { idx: { cached: false,
+                                                                                         pushPath: false,
+                                                                                         path: [
+                                                                                                { tag: 'value',
+                                                                                                  value: { value: _descriptor_24.toValue(2n),
+                                                                                                           alignment: _descriptor_24.alignment() } }] } },
+                                                                                'size',
+                                                                                { popeq: { cached: true,
+                                                                                           result: undefined } }]).value);
+      __compactRuntime.queryLedgerState(context,
+                                        partialProofData,
+                                        [
+                                         { push: { storage: false,
+                                                   value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(3n),
+                                                                                                alignment: _descriptor_24.alignment() }).encode() } },
+                                         { push: { storage: true,
+                                                   value: __compactRuntime.StateValue.newCell({ value: _descriptor_2.toValue(tmp_3),
+                                                                                                alignment: _descriptor_2.alignment() }).encode() } },
+                                         { ins: { cached: false, n: 1 } }]);
+    }
     return [];
   }
   _revokeAdmin_0(context, partialProofData) {
@@ -1442,8 +1575,8 @@ export class Contract {
                                                 pushPath: true,
                                                 path: [
                                                        { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(0n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                         value: { value: _descriptor_24.toValue(0n),
+                                                                  alignment: _descriptor_24.alignment() } }] } },
                                        { push: { storage: false,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(adminId_0),
                                                                                               alignment: _descriptor_0.alignment() }).encode() } },
@@ -1457,8 +1590,8 @@ export class Contract {
                                                                                        pushPath: false,
                                                                                        path: [
                                                                                               { tag: 'value',
-                                                                                                value: { value: _descriptor_23.toValue(0n),
-                                                                                                         alignment: _descriptor_23.alignment() } }] } },
+                                                                                                value: { value: _descriptor_24.toValue(0n),
+                                                                                                         alignment: _descriptor_24.alignment() } }] } },
                                                                               'size',
                                                                               { popeq: { cached: true,
                                                                                          result: undefined } }]).value);
@@ -1466,8 +1599,8 @@ export class Contract {
                                       partialProofData,
                                       [
                                        { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_23.toValue(1n),
-                                                                                              alignment: _descriptor_23.alignment() }).encode() } },
+                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_24.toValue(1n),
+                                                                                              alignment: _descriptor_24.alignment() }).encode() } },
                                        { push: { storage: true,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_2.toValue(tmp_0),
                                                                                               alignment: _descriptor_2.alignment() }).encode() } },
@@ -1507,8 +1640,8 @@ export class Contract {
                                                                                                                        pushPath: false,
                                                                                                                        path: [
                                                                                                                               { tag: 'value',
-                                                                                                                                value: { value: _descriptor_23.toValue(11n),
-                                                                                                                                         alignment: _descriptor_23.alignment() } }] } },
+                                                                                                                                value: { value: _descriptor_24.toValue(11n),
+                                                                                                                                         alignment: _descriptor_24.alignment() } }] } },
                                                                                                               { popeq: { cached: true,
                                                                                                                          result: undefined } }]).value)]);
     const tmp_0 = 1n;
@@ -1519,8 +1652,8 @@ export class Contract {
                                                 pushPath: true,
                                                 path: [
                                                        { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(11n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                         value: { value: _descriptor_24.toValue(11n),
+                                                                  alignment: _descriptor_24.alignment() } }] } },
                                        { addi: { immediate: parseInt(__compactRuntime.valueToBigInt(
                                                               { value: _descriptor_13.toValue(tmp_0),
                                                                 alignment: _descriptor_13.alignment() }
@@ -1541,8 +1674,8 @@ export class Contract {
                                                                                                                          pushPath: false,
                                                                                                                          path: [
                                                                                                                                 { tag: 'value',
-                                                                                                                                  value: { value: _descriptor_23.toValue(12n),
-                                                                                                                                           alignment: _descriptor_23.alignment() } }] } },
+                                                                                                                                  value: { value: _descriptor_24.toValue(12n),
+                                                                                                                                           alignment: _descriptor_24.alignment() } }] } },
                                                                                                                 { popeq: { cached: true,
                                                                                                                            result: undefined } }]).value)]);
     const tmp_0 = 1n;
@@ -1553,8 +1686,8 @@ export class Contract {
                                                 pushPath: true,
                                                 path: [
                                                        { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(12n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                         value: { value: _descriptor_24.toValue(12n),
+                                                                  alignment: _descriptor_24.alignment() } }] } },
                                        { addi: { immediate: parseInt(__compactRuntime.valueToBigInt(
                                                               { value: _descriptor_13.toValue(tmp_0),
                                                                 alignment: _descriptor_13.alignment() }
@@ -1573,8 +1706,8 @@ export class Contract {
                                                                                                  pushPath: false,
                                                                                                  path: [
                                                                                                         { tag: 'value',
-                                                                                                          value: { value: _descriptor_23.toValue(8n),
-                                                                                                                   alignment: _descriptor_23.alignment() } }] } },
+                                                                                                          value: { value: _descriptor_24.toValue(8n),
+                                                                                                                   alignment: _descriptor_24.alignment() } }] } },
                                                                                         { push: { storage: false,
                                                                                                   value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(clinicId_0),
                                                                                                                                                alignment: _descriptor_0.alignment() }).encode() } },
@@ -1589,8 +1722,8 @@ export class Contract {
                                                 pushPath: true,
                                                 path: [
                                                        { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(8n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                         value: { value: _descriptor_24.toValue(8n),
+                                                                  alignment: _descriptor_24.alignment() } }] } },
                                        { push: { storage: false,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(clinicId_0),
                                                                                               alignment: _descriptor_0.alignment() }).encode() } },
@@ -1607,8 +1740,8 @@ export class Contract {
                                                 pushPath: true,
                                                 path: [
                                                        { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(4n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                         value: { value: _descriptor_24.toValue(4n),
+                                                                  alignment: _descriptor_24.alignment() } }] } },
                                        { push: { storage: false,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(tmp_0),
                                                                                               alignment: _descriptor_0.alignment() }).encode() } },
@@ -1628,8 +1761,8 @@ export class Contract {
                                                                                                 pushPath: false,
                                                                                                 path: [
                                                                                                        { tag: 'value',
-                                                                                                         value: { value: _descriptor_23.toValue(8n),
-                                                                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                                                                         value: { value: _descriptor_24.toValue(8n),
+                                                                                                                  alignment: _descriptor_24.alignment() } }] } },
                                                                                        { push: { storage: false,
                                                                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(clinicId_0),
                                                                                                                                               alignment: _descriptor_0.alignment() }).encode() } },
@@ -1644,8 +1777,8 @@ export class Contract {
                                                 pushPath: true,
                                                 path: [
                                                        { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(8n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                         value: { value: _descriptor_24.toValue(8n),
+                                                                  alignment: _descriptor_24.alignment() } }] } },
                                        { push: { storage: false,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(clinicId_0),
                                                                                               alignment: _descriptor_0.alignment() }).encode() } },
@@ -1664,8 +1797,8 @@ export class Contract {
                                                                                                  pushPath: false,
                                                                                                  path: [
                                                                                                         { tag: 'value',
-                                                                                                          value: { value: _descriptor_23.toValue(10n),
-                                                                                                                   alignment: _descriptor_23.alignment() } }] } },
+                                                                                                          value: { value: _descriptor_24.toValue(10n),
+                                                                                                                   alignment: _descriptor_24.alignment() } }] } },
                                                                                         { push: { storage: false,
                                                                                                   value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(newIssuerId_0),
                                                                                                                                                alignment: _descriptor_0.alignment() }).encode() } },
@@ -1680,8 +1813,8 @@ export class Contract {
                                                 pushPath: true,
                                                 path: [
                                                        { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(10n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                         value: { value: _descriptor_24.toValue(10n),
+                                                                  alignment: _descriptor_24.alignment() } }] } },
                                        { push: { storage: false,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(newIssuerId_0),
                                                                                               alignment: _descriptor_0.alignment() }).encode() } },
@@ -1702,8 +1835,8 @@ export class Contract {
                                                                                                  pushPath: false,
                                                                                                  path: [
                                                                                                         { tag: 'value',
-                                                                                                          value: { value: _descriptor_23.toValue(9n),
-                                                                                                                   alignment: _descriptor_23.alignment() } }] } },
+                                                                                                          value: { value: _descriptor_24.toValue(9n),
+                                                                                                                   alignment: _descriptor_24.alignment() } }] } },
                                                                                         { push: { storage: false,
                                                                                                   value: __compactRuntime.StateValue.newCell({ value: _descriptor_1.toValue(name_0),
                                                                                                                                                alignment: _descriptor_1.alignment() }).encode() } },
@@ -1718,8 +1851,8 @@ export class Contract {
                                                 pushPath: true,
                                                 path: [
                                                        { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(9n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                         value: { value: _descriptor_24.toValue(9n),
+                                                                  alignment: _descriptor_24.alignment() } }] } },
                                        { push: { storage: false,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_1.toValue(name_0),
                                                                                               alignment: _descriptor_1.alignment() }).encode() } },
@@ -1739,8 +1872,8 @@ export class Contract {
                                                                                                 pushPath: false,
                                                                                                 path: [
                                                                                                        { tag: 'value',
-                                                                                                         value: { value: _descriptor_23.toValue(9n),
-                                                                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                                                                         value: { value: _descriptor_24.toValue(9n),
+                                                                                                                  alignment: _descriptor_24.alignment() } }] } },
                                                                                        { push: { storage: false,
                                                                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_1.toValue(name_0),
                                                                                                                                               alignment: _descriptor_1.alignment() }).encode() } },
@@ -1755,8 +1888,8 @@ export class Contract {
                                                 pushPath: true,
                                                 path: [
                                                        { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(9n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                         value: { value: _descriptor_24.toValue(9n),
+                                                                  alignment: _descriptor_24.alignment() } }] } },
                                        { push: { storage: false,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_1.toValue(name_0),
                                                                                               alignment: _descriptor_1.alignment() }).encode() } },
@@ -1775,8 +1908,8 @@ export class Contract {
                                                                                                  pushPath: false,
                                                                                                  path: [
                                                                                                         { tag: 'value',
-                                                                                                          value: { value: _descriptor_23.toValue(13n),
-                                                                                                                   alignment: _descriptor_23.alignment() } }] } },
+                                                                                                          value: { value: _descriptor_24.toValue(13n),
+                                                                                                                   alignment: _descriptor_24.alignment() } }] } },
                                                                                         { push: { storage: false,
                                                                                                   value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(newProofReqId_0),
                                                                                                                                                alignment: _descriptor_0.alignment() }).encode() } },
@@ -1791,8 +1924,8 @@ export class Contract {
                                                 pushPath: true,
                                                 path: [
                                                        { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(13n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                         value: { value: _descriptor_24.toValue(13n),
+                                                                  alignment: _descriptor_24.alignment() } }] } },
                                        { push: { storage: false,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(newProofReqId_0),
                                                                                               alignment: _descriptor_0.alignment() }).encode() } },
@@ -1812,8 +1945,8 @@ export class Contract {
                                                                                                 pushPath: false,
                                                                                                 path: [
                                                                                                        { tag: 'value',
-                                                                                                         value: { value: _descriptor_23.toValue(13n),
-                                                                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                                                                         value: { value: _descriptor_24.toValue(13n),
+                                                                                                                  alignment: _descriptor_24.alignment() } }] } },
                                                                                        { push: { storage: false,
                                                                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(proofReqId_0),
                                                                                                                                               alignment: _descriptor_0.alignment() }).encode() } },
@@ -1829,8 +1962,8 @@ export class Contract {
                                                                                                  pushPath: false,
                                                                                                  path: [
                                                                                                         { tag: 'value',
-                                                                                                          value: { value: _descriptor_23.toValue(14n),
-                                                                                                                   alignment: _descriptor_23.alignment() } }] } },
+                                                                                                          value: { value: _descriptor_24.toValue(14n),
+                                                                                                                   alignment: _descriptor_24.alignment() } }] } },
                                                                                         { push: { storage: false,
                                                                                                   value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(proofReqId_0),
                                                                                                                                                alignment: _descriptor_0.alignment() }).encode() } },
@@ -1849,8 +1982,8 @@ export class Contract {
                                                                                                 pushPath: false,
                                                                                                 path: [
                                                                                                        { tag: 'value',
-                                                                                                         value: { value: _descriptor_23.toValue(10n),
-                                                                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                                                                         value: { value: _descriptor_24.toValue(10n),
+                                                                                                                  alignment: _descriptor_24.alignment() } }] } },
                                                                                        { push: { storage: false,
                                                                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(issuerId_0),
                                                                                                                                               alignment: _descriptor_0.alignment() }).encode() } },
@@ -1866,8 +1999,8 @@ export class Contract {
                                                                                                   pushPath: false,
                                                                                                   path: [
                                                                                                          { tag: 'value',
-                                                                                                           value: { value: _descriptor_23.toValue(13n),
-                                                                                                                    alignment: _descriptor_23.alignment() } }] } },
+                                                                                                           value: { value: _descriptor_24.toValue(13n),
+                                                                                                                    alignment: _descriptor_24.alignment() } }] } },
                                                                                          { idx: { cached: false,
                                                                                                   pushPath: false,
                                                                                                   path: [
@@ -1884,8 +2017,8 @@ export class Contract {
                                                                                                pushPath: false,
                                                                                                path: [
                                                                                                       { tag: 'value',
-                                                                                                        value: { value: _descriptor_23.toValue(10n),
-                                                                                                                 alignment: _descriptor_23.alignment() } }] } },
+                                                                                                        value: { value: _descriptor_24.toValue(10n),
+                                                                                                                 alignment: _descriptor_24.alignment() } }] } },
                                                                                       { idx: { cached: false,
                                                                                                pushPath: false,
                                                                                                path: [
@@ -1921,8 +2054,8 @@ export class Contract {
                                                 pushPath: true,
                                                 path: [
                                                        { tag: 'value',
-                                                         value: { value: _descriptor_23.toValue(14n),
-                                                                  alignment: _descriptor_23.alignment() } }] } },
+                                                         value: { value: _descriptor_24.toValue(14n),
+                                                                  alignment: _descriptor_24.alignment() } }] } },
                                        { push: { storage: false,
                                                  value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(proofReqId_0),
                                                                                               alignment: _descriptor_0.alignment() }).encode() } },
@@ -1965,8 +2098,8 @@ export function ledger(stateOrChargedState) {
                                                                                  pushPath: false,
                                                                                  path: [
                                                                                         { tag: 'value',
-                                                                                          value: { value: _descriptor_23.toValue(1n),
-                                                                                                   alignment: _descriptor_23.alignment() } }] } },
+                                                                                          value: { value: _descriptor_24.toValue(1n),
+                                                                                                   alignment: _descriptor_24.alignment() } }] } },
                                                                         { popeq: { cached: false,
                                                                                    result: undefined } }]).value);
     },
@@ -1979,8 +2112,8 @@ export function ledger(stateOrChargedState) {
                                                                                  pushPath: false,
                                                                                  path: [
                                                                                         { tag: 'value',
-                                                                                          value: { value: _descriptor_23.toValue(3n),
-                                                                                                   alignment: _descriptor_23.alignment() } }] } },
+                                                                                          value: { value: _descriptor_24.toValue(3n),
+                                                                                                   alignment: _descriptor_24.alignment() } }] } },
                                                                         { popeq: { cached: false,
                                                                                    result: undefined } }]).value);
     },
@@ -1993,8 +2126,8 @@ export function ledger(stateOrChargedState) {
                                                                                  pushPath: false,
                                                                                  path: [
                                                                                         { tag: 'value',
-                                                                                          value: { value: _descriptor_23.toValue(5n),
-                                                                                                   alignment: _descriptor_23.alignment() } }] } },
+                                                                                          value: { value: _descriptor_24.toValue(5n),
+                                                                                                   alignment: _descriptor_24.alignment() } }] } },
                                                                         { popeq: { cached: false,
                                                                                    result: undefined } }]).value);
     },
@@ -2007,8 +2140,8 @@ export function ledger(stateOrChargedState) {
                                                                                  pushPath: false,
                                                                                  path: [
                                                                                         { tag: 'value',
-                                                                                          value: { value: _descriptor_23.toValue(7n),
-                                                                                                   alignment: _descriptor_23.alignment() } }] } },
+                                                                                          value: { value: _descriptor_24.toValue(7n),
+                                                                                                   alignment: _descriptor_24.alignment() } }] } },
                                                                         { popeq: { cached: false,
                                                                                    result: undefined } }]).value);
     },
@@ -2025,8 +2158,8 @@ export function ledger(stateOrChargedState) {
                                                                                    pushPath: false,
                                                                                    path: [
                                                                                           { tag: 'value',
-                                                                                            value: { value: _descriptor_23.toValue(8n),
-                                                                                                     alignment: _descriptor_23.alignment() } }] } },
+                                                                                            value: { value: _descriptor_24.toValue(8n),
+                                                                                                     alignment: _descriptor_24.alignment() } }] } },
                                                                           'size',
                                                                           { push: { storage: false,
                                                                                     value: __compactRuntime.StateValue.newCell({ value: _descriptor_14.toValue(0n),
@@ -2047,8 +2180,8 @@ export function ledger(stateOrChargedState) {
                                                                                     pushPath: false,
                                                                                     path: [
                                                                                            { tag: 'value',
-                                                                                             value: { value: _descriptor_23.toValue(8n),
-                                                                                                      alignment: _descriptor_23.alignment() } }] } },
+                                                                                             value: { value: _descriptor_24.toValue(8n),
+                                                                                                      alignment: _descriptor_24.alignment() } }] } },
                                                                            'size',
                                                                            { popeq: { cached: true,
                                                                                       result: undefined } }]).value);
@@ -2073,8 +2206,8 @@ export function ledger(stateOrChargedState) {
                                                                                    pushPath: false,
                                                                                    path: [
                                                                                           { tag: 'value',
-                                                                                            value: { value: _descriptor_23.toValue(8n),
-                                                                                                     alignment: _descriptor_23.alignment() } }] } },
+                                                                                            value: { value: _descriptor_24.toValue(8n),
+                                                                                                     alignment: _descriptor_24.alignment() } }] } },
                                                                           { push: { storage: false,
                                                                                     value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(key_0),
                                                                                                                                  alignment: _descriptor_0.alignment() }).encode() } },
@@ -2102,8 +2235,8 @@ export function ledger(stateOrChargedState) {
                                                                                     pushPath: false,
                                                                                     path: [
                                                                                            { tag: 'value',
-                                                                                             value: { value: _descriptor_23.toValue(8n),
-                                                                                                      alignment: _descriptor_23.alignment() } }] } },
+                                                                                             value: { value: _descriptor_24.toValue(8n),
+                                                                                                      alignment: _descriptor_24.alignment() } }] } },
                                                                            { idx: { cached: false,
                                                                                     pushPath: false,
                                                                                     path: [
@@ -2134,8 +2267,8 @@ export function ledger(stateOrChargedState) {
                                                                                    pushPath: false,
                                                                                    path: [
                                                                                           { tag: 'value',
-                                                                                            value: { value: _descriptor_23.toValue(9n),
-                                                                                                     alignment: _descriptor_23.alignment() } }] } },
+                                                                                            value: { value: _descriptor_24.toValue(9n),
+                                                                                                     alignment: _descriptor_24.alignment() } }] } },
                                                                           'size',
                                                                           { push: { storage: false,
                                                                                     value: __compactRuntime.StateValue.newCell({ value: _descriptor_14.toValue(0n),
@@ -2156,8 +2289,8 @@ export function ledger(stateOrChargedState) {
                                                                                     pushPath: false,
                                                                                     path: [
                                                                                            { tag: 'value',
-                                                                                             value: { value: _descriptor_23.toValue(9n),
-                                                                                                      alignment: _descriptor_23.alignment() } }] } },
+                                                                                             value: { value: _descriptor_24.toValue(9n),
+                                                                                                      alignment: _descriptor_24.alignment() } }] } },
                                                                            'size',
                                                                            { popeq: { cached: true,
                                                                                       result: undefined } }]).value);
@@ -2182,8 +2315,8 @@ export function ledger(stateOrChargedState) {
                                                                                    pushPath: false,
                                                                                    path: [
                                                                                           { tag: 'value',
-                                                                                            value: { value: _descriptor_23.toValue(9n),
-                                                                                                     alignment: _descriptor_23.alignment() } }] } },
+                                                                                            value: { value: _descriptor_24.toValue(9n),
+                                                                                                     alignment: _descriptor_24.alignment() } }] } },
                                                                           { push: { storage: false,
                                                                                     value: __compactRuntime.StateValue.newCell({ value: _descriptor_1.toValue(elem_0),
                                                                                                                                  alignment: _descriptor_1.alignment() }).encode() } },
@@ -2212,8 +2345,8 @@ export function ledger(stateOrChargedState) {
                                                                                    pushPath: false,
                                                                                    path: [
                                                                                           { tag: 'value',
-                                                                                            value: { value: _descriptor_23.toValue(10n),
-                                                                                                     alignment: _descriptor_23.alignment() } }] } },
+                                                                                            value: { value: _descriptor_24.toValue(10n),
+                                                                                                     alignment: _descriptor_24.alignment() } }] } },
                                                                           'size',
                                                                           { push: { storage: false,
                                                                                     value: __compactRuntime.StateValue.newCell({ value: _descriptor_14.toValue(0n),
@@ -2234,8 +2367,8 @@ export function ledger(stateOrChargedState) {
                                                                                     pushPath: false,
                                                                                     path: [
                                                                                            { tag: 'value',
-                                                                                             value: { value: _descriptor_23.toValue(10n),
-                                                                                                      alignment: _descriptor_23.alignment() } }] } },
+                                                                                             value: { value: _descriptor_24.toValue(10n),
+                                                                                                      alignment: _descriptor_24.alignment() } }] } },
                                                                            'size',
                                                                            { popeq: { cached: true,
                                                                                       result: undefined } }]).value);
@@ -2260,8 +2393,8 @@ export function ledger(stateOrChargedState) {
                                                                                    pushPath: false,
                                                                                    path: [
                                                                                           { tag: 'value',
-                                                                                            value: { value: _descriptor_23.toValue(10n),
-                                                                                                     alignment: _descriptor_23.alignment() } }] } },
+                                                                                            value: { value: _descriptor_24.toValue(10n),
+                                                                                                     alignment: _descriptor_24.alignment() } }] } },
                                                                           { push: { storage: false,
                                                                                     value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(key_0),
                                                                                                                                  alignment: _descriptor_0.alignment() }).encode() } },
@@ -2289,8 +2422,8 @@ export function ledger(stateOrChargedState) {
                                                                                     pushPath: false,
                                                                                     path: [
                                                                                            { tag: 'value',
-                                                                                             value: { value: _descriptor_23.toValue(10n),
-                                                                                                      alignment: _descriptor_23.alignment() } }] } },
+                                                                                             value: { value: _descriptor_24.toValue(10n),
+                                                                                                      alignment: _descriptor_24.alignment() } }] } },
                                                                            { idx: { cached: false,
                                                                                     pushPath: false,
                                                                                     path: [
@@ -2317,8 +2450,8 @@ export function ledger(stateOrChargedState) {
                                                                                   pushPath: false,
                                                                                   path: [
                                                                                          { tag: 'value',
-                                                                                           value: { value: _descriptor_23.toValue(11n),
-                                                                                                    alignment: _descriptor_23.alignment() } }] } },
+                                                                                           value: { value: _descriptor_24.toValue(11n),
+                                                                                                    alignment: _descriptor_24.alignment() } }] } },
                                                                          { popeq: { cached: true,
                                                                                     result: undefined } }]).value);
     },
@@ -2331,8 +2464,8 @@ export function ledger(stateOrChargedState) {
                                                                                   pushPath: false,
                                                                                   path: [
                                                                                          { tag: 'value',
-                                                                                           value: { value: _descriptor_23.toValue(12n),
-                                                                                                    alignment: _descriptor_23.alignment() } }] } },
+                                                                                           value: { value: _descriptor_24.toValue(12n),
+                                                                                                    alignment: _descriptor_24.alignment() } }] } },
                                                                          { popeq: { cached: true,
                                                                                     result: undefined } }]).value);
     },
@@ -2349,8 +2482,8 @@ export function ledger(stateOrChargedState) {
                                                                                    pushPath: false,
                                                                                    path: [
                                                                                           { tag: 'value',
-                                                                                            value: { value: _descriptor_23.toValue(13n),
-                                                                                                     alignment: _descriptor_23.alignment() } }] } },
+                                                                                            value: { value: _descriptor_24.toValue(13n),
+                                                                                                     alignment: _descriptor_24.alignment() } }] } },
                                                                           'size',
                                                                           { push: { storage: false,
                                                                                     value: __compactRuntime.StateValue.newCell({ value: _descriptor_14.toValue(0n),
@@ -2371,8 +2504,8 @@ export function ledger(stateOrChargedState) {
                                                                                     pushPath: false,
                                                                                     path: [
                                                                                            { tag: 'value',
-                                                                                             value: { value: _descriptor_23.toValue(13n),
-                                                                                                      alignment: _descriptor_23.alignment() } }] } },
+                                                                                             value: { value: _descriptor_24.toValue(13n),
+                                                                                                      alignment: _descriptor_24.alignment() } }] } },
                                                                            'size',
                                                                            { popeq: { cached: true,
                                                                                       result: undefined } }]).value);
@@ -2397,8 +2530,8 @@ export function ledger(stateOrChargedState) {
                                                                                    pushPath: false,
                                                                                    path: [
                                                                                           { tag: 'value',
-                                                                                            value: { value: _descriptor_23.toValue(13n),
-                                                                                                     alignment: _descriptor_23.alignment() } }] } },
+                                                                                            value: { value: _descriptor_24.toValue(13n),
+                                                                                                     alignment: _descriptor_24.alignment() } }] } },
                                                                           { push: { storage: false,
                                                                                     value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(key_0),
                                                                                                                                  alignment: _descriptor_0.alignment() }).encode() } },
@@ -2426,8 +2559,8 @@ export function ledger(stateOrChargedState) {
                                                                                    pushPath: false,
                                                                                    path: [
                                                                                           { tag: 'value',
-                                                                                            value: { value: _descriptor_23.toValue(13n),
-                                                                                                     alignment: _descriptor_23.alignment() } }] } },
+                                                                                            value: { value: _descriptor_24.toValue(13n),
+                                                                                                     alignment: _descriptor_24.alignment() } }] } },
                                                                           { idx: { cached: false,
                                                                                    pushPath: false,
                                                                                    path: [
@@ -2458,8 +2591,8 @@ export function ledger(stateOrChargedState) {
                                                                                    pushPath: false,
                                                                                    path: [
                                                                                           { tag: 'value',
-                                                                                            value: { value: _descriptor_23.toValue(14n),
-                                                                                                     alignment: _descriptor_23.alignment() } }] } },
+                                                                                            value: { value: _descriptor_24.toValue(14n),
+                                                                                                     alignment: _descriptor_24.alignment() } }] } },
                                                                           'size',
                                                                           { push: { storage: false,
                                                                                     value: __compactRuntime.StateValue.newCell({ value: _descriptor_14.toValue(0n),
@@ -2480,8 +2613,8 @@ export function ledger(stateOrChargedState) {
                                                                                     pushPath: false,
                                                                                     path: [
                                                                                            { tag: 'value',
-                                                                                             value: { value: _descriptor_23.toValue(14n),
-                                                                                                      alignment: _descriptor_23.alignment() } }] } },
+                                                                                             value: { value: _descriptor_24.toValue(14n),
+                                                                                                      alignment: _descriptor_24.alignment() } }] } },
                                                                            'size',
                                                                            { popeq: { cached: true,
                                                                                       result: undefined } }]).value);
@@ -2506,8 +2639,8 @@ export function ledger(stateOrChargedState) {
                                                                                    pushPath: false,
                                                                                    path: [
                                                                                           { tag: 'value',
-                                                                                            value: { value: _descriptor_23.toValue(14n),
-                                                                                                     alignment: _descriptor_23.alignment() } }] } },
+                                                                                            value: { value: _descriptor_24.toValue(14n),
+                                                                                                     alignment: _descriptor_24.alignment() } }] } },
                                                                           { push: { storage: false,
                                                                                     value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(key_0),
                                                                                                                                  alignment: _descriptor_0.alignment() }).encode() } },
@@ -2535,8 +2668,8 @@ export function ledger(stateOrChargedState) {
                                                                                    pushPath: false,
                                                                                    path: [
                                                                                           { tag: 'value',
-                                                                                            value: { value: _descriptor_23.toValue(14n),
-                                                                                                     alignment: _descriptor_23.alignment() } }] } },
+                                                                                            value: { value: _descriptor_24.toValue(14n),
+                                                                                                     alignment: _descriptor_24.alignment() } }] } },
                                                                           { idx: { cached: false,
                                                                                    pushPath: false,
                                                                                    path: [
