@@ -2,7 +2,6 @@ import type * as __compactRuntime from '@midnight-ntwrk/compact-runtime';
 
 export type ClinicProfile = { ownerId: Uint8Array;
                               name: Uint8Array;
-                              urlImage: Uint8Array;
                               address: Uint8Array;
                               latitud: Uint8Array;
                               longitud: Uint8Array;
@@ -40,11 +39,11 @@ export type Witnesses<PS> = {
 export type ImpureCircuits<PS> = {
   registerInviteAdmin(context: __compactRuntime.CircuitContext<PS>,
                       inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
+  registerInviteClinic(context: __compactRuntime.CircuitContext<PS>,
+                       inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   acceptInviteAdmin(context: __compactRuntime.CircuitContext<PS>,
                     inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeAdmin(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, []>;
-  registerInviteClinic(context: __compactRuntime.CircuitContext<PS>,
-                       inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   addClinic(context: __compactRuntime.CircuitContext<PS>,
             clinicId_0: Uint8Array,
             clinicProfile_0: ClinicProfile): __compactRuntime.CircuitResults<PS, []>;
@@ -63,11 +62,11 @@ export type ImpureCircuits<PS> = {
 export type ProvableCircuits<PS> = {
   registerInviteAdmin(context: __compactRuntime.CircuitContext<PS>,
                       inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
+  registerInviteClinic(context: __compactRuntime.CircuitContext<PS>,
+                       inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   acceptInviteAdmin(context: __compactRuntime.CircuitContext<PS>,
                     inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeAdmin(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, []>;
-  registerInviteClinic(context: __compactRuntime.CircuitContext<PS>,
-                       inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   addClinic(context: __compactRuntime.CircuitContext<PS>,
             clinicId_0: Uint8Array,
             clinicProfile_0: ClinicProfile): __compactRuntime.CircuitResults<PS, []>;
@@ -103,11 +102,11 @@ export type Circuits<PS> = {
                         userPubKey_0: Uint8Array): __compactRuntime.CircuitResults<PS, bigint>;
   registerInviteAdmin(context: __compactRuntime.CircuitContext<PS>,
                       inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
+  registerInviteClinic(context: __compactRuntime.CircuitContext<PS>,
+                       inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   acceptInviteAdmin(context: __compactRuntime.CircuitContext<PS>,
                     inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   revokeAdmin(context: __compactRuntime.CircuitContext<PS>): __compactRuntime.CircuitResults<PS, []>;
-  registerInviteClinic(context: __compactRuntime.CircuitContext<PS>,
-                       inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   getShieldedId(context: __compactRuntime.CircuitContext<PS>, id_0: Uint8Array): __compactRuntime.CircuitResults<PS, Uint8Array>;
   addClinic(context: __compactRuntime.CircuitContext<PS>,
             clinicId_0: Uint8Array,
@@ -127,12 +126,6 @@ export type Circuits<PS> = {
 export type Ledger = {
   readonly totalAdmin: bigint;
   readonly totalInviteAdmin: bigint;
-  ownerClinics: {
-    isEmpty(): boolean;
-    size(): bigint;
-    member(elem_0: Uint8Array): boolean;
-    [Symbol.iterator](): Iterator<Uint8Array>
-  };
   readonly totalOwnerClinics: bigint;
   readonly totalInviteClinic: bigint;
   clinics: {

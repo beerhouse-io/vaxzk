@@ -4955,10 +4955,10 @@ Error generating stack: ` + e.message + `
             switch(ge(ye, t), ge(ve, e), ge(_e, null), e = t.nodeType, e){
                 case 9:
                 case 11:
-                    t = (t = t.documentElement) && (t = t.namespaceURI) ? Nd(t) : 0;
+                    t = (t = t.documentElement) && (t = t.namespaceURI) ? Pd(t) : 0;
                     break;
                 default:
-                    if (e = e === 8 ? t.parentNode : t, t = e.tagName, e = e.namespaceURI) e = Nd(e), t = Pd(e, t);
+                    if (e = e === 8 ? t.parentNode : t, t = e.tagName, e = e.namespaceURI) e = Pd(e), t = Fd(e, t);
                     else switch(t){
                         case `svg`:
                             t = 1;
@@ -4977,11 +4977,11 @@ Error generating stack: ` + e.message + `
         }
         function Ce(e) {
             e.memoizedState !== null && ge(be, e);
-            var t = _e.current, n = Pd(t, e.type);
+            var t = _e.current, n = Fd(t, e.type);
             t !== n && (ge(ve, e), ge(_e, n));
         }
         function we(e) {
-            ve.current === e && (he(_e), he(ve)), be.current === e && (he(be), If._currentValue = de);
+            ve.current === e && (he(_e), he(ve)), be.current === e && (he(be), Lf._currentValue = de);
         }
         var Te = Object.prototype.hasOwnProperty, Ee = t.unstable_scheduleCallback, De = t.unstable_cancelCallback, Oe = t.unstable_shouldYield, ke = t.unstable_requestPaint, Ae = t.unstable_now, je = t.unstable_getCurrentPriorityLevel, Me = t.unstable_ImmediatePriority, Ne = t.unstable_UserBlockingPriority, Pe = t.unstable_NormalPriority, Fe = t.unstable_LowPriority, Ie = t.unstable_IdlePriority, Le = t.log, Re = t.unstable_setDisableYieldValue, ze = null, Be = null;
         function Ve(e) {
@@ -5171,9 +5171,9 @@ Error generating stack: ` + e.message + `
             if (t) return t;
             for(var n = e.parentNode; n;){
                 if (t = n[dt] || n[lt]) {
-                    if (n = t.alternate, t.child !== null || n !== null && n.child !== null) for(e = Jd(e); e !== null;){
+                    if (n = t.alternate, t.child !== null || n !== null && n.child !== null) for(e = Yd(e); e !== null;){
                         if (n = e[lt]) return n;
-                        e = Jd(e);
+                        e = Yd(e);
                     }
                     return t;
                 }
@@ -5774,7 +5774,7 @@ Error generating stack: ` + e.message + `
             try {
                 return e(t);
             } finally{
-                if (cn = !1, (an !== null || on !== null) && (hu(), an && (t = an, e = on, on = an = null, sn(t), e))) for(t = 0; t < e.length; t++)sn(e[t]);
+                if (cn = !1, (an !== null || on !== null) && (gu(), an && (t = an, e = on, on = an = null, sn(t), e))) for(t = 0; t < e.length; t++)sn(e[t]);
             }
         }
         function un(e, t) {
@@ -6106,14 +6106,14 @@ Error generating stack: ` + e.message + `
         function ar(e, t, n, r) {
             an ? on ? on.push(r) : on = [
                 r
-            ] : an = r, t = vd(t, `onChange`), 0 < t.length && (n = new Sn(`onChange`, `change`, null, n, r), e.push({
+            ] : an = r, t = yd(t, `onChange`), 0 < t.length && (n = new Sn(`onChange`, `change`, null, n, r), e.push({
                 event: n,
                 listeners: t
             }));
         }
         var or = null, sr = null;
         function cr(e) {
-            ud(e, 0);
+            dd(e, 0);
         }
         function lr(e) {
             if (Rt(bt(e))) return e;
@@ -6253,7 +6253,7 @@ Error generating stack: ` + e.message + `
                 anchorOffset: r.anchorOffset,
                 focusNode: r.focusNode,
                 focusOffset: r.focusOffset
-            }), Nr && Cr(Nr, r) || (Nr = r, r = vd(Mr, `onSelect`), 0 < r.length && (t = new Sn(`onSelect`, `select`, null, t, n), e.push({
+            }), Nr && Cr(Nr, r) || (Nr = r, r = yd(Mr, `onSelect`), 0 < r.length && (t = new Sn(`onSelect`, `select`, null, t, n), e.push({
                 event: t,
                 listeners: r
             }), t.target = jr)));
@@ -6321,7 +6321,7 @@ Error generating stack: ` + e.message + `
             ] : e.push(t), t.lane = n | 536870912);
         }
         function ai(e) {
-            if (50 < au) throw au = 0, ou = null, Error(i(185));
+            if (50 < ou) throw ou = 0, su = null, Error(i(185));
             for(var t = e.return; t !== null;)e = t, t = e.return;
             return e.tag === 3 ? e.stateNode : null;
         }
@@ -6372,38 +6372,38 @@ Error generating stack: ` + e.message + `
             var t = e.stateNode, n = e.type, r = e.memoizedProps;
             switch(t[lt] = e, t[ut] = r, n){
                 case `dialog`:
-                    dd(`cancel`, t), dd(`close`, t);
+                    fd(`cancel`, t), fd(`close`, t);
                     break;
                 case `iframe`:
                 case `object`:
                 case `embed`:
-                    dd(`load`, t);
+                    fd(`load`, t);
                     break;
                 case `video`:
                 case `audio`:
-                    for(n = 0; n < cd.length; n++)dd(cd[n], t);
+                    for(n = 0; n < ld.length; n++)fd(ld[n], t);
                     break;
                 case `source`:
-                    dd(`error`, t);
+                    fd(`error`, t);
                     break;
                 case `img`:
                 case `image`:
                 case `link`:
-                    dd(`error`, t), dd(`load`, t);
+                    fd(`error`, t), fd(`load`, t);
                     break;
                 case `details`:
-                    dd(`toggle`, t);
+                    fd(`toggle`, t);
                     break;
                 case `input`:
-                    dd(`invalid`, t), Ut(t, r.value, r.defaultValue, r.checked, r.defaultChecked, r.type, r.name, !0), Lt(t);
+                    fd(`invalid`, t), Ut(t, r.value, r.defaultValue, r.checked, r.defaultChecked, r.type, r.name, !0), Lt(t);
                     break;
                 case `select`:
-                    dd(`invalid`, t);
+                    fd(`invalid`, t);
                     break;
                 case `textarea`:
-                    dd(`invalid`, t), qt(t, r.value, r.defaultValue, r.children), Lt(t);
+                    fd(`invalid`, t), qt(t, r.value, r.defaultValue, r.children), Lt(t);
             }
-            n = r.children, typeof n != `string` && typeof n != `number` && typeof n != `bigint` || t.textContent === `` + n || !0 === r.suppressHydrationWarning || wd(t.textContent, n) ? (r.popover != null && (dd(`beforetoggle`, t), dd(`toggle`, t)), r.onScroll != null && dd(`scroll`, t), r.onScrollEnd != null && dd(`scrollend`, t), r.onClick != null && (t.onclick = Td), t = !0) : t = !1, t || Oi(e);
+            n = r.children, typeof n != `string` && typeof n != `number` && typeof n != `bigint` || t.textContent === `` + n || !0 === r.suppressHydrationWarning || Td(t.textContent, n) ? (r.popover != null && (fd(`beforetoggle`, t), fd(`toggle`, t)), r.onScroll != null && fd(`scroll`, t), r.onScrollEnd != null && fd(`scrollend`, t), r.onClick != null && (t.onclick = Ed), t = !0) : t = !1, t || Oi(e);
         }
         function Ai(e) {
             for(Si = e.return; Si;)switch(Si.tag){
@@ -6423,13 +6423,13 @@ Error generating stack: ` + e.message + `
             if (e !== Si) return !1;
             if (!wi) return Ai(e), wi = !0, !1;
             var t = !1, n;
-            if ((n = e.tag !== 3 && e.tag !== 27) && ((n = e.tag === 5) && (n = e.type, n = !(n !== `form` && n !== `button`) || Fd(e.type, e.memoizedProps)), n = !n), n && (t = !0), t && Ci && Oi(e), Ai(e), e.tag === 13) {
+            if ((n = e.tag !== 3 && e.tag !== 27) && ((n = e.tag === 5) && (n = e.type, n = !(n !== `form` && n !== `button`) || Id(e.type, e.memoizedProps)), n = !n), n && (t = !0), t && Ci && Oi(e), Ai(e), e.tag === 13) {
                 if (e = e.memoizedState, e = e === null ? null : e.dehydrated, !e) throw Error(i(317));
                 a: {
                     for(e = e.nextSibling, t = 0; e;){
                         if (e.nodeType === 8) if (n = e.data, n === `/$`) {
                             if (t === 0) {
-                                Ci = qd(e.nextSibling);
+                                Ci = Jd(e.nextSibling);
                                 break a;
                             }
                             t--;
@@ -6438,7 +6438,7 @@ Error generating stack: ` + e.message + `
                     }
                     Ci = null;
                 }
-            } else Ci = Si ? qd(e.stateNode.nextSibling) : null;
+            } else Ci = Si ? Jd(e.stateNode.nextSibling) : null;
             return !0;
         }
         function Mi() {
@@ -6714,13 +6714,13 @@ Error generating stack: ` + e.message + `
         }
         var Yi = Ji(!0), Xi = Ji(!1), Zi = me(null), Qi = me(0);
         function $i(e, t) {
-            e = z, ge(Qi, e), ge(Zi, t), z = e | t.baseLanes;
+            e = R, ge(Qi, e), ge(Zi, t), R = e | t.baseLanes;
         }
         function ea() {
-            ge(Qi, z), ge(Zi, Zi.current);
+            ge(Qi, R), ge(Zi, Zi.current);
         }
         function ta() {
-            z = Qi.current, he(Zi), he(Qi);
+            R = Qi.current, he(Zi), he(Qi);
         }
         var na = me(null), ra = null;
         function ia(e) {
@@ -6798,7 +6798,7 @@ Error generating stack: ` + e.message + `
         function ba(e, t) {
             if (ga === null) {
                 var n = ga = [];
-                _a = 0, va = nd(), ya = {
+                _a = 0, va = rd(), ya = {
                     status: `pending`,
                     value: void 0,
                     then: function(e) {
@@ -6992,7 +6992,7 @@ Error generating stack: ` + e.message + `
                 var c = s = null, l = null, u = t, d = !1;
                 do {
                     var f = u.lane & -536870913;
-                    if (f === u.lane ? (Oa & f) === f : (Ll & f) === f) {
+                    if (f === u.lane ? (Oa & f) === f : (Rl & f) === f) {
                         var p = u.revertLane;
                         if (p === 0) l !== null && (l = l.next = {
                             lane: 0,
@@ -7012,7 +7012,7 @@ Error generating stack: ` + e.message + `
                             hasEagerState: u.hasEagerState,
                             eagerState: u.eagerState,
                             next: null
-                        }, l === null ? (c = l = f, s = o) : l = l.next = f, ka.lanes |= p, Wl |= p;
+                        }, l === null ? (c = l = f, s = o) : l = l.next = f, ka.lanes |= p, Gl |= p;
                         f = u.action, Pa && n(o, f), o = u.hasEagerState ? u.eagerState : n(o, f);
                     } else p = {
                         lane: f,
@@ -7021,7 +7021,7 @@ Error generating stack: ` + e.message + `
                         hasEagerState: u.hasEagerState,
                         eagerState: u.eagerState,
                         next: null
-                    }, l === null ? (c = l = p, s = o) : l = l.next = p, ka.lanes |= f, Wl |= f;
+                    }, l === null ? (c = l = p, s = o) : l = l.next = p, ka.lanes |= f, Gl |= f;
                     u = u.next;
                 }while (u !== null && u !== t);
                 if (l === null ? s = o : l.next = c, !Sr(o, e.memoizedState) && (Ss = !0, d && (n = ya, n !== null))) throw n;
@@ -7096,7 +7096,7 @@ Error generating stack: ` + e.message + `
         }
         function lo(e) {
             var t = ri(e, 2);
-            t !== null && lu(t, e, 2);
+            t !== null && uu(t, e, 2);
         }
         function uo(e) {
             var t = Ja();
@@ -7200,7 +7200,7 @@ Error generating stack: ` + e.message + `
                                             i = null;
                                             break b;
                                         }
-                                        if (i = qd(i.nextSibling), i === null) {
+                                        if (i = Jd(i.nextSibling), i === null) {
                                             i = null;
                                             break b;
                                         }
@@ -7208,7 +7208,7 @@ Error generating stack: ` + e.message + `
                                     a = i.data, i = a === `F!` || a === `F` ? i : null;
                                 }
                                 if (i) {
-                                    Ci = qd(i.nextSibling), r = i.data === `F!`;
+                                    Ci = Jd(i.nextSibling), r = i.data === `F!`;
                                     break a;
                                 }
                             }
@@ -7346,10 +7346,10 @@ Error generating stack: ` + e.message + `
             ], r;
         }
         function Ro(e, t, n) {
-            return n === void 0 || Oa & 1073741824 ? e.memoizedState = t : (e.memoizedState = n, e = cu(), ka.lanes |= e, Wl |= e, n);
+            return n === void 0 || Oa & 1073741824 ? e.memoizedState = t : (e.memoizedState = n, e = lu(), ka.lanes |= e, Gl |= e, n);
         }
         function zo(e, t, n, r) {
-            return Sr(n, t) ? n : Zi.current === null ? Oa & 42 ? (e = cu(), ka.lanes |= e, Wl |= e, t) : (Ss = !0, e.memoizedState = n) : (e = Ro(e, n, r), Sr(e, t) || (Ss = !0), e);
+            return Sr(n, t) ? n : Zi.current === null ? Oa & 42 ? (e = lu(), ka.lanes |= e, Gl |= e, t) : (Ss = !0, e.memoizedState = n) : (e = Ro(e, n, r), Sr(e, t) || (Ss = !0), e);
         }
         function Bo(e, t, n, r, i) {
             var a = ue.p;
@@ -7358,13 +7358,13 @@ Error generating stack: ` + e.message + `
             E.T = s, Qo(e, !1, t, n);
             try {
                 var c = i(), l = E.S;
-                l !== null && l(s, c), typeof c == `object` && c && typeof c.then == `function` ? Zo(e, t, Sa(c, r), su(e)) : Zo(e, t, r, su(e));
+                l !== null && l(s, c), typeof c == `object` && c && typeof c.then == `function` ? Zo(e, t, Sa(c, r), cu(e)) : Zo(e, t, r, cu(e));
             } catch (n) {
                 Zo(e, t, {
                     then: function() {},
                     status: `rejected`,
                     reason: n
-                }, su());
+                }, cu());
             } finally{
                 ue.p = a, E.T = o;
             }
@@ -7410,10 +7410,10 @@ Error generating stack: ` + e.message + `
         }
         function Wo(e) {
             var t = Uo(e).next.queue;
-            Zo(e, t, {}, su());
+            Zo(e, t, {}, cu());
         }
         function Go() {
-            return ic(If);
+            return ic(Lf);
         }
         function Ko() {
             return Ya().memoizedState;
@@ -7426,10 +7426,10 @@ Error generating stack: ` + e.message + `
                 switch(t.tag){
                     case 24:
                     case 3:
-                        var n = su();
+                        var n = cu();
                         e = uc(n);
                         var r = dc(t, e, n);
-                        r !== null && (lu(r, t, n), fc(r, t, n)), t = {
+                        r !== null && (uu(r, t, n), fc(r, t, n)), t = {
                             cache: ma()
                         }, e.payload = t;
                         return;
@@ -7438,7 +7438,7 @@ Error generating stack: ` + e.message + `
             }
         }
         function Yo(e, t, n) {
-            var r = su();
+            var r = cu();
             n = {
                 lane: r,
                 revertLane: 0,
@@ -7446,10 +7446,10 @@ Error generating stack: ` + e.message + `
                 hasEagerState: !1,
                 eagerState: null,
                 next: null
-            }, $o(e) ? es(t, n) : (n = ni(e, t, n, r), n !== null && (lu(n, e, r), ts(n, t, r)));
+            }, $o(e) ? es(t, n) : (n = ni(e, t, n, r), n !== null && (uu(n, e, r), ts(n, t, r)));
         }
         function Xo(e, t, n) {
-            Zo(e, t, n, su());
+            Zo(e, t, n, cu());
         }
         function Zo(e, t, n, r) {
             var i = {
@@ -7467,21 +7467,21 @@ Error generating stack: ` + e.message + `
                     var o = t.lastRenderedState, s = a(o, n);
                     if (i.hasEagerState = !0, i.eagerState = s, Sr(s, o)) return ti(e, t, i, 0), Il === null && ei(), !1;
                 } catch  {}
-                if (n = ni(e, t, i, r), n !== null) return lu(n, e, r), ts(n, t, r), !0;
+                if (n = ni(e, t, i, r), n !== null) return uu(n, e, r), ts(n, t, r), !0;
             }
             return !1;
         }
         function Qo(e, t, n, r) {
             if (r = {
                 lane: 2,
-                revertLane: nd(),
+                revertLane: rd(),
                 action: r,
                 hasEagerState: !1,
                 eagerState: null,
                 next: null
             }, $o(e)) {
                 if (t) throw Error(i(479));
-            } else t = ni(e, n, r, 2), t !== null && lu(t, e, 2);
+            } else t = ni(e, n, r, 2), t !== null && uu(t, e, 2);
         }
         function $o(e) {
             var t = e.alternate;
@@ -7613,7 +7613,7 @@ Error generating stack: ` + e.message + `
                     n = n();
                 } else {
                     if (n = t(), Il === null) throw Error(i(349));
-                    Ll & 60 || ao(r, t, n);
+                    Rl & 60 || ao(r, t, n);
                 }
                 a.memoizedState = n;
                 var o = {
@@ -7731,18 +7731,18 @@ Error generating stack: ` + e.message + `
             },
             enqueueSetState: function(e, t, n) {
                 e = e._reactInternals;
-                var r = su(), i = uc(r);
-                i.payload = t, n != null && (i.callback = n), t = dc(e, i, r), t !== null && (lu(t, e, r), fc(t, e, r));
+                var r = cu(), i = uc(r);
+                i.payload = t, n != null && (i.callback = n), t = dc(e, i, r), t !== null && (uu(t, e, r), fc(t, e, r));
             },
             enqueueReplaceState: function(e, t, n) {
                 e = e._reactInternals;
-                var r = su(), i = uc(r);
-                i.tag = 1, i.payload = t, n != null && (i.callback = n), t = dc(e, i, r), t !== null && (lu(t, e, r), fc(t, e, r));
+                var r = cu(), i = uc(r);
+                i.tag = 1, i.payload = t, n != null && (i.callback = n), t = dc(e, i, r), t !== null && (uu(t, e, r), fc(t, e, r));
             },
             enqueueForceUpdate: function(e, t) {
                 e = e._reactInternals;
-                var n = su(), r = uc(n);
-                r.tag = 2, t != null && (r.callback = t), t = dc(e, r, n), t !== null && (lu(t, e, n), fc(t, e, n));
+                var n = cu(), r = uc(n);
+                r.tag = 2, t != null && (r.callback = t), t = dc(e, r, n), t !== null && (uu(t, e, n), fc(t, e, n));
             }
         };
         function cs(e, t, n, r, i, a, o) {
@@ -7828,9 +7828,9 @@ Error generating stack: ` + e.message + `
             }
             var o = n.stateNode;
             o !== null && typeof o.componentDidCatch == `function` && (e.callback = function() {
-                gs(t, n, r), typeof i != `function` && (eu === null ? eu = new Set([
+                gs(t, n, r), typeof i != `function` && (tu === null ? tu = new Set([
                     this
-                ]) : eu.add(this));
+                ]) : tu.add(this));
                 var e = r.stack;
                 this.componentDidCatch(r.value, {
                     componentStack: e === null ? `` : e
@@ -7842,9 +7842,9 @@ Error generating stack: ` + e.message + `
                 if (t = n.alternate, t !== null && tc(t, n, a, !0), n = na.current, n !== null) {
                     switch(n.tag){
                         case 13:
-                            return ra === null ? xu() : n.alternate === null && Ul === 0 && (Ul = 3), n.flags &= -257, n.flags |= 65536, n.lanes = a, r === Ii ? n.flags |= 16384 : (t = n.updateQueue, t === null ? n.updateQueue = new Set([
+                            return ra === null ? Su() : n.alternate === null && Wl === 0 && (Wl = 3), n.flags &= -257, n.flags |= 65536, n.lanes = a, r === Ii ? n.flags |= 16384 : (t = n.updateQueue, t === null ? n.updateQueue = new Set([
                                 r
-                            ]) : t.add(r), Lu(e, r, a)), !1;
+                            ]) : t.add(r), Ru(e, r, a)), !1;
                         case 22:
                             return n.flags |= 65536, r === Ii ? n.flags |= 16384 : (t = n.updateQueue, t === null ? (t = {
                                 transitions: null,
@@ -7854,30 +7854,30 @@ Error generating stack: ` + e.message + `
                                 ])
                             }, n.updateQueue = t) : (n = t.retryQueue, n === null ? t.retryQueue = new Set([
                                 r
-                            ]) : n.add(r)), Lu(e, r, a)), !1;
+                            ]) : n.add(r)), Ru(e, r, a)), !1;
                     }
                     throw Error(i(435, n.tag));
                 }
-                return Lu(e, r, a), xu(), !1;
+                return Ru(e, r, a), Su(), !1;
             }
             if (wi) return t = na.current, t === null ? (r !== Di && (t = Error(i(423), {
                 cause: r
-            }), Ni(ci(t, n))), e = e.current.alternate, e.flags |= 65536, a &= -a, e.lanes |= a, r = ci(r, n), a = _s(e.stateNode, r, a), pc(e, a), Ul !== 4 && (Ul = 2)) : (!(t.flags & 65536) && (t.flags |= 256), t.flags |= 65536, t.lanes = a, r !== Di && (e = Error(i(422), {
+            }), Ni(ci(t, n))), e = e.current.alternate, e.flags |= 65536, a &= -a, e.lanes |= a, r = ci(r, n), a = _s(e.stateNode, r, a), pc(e, a), Wl !== 4 && (Wl = 2)) : (!(t.flags & 65536) && (t.flags |= 256), t.flags |= 65536, t.lanes = a, r !== Di && (e = Error(i(422), {
                 cause: r
             }), Ni(ci(e, n)))), !1;
             var o = Error(i(520), {
                 cause: r
             });
-            if (o = ci(o, n), Yl === null ? Yl = [
+            if (o = ci(o, n), Xl === null ? Xl = [
                 o
-            ] : Yl.push(o), Ul !== 4 && (Ul = 2), t === null) return !0;
+            ] : Xl.push(o), Wl !== 4 && (Wl = 2), t === null) return !0;
             r = ci(r, n), n = t;
             do {
                 switch(n.tag){
                     case 3:
                         return n.flags |= 65536, e = a & -a, n.lanes |= e, e = _s(n.stateNode, r, e), pc(n, e), !1;
                     case 1:
-                        if (t = n.type, o = n.stateNode, !(n.flags & 128) && (typeof t.getDerivedStateFromError == `function` || o !== null && typeof o.componentDidCatch == `function` && (eu === null || !eu.has(o)))) return n.flags |= 65536, a &= -a, n.lanes |= a, a = vs(a), ys(a, e, n, r), pc(n, a), !1;
+                        if (t = n.type, o = n.stateNode, !(n.flags & 128) && (typeof t.getDerivedStateFromError == `function` || o !== null && typeof o.componentDidCatch == `function` && (tu === null || !tu.has(o)))) return n.flags |= 65536, a &= -a, n.lanes |= a, a = vs(a), ys(a, e, n, r), pc(n, a), !1;
                 }
                 n = n.return;
             }while (n !== null);
@@ -7993,7 +7993,7 @@ Error generating stack: ` + e.message + `
             };
         }
         function Is(e, t, n) {
-            return e = e === null ? 0 : e.childLanes & ~n, t && (e |= ql), e;
+            return e = e === null ? 0 : e.childLanes & ~n, t && (e |= Jl), e;
         }
         function Ls(e, t, n) {
             var r = t.pendingProps, a = !1, o = (t.flags & 128) != 0, s;
@@ -8008,7 +8008,7 @@ Error generating stack: ` + e.message + `
                                         c = null;
                                         break c;
                                     }
-                                    if (l = qd(l.nextSibling), l === null) {
+                                    if (l = Jd(l.nextSibling), l === null) {
                                         c = null;
                                         break c;
                                     }
@@ -8086,10 +8086,10 @@ Error generating stack: ` + e.message + `
                             default:
                                 r = 0;
                         }
-                        if (r = (r & (s.suspendedLanes | n)) === 0 ? r : 0, r !== 0 && r !== l.retryLane) throw l.retryLane = r, ri(e, r), lu(s, e, r), xs;
+                        if (r = (r & (s.suspendedLanes | n)) === 0 ? r : 0, r !== 0 && r !== l.retryLane) throw l.retryLane = r, ri(e, r), uu(s, e, r), xs;
                     }
-                    c.data === `$?` || xu(), t = Bs(e, t, n);
-                } else c.data === `$?` ? (t.flags |= 128, t.child = e.child, t = Bu.bind(null, e), c._reactRetry = t, t = null) : (e = l.treeContext, Ci = qd(c.nextSibling), Si = t, wi = !0, Ti = null, Ei = !1, e !== null && (pi[mi++] = gi, pi[mi++] = _i, pi[mi++] = hi, gi = e.id, _i = e.overflow, hi = t), t = Rs(t, r.children), t.flags |= 4096);
+                    c.data === `$?` || Su(), t = Bs(e, t, n);
+                } else c.data === `$?` ? (t.flags |= 128, t.child = e.child, t = Vu.bind(null, e), c._reactRetry = t, t = null) : (e = l.treeContext, Ci = Jd(c.nextSibling), Si = t, wi = !0, Ti = null, Ei = !1, e !== null && (pi[mi++] = gi, pi[mi++] = _i, pi[mi++] = hi, gi = e.id, _i = e.overflow, hi = t), t = Rs(t, r.children), t.flags |= 4096);
                 return t;
             }
             return a ? (oa(t), a = r.fallback, c = t.mode, l = e.child, u = l.sibling, r = yl(l, {
@@ -8180,7 +8180,7 @@ Error generating stack: ` + e.message + `
             return t.child;
         }
         function Ws(e, t, n) {
-            if (e !== null && (t.dependencies = e.dependencies), Wl |= t.lanes, (n & t.childLanes) === 0) if (e !== null) {
+            if (e !== null && (t.dependencies = e.dependencies), Gl |= t.lanes, (n & t.childLanes) === 0) if (e !== null) {
                 if (tc(e, t, n, !1), (n & t.childLanes) === 0) return null;
             } else return null;
             if (e !== null && t.child !== e.child) throw Error(i(153));
@@ -8278,7 +8278,7 @@ Error generating stack: ` + e.message + `
                         } else if (o !== r) {
                             r = ci(Error(i(424)), t), Ni(r), t = Ns(e, t, o, n);
                             break a;
-                        } else for(Ci = qd(t.stateNode.containerInfo.firstChild), Si = t, wi = !0, Ti = null, Ei = !0, n = Xi(t, null, o, n), t.child = n; n;)n.flags = n.flags & -3 | 4096, n = n.sibling;
+                        } else for(Ci = Jd(t.stateNode.containerInfo.firstChild), Si = t, wi = !0, Ti = null, Ei = !0, n = Xi(t, null, o, n), t.child = n; n;)n.flags = n.flags & -3 | 4096, n = n.sibling;
                         else {
                             if (Mi(), o === r) {
                                 t = Ws(e, t, n);
@@ -8290,13 +8290,13 @@ Error generating stack: ` + e.message + `
                     }
                     return t;
                 case 26:
-                    return ks(e, t), e === null ? (n = ff(t.type, null, t.pendingProps, null)) ? t.memoizedState = n : wi || (n = t.type, e = t.pendingProps, r = Md(ye.current).createElement(n), r[lt] = t, r[ut] = e, Od(r, n, e), St(r), t.stateNode = r) : t.memoizedState = ff(t.type, e.memoizedProps, t.pendingProps, e.memoizedState), null;
+                    return ks(e, t), e === null ? (n = pf(t.type, null, t.pendingProps, null)) ? t.memoizedState = n : wi || (n = t.type, e = t.pendingProps, r = Nd(ye.current).createElement(n), r[lt] = t, r[ut] = e, kd(r, n, e), St(r), t.stateNode = r) : t.memoizedState = pf(t.type, e.memoizedProps, t.pendingProps, e.memoizedState), null;
                 case 27:
-                    return Ce(t), e === null && wi && (r = t.stateNode = Yd(t.type, t.pendingProps, ye.current), Si = t, Ei = !0, Ci = qd(r.firstChild)), r = t.pendingProps.children, e !== null || wi ? Cs(e, t, r, n) : t.child = Yi(t, null, r, n), ks(e, t), t.child;
+                    return Ce(t), e === null && wi && (r = t.stateNode = Xd(t.type, t.pendingProps, ye.current), Si = t, Ei = !0, Ci = Jd(r.firstChild)), r = t.pendingProps.children, e !== null || wi ? Cs(e, t, r, n) : t.child = Yi(t, null, r, n), ks(e, t), t.child;
                 case 5:
-                    return e === null && wi && ((a = r = Ci) && (r = Gd(r, t.type, t.pendingProps, Ei), r === null ? a = !1 : (t.stateNode = r, Si = t, Ci = qd(r.firstChild), Ei = !1, a = !0)), a || Oi(t)), Ce(t), a = t.type, o = t.pendingProps, s = e === null ? null : e.memoizedProps, r = o.children, Fd(a, o) ? r = null : s !== null && Fd(a, s) && (t.flags |= 32), t.memoizedState !== null && (a = Va(e, t, Wa, null, null, n), If._currentValue = a), ks(e, t), Cs(e, t, r, n), t.child;
+                    return e === null && wi && ((a = r = Ci) && (r = Kd(r, t.type, t.pendingProps, Ei), r === null ? a = !1 : (t.stateNode = r, Si = t, Ci = Jd(r.firstChild), Ei = !1, a = !0)), a || Oi(t)), Ce(t), a = t.type, o = t.pendingProps, s = e === null ? null : e.memoizedProps, r = o.children, Id(a, o) ? r = null : s !== null && Id(a, s) && (t.flags |= 32), t.memoizedState !== null && (a = Va(e, t, Wa, null, null, n), Lf._currentValue = a), ks(e, t), Cs(e, t, r, n), t.child;
                 case 6:
-                    return e === null && wi && ((e = n = Ci) && (n = Kd(n, t.pendingProps, Ei), n === null ? e = !1 : (t.stateNode = n, Si = t, Ci = null, e = !0)), e || Oi(t)), null;
+                    return e === null && wi && ((e = n = Ci) && (n = qd(n, t.pendingProps, Ei), n === null ? e = !1 : (t.stateNode = n, Si = t, Ci = null, e = !0)), e || Oi(t)), null;
                 case 13:
                     return Ls(e, t, n);
                 case 4:
@@ -8404,8 +8404,8 @@ Error generating stack: ` + e.message + `
                 } else if (a === be.current) {
                     if (s = a.alternate, s === null) throw Error(i(387));
                     s.memoizedState.memoizedState !== a.memoizedState.memoizedState && (e === null ? e = [
-                        If
-                    ] : e.push(If));
+                        Lf
+                    ] : e.push(Lf));
                 }
                 a = a.return;
             }
@@ -8541,7 +8541,7 @@ Error generating stack: ` + e.message + `
                 o = 0, u = l = c = null, s = a;
                 do {
                     var f = s.lane & -536870913, p = f !== s.lane;
-                    if (p ? (Ll & f) === f : (r & f) === f) {
+                    if (p ? (Rl & f) === f : (r & f) === f) {
                         f !== 0 && f === va && (P = !0), u !== null && (u = u.next = {
                             lane: 0,
                             tag: s.tag,
@@ -8586,7 +8586,7 @@ Error generating stack: ` + e.message + `
                         p = s, s = p.next, p.next = null, i.lastBaseUpdate = p, i.shared.pending = null;
                     }
                 }while (1);
-                u === null && (c = d), i.baseState = c, i.firstBaseUpdate = l, i.lastBaseUpdate = u, a === null && (i.shared.lanes = 0), Wl |= o, e.lanes = o, e.memoizedState = d;
+                u === null && (c = d), i.baseState = c, i.firstBaseUpdate = l, i.lastBaseUpdate = u, a === null && (i.shared.lanes = 0), Gl |= o, e.lanes = o, e.memoizedState = d;
             }
         }
         function gc(e, t) {
@@ -8613,7 +8613,7 @@ Error generating stack: ` + e.message + `
                     }while (n !== i);
                 }
             } catch (e) {
-                Iu(t, t.return, e);
+                Lu(t, t.return, e);
             }
         }
         function yc(e, t, n) {
@@ -8631,7 +8631,7 @@ Error generating stack: ` + e.message + `
                                 try {
                                     s();
                                 } catch (e) {
-                                    Iu(i, c, e);
+                                    Lu(i, c, e);
                                 }
                             }
                         }
@@ -8639,7 +8639,7 @@ Error generating stack: ` + e.message + `
                     }while (r !== a);
                 }
             } catch (e) {
-                Iu(t, t.return, e);
+                Lu(t, t.return, e);
             }
         }
         function bc(e) {
@@ -8649,7 +8649,7 @@ Error generating stack: ` + e.message + `
                 try {
                     _c(t, n);
                 } catch (t) {
-                    Iu(e, e.return, t);
+                    Lu(e, e.return, t);
                 }
             }
         }
@@ -8658,7 +8658,7 @@ Error generating stack: ` + e.message + `
             try {
                 n.componentWillUnmount();
             } catch (n) {
-                Iu(e, t, n);
+                Lu(e, t, n);
             }
         }
         function Sc(e, t) {
@@ -8678,7 +8678,7 @@ Error generating stack: ` + e.message + `
                     typeof n == `function` ? e.refCleanup = n(i) : n.current = i;
                 }
             } catch (n) {
-                Iu(e, t, n);
+                Lu(e, t, n);
             }
         }
         function Cc(e, t) {
@@ -8686,14 +8686,14 @@ Error generating stack: ` + e.message + `
             if (n !== null) if (typeof r == `function`) try {
                 r();
             } catch (n) {
-                Iu(e, t, n);
+                Lu(e, t, n);
             } finally{
                 e.refCleanup = null, e = e.alternate, e != null && (e.refCleanup = null);
             }
             else if (typeof n == `function`) try {
                 n(null);
             } catch (n) {
-                Iu(e, t, n);
+                Lu(e, t, n);
             }
             else n.current = null;
         }
@@ -8711,15 +8711,15 @@ Error generating stack: ` + e.message + `
                         n.src ? r.src = n.src : n.srcSet && (r.srcset = n.srcSet);
                 }
             } catch (t) {
-                Iu(e, e.return, t);
+                Lu(e, e.return, t);
             }
         }
         function Tc(e, t, n) {
             try {
                 var r = e.stateNode;
-                kd(r, e.type, n, t), r[ut] = t;
+                Ad(r, e.type, n, t), r[ut] = t;
             } catch (t) {
-                Iu(e, e.return, t);
+                Lu(e, e.return, t);
             }
         }
         function Ec(e) {
@@ -8740,7 +8740,7 @@ Error generating stack: ` + e.message + `
         }
         function Oc(e, t, n) {
             var r = e.tag;
-            if (r === 5 || r === 6) e = e.stateNode, t ? n.nodeType === 8 ? n.parentNode.insertBefore(e, t) : n.insertBefore(e, t) : (n.nodeType === 8 ? (t = n.parentNode, t.insertBefore(e, n)) : (t = n, t.appendChild(e)), n = n._reactRootContainer, n != null || t.onclick !== null || (t.onclick = Td));
+            if (r === 5 || r === 6) e = e.stateNode, t ? n.nodeType === 8 ? n.parentNode.insertBefore(e, t) : n.insertBefore(e, t) : (n.nodeType === 8 ? (t = n.parentNode, t.insertBefore(e, n)) : (t = n, t.appendChild(e)), n = n._reactRootContainer, n != null || t.onclick !== null || (t.onclick = Ed));
             else if (r !== 4 && r !== 27 && (e = e.child, e !== null)) for(Oc(e, t, n), e = e.sibling; e !== null;)Oc(e, t, n), e = e.sibling;
         }
         function kc(e, t, n) {
@@ -8750,7 +8750,7 @@ Error generating stack: ` + e.message + `
         }
         var Ac = !1, jc = !1, Mc = !1, Nc = typeof WeakSet == `function` ? WeakSet : Set, Pc = null, Fc = !1;
         function Ic(e, t) {
-            if (e = e.containerInfo, Ad = Wf, e = Dr(e), Or(e)) {
+            if (e = e.containerInfo, jd = Gf, e = Dr(e), Or(e)) {
                 if (`selectionStart` in e) var n = {
                     start: e.selectionStart,
                     end: e.selectionEnd
@@ -8789,10 +8789,10 @@ Error generating stack: ` + e.message + `
                     end: 0
                 };
             } else n = null;
-            for(jd = {
+            for(Md = {
                 focusedElem: e,
                 selectionRange: n
-            }, Wf = !1, Pc = t; Pc !== null;)if (t = Pc, e = t.child, t.subtreeFlags & 1028 && e !== null) e.return = t, Pc = e;
+            }, Gf = !1, Pc = t; Pc !== null;)if (t = Pc, e = t.child, t.subtreeFlags & 1028 && e !== null) e.return = t, Pc = e;
             else for(; Pc !== null;){
                 switch(t = Pc, o = t.alternate, e = t.flags, t.tag){
                     case 0:
@@ -8807,18 +8807,18 @@ Error generating stack: ` + e.message + `
                                 var h = us(n.type, a, n.elementType === n.type);
                                 e = r.getSnapshotBeforeUpdate(h, o), r.__reactInternalSnapshotBeforeUpdate = e;
                             } catch (e) {
-                                Iu(n, n.return, e);
+                                Lu(n, n.return, e);
                             }
                         }
                         break;
                     case 3:
                         if (e & 1024) {
-                            if (e = t.stateNode.containerInfo, n = e.nodeType, n === 9) Wd(e);
+                            if (e = t.stateNode.containerInfo, n = e.nodeType, n === 9) Gd(e);
                             else if (n === 1) switch(e.nodeName){
                                 case `HEAD`:
                                 case `HTML`:
                                 case `BODY`:
-                                    Wd(e);
+                                    Gd(e);
                                     break;
                                 default:
                                     e.textContent = ``;
@@ -8855,7 +8855,7 @@ Error generating stack: ` + e.message + `
                     if (Zc(e, n), r & 4) if (e = n.stateNode, t === null) try {
                         e.componentDidMount();
                     } catch (e) {
-                        Iu(n, n.return, e);
+                        Lu(n, n.return, e);
                     }
                     else {
                         var i = us(n.type, t.memoizedProps);
@@ -8863,7 +8863,7 @@ Error generating stack: ` + e.message + `
                         try {
                             e.componentDidUpdate(i, t, e.__reactInternalSnapshotBeforeUpdate);
                         } catch (e) {
-                            Iu(n, n.return, e);
+                            Lu(n, n.return, e);
                         }
                     }
                     r & 64 && bc(n), r & 512 && Sc(n, n.return);
@@ -8881,7 +8881,7 @@ Error generating stack: ` + e.message + `
                         try {
                             _c(r, e);
                         } catch (e) {
-                            Iu(n, n.return, e);
+                            Lu(n, n.return, e);
                         }
                     }
                     break;
@@ -8940,16 +8940,16 @@ Error generating stack: ` + e.message + `
                     if (zc = null, Vc(e, t, n), zc = i, Bc = a, zc !== null) if (Bc) try {
                         e = zc, r = n.stateNode, e.nodeType === 8 ? e.parentNode.removeChild(r) : e.removeChild(r);
                     } catch (e) {
-                        Iu(n, t, e);
+                        Lu(n, t, e);
                     }
                     else try {
                         zc.removeChild(n.stateNode);
                     } catch (e) {
-                        Iu(n, t, e);
+                        Lu(n, t, e);
                     }
                     break;
                 case 18:
-                    zc !== null && (Bc ? (t = zc, n = n.stateNode, t.nodeType === 8 ? Ud(t.parentNode, n) : t.nodeType === 1 && Ud(t, n), hp(t)) : Ud(zc, n.stateNode));
+                    zc !== null && (Bc ? (t = zc, n = n.stateNode, t.nodeType === 8 ? Wd(t.parentNode, n) : t.nodeType === 1 && Wd(t, n), hp(t)) : Wd(zc, n.stateNode));
                     break;
                 case 4:
                     r = zc, i = Bc, zc = n.stateNode.containerInfo, Bc = !0, Vc(e, t, n), zc = r, Bc = i;
@@ -8977,7 +8977,7 @@ Error generating stack: ` + e.message + `
             if (t.memoizedState === null && (e = t.alternate, e !== null && (e = e.memoizedState, e !== null && (e = e.dehydrated, e !== null)))) try {
                 hp(e);
             } catch (e) {
-                Iu(t, t.return, e);
+                Lu(t, t.return, e);
             }
         }
         function Wc(e) {
@@ -8995,7 +8995,7 @@ Error generating stack: ` + e.message + `
         function Gc(e, t) {
             var n = Wc(e);
             t.forEach(function(t) {
-                var r = Vu.bind(null, e, t);
+                var r = Hu.bind(null, e, t);
                 n.has(t) || (n.add(t), t.then(r, r));
             });
         }
@@ -9045,26 +9045,26 @@ Error generating stack: ` + e.message + `
                                 r = e.type, n = e.memoizedProps, a = a.ownerDocument || a;
                                 b: switch(r){
                                     case `title`:
-                                        o = a.getElementsByTagName(`title`)[0], (!o || o[gt] || o[lt] || o.namespaceURI === `http://www.w3.org/2000/svg` || o.hasAttribute(`itemprop`)) && (o = a.createElement(r), a.head.insertBefore(o, a.querySelector(`head > title`))), Od(o, r, n), o[lt] = e, St(o), r = o;
+                                        o = a.getElementsByTagName(`title`)[0], (!o || o[gt] || o[lt] || o.namespaceURI === `http://www.w3.org/2000/svg` || o.hasAttribute(`itemprop`)) && (o = a.createElement(r), a.head.insertBefore(o, a.querySelector(`head > title`))), kd(o, r, n), o[lt] = e, St(o), r = o;
                                         break a;
                                     case `link`:
-                                        var s = wf(`link`, `href`, a).get(r + (n.href || ``));
+                                        var s = Tf(`link`, `href`, a).get(r + (n.href || ``));
                                         if (s) {
                                             for(var c = 0; c < s.length; c++)if (o = s[c], o.getAttribute(`href`) === (n.href == null ? null : n.href) && o.getAttribute(`rel`) === (n.rel == null ? null : n.rel) && o.getAttribute(`title`) === (n.title == null ? null : n.title) && o.getAttribute(`crossorigin`) === (n.crossOrigin == null ? null : n.crossOrigin)) {
                                                 s.splice(c, 1);
                                                 break b;
                                             }
                                         }
-                                        o = a.createElement(r), Od(o, r, n), a.head.appendChild(o);
+                                        o = a.createElement(r), kd(o, r, n), a.head.appendChild(o);
                                         break;
                                     case `meta`:
-                                        if (s = wf(`meta`, `content`, a).get(r + (n.content || ``))) {
+                                        if (s = Tf(`meta`, `content`, a).get(r + (n.content || ``))) {
                                             for(c = 0; c < s.length; c++)if (o = s[c], o.getAttribute(`content`) === (n.content == null ? null : `` + n.content) && o.getAttribute(`name`) === (n.name == null ? null : n.name) && o.getAttribute(`property`) === (n.property == null ? null : n.property) && o.getAttribute(`http-equiv`) === (n.httpEquiv == null ? null : n.httpEquiv) && o.getAttribute(`charset`) === (n.charSet == null ? null : n.charSet)) {
                                                 s.splice(c, 1);
                                                 break b;
                                             }
                                         }
-                                        o = a.createElement(r), Od(o, r, n), a.head.appendChild(o);
+                                        o = a.createElement(r), kd(o, r, n), a.head.appendChild(o);
                                         break;
                                     default:
                                         throw Error(i(468, r));
@@ -9072,9 +9072,9 @@ Error generating stack: ` + e.message + `
                                 o[lt] = e, St(o), r = o;
                             }
                             e.stateNode = r;
-                        } else Tf(a, e.type, e.stateNode);
-                        else e.stateNode = yf(a, r, e.memoizedProps);
-                        else o === r ? r === null && e.stateNode !== null && Tc(e, e.memoizedProps, n.memoizedProps) : (o === null ? n.stateNode !== null && (n = n.stateNode, n.parentNode.removeChild(n)) : o.count--, r === null ? Tf(a, e.type, e.stateNode) : yf(a, r, e.memoizedProps));
+                        } else Ef(a, e.type, e.stateNode);
+                        else e.stateNode = bf(a, r, e.memoizedProps);
+                        else o === r ? r === null && e.stateNode !== null && Tc(e, e.memoizedProps, n.memoizedProps) : (o === null ? n.stateNode !== null && (n = n.stateNode, n.parentNode.removeChild(n)) : o.count--, r === null ? Ef(a, e.type, e.stateNode) : bf(a, r, e.memoizedProps));
                     }
                     break;
                 case 27:
@@ -9086,9 +9086,9 @@ Error generating stack: ` + e.message + `
                                 l[gt] || d === `HEAD` || d === `BODY` || d === `SCRIPT` || d === `STYLE` || d === `LINK` && l.rel.toLowerCase() === `stylesheet` || a.removeChild(l), l = u;
                             }
                             for(var f = e.type, p = a.attributes; p.length;)a.removeAttributeNode(p[0]);
-                            Od(a, f, o), a[lt] = e, a[ut] = o;
+                            kd(a, f, o), a[lt] = e, a[ut] = o;
                         } catch (t) {
-                            Iu(e, e.return, t);
+                            Lu(e, e.return, t);
                         }
                     }
                 case 5:
@@ -9097,7 +9097,7 @@ Error generating stack: ` + e.message + `
                         try {
                             Jt(a, ``);
                         } catch (t) {
-                            Iu(e, e.return, t);
+                            Lu(e, e.return, t);
                         }
                     }
                     r & 4 && e.stateNode != null && (a = e.memoizedProps, Tc(e, a, n === null ? a : n.memoizedProps)), r & 1024 && (Mc = !0);
@@ -9109,26 +9109,26 @@ Error generating stack: ` + e.message + `
                         try {
                             n.nodeValue = r;
                         } catch (t) {
-                            Iu(e, e.return, t);
+                            Lu(e, e.return, t);
                         }
                     }
                     break;
                 case 3:
-                    if (Cf = null, a = qc, qc = Qd(t.containerInfo), Kc(t, e), qc = a, Yc(e), r & 4 && n !== null && n.memoizedState.isDehydrated) try {
+                    if (wf = null, a = qc, qc = $d(t.containerInfo), Kc(t, e), qc = a, Yc(e), r & 4 && n !== null && n.memoizedState.isDehydrated) try {
                         hp(t.containerInfo);
                     } catch (t) {
-                        Iu(e, e.return, t);
+                        Lu(e, e.return, t);
                     }
                     Mc && (Mc = !1, Xc(e));
                     break;
                 case 4:
-                    r = qc, qc = Qd(e.stateNode.containerInfo), Kc(t, e), Yc(e), qc = r;
+                    r = qc, qc = $d(e.stateNode.containerInfo), Kc(t, e), Yc(e), qc = r;
                     break;
                 case 12:
                     Kc(t, e), Yc(e);
                     break;
                 case 13:
-                    Kc(t, e), Yc(e), e.child.flags & 8192 && e.memoizedState !== null != (n !== null && n.memoizedState !== null) && (Zl = Ae()), r & 4 && (r = e.updateQueue, r !== null && (e.updateQueue = null, Gc(e, r)));
+                    Kc(t, e), Yc(e), e.child.flags & 8192 && e.memoizedState !== null != (n !== null && n.memoizedState !== null) && (Ql = Ae()), r & 4 && (r = e.updateQueue, r !== null && (e.updateQueue = null, Gc(e, r)));
                     break;
                 case 22:
                     if (r & 512 && (jc || n === null || Cc(n, n.return)), l = e.memoizedState !== null, u = n !== null && n.memoizedState !== null, d = Ac, f = jc, Ac = d || l, jc = f || u, Kc(t, e), jc = f, Ac = d, Yc(e), t = e.stateNode, t._current = e, t._visibility &= -3, t._visibility |= t._pendingVisibility & 2, r & 8192 && (t._visibility = l ? t._visibility & -2 : t._visibility | 1, l && (t = Ac || jc, n === null || u || t || Qc(e)), e.memoizedProps === null || e.memoizedProps.mode !== `manual`)) a: for(n = null, t = e;;){
@@ -9143,7 +9143,7 @@ Error generating stack: ` + e.message + `
                                         s.style.display = m == null || typeof m == `boolean` ? `` : (`` + m).trim();
                                     }
                                 } catch (e) {
-                                    Iu(u, u.return, e);
+                                    Lu(u, u.return, e);
                                 }
                             }
                         } else if (t.tag === 6) {
@@ -9152,7 +9152,7 @@ Error generating stack: ` + e.message + `
                                 try {
                                     u.stateNode.nodeValue = l ? `` : u.memoizedProps;
                                 } catch (e) {
-                                    Iu(u, u.return, e);
+                                    Lu(u, u.return, e);
                                 }
                             }
                         } else if ((t.tag !== 22 && t.tag !== 23 || t.memoizedState === null || t === e) && t.child !== null) {
@@ -9211,7 +9211,7 @@ Error generating stack: ` + e.message + `
                         }
                     }
                 } catch (t) {
-                    Iu(e, e.return, t);
+                    Lu(e, e.return, t);
                 }
                 e.flags &= -3;
             }
@@ -9268,7 +9268,7 @@ Error generating stack: ` + e.message + `
                         if (tl(i, a, n), r = a, i = r.stateNode, typeof i.componentDidMount == `function`) try {
                             i.componentDidMount();
                         } catch (e) {
-                            Iu(r, r.return, e);
+                            Lu(r, r.return, e);
                         }
                         if (r = a, i = r.updateQueue, i !== null) {
                             var s = r.stateNode;
@@ -9276,7 +9276,7 @@ Error generating stack: ` + e.message + `
                                 var c = i.shared.hiddenCallbacks;
                                 if (c !== null) for(i.shared.hiddenCallbacks = null, i = 0; i < c.length; i++)gc(c[i], s);
                             } catch (e) {
-                                Iu(r, r.return, e);
+                                Lu(r, r.return, e);
                             }
                         }
                         n && o & 64 && bc(a), Sc(a, a.return);
@@ -9329,7 +9329,7 @@ Error generating stack: ` + e.message + `
                             var a = t.memoizedProps, o = a.id, s = a.onPostCommit;
                             typeof s == `function` && s(o, t.alternate === null ? `mount` : `update`, e.passiveEffectDuration, -0);
                         } catch (e) {
-                            Iu(t, t.return, e);
+                            Lu(t, t.return, e);
                         }
                     } else al(e, t, n, r);
                     break;
@@ -9392,7 +9392,7 @@ Error generating stack: ` + e.message + `
         function ul(e) {
             switch(e.tag){
                 case 26:
-                    ll(e), e.flags & cl && e.memoizedState !== null && Af(qc, e.memoizedState, e.memoizedProps);
+                    ll(e), e.flags & cl && e.memoizedState !== null && jf(qc, e.memoizedState, e.memoizedProps);
                     break;
                 case 5:
                     ll(e);
@@ -9400,7 +9400,7 @@ Error generating stack: ` + e.message + `
                 case 3:
                 case 4:
                     var t = qc;
-                    qc = Qd(e.stateNode.containerInfo), ll(e), qc = t;
+                    qc = $d(e.stateNode.containerInfo), ll(e), qc = t;
                     break;
                 case 22:
                     e.memoizedState === null && (t = e.alternate, t !== null && t.memoizedState !== null ? (t = cl, cl = 16777216, ll(e), cl = t) : ll(e));
@@ -9536,7 +9536,7 @@ Error generating stack: ` + e.message + `
         function xl(e, t, n, r, a, o) {
             var s = 0;
             if (r = e, typeof e == `function`) vl(e) && (s = 1);
-            else if (typeof e == `string`) s = Ef(e, n, _e.current) ? 26 : e === `html` || e === `head` || e === `body` ? 27 : 5;
+            else if (typeof e == `string`) s = Df(e, n, _e.current) ? 26 : e === `html` || e === `head` || e === `body` ? 27 : 5;
             else a: switch(e){
                 case l:
                     return Sl(n.children, a, o, t);
@@ -9591,7 +9591,7 @@ Error generating stack: ` + e.message + `
                     if (e === null) throw Error(i(456));
                     if (!(a._pendingVisibility & 2)) {
                         var t = ri(e, 2);
-                        t !== null && (a._pendingVisibility |= 2, lu(t, e, 2));
+                        t !== null && (a._pendingVisibility |= 2, uu(t, e, 2));
                     }
                 },
                 attach: function() {
@@ -9599,7 +9599,7 @@ Error generating stack: ` + e.message + `
                     if (e === null) throw Error(i(456));
                     if (a._pendingVisibility & 2) {
                         var t = ri(e, 2);
-                        t !== null && (a._pendingVisibility &= -3, lu(t, e, 2));
+                        t !== null && (a._pendingVisibility &= -3, uu(t, e, 2));
                     }
                 }
             };
@@ -9620,13 +9620,13 @@ Error generating stack: ` + e.message + `
         }
         function El(e, t) {
             if (t.type !== `stylesheet` || t.state.loading & 4) e.flags &= -16777217;
-            else if (e.flags |= 16777216, !Df(t)) {
-                if (t = na.current, t !== null && ((Ll & 4194176) === Ll ? ra !== null : (Ll & 62914560) !== Ll && !(Ll & 536870912) || t !== ra)) throw Bi = Ii, Fi;
+            else if (e.flags |= 16777216, !Of(t)) {
+                if (t = na.current, t !== null && ((Rl & 4194176) === Rl ? ra !== null : (Rl & 62914560) !== Rl && !(Rl & 536870912) || t !== ra)) throw Bi = Ii, Fi;
                 e.flags |= 8192;
             }
         }
         function Dl(e, t) {
-            t !== null && (e.flags |= 4), e.flags & 16384 && (t = e.tag === 22 ? 536870912 : et(), e.lanes |= t, Jl |= t);
+            t !== null && (e.flags |= 4), e.flags & 16384 && (t = e.tag === 22 ? 536870912 : et(), e.lanes |= t, Yl |= t);
         }
         function Ol(e, t) {
             if (!wi) switch(e.tailMode){
@@ -9663,7 +9663,7 @@ Error generating stack: ` + e.message + `
                 case 1:
                     return kl(t), null;
                 case 3:
-                    return n = t.stateNode, r = null, e !== null && (r = e.memoizedState.cache), t.memoizedState.cache !== r && (t.flags |= 2048), Qs(pa), Se(), n.pendingContext && (n.context = n.pendingContext, n.pendingContext = null), (e === null || e.child === null) && (ji(t) ? Tl(t) : e === null || e.memoizedState.isDehydrated && !(t.flags & 256) || (t.flags |= 1024, Ti !== null && (du(Ti), Ti = null))), kl(t), null;
+                    return n = t.stateNode, r = null, e !== null && (r = e.memoizedState.cache), t.memoizedState.cache !== r && (t.flags |= 2048), Qs(pa), Se(), n.pendingContext && (n.context = n.pendingContext, n.pendingContext = null), (e === null || e.child === null) && (ji(t) ? Tl(t) : e === null || e.memoizedState.isDehydrated && !(t.flags & 256) || (t.flags |= 1024, Ti !== null && (fu(Ti), Ti = null))), kl(t), null;
                 case 26:
                     return n = t.memoizedState, e === null ? (Tl(t), n === null ? (kl(t), t.flags &= -16777217) : (kl(t), El(t, n))) : n ? n === e.memoizedState ? (kl(t), t.flags &= -16777217) : (Tl(t), kl(t), El(t, n)) : (e.memoizedProps !== r && Tl(t), kl(t), t.flags &= -16777217), null;
                 case 27:
@@ -9675,7 +9675,7 @@ Error generating stack: ` + e.message + `
                             if (t.stateNode === null) throw Error(i(166));
                             return kl(t), null;
                         }
-                        e = _e.current, ji(t) ? ki(t, e) : (e = Yd(a, r, n), t.stateNode = e, Tl(t));
+                        e = _e.current, ji(t) ? ki(t, e) : (e = Xd(a, r, n), t.stateNode = e, Tl(t));
                     }
                     return kl(t), null;
                 case 5:
@@ -9687,7 +9687,7 @@ Error generating stack: ` + e.message + `
                         }
                         if (e = _e.current, ji(t)) ki(t, e);
                         else {
-                            switch(a = Md(ye.current), e){
+                            switch(a = Nd(ye.current), e){
                                 case 1:
                                     e = a.createElementNS(`http://www.w3.org/2000/svg`, n);
                                     break;
@@ -9731,7 +9731,7 @@ Error generating stack: ` + e.message + `
                                 a.sibling.return = a.return, a = a.sibling;
                             }
                             t.stateNode = e;
-                            a: switch(Od(e, n, r), n){
+                            a: switch(kd(e, n, r), n){
                                 case `button`:
                                 case `input`:
                                 case `select`:
@@ -9758,8 +9758,8 @@ Error generating stack: ` + e.message + `
                                 case 5:
                                     r = a.memoizedProps;
                             }
-                            e[lt] = t, e = !!(e.nodeValue === n || r !== null && !0 === r.suppressHydrationWarning || wd(e.nodeValue, n)), e || Oi(t);
-                        } else e = Md(e).createTextNode(r), e[lt] = t, t.stateNode = e;
+                            e[lt] = t, e = !!(e.nodeValue === n || r !== null && !0 === r.suppressHydrationWarning || Td(e.nodeValue, n)), e || Oi(t);
+                        } else e = Nd(e).createTextNode(r), e[lt] = t, t.stateNode = e;
                     }
                     return kl(t), null;
                 case 13:
@@ -9771,7 +9771,7 @@ Error generating stack: ` + e.message + `
                                 a[lt] = t;
                             } else Mi(), !(t.flags & 128) && (t.memoizedState = null), t.flags |= 4;
                             kl(t), a = !1;
-                        } else Ti !== null && (du(Ti), Ti = null), a = !0;
+                        } else Ti !== null && (fu(Ti), Ti = null), a = !0;
                         if (!a) return t.flags & 256 ? (sa(t), t) : (sa(t), null);
                     }
                     if (sa(t), t.flags & 128) return t.lanes = n, t;
@@ -9782,26 +9782,26 @@ Error generating stack: ` + e.message + `
                     }
                     return n !== e && n && (t.child.flags |= 8192), Dl(t, t.updateQueue), kl(t), null;
                 case 4:
-                    return Se(), e === null && md(t.stateNode.containerInfo), kl(t), null;
+                    return Se(), e === null && hd(t.stateNode.containerInfo), kl(t), null;
                 case 10:
                     return Qs(t.type), kl(t), null;
                 case 19:
                     if (he(ca), a = t.memoizedState, a === null) return kl(t), null;
                     if (r = (t.flags & 128) != 0, o = a.rendering, o === null) if (r) Ol(a, !1);
                     else {
-                        if (Ul !== 0 || e !== null && e.flags & 128) for(e = t.child; e !== null;){
+                        if (Wl !== 0 || e !== null && e.flags & 128) for(e = t.child; e !== null;){
                             if (o = la(e), o !== null) {
                                 for(t.flags |= 128, Ol(a, !1), e = o.updateQueue, t.updateQueue = e, Dl(t, e), t.subtreeFlags = 0, e = n, n = t.child; n !== null;)bl(n, e), n = n.sibling;
                                 return ge(ca, ca.current & 1 | 2), t.child;
                             }
                             e = e.sibling;
                         }
-                        a.tail !== null && Ae() > Ql && (t.flags |= 128, r = !0, Ol(a, !1), t.lanes = 4194304);
+                        a.tail !== null && Ae() > $l && (t.flags |= 128, r = !0, Ol(a, !1), t.lanes = 4194304);
                     }
                     else {
                         if (!r) if (e = la(o), e !== null) {
                             if (t.flags |= 128, r = !0, e = e.updateQueue, t.updateQueue = e, Dl(t, e), Ol(a, !0), a.tail === null && a.tailMode === `hidden` && !o.alternate && !wi) return kl(t), null;
-                        } else 2 * Ae() - a.renderingStartTime > Ql && n !== 536870912 && (t.flags |= 128, r = !0, Ol(a, !1), t.lanes = 4194304);
+                        } else 2 * Ae() - a.renderingStartTime > $l && n !== 536870912 && (t.flags |= 128, r = !0, Ol(a, !1), t.lanes = 4194304);
                         a.isBackwards ? (o.sibling = t.child, t.child = o) : (e = a.last, e === null ? t.child = o : e.sibling = o, a.last = o);
                     }
                     return a.tail === null ? (kl(t), null) : (t = a.tail, a.rendering = t, a.tail = t.sibling, a.renderingStartTime = Ae(), t.sibling = null, e = ca.current, ge(ca, r ? e & 1 | 2 : e & 1), t);
@@ -9883,34 +9883,34 @@ Error generating stack: ` + e.message + `
                 var t = ic(pa), n = t.data.get(e);
                 return n === void 0 && (n = e(), t.data.set(e, n)), n;
             }
-        }, Pl = typeof WeakMap == `function` ? WeakMap : Map, Fl = 0, Il = null, R = null, Ll = 0, Rl = 0, zl = null, Bl = !1, Vl = !1, Hl = !1, z = 0, Ul = 0, Wl = 0, Gl = 0, Kl = 0, ql = 0, Jl = 0, Yl = null, Xl = null, B = !1, Zl = 0, Ql = 1 / 0, $l = null, eu = null, tu = !1, nu = null, V = 0, ru = 0, iu = null, au = 0, ou = null;
-        function su() {
-            if (Fl & 2 && Ll !== 0) return Ll & -Ll;
+        }, Pl = typeof WeakMap == `function` ? WeakMap : Map, Fl = 0, Il = null, Ll = null, Rl = 0, zl = 0, Bl = null, Vl = !1, Hl = !1, Ul = !1, R = 0, Wl = 0, Gl = 0, Kl = 0, ql = 0, Jl = 0, Yl = 0, Xl = null, Zl = null, z = !1, Ql = 0, $l = 1 / 0, eu = null, tu = null, nu = !1, ru = null, B = 0, iu = 0, au = null, ou = 0, su = null;
+        function cu() {
+            if (Fl & 2 && Rl !== 0) return Rl & -Rl;
             if (E.T !== null) {
                 var e = va;
-                return e === 0 ? nd() : e;
+                return e === 0 ? rd() : e;
             }
             return st();
         }
-        function cu() {
-            ql === 0 && (ql = !(Ll & 536870912) || wi ? $e() : 536870912);
+        function lu() {
+            Jl === 0 && (Jl = !(Rl & 536870912) || wi ? $e() : 536870912);
             var e = na.current;
-            return e !== null && (e.flags |= 32), ql;
-        }
-        function lu(e, t, n) {
-            (e === Il && Rl === 2 || e.cancelPendingCommit !== null) && (_u(e, 0), mu(e, Ll, ql, !1)), nt(e, n), (!(Fl & 2) || e !== Il) && (e === Il && (!(Fl & 2) && (Gl |= n), Ul === 4 && mu(e, Ll, ql, !1)), Yu(e));
+            return e !== null && (e.flags |= 32), Jl;
         }
         function uu(e, t, n) {
+            (e === Il && zl === 2 || e.cancelPendingCommit !== null) && (vu(e, 0), hu(e, Rl, Jl, !1)), nt(e, n), (!(Fl & 2) || e !== Il) && (e === Il && (!(Fl & 2) && (Kl |= n), Wl === 4 && hu(e, Rl, Jl, !1)), Xu(e));
+        }
+        function du(e, t, n) {
             if (Fl & 6) throw Error(i(327));
-            var r = !n && (t & 60) == 0 && (t & e.expiredLanes) === 0 || Ze(e, t), a = r ? wu(e, t) : Su(e, t, !0), o = r;
+            var r = !n && (t & 60) == 0 && (t & e.expiredLanes) === 0 || Ze(e, t), a = r ? Tu(e, t) : Cu(e, t, !0), o = r;
             do {
                 if (a === 0) {
-                    Vl && !r && mu(e, t, 0, !1);
+                    Hl && !r && hu(e, t, 0, !1);
                     break;
-                } else if (a === 6) mu(e, t, 0, !Bl);
+                } else if (a === 6) hu(e, t, 0, !Vl);
                 else {
-                    if (n = e.current.alternate, o && !pu(n)) {
-                        a = Su(e, t, !1), o = !1;
+                    if (n = e.current.alternate, o && !mu(n)) {
+                        a = Cu(e, t, !1), o = !1;
                         continue;
                     }
                     if (a === 2) {
@@ -9920,14 +9920,14 @@ Error generating stack: ` + e.message + `
                             t = s;
                             a: {
                                 var c = e;
-                                a = Yl;
+                                a = Xl;
                                 var l = c.current.memoizedState.isDehydrated;
-                                if (l && (_u(c, s).flags |= 256), s = Su(c, s, !1), s !== 2) {
-                                    if (Hl && !l) {
-                                        c.errorRecoveryDisabledLanes |= o, Gl |= o, a = 4;
+                                if (l && (vu(c, s).flags |= 256), s = Cu(c, s, !1), s !== 2) {
+                                    if (Ul && !l) {
+                                        c.errorRecoveryDisabledLanes |= o, Kl |= o, a = 4;
                                         break a;
                                     }
-                                    o = Xl, Xl = a, o !== null && du(o);
+                                    o = Zl, Zl = a, o !== null && fu(o);
                                 }
                                 a = s;
                             }
@@ -9935,7 +9935,7 @@ Error generating stack: ` + e.message + `
                         }
                     }
                     if (a === 1) {
-                        _u(e, 0), mu(e, t, 0, !0);
+                        vu(e, 0), hu(e, t, 0, !0);
                         break;
                     }
                     a: {
@@ -9945,12 +9945,12 @@ Error generating stack: ` + e.message + `
                                 throw Error(i(345));
                             case 4:
                                 if ((t & 4194176) === t) {
-                                    mu(r, t, ql, !Bl);
+                                    hu(r, t, Jl, !Vl);
                                     break a;
                                 }
                                 break;
                             case 2:
-                                Xl = null;
+                                Zl = null;
                                 break;
                             case 3:
                             case 5:
@@ -9958,34 +9958,34 @@ Error generating stack: ` + e.message + `
                             default:
                                 throw Error(i(329));
                         }
-                        if (r.finishedWork = n, r.finishedLanes = t, (t & 62914560) === t && (o = Zl + 300 - Ae(), 10 < o)) {
-                            if (mu(r, t, ql, !Bl), Xe(r, 0) !== 0) break a;
-                            r.timeoutHandle = Rd(fu.bind(null, r, n, Xl, $l, B, t, ql, Gl, Jl, Bl, 2, -0, 0), o);
+                        if (r.finishedWork = n, r.finishedLanes = t, (t & 62914560) === t && (o = Ql + 300 - Ae(), 10 < o)) {
+                            if (hu(r, t, Jl, !Vl), Xe(r, 0) !== 0) break a;
+                            r.timeoutHandle = zd(pu.bind(null, r, n, Zl, eu, z, t, Jl, Kl, Yl, Vl, 2, -0, 0), o);
                             break a;
                         }
-                        fu(r, n, Xl, $l, B, t, ql, Gl, Jl, Bl, 0, -0, 0);
+                        pu(r, n, Zl, eu, z, t, Jl, Kl, Yl, Vl, 0, -0, 0);
                     }
                 }
                 break;
             }while (1);
-            Yu(e);
+            Xu(e);
         }
-        function du(e) {
-            Xl === null ? Xl = e : Xl.push.apply(Xl, e);
+        function fu(e) {
+            Zl === null ? Zl = e : Zl.push.apply(Zl, e);
         }
-        function fu(e, t, n, r, i, a, o, s, c, l, u, d, f) {
+        function pu(e, t, n, r, i, a, o, s, c, l, u, d, f) {
             var p = t.subtreeFlags;
-            if ((p & 8192 || (p & 16785408) == 16785408) && (Of = {
+            if ((p & 8192 || (p & 16785408) == 16785408) && (kf = {
                 stylesheets: null,
                 count: 0,
-                unsuspend: kf
-            }, ul(t), t = jf(), t !== null)) {
-                e.cancelPendingCommit = t(ju.bind(null, e, n, r, i, o, s, c, 1, d, f)), mu(e, a, o, !l);
+                unsuspend: Af
+            }, ul(t), t = Mf(), t !== null)) {
+                e.cancelPendingCommit = t(Mu.bind(null, e, n, r, i, o, s, c, 1, d, f)), hu(e, a, o, !l);
                 return;
             }
-            ju(e, n, r, i, o, s, c, u, d, f);
+            Mu(e, n, r, i, o, s, c, u, d, f);
         }
-        function pu(e) {
+        function mu(e) {
             for(var t = e;;){
                 var n = t.tag;
                 if ((n === 0 || n === 11 || n === 15) && t.flags & 16384 && (n = t.updateQueue, n !== null && (n = n.stores, n !== null))) for(var r = 0; r < n.length; r++){
@@ -10009,324 +10009,324 @@ Error generating stack: ` + e.message + `
             }
             return !0;
         }
-        function mu(e, t, n, r) {
-            t &= ~Kl, t &= ~Gl, e.suspendedLanes |= t, e.pingedLanes &= ~t, r && (e.warmLanes |= t), r = e.expirationTimes;
+        function hu(e, t, n, r) {
+            t &= ~ql, t &= ~Kl, e.suspendedLanes |= t, e.pingedLanes &= ~t, r && (e.warmLanes |= t), r = e.expirationTimes;
             for(var i = t; 0 < i;){
                 var a = 31 - Ue(i), o = 1 << a;
                 r[a] = -1, i &= ~o;
             }
             n !== 0 && it(e, n, t);
         }
-        function hu() {
-            return Fl & 6 ? !0 : (Xu(0, !1), !1);
-        }
         function gu() {
-            if (R !== null) {
-                if (Rl === 0) var e = R.return;
-                else e = R, Xs = Ys = null, qa(e), Hi = null, Ui = 0, e = R;
+            return Fl & 6 ? !0 : (Zu(0, !1), !1);
+        }
+        function _u() {
+            if (Ll !== null) {
+                if (zl === 0) var e = Ll.return;
+                else e = Ll, Xs = Ys = null, qa(e), Hi = null, Ui = 0, e = Ll;
                 for(; e !== null;)Ml(e.alternate, e), e = e.return;
-                R = null;
+                Ll = null;
             }
         }
-        function _u(e, t) {
+        function vu(e, t) {
             e.finishedWork = null, e.finishedLanes = 0;
             var n = e.timeoutHandle;
-            n !== -1 && (e.timeoutHandle = -1, zd(n)), n = e.cancelPendingCommit, n !== null && (e.cancelPendingCommit = null, n()), gu(), Il = e, R = n = yl(e.current, null), Ll = t, Rl = 0, zl = null, Bl = !1, Vl = Ze(e, t), Hl = !1, Jl = ql = Kl = Gl = Wl = Ul = 0, Xl = Yl = null, B = !1, t & 8 && (t |= t & 32);
+            n !== -1 && (e.timeoutHandle = -1, Bd(n)), n = e.cancelPendingCommit, n !== null && (e.cancelPendingCommit = null, n()), _u(), Il = e, Ll = n = yl(e.current, null), Rl = t, zl = 0, Bl = null, Vl = !1, Hl = Ze(e, t), Ul = !1, Yl = Jl = ql = Kl = Gl = Wl = 0, Zl = Xl = null, z = !1, t & 8 && (t |= t & 32);
             var r = e.entangledLanes;
             if (r !== 0) for(e = e.entanglements, r &= t; 0 < r;){
                 var i = 31 - Ue(r), a = 1 << i;
                 t |= e[i], r &= ~a;
             }
-            return z = t, ei(), n;
+            return R = t, ei(), n;
         }
-        function vu(e, t) {
-            ka = null, E.H = ns, t === Pi ? (t = Vi(), Rl = 3) : t === Fi ? (t = Vi(), Rl = 4) : Rl = t === xs ? 8 : typeof t == `object` && t && typeof t.then == `function` ? 6 : 1, zl = t, R === null && (Ul = 1, hs(e, ci(t, e.current)));
+        function yu(e, t) {
+            ka = null, E.H = ns, t === Pi ? (t = Vi(), zl = 3) : t === Fi ? (t = Vi(), zl = 4) : zl = t === xs ? 8 : typeof t == `object` && t && typeof t.then == `function` ? 6 : 1, Bl = t, Ll === null && (Wl = 1, hs(e, ci(t, e.current)));
         }
-        function yu() {
+        function bu() {
             var e = E.H;
             return E.H = ns, e === null ? ns : e;
         }
-        function bu() {
+        function xu() {
             var e = E.A;
             return E.A = Nl, e;
         }
-        function xu() {
-            Ul = 4, Bl || (Ll & 4194176) !== Ll && na.current !== null || (Vl = !0), !(Wl & 134217727) && !(Gl & 134217727) || Il === null || mu(Il, Ll, ql, !1);
+        function Su() {
+            Wl = 4, Vl || (Rl & 4194176) !== Rl && na.current !== null || (Hl = !0), !(Gl & 134217727) && !(Kl & 134217727) || Il === null || hu(Il, Rl, Jl, !1);
         }
-        function Su(e, t, n) {
+        function Cu(e, t, n) {
             var r = Fl;
             Fl |= 2;
-            var i = yu(), a = bu();
-            (Il !== e || Ll !== t) && ($l = null, _u(e, t)), t = !1;
-            var o = Ul;
+            var i = bu(), a = xu();
+            (Il !== e || Rl !== t) && (eu = null, vu(e, t)), t = !1;
+            var o = Wl;
             a: do try {
-                if (Rl !== 0 && R !== null) {
-                    var s = R, c = zl;
-                    switch(Rl){
+                if (zl !== 0 && Ll !== null) {
+                    var s = Ll, c = Bl;
+                    switch(zl){
                         case 8:
-                            gu(), o = 6;
+                            _u(), o = 6;
                             break a;
                         case 3:
                         case 2:
                         case 6:
                             na.current === null && (t = !0);
-                            var l = Rl;
-                            if (Rl = 0, zl = null, Ou(e, s, c, l), n && Vl) {
+                            var l = zl;
+                            if (zl = 0, Bl = null, ku(e, s, c, l), n && Hl) {
                                 o = 0;
                                 break a;
                             }
                             break;
                         default:
-                            l = Rl, Rl = 0, zl = null, Ou(e, s, c, l);
+                            l = zl, zl = 0, Bl = null, ku(e, s, c, l);
                     }
                 }
-                Cu(), o = Ul;
+                wu(), o = Wl;
                 break;
             } catch (t) {
-                vu(e, t);
+                yu(e, t);
             }
             while (1);
-            return t && e.shellSuspendCounter++, Xs = Ys = null, Fl = r, E.H = i, E.A = a, R === null && (Il = null, Ll = 0, ei()), o;
+            return t && e.shellSuspendCounter++, Xs = Ys = null, Fl = r, E.H = i, E.A = a, Ll === null && (Il = null, Rl = 0, ei()), o;
         }
-        function Cu() {
-            for(; R !== null;)Eu(R);
+        function wu() {
+            for(; Ll !== null;)Du(Ll);
         }
-        function wu(e, t) {
+        function Tu(e, t) {
             var n = Fl;
             Fl |= 2;
-            var r = yu(), a = bu();
-            Il !== e || Ll !== t ? ($l = null, Ql = Ae() + 500, _u(e, t)) : Vl = Ze(e, t);
+            var r = bu(), a = xu();
+            Il !== e || Rl !== t ? (eu = null, $l = Ae() + 500, vu(e, t)) : Hl = Ze(e, t);
             a: do try {
-                if (Rl !== 0 && R !== null) {
-                    t = R;
-                    var o = zl;
-                    b: switch(Rl){
+                if (zl !== 0 && Ll !== null) {
+                    t = Ll;
+                    var o = Bl;
+                    b: switch(zl){
                         case 1:
-                            Rl = 0, zl = null, Ou(e, t, o, 1);
+                            zl = 0, Bl = null, ku(e, t, o, 1);
                             break;
                         case 2:
                             if (Li(o)) {
-                                Rl = 0, zl = null, Du(t);
+                                zl = 0, Bl = null, Ou(t);
                                 break;
                             }
                             t = function() {
-                                Rl === 2 && Il === e && (Rl = 7), Yu(e);
+                                zl === 2 && Il === e && (zl = 7), Xu(e);
                             }, o.then(t, t);
                             break a;
                         case 3:
-                            Rl = 7;
+                            zl = 7;
                             break a;
                         case 4:
-                            Rl = 5;
+                            zl = 5;
                             break a;
                         case 7:
-                            Li(o) ? (Rl = 0, zl = null, Du(t)) : (Rl = 0, zl = null, Ou(e, t, o, 7));
+                            Li(o) ? (zl = 0, Bl = null, Ou(t)) : (zl = 0, Bl = null, ku(e, t, o, 7));
                             break;
                         case 5:
                             var s = null;
-                            switch(R.tag){
+                            switch(Ll.tag){
                                 case 26:
-                                    s = R.memoizedState;
+                                    s = Ll.memoizedState;
                                 case 5:
                                 case 27:
-                                    var c = R;
-                                    if (!s || Df(s)) {
-                                        Rl = 0, zl = null;
+                                    var c = Ll;
+                                    if (!s || Of(s)) {
+                                        zl = 0, Bl = null;
                                         var l = c.sibling;
-                                        if (l !== null) R = l;
+                                        if (l !== null) Ll = l;
                                         else {
                                             var u = c.return;
-                                            u === null ? R = null : (R = u, ku(u));
+                                            u === null ? Ll = null : (Ll = u, Au(u));
                                         }
                                         break b;
                                     }
                             }
-                            Rl = 0, zl = null, Ou(e, t, o, 5);
+                            zl = 0, Bl = null, ku(e, t, o, 5);
                             break;
                         case 6:
-                            Rl = 0, zl = null, Ou(e, t, o, 6);
+                            zl = 0, Bl = null, ku(e, t, o, 6);
                             break;
                         case 8:
-                            gu(), Ul = 6;
+                            _u(), Wl = 6;
                             break a;
                         default:
                             throw Error(i(462));
                     }
                 }
-                Tu();
+                Eu();
                 break;
             } catch (t) {
-                vu(e, t);
+                yu(e, t);
             }
             while (1);
-            return Xs = Ys = null, E.H = r, E.A = a, Fl = n, R === null ? (Il = null, Ll = 0, ei(), Ul) : 0;
+            return Xs = Ys = null, E.H = r, E.A = a, Fl = n, Ll === null ? (Il = null, Rl = 0, ei(), Wl) : 0;
         }
-        function Tu() {
-            for(; R !== null && !Oe();)Eu(R);
-        }
-        function Eu(e) {
-            var t = qs(e.alternate, e, z);
-            e.memoizedProps = e.pendingProps, t === null ? ku(e) : R = t;
+        function Eu() {
+            for(; Ll !== null && !Oe();)Du(Ll);
         }
         function Du(e) {
+            var t = qs(e.alternate, e, R);
+            e.memoizedProps = e.pendingProps, t === null ? Au(e) : Ll = t;
+        }
+        function Ou(e) {
             var t = e, n = t.alternate;
             switch(t.tag){
                 case 15:
                 case 0:
-                    t = js(n, t, t.pendingProps, t.type, void 0, Ll);
+                    t = js(n, t, t.pendingProps, t.type, void 0, Rl);
                     break;
                 case 11:
-                    t = js(n, t, t.pendingProps, t.type.render, t.ref, Ll);
+                    t = js(n, t, t.pendingProps, t.type.render, t.ref, Rl);
                     break;
                 case 5:
                     qa(t);
                 default:
-                    Ml(n, t), t = R = bl(t, z), t = qs(n, t, z);
+                    Ml(n, t), t = Ll = bl(t, R), t = qs(n, t, R);
             }
-            e.memoizedProps = e.pendingProps, t === null ? ku(e) : R = t;
+            e.memoizedProps = e.pendingProps, t === null ? Au(e) : Ll = t;
         }
-        function Ou(e, t, n, r) {
+        function ku(e, t, n, r) {
             Xs = Ys = null, qa(t), Hi = null, Ui = 0;
             var i = t.return;
             try {
-                if (bs(e, i, t, n, Ll)) {
-                    Ul = 1, hs(e, ci(n, e.current)), R = null;
+                if (bs(e, i, t, n, Rl)) {
+                    Wl = 1, hs(e, ci(n, e.current)), Ll = null;
                     return;
                 }
             } catch (t) {
-                if (i !== null) throw R = i, t;
-                Ul = 1, hs(e, ci(n, e.current)), R = null;
+                if (i !== null) throw Ll = i, t;
+                Wl = 1, hs(e, ci(n, e.current)), Ll = null;
                 return;
             }
-            t.flags & 32768 ? (wi || r === 1 ? e = !0 : Vl || Ll & 536870912 ? e = !1 : (Bl = e = !0, (r === 2 || r === 3 || r === 6) && (r = na.current, r !== null && r.tag === 13 && (r.flags |= 16384))), Au(t, e)) : ku(t);
+            t.flags & 32768 ? (wi || r === 1 ? e = !0 : Hl || Rl & 536870912 ? e = !1 : (Vl = e = !0, (r === 2 || r === 3 || r === 6) && (r = na.current, r !== null && r.tag === 13 && (r.flags |= 16384))), ju(t, e)) : Au(t);
         }
-        function ku(e) {
+        function Au(e) {
             var t = e;
             do {
                 if (t.flags & 32768) {
-                    Au(t, Bl);
+                    ju(t, Vl);
                     return;
                 }
                 e = t.return;
-                var n = Al(t.alternate, t, z);
+                var n = Al(t.alternate, t, R);
                 if (n !== null) {
-                    R = n;
+                    Ll = n;
                     return;
                 }
                 if (t = t.sibling, t !== null) {
-                    R = t;
+                    Ll = t;
                     return;
                 }
-                R = t = e;
+                Ll = t = e;
             }while (t !== null);
-            Ul === 0 && (Ul = 5);
+            Wl === 0 && (Wl = 5);
         }
-        function Au(e, t) {
+        function ju(e, t) {
             do {
                 var n = jl(e.alternate, e);
                 if (n !== null) {
-                    n.flags &= 32767, R = n;
+                    n.flags &= 32767, Ll = n;
                     return;
                 }
                 if (n = e.return, n !== null && (n.flags |= 32768, n.subtreeFlags = 0, n.deletions = null), !t && (e = e.sibling, e !== null)) {
-                    R = e;
+                    Ll = e;
                     return;
                 }
-                R = e = n;
+                Ll = e = n;
             }while (e !== null);
-            Ul = 6, R = null;
+            Wl = 6, Ll = null;
         }
-        function ju(e, t, n, r, i, a, o, s, c, l) {
+        function Mu(e, t, n, r, i, a, o, s, c, l) {
             var u = E.T, d = ue.p;
             try {
-                ue.p = 2, E.T = null, Mu(e, t, n, r, d, i, a, o, s, c, l);
+                ue.p = 2, E.T = null, Nu(e, t, n, r, d, i, a, o, s, c, l);
             } finally{
                 E.T = u, ue.p = d;
             }
         }
-        function Mu(e, t, n, r, a, o, s, c) {
-            do Pu();
-            while (nu !== null);
+        function Nu(e, t, n, r, a, o, s, c) {
+            do Fu();
+            while (ru !== null);
             if (Fl & 6) throw Error(i(327));
             var l = e.finishedWork;
             if (r = e.finishedLanes, l === null) return null;
             if (e.finishedWork = null, e.finishedLanes = 0, l === e.current) throw Error(i(177));
             e.callbackNode = null, e.callbackPriority = 0, e.cancelPendingCommit = null;
             var u = l.lanes | l.childLanes;
-            if (u |= $r, rt(e, r, u, o, s, c), e === Il && (R = Il = null, Ll = 0), !(l.subtreeFlags & 10256) && !(l.flags & 10256) || tu || (tu = !0, ru = u, iu = n, Hu(Pe, function() {
-                return Pu(!0), null;
-            })), n = (l.flags & 15990) != 0, l.subtreeFlags & 15990 || n ? (n = E.T, E.T = null, o = ue.p, ue.p = 2, s = Fl, Fl |= 4, Ic(e, l), Jc(l, e), kr(jd, e.containerInfo), Wf = !!Ad, jd = Ad = null, e.current = l, Lc(e, l.alternate, l), ke(), Fl = s, ue.p = o, E.T = n) : e.current = l, tu ? (tu = !1, nu = e, V = r) : Nu(e, u), u = e.pendingLanes, u === 0 && (eu = null), Ve(l.stateNode, a), Yu(e), t !== null) for(a = e.onRecoverableError, l = 0; l < t.length; l++)u = t[l], a(u.value, {
+            if (u |= $r, rt(e, r, u, o, s, c), e === Il && (Ll = Il = null, Rl = 0), !(l.subtreeFlags & 10256) && !(l.flags & 10256) || nu || (nu = !0, iu = u, au = n, Uu(Pe, function() {
+                return Fu(!0), null;
+            })), n = (l.flags & 15990) != 0, l.subtreeFlags & 15990 || n ? (n = E.T, E.T = null, o = ue.p, ue.p = 2, s = Fl, Fl |= 4, Ic(e, l), Jc(l, e), kr(Md, e.containerInfo), Gf = !!jd, Md = jd = null, e.current = l, Lc(e, l.alternate, l), ke(), Fl = s, ue.p = o, E.T = n) : e.current = l, nu ? (nu = !1, ru = e, B = r) : Pu(e, u), u = e.pendingLanes, u === 0 && (tu = null), Ve(l.stateNode, a), Xu(e), t !== null) for(a = e.onRecoverableError, l = 0; l < t.length; l++)u = t[l], a(u.value, {
                 componentStack: u.stack
             });
-            return V & 3 && Pu(), u = e.pendingLanes, r & 4194218 && u & 42 ? e === ou ? au++ : (au = 0, ou = e) : au = 0, Xu(0, !1), null;
+            return B & 3 && Fu(), u = e.pendingLanes, r & 4194218 && u & 42 ? e === su ? ou++ : (ou = 0, su = e) : ou = 0, Zu(0, !1), null;
         }
-        function Nu(e, t) {
+        function Pu(e, t) {
             (e.pooledCacheLanes &= t) === 0 && (t = e.pooledCache, t != null && (e.pooledCache = null, ha(t)));
         }
-        function Pu() {
-            if (nu !== null) {
-                var e = nu, t = ru;
-                ru = 0;
-                var n = ot(V), r = E.T, a = ue.p;
+        function Fu() {
+            if (ru !== null) {
+                var e = ru, t = iu;
+                iu = 0;
+                var n = ot(B), r = E.T, a = ue.p;
                 try {
-                    if (ue.p = 32 > n ? 32 : n, E.T = null, nu === null) var o = !1;
+                    if (ue.p = 32 > n ? 32 : n, E.T = null, ru === null) var o = !1;
                     else {
-                        n = iu, iu = null;
-                        var s = nu, c = V;
-                        if (nu = null, V = 0, Fl & 6) throw Error(i(331));
+                        n = au, au = null;
+                        var s = ru, c = B;
+                        if (ru = null, B = 0, Fl & 6) throw Error(i(331));
                         var l = Fl;
-                        if (Fl |= 4, pl(s.current), ol(s, s.current, c, n), Fl = l, Xu(0, !1), Be && typeof Be.onPostCommitFiberRoot == `function`) try {
+                        if (Fl |= 4, pl(s.current), ol(s, s.current, c, n), Fl = l, Zu(0, !1), Be && typeof Be.onPostCommitFiberRoot == `function`) try {
                             Be.onPostCommitFiberRoot(ze, s);
                         } catch  {}
                         o = !0;
                     }
                     return o;
                 } finally{
-                    ue.p = a, E.T = r, Nu(e, t);
+                    ue.p = a, E.T = r, Pu(e, t);
                 }
             }
             return !1;
         }
-        function Fu(e, t, n) {
-            t = ci(n, t), t = _s(e.stateNode, t, 2), e = dc(e, t, 2), e !== null && (nt(e, 2), Yu(e));
-        }
         function Iu(e, t, n) {
-            if (e.tag === 3) Fu(e, e, n);
+            t = ci(n, t), t = _s(e.stateNode, t, 2), e = dc(e, t, 2), e !== null && (nt(e, 2), Xu(e));
+        }
+        function Lu(e, t, n) {
+            if (e.tag === 3) Iu(e, e, n);
             else for(; t !== null;){
                 if (t.tag === 3) {
-                    Fu(t, e, n);
+                    Iu(t, e, n);
                     break;
                 } else if (t.tag === 1) {
                     var r = t.stateNode;
-                    if (typeof t.type.getDerivedStateFromError == `function` || typeof r.componentDidCatch == `function` && (eu === null || !eu.has(r))) {
-                        e = ci(n, e), n = vs(2), r = dc(t, n, 2), r !== null && (ys(n, r, t, e), nt(r, 2), Yu(r));
+                    if (typeof t.type.getDerivedStateFromError == `function` || typeof r.componentDidCatch == `function` && (tu === null || !tu.has(r))) {
+                        e = ci(n, e), n = vs(2), r = dc(t, n, 2), r !== null && (ys(n, r, t, e), nt(r, 2), Xu(r));
                         break;
                     }
                 }
                 t = t.return;
             }
         }
-        function Lu(e, t, n) {
+        function Ru(e, t, n) {
             var r = e.pingCache;
             if (r === null) {
                 r = e.pingCache = new Pl;
                 var i = new Set;
                 r.set(t, i);
             } else i = r.get(t), i === void 0 && (i = new Set, r.set(t, i));
-            i.has(n) || (Hl = !0, i.add(n), e = Ru.bind(null, e, t, n), t.then(e, e));
+            i.has(n) || (Ul = !0, i.add(n), e = zu.bind(null, e, t, n), t.then(e, e));
         }
-        function Ru(e, t, n) {
+        function zu(e, t, n) {
             var r = e.pingCache;
-            r !== null && r.delete(t), e.pingedLanes |= e.suspendedLanes & n, e.warmLanes &= ~n, Il === e && (Ll & n) === n && (Ul === 4 || Ul === 3 && (Ll & 62914560) === Ll && 300 > Ae() - Zl ? !(Fl & 2) && _u(e, 0) : Kl |= n, Jl === Ll && (Jl = 0)), Yu(e);
+            r !== null && r.delete(t), e.pingedLanes |= e.suspendedLanes & n, e.warmLanes &= ~n, Il === e && (Rl & n) === n && (Wl === 4 || Wl === 3 && (Rl & 62914560) === Rl && 300 > Ae() - Ql ? !(Fl & 2) && vu(e, 0) : ql |= n, Yl === Rl && (Yl = 0)), Xu(e);
         }
-        function zu(e, t) {
-            t === 0 && (t = et()), e = ri(e, t), e !== null && (nt(e, t), Yu(e));
+        function Bu(e, t) {
+            t === 0 && (t = et()), e = ri(e, t), e !== null && (nt(e, t), Xu(e));
         }
-        function Bu(e) {
+        function Vu(e) {
             var t = e.memoizedState, n = 0;
-            t !== null && (n = t.retryLane), zu(e, n);
+            t !== null && (n = t.retryLane), Bu(e, n);
         }
-        function Vu(e, t) {
+        function Hu(e, t) {
             var n = 0;
             switch(e.tag){
                 case 13:
@@ -10342,19 +10342,19 @@ Error generating stack: ` + e.message + `
                 default:
                     throw Error(i(314));
             }
-            r !== null && r.delete(t), zu(e, n);
+            r !== null && r.delete(t), Bu(e, n);
         }
-        function Hu(e, t) {
+        function Uu(e, t) {
             return Ee(e, t);
         }
-        var Uu = null, Wu = null, Gu = !1, Ku = !1, qu = !1, Ju = 0;
-        function Yu(e) {
-            e !== Wu && e.next === null && (Wu === null ? Uu = Wu = e : Wu = Wu.next = e), Ku = !0, Gu || (Gu = !0, td(Zu));
+        var Wu = null, Gu = null, Ku = !1, qu = !1, Ju = !1, Yu = 0;
+        function Xu(e) {
+            e !== Gu && e.next === null && (Gu === null ? Wu = Gu = e : Gu = Gu.next = e), qu = !0, Ku || (Ku = !0, nd(Qu));
         }
-        function Xu(e, t) {
-            if (!qu && Ku) {
-                qu = !0;
-                do for(var n = !1, r = Uu; r !== null;){
+        function Zu(e, t) {
+            if (!Ju && qu) {
+                Ju = !0;
+                do for(var n = !1, r = Wu; r !== null;){
                     if (!t) if (e !== 0) {
                         var i = r.pendingLanes;
                         if (i === 0) var a = 0;
@@ -10362,30 +10362,30 @@ Error generating stack: ` + e.message + `
                             var o = r.suspendedLanes, s = r.pingedLanes;
                             a = (1 << 31 - Ue(42 | e) + 1) - 1, a &= i & ~(o & ~s), a = a & 201326677 ? a & 201326677 | 1 : a ? a | 2 : 0;
                         }
-                        a !== 0 && (n = !0, ed(r, a));
-                    } else a = Ll, a = Xe(r, r === Il ? a : 0), !(a & 3) || Ze(r, a) || (n = !0, ed(r, a));
+                        a !== 0 && (n = !0, td(r, a));
+                    } else a = Rl, a = Xe(r, r === Il ? a : 0), !(a & 3) || Ze(r, a) || (n = !0, td(r, a));
                     r = r.next;
                 }
                 while (n);
-                qu = !1;
+                Ju = !1;
             }
         }
-        function Zu() {
-            Ku = Gu = !1;
+        function Qu() {
+            qu = Ku = !1;
             var e = 0;
-            Ju !== 0 && (Ld() && (e = Ju), Ju = 0);
-            for(var t = Ae(), n = null, r = Uu; r !== null;){
-                var i = r.next, a = Qu(r, t);
-                a === 0 ? (r.next = null, n === null ? Uu = i : n.next = i, i === null && (Wu = n)) : (n = r, (e !== 0 || a & 3) && (Ku = !0)), r = i;
+            Yu !== 0 && (Rd() && (e = Yu), Yu = 0);
+            for(var t = Ae(), n = null, r = Wu; r !== null;){
+                var i = r.next, a = $u(r, t);
+                a === 0 ? (r.next = null, n === null ? Wu = i : n.next = i, i === null && (Gu = n)) : (n = r, (e !== 0 || a & 3) && (qu = !0)), r = i;
             }
-            Xu(e, !1);
+            Zu(e, !1);
         }
-        function Qu(e, t) {
+        function $u(e, t) {
             for(var n = e.suspendedLanes, r = e.pingedLanes, i = e.expirationTimes, a = e.pendingLanes & -62914561; 0 < a;){
                 var o = 31 - Ue(a), s = 1 << o, c = i[o];
                 c === -1 ? ((s & n) === 0 || (s & r) !== 0) && (i[o] = Qe(s, t)) : c <= t && (e.expiredLanes |= s), a &= ~s;
             }
-            if (t = Il, n = Ll, n = Xe(e, e === t ? n : 0), r = e.callbackNode, n === 0 || e === t && Rl === 2 || e.cancelPendingCommit !== null) return r !== null && r !== null && De(r), e.callbackNode = null, e.callbackPriority = 0;
+            if (t = Il, n = Rl, n = Xe(e, e === t ? n : 0), r = e.callbackNode, n === 0 || e === t && zl === 2 || e.cancelPendingCommit !== null) return r !== null && r !== null && De(r), e.callbackNode = null, e.callbackPriority = 0;
             if (!(n & 3) || Ze(e, n)) {
                 if (t = n & -n, t === e.callbackPriority) return t;
                 switch(r !== null && De(r), ot(n)){
@@ -10402,39 +10402,39 @@ Error generating stack: ` + e.message + `
                     default:
                         n = Pe;
                 }
-                return r = $u.bind(null, e), n = Ee(n, r), e.callbackPriority = t, e.callbackNode = n, t;
+                return r = ed.bind(null, e), n = Ee(n, r), e.callbackPriority = t, e.callbackNode = n, t;
             }
             return r !== null && r !== null && De(r), e.callbackPriority = 2, e.callbackNode = null, 2;
         }
-        function $u(e, t) {
-            var n = e.callbackNode;
-            if (Pu() && e.callbackNode !== n) return null;
-            var r = Ll;
-            return r = Xe(e, e === Il ? r : 0), r === 0 ? null : (uu(e, r, t), Qu(e, Ae()), e.callbackNode != null && e.callbackNode === n ? $u.bind(null, e) : null);
-        }
         function ed(e, t) {
-            if (Pu()) return null;
-            uu(e, t, !0);
+            var n = e.callbackNode;
+            if (Fu() && e.callbackNode !== n) return null;
+            var r = Rl;
+            return r = Xe(e, e === Il ? r : 0), r === 0 ? null : (du(e, r, t), $u(e, Ae()), e.callbackNode != null && e.callbackNode === n ? ed.bind(null, e) : null);
         }
-        function td(e) {
-            Vd(function() {
+        function td(e, t) {
+            if (Fu()) return null;
+            du(e, t, !0);
+        }
+        function nd(e) {
+            Hd(function() {
                 Fl & 6 ? Ee(Me, e) : e();
             });
         }
-        function nd() {
-            return Ju === 0 && (Ju = $e()), Ju;
+        function rd() {
+            return Yu === 0 && (Yu = $e()), Yu;
         }
-        function rd(e) {
+        function id(e) {
             return e == null || typeof e == `symbol` || typeof e == `boolean` ? null : typeof e == `function` ? e : tn(`` + e);
         }
-        function id(e, t) {
+        function ad(e, t) {
             var n = t.ownerDocument.createElement(`input`);
             return n.name = t.name, n.value = t.value, e.id && n.setAttribute(`form`, e.id), t.parentNode.insertBefore(n, t), e = new FormData(e), n.parentNode.removeChild(n), e;
         }
-        function ad(e, t, n, r, i) {
+        function od(e, t, n, r, i) {
             if (t === `submit` && n && n.stateNode === i) {
-                var a = rd((i[ut] || null).action), o = r.submitter;
-                o && (t = (t = o[ut] || null) ? rd(t.formAction) : o.getAttribute(`formAction`), t !== null && (a = t, o = null));
+                var a = id((i[ut] || null).action), o = r.submitter;
+                o && (t = (t = o[ut] || null) ? id(t.formAction) : o.getAttribute(`formAction`), t !== null && (a = t, o = null));
                 var s = new Sn(`action`, `action`, null, r, i);
                 e.push({
                     event: s,
@@ -10443,8 +10443,8 @@ Error generating stack: ` + e.message + `
                             instance: null,
                             listener: function() {
                                 if (r.defaultPrevented) {
-                                    if (Ju !== 0) {
-                                        var e = o ? id(i, o) : new FormData(i);
+                                    if (Yu !== 0) {
+                                        var e = o ? ad(i, o) : new FormData(i);
                                         Ho(n, {
                                             pending: !0,
                                             data: e,
@@ -10452,7 +10452,7 @@ Error generating stack: ` + e.message + `
                                             action: a
                                         }, null, e);
                                     }
-                                } else typeof a == `function` && (s.preventDefault(), e = o ? id(i, o) : new FormData(i), Ho(n, {
+                                } else typeof a == `function` && (s.preventDefault(), e = o ? ad(i, o) : new FormData(i), Ho(n, {
                                     pending: !0,
                                     data: e,
                                     method: i.method,
@@ -10465,9 +10465,9 @@ Error generating stack: ` + e.message + `
                 });
             }
         }
-        for(var od = 0; od < Yr.length; od++){
-            var sd = Yr[od];
-            Xr(sd.toLowerCase(), `on` + (sd[0].toUpperCase() + sd.slice(1)));
+        for(var sd = 0; sd < Yr.length; sd++){
+            var cd = Yr[sd];
+            Xr(cd.toLowerCase(), `on` + (cd[0].toUpperCase() + cd.slice(1)));
         }
         Xr(Vr, `onAnimationEnd`), Xr(Hr, `onAnimationIteration`), Xr(Ur, `onAnimationStart`), Xr(`dblclick`, `onDoubleClick`), Xr(`focusin`, `onFocus`), Xr(`focusout`, `onBlur`), Xr(Wr, `onTransitionRun`), Xr(Gr, `onTransitionStart`), Xr(Kr, `onTransitionCancel`), Xr(qr, `onTransitionEnd`), Et(`onMouseEnter`, [
             `mouseout`,
@@ -10487,8 +10487,8 @@ Error generating stack: ` + e.message + `
             `textInput`,
             `paste`
         ]), Tt(`onCompositionEnd`, `compositionend focusout keydown keypress keyup mousedown`.split(` `)), Tt(`onCompositionStart`, `compositionstart focusout keydown keypress keyup mousedown`.split(` `)), Tt(`onCompositionUpdate`, `compositionupdate focusout keydown keypress keyup mousedown`.split(` `));
-        var cd = `abort canplay canplaythrough durationchange emptied encrypted ended error loadeddata loadedmetadata loadstart pause play playing progress ratechange resize seeked seeking stalled suspend timeupdate volumechange waiting`.split(` `), ld = new Set(`beforetoggle cancel close invalid load scroll scrollend toggle`.split(` `).concat(cd));
-        function ud(e, t) {
+        var ld = `abort canplay canplaythrough durationchange emptied encrypted ended error loadeddata loadedmetadata loadstart pause play playing progress ratechange resize seeked seeking stalled suspend timeupdate volumechange waiting`.split(` `), ud = new Set(`beforetoggle cancel close invalid load scroll scrollend toggle`.split(` `).concat(ld));
+        function dd(e, t) {
             t = (t & 4) != 0;
             for(var n = 0; n < e.length; n++){
                 var r = e[n], i = r.event;
@@ -10519,36 +10519,36 @@ Error generating stack: ` + e.message + `
                 }
             }
         }
-        function dd(e, t) {
+        function fd(e, t) {
             var n = t[ft];
             n === void 0 && (n = t[ft] = new Set);
             var r = e + `__bubble`;
-            n.has(r) || (hd(t, e, 2, !1), n.add(r));
+            n.has(r) || (gd(t, e, 2, !1), n.add(r));
         }
-        function fd(e, t, n) {
+        function pd(e, t, n) {
             var r = 0;
-            t && (r |= 4), hd(n, e, r, t);
+            t && (r |= 4), gd(n, e, r, t);
         }
-        var pd = `_reactListening` + Math.random().toString(36).slice(2);
-        function md(e) {
-            if (!e[pd]) {
-                e[pd] = !0, Ct.forEach(function(t) {
-                    t !== `selectionchange` && (ld.has(t) || fd(t, !1, e), fd(t, !0, e));
+        var md = `_reactListening` + Math.random().toString(36).slice(2);
+        function hd(e) {
+            if (!e[md]) {
+                e[md] = !0, Ct.forEach(function(t) {
+                    t !== `selectionchange` && (ud.has(t) || pd(t, !1, e), pd(t, !0, e));
                 });
                 var t = e.nodeType === 9 ? e : e.ownerDocument;
-                t === null || t[pd] || (t[pd] = !0, fd(`selectionchange`, !1, t));
+                t === null || t[md] || (t[md] = !0, pd(`selectionchange`, !1, t));
             }
         }
-        function hd(e, t, n, r) {
+        function gd(e, t, n, r) {
             switch(Xf(t)){
                 case 2:
-                    var i = Gf;
+                    var i = Kf;
                     break;
                 case 8:
-                    i = Kf;
+                    i = qf;
                     break;
                 default:
-                    i = H;
+                    i = V;
             }
             n = i.bind(null, t, n, e), i = void 0, !dn || t !== `touchstart` && t !== `touchmove` && t !== `wheel` || (i = !0), r ? i === void 0 ? e.addEventListener(t, n, !0) : e.addEventListener(t, n, {
                 capture: !0,
@@ -10557,7 +10557,7 @@ Error generating stack: ` + e.message + `
                 passive: i
             });
         }
-        function gd(e, t, n, r, i) {
+        function _d(e, t, n, r, i) {
             var a = r;
             if (!(t & 1) && !(t & 2) && r !== null) a: for(;;){
                 if (r === null) return;
@@ -10670,7 +10670,7 @@ Error generating stack: ` + e.message + `
                         u = [];
                         for(var p = r, m; p !== null;){
                             var h = p;
-                            if (m = h.stateNode, h = h.tag, h !== 5 && h !== 26 && h !== 27 || m === null || f === null || (h = un(p, f), h != null && u.push(_d(p, h, m))), d) break;
+                            if (m = h.stateNode, h = h.tag, h !== 5 && h !== 26 && h !== 27 || m === null || f === null || (h = un(p, f), h != null && u.push(vd(p, h, m))), d) break;
                             p = p.return;
                         }
                         0 < u.length && (s = new c(s, l, null, n, i), o.push({
@@ -10684,18 +10684,18 @@ Error generating stack: ` + e.message + `
                         if (s = e === `mouseover` || e === `pointerover`, c = e === `mouseout` || e === `pointerout`, s && n !== nn && (l = n.relatedTarget || n.fromElement) && (vt(l) || l[dt])) break a;
                         if ((c || s) && (s = i.window === i ? i : (s = i.ownerDocument) ? s.defaultView || s.parentWindow : window, c ? (l = n.relatedTarget || n.toElement, c = r, l = l ? vt(l) : null, l !== null && (d = A(l), u = l.tag, l !== d || u !== 5 && u !== 27 && u !== 6) && (l = null)) : (c = null, l = r), c !== l)) {
                             if (u = On, h = `onMouseLeave`, f = `onMouseEnter`, p = `mouse`, (e === `pointerout` || e === `pointerover`) && (u = Bn, h = `onPointerLeave`, f = `onPointerEnter`, p = `pointer`), d = c == null ? s : bt(c), m = l == null ? s : bt(l), s = new u(h, p + `leave`, c, n, i), s.target = d, s.relatedTarget = m, h = null, vt(i) === r && (u = new u(f, p + `enter`, l, n, i), u.target = m, u.relatedTarget = d, h = u), d = h, c && l) b: {
-                                for(u = c, f = l, p = 0, m = u; m; m = yd(m))p++;
-                                for(m = 0, h = f; h; h = yd(h))m++;
-                                for(; 0 < p - m;)u = yd(u), p--;
-                                for(; 0 < m - p;)f = yd(f), m--;
+                                for(u = c, f = l, p = 0, m = u; m; m = bd(m))p++;
+                                for(m = 0, h = f; h; h = bd(h))m++;
+                                for(; 0 < p - m;)u = bd(u), p--;
+                                for(; 0 < m - p;)f = bd(f), m--;
                                 for(; p--;){
                                     if (u === f || f !== null && u === f.alternate) break b;
-                                    u = yd(u), f = yd(f);
+                                    u = bd(u), f = bd(f);
                                 }
                                 u = null;
                             }
                             else u = null;
-                            c !== null && bd(o, s, c, u, !1), l !== null && d !== null && bd(o, d, l, u, !0);
+                            c !== null && xd(o, s, c, u, !1), l !== null && d !== null && xd(o, d, l, u, !0);
                         }
                     }
                     a: {
@@ -10749,58 +10749,58 @@ Error generating stack: ` + e.message + `
                         y = void 0;
                     }
                     else er ? Qn(e, n) && (y = `onCompositionEnd`) : e === `keydown` && n.keyCode === 229 && (y = `onCompositionStart`);
-                    y && (Yn && n.locale !== `ko` && (er || y !== `onCompositionStart` ? y === `onCompositionEnd` && er && (v = gn()) : (pn = i, mn = `value` in pn ? pn.value : pn.textContent, er = !0)), _ = vd(r, y), 0 < _.length && (y = new Nn(y, e, null, n, i), o.push({
+                    y && (Yn && n.locale !== `ko` && (er || y !== `onCompositionStart` ? y === `onCompositionEnd` && er && (v = gn()) : (pn = i, mn = `value` in pn ? pn.value : pn.textContent, er = !0)), _ = yd(r, y), 0 < _.length && (y = new Nn(y, e, null, n, i), o.push({
                         event: y,
                         listeners: _
-                    }), v ? y.data = v : (v = $n(n), v !== null && (y.data = v)))), (v = Jn ? tr(e, n) : nr(e, n)) && (y = vd(r, `onBeforeInput`), 0 < y.length && (_ = new Nn(`onBeforeInput`, `beforeinput`, null, n, i), o.push({
+                    }), v ? y.data = v : (v = $n(n), v !== null && (y.data = v)))), (v = Jn ? tr(e, n) : nr(e, n)) && (y = yd(r, `onBeforeInput`), 0 < y.length && (_ = new Nn(`onBeforeInput`, `beforeinput`, null, n, i), o.push({
                         event: _,
                         listeners: y
-                    }), _.data = v)), ad(o, e, r, n, i);
+                    }), _.data = v)), od(o, e, r, n, i);
                 }
-                ud(o, t);
+                dd(o, t);
             });
         }
-        function _d(e, t, n) {
+        function vd(e, t, n) {
             return {
                 instance: e,
                 listener: t,
                 currentTarget: n
             };
         }
-        function vd(e, t) {
+        function yd(e, t) {
             for(var n = t + `Capture`, r = []; e !== null;){
                 var i = e, a = i.stateNode;
-                i = i.tag, i !== 5 && i !== 26 && i !== 27 || a === null || (i = un(e, n), i != null && r.unshift(_d(e, i, a)), i = un(e, t), i != null && r.push(_d(e, i, a))), e = e.return;
+                i = i.tag, i !== 5 && i !== 26 && i !== 27 || a === null || (i = un(e, n), i != null && r.unshift(vd(e, i, a)), i = un(e, t), i != null && r.push(vd(e, i, a))), e = e.return;
             }
             return r;
         }
-        function yd(e) {
+        function bd(e) {
             if (e === null) return null;
             do e = e.return;
             while (e && e.tag !== 5 && e.tag !== 27);
             return e || null;
         }
-        function bd(e, t, n, r, i) {
+        function xd(e, t, n, r, i) {
             for(var a = t._reactName, o = []; n !== null && n !== r;){
                 var s = n, c = s.alternate, l = s.stateNode;
                 if (s = s.tag, c !== null && c === r) break;
-                s !== 5 && s !== 26 && s !== 27 || l === null || (c = l, i ? (l = un(n, a), l != null && o.unshift(_d(n, l, c))) : i || (l = un(n, a), l != null && o.push(_d(n, l, c)))), n = n.return;
+                s !== 5 && s !== 26 && s !== 27 || l === null || (c = l, i ? (l = un(n, a), l != null && o.unshift(vd(n, l, c))) : i || (l = un(n, a), l != null && o.push(vd(n, l, c)))), n = n.return;
             }
             o.length !== 0 && e.push({
                 event: t,
                 listeners: o
             });
         }
-        var xd = /\r\n?/g, Sd = /\u0000|\uFFFD/g;
-        function Cd(e) {
-            return (typeof e == `string` ? e : `` + e).replace(xd, `
-`).replace(Sd, ``);
+        var Sd = /\r\n?/g, Cd = /\u0000|\uFFFD/g;
+        function wd(e) {
+            return (typeof e == `string` ? e : `` + e).replace(Sd, `
+`).replace(Cd, ``);
         }
-        function wd(e, t) {
-            return t = Cd(t), Cd(e) === t;
+        function Td(e, t) {
+            return t = wd(t), wd(e) === t;
         }
-        function Td() {}
-        function Ed(e, t, n, r, a, o) {
+        function Ed() {}
+        function Dd(e, t, n, r, a, o) {
             switch(n){
                 case `children`:
                     typeof r == `string` ? t === `body` || t === `textarea` && r === `` || Jt(e, r) : (typeof r == `number` || typeof r == `bigint`) && t !== `body` && Jt(e, `` + r);
@@ -10843,7 +10843,7 @@ Error generating stack: ` + e.message + `
                     if (typeof r == `function`) {
                         e.setAttribute(n, `javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')`);
                         break;
-                    } else typeof o == `function` && (n === `formAction` ? (t !== `input` && Ed(e, t, `name`, a.name, a, null), Ed(e, t, `formEncType`, a.formEncType, a, null), Ed(e, t, `formMethod`, a.formMethod, a, null), Ed(e, t, `formTarget`, a.formTarget, a, null)) : (Ed(e, t, `encType`, a.encType, a, null), Ed(e, t, `method`, a.method, a, null), Ed(e, t, `target`, a.target, a, null)));
+                    } else typeof o == `function` && (n === `formAction` ? (t !== `input` && Dd(e, t, `name`, a.name, a, null), Dd(e, t, `formEncType`, a.formEncType, a, null), Dd(e, t, `formMethod`, a.formMethod, a, null), Dd(e, t, `formTarget`, a.formTarget, a, null)) : (Dd(e, t, `encType`, a.encType, a, null), Dd(e, t, `method`, a.method, a, null), Dd(e, t, `target`, a.target, a, null)));
                     if (r == null || typeof r == `symbol` || typeof r == `boolean`) {
                         e.removeAttribute(n);
                         break;
@@ -10851,13 +10851,13 @@ Error generating stack: ` + e.message + `
                     r = tn(`` + r), e.setAttribute(n, r);
                     break;
                 case `onClick`:
-                    r != null && (e.onclick = Td);
+                    r != null && (e.onclick = Ed);
                     break;
                 case `onScroll`:
-                    r != null && dd(`scroll`, e);
+                    r != null && fd(`scroll`, e);
                     break;
                 case `onScrollEnd`:
-                    r != null && dd(`scrollend`, e);
+                    r != null && fd(`scrollend`, e);
                     break;
                 case `dangerouslySetInnerHTML`:
                     if (r != null) {
@@ -10940,7 +10940,7 @@ Error generating stack: ` + e.message + `
                     r == null || typeof r == `function` || typeof r == `symbol` || isNaN(r) ? e.removeAttribute(n) : e.setAttribute(n, r);
                     break;
                 case `popover`:
-                    dd(`beforetoggle`, e), dd(`toggle`, e), jt(e, `popover`, r);
+                    fd(`beforetoggle`, e), fd(`toggle`, e), jt(e, `popover`, r);
                     break;
                 case `xlinkActuate`:
                     Nt(e, `http://www.w3.org/1999/xlink`, `xlink:actuate`, r);
@@ -10979,7 +10979,7 @@ Error generating stack: ` + e.message + `
                     (!(2 < n.length) || n[0] !== `o` && n[0] !== `O` || n[1] !== `n` && n[1] !== `N`) && (n = $t.get(n) || n, jt(e, n, r));
             }
         }
-        function Dd(e, t, n, r, a, o) {
+        function Od(e, t, n, r, a, o) {
             switch(n){
                 case `style`:
                     Zt(e, r, o);
@@ -10997,13 +10997,13 @@ Error generating stack: ` + e.message + `
                     typeof r == `string` ? Jt(e, r) : (typeof r == `number` || typeof r == `bigint`) && Jt(e, `` + r);
                     break;
                 case `onScroll`:
-                    r != null && dd(`scroll`, e);
+                    r != null && fd(`scroll`, e);
                     break;
                 case `onScrollEnd`:
-                    r != null && dd(`scrollend`, e);
+                    r != null && fd(`scrollend`, e);
                     break;
                 case `onClick`:
-                    r != null && (e.onclick = Td);
+                    r != null && (e.onclick = Ed);
                     break;
                 case `suppressContentEditableWarning`:
                 case `suppressHydrationWarning`:
@@ -11023,7 +11023,7 @@ Error generating stack: ` + e.message + `
                     }
             }
         }
-        function Od(e, t, n) {
+        function kd(e, t, n) {
             switch(t){
                 case `div`:
                 case `span`:
@@ -11035,7 +11035,7 @@ Error generating stack: ` + e.message + `
                 case `li`:
                     break;
                 case `img`:
-                    dd(`error`, e), dd(`load`, e);
+                    fd(`error`, e), fd(`load`, e);
                     var r = !1, a = !1, o;
                     for(o in n)if (n.hasOwnProperty(o)) {
                         var s = n[o];
@@ -11050,13 +11050,13 @@ Error generating stack: ` + e.message + `
                             case `dangerouslySetInnerHTML`:
                                 throw Error(i(137, t));
                             default:
-                                Ed(e, t, o, s, n, null);
+                                Dd(e, t, o, s, n, null);
                         }
                     }
-                    a && Ed(e, t, `srcSet`, n.srcSet, n, null), r && Ed(e, t, `src`, n.src, n, null);
+                    a && Dd(e, t, `srcSet`, n.srcSet, n, null), r && Dd(e, t, `src`, n.src, n, null);
                     return;
                 case `input`:
-                    dd(`invalid`, e);
+                    fd(`invalid`, e);
                     var c = o = s = a = null, l = null, u = null;
                     for(r in n)if (n.hasOwnProperty(r)) {
                         var d = n[r];
@@ -11084,13 +11084,13 @@ Error generating stack: ` + e.message + `
                                 if (d != null) throw Error(i(137, t));
                                 break;
                             default:
-                                Ed(e, t, r, d, n, null);
+                                Dd(e, t, r, d, n, null);
                         }
                     }
                     Ut(e, o, c, l, u, s, a, !1), Lt(e);
                     return;
                 case `select`:
-                    for(a in dd(`invalid`, e), r = s = o = null, n)if (n.hasOwnProperty(a) && (c = n[a], c != null)) switch(a){
+                    for(a in fd(`invalid`, e), r = s = o = null, n)if (n.hasOwnProperty(a) && (c = n[a], c != null)) switch(a){
                         case `value`:
                             o = c;
                             break;
@@ -11100,12 +11100,12 @@ Error generating stack: ` + e.message + `
                         case `multiple`:
                             r = c;
                         default:
-                            Ed(e, t, a, c, n, null);
+                            Dd(e, t, a, c, n, null);
                     }
                     t = o, n = s, e.multiple = !!r, t == null ? n != null && Gt(e, !!r, n, !0) : Gt(e, !!r, t, !1);
                     return;
                 case `textarea`:
-                    for(s in dd(`invalid`, e), o = a = r = null, n)if (n.hasOwnProperty(s) && (c = n[s], c != null)) switch(s){
+                    for(s in fd(`invalid`, e), o = a = r = null, n)if (n.hasOwnProperty(s) && (c = n[s], c != null)) switch(s){
                         case `value`:
                             r = c;
                             break;
@@ -11119,7 +11119,7 @@ Error generating stack: ` + e.message + `
                             if (c != null) throw Error(i(91));
                             break;
                         default:
-                            Ed(e, t, s, c, n, null);
+                            Dd(e, t, s, c, n, null);
                     }
                     qt(e, r, a, o), Lt(e);
                     return;
@@ -11129,30 +11129,30 @@ Error generating stack: ` + e.message + `
                             e.selected = r && typeof r != `function` && typeof r != `symbol`;
                             break;
                         default:
-                            Ed(e, t, l, r, n, null);
+                            Dd(e, t, l, r, n, null);
                     }
                     return;
                 case `dialog`:
-                    dd(`cancel`, e), dd(`close`, e);
+                    fd(`cancel`, e), fd(`close`, e);
                     break;
                 case `iframe`:
                 case `object`:
-                    dd(`load`, e);
+                    fd(`load`, e);
                     break;
                 case `video`:
                 case `audio`:
-                    for(r = 0; r < cd.length; r++)dd(cd[r], e);
+                    for(r = 0; r < ld.length; r++)fd(ld[r], e);
                     break;
                 case `image`:
-                    dd(`error`, e), dd(`load`, e);
+                    fd(`error`, e), fd(`load`, e);
                     break;
                 case `details`:
-                    dd(`toggle`, e);
+                    fd(`toggle`, e);
                     break;
                 case `embed`:
                 case `source`:
                 case `link`:
-                    dd(`error`, e), dd(`load`, e);
+                    fd(`error`, e), fd(`load`, e);
                 case `area`:
                 case `base`:
                 case `br`:
@@ -11169,18 +11169,18 @@ Error generating stack: ` + e.message + `
                         case `dangerouslySetInnerHTML`:
                             throw Error(i(137, t));
                         default:
-                            Ed(e, t, u, r, n, null);
+                            Dd(e, t, u, r, n, null);
                     }
                     return;
                 default:
                     if (Qt(t)) {
-                        for(d in n)n.hasOwnProperty(d) && (r = n[d], r !== void 0 && Dd(e, t, d, r, n, void 0));
+                        for(d in n)n.hasOwnProperty(d) && (r = n[d], r !== void 0 && Od(e, t, d, r, n, void 0));
                         return;
                     }
             }
-            for(c in n)n.hasOwnProperty(c) && (r = n[c], r != null && Ed(e, t, c, r, n, null));
+            for(c in n)n.hasOwnProperty(c) && (r = n[c], r != null && Dd(e, t, c, r, n, null));
         }
-        function kd(e, t, n, r) {
+        function Ad(e, t, n, r) {
             switch(t){
                 case `div`:
                 case `span`:
@@ -11203,7 +11203,7 @@ Error generating stack: ` + e.message + `
                             case `defaultValue`:
                                 l = f;
                             default:
-                                r.hasOwnProperty(m) || Ed(e, t, m, null, r, f);
+                                r.hasOwnProperty(m) || Dd(e, t, m, null, r, f);
                         }
                     }
                     for(var p in r){
@@ -11232,7 +11232,7 @@ Error generating stack: ` + e.message + `
                                 if (m != null) throw Error(i(137, t));
                                 break;
                             default:
-                                m !== f && Ed(e, t, p, m, r, f);
+                                m !== f && Dd(e, t, p, m, r, f);
                         }
                     }
                     Ht(e, s, c, l, u, d, o, a);
@@ -11244,7 +11244,7 @@ Error generating stack: ` + e.message + `
                         case `multiple`:
                             m = l;
                         default:
-                            r.hasOwnProperty(o) || Ed(e, t, o, null, r, l);
+                            r.hasOwnProperty(o) || Dd(e, t, o, null, r, l);
                     }
                     for(a in r)if (o = r[a], l = n[a], r.hasOwnProperty(a) && (o != null || l != null)) switch(a){
                         case `value`:
@@ -11256,7 +11256,7 @@ Error generating stack: ` + e.message + `
                         case `multiple`:
                             s = o;
                         default:
-                            o !== l && Ed(e, t, a, o, r, l);
+                            o !== l && Dd(e, t, a, o, r, l);
                     }
                     t = c, n = s, r = m, p == null ? !!r != !!n && (t == null ? Gt(e, !!n, n ? [] : ``, !1) : Gt(e, !!n, t, !0)) : Gt(e, !!n, p, !1);
                     return;
@@ -11267,7 +11267,7 @@ Error generating stack: ` + e.message + `
                         case `children`:
                             break;
                         default:
-                            Ed(e, t, c, null, r, a);
+                            Dd(e, t, c, null, r, a);
                     }
                     for(s in r)if (a = r[s], o = n[s], r.hasOwnProperty(s) && (a != null || o != null)) switch(s){
                         case `value`:
@@ -11282,7 +11282,7 @@ Error generating stack: ` + e.message + `
                             if (a != null) throw Error(i(91));
                             break;
                         default:
-                            a !== o && Ed(e, t, s, a, r, o);
+                            a !== o && Dd(e, t, s, a, r, o);
                     }
                     Kt(e, p, m);
                     return;
@@ -11292,14 +11292,14 @@ Error generating stack: ` + e.message + `
                             e.selected = !1;
                             break;
                         default:
-                            Ed(e, t, h, null, r, p);
+                            Dd(e, t, h, null, r, p);
                     }
                     for(l in r)if (p = r[l], m = n[l], r.hasOwnProperty(l) && p !== m && (p != null || m != null)) switch(l){
                         case `selected`:
                             e.selected = p && typeof p != `function` && typeof p != `symbol`;
                             break;
                         default:
-                            Ed(e, t, l, p, r, m);
+                            Dd(e, t, l, p, r, m);
                     }
                     return;
                 case `img`:
@@ -11317,31 +11317,31 @@ Error generating stack: ` + e.message + `
                 case `track`:
                 case `wbr`:
                 case `menuitem`:
-                    for(var g in n)p = n[g], n.hasOwnProperty(g) && p != null && !r.hasOwnProperty(g) && Ed(e, t, g, null, r, p);
+                    for(var g in n)p = n[g], n.hasOwnProperty(g) && p != null && !r.hasOwnProperty(g) && Dd(e, t, g, null, r, p);
                     for(u in r)if (p = r[u], m = n[u], r.hasOwnProperty(u) && p !== m && (p != null || m != null)) switch(u){
                         case `children`:
                         case `dangerouslySetInnerHTML`:
                             if (p != null) throw Error(i(137, t));
                             break;
                         default:
-                            Ed(e, t, u, p, r, m);
+                            Dd(e, t, u, p, r, m);
                     }
                     return;
                 default:
                     if (Qt(t)) {
-                        for(var _ in n)p = n[_], n.hasOwnProperty(_) && p !== void 0 && !r.hasOwnProperty(_) && Dd(e, t, _, void 0, r, p);
-                        for(d in r)p = r[d], m = n[d], !r.hasOwnProperty(d) || p === m || p === void 0 && m === void 0 || Dd(e, t, d, p, r, m);
+                        for(var _ in n)p = n[_], n.hasOwnProperty(_) && p !== void 0 && !r.hasOwnProperty(_) && Od(e, t, _, void 0, r, p);
+                        for(d in r)p = r[d], m = n[d], !r.hasOwnProperty(d) || p === m || p === void 0 && m === void 0 || Od(e, t, d, p, r, m);
                         return;
                     }
             }
-            for(var v in n)p = n[v], n.hasOwnProperty(v) && p != null && !r.hasOwnProperty(v) && Ed(e, t, v, null, r, p);
-            for(f in r)p = r[f], m = n[f], !r.hasOwnProperty(f) || p === m || p == null && m == null || Ed(e, t, f, p, r, m);
+            for(var v in n)p = n[v], n.hasOwnProperty(v) && p != null && !r.hasOwnProperty(v) && Dd(e, t, v, null, r, p);
+            for(f in r)p = r[f], m = n[f], !r.hasOwnProperty(f) || p === m || p == null && m == null || Dd(e, t, f, p, r, m);
         }
-        var Ad = null, jd = null;
-        function Md(e) {
+        var jd = null, Md = null;
+        function Nd(e) {
             return e.nodeType === 9 ? e : e.ownerDocument;
         }
-        function Nd(e) {
+        function Pd(e) {
             switch(e){
                 case `http://www.w3.org/2000/svg`:
                     return 1;
@@ -11351,7 +11351,7 @@ Error generating stack: ` + e.message + `
                     return 0;
             }
         }
-        function Pd(e, t) {
+        function Fd(e, t) {
             if (e === 0) switch(t){
                 case `svg`:
                     return 1;
@@ -11362,23 +11362,23 @@ Error generating stack: ` + e.message + `
             }
             return e === 1 && t === `foreignObject` ? 0 : e;
         }
-        function Fd(e, t) {
+        function Id(e, t) {
             return e === `textarea` || e === `noscript` || typeof t.children == `string` || typeof t.children == `number` || typeof t.children == `bigint` || typeof t.dangerouslySetInnerHTML == `object` && t.dangerouslySetInnerHTML !== null && t.dangerouslySetInnerHTML.__html != null;
         }
-        var Id = null;
-        function Ld() {
+        var Ld = null;
+        function Rd() {
             var e = window.event;
-            return e && e.type === `popstate` ? e === Id ? !1 : (Id = e, !0) : (Id = null, !1);
+            return e && e.type === `popstate` ? e === Ld ? !1 : (Ld = e, !0) : (Ld = null, !1);
         }
-        var Rd = typeof setTimeout == `function` ? setTimeout : void 0, zd = typeof clearTimeout == `function` ? clearTimeout : void 0, Bd = typeof Promise == `function` ? Promise : void 0, Vd = typeof queueMicrotask == `function` ? queueMicrotask : Bd === void 0 ? Rd : function(e) {
-            return Bd.resolve(null).then(e).catch(Hd);
+        var zd = typeof setTimeout == `function` ? setTimeout : void 0, Bd = typeof clearTimeout == `function` ? clearTimeout : void 0, Vd = typeof Promise == `function` ? Promise : void 0, Hd = typeof queueMicrotask == `function` ? queueMicrotask : Vd === void 0 ? zd : function(e) {
+            return Vd.resolve(null).then(e).catch(Ud);
         };
-        function Hd(e) {
+        function Ud(e) {
             setTimeout(function() {
                 throw e;
             });
         }
-        function Ud(e, t) {
+        function Wd(e, t) {
             var n = t, r = 0;
             do {
                 var i = n.nextSibling;
@@ -11393,7 +11393,7 @@ Error generating stack: ` + e.message + `
             }while (n);
             hp(t);
         }
-        function Wd(e) {
+        function Gd(e) {
             var t = e.firstChild;
             for(t && t.nodeType === 10 && (t = t.nextSibling); t;){
                 var n = t;
@@ -11401,7 +11401,7 @@ Error generating stack: ` + e.message + `
                     case `HTML`:
                     case `HEAD`:
                     case `BODY`:
-                        Wd(n), _t(n);
+                        Gd(n), _t(n);
                         continue;
                     case `SCRIPT`:
                     case `STYLE`:
@@ -11412,7 +11412,7 @@ Error generating stack: ` + e.message + `
                 e.removeChild(n);
             }
         }
-        function Gd(e, t, n, r) {
+        function Kd(e, t, n, r) {
             for(; e.nodeType === 1;){
                 var i = n;
                 if (e.nodeName.toLowerCase() !== t.toLowerCase()) {
@@ -11437,16 +11437,16 @@ Error generating stack: ` + e.message + `
                     default:
                         return e;
                 }
-                if (e = qd(e.nextSibling), e === null) break;
+                if (e = Jd(e.nextSibling), e === null) break;
             }
             return null;
         }
-        function Kd(e, t, n) {
+        function qd(e, t, n) {
             if (t === ``) return null;
-            for(; e.nodeType !== 3;)if ((e.nodeType !== 1 || e.nodeName !== `INPUT` || e.type !== `hidden`) && !n || (e = qd(e.nextSibling), e === null)) return null;
+            for(; e.nodeType !== 3;)if ((e.nodeType !== 1 || e.nodeName !== `INPUT` || e.type !== `hidden`) && !n || (e = Jd(e.nextSibling), e === null)) return null;
             return e;
         }
-        function qd(e) {
+        function Jd(e) {
             for(; e != null; e = e.nextSibling){
                 var t = e.nodeType;
                 if (t === 1 || t === 3) break;
@@ -11457,7 +11457,7 @@ Error generating stack: ` + e.message + `
             }
             return e;
         }
-        function Jd(e) {
+        function Yd(e) {
             e = e.previousSibling;
             for(var t = 0; e;){
                 if (e.nodeType === 8) {
@@ -11471,8 +11471,8 @@ Error generating stack: ` + e.message + `
             }
             return null;
         }
-        function Yd(e, t, n) {
-            switch(t = Md(n), e){
+        function Xd(e, t, n) {
+            switch(t = Nd(n), e){
                 case `html`:
                     if (e = t.documentElement, !e) throw Error(i(452));
                     return e;
@@ -11486,72 +11486,72 @@ Error generating stack: ` + e.message + `
                     throw Error(i(451));
             }
         }
-        var Xd = new Map, Zd = new Set;
-        function Qd(e) {
+        var Zd = new Map, Qd = new Set;
+        function $d(e) {
             return typeof e.getRootNode == `function` ? e.getRootNode() : e.ownerDocument;
         }
-        var $d = ue.d;
+        var ef = ue.d;
         ue.d = {
-            f: ef,
-            r: tf,
-            D: af,
-            C: of,
-            L: sf,
-            m: cf,
-            X: uf,
-            S: lf,
-            M: df
+            f: tf,
+            r: nf,
+            D: of,
+            C: sf,
+            L: cf,
+            m: lf,
+            X: df,
+            S: uf,
+            M: ff
         };
-        function ef() {
-            var e = $d.f(), t = hu();
+        function tf() {
+            var e = ef.f(), t = gu();
             return e || t;
         }
-        function tf(e) {
+        function nf(e) {
             var t = yt(e);
-            t !== null && t.tag === 5 && t.type === `form` ? Wo(t) : $d.r(e);
+            t !== null && t.tag === 5 && t.type === `form` ? Wo(t) : ef.r(e);
         }
-        var nf = typeof document > `u` ? null : document;
-        function rf(e, t, n) {
-            var r = nf;
+        var rf = typeof document > `u` ? null : document;
+        function af(e, t, n) {
+            var r = rf;
             if (r && typeof t == `string` && t) {
                 var i = Vt(t);
-                i = `link[rel="` + e + `"][href="` + i + `"]`, typeof n == `string` && (i += `[crossorigin="` + n + `"]`), Zd.has(i) || (Zd.add(i), e = {
+                i = `link[rel="` + e + `"][href="` + i + `"]`, typeof n == `string` && (i += `[crossorigin="` + n + `"]`), Qd.has(i) || (Qd.add(i), e = {
                     rel: e,
                     crossOrigin: n,
                     href: t
-                }, r.querySelector(i) === null && (t = r.createElement(`link`), Od(t, `link`, e), St(t), r.head.appendChild(t)));
+                }, r.querySelector(i) === null && (t = r.createElement(`link`), kd(t, `link`, e), St(t), r.head.appendChild(t)));
             }
         }
-        function af(e) {
-            $d.D(e), rf(`dns-prefetch`, e, null);
+        function of(e) {
+            ef.D(e), af(`dns-prefetch`, e, null);
         }
-        function of(e, t) {
-            $d.C(e, t), rf(`preconnect`, e, t);
+        function sf(e, t) {
+            ef.C(e, t), af(`preconnect`, e, t);
         }
-        function sf(e, t, n) {
-            $d.L(e, t, n);
-            var r = nf;
+        function cf(e, t, n) {
+            ef.L(e, t, n);
+            var r = rf;
             if (r && e && t) {
                 var i = `link[rel="preload"][as="` + Vt(t) + `"]`;
                 t === `image` && n && n.imageSrcSet ? (i += `[imagesrcset="` + Vt(n.imageSrcSet) + `"]`, typeof n.imageSizes == `string` && (i += `[imagesizes="` + Vt(n.imageSizes) + `"]`)) : i += `[href="` + Vt(e) + `"]`;
                 var a = i;
                 switch(t){
                     case `style`:
-                        a = pf(e);
+                        a = mf(e);
                         break;
                     case `script`:
-                        a = _f(e);
+                        a = vf(e);
                 }
-                Xd.has(a) || (e = D({
+                Zd.has(a) || (e = D({
                     rel: `preload`,
                     href: t === `image` && n && n.imageSrcSet ? void 0 : e,
                     as: t
-                }, n), Xd.set(a, e), r.querySelector(i) !== null || t === `style` && r.querySelector(mf(a)) || t === `script` && r.querySelector(vf(a)) || (t = r.createElement(`link`), Od(t, `link`, e), St(t), r.head.appendChild(t)));
+                }, n), Zd.set(a, e), r.querySelector(i) !== null || t === `style` && r.querySelector(hf(a)) || t === `script` && r.querySelector(yf(a)) || (t = r.createElement(`link`), kd(t, `link`, e), St(t), r.head.appendChild(t)));
             }
         }
-        function cf(e, t) {
-            $d.m(e, t);
-            var n = nf;
+        function lf(e, t) {
+            ef.m(e, t);
+            var n = rf;
             if (n && e) {
                 var r = t && typeof t.as == `string` ? t.as : `script`, i = `link[rel="modulepreload"][as="` + Vt(r) + `"][href="` + Vt(e) + `"]`, a = i;
                 switch(r){
@@ -11561,12 +11561,12 @@ Error generating stack: ` + e.message + `
                     case `sharedworker`:
                     case `worker`:
                     case `script`:
-                        a = _f(e);
+                        a = vf(e);
                 }
-                if (!Xd.has(a) && (e = D({
+                if (!Zd.has(a) && (e = D({
                     rel: `modulepreload`,
                     href: e
-                }, t), Xd.set(a, e), n.querySelector(i) === null)) {
+                }, t), Zd.set(a, e), n.querySelector(i) === null)) {
                     switch(r){
                         case `audioworklet`:
                         case `paintworklet`:
@@ -11574,17 +11574,17 @@ Error generating stack: ` + e.message + `
                         case `sharedworker`:
                         case `worker`:
                         case `script`:
-                            if (n.querySelector(vf(a))) return;
+                            if (n.querySelector(yf(a))) return;
                     }
-                    r = n.createElement(`link`), Od(r, `link`, e), St(r), n.head.appendChild(r);
+                    r = n.createElement(`link`), kd(r, `link`, e), St(r), n.head.appendChild(r);
                 }
             }
         }
-        function lf(e, t, n) {
-            $d.S(e, t, n);
-            var r = nf;
+        function uf(e, t, n) {
+            ef.S(e, t, n);
+            var r = rf;
             if (r && e) {
-                var i = xt(r).hoistableStyles, a = pf(e);
+                var i = xt(r).hoistableStyles, a = mf(e);
                 t ||= `default`;
                 var o = i.get(a);
                 if (!o) {
@@ -11592,21 +11592,21 @@ Error generating stack: ` + e.message + `
                         loading: 0,
                         preload: null
                     };
-                    if (o = r.querySelector(mf(a))) s.loading = 5;
+                    if (o = r.querySelector(hf(a))) s.loading = 5;
                     else {
                         e = D({
                             rel: `stylesheet`,
                             href: e,
                             "data-precedence": t
-                        }, n), (n = Xd.get(a)) && xf(e, n);
+                        }, n), (n = Zd.get(a)) && Sf(e, n);
                         var c = o = r.createElement(`link`);
-                        St(c), Od(c, `link`, e), c._p = new Promise(function(e, t) {
+                        St(c), kd(c, `link`, e), c._p = new Promise(function(e, t) {
                             c.onload = e, c.onerror = t;
                         }), c.addEventListener(`load`, function() {
                             s.loading |= 1;
                         }), c.addEventListener(`error`, function() {
                             s.loading |= 2;
-                        }), s.loading |= 4, bf(o, t, r);
+                        }), s.loading |= 4, xf(o, t, r);
                     }
                     o = {
                         type: `stylesheet`,
@@ -11617,15 +11617,15 @@ Error generating stack: ` + e.message + `
                 }
             }
         }
-        function uf(e, t) {
-            $d.X(e, t);
-            var n = nf;
+        function df(e, t) {
+            ef.X(e, t);
+            var n = rf;
             if (n && e) {
-                var r = xt(n).hoistableScripts, i = _f(e), a = r.get(i);
-                a || (a = n.querySelector(vf(i)), a || (e = D({
+                var r = xt(n).hoistableScripts, i = vf(e), a = r.get(i);
+                a || (a = n.querySelector(yf(i)), a || (e = D({
                     src: e,
                     async: !0
-                }, t), (t = Xd.get(i)) && Sf(e, t), a = n.createElement(`script`), St(a), Od(a, `link`, e), n.head.appendChild(a)), a = {
+                }, t), (t = Zd.get(i)) && Cf(e, t), a = n.createElement(`script`), St(a), kd(a, `link`, e), n.head.appendChild(a)), a = {
                     type: `script`,
                     instance: a,
                     count: 1,
@@ -11633,16 +11633,16 @@ Error generating stack: ` + e.message + `
                 }, r.set(i, a));
             }
         }
-        function df(e, t) {
-            $d.M(e, t);
-            var n = nf;
+        function ff(e, t) {
+            ef.M(e, t);
+            var n = rf;
             if (n && e) {
-                var r = xt(n).hoistableScripts, i = _f(e), a = r.get(i);
-                a || (a = n.querySelector(vf(i)), a || (e = D({
+                var r = xt(n).hoistableScripts, i = vf(e), a = r.get(i);
+                a || (a = n.querySelector(yf(i)), a || (e = D({
                     src: e,
                     async: !0,
                     type: `module`
-                }, t), (t = Xd.get(i)) && Sf(e, t), a = n.createElement(`script`), St(a), Od(a, `link`, e), n.head.appendChild(a)), a = {
+                }, t), (t = Zd.get(i)) && Cf(e, t), a = n.createElement(`script`), St(a), kd(a, `link`, e), n.head.appendChild(a)), a = {
                     type: `script`,
                     instance: a,
                     count: 1,
@@ -11650,15 +11650,15 @@ Error generating stack: ` + e.message + `
                 }, r.set(i, a));
             }
         }
-        function ff(e, t, n, r) {
-            var a = (a = ye.current) ? Qd(a) : null;
+        function pf(e, t, n, r) {
+            var a = (a = ye.current) ? $d(a) : null;
             if (!a) throw Error(i(446));
             switch(e){
                 case `meta`:
                 case `title`:
                     return null;
                 case `style`:
-                    return typeof n.precedence == `string` && typeof n.href == `string` ? (t = pf(n.href), n = xt(a).hoistableStyles, r = n.get(t), r || (r = {
+                    return typeof n.precedence == `string` && typeof n.href == `string` ? (t = mf(n.href), n = xt(a).hoistableStyles, r = n.get(t), r || (r = {
                         type: `style`,
                         instance: null,
                         count: 0,
@@ -11671,7 +11671,7 @@ Error generating stack: ` + e.message + `
                     };
                 case `link`:
                     if (n.rel === `stylesheet` && typeof n.href == `string` && typeof n.precedence == `string`) {
-                        e = pf(n.href);
+                        e = mf(n.href);
                         var o = xt(a).hoistableStyles, s = o.get(e);
                         if (s || (a = a.ownerDocument || a, s = {
                             type: `stylesheet`,
@@ -11681,7 +11681,7 @@ Error generating stack: ` + e.message + `
                                 loading: 0,
                                 preload: null
                             }
-                        }, o.set(e, s), (o = a.querySelector(mf(e))) && !o._p && (s.instance = o, s.state.loading = 5), Xd.has(e) || (n = {
+                        }, o.set(e, s), (o = a.querySelector(hf(e))) && !o._p && (s.instance = o, s.state.loading = 5), Zd.has(e) || (n = {
                             rel: `preload`,
                             as: `style`,
                             href: n.href,
@@ -11690,13 +11690,13 @@ Error generating stack: ` + e.message + `
                             media: n.media,
                             hrefLang: n.hrefLang,
                             referrerPolicy: n.referrerPolicy
-                        }, Xd.set(e, n), o || gf(a, e, n, s.state))), t && r === null) throw Error(i(528, ``));
+                        }, Zd.set(e, n), o || _f(a, e, n, s.state))), t && r === null) throw Error(i(528, ``));
                         return s;
                     }
                     if (t && r !== null) throw Error(i(529, ``));
                     return null;
                 case `script`:
-                    return t = n.async, n = n.src, typeof n == `string` && t && typeof t != `function` && typeof t != `symbol` ? (t = _f(n), n = xt(a).hoistableScripts, r = n.get(t), r || (r = {
+                    return t = n.async, n = n.src, typeof n == `string` && t && typeof t != `function` && typeof t != `symbol` ? (t = vf(n), n = xt(a).hoistableScripts, r = n.get(t), r || (r = {
                         type: `script`,
                         instance: null,
                         count: 0,
@@ -11711,32 +11711,32 @@ Error generating stack: ` + e.message + `
                     throw Error(i(444, e));
             }
         }
-        function pf(e) {
+        function mf(e) {
             return `href="` + Vt(e) + `"`;
         }
-        function mf(e) {
+        function hf(e) {
             return `link[rel="stylesheet"][` + e + `]`;
         }
-        function hf(e) {
+        function gf(e) {
             return D({}, e, {
                 "data-precedence": e.precedence,
                 precedence: null
             });
         }
-        function gf(e, t, n, r) {
+        function _f(e, t, n, r) {
             e.querySelector(`link[rel="preload"][as="style"][` + t + `]`) ? r.loading = 1 : (t = e.createElement(`link`), r.preload = t, t.addEventListener(`load`, function() {
                 return r.loading |= 1;
             }), t.addEventListener(`error`, function() {
                 return r.loading |= 2;
-            }), Od(t, `link`, n), St(t), e.head.appendChild(t));
-        }
-        function _f(e) {
-            return `[src="` + Vt(e) + `"]`;
+            }), kd(t, `link`, n), St(t), e.head.appendChild(t));
         }
         function vf(e) {
+            return `[src="` + Vt(e) + `"]`;
+        }
+        function yf(e) {
             return `script[async]` + e;
         }
-        function yf(e, t, n) {
+        function bf(e, t, n) {
             if (t.count++, t.instance === null) switch(t.type){
                 case `style`:
                     var r = e.querySelector(`style[data-href~="` + Vt(n.href) + `"]`);
@@ -11747,27 +11747,27 @@ Error generating stack: ` + e.message + `
                         href: null,
                         precedence: null
                     });
-                    return r = (e.ownerDocument || e).createElement(`style`), St(r), Od(r, `style`, a), bf(r, n.precedence, e), t.instance = r;
+                    return r = (e.ownerDocument || e).createElement(`style`), St(r), kd(r, `style`, a), xf(r, n.precedence, e), t.instance = r;
                 case `stylesheet`:
-                    a = pf(n.href);
-                    var o = e.querySelector(mf(a));
+                    a = mf(n.href);
+                    var o = e.querySelector(hf(a));
                     if (o) return t.state.loading |= 4, t.instance = o, St(o), o;
-                    r = hf(n), (a = Xd.get(a)) && xf(r, a), o = (e.ownerDocument || e).createElement(`link`), St(o);
+                    r = gf(n), (a = Zd.get(a)) && Sf(r, a), o = (e.ownerDocument || e).createElement(`link`), St(o);
                     var s = o;
                     return s._p = new Promise(function(e, t) {
                         s.onload = e, s.onerror = t;
-                    }), Od(o, `link`, r), t.state.loading |= 4, bf(o, n.precedence, e), t.instance = o;
+                    }), kd(o, `link`, r), t.state.loading |= 4, xf(o, n.precedence, e), t.instance = o;
                 case `script`:
-                    return o = _f(n.src), (a = e.querySelector(vf(o))) ? (t.instance = a, St(a), a) : (r = n, (a = Xd.get(o)) && (r = D({}, n), Sf(r, a)), e = e.ownerDocument || e, a = e.createElement(`script`), St(a), Od(a, `link`, r), e.head.appendChild(a), t.instance = a);
+                    return o = vf(n.src), (a = e.querySelector(yf(o))) ? (t.instance = a, St(a), a) : (r = n, (a = Zd.get(o)) && (r = D({}, n), Cf(r, a)), e = e.ownerDocument || e, a = e.createElement(`script`), St(a), kd(a, `link`, r), e.head.appendChild(a), t.instance = a);
                 case `void`:
                     return null;
                 default:
                     throw Error(i(443, t.type));
             }
-            else t.type === `stylesheet` && !(t.state.loading & 4) && (r = t.instance, t.state.loading |= 4, bf(r, n.precedence, e));
+            else t.type === `stylesheet` && !(t.state.loading & 4) && (r = t.instance, t.state.loading |= 4, xf(r, n.precedence, e));
             return t.instance;
         }
-        function bf(e, t, n) {
+        function xf(e, t, n) {
             for(var r = n.querySelectorAll(`link[rel="stylesheet"][data-precedence],style[data-precedence]`), i = r.length ? r[r.length - 1] : null, a = i, o = 0; o < r.length; o++){
                 var s = r[o];
                 if (s.dataset.precedence === t) a = s;
@@ -11775,18 +11775,18 @@ Error generating stack: ` + e.message + `
             }
             a ? a.parentNode.insertBefore(e, a.nextSibling) : (t = n.nodeType === 9 ? n.head : n, t.insertBefore(e, t.firstChild));
         }
-        function xf(e, t) {
+        function Sf(e, t) {
             e.crossOrigin ??= t.crossOrigin, e.referrerPolicy ??= t.referrerPolicy, e.title ??= t.title;
         }
-        function Sf(e, t) {
+        function Cf(e, t) {
             e.crossOrigin ??= t.crossOrigin, e.referrerPolicy ??= t.referrerPolicy, e.integrity ??= t.integrity;
         }
-        var Cf = null;
-        function wf(e, t, n) {
-            if (Cf === null) {
-                var r = new Map, i = Cf = new Map;
+        var wf = null;
+        function Tf(e, t, n) {
+            if (wf === null) {
+                var r = new Map, i = wf = new Map;
                 i.set(n, r);
-            } else i = Cf, r = i.get(n), r || (r = new Map, i.set(n, r));
+            } else i = wf, r = i.get(n), r || (r = new Map, i.set(n, r));
             if (r.has(e)) return r;
             for(r.set(e, null), n = n.getElementsByTagName(e), i = 0; i < n.length; i++){
                 var a = n[i];
@@ -11801,10 +11801,10 @@ Error generating stack: ` + e.message + `
             }
             return r;
         }
-        function Tf(e, t, n) {
+        function Ef(e, t, n) {
             e = e.ownerDocument || e, e.head.insertBefore(n, t === `title` ? e.querySelector(`head > title`) : null);
         }
-        function Ef(e, t, n) {
+        function Df(e, t, n) {
             if (n === 1 || t.itemProp != null) return !1;
             switch(e){
                 case `meta`:
@@ -11826,36 +11826,36 @@ Error generating stack: ` + e.message + `
             }
             return !1;
         }
-        function Df(e) {
+        function Of(e) {
             return !(e.type === `stylesheet` && !(e.state.loading & 3));
         }
-        var Of = null;
-        function kf() {}
-        function Af(e, t, n) {
-            if (Of === null) throw Error(i(475));
-            var r = Of;
+        var kf = null;
+        function Af() {}
+        function jf(e, t, n) {
+            if (kf === null) throw Error(i(475));
+            var r = kf;
             if (t.type === `stylesheet` && (typeof n.media != `string` || !1 !== matchMedia(n.media).matches) && !(t.state.loading & 4)) {
                 if (t.instance === null) {
-                    var a = pf(n.href), o = e.querySelector(mf(a));
+                    var a = mf(n.href), o = e.querySelector(hf(a));
                     if (o) {
-                        e = o._p, typeof e == `object` && e && typeof e.then == `function` && (r.count++, r = Mf.bind(r), e.then(r, r)), t.state.loading |= 4, t.instance = o, St(o);
+                        e = o._p, typeof e == `object` && e && typeof e.then == `function` && (r.count++, r = Nf.bind(r), e.then(r, r)), t.state.loading |= 4, t.instance = o, St(o);
                         return;
                     }
-                    o = e.ownerDocument || e, n = hf(n), (a = Xd.get(a)) && xf(n, a), o = o.createElement(`link`), St(o);
+                    o = e.ownerDocument || e, n = gf(n), (a = Zd.get(a)) && Sf(n, a), o = o.createElement(`link`), St(o);
                     var s = o;
                     s._p = new Promise(function(e, t) {
                         s.onload = e, s.onerror = t;
-                    }), Od(o, `link`, n), t.instance = o;
+                    }), kd(o, `link`, n), t.instance = o;
                 }
-                r.stylesheets === null && (r.stylesheets = new Map), r.stylesheets.set(t, e), (e = t.state.preload) && !(t.state.loading & 3) && (r.count++, t = Mf.bind(r), e.addEventListener(`load`, t), e.addEventListener(`error`, t));
+                r.stylesheets === null && (r.stylesheets = new Map), r.stylesheets.set(t, e), (e = t.state.preload) && !(t.state.loading & 3) && (r.count++, t = Nf.bind(r), e.addEventListener(`load`, t), e.addEventListener(`error`, t));
             }
         }
-        function jf() {
-            if (Of === null) throw Error(i(475));
-            var e = Of;
-            return e.stylesheets && e.count === 0 && Pf(e, e.stylesheets), 0 < e.count ? function(t) {
+        function Mf() {
+            if (kf === null) throw Error(i(475));
+            var e = kf;
+            return e.stylesheets && e.count === 0 && Ff(e, e.stylesheets), 0 < e.count ? function(t) {
                 var n = setTimeout(function() {
-                    if (e.stylesheets && Pf(e, e.stylesheets), e.unsuspend) {
+                    if (e.stylesheets && Ff(e, e.stylesheets), e.unsuspend) {
                         var t = e.unsuspend;
                         e.unsuspend = null, t();
                     }
@@ -11865,35 +11865,35 @@ Error generating stack: ` + e.message + `
                 };
             } : null;
         }
-        function Mf() {
+        function Nf() {
             if (this.count--, this.count === 0) {
-                if (this.stylesheets) Pf(this, this.stylesheets);
+                if (this.stylesheets) Ff(this, this.stylesheets);
                 else if (this.unsuspend) {
                     var e = this.unsuspend;
                     this.unsuspend = null, e();
                 }
             }
         }
-        var Nf = null;
-        function Pf(e, t) {
-            e.stylesheets = null, e.unsuspend !== null && (e.count++, Nf = new Map, t.forEach(Ff, e), Nf = null, Mf.call(e));
-        }
+        var Pf = null;
         function Ff(e, t) {
+            e.stylesheets = null, e.unsuspend !== null && (e.count++, Pf = new Map, t.forEach(If, e), Pf = null, Nf.call(e));
+        }
+        function If(e, t) {
             if (!(t.state.loading & 4)) {
-                var n = Nf.get(e);
+                var n = Pf.get(e);
                 if (n) var r = n.get(null);
                 else {
-                    n = new Map, Nf.set(e, n);
+                    n = new Map, Pf.set(e, n);
                     for(var i = e.querySelectorAll(`link[data-precedence],style[data-precedence]`), a = 0; a < i.length; a++){
                         var o = i[a];
                         (o.nodeName === `LINK` || o.getAttribute(`media`) !== `not all`) && (n.set(o.dataset.precedence, o), r = o);
                     }
                     r && n.set(null, r);
                 }
-                i = t.instance, o = i.getAttribute(`data-precedence`), a = n.get(o) || r, a === r && n.set(null, i), n.set(o, i), this.count++, r = Mf.bind(this), i.addEventListener(`load`, r), i.addEventListener(`error`, r), a ? a.parentNode.insertBefore(i, a.nextSibling) : (e = e.nodeType === 9 ? e.head : e, e.insertBefore(i, e.firstChild)), t.state.loading |= 4;
+                i = t.instance, o = i.getAttribute(`data-precedence`), a = n.get(o) || r, a === r && n.set(null, i), n.set(o, i), this.count++, r = Nf.bind(this), i.addEventListener(`load`, r), i.addEventListener(`error`, r), a ? a.parentNode.insertBefore(i, a.nextSibling) : (e = e.nodeType === 9 ? e.head : e, e.insertBefore(i, e.firstChild)), t.state.loading |= 4;
             }
         }
-        var If = {
+        var Lf = {
             $$typeof: m,
             Provider: null,
             Consumer: null,
@@ -11901,64 +11901,64 @@ Error generating stack: ` + e.message + `
             _currentValue2: de,
             _threadCount: 0
         };
-        function Lf(e, t, n, r, i, a, o, s) {
+        function Rf(e, t, n, r, i, a, o, s) {
             this.tag = 1, this.containerInfo = e, this.finishedWork = this.pingCache = this.current = this.pendingChildren = null, this.timeoutHandle = -1, this.callbackNode = this.next = this.pendingContext = this.context = this.cancelPendingCommit = null, this.callbackPriority = 0, this.expirationTimes = tt(-1), this.entangledLanes = this.shellSuspendCounter = this.errorRecoveryDisabledLanes = this.finishedLanes = this.expiredLanes = this.warmLanes = this.pingedLanes = this.suspendedLanes = this.pendingLanes = 0, this.entanglements = tt(0), this.hiddenUpdates = tt(null), this.identifierPrefix = r, this.onUncaughtError = i, this.onCaughtError = a, this.onRecoverableError = o, this.pooledCache = null, this.pooledCacheLanes = 0, this.formState = s, this.incompleteTransitions = new Map;
         }
-        function Rf(e, t, n, r, i, a, o, s, c, l, u, d) {
-            return e = new Lf(e, t, n, o, s, c, l, d), t = 1, !0 === a && (t |= 24), a = _l(3, null, null, t), e.current = a, a.stateNode = e, t = ma(), t.refCount++, e.pooledCache = t, t.refCount++, a.memoizedState = {
+        function zf(e, t, n, r, i, a, o, s, c, l, u, d) {
+            return e = new Rf(e, t, n, o, s, c, l, d), t = 1, !0 === a && (t |= 24), a = _l(3, null, null, t), e.current = a, a.stateNode = e, t = ma(), t.refCount++, e.pooledCache = t, t.refCount++, a.memoizedState = {
                 element: r,
                 isDehydrated: n,
                 cache: t
             }, cc(a), e;
         }
-        function zf(e) {
+        function Bf(e) {
             return e ? (e = oi, e) : oi;
         }
-        function Bf(e, t, n, r, i, a) {
-            i = zf(i), r.context === null ? r.context = i : r.pendingContext = i, r = uc(t), r.payload = {
+        function Vf(e, t, n, r, i, a) {
+            i = Bf(i), r.context === null ? r.context = i : r.pendingContext = i, r = uc(t), r.payload = {
                 element: n
-            }, a = a === void 0 ? null : a, a !== null && (r.callback = a), n = dc(e, r, t), n !== null && (lu(n, e, t), fc(n, e, t));
+            }, a = a === void 0 ? null : a, a !== null && (r.callback = a), n = dc(e, r, t), n !== null && (uu(n, e, t), fc(n, e, t));
         }
-        function Vf(e, t) {
+        function Hf(e, t) {
             if (e = e.memoizedState, e !== null && e.dehydrated !== null) {
                 var n = e.retryLane;
                 e.retryLane = n !== 0 && n < t ? n : t;
             }
         }
-        function Hf(e, t) {
-            Vf(e, t), (e = e.alternate) && Vf(e, t);
+        function Uf(e, t) {
+            Hf(e, t), (e = e.alternate) && Hf(e, t);
         }
-        function Uf(e) {
+        function Wf(e) {
             if (e.tag === 13) {
                 var t = ri(e, 67108864);
-                t !== null && lu(t, e, 67108864), Hf(e, 67108864);
+                t !== null && uu(t, e, 67108864), Uf(e, 67108864);
             }
         }
-        var Wf = !0;
-        function Gf(e, t, n, r) {
-            var i = E.T;
-            E.T = null;
-            var a = ue.p;
-            try {
-                ue.p = 2, H(e, t, n, r);
-            } finally{
-                ue.p = a, E.T = i;
-            }
-        }
+        var Gf = !0;
         function Kf(e, t, n, r) {
             var i = E.T;
             E.T = null;
             var a = ue.p;
             try {
-                ue.p = 8, H(e, t, n, r);
+                ue.p = 2, V(e, t, n, r);
             } finally{
                 ue.p = a, E.T = i;
             }
         }
-        function H(e, t, n, r) {
-            if (Wf) {
-                var i = qf(r);
-                if (i === null) gd(e, t, r, Jf, n), ap(e, r);
+        function qf(e, t, n, r) {
+            var i = E.T;
+            E.T = null;
+            var a = ue.p;
+            try {
+                ue.p = 8, V(e, t, n, r);
+            } finally{
+                ue.p = a, E.T = i;
+            }
+        }
+        function V(e, t, n, r) {
+            if (Gf) {
+                var i = H(r);
+                if (i === null) _d(e, t, r, Jf, n), ap(e, r);
                 else if (sp(i, e, t, n, r)) r.stopPropagation();
                 else if (ap(e, r), t & 4 && -1 < ip.indexOf(e)) {
                     for(; i !== null;){
@@ -11973,21 +11973,21 @@ Error generating stack: ` + e.message + `
                                             var c = 1 << 31 - Ue(o);
                                             s.entanglements[1] |= c, o &= ~c;
                                         }
-                                        Yu(a), !(Fl & 6) && (Ql = Ae() + 500, Xu(0, !1));
+                                        Xu(a), !(Fl & 6) && ($l = Ae() + 500, Zu(0, !1));
                                     }
                                 }
                                 break;
                             case 13:
-                                s = ri(a, 2), s !== null && lu(s, a, 2), hu(), Hf(a, 2);
+                                s = ri(a, 2), s !== null && uu(s, a, 2), gu(), Uf(a, 2);
                         }
-                        if (a = qf(r), a === null && gd(e, t, r, Jf, n), a === i) break;
+                        if (a = H(r), a === null && _d(e, t, r, Jf, n), a === i) break;
                         i = a;
                     }
                     i !== null && r.stopPropagation();
-                } else gd(e, t, r, null, n);
+                } else _d(e, t, r, null, n);
             }
         }
-        function qf(e) {
+        function H(e) {
             return e = rn(e), Yf(e);
         }
         var Jf = null;
@@ -12134,7 +12134,7 @@ Error generating stack: ` + e.message + `
                 targetContainers: [
                     i
                 ]
-            }, t !== null && (t = yt(t), t !== null && Uf(t)), e) : (e.eventSystemFlags |= r, t = e.targetContainers, i !== null && t.indexOf(i) === -1 && t.push(i), e);
+            }, t !== null && (t = yt(t), t !== null && Wf(t)), e) : (e.eventSystemFlags |= r, t = e.targetContainers, i !== null && t.indexOf(i) === -1 && t.push(i), e);
         }
         function sp(e, t, n, r, i) {
             switch(t){
@@ -12161,8 +12161,8 @@ Error generating stack: ` + e.message + `
                         if (t = ae(n), t !== null) {
                             e.blockedOn = t, j(e.priority, function() {
                                 if (n.tag === 13) {
-                                    var e = su(), t = ri(n, e);
-                                    t !== null && lu(t, n, e), Hf(n, e);
+                                    var e = cu(), t = ri(n, e);
+                                    t !== null && uu(t, n, e), Uf(n, e);
                                 }
                             });
                             return;
@@ -12178,12 +12178,12 @@ Error generating stack: ` + e.message + `
         function lp(e) {
             if (e.blockedOn !== null) return !1;
             for(var t = e.targetContainers; 0 < t.length;){
-                var n = qf(e.nativeEvent);
+                var n = H(e.nativeEvent);
                 if (n === null) {
                     n = e.nativeEvent;
                     var r = new n.constructor(n.type, n);
                     nn = r, n.target.dispatchEvent(r), nn = null;
-                } else return t = yt(n), t !== null && Uf(t), e.blockedOn = n, !1;
+                } else return t = yt(n), t !== null && Wf(t), e.blockedOn = n, !1;
                 t.shift();
             }
             return !0;
@@ -12247,13 +12247,13 @@ Error generating stack: ` + e.message + `
             var t = this._internalRoot;
             if (t === null) throw Error(i(409));
             var n = t.current;
-            Bf(n, su(), e, t, null, null);
+            Vf(n, cu(), e, t, null, null);
         }, _p.prototype.unmount = gp.prototype.unmount = function() {
             var e = this._internalRoot;
             if (e !== null) {
                 this._internalRoot = null;
                 var t = e.containerInfo;
-                e.tag === 0 && Pu(), Bf(e.current, 2, null, e, null, null), hu(), t[dt] = null;
+                e.tag === 0 && Fu(), Vf(e.current, 2, null, e, null, null), gu(), t[dt] = null;
             }
         };
         function _p(e) {
@@ -12295,7 +12295,7 @@ Error generating stack: ` + e.message + `
         e.createRoot = function(e, t) {
             if (!a(e)) throw Error(i(299));
             var n = !1, r = ``, o = fs, s = ps, c = ms, l = null;
-            return t != null && (!0 === t.unstable_strictMode && (n = !0), t.identifierPrefix !== void 0 && (r = t.identifierPrefix), t.onUncaughtError !== void 0 && (o = t.onUncaughtError), t.onCaughtError !== void 0 && (s = t.onCaughtError), t.onRecoverableError !== void 0 && (c = t.onRecoverableError), t.unstable_transitionCallbacks !== void 0 && (l = t.unstable_transitionCallbacks)), t = Rf(e, 1, !1, null, null, n, r, o, s, c, l, null), e[dt] = t.current, md(e.nodeType === 8 ? e.parentNode : e), new gp(t);
+            return t != null && (!0 === t.unstable_strictMode && (n = !0), t.identifierPrefix !== void 0 && (r = t.identifierPrefix), t.onUncaughtError !== void 0 && (o = t.onUncaughtError), t.onCaughtError !== void 0 && (s = t.onCaughtError), t.onRecoverableError !== void 0 && (c = t.onRecoverableError), t.unstable_transitionCallbacks !== void 0 && (l = t.unstable_transitionCallbacks)), t = zf(e, 1, !1, null, null, n, r, o, s, c, l, null), e[dt] = t.current, hd(e.nodeType === 8 ? e.parentNode : e), new gp(t);
         };
     })), ol = s(((e, t)=>{
         function n() {
@@ -12755,7 +12755,7 @@ perfecta armonía.`,
         });
     }, dl = ()=>(0, F.useContext)(ll), fl = `preprod`, pl = `https://vaxzk.beerhouse.io`;
     function ml() {
-        return `a8bff4266af5bd75c226a86cf28ae572097f77ab0e98204ee9837463aea175e0`;
+        return ``;
     }
     var hl = (()=>{
         if (window.midnight) return Object.values(window.midnight).find((e)=>!!e && typeof e == `object` && `apiVersion` in e);
@@ -13667,13 +13667,12 @@ perfecta armonía.`,
         }
     }, Pl = new Ws(64), Fl = new class {
         alignment() {
-            return I.alignment().concat(I.alignment().concat(Pl.alignment().concat(Pl.alignment().concat(wl.alignment().concat(wl.alignment().concat(Dl.alignment()))))));
+            return I.alignment().concat(I.alignment().concat(Pl.alignment().concat(wl.alignment().concat(wl.alignment().concat(Dl.alignment())))));
         }
         fromValue(e) {
             return {
                 ownerId: I.fromValue(e),
                 name: I.fromValue(e),
-                urlImage: Pl.fromValue(e),
                 address: Pl.fromValue(e),
                 latitud: wl.fromValue(e),
                 longitud: wl.fromValue(e),
@@ -13681,22 +13680,22 @@ perfecta armonía.`,
             };
         }
         toValue(e) {
-            return I.toValue(e.ownerId).concat(I.toValue(e.name).concat(Pl.toValue(e.urlImage).concat(Pl.toValue(e.address).concat(wl.toValue(e.latitud).concat(wl.toValue(e.longitud).concat(Dl.toValue(e.isOnline)))))));
+            return I.toValue(e.ownerId).concat(I.toValue(e.name).concat(Pl.toValue(e.address).concat(wl.toValue(e.latitud).concat(wl.toValue(e.longitud).concat(Dl.toValue(e.isOnline))))));
         }
-    }, Il = new Vs(65535n, 2), R = new Vs(18446744073709551615n, 8), Ll = new Vs(452312848583266388373324160190187140051835877600158453279131187530910662655n, 31), Rl = new class {
+    }, Il = new Vs(65535n, 2), Ll = new Vs(18446744073709551615n, 8), Rl = new Vs(452312848583266388373324160190187140051835877600158453279131187530910662655n, 31), zl = new class {
         alignment() {
-            return kl.alignment().concat(Ll.alignment());
+            return kl.alignment().concat(Rl.alignment());
         }
         fromValue(e) {
             return [
                 kl.fromValue(e),
-                Ll.fromValue(e)
+                Rl.fromValue(e)
             ];
         }
         toValue(e) {
-            return kl.toValue(e[0]).concat(Ll.toValue(e[1]));
+            return kl.toValue(e[0]).concat(Rl.toValue(e[1]));
         }
-    }, zl = new class {
+    }, Bl = new class {
         alignment() {
             return I.alignment();
         }
@@ -13708,7 +13707,7 @@ perfecta armonía.`,
         toValue(e) {
             return I.toValue(e.bytes);
         }
-    }, Bl = new Hs(2, I), Vl = new Hs(2, kl), Hl = new class {
+    }, Vl = new Hs(2, I), Hl = new Hs(2, kl), Ul = new class {
         alignment() {
             return Ol.alignment().concat(Ol.alignment().concat(wl.alignment().concat(wl.alignment().concat(Tl.alignment().concat(I.alignment())))));
         }
@@ -13753,7 +13752,7 @@ perfecta armonía.`,
             return I.toValue(e.bytes);
         }
     };
-    var z = new Vs(255n, 1), Ul = class {
+    var R = new Vs(255n, 1), Wl = class {
         witnesses;
         constructor(...e){
             if (e.length !== 1) throw new S(`Contract constructor: expected 1 argument, received ${e.length}`);
@@ -13764,14 +13763,14 @@ perfecta armonía.`,
             this.witnesses = t, this.circuits = {
                 schnorrChallengeVaxZk (e, ...t) {
                     return {
-                        result: Kl.schnorrChallengeVaxZk(...t),
+                        result: ql.schnorrChallengeVaxZk(...t),
                         context: e
                     };
                 },
                 registerInviteAdmin: (...e)=>{
                     if (e.length !== 2) throw new S(`registerInviteAdmin: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`registerInviteAdmin`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 35 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`registerInviteAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 35 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`registerInviteAdmin`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 31 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`registerInviteAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 31 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: pc()
@@ -13794,10 +13793,36 @@ perfecta armonía.`,
                         gasCost: r.gasCost
                     };
                 },
+                registerInviteClinic: (...e)=>{
+                    if (e.length !== 2) throw new S(`registerInviteClinic: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
+                    let t = e[0], n = e[1];
+                    typeof t == `object` && t.currentQueryContext != null || w(`registerInviteClinic`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 37 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`registerInviteClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 37 char 1`, `Bytes<32>`, n);
+                    let r = {
+                        ...t,
+                        gasCost: pc()
+                    }, i = {
+                        input: {
+                            value: I.toValue(n),
+                            alignment: I.alignment()
+                        },
+                        output: void 0,
+                        publicTranscript: [],
+                        privateTranscriptOutputs: []
+                    }, a = this._registerInviteClinic_0(r, i, n);
+                    return i.output = {
+                        value: [],
+                        alignment: []
+                    }, {
+                        result: a,
+                        context: r,
+                        proofData: i,
+                        gasCost: r.gasCost
+                    };
+                },
                 acceptInviteAdmin: (...e)=>{
                     if (e.length !== 2) throw new S(`acceptInviteAdmin: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`acceptInviteAdmin`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 57 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`acceptInviteAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 57 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`acceptInviteAdmin`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 58 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`acceptInviteAdmin`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 58 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: pc()
@@ -13823,7 +13848,7 @@ perfecta armonía.`,
                 revokeAdmin: (...e)=>{
                     if (e.length !== 1) throw new S(`revokeAdmin: expected 1 argument (as invoked from Typescript), received ${e.length}`);
                     let t = e[0];
-                    typeof t == `object` && t.currentQueryContext != null || w(`revokeAdmin`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 71 char 1`, `CircuitContext`, t);
+                    typeof t == `object` && t.currentQueryContext != null || w(`revokeAdmin`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 73 char 1`, `CircuitContext`, t);
                     let n = {
                         ...t,
                         gasCost: pc()
@@ -13846,42 +13871,16 @@ perfecta armonía.`,
                         gasCost: n.gasCost
                     };
                 },
-                registerInviteClinic: (...e)=>{
-                    if (e.length !== 2) throw new S(`registerInviteClinic: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
-                    let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`registerInviteClinic`, `argument 1 (as invoked from Typescript)`, `Invites.compact line 81 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`registerInviteClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `Invites.compact line 81 char 1`, `Bytes<32>`, n);
-                    let r = {
-                        ...t,
-                        gasCost: pc()
-                    }, i = {
-                        input: {
-                            value: I.toValue(n),
-                            alignment: I.alignment()
-                        },
-                        output: void 0,
-                        publicTranscript: [],
-                        privateTranscriptOutputs: []
-                    }, a = this._registerInviteClinic_0(r, i, n);
-                    return i.output = {
-                        value: [],
-                        alignment: []
-                    }, {
-                        result: a,
-                        context: r,
-                        proofData: i,
-                        gasCost: r.gasCost
-                    };
-                },
                 getShieldedId (e, ...t) {
                     return {
-                        result: Kl.getShieldedId(...t),
+                        result: ql.getShieldedId(...t),
                         context: e
                     };
                 },
                 addClinic: (...e)=>{
                     if (e.length !== 3) throw new S(`addClinic: expected 3 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1], r = e[2];
-                    typeof t == `object` && t.currentQueryContext != null || w(`addClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 107 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`addClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 107 char 1`, `Bytes<32>`, n), typeof r == `object` && r.ownerId.buffer instanceof ArrayBuffer && r.ownerId.BYTES_PER_ELEMENT === 1 && r.ownerId.length === 32 && r.name.buffer instanceof ArrayBuffer && r.name.BYTES_PER_ELEMENT === 1 && r.name.length === 32 && r.urlImage.buffer instanceof ArrayBuffer && r.urlImage.BYTES_PER_ELEMENT === 1 && r.urlImage.length === 64 && r.address.buffer instanceof ArrayBuffer && r.address.BYTES_PER_ELEMENT === 1 && r.address.length === 64 && r.latitud.buffer instanceof ArrayBuffer && r.latitud.BYTES_PER_ELEMENT === 1 && r.latitud.length === 20 && r.longitud.buffer instanceof ArrayBuffer && r.longitud.BYTES_PER_ELEMENT === 1 && r.longitud.length === 20 && typeof r.isOnline == `boolean` || w(`addClinic`, `argument 2 (argument 3 as invoked from Typescript)`, `vaxzk.compact line 107 char 1`, `struct ClinicProfile<ownerId: Bytes<32>, name: Bytes<32>, urlImage: Bytes<64>, address: Bytes<64>, latitud: Bytes<20>, longitud: Bytes<20>, isOnline: Boolean>`, r);
+                    typeof t == `object` && t.currentQueryContext != null || w(`addClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 104 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`addClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 104 char 1`, `Bytes<32>`, n), typeof r == `object` && r.ownerId.buffer instanceof ArrayBuffer && r.ownerId.BYTES_PER_ELEMENT === 1 && r.ownerId.length === 32 && r.name.buffer instanceof ArrayBuffer && r.name.BYTES_PER_ELEMENT === 1 && r.name.length === 32 && r.address.buffer instanceof ArrayBuffer && r.address.BYTES_PER_ELEMENT === 1 && r.address.length === 64 && r.latitud.buffer instanceof ArrayBuffer && r.latitud.BYTES_PER_ELEMENT === 1 && r.latitud.length === 20 && r.longitud.buffer instanceof ArrayBuffer && r.longitud.BYTES_PER_ELEMENT === 1 && r.longitud.length === 20 && typeof r.isOnline == `boolean` || w(`addClinic`, `argument 2 (argument 3 as invoked from Typescript)`, `vaxzk.compact line 104 char 1`, `struct ClinicProfile<ownerId: Bytes<32>, name: Bytes<32>, address: Bytes<64>, latitud: Bytes<20>, longitud: Bytes<20>, isOnline: Boolean>`, r);
                     let i = {
                         ...t,
                         gasCost: pc()
@@ -13907,7 +13906,7 @@ perfecta armonía.`,
                 revokeClinic: (...e)=>{
                     if (e.length !== 2) throw new S(`revokeClinic: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`revokeClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 115 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`revokeClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 115 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`revokeClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 112 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`revokeClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 112 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: pc()
@@ -13933,7 +13932,7 @@ perfecta armonía.`,
                 addCertificateIssuer: (...e)=>{
                     if (e.length !== 2) throw new S(`addCertificateIssuer: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`addCertificateIssuer`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 122 char 1`, `CircuitContext`, t), typeof n != `object` && w(`addCertificateIssuer`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 122 char 1`, `struct CertIssuerInfo<uri: Opaque<"string">, name: Opaque<"string">, key: Opaque<"JubjubPoint">, verificationEndpoint: Opaque<"string">>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`addCertificateIssuer`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 119 char 1`, `CircuitContext`, t), typeof n != `object` && w(`addCertificateIssuer`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 119 char 1`, `struct CertIssuerInfo<uri: Opaque<"string">, name: Opaque<"string">, key: Opaque<"JubjubPoint">, verificationEndpoint: Opaque<"string">>`, n);
                     let r = {
                         ...t,
                         gasCost: pc()
@@ -13959,7 +13958,7 @@ perfecta armonía.`,
                 addVaccine: (...e)=>{
                     if (e.length !== 2) throw new S(`addVaccine: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`addVaccine`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 131 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 20 || w(`addVaccine`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 131 char 1`, `Bytes<20>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`addVaccine`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 128 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 20 || w(`addVaccine`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 128 char 1`, `Bytes<20>`, n);
                     let r = {
                         ...t,
                         gasCost: pc()
@@ -13985,7 +13984,7 @@ perfecta armonía.`,
                 delVaccine: (...e)=>{
                     if (e.length !== 2) throw new S(`delVaccine: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`delVaccine`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 137 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 20 || w(`delVaccine`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 137 char 1`, `Bytes<20>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`delVaccine`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 134 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 20 || w(`delVaccine`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 134 char 1`, `Bytes<20>`, n);
                     let r = {
                         ...t,
                         gasCost: pc()
@@ -14011,7 +14010,7 @@ perfecta armonía.`,
                 requestVaccineProof: (...e)=>{
                     if (e.length !== 2) throw new S(`requestVaccineProof: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`requestVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 144 char 1`, `CircuitContext`, t), typeof n == `object` && n.vaccine.buffer instanceof ArrayBuffer && n.vaccine.BYTES_PER_ELEMENT === 1 && n.vaccine.length === 20 && n.personalId.buffer instanceof ArrayBuffer && n.personalId.BYTES_PER_ELEMENT === 1 && n.personalId.length === 20 && typeof n.validUntil == `bigint` && n.validUntil >= 0n && n.validUntil <= 340282366920938463463374607431768211455n || w(`requestVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 144 char 1`, `struct VaccineProofRequest<vaccine: Bytes<20>, personalId: Bytes<20>, validUntil: Uint<0..340282366920938463463374607431768211456>>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`requestVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 141 char 1`, `CircuitContext`, t), typeof n == `object` && n.vaccine.buffer instanceof ArrayBuffer && n.vaccine.BYTES_PER_ELEMENT === 1 && n.vaccine.length === 20 && n.personalId.buffer instanceof ArrayBuffer && n.personalId.BYTES_PER_ELEMENT === 1 && n.personalId.length === 20 && typeof n.validUntil == `bigint` && n.validUntil >= 0n && n.validUntil <= 340282366920938463463374607431768211455n || w(`requestVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 141 char 1`, `struct VaccineProofRequest<vaccine: Bytes<20>, personalId: Bytes<20>, validUntil: Uint<0..340282366920938463463374607431768211456>>`, n);
                     let r = {
                         ...t,
                         gasCost: pc()
@@ -14037,7 +14036,7 @@ perfecta armonía.`,
                 submitVaccineProof: (...e)=>{
                     if (e.length !== 2) throw new S(`submitVaccineProof: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`submitVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 155 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`submitVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 155 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`submitVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 152 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`submitVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 152 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: pc()
@@ -14062,9 +14061,9 @@ perfecta armonía.`,
                 }
             }, this.impureCircuits = {
                 registerInviteAdmin: this.circuits.registerInviteAdmin,
+                registerInviteClinic: this.circuits.registerInviteClinic,
                 acceptInviteAdmin: this.circuits.acceptInviteAdmin,
                 revokeAdmin: this.circuits.revokeAdmin,
-                registerInviteClinic: this.circuits.registerInviteClinic,
                 addClinic: this.circuits.addClinic,
                 revokeClinic: this.circuits.revokeClinic,
                 addCertificateIssuer: this.circuits.addCertificateIssuer,
@@ -14074,9 +14073,9 @@ perfecta armonía.`,
                 submitVaccineProof: this.circuits.submitVaccineProof
             }, this.provableCircuits = {
                 registerInviteAdmin: this.circuits.registerInviteAdmin,
+                registerInviteClinic: this.circuits.registerInviteClinic,
                 acceptInviteAdmin: this.circuits.acceptInviteAdmin,
                 revokeAdmin: this.circuits.revokeAdmin,
-                registerInviteClinic: this.circuits.registerInviteClinic,
                 addClinic: this.circuits.addClinic,
                 revokeClinic: this.circuits.revokeClinic,
                 addCertificateIssuer: this.circuits.addCertificateIssuer,
@@ -14094,7 +14093,7 @@ perfecta armonía.`,
             if (!(`initialZswapLocalState` in t)) throw new S(`Contract state constructor: expected 'initialZswapLocalState' in argument 1 (as invoked from Typescript)`);
             if (typeof t.initialZswapLocalState != `object`) throw new S(`Contract state constructor: expected 'initialZswapLocalState' in argument 1 (as invoked from Typescript) to be an object`);
             let n = new on, r = N.newArray();
-            r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), n.data = new $t(r), n.setOperation(`registerInviteAdmin`, new rn), n.setOperation(`acceptInviteAdmin`, new rn), n.setOperation(`revokeAdmin`, new rn), n.setOperation(`registerInviteClinic`, new rn), n.setOperation(`addClinic`, new rn), n.setOperation(`revokeClinic`, new rn), n.setOperation(`addCertificateIssuer`, new rn), n.setOperation(`addVaccine`, new rn), n.setOperation(`delVaccine`, new rn), n.setOperation(`requestVaccineProof`, new rn), n.setOperation(`submitVaccineProof`, new rn);
+            r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), r = r.arrayPush(N.newNull()), n.data = new $t(r), n.setOperation(`registerInviteAdmin`, new rn), n.setOperation(`registerInviteClinic`, new rn), n.setOperation(`acceptInviteAdmin`, new rn), n.setOperation(`revokeAdmin`, new rn), n.setOperation(`addClinic`, new rn), n.setOperation(`revokeClinic`, new rn), n.setOperation(`addCertificateIssuer`, new rn), n.setOperation(`addVaccine`, new rn), n.setOperation(`delVaccine`, new rn), n.setOperation(`requestVaccineProof`, new rn), n.setOperation(`submitVaccineProof`, new rn);
             let i = fc(Ot(), t.initialZswapLocalState.coinPublicKey, n.data, t.initialPrivateState), a = {
                 input: {
                     value: [],
@@ -14109,59 +14108,12 @@ perfecta armonía.`,
                     push: {
                         storage: !1,
                         value: N.newCell({
-                            value: z.toValue(0n),
-                            alignment: z.alignment()
-                        }).encode()
-                    }
-                },
-                {
-                    push: {
-                        storage: !0,
-                        value: N.newMap(new Sn).encode()
-                    }
-                },
-                {
-                    ins: {
-                        cached: !1,
-                        n: 1
-                    }
-                }
-            ]), P(i, a, [
-                {
-                    push: {
-                        storage: !1,
-                        value: N.newCell({
-                            value: z.toValue(1n),
-                            alignment: z.alignment()
-                        }).encode()
-                    }
-                },
-                {
-                    push: {
-                        storage: !0,
-                        value: N.newCell({
                             value: R.toValue(0n),
                             alignment: R.alignment()
                         }).encode()
                     }
                 },
                 {
-                    ins: {
-                        cached: !1,
-                        n: 1
-                    }
-                }
-            ]), P(i, a, [
-                {
-                    push: {
-                        storage: !1,
-                        value: N.newCell({
-                            value: z.toValue(2n),
-                            alignment: z.alignment()
-                        }).encode()
-                    }
-                },
-                {
                     push: {
                         storage: !0,
                         value: N.newMap(new Sn).encode()
@@ -14178,40 +14130,18 @@ perfecta armonía.`,
                     push: {
                         storage: !1,
                         value: N.newCell({
-                            value: z.toValue(3n),
-                            alignment: z.alignment()
-                        }).encode()
-                    }
-                },
-                {
-                    push: {
-                        storage: !0,
-                        value: N.newCell({
-                            value: R.toValue(0n),
+                            value: R.toValue(1n),
                             alignment: R.alignment()
                         }).encode()
                     }
                 },
                 {
-                    ins: {
-                        cached: !1,
-                        n: 1
-                    }
-                }
-            ]), P(i, a, [
-                {
-                    push: {
-                        storage: !1,
-                        value: N.newCell({
-                            value: z.toValue(4n),
-                            alignment: z.alignment()
-                        }).encode()
-                    }
-                },
-                {
                     push: {
                         storage: !0,
-                        value: N.newMap(new Sn).encode()
+                        value: N.newCell({
+                            value: Tl.toValue(0n),
+                            alignment: Tl.alignment()
+                        }).encode()
                     }
                 },
                 {
@@ -14225,37 +14155,12 @@ perfecta armonía.`,
                     push: {
                         storage: !1,
                         value: N.newCell({
-                            value: z.toValue(5n),
-                            alignment: z.alignment()
-                        }).encode()
-                    }
-                },
-                {
-                    push: {
-                        storage: !0,
-                        value: N.newCell({
-                            value: R.toValue(0n),
+                            value: R.toValue(2n),
                             alignment: R.alignment()
                         }).encode()
                     }
                 },
                 {
-                    ins: {
-                        cached: !1,
-                        n: 1
-                    }
-                }
-            ]), P(i, a, [
-                {
-                    push: {
-                        storage: !1,
-                        value: N.newCell({
-                            value: z.toValue(6n),
-                            alignment: z.alignment()
-                        }).encode()
-                    }
-                },
-                {
                     push: {
                         storage: !0,
                         value: N.newMap(new Sn).encode()
@@ -14272,40 +14177,18 @@ perfecta armonía.`,
                     push: {
                         storage: !1,
                         value: N.newCell({
-                            value: z.toValue(7n),
-                            alignment: z.alignment()
-                        }).encode()
-                    }
-                },
-                {
-                    push: {
-                        storage: !0,
-                        value: N.newCell({
-                            value: R.toValue(0n),
+                            value: R.toValue(3n),
                             alignment: R.alignment()
                         }).encode()
                     }
                 },
                 {
-                    ins: {
-                        cached: !1,
-                        n: 1
-                    }
-                }
-            ]), P(i, a, [
-                {
-                    push: {
-                        storage: !1,
-                        value: N.newCell({
-                            value: z.toValue(8n),
-                            alignment: z.alignment()
-                        }).encode()
-                    }
-                },
-                {
                     push: {
                         storage: !0,
-                        value: N.newMap(new Sn).encode()
+                        value: N.newCell({
+                            value: Tl.toValue(0n),
+                            alignment: Tl.alignment()
+                        }).encode()
                     }
                 },
                 {
@@ -14319,65 +14202,18 @@ perfecta armonía.`,
                     push: {
                         storage: !1,
                         value: N.newCell({
-                            value: z.toValue(9n),
-                            alignment: z.alignment()
-                        }).encode()
-                    }
-                },
-                {
-                    push: {
-                        storage: !0,
-                        value: N.newMap(new Sn).encode()
-                    }
-                },
-                {
-                    ins: {
-                        cached: !1,
-                        n: 1
-                    }
-                }
-            ]), P(i, a, [
-                {
-                    push: {
-                        storage: !1,
-                        value: N.newCell({
-                            value: z.toValue(10n),
-                            alignment: z.alignment()
-                        }).encode()
-                    }
-                },
-                {
-                    push: {
-                        storage: !0,
-                        value: N.newMap(new Sn).encode()
-                    }
-                },
-                {
-                    ins: {
-                        cached: !1,
-                        n: 1
-                    }
-                }
-            ]), P(i, a, [
-                {
-                    push: {
-                        storage: !1,
-                        value: N.newCell({
-                            value: z.toValue(11n),
-                            alignment: z.alignment()
-                        }).encode()
-                    }
-                },
-                {
-                    push: {
-                        storage: !0,
-                        value: N.newCell({
-                            value: R.toValue(0n),
+                            value: R.toValue(4n),
                             alignment: R.alignment()
                         }).encode()
                     }
                 },
                 {
+                    push: {
+                        storage: !0,
+                        value: N.newMap(new Sn).encode()
+                    }
+                },
+                {
                     ins: {
                         cached: !1,
                         n: 1
@@ -14388,8 +14224,8 @@ perfecta armonía.`,
                     push: {
                         storage: !1,
                         value: N.newCell({
-                            value: z.toValue(12n),
-                            alignment: z.alignment()
+                            value: R.toValue(5n),
+                            alignment: R.alignment()
                         }).encode()
                     }
                 },
@@ -14397,8 +14233,8 @@ perfecta armonía.`,
                     push: {
                         storage: !0,
                         value: N.newCell({
-                            value: R.toValue(0n),
-                            alignment: R.alignment()
+                            value: Tl.toValue(0n),
+                            alignment: Tl.alignment()
                         }).encode()
                     }
                 },
@@ -14413,8 +14249,8 @@ perfecta armonía.`,
                     push: {
                         storage: !1,
                         value: N.newCell({
-                            value: z.toValue(13n),
-                            alignment: z.alignment()
+                            value: R.toValue(6n),
+                            alignment: R.alignment()
                         }).encode()
                     }
                 },
@@ -14435,8 +14271,171 @@ perfecta armonía.`,
                     push: {
                         storage: !1,
                         value: N.newCell({
-                            value: z.toValue(14n),
-                            alignment: z.alignment()
+                            value: R.toValue(7n),
+                            alignment: R.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    push: {
+                        storage: !0,
+                        value: N.newCell({
+                            value: Tl.toValue(0n),
+                            alignment: Tl.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    ins: {
+                        cached: !1,
+                        n: 1
+                    }
+                }
+            ]), P(i, a, [
+                {
+                    push: {
+                        storage: !1,
+                        value: N.newCell({
+                            value: R.toValue(8n),
+                            alignment: R.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    push: {
+                        storage: !0,
+                        value: N.newMap(new Sn).encode()
+                    }
+                },
+                {
+                    ins: {
+                        cached: !1,
+                        n: 1
+                    }
+                }
+            ]), P(i, a, [
+                {
+                    push: {
+                        storage: !1,
+                        value: N.newCell({
+                            value: R.toValue(9n),
+                            alignment: R.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    push: {
+                        storage: !0,
+                        value: N.newMap(new Sn).encode()
+                    }
+                },
+                {
+                    ins: {
+                        cached: !1,
+                        n: 1
+                    }
+                }
+            ]), P(i, a, [
+                {
+                    push: {
+                        storage: !1,
+                        value: N.newCell({
+                            value: R.toValue(10n),
+                            alignment: R.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    push: {
+                        storage: !0,
+                        value: N.newMap(new Sn).encode()
+                    }
+                },
+                {
+                    ins: {
+                        cached: !1,
+                        n: 1
+                    }
+                }
+            ]), P(i, a, [
+                {
+                    push: {
+                        storage: !1,
+                        value: N.newCell({
+                            value: R.toValue(11n),
+                            alignment: R.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    push: {
+                        storage: !0,
+                        value: N.newCell({
+                            value: Ll.toValue(0n),
+                            alignment: Ll.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    ins: {
+                        cached: !1,
+                        n: 1
+                    }
+                }
+            ]), P(i, a, [
+                {
+                    push: {
+                        storage: !1,
+                        value: N.newCell({
+                            value: R.toValue(12n),
+                            alignment: R.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    push: {
+                        storage: !0,
+                        value: N.newCell({
+                            value: Ll.toValue(0n),
+                            alignment: Ll.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    ins: {
+                        cached: !1,
+                        n: 1
+                    }
+                }
+            ]), P(i, a, [
+                {
+                    push: {
+                        storage: !1,
+                        value: N.newCell({
+                            value: R.toValue(13n),
+                            alignment: R.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    push: {
+                        storage: !0,
+                        value: N.newMap(new Sn).encode()
+                    }
+                },
+                {
+                    ins: {
+                        cached: !1,
+                        n: 1
+                    }
+                }
+            ]), P(i, a, [
+                {
+                    push: {
+                        storage: !1,
+                        value: N.newCell({
+                            value: R.toValue(14n),
+                            alignment: R.alignment()
                         }).encode()
                     }
                 },
@@ -14463,8 +14462,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(0n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(0n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -14506,8 +14505,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(11n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(11n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -14536,8 +14535,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(12n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(12n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -14566,8 +14565,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(9n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(9n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -14630,8 +14629,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(9n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(9n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -14694,8 +14693,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(9n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(9n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -14761,72 +14760,6 @@ perfecta armonía.`,
                     99,
                     32,
                     49,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0
-                ]),
-                urlImage: new Uint8Array([
-                    104,
-                    116,
-                    116,
-                    112,
-                    115,
-                    58,
-                    47,
-                    47,
-                    101,
-                    120,
-                    97,
-                    109,
-                    112,
-                    108,
-                    101,
-                    46,
-                    99,
-                    111,
-                    109,
-                    47,
-                    99,
-                    108,
-                    105,
-                    110,
-                    105,
-                    99,
-                    49,
-                    46,
-                    112,
-                    110,
-                    103,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
                     0,
                     0,
                     0,
@@ -14973,8 +14906,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(8n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(8n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -15080,72 +15013,6 @@ perfecta armonía.`,
                     0,
                     0
                 ]),
-                urlImage: new Uint8Array([
-                    104,
-                    116,
-                    116,
-                    112,
-                    115,
-                    58,
-                    47,
-                    47,
-                    101,
-                    120,
-                    97,
-                    109,
-                    112,
-                    108,
-                    101,
-                    46,
-                    99,
-                    111,
-                    109,
-                    47,
-                    99,
-                    108,
-                    105,
-                    110,
-                    105,
-                    99,
-                    50,
-                    50,
-                    46,
-                    112,
-                    110,
-                    103,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0
-                ]),
                 address: new Uint8Array([
                     49,
                     50,
@@ -15267,8 +15134,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(8n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(8n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -15346,8 +15213,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(4n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(4n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -15381,7 +15248,7 @@ perfecta armonía.`,
                     }
                 }
             ]);
-            let u = R.fromValue(P(i, a, [
+            let u = Ll.fromValue(P(i, a, [
                 {
                     dup: {
                         n: 0
@@ -15395,8 +15262,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(0n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(0n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -15415,8 +15282,8 @@ perfecta armonía.`,
                     push: {
                         storage: !1,
                         value: N.newCell({
-                            value: z.toValue(1n),
-                            alignment: z.alignment()
+                            value: R.toValue(1n),
+                            alignment: R.alignment()
                         }).encode()
                     }
                 },
@@ -15424,8 +15291,8 @@ perfecta armonía.`,
                     push: {
                         storage: !0,
                         value: N.newCell({
-                            value: R.toValue(u),
-                            alignment: R.alignment()
+                            value: Tl.toValue(u),
+                            alignment: Tl.alignment()
                         }).encode()
                     }
                 },
@@ -15436,7 +15303,7 @@ perfecta armonía.`,
                     }
                 }
             ]);
-            let d = R.fromValue(P(i, a, [
+            let d = Ll.fromValue(P(i, a, [
                 {
                     dup: {
                         n: 0
@@ -15450,63 +15317,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(4n),
-                                    alignment: z.alignment()
-                                }
-                            }
-                        ]
-                    }
-                },
-                `size`,
-                {
-                    popeq: {
-                        cached: !0,
-                        result: void 0
-                    }
-                }
-            ]).value);
-            P(i, a, [
-                {
-                    push: {
-                        storage: !1,
-                        value: N.newCell({
-                            value: z.toValue(5n),
-                            alignment: z.alignment()
-                        }).encode()
-                    }
-                },
-                {
-                    push: {
-                        storage: !0,
-                        value: N.newCell({
-                            value: R.toValue(d),
-                            alignment: R.alignment()
-                        }).encode()
-                    }
-                },
-                {
-                    ins: {
-                        cached: !1,
-                        n: 1
-                    }
-                }
-            ]);
-            let f = R.fromValue(P(i, a, [
-                {
-                    dup: {
-                        n: 0
-                    }
-                },
-                {
-                    idx: {
-                        cached: !1,
-                        pushPath: !1,
-                        path: [
-                            {
-                                tag: `value`,
-                                value: {
-                                    value: z.toValue(2n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(4n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -15525,8 +15337,8 @@ perfecta armonía.`,
                     push: {
                         storage: !1,
                         value: N.newCell({
-                            value: z.toValue(3n),
-                            alignment: z.alignment()
+                            value: R.toValue(5n),
+                            alignment: R.alignment()
                         }).encode()
                     }
                 },
@@ -15534,8 +15346,8 @@ perfecta armonía.`,
                     push: {
                         storage: !0,
                         value: N.newCell({
-                            value: R.toValue(f),
-                            alignment: R.alignment()
+                            value: Tl.toValue(d),
+                            alignment: Tl.alignment()
                         }).encode()
                     }
                 },
@@ -15552,13 +15364,13 @@ perfecta armonía.`,
             };
         }
         _transientHash_0(e) {
-            return Ys(Hl, e);
+            return Ys(Ul, e);
         }
         _persistentHash_0(e) {
-            return Xs(Bl, e);
+            return Xs(Vl, e);
         }
         _persistentHash_1(e) {
-            return Xs(Vl, e);
+            return Xs(Hl, e);
         }
         _ecAdd_0(e, t) {
             return Zs(e, t);
@@ -15572,15 +15384,15 @@ perfecta armonía.`,
         _ownPublicKey_0(e, t) {
             let n = oc(e);
             return t.privateTranscriptOutputs.push({
-                value: zl.toValue(n),
-                alignment: zl.alignment()
+                value: Bl.toValue(n),
+                alignment: Bl.alignment()
             }), n;
         }
         _getSchnorrReduction_0(e, t, n) {
-            let r = mc(Wl(e.currentQueryContext.state), e.currentPrivateState, e.currentQueryContext.address), [i, a] = this.witnesses.getSchnorrReduction(r, n);
+            let r = mc(Gl(e.currentQueryContext.state), e.currentPrivateState, e.currentQueryContext.address), [i, a] = this.witnesses.getSchnorrReduction(r, n);
             return e.currentPrivateState = i, Array.isArray(a) && a.length === 2 && typeof a[0] == `bigint` && a[0] >= 0 && a[0] <= Is && typeof a[1] == `bigint` && a[1] >= 0n && a[1] <= 452312848583266388373324160190187140051835877600158453279131187530910662655n || w(`getSchnorrReduction`, `return value`, `Schnorr.compact line 27 char 3`, `[Field, Uint<0..452312848583266388373324160190187140051835877600158453279131187530910662656>]`, a), t.privateTranscriptOutputs.push({
-                value: Rl.toValue(a),
-                alignment: Rl.alignment()
+                value: zl.toValue(a),
+                alignment: zl.alignment()
             }), a;
         }
         _schnorrVerifyVaxZk_0(e, t, n, r, i, a, o, s) {
@@ -15615,8 +15427,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(0n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(0n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -15656,8 +15468,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(4n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(4n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -15691,8 +15503,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(2n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(2n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -15726,7 +15538,7 @@ perfecta armonía.`,
                     }
                 }
             ]);
-            let r = R.fromValue(P(e, t, [
+            let r = Ll.fromValue(P(e, t, [
                 {
                     dup: {
                         n: 0
@@ -15740,8 +15552,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(2n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(2n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -15760,8 +15572,8 @@ perfecta armonía.`,
                     push: {
                         storage: !1,
                         value: N.newCell({
-                            value: z.toValue(3n),
-                            alignment: z.alignment()
+                            value: R.toValue(3n),
+                            alignment: R.alignment()
                         }).encode()
                     }
                 },
@@ -15769,8 +15581,109 @@ perfecta armonía.`,
                     push: {
                         storage: !0,
                         value: N.newCell({
-                            value: R.toValue(r),
+                            value: Tl.toValue(r),
+                            alignment: Tl.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    ins: {
+                        cached: !1,
+                        n: 1
+                    }
+                }
+            ]), [];
+        }
+        _registerInviteClinic_0(e, t, n) {
+            this._isAdmin_0(e, t), P(e, t, [
+                {
+                    idx: {
+                        cached: !1,
+                        pushPath: !0,
+                        path: [
+                            {
+                                tag: `value`,
+                                value: {
+                                    value: R.toValue(6n),
+                                    alignment: R.alignment()
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    push: {
+                        storage: !1,
+                        value: N.newCell({
+                            value: I.toValue(n),
+                            alignment: I.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    push: {
+                        storage: !0,
+                        value: N.newNull().encode()
+                    }
+                },
+                {
+                    ins: {
+                        cached: !1,
+                        n: 1
+                    }
+                },
+                {
+                    ins: {
+                        cached: !0,
+                        n: 1
+                    }
+                }
+            ]);
+            let r = Ll.fromValue(P(e, t, [
+                {
+                    dup: {
+                        n: 0
+                    }
+                },
+                {
+                    idx: {
+                        cached: !1,
+                        pushPath: !1,
+                        path: [
+                            {
+                                tag: `value`,
+                                value: {
+                                    value: R.toValue(6n),
+                                    alignment: R.alignment()
+                                }
+                            }
+                        ]
+                    }
+                },
+                `size`,
+                {
+                    popeq: {
+                        cached: !0,
+                        result: void 0
+                    }
+                }
+            ]).value);
+            return P(e, t, [
+                {
+                    push: {
+                        storage: !1,
+                        value: N.newCell({
+                            value: R.toValue(7n),
                             alignment: R.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    push: {
+                        storage: !0,
+                        value: N.newCell({
+                            value: Tl.toValue(r),
+                            alignment: Tl.alignment()
                         }).encode()
                     }
                 },
@@ -15797,8 +15710,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(2n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(2n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -15836,8 +15749,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(0n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(0n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -15868,8 +15781,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(0n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(0n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -15902,61 +15815,6 @@ perfecta armonía.`,
                         n: 1
                     }
                 }
-            ]);
-            let a = R.fromValue(P(e, t, [
-                {
-                    dup: {
-                        n: 0
-                    }
-                },
-                {
-                    idx: {
-                        cached: !1,
-                        pushPath: !1,
-                        path: [
-                            {
-                                tag: `value`,
-                                value: {
-                                    value: z.toValue(0n),
-                                    alignment: z.alignment()
-                                }
-                            }
-                        ]
-                    }
-                },
-                `size`,
-                {
-                    popeq: {
-                        cached: !0,
-                        result: void 0
-                    }
-                }
-            ]).value);
-            P(e, t, [
-                {
-                    push: {
-                        storage: !1,
-                        value: N.newCell({
-                            value: z.toValue(1n),
-                            alignment: z.alignment()
-                        }).encode()
-                    }
-                },
-                {
-                    push: {
-                        storage: !0,
-                        value: N.newCell({
-                            value: R.toValue(a),
-                            alignment: R.alignment()
-                        }).encode()
-                    }
-                },
-                {
-                    ins: {
-                        cached: !1,
-                        n: 1
-                    }
-                }
             ]), P(e, t, [
                 {
                     idx: {
@@ -15966,8 +15824,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(2n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(2n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -15994,7 +15852,7 @@ perfecta armonía.`,
                     }
                 }
             ]);
-            let o = R.fromValue(P(e, t, [
+            let a = Ll.fromValue(P(e, t, [
                 {
                     dup: {
                         n: 0
@@ -16008,8 +15866,63 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(2n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(0n),
+                                    alignment: R.alignment()
+                                }
+                            }
+                        ]
+                    }
+                },
+                `size`,
+                {
+                    popeq: {
+                        cached: !0,
+                        result: void 0
+                    }
+                }
+            ]).value);
+            P(e, t, [
+                {
+                    push: {
+                        storage: !1,
+                        value: N.newCell({
+                            value: R.toValue(1n),
+                            alignment: R.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    push: {
+                        storage: !0,
+                        value: N.newCell({
+                            value: Tl.toValue(a),
+                            alignment: Tl.alignment()
+                        }).encode()
+                    }
+                },
+                {
+                    ins: {
+                        cached: !1,
+                        n: 1
+                    }
+                }
+            ]);
+            let o = Ll.fromValue(P(e, t, [
+                {
+                    dup: {
+                        n: 0
+                    }
+                },
+                {
+                    idx: {
+                        cached: !1,
+                        pushPath: !1,
+                        path: [
+                            {
+                                tag: `value`,
+                                value: {
+                                    value: R.toValue(2n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -16028,8 +15941,8 @@ perfecta armonía.`,
                     push: {
                         storage: !1,
                         value: N.newCell({
-                            value: z.toValue(3n),
-                            alignment: z.alignment()
+                            value: R.toValue(3n),
+                            alignment: R.alignment()
                         }).encode()
                     }
                 },
@@ -16037,8 +15950,8 @@ perfecta armonía.`,
                     push: {
                         storage: !0,
                         value: N.newCell({
-                            value: R.toValue(o),
-                            alignment: R.alignment()
+                            value: Tl.toValue(o),
+                            alignment: Tl.alignment()
                         }).encode()
                     }
                 },
@@ -16062,8 +15975,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(0n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(0n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -16090,7 +16003,7 @@ perfecta armonía.`,
                     }
                 }
             ]);
-            let i = R.fromValue(P(e, t, [
+            let i = Ll.fromValue(P(e, t, [
                 {
                     dup: {
                         n: 0
@@ -16104,8 +16017,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(0n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(0n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -16124,118 +16037,17 @@ perfecta armonía.`,
                     push: {
                         storage: !1,
                         value: N.newCell({
-                            value: z.toValue(1n),
-                            alignment: z.alignment()
-                        }).encode()
-                    }
-                },
-                {
-                    push: {
-                        storage: !0,
-                        value: N.newCell({
-                            value: R.toValue(i),
+                            value: R.toValue(1n),
                             alignment: R.alignment()
                         }).encode()
                     }
                 },
                 {
-                    ins: {
-                        cached: !1,
-                        n: 1
-                    }
-                }
-            ]), [];
-        }
-        _registerInviteClinic_0(e, t, n) {
-            this._isClinic_0(e, t), P(e, t, [
-                {
-                    idx: {
-                        cached: !1,
-                        pushPath: !0,
-                        path: [
-                            {
-                                tag: `value`,
-                                value: {
-                                    value: z.toValue(6n),
-                                    alignment: z.alignment()
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    push: {
-                        storage: !1,
-                        value: N.newCell({
-                            value: I.toValue(n),
-                            alignment: I.alignment()
-                        }).encode()
-                    }
-                },
-                {
-                    push: {
-                        storage: !0,
-                        value: N.newNull().encode()
-                    }
-                },
-                {
-                    ins: {
-                        cached: !1,
-                        n: 1
-                    }
-                },
-                {
-                    ins: {
-                        cached: !0,
-                        n: 1
-                    }
-                }
-            ]);
-            let r = R.fromValue(P(e, t, [
-                {
-                    dup: {
-                        n: 0
-                    }
-                },
-                {
-                    idx: {
-                        cached: !1,
-                        pushPath: !1,
-                        path: [
-                            {
-                                tag: `value`,
-                                value: {
-                                    value: z.toValue(6n),
-                                    alignment: z.alignment()
-                                }
-                            }
-                        ]
-                    }
-                },
-                `size`,
-                {
-                    popeq: {
-                        cached: !0,
-                        result: void 0
-                    }
-                }
-            ]).value);
-            return P(e, t, [
-                {
-                    push: {
-                        storage: !1,
-                        value: N.newCell({
-                            value: z.toValue(7n),
-                            alignment: z.alignment()
-                        }).encode()
-                    }
-                },
-                {
                     push: {
                         storage: !0,
                         value: N.newCell({
-                            value: R.toValue(r),
-                            alignment: R.alignment()
+                            value: Tl.toValue(i),
+                            alignment: Tl.alignment()
                         }).encode()
                     }
                 },
@@ -16248,7 +16060,7 @@ perfecta armonía.`,
             ]), [];
         }
         _getAttestedCertProofWitness_0(e, t) {
-            let n = mc(Wl(e.currentQueryContext.state), e.currentPrivateState, e.currentQueryContext.address), [r, i] = this.witnesses.getAttestedCertProofWitness(n);
+            let n = mc(Gl(e.currentQueryContext.state), e.currentPrivateState, e.currentQueryContext.address), [r, i] = this.witnesses.getAttestedCertProofWitness(n);
             return e.currentPrivateState = r, typeof i == `object` && i.issuerId.buffer instanceof ArrayBuffer && i.issuerId.BYTES_PER_ELEMENT === 1 && i.issuerId.length === 32 && i.vaccine.buffer instanceof ArrayBuffer && i.vaccine.BYTES_PER_ELEMENT === 1 && i.vaccine.length === 20 && i.personalId.buffer instanceof ArrayBuffer && i.personalId.BYTES_PER_ELEMENT === 1 && i.personalId.length === 20 && typeof i.expirationDate == `bigint` && i.expirationDate >= 0n && i.expirationDate <= 340282366920938463463374607431768211455n && typeof i.issuerSignature == `object` && typeof i.issuerSignature.response == `bigint` && i.issuerSignature.response >= 0 && i.issuerSignature.response <= Is || w(`getAttestedCertProofWitness`, `return value`, `vaxzk.compact line 41 char 1`, `struct VaxZkProof<issuerId: Bytes<32>, vaccine: Bytes<20>, personalId: Bytes<20>, expirationDate: Uint<0..340282366920938463463374607431768211456>, issuerSignature: struct SchnorrSignature<announcement: Opaque<"JubjubPoint">, response: Field>>`, i), t.privateTranscriptOutputs.push({
                 value: jl.toValue(i),
                 alignment: jl.alignment()
@@ -16328,8 +16140,8 @@ perfecta armonía.`,
                     0,
                     0,
                     0
-                ]), `vaxzk.compact line 93 char 45`),
-                R.fromValue(P(e, t, [
+                ]), `vaxzk.compact line 90 char 45`),
+                Ll.fromValue(P(e, t, [
                     {
                         dup: {
                             n: 0
@@ -16343,8 +16155,8 @@ perfecta armonía.`,
                                 {
                                     tag: `value`,
                                     value: {
-                                        value: z.toValue(11n),
-                                        alignment: z.alignment()
+                                        value: R.toValue(11n),
+                                        alignment: R.alignment()
                                     }
                                 }
                             ]
@@ -16367,8 +16179,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(11n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(11n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -16425,8 +16237,8 @@ perfecta armonía.`,
                     0,
                     0,
                     0
-                ]), `vaxzk.compact line 101 char 45`),
-                R.fromValue(P(e, t, [
+                ]), `vaxzk.compact line 98 char 45`),
+                Ll.fromValue(P(e, t, [
                     {
                         dup: {
                             n: 0
@@ -16440,8 +16252,8 @@ perfecta armonía.`,
                                 {
                                     tag: `value`,
                                     value: {
-                                        value: z.toValue(12n),
-                                        alignment: z.alignment()
+                                        value: R.toValue(12n),
+                                        alignment: R.alignment()
                                     }
                                 }
                             ]
@@ -16464,8 +16276,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(12n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(12n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -16502,8 +16314,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(8n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(8n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -16534,8 +16346,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(8n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(8n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -16582,8 +16394,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(4n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(4n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -16633,8 +16445,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(8n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(8n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -16665,8 +16477,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(8n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(8n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -16711,8 +16523,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(10n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(10n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -16743,8 +16555,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(10n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(10n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -16797,8 +16609,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(9n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(9n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -16829,8 +16641,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(9n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(9n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -16880,8 +16692,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(9n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(9n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -16912,8 +16724,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(9n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(9n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -16958,8 +16770,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(13n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(13n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -16990,8 +16802,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(13n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(13n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -17044,8 +16856,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(13n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(13n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -17081,8 +16893,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(14n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(14n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -17120,8 +16932,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(10n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(10n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -17158,8 +16970,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(13n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(13n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -17200,8 +17012,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(10n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(10n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -17242,8 +17054,8 @@ perfecta armonía.`,
                             {
                                 tag: `value`,
                                 value: {
-                                    value: z.toValue(14n),
-                                    alignment: z.alignment()
+                                    value: R.toValue(14n),
+                                    alignment: R.alignment()
                                 }
                             }
                         ]
@@ -17288,7 +17100,7 @@ perfecta armonía.`,
             return !!e.every((e, n)=>t[n] === e);
         }
     };
-    function Wl(e) {
+    function Gl(e) {
         let t = e instanceof N ? e : e.state, n = {
             currentQueryContext: new gn(e instanceof N ? new $t(e) : e, Ot()),
             costModel: cn.initialCostModel()
@@ -17303,7 +17115,7 @@ perfecta armonía.`,
         };
         return {
             get totalAdmin () {
-                return R.fromValue(P(n, r, [
+                return Tl.fromValue(P(n, r, [
                     {
                         dup: {
                             n: 0
@@ -17317,8 +17129,8 @@ perfecta armonía.`,
                                 {
                                     tag: `value`,
                                     value: {
-                                        value: z.toValue(1n),
-                                        alignment: z.alignment()
+                                        value: R.toValue(1n),
+                                        alignment: R.alignment()
                                     }
                                 }
                             ]
@@ -17333,7 +17145,7 @@ perfecta armonía.`,
                 ]).value);
             },
             get totalInviteAdmin () {
-                return R.fromValue(P(n, r, [
+                return Tl.fromValue(P(n, r, [
                     {
                         dup: {
                             n: 0
@@ -17347,8 +17159,8 @@ perfecta armonía.`,
                                 {
                                     tag: `value`,
                                     value: {
-                                        value: z.toValue(3n),
-                                        alignment: z.alignment()
+                                        value: R.toValue(3n),
+                                        alignment: R.alignment()
                                     }
                                 }
                             ]
@@ -17362,130 +17174,8 @@ perfecta armonía.`,
                     }
                 ]).value);
             },
-            ownerClinics: {
-                isEmpty (...e) {
-                    if (e.length !== 0) throw new S(`isEmpty: expected 0 arguments, received ${e.length}`);
-                    return Dl.fromValue(P(n, r, [
-                        {
-                            dup: {
-                                n: 0
-                            }
-                        },
-                        {
-                            idx: {
-                                cached: !1,
-                                pushPath: !1,
-                                path: [
-                                    {
-                                        tag: `value`,
-                                        value: {
-                                            value: z.toValue(4n),
-                                            alignment: z.alignment()
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        `size`,
-                        {
-                            push: {
-                                storage: !1,
-                                value: N.newCell({
-                                    value: R.toValue(0n),
-                                    alignment: R.alignment()
-                                }).encode()
-                            }
-                        },
-                        `eq`,
-                        {
-                            popeq: {
-                                cached: !0,
-                                result: void 0
-                            }
-                        }
-                    ]).value);
-                },
-                size (...e) {
-                    if (e.length !== 0) throw new S(`size: expected 0 arguments, received ${e.length}`);
-                    return R.fromValue(P(n, r, [
-                        {
-                            dup: {
-                                n: 0
-                            }
-                        },
-                        {
-                            idx: {
-                                cached: !1,
-                                pushPath: !1,
-                                path: [
-                                    {
-                                        tag: `value`,
-                                        value: {
-                                            value: z.toValue(4n),
-                                            alignment: z.alignment()
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        `size`,
-                        {
-                            popeq: {
-                                cached: !0,
-                                result: void 0
-                            }
-                        }
-                    ]).value);
-                },
-                member (...e) {
-                    if (e.length !== 1) throw new S(`member: expected 1 argument, received ${e.length}`);
-                    let t = e[0];
-                    return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`member`, `argument 1`, `Invites.compact line 11 char 1`, `Bytes<32>`, t), Dl.fromValue(P(n, r, [
-                        {
-                            dup: {
-                                n: 0
-                            }
-                        },
-                        {
-                            idx: {
-                                cached: !1,
-                                pushPath: !1,
-                                path: [
-                                    {
-                                        tag: `value`,
-                                        value: {
-                                            value: z.toValue(4n),
-                                            alignment: z.alignment()
-                                        }
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            push: {
-                                storage: !1,
-                                value: N.newCell({
-                                    value: I.toValue(t),
-                                    alignment: I.alignment()
-                                }).encode()
-                            }
-                        },
-                        `member`,
-                        {
-                            popeq: {
-                                cached: !0,
-                                result: void 0
-                            }
-                        }
-                    ]).value);
-                },
-                [Symbol.iterator] (...e) {
-                    if (e.length !== 0) throw new S(`iter: expected 0 arguments, received ${e.length}`);
-                    return t.asArray()[4].asMap().keys().map((e)=>I.fromValue(e.value))[Symbol.iterator]();
-                }
-            },
             get totalOwnerClinics () {
-                return R.fromValue(P(n, r, [
+                return Tl.fromValue(P(n, r, [
                     {
                         dup: {
                             n: 0
@@ -17499,8 +17189,8 @@ perfecta armonía.`,
                                 {
                                     tag: `value`,
                                     value: {
-                                        value: z.toValue(5n),
-                                        alignment: z.alignment()
+                                        value: R.toValue(5n),
+                                        alignment: R.alignment()
                                     }
                                 }
                             ]
@@ -17515,7 +17205,7 @@ perfecta armonía.`,
                 ]).value);
             },
             get totalInviteClinic () {
-                return R.fromValue(P(n, r, [
+                return Tl.fromValue(P(n, r, [
                     {
                         dup: {
                             n: 0
@@ -17529,8 +17219,8 @@ perfecta armonía.`,
                                 {
                                     tag: `value`,
                                     value: {
-                                        value: z.toValue(7n),
-                                        alignment: z.alignment()
+                                        value: R.toValue(7n),
+                                        alignment: R.alignment()
                                     }
                                 }
                             ]
@@ -17561,8 +17251,8 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(8n),
-                                            alignment: z.alignment()
+                                            value: R.toValue(8n),
+                                            alignment: R.alignment()
                                         }
                                     }
                                 ]
@@ -17573,8 +17263,8 @@ perfecta armonía.`,
                             push: {
                                 storage: !1,
                                 value: N.newCell({
-                                    value: R.toValue(0n),
-                                    alignment: R.alignment()
+                                    value: Ll.toValue(0n),
+                                    alignment: Ll.alignment()
                                 }).encode()
                             }
                         },
@@ -17589,7 +17279,7 @@ perfecta armonía.`,
                 },
                 size (...e) {
                     if (e.length !== 0) throw new S(`size: expected 0 arguments, received ${e.length}`);
-                    return R.fromValue(P(n, r, [
+                    return Ll.fromValue(P(n, r, [
                         {
                             dup: {
                                 n: 0
@@ -17603,8 +17293,8 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(8n),
-                                            alignment: z.alignment()
+                                            value: R.toValue(8n),
+                                            alignment: R.alignment()
                                         }
                                     }
                                 ]
@@ -17636,8 +17326,8 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(8n),
-                                            alignment: z.alignment()
+                                            value: R.toValue(8n),
+                                            alignment: R.alignment()
                                         }
                                     }
                                 ]
@@ -17678,8 +17368,8 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(8n),
-                                            alignment: z.alignment()
+                                            value: R.toValue(8n),
+                                            alignment: R.alignment()
                                         }
                                     }
                                 ]
@@ -17737,8 +17427,8 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(9n),
-                                            alignment: z.alignment()
+                                            value: R.toValue(9n),
+                                            alignment: R.alignment()
                                         }
                                     }
                                 ]
@@ -17749,8 +17439,8 @@ perfecta armonía.`,
                             push: {
                                 storage: !1,
                                 value: N.newCell({
-                                    value: R.toValue(0n),
-                                    alignment: R.alignment()
+                                    value: Ll.toValue(0n),
+                                    alignment: Ll.alignment()
                                 }).encode()
                             }
                         },
@@ -17765,7 +17455,7 @@ perfecta armonía.`,
                 },
                 size (...e) {
                     if (e.length !== 0) throw new S(`size: expected 0 arguments, received ${e.length}`);
-                    return R.fromValue(P(n, r, [
+                    return Ll.fromValue(P(n, r, [
                         {
                             dup: {
                                 n: 0
@@ -17779,8 +17469,8 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(9n),
-                                            alignment: z.alignment()
+                                            value: R.toValue(9n),
+                                            alignment: R.alignment()
                                         }
                                     }
                                 ]
@@ -17812,8 +17502,8 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(9n),
-                                            alignment: z.alignment()
+                                            value: R.toValue(9n),
+                                            alignment: R.alignment()
                                         }
                                     }
                                 ]
@@ -17859,8 +17549,8 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(10n),
-                                            alignment: z.alignment()
+                                            value: R.toValue(10n),
+                                            alignment: R.alignment()
                                         }
                                     }
                                 ]
@@ -17871,8 +17561,8 @@ perfecta armonía.`,
                             push: {
                                 storage: !1,
                                 value: N.newCell({
-                                    value: R.toValue(0n),
-                                    alignment: R.alignment()
+                                    value: Ll.toValue(0n),
+                                    alignment: Ll.alignment()
                                 }).encode()
                             }
                         },
@@ -17887,7 +17577,7 @@ perfecta armonía.`,
                 },
                 size (...e) {
                     if (e.length !== 0) throw new S(`size: expected 0 arguments, received ${e.length}`);
-                    return R.fromValue(P(n, r, [
+                    return Ll.fromValue(P(n, r, [
                         {
                             dup: {
                                 n: 0
@@ -17901,8 +17591,8 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(10n),
-                                            alignment: z.alignment()
+                                            value: R.toValue(10n),
+                                            alignment: R.alignment()
                                         }
                                     }
                                 ]
@@ -17934,8 +17624,8 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(10n),
-                                            alignment: z.alignment()
+                                            value: R.toValue(10n),
+                                            alignment: R.alignment()
                                         }
                                     }
                                 ]
@@ -17976,8 +17666,8 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(10n),
-                                            alignment: z.alignment()
+                                            value: R.toValue(10n),
+                                            alignment: R.alignment()
                                         }
                                     }
                                 ]
@@ -18019,7 +17709,7 @@ perfecta armonía.`,
                 }
             },
             get issuerId () {
-                return R.fromValue(P(n, r, [
+                return Ll.fromValue(P(n, r, [
                     {
                         dup: {
                             n: 0
@@ -18033,8 +17723,8 @@ perfecta armonía.`,
                                 {
                                     tag: `value`,
                                     value: {
-                                        value: z.toValue(11n),
-                                        alignment: z.alignment()
+                                        value: R.toValue(11n),
+                                        alignment: R.alignment()
                                     }
                                 }
                             ]
@@ -18049,7 +17739,7 @@ perfecta armonía.`,
                 ]).value);
             },
             get proofReqId () {
-                return R.fromValue(P(n, r, [
+                return Ll.fromValue(P(n, r, [
                     {
                         dup: {
                             n: 0
@@ -18063,8 +17753,8 @@ perfecta armonía.`,
                                 {
                                     tag: `value`,
                                     value: {
-                                        value: z.toValue(12n),
-                                        alignment: z.alignment()
+                                        value: R.toValue(12n),
+                                        alignment: R.alignment()
                                     }
                                 }
                             ]
@@ -18095,8 +17785,8 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(13n),
-                                            alignment: z.alignment()
+                                            value: R.toValue(13n),
+                                            alignment: R.alignment()
                                         }
                                     }
                                 ]
@@ -18107,8 +17797,8 @@ perfecta armonía.`,
                             push: {
                                 storage: !1,
                                 value: N.newCell({
-                                    value: R.toValue(0n),
-                                    alignment: R.alignment()
+                                    value: Ll.toValue(0n),
+                                    alignment: Ll.alignment()
                                 }).encode()
                             }
                         },
@@ -18123,7 +17813,7 @@ perfecta armonía.`,
                 },
                 size (...e) {
                     if (e.length !== 0) throw new S(`size: expected 0 arguments, received ${e.length}`);
-                    return R.fromValue(P(n, r, [
+                    return Ll.fromValue(P(n, r, [
                         {
                             dup: {
                                 n: 0
@@ -18137,8 +17827,8 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(13n),
-                                            alignment: z.alignment()
+                                            value: R.toValue(13n),
+                                            alignment: R.alignment()
                                         }
                                     }
                                 ]
@@ -18170,8 +17860,8 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(13n),
-                                            alignment: z.alignment()
+                                            value: R.toValue(13n),
+                                            alignment: R.alignment()
                                         }
                                     }
                                 ]
@@ -18212,8 +17902,8 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(13n),
-                                            alignment: z.alignment()
+                                            value: R.toValue(13n),
+                                            alignment: R.alignment()
                                         }
                                     }
                                 ]
@@ -18271,8 +17961,8 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(14n),
-                                            alignment: z.alignment()
+                                            value: R.toValue(14n),
+                                            alignment: R.alignment()
                                         }
                                     }
                                 ]
@@ -18283,8 +17973,8 @@ perfecta armonía.`,
                             push: {
                                 storage: !1,
                                 value: N.newCell({
-                                    value: R.toValue(0n),
-                                    alignment: R.alignment()
+                                    value: Ll.toValue(0n),
+                                    alignment: Ll.alignment()
                                 }).encode()
                             }
                         },
@@ -18299,7 +17989,7 @@ perfecta armonía.`,
                 },
                 size (...e) {
                     if (e.length !== 0) throw new S(`size: expected 0 arguments, received ${e.length}`);
-                    return R.fromValue(P(n, r, [
+                    return Ll.fromValue(P(n, r, [
                         {
                             dup: {
                                 n: 0
@@ -18313,8 +18003,8 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(14n),
-                                            alignment: z.alignment()
+                                            value: R.toValue(14n),
+                                            alignment: R.alignment()
                                         }
                                     }
                                 ]
@@ -18346,8 +18036,8 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(14n),
-                                            alignment: z.alignment()
+                                            value: R.toValue(14n),
+                                            alignment: R.alignment()
                                         }
                                     }
                                 ]
@@ -18388,8 +18078,8 @@ perfecta armonía.`,
                                     {
                                         tag: `value`,
                                         value: {
-                                            value: z.toValue(14n),
-                                            alignment: z.alignment()
+                                            value: R.toValue(14n),
+                                            alignment: R.alignment()
                                         }
                                     }
                                 ]
@@ -18433,26 +18123,26 @@ perfecta armonía.`,
         };
     }
     new gn(new on().data, Ot());
-    var Gl = new Ul({
+    var Kl = new Wl({
         getSchnorrReduction: (...e)=>void 0,
         getAttestedCertProofWitness: (...e)=>void 0
-    }), Kl = {
+    }), ql = {
         schnorrChallengeVaxZk: (...e)=>{
             if (e.length !== 6) throw new S(`schnorrChallengeVaxZk: expected 6 arguments (as invoked from Typescript), received ${e.length}`);
             let t = e[0], n = e[1], r = e[2], i = e[3], a = e[4], o = e[5];
-            return r.buffer instanceof ArrayBuffer && r.BYTES_PER_ELEMENT === 1 && r.length === 20 || w(`schnorrChallengeVaxZk`, `argument 3`, `Schnorr.compact line 58 char 3`, `Bytes<20>`, r), i.buffer instanceof ArrayBuffer && i.BYTES_PER_ELEMENT === 1 && i.length === 20 || w(`schnorrChallengeVaxZk`, `argument 4`, `Schnorr.compact line 58 char 3`, `Bytes<20>`, i), typeof a == `bigint` && a >= 0n && a <= 340282366920938463463374607431768211455n || w(`schnorrChallengeVaxZk`, `argument 5`, `Schnorr.compact line 58 char 3`, `Uint<0..340282366920938463463374607431768211456>`, a), o.buffer instanceof ArrayBuffer && o.BYTES_PER_ELEMENT === 1 && o.length === 32 || w(`schnorrChallengeVaxZk`, `argument 6`, `Schnorr.compact line 58 char 3`, `Bytes<32>`, o), Gl._schnorrChallengeVaxZk_0(t, n, r, i, a, o);
+            return r.buffer instanceof ArrayBuffer && r.BYTES_PER_ELEMENT === 1 && r.length === 20 || w(`schnorrChallengeVaxZk`, `argument 3`, `Schnorr.compact line 58 char 3`, `Bytes<20>`, r), i.buffer instanceof ArrayBuffer && i.BYTES_PER_ELEMENT === 1 && i.length === 20 || w(`schnorrChallengeVaxZk`, `argument 4`, `Schnorr.compact line 58 char 3`, `Bytes<20>`, i), typeof a == `bigint` && a >= 0n && a <= 340282366920938463463374607431768211455n || w(`schnorrChallengeVaxZk`, `argument 5`, `Schnorr.compact line 58 char 3`, `Uint<0..340282366920938463463374607431768211456>`, a), o.buffer instanceof ArrayBuffer && o.BYTES_PER_ELEMENT === 1 && o.length === 32 || w(`schnorrChallengeVaxZk`, `argument 6`, `Schnorr.compact line 58 char 3`, `Bytes<32>`, o), Kl._schnorrChallengeVaxZk_0(t, n, r, i, a, o);
         },
         getShieldedId: (...e)=>{
             if (e.length !== 1) throw new S(`getShieldedId: expected 1 argument (as invoked from Typescript), received ${e.length}`);
             let t = e[0];
-            return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`getShieldedId`, `argument 1`, `vaxzk.compact line 87 char 1`, `Bytes<32>`, t), Gl._getShieldedId_0(t);
+            return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`getShieldedId`, `argument 1`, `vaxzk.compact line 84 char 1`, `Bytes<32>`, t), Kl._getShieldedId_0(t);
         }
-    }, ql, Jl = (e)=>{
-        ql = e;
-    }, Yl = ()=>{
-        if (ql === void 0) throw Error(`Network ID has not been configured. Call setNetworkId() before any wallet or contract operation.`);
-        return ql;
-    }, Xl = (e)=>typeof e == `function`, B = function(e, t) {
+    }, Jl, Yl = (e)=>{
+        Jl = e;
+    }, Xl = ()=>{
+        if (Jl === void 0) throw Error(`Network ID has not been configured. Call setNetworkId() before any wallet or contract operation.`);
+        return Jl;
+    }, Zl = (e)=>typeof e == `function`, z = function(e, t) {
         if (typeof e == `function`) return function() {
             return e(arguments) ? t.apply(this, arguments) : (e)=>t(e, ...arguments);
         };
@@ -18493,8 +18183,8 @@ perfecta armonía.`,
                     };
                 };
         }
-    }, Zl = (e)=>e, Ql = (e)=>()=>e, $l = Ql(!0), eu = Ql(!1), tu = Ql(void 0), nu = tu;
-    function V(e, t, n, r, i, a, o, s, c) {
+    }, Ql = (e)=>e, $l = (e)=>()=>e, eu = $l(!0), tu = $l(!1), nu = $l(void 0), ru = nu;
+    function B(e, t, n, r, i, a, o, s, c) {
         switch(arguments.length){
             case 1:
                 return e;
@@ -18522,7 +18212,7 @@ perfecta armonía.`,
                 }
         }
     }
-    var ru = (e, t)=>{
+    var iu = (e, t)=>{
         switch(t.length){
             case 0:
                 return e;
@@ -18551,17 +18241,17 @@ perfecta armonía.`,
                     return n;
                 }
         }
-    }, iu = (e)=>(t, n)=>t === n || e(t, n), au = (e, t)=>e === t, ou = ()=>au, su = ou(), cu = ou(), lu = B(2, (e, t)=>iu((n, r)=>e(t(n), t(r)))), uu = lu(cu, (e)=>e.getTime()), du = (e)=>iu((t, n)=>{
+    }, au = (e)=>(t, n)=>t === n || e(t, n), ou = (e, t)=>e === t, su = ()=>ou, cu = su(), lu = su(), uu = z(2, (e, t)=>au((n, r)=>e(t(n), t(r)))), du = uu(lu, (e)=>e.getTime()), fu = (e)=>au((t, n)=>{
             if (t.length !== n.length) return !1;
             for(let r = 0; r < t.length; r++)if (!e(t[r], n[r])) return !1;
             return !0;
-        }), fu = (e)=>{
+        }), pu = (e)=>{
         let t = Object.keys(e);
-        return iu((n, r)=>{
+        return au((n, r)=>{
             for (let i of t)if (!e[i](n[i], r[i])) return !1;
             return !0;
         });
-    }, pu = `effect/GlobalValue`, mu, hu = (e, t)=>(mu ||= (globalThis[pu] ??= new Map, globalThis[pu]), mu.has(e) || mu.set(e, t()), mu.get(e)), gu = (e)=>!!e, _u = (e)=>typeof e == `string`, vu = (e)=>typeof e == `number`, yu = (e)=>typeof e == `boolean`, bu = (e)=>typeof e == `bigint`, xu = (e)=>typeof e == `symbol`, Su = Xl, Cu = (e)=>e === void 0, wu = (e)=>!1, Tu = (e)=>typeof e == `object` && !!e, Eu = (e)=>Tu(e) || Su(e), Du = B(2, (e, t)=>Eu(e) && t in e), Ou = B(2, (e, t)=>Du(e, `_tag`) && e._tag === t), ku = (e)=>e == null, Au = (e)=>e != null, ju = (e)=>e instanceof Uint8Array, Mu = (e)=>e instanceof Date, Nu = (e)=>typeof e == `string` || Du(e, Symbol.iterator), Pu = (e)=>Tu(e) && !Array.isArray(e), Fu = (e)=>Du(e, `then`) && Su(e.then), Iu = (e)=>`BUG: ${e} - please report an issue at https://github.com/Effect-TS/effect/issues`, Lu = class e {
+    }, mu = `effect/GlobalValue`, hu, gu = (e, t)=>(hu ||= (globalThis[mu] ??= new Map, globalThis[mu]), hu.has(e) || hu.set(e, t()), hu.get(e)), _u = (e)=>!!e, vu = (e)=>typeof e == `string`, yu = (e)=>typeof e == `number`, bu = (e)=>typeof e == `boolean`, xu = (e)=>typeof e == `bigint`, Su = (e)=>typeof e == `symbol`, Cu = Zl, wu = (e)=>e === void 0, Tu = (e)=>!1, Eu = (e)=>typeof e == `object` && !!e, Du = (e)=>Eu(e) || Cu(e), Ou = z(2, (e, t)=>Du(e) && t in e), ku = z(2, (e, t)=>Ou(e, `_tag`) && e._tag === t), Au = (e)=>e == null, ju = (e)=>e != null, Mu = (e)=>e instanceof Uint8Array, Nu = (e)=>e instanceof Date, Pu = (e)=>typeof e == `string` || Ou(e, Symbol.iterator), Fu = (e)=>Eu(e) && !Array.isArray(e), Iu = (e)=>Ou(e, `then`) && Cu(e.then), Lu = (e)=>`BUG: ${e} - please report an issue at https://github.com/Effect-TS/effect/issues`, Ru = class e {
         self;
         called = !1;
         constructor(e){
@@ -18588,15 +18278,15 @@ perfecta armonía.`,
         [Symbol.iterator]() {
             return new e(this.self);
         }
-    }, Ru = 335903614, zu = 4150755663, Bu = 1481765933, Vu = 1284865837, Hu = 9007199254740992, Uu = 134217728, Wu = class {
+    }, zu = 335903614, Bu = 4150755663, Vu = 1481765933, Hu = 1284865837, Uu = 9007199254740992, Wu = 134217728, Gu = class {
         _state;
         constructor(e, t, n, r){
-            return ku(t) && ku(e) ? (t = Math.random() * 4294967295 >>> 0, e = 0) : ku(t) && (t = e, e = 0), ku(r) && ku(n) ? (r = this._state ? this._state[3] : zu, n = this._state ? this._state[2] : Ru) : ku(r) && (r = n, n = 0), this._state = new Int32Array([
+            return Au(t) && Au(e) ? (t = Math.random() * 4294967295 >>> 0, e = 0) : Au(t) && (t = e, e = 0), Au(r) && Au(n) ? (r = this._state ? this._state[3] : Bu, n = this._state ? this._state[2] : zu) : Au(r) && (r = n, n = 0), this._state = new Int32Array([
                 0,
                 0,
                 n >>> 0,
                 ((r || 0) | 1) >>> 0
-            ]), this._next(), Ku(this._state, this._state[0], this._state[1], e >>> 0, t >>> 0), this._next(), this;
+            ]), this._next(), qu(this._state, this._state[0], this._state[1], e >>> 0, t >>> 0), this._next(), this;
         }
         getState() {
             return [
@@ -18614,44 +18304,44 @@ perfecta armonía.`,
         }
         number() {
             let e = (this._next() & 67108863) * 1, t = (this._next() & 134217727) * 1;
-            return (e * Uu + t) / Hu;
+            return (e * Wu + t) / Uu;
         }
         _next() {
             let e = this._state[0] >>> 0, t = this._state[1] >>> 0;
-            Gu(this._state, e, t, Bu, Vu), Ku(this._state, this._state[0], this._state[1], this._state[2], this._state[3]);
+            Ku(this._state, e, t, Vu, Hu), qu(this._state, this._state[0], this._state[1], this._state[2], this._state[3]);
             let n = e >>> 18, r = (t >>> 18 | e << 14) >>> 0;
             n = (n ^ e) >>> 0, r = (r ^ t) >>> 0;
             let i = (r >>> 27 | n << 5) >>> 0, a = e >>> 27, o = (-a >>> 0 & 31) >>> 0;
             return (i >>> a | i << o) >>> 0;
         }
     };
-    function Gu(e, t, n, r, i) {
+    function Ku(e, t, n, r, i) {
         let a = (n >>> 16) * (i & 65535) >>> 0, o = (n & 65535) * (i >>> 16) >>> 0, s = (n & 65535) * (i & 65535) >>> 0, c = (n >>> 16) * (i >>> 16) + ((o >>> 16) + (a >>> 16)) >>> 0;
         o = o << 16 >>> 0, s = s + o >>> 0, s >>> 0 < o >>> 0 && (c = c + 1 >>> 0), a = a << 16 >>> 0, s = s + a >>> 0, s >>> 0 < a >>> 0 && (c = c + 1 >>> 0), c = c + Math.imul(n, r) >>> 0, c = c + Math.imul(t, i) >>> 0, e[0] = c, e[1] = s;
     }
-    function Ku(e, t, n, r, i) {
+    function qu(e, t, n, r, i) {
         let a = t + r >>> 0, o = n + i >>> 0;
         o >>> 0 < n >>> 0 && (a = a + 1 | 0), e[0] = a, e[1] = o;
     }
-    var qu = Symbol.for(`effect/Utils/YieldWrap`), Ju = class {
+    var Ju = Symbol.for(`effect/Utils/YieldWrap`), Yu = class {
         #e;
         constructor(e){
             this.#e = e;
         }
-        [qu]() {
+        [Ju]() {
             return this.#e;
         }
     };
-    function Yu(e) {
-        if (typeof e == `object` && e && qu in e) return e[qu]();
-        throw Error(Iu(`yieldWrapGet`));
+    function Xu(e) {
+        if (typeof e == `object` && e && Ju in e) return e[Ju]();
+        throw Error(Lu(`yieldWrapGet`));
     }
-    var Xu = hu(`effect/Utils/isStructuralRegion`, ()=>({
+    var Zu = gu(`effect/Utils/isStructuralRegion`, ()=>({
             enabled: !1,
             tester: void 0
-        })), Zu = {
+        })), Qu = {
         effect_internal_function: (e)=>e()
-    }, Qu = Zu.effect_internal_function(()=>Error().stack)?.includes(`effect_internal_function`) === !0 ? Zu.effect_internal_function : {
+    }, $u = Qu.effect_internal_function(()=>Error().stack)?.includes(`effect_internal_function`) === !0 ? Qu.effect_internal_function : {
         effect_internal_function: (e)=>{
             try {
                 return e();
@@ -18659,49 +18349,49 @@ perfecta armonía.`,
         }
     }.effect_internal_function;
     (function*() {}).constructor;
-    var $u = hu(Symbol.for(`effect/Hash/randomHashCache`), ()=>new WeakMap), ed = Symbol.for(`effect/Hash`), td = (e)=>{
-        if (Xu.enabled === !0) return 0;
+    var ed = gu(Symbol.for(`effect/Hash/randomHashCache`), ()=>new WeakMap), td = Symbol.for(`effect/Hash`), nd = (e)=>{
+        if (Zu.enabled === !0) return 0;
         switch(typeof e){
             case `number`:
-                return od(e);
-            case `bigint`:
-                return sd(e.toString(10));
-            case `boolean`:
-                return sd(String(e));
-            case `symbol`:
-                return sd(String(e));
-            case `string`:
                 return sd(e);
+            case `bigint`:
+                return cd(e.toString(10));
+            case `boolean`:
+                return cd(String(e));
+            case `symbol`:
+                return cd(String(e));
+            case `string`:
+                return cd(e);
             case `undefined`:
-                return sd(`undefined`);
+                return cd(`undefined`);
             case `function`:
             case `object`:
-                return e === null ? sd(`null`) : e instanceof Date ? Number.isNaN(e.getTime()) ? sd(`Invalid Date`) : td(e.toISOString()) : e instanceof URL ? td(e.href) : ad(e) ? e[ed]() : nd(e);
+                return e === null ? cd(`null`) : e instanceof Date ? Number.isNaN(e.getTime()) ? cd(`Invalid Date`) : nd(e.toISOString()) : e instanceof URL ? nd(e.href) : od(e) ? e[td]() : rd(e);
             default:
                 throw Error(`BUG: unhandled typeof ${typeof e} - please report an issue at https://github.com/Effect-TS/effect/issues`);
         }
-    }, nd = (e)=>($u.has(e) || $u.set(e, od(Math.floor(Math.random() * (2 ** 53 - 1)))), $u.get(e)), rd = (e)=>(t)=>t * 53 ^ e, id = (e)=>e & 3221225471 | e >>> 1 & 1073741824, ad = (e)=>Du(e, ed), od = (e)=>{
+    }, rd = (e)=>(ed.has(e) || ed.set(e, sd(Math.floor(Math.random() * (2 ** 53 - 1)))), ed.get(e)), id = (e)=>(t)=>t * 53 ^ e, ad = (e)=>e & 3221225471 | e >>> 1 & 1073741824, od = (e)=>Ou(e, td), sd = (e)=>{
         if (e !== e || e === 1 / 0) return 0;
         let t = e | 0;
         for(t !== e && (t ^= e * 4294967295); e > 4294967295;)t ^= e /= 4294967295;
-        return id(t);
-    }, sd = (e)=>{
+        return ad(t);
+    }, cd = (e)=>{
         let t = 5381, n = e.length;
         for(; n;)t = t * 33 ^ e.charCodeAt(--n);
-        return id(t);
-    }, cd = (e, t)=>{
+        return ad(t);
+    }, ld = (e, t)=>{
         let n = 12289;
-        for(let r = 0; r < t.length; r++)n ^= V(sd(t[r]), rd(td(e[t[r]])));
-        return id(n);
-    }, ld = (e)=>cd(e, Object.keys(e)), ud = (e)=>{
+        for(let r = 0; r < t.length; r++)n ^= B(cd(t[r]), id(nd(e[t[r]])));
+        return ad(n);
+    }, ud = (e)=>ld(e, Object.keys(e)), dd = (e)=>{
         let t = 6151;
-        for(let n = 0; n < e.length; n++)t = V(t, rd(td(e[n])));
-        return id(t);
-    }, dd = function() {
+        for(let n = 0; n < e.length; n++)t = B(t, id(nd(e[n])));
+        return ad(t);
+    }, fd = function() {
         if (arguments.length === 1) {
             let e = arguments[0];
             return function(t) {
-                return Object.defineProperty(e, ed, {
+                return Object.defineProperty(e, td, {
                     value () {
                         return t;
                     },
@@ -18710,60 +18400,60 @@ perfecta armonía.`,
             };
         }
         let e = arguments[0], t = arguments[1];
-        return Object.defineProperty(e, ed, {
+        return Object.defineProperty(e, td, {
             value () {
                 return t;
             },
             enumerable: !1
         }), t;
-    }, fd = Symbol.for(`effect/Equal`);
-    function pd() {
-        return arguments.length === 1 ? (e)=>md(e, arguments[0]) : md(arguments[0], arguments[1]);
+    }, pd = Symbol.for(`effect/Equal`);
+    function md() {
+        return arguments.length === 1 ? (e)=>hd(e, arguments[0]) : hd(arguments[0], arguments[1]);
     }
-    function md(e, t) {
+    function hd(e, t) {
         if (e === t) return !0;
         let n = typeof e;
         if (n !== typeof t) return !1;
         if (n === `object` || n === `function`) {
             if (e !== null && t !== null) {
-                if (hd(e) && hd(t)) return td(e) === td(t) && e[fd](t) ? !0 : Xu.enabled && Xu.tester ? Xu.tester(e, t) : !1;
+                if (gd(e) && gd(t)) return nd(e) === nd(t) && e[pd](t) ? !0 : Zu.enabled && Zu.tester ? Zu.tester(e, t) : !1;
                 if (e instanceof Date && t instanceof Date) {
                     let n = e.getTime(), r = t.getTime();
                     return n === r || Number.isNaN(n) && Number.isNaN(r);
                 } else if (e instanceof URL && t instanceof URL) return e.href === t.href;
             }
-            if (Xu.enabled) {
+            if (Zu.enabled) {
                 if (e === null || t === null) return !1;
-                if (Array.isArray(e) && Array.isArray(t)) return e.length === t.length && e.every((e, n)=>md(e, t[n]));
+                if (Array.isArray(e) && Array.isArray(t)) return e.length === t.length && e.every((e, n)=>hd(e, t[n]));
                 if (Object.getPrototypeOf(e) === Object.prototype && Object.getPrototypeOf(t) === Object.prototype) {
                     let n = Object.keys(e), r = Object.keys(t);
                     if (n.length === r.length) {
-                        for (let r of n)if (!(r in t && md(e[r], t[r]))) return Xu.tester ? Xu.tester(e, t) : !1;
+                        for (let r of n)if (!(r in t && hd(e[r], t[r]))) return Zu.tester ? Zu.tester(e, t) : !1;
                         return !0;
                     }
                 }
-                return Xu.tester ? Xu.tester(e, t) : !1;
+                return Zu.tester ? Zu.tester(e, t) : !1;
             }
         }
-        return Xu.enabled && Xu.tester ? Xu.tester(e, t) : !1;
+        return Zu.enabled && Zu.tester ? Zu.tester(e, t) : !1;
     }
-    var hd = (e)=>Du(e, fd), gd = ()=>pd, _d = Symbol.for(`nodejs.util.inspect.custom`), vd = (e)=>{
+    var gd = (e)=>Ou(e, pd), _d = ()=>md, vd = Symbol.for(`nodejs.util.inspect.custom`), yd = (e)=>{
         try {
-            if (Du(e, `toJSON`) && Su(e.toJSON) && e.toJSON.length === 0) return e.toJSON();
-            if (Array.isArray(e)) return e.map(vd);
+            if (Ou(e, `toJSON`) && Cu(e.toJSON) && e.toJSON.length === 0) return e.toJSON();
+            if (Array.isArray(e)) return e.map(yd);
         } catch  {
             return {};
         }
-        return jd(e);
-    }, yd = `[Circular]`;
-    function bd(e) {
+        return Md(e);
+    }, bd = `[Circular]`;
+    function xd(e) {
         try {
             return e.toISOString();
         } catch  {
             return `Invalid Date`;
         }
     }
-    function xd(e) {
+    function Sd(e) {
         try {
             let t = e.toString();
             return typeof t == `string` ? t : String(t);
@@ -18771,11 +18461,11 @@ perfecta armonía.`,
             return `[toString threw]`;
         }
     }
-    function Sd(e) {
-        return _u(e) ? JSON.stringify(e) : String(e);
+    function Cd(e) {
+        return vu(e) ? JSON.stringify(e) : String(e);
     }
-    function Cd(e, t) {
-        let n = t?.space ?? 0, r = new WeakSet, i = n ? vu(n) ? ` `.repeat(n) : n : ``, a = (e)=>i.repeat(e), o = (e, t)=>{
+    function wd(e, t) {
+        let n = t?.space ?? 0, r = new WeakSet, i = n ? yu(n) ? ` `.repeat(n) : n : ``, a = (e)=>i.repeat(e), o = (e, t)=>{
             let n = e?.constructor;
             return n && n !== Object.prototype.constructor && n.name ? `${n.name}(${t})` : t;
         }, s = (e)=>{
@@ -18789,64 +18479,64 @@ perfecta armonía.`,
         };
         function c(e, n = 0) {
             if (Array.isArray(e)) {
-                if (r.has(e)) return yd;
+                if (r.has(e)) return bd;
                 if (r.add(e), !i || e.length <= 1) return `[${e.map((e)=>c(e, n)).join(`,`)}]`;
                 let t = e.map((e)=>c(e, n + 1)).join(`,
 ` + a(n + 1));
                 return `[\n${a(n + 1)}${t}\n${a(n)}]`;
             }
-            if (Mu(e)) return bd(e);
-            if (!t?.ignoreToString && Du(e, `toString`) && Su(e.toString) && e.toString !== Object.prototype.toString && e.toString !== Array.prototype.toString) {
-                let t = xd(e);
+            if (Nu(e)) return xd(e);
+            if (!t?.ignoreToString && Ou(e, `toString`) && Cu(e.toString) && e.toString !== Object.prototype.toString && e.toString !== Array.prototype.toString) {
+                let t = Sd(e);
                 return e instanceof Error && e.cause ? `${t} (cause: ${c(e.cause, n)})` : t;
             }
-            if (_u(e)) return JSON.stringify(e);
-            if (vu(e) || e == null || yu(e) || xu(e)) return String(e);
-            if (bu(e)) return String(e) + `n`;
-            if (e instanceof Set || e instanceof Map) return r.has(e) ? yd : (r.add(e), `${e.constructor.name}(${c(Array.from(e), n)})`);
-            if (Eu(e)) {
-                if (r.has(e)) return yd;
+            if (vu(e)) return JSON.stringify(e);
+            if (yu(e) || e == null || bu(e) || Su(e)) return String(e);
+            if (xu(e)) return String(e) + `n`;
+            if (e instanceof Set || e instanceof Map) return r.has(e) ? bd : (r.add(e), `${e.constructor.name}(${c(Array.from(e), n)})`);
+            if (Du(e)) {
+                if (r.has(e)) return bd;
                 r.add(e);
                 let t = s(e);
-                return !i || t.length <= 1 ? o(e, `{${t.map((t)=>`${Sd(t)}:${c(e[t], n)}`).join(`,`)}}`) : o(e, `{\n${t.map((t)=>`${a(n + 1)}${Sd(t)}: ${c(e[t], n + 1)}`).join(`,
+                return !i || t.length <= 1 ? o(e, `{${t.map((t)=>`${Cd(t)}:${c(e[t], n)}`).join(`,`)}}`) : o(e, `{\n${t.map((t)=>`${a(n + 1)}${Cd(t)}: ${c(e[t], n + 1)}`).join(`,
 `)}\n${a(n)}}`);
             }
             return String(e);
         }
         return c(e, 0);
     }
-    var wd = (e)=>JSON.stringify(e, null, 2), Td = (e, t = 2)=>{
+    var Td = (e)=>JSON.stringify(e, null, 2), Ed = (e, t = 2)=>{
         if (typeof e == `string`) return e;
         try {
-            return typeof e == `object` ? Ed(e, t) : String(e);
+            return typeof e == `object` ? Dd(e, t) : String(e);
         } catch  {
             return String(e);
         }
-    }, Ed = (e, t)=>{
-        let n = [], r = JSON.stringify(e, (e, t)=>typeof t == `object` && t ? n.includes(t) ? void 0 : n.push(t) && (kd.fiberRefs !== void 0 && Od(t) ? t[Dd](kd.fiberRefs) : t) : t, t);
+    }, Dd = (e, t)=>{
+        let n = [], r = JSON.stringify(e, (e, t)=>typeof t == `object` && t ? n.includes(t) ? void 0 : n.push(t) && (Ad.fiberRefs !== void 0 && kd(t) ? t[Od](Ad.fiberRefs) : t) : t, t);
         return n = void 0, r;
-    }, Dd = Symbol.for(`effect/Inspectable/Redactable`), Od = (e)=>typeof e == `object` && !!e && Dd in e, kd = hu(`effect/Inspectable/redactableState`, ()=>({
+    }, Od = Symbol.for(`effect/Inspectable/Redactable`), kd = (e)=>typeof e == `object` && !!e && Od in e, Ad = gu(`effect/Inspectable/redactableState`, ()=>({
             fiberRefs: void 0
-        })), Ad = (e, t)=>{
-        let n = kd.fiberRefs;
-        kd.fiberRefs = e;
+        })), jd = (e, t)=>{
+        let n = Ad.fiberRefs;
+        Ad.fiberRefs = e;
         try {
             return t();
         } finally{
-            kd.fiberRefs = n;
+            Ad.fiberRefs = n;
         }
-    }, jd = (e)=>Od(e) && kd.fiberRefs !== void 0 ? e[Dd](kd.fiberRefs) : e, Md = `Async`, Nd = `Commit`, Pd = `Failure`, Fd = `OnFailure`, Id = `OnSuccess`, Ld = `OnSuccessAndFailure`, Rd = `Success`, zd = `Sync`, Bd = `UpdateRuntimeFlags`, Vd = `While`, Hd = `Iterator`, Ud = `WithRuntime`, Wd = `Yield`, Gd = `RevertFlags`, Kd = `3.21.0`, qd = ()=>Kd, Jd = Symbol.for(`effect/Effect`), Yd = Symbol.for(`effect/Stream`), Xd = Symbol.for(`effect/Sink`), Zd = Symbol.for(`effect/Channel`), Qd = {
+    }, Md = (e)=>kd(e) && Ad.fiberRefs !== void 0 ? e[Od](Ad.fiberRefs) : e, Nd = `Async`, Pd = `Commit`, Fd = `Failure`, Id = `OnFailure`, Ld = `OnSuccess`, Rd = `OnSuccessAndFailure`, zd = `Success`, Bd = `Sync`, Vd = `UpdateRuntimeFlags`, Hd = `While`, Ud = `Iterator`, Wd = `WithRuntime`, Gd = `Yield`, Kd = `RevertFlags`, qd = `3.21.0`, Jd = ()=>qd, Yd = Symbol.for(`effect/Effect`), Xd = Symbol.for(`effect/Stream`), Zd = Symbol.for(`effect/Sink`), Qd = Symbol.for(`effect/Channel`), $d = {
         _R: (e)=>e,
         _E: (e)=>e,
         _A: (e)=>e,
-        _V: qd()
-    }, $d = {
+        _V: Jd()
+    }, ef = {
         _A: (e)=>e,
         _In: (e)=>e,
         _L: (e)=>e,
         _E: (e)=>e,
         _R: (e)=>e
-    }, ef = {
+    }, tf = {
         _Env: (e)=>e,
         _InErr: (e)=>e,
         _InElem: (e)=>e,
@@ -18854,77 +18544,77 @@ perfecta armonía.`,
         _OutErr: (e)=>e,
         _OutElem: (e)=>e,
         _OutDone: (e)=>e
-    }, tf = {
-        [Jd]: Qd,
-        [Yd]: Qd,
+    }, nf = {
+        [Yd]: $d,
         [Xd]: $d,
         [Zd]: ef,
-        [fd] (e) {
+        [Qd]: tf,
+        [pd] (e) {
             return this === e;
         },
-        [ed] () {
-            return dd(this, nd(this));
+        [td] () {
+            return fd(this, rd(this));
         },
         [Symbol.iterator] () {
-            return new Lu(new Ju(this));
+            return new Ru(new Yu(this));
         },
         pipe () {
-            return ru(this, arguments);
-        }
-    }, nf = {
-        [ed] () {
-            return dd(this, ld(this));
-        },
-        [fd] (e) {
-            let t = Object.keys(this), n = Object.keys(e);
-            if (t.length !== n.length) return !1;
-            for (let n of t)if (!(n in e && pd(this[n], e[n]))) return !1;
-            return !0;
+            return iu(this, arguments);
         }
     }, rf = {
-        ...tf,
-        _op: Nd
+        [td] () {
+            return fd(this, ud(this));
+        },
+        [pd] (e) {
+            let t = Object.keys(this), n = Object.keys(e);
+            if (t.length !== n.length) return !1;
+            for (let n of t)if (!(n in e && md(this[n], e[n]))) return !1;
+            return !0;
+        }
     }, af = {
-        ...rf,
-        ...nf
-    }, of = function() {
+        ...nf,
+        _op: Pd
+    }, of = {
+        ...af,
+        ...rf
+    }, sf = function() {
         function e() {}
-        return e.prototype = rf, e;
-    }(), sf = Symbol.for(`effect/Option`), cf = {
-        ...tf,
-        [sf]: {
+        return e.prototype = af, e;
+    }(), cf = Symbol.for(`effect/Option`), lf = {
+        ...nf,
+        [cf]: {
             _A: (e)=>e
         },
-        [_d] () {
+        [vd] () {
             return this.toJSON();
         },
         toString () {
-            return wd(this.toJSON());
+            return Td(this.toJSON());
         }
-    }, lf = Object.assign(Object.create(cf), {
+    }, uf = Object.assign(Object.create(lf), {
         _tag: `Some`,
         _op: `Some`,
-        [fd] (e) {
-            return ff(e) && mf(e) && pd(this.value, e.value);
+        [pd] (e) {
+            return pf(e) && hf(e) && md(this.value, e.value);
         },
-        [ed] () {
-            return dd(this, rd(td(this._tag))(td(this.value)));
+        [td] () {
+            return fd(this, id(nd(this._tag))(nd(this.value)));
         },
         toJSON () {
             return {
                 _id: `Option`,
                 _tag: this._tag,
-                value: vd(this.value)
+                value: yd(this.value)
             };
         }
-    }), uf = td(`None`), df = Object.assign(Object.create(cf), {
+    }), df = nd(`None`), ff = Object.assign(Object.create(lf), {
         _tag: `None`,
         _op: `None`,
-        [fd] (e) {
-            return ff(e) && pf(e);
+        [pd] (e) {
+            return pf(e) && mf(e);
         },
-        [ed] () {
-            return uf;
+        [td] () {
+            return df;
         },
         toJSON () {
             return {
@@ -18932,133 +18622,133 @@ perfecta armonía.`,
                 _tag: this._tag
             };
         }
-    }), ff = (e)=>Du(e, sf), pf = (e)=>e._tag === `None`, mf = (e)=>e._tag === `Some`, hf = Object.create(df), gf = (e)=>{
-        let t = Object.create(lf);
+    }), pf = (e)=>Ou(e, cf), mf = (e)=>e._tag === `None`, hf = (e)=>e._tag === `Some`, gf = Object.create(ff), _f = (e)=>{
+        let t = Object.create(uf);
         return t.value = e, t;
-    }, _f = Symbol.for(`effect/Either`), vf = {
-        ...tf,
-        [_f]: {
+    }, vf = Symbol.for(`effect/Either`), yf = {
+        ...nf,
+        [vf]: {
             _R: (e)=>e
         },
-        [_d] () {
+        [vd] () {
             return this.toJSON();
         },
         toString () {
-            return wd(this.toJSON());
+            return Td(this.toJSON());
         }
-    }, yf = Object.assign(Object.create(vf), {
+    }, bf = Object.assign(Object.create(yf), {
         _tag: `Right`,
         _op: `Right`,
-        [fd] (e) {
-            return xf(e) && Cf(e) && pd(this.right, e.right);
+        [pd] (e) {
+            return Sf(e) && wf(e) && md(this.right, e.right);
         },
-        [ed] () {
-            return rd(td(this._tag))(td(this.right));
+        [td] () {
+            return id(nd(this._tag))(nd(this.right));
         },
         toJSON () {
             return {
                 _id: `Either`,
                 _tag: this._tag,
-                right: vd(this.right)
+                right: yd(this.right)
             };
         }
-    }), bf = Object.assign(Object.create(vf), {
+    }), xf = Object.assign(Object.create(yf), {
         _tag: `Left`,
         _op: `Left`,
-        [fd] (e) {
-            return xf(e) && Sf(e) && pd(this.left, e.left);
+        [pd] (e) {
+            return Sf(e) && Cf(e) && md(this.left, e.left);
         },
-        [ed] () {
-            return rd(td(this._tag))(td(this.left));
+        [td] () {
+            return id(nd(this._tag))(nd(this.left));
         },
         toJSON () {
             return {
                 _id: `Either`,
                 _tag: this._tag,
-                left: vd(this.left)
+                left: yd(this.left)
             };
         }
-    }), xf = (e)=>Du(e, _f), Sf = (e)=>e._tag === `Left`, Cf = (e)=>e._tag === `Right`, wf = (e)=>{
-        let t = Object.create(bf);
+    }), Sf = (e)=>Ou(e, vf), Cf = (e)=>e._tag === `Left`, wf = (e)=>e._tag === `Right`, Tf = (e)=>{
+        let t = Object.create(xf);
         return t.left = e, t;
-    }, Tf = (e)=>{
-        let t = Object.create(yf);
+    }, Ef = (e)=>{
+        let t = Object.create(bf);
         return t.right = e, t;
-    }, Ef = (e)=>Sf(e) ? hf : gf(e.right), Df = B(2, (e, t)=>pf(e) ? wf(t()) : Tf(e.value)), Of = Tf, kf = wf, Af = Df, jf = (e)=>{
-        if (Su(e)) try {
-            return Of(e());
+    }, Df = (e)=>Cf(e) ? gf : _f(e.right), Of = z(2, (e, t)=>mf(e) ? Tf(t()) : Ef(e.value)), kf = Ef, Af = Tf, jf = Of, Mf = (e)=>{
+        if (Cu(e)) try {
+            return kf(e());
         } catch (e) {
-            return kf(e);
+            return Af(e);
         }
         else try {
-            return Of(e.try());
+            return kf(e.try());
         } catch (t) {
-            return kf(e.catch(t));
+            return Af(e.catch(t));
         }
-    }, Mf = xf, Nf = Sf, Pf = Cf, Ff = B(2, (e, { onLeft: t, onRight: n })=>Nf(e) ? kf(t(e.left)) : Of(n(e.right))), If = B(2, (e, t)=>Nf(e) ? kf(t(e.left)) : Of(e.right)), Lf = B(2, (e, t)=>Pf(e) ? Of(t(e.right)) : kf(e.left)), Rf = B(2, (e, { onLeft: t, onRight: n })=>Nf(e) ? t(e.left) : n(e.right)), zf = Rf({
-        onLeft: Zl,
-        onRight: Zl
-    }), Bf = B(2, (e, t)=>{
-        if (Pf(e)) return e.right;
+    }, Nf = Sf, Pf = Cf, Ff = wf, If = z(2, (e, { onLeft: t, onRight: n })=>Pf(e) ? Af(t(e.left)) : kf(n(e.right))), Lf = z(2, (e, t)=>Pf(e) ? Af(t(e.left)) : kf(e.right)), Rf = z(2, (e, t)=>Ff(e) ? kf(t(e.right)) : Af(e.left)), zf = z(2, (e, { onLeft: t, onRight: n })=>Pf(e) ? t(e.left) : n(e.right)), Bf = zf({
+        onLeft: Ql,
+        onRight: Ql
+    }), Vf = z(2, (e, t)=>{
+        if (Ff(e)) return e.right;
         throw t(e.left);
-    }), Vf = Bf(()=>Error(`getOrThrow called on a Left`)), Hf = (e)=>e.length > 0, Uf = (e)=>(t, n)=>t === n ? 0 : e(t, n), Wf = Uf((e, t)=>e < t ? -1 : 1), Gf = B(2, (e, t)=>Uf((n, r)=>e(t(n), t(r)))), Kf = (e)=>B(2, (t, n)=>e(t, n) === 1), H = ()=>hf, qf = gf, Jf = ff, Yf = pf, Xf = mf, Zf = B(2, (e, { onNone: t, onSome: n })=>Yf(e) ? t() : n(e.value)), Qf = Ef, $f = B(2, (e, t)=>Yf(e) ? t() : e.value), ep = B(2, (e, t)=>Yf(e) ? t() : e), tp = B(2, (e, t)=>Yf(e) ? qf(t()) : e), np = (e)=>e == null ? H() : qf(e), rp = $f(tu), ip = (e)=>(...t)=>{
+    }), Hf = Vf(()=>Error(`getOrThrow called on a Left`)), Uf = (e)=>e.length > 0, Wf = (e)=>(t, n)=>t === n ? 0 : e(t, n), Gf = Wf((e, t)=>e < t ? -1 : 1), Kf = z(2, (e, t)=>Wf((n, r)=>e(t(n), t(r)))), qf = (e)=>z(2, (t, n)=>e(t, n) === 1), V = ()=>gf, H = _f, Jf = pf, Yf = mf, Xf = hf, Zf = z(2, (e, { onNone: t, onSome: n })=>Yf(e) ? t() : n(e.value)), Qf = Df, $f = z(2, (e, t)=>Yf(e) ? t() : e.value), ep = z(2, (e, t)=>Yf(e) ? t() : e), tp = z(2, (e, t)=>Yf(e) ? H(t()) : e), np = (e)=>e == null ? V() : H(e), rp = $f(nu), ip = (e)=>(...t)=>{
             try {
-                return qf(e(...t));
+                return H(e(...t));
             } catch  {
-                return H();
+                return V();
             }
-        }, ap = B(2, (e, t)=>{
+        }, ap = z(2, (e, t)=>{
         if (Xf(e)) return e.value;
         throw t();
-    }), op = ap(()=>Error(`getOrThrow called on a None`)), sp = B(2, (e, t)=>Yf(e) ? H() : qf(t(e.value))), cp = B(2, (e, t)=>Yf(e) ? H() : t(e.value)), lp = B(2, (e, t)=>Yf(e) ? H() : np(t(e.value))), up = (e)=>{
+    }), op = ap(()=>Error(`getOrThrow called on a None`)), sp = z(2, (e, t)=>Yf(e) ? V() : H(t(e.value))), cp = z(2, (e, t)=>Yf(e) ? V() : t(e.value)), lp = z(2, (e, t)=>Yf(e) ? V() : np(t(e.value))), up = (e)=>{
         if (Symbol.iterator in e) {
             let t = [];
             for (let n of e){
-                if (Yf(n)) return H();
+                if (Yf(n)) return V();
                 t.push(n.value);
             }
-            return qf(t);
+            return H(t);
         }
         let t = {};
         for (let n of Object.keys(e)){
             let r = e[n];
-            if (Yf(r)) return H();
+            if (Yf(r)) return V();
             t[n] = r.value;
         }
-        return qf(t);
-    }, dp = cp, fp = B(2, (e, t)=>dp(e, (e)=>t(e) ? gf(e) : hf)), pp = (e)=>iu((t, n)=>Yf(t) ? Yf(n) : Yf(n) ? !1 : e(t.value, n.value)), mp = ((e)=>B(2, (t, n)=>Yf(t) ? !1 : e(t.value, n)))(gd()), hp = B(2, (e, t)=>Yf(e) ? !1 : t(e.value)), gp = (e)=>(t, n)=>Yf(t) ? n : Yf(n) ? t : qf(e(t.value, n.value)), _p = (...e)=>e, vp = (...e)=>e, yp = (e)=>Array(e), bp = B(2, (e, t)=>{
+        return H(t);
+    }, dp = cp, fp = z(2, (e, t)=>dp(e, (e)=>t(e) ? _f(e) : gf)), pp = (e)=>au((t, n)=>Yf(t) ? Yf(n) : Yf(n) ? !1 : e(t.value, n.value)), mp = ((e)=>z(2, (t, n)=>Yf(t) ? !1 : e(t.value, n)))(_d()), hp = z(2, (e, t)=>Yf(e) ? !1 : t(e.value)), gp = (e)=>(t, n)=>Yf(t) ? n : Yf(n) ? t : H(e(t.value, n.value)), _p = (...e)=>e, vp = (...e)=>e, yp = (e)=>Array(e), bp = z(2, (e, t)=>{
         let n = Math.max(1, Math.floor(e)), r = Array(n);
         for(let e = 0; e < n; e++)r[e] = t(e);
         return r;
     }), xp = (e)=>Array.isArray(e) ? e : Array.from(e), nee = (e)=>Array.isArray(e) ? e : [
             e
-        ], ree = B(2, (e, { onEmpty: t, onNonEmpty: n })=>Tp(e) ? n(kp(e), jp(e)) : t()), Sp = B(2, (e, t)=>[
+        ], ree = z(2, (e, { onEmpty: t, onNonEmpty: n })=>Tp(e) ? n(kp(e), jp(e)) : t()), Sp = z(2, (e, t)=>[
             t,
             ...e
-        ]), iee = B(2, (e, t)=>[
+        ]), iee = z(2, (e, t)=>[
             ...e,
             t
-        ]), Cp = B(2, (e, t)=>xp(e).concat(xp(t))), aee = Array.isArray, oee = (e)=>e.length === 0, wp = Hf, Tp = Hf, Ep = (e, t)=>e < 0 || e >= t.length, see = (e, t)=>Math.floor(Math.min(Math.max(0, e), t.length)), cee = B(2, (e, t)=>{
+        ]), Cp = z(2, (e, t)=>xp(e).concat(xp(t))), aee = Array.isArray, oee = (e)=>e.length === 0, wp = Uf, Tp = Uf, Ep = (e, t)=>e < 0 || e >= t.length, see = (e, t)=>Math.floor(Math.min(Math.max(0, e), t.length)), cee = z(2, (e, t)=>{
         let n = Math.floor(t);
-        return Ep(n, e) ? H() : qf(e[n]);
-    }), Dp = B(2, (e, t)=>{
+        return Ep(n, e) ? V() : H(e[n]);
+    }), Dp = z(2, (e, t)=>{
         let n = Math.floor(t);
         if (Ep(n, e)) throw Error(`Index ${n} out of bounds`);
         return e[n];
-    }), Op = cee(0), kp = Dp(0), lee = (e)=>Tp(e) ? qf(Ap(e)) : H(), Ap = (e)=>e[e.length - 1], jp = (e)=>e.slice(1), uee = (e, t)=>{
+    }), Op = cee(0), kp = Dp(0), lee = (e)=>Tp(e) ? H(Ap(e)) : V(), Ap = (e)=>e[e.length - 1], jp = (e)=>e.slice(1), uee = (e, t)=>{
         let n = 0;
         for (let r of e){
             if (!t(r, n)) break;
             n++;
         }
         return n;
-    }, dee = B(2, (e, t)=>hee(e, uee(e, t))), fee = B(2, (e, t)=>{
+    }, dee = z(2, (e, t)=>hee(e, uee(e, t))), fee = z(2, (e, t)=>{
         let n = xp(e);
         return n.slice(see(t, n), n.length);
-    }), Mp = (e)=>Array.from(e).reverse(), Np = B(2, (e, t)=>{
+    }), Mp = (e)=>Array.from(e).reverse(), Np = z(2, (e, t)=>{
         let n = Array.from(e);
         return n.sort(t), n;
-    }), Pp = B(2, (e, t)=>pee(e, t, _p)), pee = B(3, (e, t, n)=>{
+    }), Pp = z(2, (e, t)=>pee(e, t, _p)), pee = z(3, (e, t, n)=>{
         let r = xp(e), i = xp(t);
         if (Tp(r) && Tp(i)) {
             let e = [
@@ -19068,7 +18758,7 @@ perfecta armonía.`,
             return e;
         }
         return [];
-    }), mee = gd(), hee = B(2, (e, t)=>{
+    }), mee = _d(), hee = z(2, (e, t)=>{
         let n = Array.from(e), r = Math.floor(t);
         return Tp(n) ? r >= 1 ? gee(n, r) : [
             [],
@@ -19077,7 +18767,7 @@ perfecta armonía.`,
             n,
             []
         ];
-    }), gee = B(2, (e, t)=>{
+    }), gee = z(2, (e, t)=>{
         let n = Math.max(1, Math.floor(t));
         return n >= e.length ? [
             Fp(e),
@@ -19086,12 +18776,12 @@ perfecta armonía.`,
             Sp(e.slice(1, n), kp(e)),
             e.slice(n)
         ];
-    }), Fp = (e)=>e.slice(), _ee = B(3, (e, t, n)=>{
+    }), Fp = (e)=>e.slice(), _ee = z(3, (e, t, n)=>{
         let r = xp(e), i = xp(t);
         return Tp(r) ? Tp(i) ? Wp(n)(Cp(r, i)) : r : i;
-    }), Ip = B(2, (e, t)=>_ee(e, t, mee)), Lp = ()=>[], Rp = (e)=>[
+    }), Ip = z(2, (e, t)=>_ee(e, t, mee)), Lp = ()=>[], Rp = (e)=>[
             e
-        ], zp = B(2, (e, t)=>e.map(t)), Bp = B(2, (e, t)=>{
+        ], zp = z(2, (e, t)=>e.map(t)), Bp = z(2, (e, t)=>{
         if (oee(e)) return [];
         let n = [];
         for(let r = 0; r < e.length; r++){
@@ -19099,21 +18789,21 @@ perfecta armonía.`,
             for(let e = 0; e < i.length; e++)n.push(i[e]);
         }
         return n;
-    }), vee = Bp(Zl), yee = B(2, (e, t)=>{
+    }), vee = Bp(Ql), yee = z(2, (e, t)=>{
         let n = xp(e), r = [];
         for(let e = 0; e < n.length; e++){
             let i = t(n[e], e);
             Xf(i) && r.push(i.value);
         }
         return r;
-    }), Vp = B(3, (e, t, n)=>xp(e).reduce((e, t, r)=>n(e, t, r), t)), Hp = (e, t)=>{
+    }), Vp = z(3, (e, t, n)=>xp(e).reduce((e, t, r)=>n(e, t, r), t)), Hp = (e, t)=>{
         let n = [], r = e, i;
         for(; Xf(i = t(r));){
             let [e, t] = i.value;
             n.push(e), r = t;
         }
         return n;
-    }, Up = du, Wp = B(2, (e, t)=>{
+    }, Up = fu, Wp = z(2, (e, t)=>{
         let n = xp(e);
         if (Tp(n)) {
             let e = [
@@ -19123,7 +18813,7 @@ perfecta armonía.`,
             return e;
         }
         return [];
-    }), bee = (e)=>Wp(e, gd()), Gp = B(2, (e, t)=>xp(e).join(t)), Kp = (e, t)=>{
+    }), bee = (e)=>Wp(e, _d()), Gp = z(2, (e, t)=>xp(e).join(t)), Kp = (e, t)=>{
         switch(t._tag){
             case `StringKeyword`:
             case `TemplateLiteral`:
@@ -19136,17 +18826,17 @@ perfecta armonía.`,
     }, qp = (e)=>{
         let t = !1, n;
         return ()=>t ? n : (n = e(), t = !0, n);
-    }, Jp = (e)=>Array.isArray(e), xee = (e)=>!Array.isArray(e), Yp = (e)=>`[${Sd(e)}]`, Xp = (e)=>Jp(e) ? e.map(Yp).join(``) : Yp(e), Zp = (e, t, n, r)=>{
+    }, Jp = (e)=>Array.isArray(e), xee = (e)=>!Array.isArray(e), Yp = (e)=>`[${Cd(e)}]`, Xp = (e)=>Jp(e) ? e.map(Yp).join(``) : Yp(e), Zp = (e, t, n, r)=>{
         let i = e;
         return n && Tp(n) && (i += `\nat path: ${Xp(n)}`), t !== void 0 && (i += `\ndetails: ${t}`), r && (i += `\nschema (${r._tag}): ${r}`), i;
-    }, Qp = (e, t, n)=>Zp(`Unsupported schema or overlapping types`, `cannot extend ${e} with ${t}`, n), See = (e)=>Zp(`Unsupported key schema`, void 0, void 0, e), Cee = (e)=>Zp(`Unsupported literal`, `literal value: ${Cd(e)}`), $p = (e)=>Zp(`Duplicate index signature`, `${e} index signature`), wee = Zp(`Unsupported index signature parameter`, "An index signature parameter type must be `string`, `symbol`, a template literal type or a refinement of the previous types"), Tee = Zp(`Invalid element`, `A required element cannot follow an optional element. ts(1257)`), em = (e)=>Zp(`Duplicate property signature transformation`, `Duplicate key ${Cd(e)}`), tm = (e)=>Zp(`Duplicate property signature`, `Duplicate key ${Cd(e)}`), Eee = Symbol.for(`effect/SchemaId/DateFromSelf`), Dee = Symbol.for(`effect/SchemaId/GreaterThan`), Oee = Symbol.for(`effect/SchemaId/GreaterThanOrEqualTo`), kee = Symbol.for(`effect/SchemaId/LessThan`), Aee = Symbol.for(`effect/SchemaId/LessThanOrEqualTo`), jee = Symbol.for(`effect/SchemaId/Int`), Mee = Symbol.for(`effect/SchemaId/NonNaN`), Nee = Symbol.for(`effect/SchemaId/Finite`), Pee = Symbol.for(`effect/SchemaId/JsonNumber`), Fee = Symbol.for(`effect/SchemaId/Between`), Iee = Symbol.for(`effect/SchemaId/GreaterThanOrEqualToBigint`), Lee = Symbol.for(`effect/SchemaId/BetweenBigint`), Ree = Symbol.for(`effect/SchemaId/MinLength`), zee = Symbol.for(`effect/SchemaId/Length`), nm = Wf, Bee = (e)=>{
-        if (e === `NaN`) return gf(NaN);
-        if (e === `Infinity`) return gf(1 / 0);
-        if (e === `-Infinity`) return gf(-1 / 0);
-        if (e.trim() === ``) return hf;
+    }, Qp = (e, t, n)=>Zp(`Unsupported schema or overlapping types`, `cannot extend ${e} with ${t}`, n), See = (e)=>Zp(`Unsupported key schema`, void 0, void 0, e), Cee = (e)=>Zp(`Unsupported literal`, `literal value: ${wd(e)}`), $p = (e)=>Zp(`Duplicate index signature`, `${e} index signature`), wee = Zp(`Unsupported index signature parameter`, "An index signature parameter type must be `string`, `symbol`, a template literal type or a refinement of the previous types"), Tee = Zp(`Invalid element`, `A required element cannot follow an optional element. ts(1257)`), em = (e)=>Zp(`Duplicate property signature transformation`, `Duplicate key ${wd(e)}`), tm = (e)=>Zp(`Duplicate property signature`, `Duplicate key ${wd(e)}`), Eee = Symbol.for(`effect/SchemaId/DateFromSelf`), Dee = Symbol.for(`effect/SchemaId/GreaterThan`), Oee = Symbol.for(`effect/SchemaId/GreaterThanOrEqualTo`), kee = Symbol.for(`effect/SchemaId/LessThan`), Aee = Symbol.for(`effect/SchemaId/LessThanOrEqualTo`), jee = Symbol.for(`effect/SchemaId/Int`), Mee = Symbol.for(`effect/SchemaId/NonNaN`), Nee = Symbol.for(`effect/SchemaId/Finite`), Pee = Symbol.for(`effect/SchemaId/JsonNumber`), Fee = Symbol.for(`effect/SchemaId/Between`), Iee = Symbol.for(`effect/SchemaId/GreaterThanOrEqualToBigint`), Lee = Symbol.for(`effect/SchemaId/BetweenBigint`), Ree = Symbol.for(`effect/SchemaId/MinLength`), zee = Symbol.for(`effect/SchemaId/Length`), nm = Gf, Bee = (e)=>{
+        if (e === `NaN`) return _f(NaN);
+        if (e === `Infinity`) return _f(1 / 0);
+        if (e === `-Infinity`) return _f(-1 / 0);
+        if (e.trim() === ``) return gf;
         let t = Number(e);
-        return Number.isNaN(t) ? hf : gf(t);
-    }, rm = (e)=>e.replace(/[/\\^$*+?.()|[\]{}]/g, `\\$&`), Vee = Symbol.for(`effect/annotation/TypeConstructor`), Hee = Symbol.for(`effect/annotation/Brand`), Uee = Symbol.for(`effect/annotation/SchemaId`), im = Symbol.for(`effect/annotation/Message`), am = Symbol.for(`effect/annotation/MissingMessage`), om = Symbol.for(`effect/annotation/Identifier`), sm = Symbol.for(`effect/annotation/Title`), cm = Symbol.for(`effect/annotation/AutoTitle`), lm = Symbol.for(`effect/annotation/Description`), um = Symbol.for(`effect/annotation/Examples`), dm = Symbol.for(`effect/annotation/Default`), fm = Symbol.for(`effect/annotation/JSONSchema`), pm = Symbol.for(`effect/annotation/Arbitrary`), mm = Symbol.for(`effect/annotation/Pretty`), hm = Symbol.for(`effect/annotation/Equivalence`), Wee = Symbol.for(`effect/annotation/Documentation`), gm = Symbol.for(`effect/annotation/Concurrency`), _m = Symbol.for(`effect/annotation/Batching`), vm = Symbol.for(`effect/annotation/ParseIssueTitle`), ym = Symbol.for(`effect/annotation/ParseOptions`), bm = Symbol.for(`effect/annotation/DecodingFallback`), xm = Symbol.for(`effect/annotation/Surrogate`), Gee = Symbol.for(`effect/annotation/StableFilter`), Sm = B(2, (e, t)=>Object.prototype.hasOwnProperty.call(e.annotations, t) ? qf(e.annotations[t]) : H()), Kee = Sm(Hee), qee = Sm(im), Jee = Sm(am), Cm = Sm(sm), wm = Sm(cm), Tm = Sm(om), Em = Sm(lm), Yee = Sm(gm), Xee = Sm(_m), Zee = Sm(vm), Qee = Sm(ym), $ee = Sm(bm), Dm = Sm(xm), ete = Sm(Gee), Om = (e)=>hp(ete(e), (e)=>e === !0), km = Symbol.for(`effect/annotation/JSONIdentifier`), tte = Sm(km), nte = (e)=>ep(tte(e), ()=>Tm(e)), Am = class {
+        return Number.isNaN(t) ? gf : _f(t);
+    }, rm = (e)=>e.replace(/[/\\^$*+?.()|[\]{}]/g, `\\$&`), Vee = Symbol.for(`effect/annotation/TypeConstructor`), Hee = Symbol.for(`effect/annotation/Brand`), Uee = Symbol.for(`effect/annotation/SchemaId`), im = Symbol.for(`effect/annotation/Message`), am = Symbol.for(`effect/annotation/MissingMessage`), om = Symbol.for(`effect/annotation/Identifier`), sm = Symbol.for(`effect/annotation/Title`), cm = Symbol.for(`effect/annotation/AutoTitle`), lm = Symbol.for(`effect/annotation/Description`), um = Symbol.for(`effect/annotation/Examples`), dm = Symbol.for(`effect/annotation/Default`), fm = Symbol.for(`effect/annotation/JSONSchema`), pm = Symbol.for(`effect/annotation/Arbitrary`), mm = Symbol.for(`effect/annotation/Pretty`), hm = Symbol.for(`effect/annotation/Equivalence`), Wee = Symbol.for(`effect/annotation/Documentation`), gm = Symbol.for(`effect/annotation/Concurrency`), _m = Symbol.for(`effect/annotation/Batching`), vm = Symbol.for(`effect/annotation/ParseIssueTitle`), ym = Symbol.for(`effect/annotation/ParseOptions`), bm = Symbol.for(`effect/annotation/DecodingFallback`), xm = Symbol.for(`effect/annotation/Surrogate`), Gee = Symbol.for(`effect/annotation/StableFilter`), Sm = z(2, (e, t)=>Object.prototype.hasOwnProperty.call(e.annotations, t) ? H(e.annotations[t]) : V()), Kee = Sm(Hee), qee = Sm(im), Jee = Sm(am), Cm = Sm(sm), wm = Sm(cm), Tm = Sm(om), Em = Sm(lm), Yee = Sm(gm), Xee = Sm(_m), Zee = Sm(vm), Qee = Sm(ym), $ee = Sm(bm), Dm = Sm(xm), ete = Sm(Gee), Om = (e)=>hp(ete(e), (e)=>e === !0), km = Symbol.for(`effect/annotation/JSONIdentifier`), tte = Sm(km), nte = (e)=>ep(tte(e), ()=>Tm(e)), Am = class {
         typeParameters;
         decodeUnknown;
         encodeUnknown;
@@ -19173,12 +18863,12 @@ perfecta armonía.`,
             this.literal = e, this.annotations = t;
         }
         toString() {
-            return $f(Eh(this), ()=>Cd(this.literal));
+            return $f(Eh(this), ()=>wd(this.literal));
         }
         toJSON() {
             return {
                 _tag: this._tag,
-                literal: bu(this.literal) ? String(this.literal) : this.literal,
+                literal: xu(this.literal) ? String(this.literal) : this.literal,
                 annotations: Sh(this.annotations)
             };
         }
@@ -19190,7 +18880,7 @@ perfecta armonía.`,
             this.symbol = e, this.annotations = t;
         }
         toString() {
-            return $f(Eh(this), ()=>Cd(this.symbol));
+            return $f(Eh(this), ()=>wd(this.symbol));
         }
         toJSON() {
             return {
@@ -19520,7 +19210,7 @@ perfecta armonía.`,
             return e.indexSignatures.length > 0 ? `{ ${t}; ${Zm(e.indexSignatures)} }` : `{ ${t} }`;
         } else if (e.indexSignatures.length > 0) return `{ ${Zm(e.indexSignatures)} }`;
         else return `{}`;
-    }, Qm = jm(`TypeLiteral`), ute = Np(Gf(nm, (e)=>{
+    }, Qm = jm(`TypeLiteral`), ute = Np(Kf(nm, (e)=>{
         switch(e._tag){
             case `AnyKeyword`:
                 return 0;
@@ -19614,7 +19304,7 @@ perfecta armonía.`,
                 annotations: Sh(this.annotations)
             };
         }
-    }, pte = (e, t)=>e.map(t), th = (e)=>e.length > 1, nh = jm(`Union`), rh = hu(Symbol.for(`effect/Schema/AST/toJSONMemoMap`), ()=>new WeakMap), ih = class {
+    }, pte = (e, t)=>e.map(t), th = (e)=>e.length > 1, nh = jm(`Union`), rh = gu(Symbol.for(`effect/Schema/AST/toJSONMemoMap`), ()=>new WeakMap), ih = class {
         f;
         annotations;
         _tag = `Suspend`;
@@ -19761,7 +19451,7 @@ perfecta armonía.`,
                     r.push(new Ym(e, t, !0));
                     break;
                 case `Literal`:
-                    if (_u(e.literal) || vu(e.literal)) n.push(new qm(e.literal, t, !1, !0));
+                    if (vu(e.literal) || yu(e.literal)) n.push(new qm(e.literal, t, !1, !0));
                     else throw Error(Cee(e.literal));
                     break;
                 case `Enums`:
@@ -19929,16 +19619,16 @@ perfecta armonía.`,
     function wte(e) {
         return Zf(Kee(e), {
             onNone: ()=>``,
-            onSome: (e)=>e.map((e)=>` & Brand<${Cd(e)}>`).join(``)
+            onSome: (e)=>e.map((e)=>` & Brand<${wd(e)}>`).join(``)
         });
     }
     var Th = (e)=>Cm(e).pipe(ep(()=>Em(e)), ep(()=>wm(e)), sp((t)=>t + wte(e))), Eh = (e)=>ep(Tm(e), ()=>Th(e)), Dh = /^[+-]?\d+$/, Oh = Symbol.for(`effect/BigDecimal`), Tte = {
         [Oh]: Oh,
-        [ed] () {
+        [td] () {
             let e = Fh(this);
-            return V(td(e.value), rd(od(e.scale)), dd(this));
+            return B(nd(e.value), id(sd(e.scale)), fd(this));
         },
-        [fd] (e) {
+        [pd] (e) {
             return kh(e) && Dte(this, e);
         },
         toString () {
@@ -19951,13 +19641,13 @@ perfecta armonía.`,
                 scale: this.scale
             };
         },
-        [_d] () {
+        [vd] () {
             return this.toJSON();
         },
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
-    }, kh = (e)=>Du(e, Oh), Ah = (e, t)=>{
+    }, kh = (e)=>Ou(e, Oh), Ah = (e, t)=>{
         let n = Object.create(Tte);
         return n.value = e, n.scale = t, n;
     }, jh = (e, t)=>{
@@ -19972,27 +19662,27 @@ perfecta armonía.`,
             n === 0 && (e.normalized = e), e.normalized = jh(BigInt(t.substring(0, t.length - n)), e.scale - n);
         }
         return e.normalized;
-    }, Ih = B(2, (e, t)=>t > e.scale ? Ah(e.value * Nh ** BigInt(t - e.scale), t) : t < e.scale ? Ah(e.value / Nh ** BigInt(e.scale - t), t) : e), Ete = (e)=>e.value < Mh ? Ah(-e.value, e.scale) : e, Lh = iu((e, t)=>e.scale > t.scale ? Ih(t, e.scale).value === e.value : e.scale < t.scale ? Ih(e, t.scale).value === t.value : e.value === t.value), Dte = B(2, (e, t)=>Lh(e, t)), Ote = (e)=>ap(kte(e), ()=>RangeError(`Number must be finite, got ${e}`)), kte = (e)=>{
-        if (!Number.isFinite(e)) return H();
+    }, Ih = z(2, (e, t)=>t > e.scale ? Ah(e.value * Nh ** BigInt(t - e.scale), t) : t < e.scale ? Ah(e.value / Nh ** BigInt(e.scale - t), t) : e), Ete = (e)=>e.value < Mh ? Ah(-e.value, e.scale) : e, Lh = au((e, t)=>e.scale > t.scale ? Ih(t, e.scale).value === e.value : e.scale < t.scale ? Ih(e, t.scale).value === t.value : e.value === t.value), Dte = z(2, (e, t)=>Lh(e, t)), Ote = (e)=>ap(kte(e), ()=>RangeError(`Number must be finite, got ${e}`)), kte = (e)=>{
+        if (!Number.isFinite(e)) return V();
         let t = `${e}`;
         if (t.includes(`e`)) return Rh(t);
         let [n, r = ``] = t.split(`.`);
-        return qf(Ah(BigInt(`${n}${r}`), r.length));
+        return H(Ah(BigInt(`${n}${r}`), r.length));
     }, Rh = (e)=>{
-        if (e === ``) return qf(Ph);
+        if (e === ``) return H(Ph);
         let t, n, r = e.search(/[eE]/);
         if (r !== -1) {
             let i = e.slice(r + 1);
-            if (t = e.slice(0, r), n = Number(i), t === `` || !Number.isSafeInteger(n) || !Dh.test(i)) return H();
+            if (t = e.slice(0, r), n = Number(i), t === `` || !Number.isSafeInteger(n) || !Dh.test(i)) return V();
         } else t = e, n = 0;
         let i, a, o = t.search(/\./);
         if (o !== -1) {
             let e = t.slice(0, o), n = t.slice(o + 1);
             i = `${e}${n}`, a = n.length;
         } else i = t, a = 0;
-        if (!Dh.test(i)) return H();
+        if (!Dh.test(i)) return V();
         let s = a - n;
-        return Number.isSafeInteger(s) ? qf(Ah(BigInt(i), s)) : H();
+        return Number.isSafeInteger(s) ? H(Ah(BigInt(i), s)) : V();
     }, zh = (e)=>{
         let t = Fh(e);
         if (Math.abs(t.scale) >= 16) return Ate(t);
@@ -20013,18 +19703,18 @@ perfecta armonía.`,
         i !== `` && (a += `.${i}`);
         let o = i.length - t.scale;
         return `${a}e${o >= 0 ? `+` : ``}${o}`;
-    }, jte = (e)=>Number(zh(e)), Mte = (e)=>e.value === Mh, Nte = (e)=>e.value < Mh, Pte = (e)=>e > BigInt(2 ** 53 - 1) || e < BigInt(-(2 ** 53 - 1)) ? H() : qf(Number(e)), Fte = (e)=>{
+    }, jte = (e)=>Number(zh(e)), Mte = (e)=>e.value === Mh, Nte = (e)=>e.value < Mh, Pte = (e)=>e > BigInt(2 ** 53 - 1) || e < BigInt(-(2 ** 53 - 1)) ? V() : H(Number(e)), Fte = (e)=>{
         try {
-            return e.trim() === `` ? H() : qf(BigInt(e));
+            return e.trim() === `` ? V() : H(BigInt(e));
         } catch  {
-            return H();
+            return V();
         }
     }, Ite = (e)=>{
-        if (e > 2 ** 53 - 1 || e < -(2 ** 53 - 1)) return H();
+        if (e > 2 ** 53 - 1 || e < -(2 ** 53 - 1)) return V();
         try {
-            return qf(BigInt(e));
+            return H(BigInt(e));
         } catch  {
-            return H();
+            return V();
         }
     }, Bh = (e)=>!e, Vh = Symbol.for(`effect/Brand/Refined`), Hh = (e, t)=>[
             {
@@ -20033,55 +19723,55 @@ perfecta armonía.`,
             }
         ];
     function Uh(...e) {
-        let t = e.length === 2 ? (t)=>e[0](t) ? Of(t) : kf(e[1](t)) : (t)=>Zf(e[0](t), {
-                onNone: ()=>Of(t),
-                onSome: kf
+        let t = e.length === 2 ? (t)=>e[0](t) ? kf(t) : Af(e[1](t)) : (t)=>Zf(e[0](t), {
+                onNone: ()=>kf(t),
+                onSome: Af
             });
-        return Object.assign((e)=>Bf(t(e), Zl), {
+        return Object.assign((e)=>Vf(t(e), Ql), {
             [Vh]: Vh,
             option: (e)=>Qf(t(e)),
             either: t,
-            is: (e)=>Pf(t(e))
+            is: (e)=>Ff(t(e))
         });
     }
     var Wh = ()=>Object.assign((e)=>e, {
             [Vh]: Vh,
-            option: (e)=>qf(e),
-            either: (e)=>Of(e),
+            option: (e)=>H(e),
+            either: (e)=>kf(e),
             is: (e)=>!0
         }), Gh = (...e)=>{
         let t = (t)=>{
-            let n = Of(t);
+            let n = kf(t);
             for (let r of e){
                 let e = r.either(t);
-                n = Nf(n) && Nf(e) ? kf([
+                n = Pf(n) && Pf(e) ? Af([
                     ...n.left,
                     ...e.left
-                ]) : Nf(n) ? n : e;
+                ]) : Pf(n) ? n : e;
             }
             return n;
         };
-        return Object.assign((e)=>Rf(t(e), {
+        return Object.assign((e)=>zf(t(e), {
                 onLeft: (e)=>{
                     throw e;
                 },
-                onRight: Zl
+                onRight: Ql
             }), {
             [Vh]: Vh,
             option: (e)=>Qf(t(e)),
             either: t,
-            is: (e)=>Pf(t(e))
+            is: (e)=>Ff(t(e))
         });
     }, Kh = Symbol.for(`effect/Context/Tag`), qh = Symbol.for(`effect/Context/Reference`), Lte = Symbol.for(`effect/STM`), Jh = {
-        ...tf,
+        ...nf,
         _op: `Tag`,
-        [Lte]: Qd,
+        [Lte]: $d,
         [Kh]: {
             _Service: (e)=>e,
             _Identifier: (e)=>e
         },
         toString () {
-            return wd(this.toJSON());
+            return Td(this.toJSON());
         },
         toJSON () {
             return {
@@ -20090,7 +19780,7 @@ perfecta armonía.`,
                 stack: this.stack
             };
         },
-        [_d] () {
+        [vd] () {
             return this.toJSON();
         },
         of (e) {
@@ -20139,29 +19829,29 @@ perfecta armonía.`,
         [Yh]: {
             _Services: (e)=>e
         },
-        [fd] (e) {
+        [pd] (e) {
             if (Zh(e) && this.unsafeMap.size === e.unsafeMap.size) {
-                for (let t of this.unsafeMap.keys())if (!e.unsafeMap.has(t) || !pd(this.unsafeMap.get(t), e.unsafeMap.get(t))) return !1;
+                for (let t of this.unsafeMap.keys())if (!e.unsafeMap.has(t) || !md(this.unsafeMap.get(t), e.unsafeMap.get(t))) return !1;
                 return !0;
             }
             return !1;
         },
-        [ed] () {
-            return dd(this, od(this.unsafeMap.size));
+        [td] () {
+            return fd(this, sd(this.unsafeMap.size));
         },
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         },
         toString () {
-            return wd(this.toJSON());
+            return Td(this.toJSON());
         },
         toJSON () {
             return {
                 _id: `Context`,
-                services: Array.from(this.unsafeMap).map(vd)
+                services: Array.from(this.unsafeMap).map(yd)
             };
         },
-        [_d] () {
+        [vd] () {
             return this.toJSON();
         }
     }, Xh = (e)=>{
@@ -20184,25 +19874,25 @@ perfecta armonía.`,
 `);
         }
         return t;
-    }, Zh = (e)=>Du(e, Yh), Wte = (e)=>Du(e, Kh), Gte = (e)=>Du(e, qh), Kte = Xh(new Map), qte = ()=>Kte, Qh = (e, t)=>Xh(new Map([
+    }, Zh = (e)=>Ou(e, Yh), Wte = (e)=>Ou(e, Kh), Gte = (e)=>Ou(e, qh), Kte = Xh(new Map), qte = ()=>Kte, Qh = (e, t)=>Xh(new Map([
             [
                 e.key,
                 t
             ]
-        ])), Jte = B(3, (e, t, n)=>{
+        ])), Jte = z(3, (e, t, n)=>{
         let r = new Map(e.unsafeMap);
         return r.set(t.key, n), Xh(r);
-    }), $h = hu(`effect/Context/defaultValueCache`, ()=>new Map), eg = (e)=>{
+    }), $h = gu(`effect/Context/defaultValueCache`, ()=>new Map), eg = (e)=>{
         if ($h.has(e.key)) return $h.get(e.key);
         let t = e.defaultValue();
         return $h.set(e.key, t), t;
-    }, Yte = (e, t)=>e.unsafeMap.has(t.key) ? e.unsafeMap.get(t.key) : eg(t), tg = B(2, (e, t)=>{
+    }, Yte = (e, t)=>e.unsafeMap.has(t.key) ? e.unsafeMap.get(t.key) : eg(t), tg = z(2, (e, t)=>{
         if (!e.unsafeMap.has(t.key)) {
             if (qh in t) return eg(t);
             throw Ute(t);
         }
         return e.unsafeMap.get(t.key);
-    }), Xte = tg, Zte = B(2, (e, t)=>e.unsafeMap.has(t.key) ? gf(e.unsafeMap.get(t.key)) : Gte(t) ? gf(eg(t)) : hf), Qte = B(2, (e, t)=>{
+    }), Xte = tg, Zte = z(2, (e, t)=>e.unsafeMap.has(t.key) ? _f(e.unsafeMap.get(t.key)) : Gte(t) ? _f(eg(t)) : gf), Qte = z(2, (e, t)=>{
         let n = new Map(e.unsafeMap);
         for (let [e, r] of t.unsafeMap)n.set(e, r);
         return Xh(n);
@@ -20217,27 +19907,27 @@ perfecta armonía.`,
         for(let a = t; a < Math.min(e.length, t + i); a++)n[r + a - t] = e[a];
         return n;
     }
-    var mg = [], rne = ((e)=>iu((t, n)=>t.length === n.length && Cg(t).every((t, r)=>e(t, Eg(n, r)))))(pd), ine = {
+    var mg = [], rne = ((e)=>au((t, n)=>t.length === n.length && Cg(t).every((t, r)=>e(t, Eg(n, r)))))(md), ine = {
         [pg]: {
             _A: (e)=>e
         },
         toString () {
-            return wd(this.toJSON());
+            return Td(this.toJSON());
         },
         toJSON () {
             return {
                 _id: `Chunk`,
-                values: Cg(this).map(vd)
+                values: Cg(this).map(yd)
             };
         },
-        [_d] () {
+        [vd] () {
             return this.toJSON();
         },
-        [fd] (e) {
+        [pd] (e) {
             return gg(e) && rne(this, e);
         },
-        [ed] () {
-            return dd(this, ud(Cg(this)));
+        [td] () {
+            return fd(this, dd(Cg(this)));
         },
         [Symbol.iterator] () {
             switch(this.backing._tag){
@@ -20250,7 +19940,7 @@ perfecta armonía.`,
             }
         },
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, hg = (e)=>{
         let t = Object.create(ine);
@@ -20272,7 +19962,7 @@ perfecta armonía.`,
                 break;
         }
         return t;
-    }, gg = (e)=>Du(e, pg), _g = hg({
+    }, gg = (e)=>Ou(e, pg), _g = hg({
         _tag: `IEmpty`
     }), vg = ()=>_g, yg = (...e)=>one(e), bg = (e)=>hg({
             _tag: `ISingleton`,
@@ -20329,10 +20019,10 @@ perfecta armonía.`,
             case `ISlice`:
                 return Tg(Mp(Cg(e)));
         }
-    }, ane = B(2, (e, t)=>t < 0 || t >= e.length ? H() : qf(Eg(e, t))), Tg = (e)=>e.length === 0 ? vg() : e.length === 1 ? bg(e[0]) : hg({
+    }, ane = z(2, (e, t)=>t < 0 || t >= e.length ? V() : H(Eg(e, t))), Tg = (e)=>e.length === 0 ? vg() : e.length === 1 ? bg(e[0]) : hg({
             _tag: `IArray`,
             array: e
-        }), one = (e)=>Tg(e), Eg = B(2, (e, t)=>{
+        }), one = (e)=>Tg(e), Eg = z(2, (e, t)=>{
         switch(e.backing._tag){
             case `IEmpty`:
                 throw Error(`Index out of bounds`);
@@ -20347,7 +20037,7 @@ perfecta armonía.`,
             case `ISlice`:
                 return Eg(e.backing.chunk, t + e.backing.offset);
         }
-    }), sne = B(2, (e, t)=>kg(e, bg(t))), Dg = B(2, (e, t)=>kg(bg(t), e)), Og = B(2, (e, t)=>{
+    }), sne = z(2, (e, t)=>kg(e, bg(t))), Dg = z(2, (e, t)=>kg(bg(t), e)), Og = z(2, (e, t)=>{
         if (t <= 0) return e;
         if (t >= e.length) return _g;
         switch(e.backing._tag){
@@ -20372,7 +20062,7 @@ perfecta armonía.`,
                     length: e.length - t
                 });
         }
-    }), kg = B(2, (e, t)=>{
+    }), kg = z(2, (e, t)=>{
         if (e.backing._tag === `IEmpty`) return t;
         if (t.backing._tag === `IEmpty`) return e;
         let n = t.depth - e.depth;
@@ -20438,10 +20128,10 @@ perfecta armonía.`,
         }
     }), cne = (e)=>e.length === 0, Ag = (e)=>e.length > 0, jg = ane(0), Mg = (e)=>Eg(e, 0), Ng = Mg, Pg = (e)=>Og(e, 1), Fg = Symbol.for(`effect/Duration`), Ig = BigInt(0), Lg = BigInt(24), Rg = BigInt(60), zg = BigInt(1e3), Bg = BigInt(1e6), Vg = BigInt(1e9), lne = /^(-?\d+(?:\.\d+)?)\s+(nanos?|micros?|millis?|seconds?|minutes?|hours?|days?|weeks?)$/, Hg = (e)=>{
         if (Gg(e)) return e;
-        if (vu(e)) return Yg(e);
-        if (bu(e)) return Jg(e);
-        if (Array.isArray(e) && e.length === 2 && e.every(vu)) return e[0] === -1 / 0 || e[1] === -1 / 0 || Number.isNaN(e[0]) || Number.isNaN(e[1]) ? Kg : e[0] === 1 / 0 || e[1] === 1 / 0 ? qg : Jg(BigInt(Math.round(e[0] * 1e9)) + BigInt(Math.round(e[1])));
-        if (_u(e)) {
+        if (yu(e)) return Yg(e);
+        if (xu(e)) return Jg(e);
+        if (Array.isArray(e) && e.length === 2 && e.every(yu)) return e[0] === -1 / 0 || e[1] === -1 / 0 || Number.isNaN(e[0]) || Number.isNaN(e[1]) ? Kg : e[0] === 1 / 0 || e[1] === 1 / 0 ? qg : Jg(BigInt(Math.round(e[0] * 1e9)) + BigInt(Math.round(e[1])));
+        if (vu(e)) {
             let t = lne.exec(e);
             if (t) {
                 let [e, n, r] = t, i = Number(n);
@@ -20481,10 +20171,10 @@ perfecta armonía.`,
         _tag: `Infinity`
     }, dne = {
         [Fg]: Fg,
-        [ed] () {
-            return dd(this, ld(this.value));
+        [td] () {
+            return fd(this, ud(this.value));
         },
-        [fd] (e) {
+        [pd] (e) {
             return Gg(e) && Ene(this, e);
         },
         toString () {
@@ -20511,15 +20201,15 @@ perfecta armonía.`,
                     };
             }
         },
-        [_d] () {
+        [vd] () {
             return this.toJSON();
         },
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, Wg = (e)=>{
         let t = Object.create(dne);
-        return vu(e) ? isNaN(e) || e <= 0 ? t.value = Ug : Number.isFinite(e) ? Number.isInteger(e) ? t.value = {
+        return yu(e) ? isNaN(e) || e <= 0 ? t.value = Ug : Number.isFinite(e) ? Number.isInteger(e) ? t.value = {
             _tag: `Millis`,
             millis: e
         } : t.value = {
@@ -20529,7 +20219,7 @@ perfecta armonía.`,
             _tag: `Nanos`,
             nanos: e
         }, t;
-    }, Gg = (e)=>Du(e, Fg), fne = (e)=>e.value._tag !== `Infinity`, pne = (e)=>{
+    }, Gg = (e)=>Ou(e, Fg), fne = (e)=>e.value._tag !== `Infinity`, pne = (e)=>{
         switch(e.value._tag){
             case `Millis`:
                 return e.value.millis === 0;
@@ -20545,11 +20235,11 @@ perfecta armonía.`,
         let t = Hg(e);
         switch(t.value._tag){
             case `Infinity`:
-                return H();
+                return V();
             case `Nanos`:
-                return qf(t.value.nanos);
+                return H(t.value.nanos);
             case `Millis`:
-                return qf(BigInt(Math.round(t.value.millis * 1e6)));
+                return H(BigInt(Math.round(t.value.millis * 1e6)));
         }
     }, xne = (e)=>{
         let t = Hg(e);
@@ -20580,7 +20270,7 @@ perfecta armonía.`,
                     Math.round(t.value.millis % 1e3 * 1e6)
                 ];
         }
-    }, Cne = B(2, (e, t)=>{
+    }, Cne = z(2, (e, t)=>{
         let n = Hg(e);
         switch(n.value._tag){
             case `Nanos`:
@@ -20590,7 +20280,7 @@ perfecta armonía.`,
             case `Millis`:
                 return t.onMillis(n.value.millis);
         }
-    }), Zg = B(3, (e, t, n)=>{
+    }), Zg = z(3, (e, t, n)=>{
         let r = Hg(e), i = Hg(t);
         if (r.value._tag === `Infinity` || i.value._tag === `Infinity`) return n.onMillis(Xg(r), Xg(i));
         if (r.value._tag === `Nanos` || i.value._tag === `Nanos`) {
@@ -20601,13 +20291,13 @@ perfecta armonía.`,
     }), Qg = (e, t)=>Zg(e, t, {
             onMillis: (e, t)=>e === t,
             onNanos: (e, t)=>e === t
-        }), wne = B(2, (e, t)=>Zg(e, t, {
+        }), wne = z(2, (e, t)=>Zg(e, t, {
             onMillis: (e, t)=>e <= t,
             onNanos: (e, t)=>e <= t
-        })), Tne = B(2, (e, t)=>Zg(e, t, {
+        })), Tne = z(2, (e, t)=>Zg(e, t, {
             onMillis: (e, t)=>e >= t,
             onNanos: (e, t)=>e >= t
-        })), Ene = B(2, (e, t)=>Qg(Hg(e), Hg(t))), Dne = (e)=>{
+        })), Ene = z(2, (e, t)=>Qg(Hg(e), Hg(t))), Dne = (e)=>{
         let t = Hg(e);
         if (t.value._tag === `Infinity`) return {
             days: 1 / 0,
@@ -20680,12 +20370,12 @@ perfecta armonía.`,
     var a_ = class e {
         _tag = `EmptyNode`;
         modify(t, n, r, i, a, o) {
-            let s = r(H());
+            let s = r(V());
             return Yf(s) ? new e : (++o.value, new c_(t, i, a, s));
         }
     };
     function o_(e) {
-        return Ou(e, `EmptyNode`);
+        return ku(e, `EmptyNode`);
     }
     function Fne(e) {
         return o_(e) || e._tag === `LeafNode` || e._tag === `CollisionNode`;
@@ -20703,11 +20393,11 @@ perfecta armonía.`,
             this.edit = e, this.hash = t, this.key = n, this.value = r;
         }
         modify(t, n, r, i, a, o) {
-            if (pd(a, this.key)) {
+            if (md(a, this.key)) {
                 let n = r(this.value);
                 return n === this.value ? this : Yf(n) ? (--o.value, new a_) : s_(this, t) ? (this.value = n, this) : new e(t, i, a, n);
             }
-            let s = r(H());
+            let s = r(V());
             return Yf(s) ? this : (++o.value, u_(t, n, this.hash, this, i, new e(t, i, a, s)));
         }
     }, Ine = class e {
@@ -20723,19 +20413,19 @@ perfecta armonía.`,
                 let n = s_(this, t), i = this.updateCollisionList(n, t, this.hash, this.children, r, a, o);
                 return i === this.children ? this : i.length > 1 ? new e(t, this.hash, i) : i[0];
             }
-            let s = r(H());
+            let s = r(V());
             return Yf(s) ? this : (++o.value, u_(t, n, this.hash, this, i, new c_(t, i, a, s)));
         }
         updateCollisionList(e, t, n, r, i, a, o) {
             let s = r.length;
             for(let c = 0; c < s; ++c){
                 let s = r[c];
-                if (`key` in s && pd(a, s.key)) {
+                if (`key` in s && md(a, s.key)) {
                     let l = s.value, u = i(l);
                     return u === l ? r : Yf(u) ? (--o.value, i_(e, c, r)) : r_(e, c, new c_(t, n, a, u), r);
                 }
             }
-            let c = i(H());
+            let c = i(V());
             return Yf(c) ? r : (++o.value, r_(e, s, new c_(t, n, a, c), r));
         }
     }, l_ = class e {
@@ -20835,36 +20525,36 @@ perfecta armonía.`,
                     t
                 ]);
         },
-        [ed] () {
-            let e = td(d_);
-            for (let t of this)e ^= V(td(t[0]), rd(td(t[1])));
-            return dd(this, e);
+        [td] () {
+            let e = nd(d_);
+            for (let t of this)e ^= B(nd(t[0]), id(nd(t[1])));
+            return fd(this, e);
         },
-        [fd] (e) {
+        [pd] (e) {
             if (Wne(e)) {
                 if (e._size !== this._size) return !1;
                 for (let t of this){
-                    let n = V(e, y_(t[0], td(t[0])));
-                    if (Yf(n) || !pd(t[1], n.value)) return !1;
+                    let n = B(e, y_(t[0], nd(t[0])));
+                    if (Yf(n) || !md(t[1], n.value)) return !1;
                 }
                 return !0;
             }
             return !1;
         },
         toString () {
-            return wd(this.toJSON());
+            return Td(this.toJSON());
         },
         toJSON () {
             return {
                 _id: `HashMap`,
-                values: Array.from(this).map(vd)
+                values: Array.from(this).map(yd)
             };
         },
-        [_d] () {
+        [vd] () {
             return this.toJSON();
         },
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, p_ = (e, t, n, r)=>{
         let i = Object.create(Vne);
@@ -20890,10 +20580,10 @@ perfecta armonía.`,
         [Symbol.iterator]() {
             return new e(this.map, this.f);
         }
-    }, h_ = (e)=>e ? __(e[0], e[1], e[2], e[3], e[4]) : H(), g_ = (e, t, n = void 0)=>{
+    }, h_ = (e)=>e ? __(e[0], e[1], e[2], e[3], e[4]) : V(), g_ = (e, t, n = void 0)=>{
         switch(e._tag){
             case `LeafNode`:
-                return Xf(e.value) ? qf({
+                return Xf(e.value) ? H({
                     value: t(e.key, e.value.value),
                     cont: n
                 }) : h_(n);
@@ -20923,20 +20613,20 @@ perfecta armonía.`,
         let t = C_(v_());
         for (let n of e)b_(t, n[0], n[1]);
         return Yne(t);
-    }, Wne = (e)=>Du(e, f_), Gne = (e)=>e && o_(e._root), Kne = B(2, (e, t)=>y_(e, t, td(t))), y_ = B(3, (e, t, n)=>{
+    }, Wne = (e)=>Ou(e, f_), Gne = (e)=>e && o_(e._root), Kne = z(2, (e, t)=>y_(e, t, nd(t))), y_ = z(3, (e, t, n)=>{
         let r = e._root, i = 0;
         for(;;)switch(r._tag){
             case `LeafNode`:
-                return pd(t, r.key) ? r.value : H();
+                return md(t, r.key) ? r.value : V();
             case `CollisionNode`:
                 if (n === r.hash) {
                     let e = r.children;
                     for(let n = 0, r = e.length; n < r; ++n){
                         let r = e[n];
-                        if (`key` in r && pd(t, r.key)) return r.value;
+                        if (`key` in r && md(t, r.key)) return r.value;
                     }
                 }
-                return H();
+                return V();
             case `IndexedNode`:
                 {
                     let e = t_(e_(i, n));
@@ -20944,23 +20634,23 @@ perfecta armonía.`,
                         r = r.children[n_(r.mask, e)], i += 5;
                         break;
                     }
-                    return H();
+                    return V();
                 }
             case `ArrayNode`:
                 if (r = r.children[e_(i, n)], r) {
                     i += 5;
                     break;
                 }
-                return H();
+                return V();
             default:
-                return H();
+                return V();
         }
-    }), qne = B(2, (e, t)=>Xf(y_(e, t, td(t)))), b_ = B(3, (e, t, n)=>w_(e, t, ()=>qf(n))), Jne = B(3, (e, t, n)=>e._editable ? (e._root = t, e._size = n, e) : t === e._root ? e : p_(e._editable, e._edit, t, n)), x_ = (e)=>new m_(e, (e)=>e), S_ = (e)=>e._size, C_ = (e)=>p_(!0, e._edit + 1, e._root, e._size), Yne = (e)=>(e._editable = !1, e), w_ = B(3, (e, t, n)=>Xne(e, t, td(t), n)), Xne = B(4, (e, t, n, r)=>{
+    }), qne = z(2, (e, t)=>Xf(y_(e, t, nd(t)))), b_ = z(3, (e, t, n)=>w_(e, t, ()=>H(n))), Jne = z(3, (e, t, n)=>e._editable ? (e._root = t, e._size = n, e) : t === e._root ? e : p_(e._editable, e._edit, t, n)), x_ = (e)=>new m_(e, (e)=>e), S_ = (e)=>e._size, C_ = (e)=>p_(!0, e._edit + 1, e._root, e._size), Yne = (e)=>(e._editable = !1, e), w_ = z(3, (e, t, n)=>Xne(e, t, nd(t), n)), Xne = z(4, (e, t, n, r)=>{
         let i = {
             value: e._size
         };
-        return V(e, Jne(e._root.modify(e._editable ? e._edit : NaN, 0, r, n, t, i), i.value));
-    }), T_ = B(2, (e, t)=>w_(e, t, H)), Zne = B(2, (e, t)=>E_(e, v_(), (e, n, r)=>b_(e, r, t(n, r)))), Qne = B(2, (e, t)=>E_(e, void 0, (e, n, r)=>t(n, r))), E_ = B(3, (e, t, n)=>{
+        return B(e, Jne(e._root.modify(e._editable ? e._edit : NaN, 0, r, n, t, i), i.value));
+    }), T_ = z(2, (e, t)=>w_(e, t, V)), Zne = z(2, (e, t)=>E_(e, v_(), (e, n, r)=>b_(e, r, t(n, r)))), Qne = z(2, (e, t)=>E_(e, void 0, (e, n, r)=>t(n, r))), E_ = z(3, (e, t, n)=>{
         let r = e._root;
         if (r._tag === `LeafNode`) return Xf(r.value) ? n(t, r.value.value, r.key) : t;
         if (r._tag === `EmptyNode`) return t;
@@ -20977,31 +20667,31 @@ perfecta armonía.`,
         [Symbol.iterator] () {
             return x_(this._keyMap);
         },
-        [ed] () {
-            return dd(this, rd(td(this._keyMap))(td(D_)));
+        [td] () {
+            return fd(this, id(nd(this._keyMap))(nd(D_)));
         },
-        [fd] (e) {
-            return ere(e) ? S_(this._keyMap) === S_(e._keyMap) && pd(this._keyMap, e._keyMap) : !1;
+        [pd] (e) {
+            return ere(e) ? S_(this._keyMap) === S_(e._keyMap) && md(this._keyMap, e._keyMap) : !1;
         },
         toString () {
-            return wd(this.toJSON());
+            return Td(this.toJSON());
         },
         toJSON () {
             return {
                 _id: `HashSet`,
-                values: Array.from(this).map(vd)
+                values: Array.from(this).map(yd)
             };
         },
-        [_d] () {
+        [vd] () {
             return this.toJSON();
         },
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, k_ = (e)=>{
         let t = Object.create($ne);
         return t._keyMap = e, t;
-    }, ere = (e)=>Du(e, O_), tre = k_(v_()), A_ = ()=>tre, nre = (e)=>{
+    }, ere = (e)=>Ou(e, O_), tre = k_(v_()), A_ = ()=>tre, nre = (e)=>{
         let t = j_(A_());
         for (let n of e)P_(t, n);
         return M_(t);
@@ -21009,51 +20699,51 @@ perfecta armonía.`,
         let t = j_(A_());
         for (let n of e)P_(t, n);
         return M_(t);
-    }, ire = B(2, (e, t)=>qne(e._keyMap, t)), are = B(2, (e, t)=>{
+    }, ire = z(2, (e, t)=>qne(e._keyMap, t)), are = z(2, (e, t)=>{
         let n = !1;
         for (let r of e)if (n = t(r), n) break;
         return n;
-    }), ore = B(2, (e, t)=>!are(e, (e)=>!t(e))), sre = (e)=>S_(e._keyMap), j_ = (e)=>k_(C_(e._keyMap)), M_ = (e)=>(e._keyMap._editable = !1, e), N_ = B(2, (e, t)=>{
+    }), ore = z(2, (e, t)=>!are(e, (e)=>!t(e))), sre = (e)=>S_(e._keyMap), j_ = (e)=>k_(C_(e._keyMap)), M_ = (e)=>(e._keyMap._editable = !1, e), N_ = z(2, (e, t)=>{
         let n = j_(e);
         return t(n), M_(n);
-    }), P_ = B(2, (e, t)=>e._keyMap._editable ? (b_(t, !0)(e._keyMap), e) : k_(b_(t, !0)(e._keyMap))), F_ = B(2, (e, t)=>e._keyMap._editable ? (T_(t)(e._keyMap), e) : k_(T_(t)(e._keyMap))), cre = B(2, (e, t)=>N_(e, (e)=>{
+    }), P_ = z(2, (e, t)=>e._keyMap._editable ? (b_(t, !0)(e._keyMap), e) : k_(b_(t, !0)(e._keyMap))), F_ = z(2, (e, t)=>e._keyMap._editable ? (T_(t)(e._keyMap), e) : k_(T_(t)(e._keyMap))), cre = z(2, (e, t)=>N_(e, (e)=>{
             for (let n of t)F_(e, n);
-        })), lre = B(2, (e, t)=>N_(A_(), (n)=>{
+        })), lre = z(2, (e, t)=>N_(A_(), (n)=>{
             ure(e, (e)=>P_(n, e));
             for (let e of t)P_(n, e);
-        })), ure = B(2, (e, t)=>Qne(e._keyMap, (e, n)=>t(n))), dre = B(3, (e, t, n)=>E_(e._keyMap, t, (e, t, r)=>n(e, r))), I_ = A_, L_ = nre, R_ = rre, fre = ire, pre = ore, z_ = sre, B_ = P_, V_ = F_, H_ = cre, U_ = lre, W_ = dre, G_ = Symbol.for(`effect/MutableRef`), mre = {
+        })), ure = z(2, (e, t)=>Qne(e._keyMap, (e, n)=>t(n))), dre = z(3, (e, t, n)=>E_(e._keyMap, t, (e, t, r)=>n(e, r))), I_ = A_, L_ = nre, R_ = rre, fre = ire, pre = ore, z_ = sre, B_ = P_, V_ = F_, H_ = cre, U_ = lre, W_ = dre, G_ = Symbol.for(`effect/MutableRef`), mre = {
         [G_]: G_,
         toString () {
-            return wd(this.toJSON());
+            return Td(this.toJSON());
         },
         toJSON () {
             return {
                 _id: `MutableRef`,
-                current: vd(this.current)
+                current: yd(this.current)
             };
         },
-        [_d] () {
+        [vd] () {
             return this.toJSON();
         },
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, K_ = (e)=>{
         let t = Object.create(mre);
         return t.current = e, t;
-    }, q_ = (e)=>e.current, J_ = B(2, (e, t)=>(e.current = t, e)), Y_ = `effect/FiberId`, X_ = Symbol.for(Y_), Z_ = `None`, Q_ = `Runtime`, $_ = `Composite`, hre = sd(`${Y_}-${Z_}`), gre = class {
+    }, q_ = (e)=>e.current, J_ = z(2, (e, t)=>(e.current = t, e)), Y_ = `effect/FiberId`, X_ = Symbol.for(Y_), Z_ = `None`, Q_ = `Runtime`, $_ = `Composite`, hre = cd(`${Y_}-${Z_}`), gre = class {
         [X_] = X_;
         _tag = Z_;
         id = -1;
         startTimeMillis = -1;
-        [ed]() {
+        [td]() {
             return hre;
         }
-        [fd](e) {
+        [pd](e) {
             return tv(e) && e._tag === Z_;
         }
         toString() {
-            return wd(this.toJSON());
+            return Td(this.toJSON());
         }
         toJSON() {
             return {
@@ -21061,7 +20751,7 @@ perfecta armonía.`,
                 _tag: this._tag
             };
         }
-        [_d]() {
+        [vd]() {
             return this.toJSON();
         }
     }, ev = class {
@@ -21072,14 +20762,14 @@ perfecta armonía.`,
         constructor(e, t){
             this.id = e, this.startTimeMillis = t;
         }
-        [ed]() {
-            return dd(this, sd(`${Y_}-${this._tag}-${this.id}-${this.startTimeMillis}`));
+        [td]() {
+            return fd(this, cd(`${Y_}-${this._tag}-${this.id}-${this.startTimeMillis}`));
         }
-        [fd](e) {
+        [pd](e) {
             return tv(e) && e._tag === Q_ && this.id === e.id && this.startTimeMillis === e.startTimeMillis;
         }
         toString() {
-            return wd(this.toJSON());
+            return Td(this.toJSON());
         }
         toJSON() {
             return {
@@ -21089,7 +20779,7 @@ perfecta armonía.`,
                 startTimeMillis: this.startTimeMillis
             };
         }
-        [_d]() {
+        [vd]() {
             return this.toJSON();
         }
     }, _re = class {
@@ -21101,68 +20791,68 @@ perfecta armonía.`,
             this.left = e, this.right = t;
         }
         _hash;
-        [ed]() {
-            return V(sd(`${Y_}-${this._tag}`), rd(td(this.left)), rd(td(this.right)), dd(this));
+        [td]() {
+            return B(cd(`${Y_}-${this._tag}`), id(nd(this.left)), id(nd(this.right)), fd(this));
         }
-        [fd](e) {
-            return tv(e) && e._tag === $_ && pd(this.left, e.left) && pd(this.right, e.right);
+        [pd](e) {
+            return tv(e) && e._tag === $_ && md(this.left, e.left) && md(this.right, e.right);
         }
         toString() {
-            return wd(this.toJSON());
+            return Td(this.toJSON());
         }
         toJSON() {
             return {
                 _id: `FiberId`,
                 _tag: this._tag,
-                left: vd(this.left),
-                right: vd(this.right)
+                left: yd(this.left),
+                right: yd(this.right)
             };
         }
-        [_d]() {
+        [vd]() {
             return this.toJSON();
         }
-    }, vre = new gre, yre = (e, t)=>new ev(e, t), bre = (e, t)=>new _re(e, t), tv = (e)=>Du(e, X_), xre = (e)=>e._tag === Z_ || V(av(e), pre((e)=>xre(e))), nv = (e)=>{
+    }, vre = new gre, yre = (e, t)=>new ev(e, t), bre = (e, t)=>new _re(e, t), tv = (e)=>Ou(e, X_), xre = (e)=>e._tag === Z_ || B(av(e), pre((e)=>xre(e))), nv = (e)=>{
         switch(e._tag){
             case Z_:
                 return I_();
             case Q_:
                 return R_(e.id);
             case $_:
-                return V(nv(e.left), U_(nv(e.right)));
+                return B(nv(e.left), U_(nv(e.right)));
         }
-    }, rv = hu(Symbol.for(`effect/Fiber/Id/_fiberCounter`), ()=>K_(0)), iv = (e)=>Array.from(nv(e)).map((e)=>`#${e}`).join(`,`), av = (e)=>{
+    }, rv = gu(Symbol.for(`effect/Fiber/Id/_fiberCounter`), ()=>K_(0)), iv = (e)=>Array.from(nv(e)).map((e)=>`#${e}`).join(`,`), av = (e)=>{
         switch(e._tag){
             case Z_:
                 return I_();
             case Q_:
                 return R_(e);
             case $_:
-                return V(av(e.left), U_(av(e.right)));
+                return B(av(e.left), U_(av(e.right)));
         }
     }, Sre = ()=>{
         let e = q_(rv);
-        return V(rv, J_(e + 1)), new ev(e, Date.now());
-    }, ov = vre, Cre = yre, wre = bre, Tre = tv, Ere = iv, sv = Sre, cv = v_, Dre = Une, Ore = Gne, lv = Kne, uv = b_, dv = x_, kre = w_, Are = Zne, fv = E_, pv = Symbol.for(`effect/List`), mv = (e)=>xp(e), jre = ((e)=>lu(Up(e), mv))(pd), Mre = {
+        return B(rv, J_(e + 1)), new ev(e, Date.now());
+    }, ov = vre, Cre = yre, wre = bre, Tre = tv, Ere = iv, sv = Sre, cv = v_, Dre = Une, Ore = Gne, lv = Kne, uv = b_, dv = x_, kre = w_, Are = Zne, fv = E_, pv = Symbol.for(`effect/List`), mv = (e)=>xp(e), jre = ((e)=>uu(Up(e), mv))(md), Mre = {
         [pv]: pv,
         _tag: `Cons`,
         toString () {
-            return wd(this.toJSON());
+            return Td(this.toJSON());
         },
         toJSON () {
             return {
                 _id: `List`,
                 _tag: `Cons`,
-                values: mv(this).map(vd)
+                values: mv(this).map(yd)
             };
         },
-        [_d] () {
+        [vd] () {
             return this.toJSON();
         },
-        [fd] (e) {
+        [pd] (e) {
             return _v(e) && this._tag === e._tag && jre(this, e);
         },
-        [ed] () {
-            return dd(this, ud(mv(this)));
+        [td] () {
+            return fd(this, dd(mv(this)));
         },
         [Symbol.iterator] () {
             let e = !1, t = this;
@@ -21185,16 +20875,16 @@ perfecta armonía.`,
             };
         },
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, hv = (e, t)=>{
         let n = Object.create(Mre);
         return n.head = e, n.tail = t, n;
-    }, Nre = sd(`Nil`), gv = Object.create({
+    }, Nre = cd(`Nil`), gv = Object.create({
         [pv]: pv,
         _tag: `Nil`,
         toString () {
-            return wd(this.toJSON());
+            return Td(this.toJSON());
         },
         toJSON () {
             return {
@@ -21202,13 +20892,13 @@ perfecta armonía.`,
                 _tag: `Nil`
             };
         },
-        [_d] () {
+        [vd] () {
             return this.toJSON();
         },
-        [ed] () {
+        [td] () {
             return Nre;
         },
-        [fd] (e) {
+        [pd] (e) {
             return _v(e) && this._tag === e._tag;
         },
         [Symbol.iterator] () {
@@ -21222,9 +20912,9 @@ perfecta armonía.`,
             };
         },
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
-    }), _v = (e)=>Du(e, pv), vv = (e)=>e._tag === `Nil`, Pre = (e)=>e._tag === `Cons`, Fre = ()=>gv, yv = (e, t)=>hv(e, t), bv = Fre, xv = (e)=>hv(e, gv), Ire = B(2, (e, t)=>Lre(t, e)), Sv = B(2, (e, t)=>yv(t, e)), Lre = B(2, (e, t)=>{
+    }), _v = (e)=>Ou(e, pv), vv = (e)=>e._tag === `Nil`, Pre = (e)=>e._tag === `Cons`, Fre = ()=>gv, yv = (e, t)=>hv(e, t), bv = Fre, xv = (e)=>hv(e, gv), Ire = z(2, (e, t)=>Lre(t, e)), Sv = z(2, (e, t)=>yv(t, e)), Lre = z(2, (e, t)=>{
         if (vv(e)) return t;
         if (vv(t)) return e;
         {
@@ -21235,7 +20925,7 @@ perfecta armonía.`,
             }
             return n;
         }
-    }), Rre = B(3, (e, t, n)=>{
+    }), Rre = z(3, (e, t, n)=>{
         let r = t, i = e;
         for(; !vv(i);)r = n(r, i.head), i = i.tail;
         return r;
@@ -21249,7 +20939,7 @@ perfecta armonía.`,
         function e(e) {
             e && Object.assign(this, e);
         }
-        return e.prototype = nf, e;
+        return e.prototype = rf, e;
     }();
     ({
         ...Cv.prototype
@@ -21290,11 +20980,11 @@ perfecta armonía.`,
         let n = new Map(e.unsafeMap), r = Ev();
         for (let [e, i] of t.unsafeMap.entries())if (n.has(e)) {
             let t = n.get(e);
-            n.delete(e), pd(t, i) || (r = Dv(Yre(e, ()=>i))(r));
+            n.delete(e), md(t, i) || (r = Dv(Yre(e, ()=>i))(r));
         } else n.delete(e), r = Dv(Gre(e, i))(r);
         for (let [e] of n.entries())r = Dv(qre(e))(r);
         return r;
-    }, Dv = B(2, (e, t)=>Ure(e, t)), Zre = B(2, (e, t)=>{
+    }, Dv = z(2, (e, t)=>Ure(e, t)), Zre = z(2, (e, t)=>{
         if (e._tag === `Empty`) return t;
         let n = !1, r = bg(e), i = new Map(t.unsafeMap);
         for(; Ag(r);){
@@ -21366,7 +21056,7 @@ perfecta armonía.`,
                 jv(rie(n))(t)
             ])(t);
         return W_(r, (e, t)=>jv(aie(t))(e))(n);
-    }, jv = B(2, (e, t)=>tie(e, t)), sie = B(2, (e, t)=>{
+    }, jv = z(2, (e, t)=>tie(e, t)), sie = z(2, (e, t)=>{
         if (e._tag === `Empty`) return t;
         let n = t, r = bg(e);
         for(; Ag(r);){
@@ -21426,10 +21116,10 @@ perfecta armonía.`,
         let t = 0, n = Pv();
         for(; t < e.oldValue.length && t < e.newValue.length;){
             let r = e.oldValue[t], i = e.newValue[t], a = e.differ.diff(r, i);
-            pd(a, e.differ.empty) || (n = Fv(n, _ie(t, a))), t += 1;
+            md(a, e.differ.empty) || (n = Fv(n, _ie(t, a))), t += 1;
         }
         return t < e.oldValue.length && (n = Fv(n, hie(0, t))), t < e.newValue.length && (n = Fv(n, pie(fee(t)(e.newValue)))), n;
-    }, Fv = B(2, (e, t)=>die(e, t)), yie = B(3, (e, t, n)=>{
+    }, Fv = z(2, (e, t)=>die(e, t)), yie = z(3, (e, t, n)=>{
         if (e._tag === `Empty`) return t;
         let r = t.slice(), i = Rp(e);
         for(; wp(i);){
@@ -21456,11 +21146,11 @@ perfecta armonía.`,
         return r;
     }), bie = {
         [Symbol.for(`effect/Differ`)]: {
-            _P: Zl,
-            _V: Zl
+            _P: Ql,
+            _V: Ql
         },
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, Iv = (e)=>{
         let t = Object.create(bie);
@@ -21485,11 +21175,11 @@ perfecta armonía.`,
                 }),
             patch: (t, n)=>yie(t, n, e)
         }), Lv = ()=>wie((e, t)=>t), wie = (e)=>Iv({
-            empty: Zl,
-            combine: (e, t)=>e === Zl ? t : t === Zl ? e : (n)=>t(e(n)),
-            diff: (e, t)=>pd(e, t) ? Zl : Ql(t),
+            empty: Ql,
+            combine: (e, t)=>e === Ql ? t : t === Ql ? e : (n)=>t(e(n)),
+            diff: (e, t)=>md(e, t) ? Ql : $l(t),
             patch: (t, n)=>e(n, t(n))
-        }), Rv = 255, zv = 8, Bv = (e)=>e & Rv, Vv = (e)=>e >> zv & Rv, Hv = (e, t)=>(e & Rv) + ((t & e & Rv) << zv), Tie = Hv(0, 0), Eie = (e)=>Hv(e, e), Die = (e)=>Hv(e, 0), Oie = B(2, (e, t)=>Hv(Bv(e) & ~t, Vv(e))), kie = B(2, (e, t)=>e | t), Aie = (e)=>~e >>> 0 & Rv, jie = (e)=>Gv(e, 32), Mie = B(2, (e, t)=>e & ~t), Nie = B(2, (e, t)=>e | t), Uv = (e)=>Wv(e) && !Fie(e), Wv = (e)=>Gv(e, 1), Gv = B(2, (e, t)=>(e & t) !== 0), Kv = (...e)=>e.reduce((e, t)=>e | t, 0), Pie = Kv(0), qv = (e)=>Gv(e, 4), Fie = (e)=>Gv(e, 16), Jv = B(2, (e, t)=>Hv(e ^ t, t)), Yv = B(2, (e, t)=>e & (Aie(Bv(t)) | Vv(t)) | Bv(t) & Vv(t)), Xv = Iv({
+        }), Rv = 255, zv = 8, Bv = (e)=>e & Rv, Vv = (e)=>e >> zv & Rv, Hv = (e, t)=>(e & Rv) + ((t & e & Rv) << zv), Tie = Hv(0, 0), Eie = (e)=>Hv(e, e), Die = (e)=>Hv(e, 0), Oie = z(2, (e, t)=>Hv(Bv(e) & ~t, Vv(e))), kie = z(2, (e, t)=>e | t), Aie = (e)=>~e >>> 0 & Rv, jie = (e)=>Gv(e, 32), Mie = z(2, (e, t)=>e & ~t), Nie = z(2, (e, t)=>e | t), Uv = (e)=>Wv(e) && !Fie(e), Wv = (e)=>Gv(e, 1), Gv = z(2, (e, t)=>(e & t) !== 0), Kv = (...e)=>e.reduce((e, t)=>e | t, 0), Pie = Kv(0), qv = (e)=>Gv(e, 4), Fie = (e)=>Gv(e, 16), Jv = z(2, (e, t)=>Hv(e ^ t, t)), Yv = z(2, (e, t)=>e & (Aie(Bv(t)) | Vv(t)) | Bv(t) & Vv(t)), Xv = Iv({
         empty: Tie,
         diff: (e, t)=>Jv(e, t),
         combine: (e, t)=>kie(t)(e),
@@ -21570,7 +21260,7 @@ perfecta armonía.`,
         if (vv(e)) return xv(ry(t));
         if (Wie(t)) return e;
         let n = Xie(e.head), r = Gie(t);
-        return n.length === 1 && r.length === 1 && pd(n[0], r[0]) ? yv(Yie(e.head, ry(t)), e.tail) : yv(ry(t), e);
+        return n.length === 1 && r.length === 1 && md(n[0], r[0]) ? yv(Yie(e.head, ry(t)), e.tail) : yv(ry(t), e);
     }, Bie = Symbol.for(`effect/RequestBlock/RequestBlockParallel`), Vie = {
         _R: (e)=>e
     }, ty = class {
@@ -21597,14 +21287,14 @@ perfecta armonía.`,
         _E: (e)=>e
     }, fy = {
         [dy]: Qie,
-        [ed] () {
-            return V(td(uy), rd(td(dae(this))), dd(this));
+        [td] () {
+            return B(nd(uy), id(nd(dae(this))), fd(this));
         },
-        [fd] (e) {
+        [pd] (e) {
             return $ie(e) && uae(this, e);
         },
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         },
         toJSON () {
             switch(this._tag){
@@ -21617,7 +21307,7 @@ perfecta armonía.`,
                     return {
                         _id: `Cause`,
                         _tag: this._tag,
-                        defect: vd(this.defect)
+                        defect: yd(this.defect)
                     };
                 case `Interrupt`:
                     return {
@@ -21629,22 +21319,22 @@ perfecta armonía.`,
                     return {
                         _id: `Cause`,
                         _tag: this._tag,
-                        failure: vd(this.error)
+                        failure: yd(this.error)
                     };
                 case `Sequential`:
                 case `Parallel`:
                     return {
                         _id: `Cause`,
                         _tag: this._tag,
-                        left: vd(this.left),
-                        right: vd(this.right)
+                        left: yd(this.left),
+                        right: yd(this.right)
                     };
             }
         },
         toString () {
             return Ay(this);
         },
-        [_d] () {
+        [vd] () {
             return this.toJSON();
         }
     }, py = (()=>{
@@ -21665,30 +21355,30 @@ perfecta armonía.`,
     }, vy = (e, t)=>{
         let n = Object.create(fy);
         return n._tag = ly, n.left = e, n.right = t, n;
-    }, $ie = (e)=>Du(e, dy), eae = (e)=>e._tag === ay, tae = (e)=>e._tag === oy, nae = (e)=>e._tag === `Empty` ? !0 : Oy(e, !0, (e, t)=>{
+    }, $ie = (e)=>Ou(e, dy), eae = (e)=>e._tag === ay, tae = (e)=>e._tag === oy, nae = (e)=>e._tag === `Empty` ? !0 : Oy(e, !0, (e, t)=>{
             switch(t._tag){
                 case ay:
-                    return qf(e);
+                    return H(e);
                 case `Die`:
                 case oy:
                 case sy:
-                    return qf(!1);
+                    return H(!1);
                 default:
-                    return H();
+                    return V();
             }
-        }), rae = (e)=>Xf(sae(e)), yy = (e)=>ky(void 0, pae)(e), iae = (e)=>wg(Oy(e, vg(), (e, t)=>t._tag === `Fail` ? qf(V(e, Dg(t.error))) : H())), by = (e)=>wg(Oy(e, vg(), (e, t)=>t._tag === `Die` ? qf(V(e, Dg(t.defect))) : H())), aae = (e)=>Oy(e, I_(), (e, t)=>t._tag === `Interrupt` ? qf(V(e, B_(t.fiberId))) : H()), oae = (e)=>Cy(e, (e)=>e._tag === `Fail` ? qf(e.error) : H()), xy = (e)=>{
+        }), rae = (e)=>Xf(sae(e)), yy = (e)=>ky(void 0, pae)(e), iae = (e)=>wg(Oy(e, vg(), (e, t)=>t._tag === `Fail` ? H(B(e, Dg(t.error))) : V())), by = (e)=>wg(Oy(e, vg(), (e, t)=>t._tag === `Die` ? H(B(e, Dg(t.defect))) : V())), aae = (e)=>Oy(e, I_(), (e, t)=>t._tag === `Interrupt` ? H(B(e, B_(t.fiberId))) : V()), oae = (e)=>Cy(e, (e)=>e._tag === `Fail` ? H(e.error) : V()), xy = (e)=>{
         let t = oae(e);
         switch(t._tag){
             case `None`:
-                return Of(e);
+                return kf(e);
             case `Some`:
-                return kf(t.value);
+                return Af(t.value);
         }
-    }, sae = (e)=>Cy(e, (e)=>e._tag === `Interrupt` ? qf(e.fiberId) : H()), cae = (e)=>Dy(e, {
-            onEmpty: H(),
-            onFail: (e)=>qf(hy(e)),
-            onDie: (e)=>qf(hy(e)),
-            onInterrupt: ()=>H(),
+    }, sae = (e)=>Cy(e, (e)=>e._tag === `Interrupt` ? H(e.fiberId) : V()), cae = (e)=>Dy(e, {
+            onEmpty: V(),
+            onFail: (e)=>H(hy(e)),
+            onDie: (e)=>H(hy(e)),
+            onInterrupt: ()=>V(),
             onSequential: gp(vy),
             onParallel: gp(_y)
         }), Sy = (e)=>Dy(e, {
@@ -21708,46 +21398,46 @@ perfecta armonía.`,
         }), uae = (e, t)=>{
         let n = bg(e), r = bg(t);
         for(; Ag(n) && Ag(r);){
-            let [e, t] = V(Ng(n), Oy([
+            let [e, t] = B(Ng(n), Oy([
                 I_(),
                 vg()
             ], ([e, t], n)=>{
                 let [r, i] = wy(n);
-                return qf([
-                    V(e, U_(r)),
-                    V(t, kg(i))
+                return H([
+                    B(e, U_(r)),
+                    B(t, kg(i))
                 ]);
-            })), [i, a] = V(Ng(r), Oy([
+            })), [i, a] = B(Ng(r), Oy([
                 I_(),
                 vg()
             ], ([e, t], n)=>{
                 let [r, i] = wy(n);
-                return qf([
-                    V(e, U_(r)),
-                    V(t, kg(i))
+                return H([
+                    B(e, U_(r)),
+                    B(t, kg(i))
                 ]);
             }));
-            if (!pd(e, i)) return !1;
+            if (!md(e, i)) return !1;
             n = t, r = a;
         }
         return !0;
     }, dae = (e)=>fae(bg(e), vg()), fae = (e, t)=>{
         for(;;){
-            let [n, r] = V(e, Vp([
+            let [n, r] = B(e, Vp([
                 I_(),
                 vg()
             ], ([e, t], n)=>{
                 let [r, i] = wy(n);
                 return [
-                    V(e, U_(r)),
-                    V(t, kg(i))
+                    B(e, U_(r)),
+                    B(t, kg(i))
                 ];
-            })), i = z_(n) > 0 ? V(t, Dg(n)) : t;
+            })), i = z_(n) > 0 ? B(t, Dg(n)) : t;
             if (cne(r)) return wg(i);
             e = r, t = i;
         }
-        throw Error(Iu(`Cause.flattenCauseLoop`));
-    }, Cy = B(2, (e, t)=>{
+        throw Error(Lu(`Cause.flattenCauseLoop`));
+    }, Cy = z(2, (e, t)=>{
         let n = [
             e
         ];
@@ -21766,7 +21456,7 @@ perfecta armonía.`,
                     return r;
             }
         }
-        return H();
+        return V();
     }), wy = (e)=>{
         let t = e, n = [], r = I_(), i = vg();
         for(; t !== void 0;)switch(t._tag){
@@ -21818,22 +21508,22 @@ perfecta armonía.`,
                 n.push(t.right), t = t.left;
                 break;
         }
-        throw Error(Iu(`Cause.evaluateCauseLoop`));
+        throw Error(Lu(`Cause.evaluateCauseLoop`));
     }, pae = {
-        emptyCase: $l,
-        failCase: eu,
-        dieCase: eu,
-        interruptCase: $l,
+        emptyCase: eu,
+        failCase: tu,
+        dieCase: tu,
+        interruptCase: eu,
         sequentialCase: (e, t, n)=>t && n,
         parallelCase: (e, t, n)=>t && n
-    }, Ty = `SequentialCase`, Ey = `ParallelCase`, Dy = B(2, (e, { onDie: t, onEmpty: n, onFail: r, onInterrupt: i, onParallel: a, onSequential: o })=>ky(e, void 0, {
+    }, Ty = `SequentialCase`, Ey = `ParallelCase`, Dy = z(2, (e, { onDie: t, onEmpty: n, onFail: r, onInterrupt: i, onParallel: a, onSequential: o })=>ky(e, void 0, {
             emptyCase: ()=>n,
             failCase: (e, t)=>r(t),
             dieCase: (e, n)=>t(n),
             interruptCase: (e, t)=>i(t),
             sequentialCase: (e, t, n)=>o(t, n),
             parallelCase: (e, t, n)=>a(t, n)
-        })), Oy = B(3, (e, t, n)=>{
+        })), Oy = z(3, (e, t, n)=>{
         let r = t, i = e, a = [];
         for(; i !== void 0;){
             let e = n(r, i);
@@ -21851,7 +21541,7 @@ perfecta armonía.`,
             i === void 0 && a.length > 0 && (i = a.pop());
         }
         return r;
-    }), ky = B(3, (e, t, n)=>{
+    }), ky = z(3, (e, t, n)=>{
         let r = [
             e
         ], i = [];
@@ -21859,24 +21549,24 @@ perfecta armonía.`,
             let e = r.pop();
             switch(e._tag){
                 case ay:
-                    i.push(Of(n.emptyCase(t)));
+                    i.push(kf(n.emptyCase(t)));
                     break;
                 case oy:
-                    i.push(Of(n.failCase(t, e.error)));
+                    i.push(kf(n.failCase(t, e.error)));
                     break;
                 case `Die`:
-                    i.push(Of(n.dieCase(t, e.defect)));
+                    i.push(kf(n.dieCase(t, e.defect)));
                     break;
                 case sy:
-                    i.push(Of(n.interruptCase(t, e.fiberId)));
+                    i.push(kf(n.interruptCase(t, e.fiberId)));
                     break;
                 case ly:
-                    r.push(e.right), r.push(e.left), i.push(kf({
+                    r.push(e.right), r.push(e.left), i.push(Af({
                         _tag: Ty
                     }));
                     break;
                 case cy:
-                    r.push(e.right), r.push(e.left), i.push(kf({
+                    r.push(e.right), r.push(e.left), i.push(Af({
                         _tag: Ey
                     }));
                     break;
@@ -21930,10 +21620,10 @@ perfecta armonía.`,
         if (typeof e == `string`) return e;
         if (typeof e == `object` && e && e instanceof Error) return e.message;
         try {
-            if (Du(e, `toString`) && Su(e.toString) && e.toString !== Object.prototype.toString && e.toString !== globalThis.Array.prototype.toString) return e.toString();
+            if (Ou(e, `toString`) && Cu(e.toString) && e.toString !== Object.prototype.toString && e.toString !== globalThis.Array.prototype.toString) return e.toString();
         } catch  {}
-        return Ed(e);
-    }, mae = /\((.*)\)/g, hae = hu(`effect/Tracer/spanToTrace`, ()=>new WeakMap), gae = (e, t, n)=>{
+        return Dd(e);
+    }, mae = /\((.*)\)/g, hae = gu(`effect/Tracer/spanToTrace`, ()=>new WeakMap), gae = (e, t, n)=>{
         let r = [
             e
         ], i = t.startsWith(e) ? t.slice(e.length).split(`
@@ -22026,7 +21716,7 @@ perfecta armonía.`,
     }, Vy = Symbol.for(`effect/Effect`), xae = class {
         patch;
         op;
-        _op = Gd;
+        _op = Kd;
         constructor(e, t){
             this.patch = e, this.op = t;
         }
@@ -22036,36 +21726,36 @@ perfecta armonía.`,
         effect_instruction_i1 = void 0;
         effect_instruction_i2 = void 0;
         trace = void 0;
-        [Vy] = Qd;
+        [Vy] = $d;
         constructor(e){
             this._op = e;
         }
-        [fd](e) {
+        [pd](e) {
             return this === e;
         }
-        [ed]() {
-            return dd(this, nd(this));
+        [td]() {
+            return fd(this, rd(this));
         }
         pipe() {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
         toJSON() {
             return {
                 _id: `Effect`,
                 _op: this._op,
-                effect_instruction_i0: vd(this.effect_instruction_i0),
-                effect_instruction_i1: vd(this.effect_instruction_i1),
-                effect_instruction_i2: vd(this.effect_instruction_i2)
+                effect_instruction_i0: yd(this.effect_instruction_i0),
+                effect_instruction_i1: yd(this.effect_instruction_i1),
+                effect_instruction_i2: yd(this.effect_instruction_i2)
             };
         }
         toString() {
-            return wd(this.toJSON());
+            return Td(this.toJSON());
         }
-        [_d]() {
+        [vd]() {
             return this.toJSON();
         }
         [Symbol.iterator]() {
-            return new zy(new Ju(this));
+            return new zy(new Yu(this));
         }
     }, Uy = class {
         _op;
@@ -22073,21 +21763,21 @@ perfecta armonía.`,
         effect_instruction_i1 = void 0;
         effect_instruction_i2 = void 0;
         trace = void 0;
-        [Vy] = Qd;
+        [Vy] = $d;
         constructor(e){
             this._op = e, this._tag = e;
         }
-        [fd](e) {
-            return mx(e) && e._op === `Failure` && pd(this.effect_instruction_i0, e.effect_instruction_i0);
+        [pd](e) {
+            return mx(e) && e._op === `Failure` && md(this.effect_instruction_i0, e.effect_instruction_i0);
         }
-        [ed]() {
-            return V(sd(this._tag), rd(td(this.effect_instruction_i0)), dd(this));
+        [td]() {
+            return B(cd(this._tag), id(nd(this.effect_instruction_i0)), fd(this));
         }
         get cause() {
             return this.effect_instruction_i0;
         }
         pipe() {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
         toJSON() {
             return {
@@ -22097,13 +21787,13 @@ perfecta armonía.`,
             };
         }
         toString() {
-            return wd(this.toJSON());
+            return Td(this.toJSON());
         }
-        [_d]() {
+        [vd]() {
             return this.toJSON();
         }
         [Symbol.iterator]() {
-            return new zy(new Ju(this));
+            return new zy(new Yu(this));
         }
     }, Wy = class {
         _op;
@@ -22111,53 +21801,53 @@ perfecta armonía.`,
         effect_instruction_i1 = void 0;
         effect_instruction_i2 = void 0;
         trace = void 0;
-        [Vy] = Qd;
+        [Vy] = $d;
         constructor(e){
             this._op = e, this._tag = e;
         }
-        [fd](e) {
-            return mx(e) && e._op === `Success` && pd(this.effect_instruction_i0, e.effect_instruction_i0);
+        [pd](e) {
+            return mx(e) && e._op === `Success` && md(this.effect_instruction_i0, e.effect_instruction_i0);
         }
-        [ed]() {
-            return V(sd(this._tag), rd(td(this.effect_instruction_i0)), dd(this));
+        [td]() {
+            return B(cd(this._tag), id(nd(this.effect_instruction_i0)), fd(this));
         }
         get value() {
             return this.effect_instruction_i0;
         }
         pipe() {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
         toJSON() {
             return {
                 _id: `Exit`,
                 _tag: this._op,
-                value: vd(this.value)
+                value: yd(this.value)
             };
         }
         toString() {
-            return wd(this.toJSON());
+            return Td(this.toJSON());
         }
-        [_d]() {
+        [vd]() {
             return this.toJSON();
         }
         [Symbol.iterator]() {
-            return new zy(new Ju(this));
+            return new zy(new Yu(this));
         }
-    }, Gy = (e)=>Du(e, Vy), Ky = (e)=>{
-        let t = new Hy(Ud);
+    }, Gy = (e)=>Ou(e, Vy), Ky = (e)=>{
+        let t = new Hy(Wd);
         return t.effect_instruction_i0 = e, t;
-    }, Sae = B(3, (e, t, n)=>Db((r)=>U(e, (e)=>U(ib(Cb(()=>r(t(e)))), (t)=>Cb(()=>n(e, t)).pipe(db({
+    }, Sae = z(3, (e, t, n)=>Db((r)=>U(e, (e)=>U(ib(Cb(()=>r(t(e)))), (t)=>Cb(()=>n(e, t)).pipe(db({
                         onFailure: (e)=>{
                             switch(t._tag){
-                                case Pd:
+                                case Fd:
                                     return sb(vy(t.effect_instruction_i0, e));
-                                case Rd:
+                                case zd:
                                     return sb(e);
                             }
                         },
                         onSuccess: ()=>t
-                    })))))), qy = B(2, (e, t)=>U(e, ()=>Sb(t))), Jy = (e)=>qy(e, void 0), Yy = function() {
-        let e = new Hy(Nd);
+                    })))))), qy = z(2, (e, t)=>U(e, ()=>Sb(t))), Jy = (e)=>qy(e, void 0), Yy = function() {
+        let e = new Hy(Pd);
         switch(arguments.length){
             case 2:
                 e.effect_instruction_i0 = arguments[0], e.commit = arguments[1];
@@ -22169,11 +21859,11 @@ perfecta armonía.`,
                 e.effect_instruction_i0 = arguments[0], e.effect_instruction_i1 = arguments[1], e.effect_instruction_i2 = arguments[2], e.commit = arguments[3];
                 break;
             default:
-                throw Error(Iu(`you're not supposed to end up here`));
+                throw Error(Lu(`you're not supposed to end up here`));
         }
         return e;
     }, Xy = (e, t = ov)=>{
-        let n = new Hy(Md), r;
+        let n = new Hy(Nd), r;
         return n.effect_instruction_i0 = (t)=>{
             r = e(t);
         }, n.effect_instruction_i1 = t, bb(n, (e)=>Gy(r) ? r : Ob);
@@ -22182,13 +21872,13 @@ perfecta armonía.`,
             function r(t) {
                 e ? e(t) : n === void 0 && (n = t);
             }
-            let i = new Hy(Md);
+            let i = new Hy(Nd);
             i.effect_instruction_i0 = (t)=>{
                 e = t, n && t(n);
             }, i.effect_instruction_i1 = t;
             let a, o;
-            return this.effect_instruction_i0.length === 1 ? a = Qu(()=>this.effect_instruction_i0(r)) : (o = new AbortController, a = Qu(()=>this.effect_instruction_i0(r, o.signal))), a || o ? bb(i, (e)=>(o && o.abort(), a ?? Ob)) : i;
-        }), $y = B(2, (e, t)=>fb(e, {
+            return this.effect_instruction_i0.length === 1 ? a = $u(()=>this.effect_instruction_i0(r)) : (o = new AbortController, a = $u(()=>this.effect_instruction_i0(r, o.signal))), a || o ? bb(i, (e)=>(o && o.abort(), a ?? Ob)) : i;
+        }), $y = z(2, (e, t)=>fb(e, {
             onFailure: t,
             onSuccess: Sb
         })), eb = Symbol.for(`effect/OriginalAnnotation`), tb = (e, t)=>Xf(t) ? new Proxy(e, {
@@ -22198,40 +21888,40 @@ perfecta armonía.`,
             get (n, r) {
                 return r === Py ? t.value : r === eb ? e : n[r];
             }
-        }) : e, nb = (e)=>Eu(e) && !(Py in e) ? Ky((t)=>sb(hy(tb(e, Mx(t))))) : sb(hy(e)), Cae = (e)=>wae(()=>hy(new aoe(e))), rb = (e)=>fb(e, {
-            onFailure: (e)=>Sb(kf(e)),
-            onSuccess: (e)=>Sb(Of(e))
+        }) : e, nb = (e)=>Du(e) && !(Py in e) ? Ky((t)=>sb(hy(tb(e, Mx(t))))) : sb(hy(e)), Cae = (e)=>wae(()=>hy(new aoe(e))), rb = (e)=>fb(e, {
+            onFailure: (e)=>Sb(Af(e)),
+            onSuccess: (e)=>Sb(kf(e))
         }), ib = (e)=>Dae(e, {
             onFailure: vx,
             onSuccess: xx
-        }), ab = (e)=>Eu(e) && !(Py in e) ? Ky((t)=>sb(my(tb(e, Mx(t))))) : sb(my(e)), ob = (e)=>U(wb(e), ab), sb = (e)=>{
-        let t = new Uy(Pd);
+        }), ab = (e)=>Du(e) && !(Py in e) ? Ky((t)=>sb(my(tb(e, Mx(t))))) : sb(my(e)), ob = (e)=>U(wb(e), ab), sb = (e)=>{
+        let t = new Uy(Fd);
         return t.effect_instruction_i0 = e, t;
-    }, wae = (e)=>U(wb(e), sb), cb = Ky((e)=>Sb(e.id())), lb = (e)=>Ky((t)=>e(t.id())), U = B(2, (e, t)=>{
-        let n = new Hy(Id);
+    }, wae = (e)=>U(wb(e), sb), cb = Ky((e)=>Sb(e.id())), lb = (e)=>Ky((t)=>e(t.id())), U = z(2, (e, t)=>{
+        let n = new Hy(Ld);
         return n.effect_instruction_i0 = e, n.effect_instruction_i1 = t, n;
-    }), Tae = B(2, (e, t)=>U(e, (e)=>{
+    }), Tae = z(2, (e, t)=>U(e, (e)=>{
             let n = typeof t == `function` ? t(e) : t;
-            return Gy(n) ? n : Fu(n) ? Xy((e)=>{
+            return Gy(n) ? n : Iu(n) ? Xy((e)=>{
                 n.then((t)=>e(Sb(t)), (t)=>e(ab(new px(t, `An unknown error occurred in Effect.andThen`))));
             }) : Sb(n);
         })), Eae = (e)=>{
         let t = new Hy(`OnStep`);
         return t.effect_instruction_i0 = e, t;
-    }, ub = (e)=>U(e, Zl), Dae = B(2, (e, t)=>db(e, {
+    }, ub = (e)=>U(e, Ql), Dae = z(2, (e, t)=>db(e, {
             onFailure: (e)=>Sb(t.onFailure(e)),
             onSuccess: (e)=>Sb(t.onSuccess(e))
-        })), db = B(2, (e, t)=>{
-        let n = new Hy(Ld);
+        })), db = z(2, (e, t)=>{
+        let n = new Hy(Rd);
         return n.effect_instruction_i0 = e, n.effect_instruction_i1 = t.onFailure, n.effect_instruction_i2 = t.onSuccess, n;
-    }), fb = B(2, (e, t)=>db(e, {
+    }), fb = z(2, (e, t)=>db(e, {
             onFailure: (e)=>{
                 if (by(e).length > 0) return sb(lae(e));
                 let n = iae(e);
                 return n.length > 0 ? t.onFailure(Mg(n)) : sb(e);
             },
             onSuccess: t.onSuccess
-        })), pb = B(2, (e, t)=>Cb(()=>{
+        })), pb = z(2, (e, t)=>Cb(()=>{
             let n = xp(e), r = yp(n.length), i = 0;
             return qy(jb({
                 while: ()=>i < n.length,
@@ -22240,7 +21930,7 @@ perfecta armonía.`,
                     r[i++] = e;
                 }
             }), r);
-        })), mb = B(2, (e, t)=>Cb(()=>{
+        })), mb = z(2, (e, t)=>Cb(()=>{
             let n = xp(e), r = 0;
             return jb({
                 while: ()=>r < n.length,
@@ -22250,12 +21940,12 @@ perfecta armonía.`,
                 }
             });
         })), hb = (e)=>{
-        let t = new Hy(Bd);
+        let t = new Hy(Vd);
         return t.effect_instruction_i0 = Iie(1), t.effect_instruction_i1 = ()=>e, t;
-    }, Oae = B(2, (e, t)=>Db((n)=>U(ib(n(e)), (e)=>yoe(t, e)))), gb = B(2, (e, t)=>U(e, (e)=>wb(()=>t(e)))), _b = B(2, (e, t)=>fb(e, {
+    }, Oae = z(2, (e, t)=>Db((n)=>U(ib(n(e)), (e)=>yoe(t, e)))), gb = z(2, (e, t)=>U(e, (e)=>wb(()=>t(e)))), _b = z(2, (e, t)=>fb(e, {
             onFailure: (e)=>ob(()=>t.onFailure(e)),
             onSuccess: (e)=>wb(()=>t.onSuccess(e))
-        })), vb = B(2, (e, t)=>db(e, {
+        })), vb = z(2, (e, t)=>db(e, {
             onFailure: (e)=>{
                 let n = xy(e);
                 switch(n._tag){
@@ -22266,7 +21956,7 @@ perfecta armonía.`,
                 }
             },
             onSuccess: Sb
-        })), yb = B(2, (e, t)=>Db((n)=>db(n(e), {
+        })), yb = z(2, (e, t)=>Db((n)=>db(n(e), {
                 onFailure: (e)=>{
                     let n = vx(e);
                     return db(t(n), {
@@ -22278,47 +21968,47 @@ perfecta armonía.`,
                     let n = xx(e);
                     return Lb(t(n), n);
                 }
-            }))), bb = B(2, (e, t)=>yb(e, bx({
+            }))), bb = z(2, (e, t)=>yb(e, bx({
             onFailure: (e)=>yy(e) ? Jy(t(aae(e))) : Ob,
             onSuccess: ()=>Ob
-        }))), kae = B(2, (e, t)=>Nae(e, t, Sb)), xb = (e)=>Aae(e, Zl), Aae = B(2, (e, t)=>fb(e, {
+        }))), kae = z(2, (e, t)=>Nae(e, t, Sb)), xb = (e)=>Aae(e, Ql), Aae = z(2, (e, t)=>fb(e, {
             onFailure: (e)=>nb(t(e)),
             onSuccess: Sb
         })), jae = Ky((e, t)=>Sb(t.runtimeFlags)), Sb = (e)=>{
-        let t = new Wy(Rd);
+        let t = new Wy(zd);
         return t.effect_instruction_i0 = e, t;
     }, Cb = (e)=>{
-        let t = new Hy(Nd);
+        let t = new Hy(Pd);
         return t.commit = e, t;
     }, wb = (e)=>{
-        let t = new Hy(zd);
+        let t = new Hy(Bd);
         return t.effect_instruction_i0 = e, t;
-    }, Tb = B((e)=>e.length === 3 || e.length === 2 && !(Eu(e[1]) && `onlyEffect` in e[1]), (e, t)=>U(e, (e)=>{
+    }, Tb = z((e)=>e.length === 3 || e.length === 2 && !(Du(e[1]) && `onlyEffect` in e[1]), (e, t)=>U(e, (e)=>{
             let n = typeof t == `function` ? t(e) : t;
-            return Gy(n) ? qy(n, e) : Fu(n) ? Xy((t)=>{
+            return Gy(n) ? qy(n, e) : Iu(n) ? Xy((t)=>{
                 n.then((n)=>t(Sb(e)), (e)=>t(ab(new px(e, `An unknown error occurred in Effect.tap`))));
             }) : Sb(e);
-        })), Mae = (e)=>Ky((t)=>e(Gb($b, qf(V(t.getFiberRef($b), $f(()=>t.scope())))))), Nae = B(3, (e, t, n)=>db(e, {
+        })), Mae = (e)=>Ky((t)=>e(Gb($b, H(B(t.getFiberRef($b), $f(()=>t.scope())))))), Nae = z(3, (e, t, n)=>db(e, {
             onFailure: (e)=>by(e).length > 0 ? sb(op(cae(e))) : t(),
             onSuccess: n
         })), Eb = (e)=>{
-        let t = new Hy(Bd);
+        let t = new Hy(Vd);
         return t.effect_instruction_i0 = Zv(1), t.effect_instruction_i1 = ()=>e, t;
     }, Db = (e)=>Yy(e, function() {
-            let e = new Hy(Bd);
-            return e.effect_instruction_i0 = Zv(1), e.effect_instruction_i1 = (e)=>Wv(e) ? Qu(()=>this.effect_instruction_i0(hb)) : Qu(()=>this.effect_instruction_i0(Eb)), e;
+            let e = new Hy(Vd);
+            return e.effect_instruction_i0 = Zv(1), e.effect_instruction_i1 = (e)=>Wv(e) ? $u(()=>this.effect_instruction_i0(hb)) : $u(()=>this.effect_instruction_i0(Eb)), e;
         }), Ob = Sb(void 0), kb = (e)=>{
-        let t = new Hy(Bd);
-        return t.effect_instruction_i0 = e, t.effect_instruction_i1 = void 0, t;
-    }, Ab = B(2, (e, t)=>U(t, (t)=>t ? V(e, gb(qf)) : Sb(H()))), jb = (e)=>{
         let t = new Hy(Vd);
+        return t.effect_instruction_i0 = e, t.effect_instruction_i1 = void 0, t;
+    }, Ab = z(2, (e, t)=>U(t, (t)=>t ? B(e, gb(H)) : Sb(V()))), jb = (e)=>{
+        let t = new Hy(Hd);
         return t.effect_instruction_i0 = e.while, t.effect_instruction_i1 = e.body, t.effect_instruction_i2 = e.step, t;
     }, Mb = (e)=>Cb(()=>{
-            let t = new Hy(Hd);
+            let t = new Hy(Ud);
             return t.effect_instruction_i0 = e(), t;
         }), Nb = function() {
         let e = arguments.length === 1 ? arguments[0] : arguments[1].bind(arguments[0]);
-        return Mb(()=>e(V));
+        return Mb(()=>e(B));
     }, Pae = (e, ...t)=>Object.defineProperty(t.length === 0 ? function(...t) {
             return Mb(()=>e.apply(this, t));
         } : function(...n) {
@@ -22328,22 +22018,22 @@ perfecta armonía.`,
         }, `length`, {
             value: e.length,
             configurable: !0
-        }), Fae = B(2, (e, t)=>{
-        let n = new Hy(Bd);
+        }), Fae = z(2, (e, t)=>{
+        let n = new Hy(Vd);
         return n.effect_instruction_i0 = t, n.effect_instruction_i1 = ()=>e, n;
     }), Pb = (e)=>{
-        let t = new Hy(Wd);
+        let t = new Hy(Gd);
         return e?.priority === void 0 ? t : $ae(t, e.priority);
-    }, Fb = B(2, (e, t)=>U(e, (e)=>gb(t, (t)=>[
+    }, Fb = z(2, (e, t)=>U(e, (e)=>gb(t, (t)=>[
                     e,
                     t
-                ]))), Ib = B(2, (e, t)=>U(e, (e)=>qy(t, e))), Lb = B(2, (e, t)=>U(e, ()=>t)), Iae = B(3, (e, t, n)=>U(e, (e)=>gb(t, (t)=>n(e, t)))), Lae = (e)=>U(cb, (t)=>V(e, Rb(t))), Rb = B(2, (e, t)=>U(e.interruptAsFork(t), ()=>e.await)), Rae = {
+                ]))), Ib = z(2, (e, t)=>U(e, (e)=>qy(t, e))), Lb = z(2, (e, t)=>U(e, ()=>t)), Iae = z(3, (e, t, n)=>U(e, (e)=>gb(t, (t)=>n(e, t)))), Lae = (e)=>U(cb, (t)=>B(e, Rb(t))), Rb = z(2, (e, t)=>U(e.interruptAsFork(t), ()=>e.await)), Rae = {
         _tag: `All`,
         syslog: 0,
         label: `ALL`,
         ordinal: -(2 ** 53 - 1),
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, zae = {
         _tag: `Fatal`,
@@ -22351,7 +22041,7 @@ perfecta armonía.`,
         label: `FATAL`,
         ordinal: 5e4,
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, Bae = {
         _tag: `Error`,
@@ -22359,7 +22049,7 @@ perfecta armonía.`,
         label: `ERROR`,
         ordinal: 4e4,
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, zb = {
         _tag: `Warning`,
@@ -22367,7 +22057,7 @@ perfecta armonía.`,
         label: `WARN`,
         ordinal: 3e4,
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, Bb = {
         _tag: `Info`,
@@ -22375,7 +22065,7 @@ perfecta armonía.`,
         label: `INFO`,
         ordinal: 2e4,
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, Vb = {
         _tag: `Debug`,
@@ -22383,7 +22073,7 @@ perfecta armonía.`,
         label: `DEBUG`,
         ordinal: 1e4,
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, Vae = {
         _tag: `Trace`,
@@ -22391,7 +22081,7 @@ perfecta armonía.`,
         label: `TRACE`,
         ordinal: 0,
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, Hae = {
         _tag: `None`,
@@ -22399,19 +22089,19 @@ perfecta armonía.`,
         label: `OFF`,
         ordinal: 2 ** 53 - 1,
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, Uae = Symbol.for(`effect/FiberRef`), Wae = {
         _A: (e)=>e
-    }, Hb = (e)=>Ky((t)=>xx(t.getFiberRef(e))), Ub = B(2, (e, t)=>U(Hb(e), t)), Wb = B(2, (e, t)=>Gae(e, ()=>[
+    }, Hb = (e)=>Ky((t)=>xx(t.getFiberRef(e))), Ub = z(2, (e, t)=>U(Hb(e), t)), Wb = z(2, (e, t)=>Gae(e, ()=>[
                 void 0,
                 t
-            ])), Gae = B(2, (e, t)=>Ky((n)=>{
+            ])), Gae = z(2, (e, t)=>Ky((n)=>{
             let [r, i] = t(n.getFiberRef(e));
             return n.setFiberRef(e, i), Sb(r);
-        })), Gb = B(3, (e, t, n)=>Sae(Ib(Hb(t), Wb(t, n)), ()=>e, (e)=>Wb(t, e))), Kae = B(3, (e, t, n)=>Ub(t, (r)=>Gb(e, t, n(r)))), Kb = (e, t)=>Jb(e, {
+        })), Gb = z(3, (e, t, n)=>Sae(Ib(Hb(t), Wb(t, n)), ()=>e, (e)=>Wb(t, e))), Kae = z(3, (e, t, n)=>Ub(t, (r)=>Gb(e, t, n(r)))), Kb = (e, t)=>Jb(e, {
             differ: Lv(),
-            fork: t?.fork ?? Zl,
+            fork: t?.fork ?? Ql,
             join: t?.join
         }), qae = (e)=>{
         let t = Sie();
@@ -22432,7 +22122,7 @@ perfecta armonía.`,
             fork: t.empty
         });
     }, Jb = (e, t)=>({
-            ...rf,
+            ...af,
             [Uae]: Wae,
             initial: e,
             commit () {
@@ -22446,10 +22136,10 @@ perfecta armonía.`,
         }), Yae = (e)=>Jb(e, {
             differ: Xv,
             fork: Xv.empty
-        }), Yb = hu(Symbol.for(`effect/FiberRef/currentContext`), ()=>qb(ig())), Xb = hu(Symbol.for(`effect/FiberRef/currentSchedulingPriority`), ()=>Kb(0)), Zb = hu(Symbol.for(`effect/FiberRef/currentMaxOpsBeforeYield`), ()=>Kb(2048)), Xae = hu(Symbol.for(`effect/FiberRef/currentLogAnnotation`), ()=>Kb(cv())), Zae = hu(Symbol.for(`effect/FiberRef/currentLogLevel`), ()=>Kb(Bb)), Qae = hu(Symbol.for(`effect/FiberRef/currentLogSpan`), ()=>Kb(bv())), $ae = B(2, (e, t)=>Gb(e, Xb, t)), eoe = hu(Symbol.for(`effect/FiberRef/currentConcurrency`), ()=>Kb(`unbounded`)), toe = hu(Symbol.for(`effect/FiberRef/currentRequestBatching`), ()=>Kb(!0)), noe = hu(Symbol.for(`effect/FiberRef/currentUnhandledErrorLogLevel`), ()=>Kb(qf(Vb))), roe = hu(Symbol.for(`effect/FiberRef/versionMismatchErrorLogLevel`), ()=>Kb(qf(zb))), Qb = hu(Symbol.for(`effect/FiberRef/currentMetricLabels`), ()=>Jae(Lp())), $b = hu(Symbol.for(`effect/FiberRef/currentForkScopeOverride`), ()=>Kb(H(), {
-            fork: ()=>H(),
+        }), Yb = gu(Symbol.for(`effect/FiberRef/currentContext`), ()=>qb(ig())), Xb = gu(Symbol.for(`effect/FiberRef/currentSchedulingPriority`), ()=>Kb(0)), Zb = gu(Symbol.for(`effect/FiberRef/currentMaxOpsBeforeYield`), ()=>Kb(2048)), Xae = gu(Symbol.for(`effect/FiberRef/currentLogAnnotation`), ()=>Kb(cv())), Zae = gu(Symbol.for(`effect/FiberRef/currentLogLevel`), ()=>Kb(Bb)), Qae = gu(Symbol.for(`effect/FiberRef/currentLogSpan`), ()=>Kb(bv())), $ae = z(2, (e, t)=>Gb(e, Xb, t)), eoe = gu(Symbol.for(`effect/FiberRef/currentConcurrency`), ()=>Kb(`unbounded`)), toe = gu(Symbol.for(`effect/FiberRef/currentRequestBatching`), ()=>Kb(!0)), noe = gu(Symbol.for(`effect/FiberRef/currentUnhandledErrorLogLevel`), ()=>Kb(H(Vb))), roe = gu(Symbol.for(`effect/FiberRef/versionMismatchErrorLogLevel`), ()=>Kb(H(zb))), Qb = gu(Symbol.for(`effect/FiberRef/currentMetricLabels`), ()=>Jae(Lp())), $b = gu(Symbol.for(`effect/FiberRef/currentForkScopeOverride`), ()=>Kb(V(), {
+            fork: ()=>V(),
             join: (e, t)=>e
-        })), ex = hu(Symbol.for(`effect/FiberRef/currentInterruptedCause`), ()=>Kb(py, {
+        })), ex = gu(Symbol.for(`effect/FiberRef/currentInterruptedCause`), ()=>Kb(py, {
             fork: ()=>py,
             join: (e, t)=>e
         })), tx = Symbol.for(`effect/Scope`), nx = Symbol.for(`effect/CloseableScope`), ioe = (e, t)=>e.addFinalizer(()=>Jy(t)), rx = (e, t)=>e.addFinalizer(t), ix = (e, t)=>e.close(t), ax = (e, t)=>e.fork(t), ox = function() {
@@ -22463,7 +22153,7 @@ perfecta armonía.`,
                 };
                 return this.message && (e.message = this.message), this.cause && (e.cause = this.cause), e;
             }
-            [_d]() {
+            [vd]() {
                 return this.toString === globalThis.Error.prototype.toString ? `Bun` in globalThis ? Ay(my(this), {
                     renderErrorCause: !0
                 }) : this : this.stack ? `${this.toString()}\n${this.stack.split(`
@@ -22471,7 +22161,7 @@ perfecta armonía.`,
 `)}` : this.toString();
             }
         }
-        return Object.assign(e.prototype, af), e;
+        return Object.assign(e.prototype, of), e;
     }(), sx = (e, t)=>{
         class n extends ox {
             _tag = t;
@@ -22479,7 +22169,7 @@ perfecta armonía.`,
         return Object.assign(n.prototype, e), n.prototype.name = t, n;
     }, cx = Symbol.for(`effect/Cause/errors/RuntimeException`), aoe = sx({
         [cx]: cx
-    }, `RuntimeException`), ooe = Symbol.for(`effect/Cause/errors/InterruptedException`), soe = (e)=>Du(e, ooe), lx = Symbol.for(`effect/Cause/errors/IllegalArgument`), coe = sx({
+    }, `RuntimeException`), ooe = Symbol.for(`effect/Cause/errors/InterruptedException`), soe = (e)=>Ou(e, ooe), lx = Symbol.for(`effect/Cause/errors/IllegalArgument`), coe = sx({
         [lx]: lx
     }, `IllegalArgumentException`), ux = Symbol.for(`effect/Cause/errors/NoSuchElement`), dx = sx({
         [ux]: ux
@@ -22497,72 +22187,72 @@ perfecta armonía.`,
             [fx]: fx,
             name: `UnknownException`
         }), e;
-    }(), mx = (e)=>Gy(e) && `_tag` in e && (e._tag === `Success` || e._tag === `Failure`), loe = (e)=>e._tag === `Success`, uoe = B(2, (e, t)=>{
+    }(), mx = (e)=>Gy(e) && `_tag` in e && (e._tag === `Success` || e._tag === `Failure`), loe = (e)=>e._tag === `Success`, uoe = z(2, (e, t)=>{
         switch(e._tag){
-            case Pd:
+            case Fd:
                 return vx(e.effect_instruction_i0);
-            case Rd:
+            case zd:
                 return xx(t);
         }
     }), hx = (e)=>uoe(e, void 0), gx = (e, t)=>_oe(e, t?.parallel ? _y : vy), doe = (e)=>vx(hy(e)), _x = (e)=>vx(my(e)), vx = (e)=>{
-        let t = new Uy(Pd);
+        let t = new Uy(Fd);
         return t.effect_instruction_i0 = e, t;
-    }, foe = B(2, (e, t)=>{
+    }, foe = z(2, (e, t)=>{
         switch(e._tag){
-            case Pd:
+            case Fd:
                 return vx(e.effect_instruction_i0);
-            case Rd:
+            case zd:
                 return t(e.effect_instruction_i0);
         }
-    }), poe = (e)=>V(e, foe(Zl)), moe = (e)=>vx(gy(e)), yx = B(2, (e, t)=>{
+    }), poe = (e)=>B(e, foe(Ql)), moe = (e)=>vx(gy(e)), yx = z(2, (e, t)=>{
         switch(e._tag){
-            case Pd:
+            case Fd:
                 return vx(e.effect_instruction_i0);
-            case Rd:
+            case zd:
                 return xx(t(e.effect_instruction_i0));
         }
-    }), bx = B(2, (e, { onFailure: t, onSuccess: n })=>{
+    }), bx = z(2, (e, { onFailure: t, onSuccess: n })=>{
         switch(e._tag){
-            case Pd:
+            case Fd:
                 return t(e.effect_instruction_i0);
-            case Rd:
+            case zd:
                 return n(e.effect_instruction_i0);
         }
-    }), hoe = B(2, (e, { onFailure: t, onSuccess: n })=>{
+    }), hoe = z(2, (e, { onFailure: t, onSuccess: n })=>{
         switch(e._tag){
-            case Pd:
+            case Fd:
                 return t(e.effect_instruction_i0);
-            case Rd:
+            case zd:
                 return n(e.effect_instruction_i0);
         }
     }), xx = (e)=>{
-        let t = new Wy(Rd);
+        let t = new Wy(zd);
         return t.effect_instruction_i0 = e, t;
-    }, Sx = xx(void 0), goe = B(3, (e, t, { onFailure: n, onSuccess: r })=>{
+    }, Sx = xx(void 0), goe = z(3, (e, t, { onFailure: n, onSuccess: r })=>{
         switch(e._tag){
-            case Pd:
+            case Fd:
                 switch(t._tag){
-                    case Rd:
+                    case zd:
                         return vx(e.effect_instruction_i0);
-                    case Pd:
+                    case Fd:
                         return vx(n(e.effect_instruction_i0, t.effect_instruction_i0));
                 }
-            case Rd:
+            case zd:
                 switch(t._tag){
-                    case Rd:
+                    case zd:
                         return xx(r(e.effect_instruction_i0, t.effect_instruction_i0));
-                    case Pd:
+                    case Fd:
                         return vx(t.effect_instruction_i0);
                 }
         }
     }), _oe = (e, t)=>{
         let n = xg(e);
-        return Ag(n) ? V(Pg(n), Vp(V(Ng(n), yx(bg)), (e, n)=>V(e, goe(n, {
-                onSuccess: (e, t)=>V(e, Dg(t)),
+        return Ag(n) ? B(Pg(n), Vp(B(Ng(n), yx(bg)), (e, n)=>B(e, goe(n, {
+                onSuccess: (e, t)=>B(e, Dg(t)),
                 onFailure: t
-            }))), yx(wg), yx((e)=>Cg(e)), qf) : H();
+            }))), yx(wg), yx((e)=>Cg(e)), H) : V();
     }, Cx = (e)=>({
-            ...rf,
+            ...af,
             [_ae]: vae,
             state: K_(yae([])),
             commit () {
@@ -22577,7 +22267,7 @@ perfecta armonía.`,
                 case Iy:
                     return n.joiners.push(t), Soe(e, t);
             }
-        }, e.blockingOn), Ex = B(2, (e, t)=>wb(()=>{
+        }, e.blockingOn), Ex = z(2, (e, t)=>wb(()=>{
             let n = q_(e.state);
             switch(n._tag){
                 case Ly:
@@ -22587,7 +22277,7 @@ perfecta armonía.`,
                     for(let e = 0, r = n.joiners.length; e < r; e++)n.joiners[e](t);
                     return !0;
             }
-        })), yoe = B(2, (e, t)=>Ex(e, t)), boe = B(2, (e, t)=>Ex(e, sb(t))), xoe = B(2, (e, t)=>Ex(e, Sb(t))), Dx = (e, t)=>{
+        })), yoe = z(2, (e, t)=>Ex(e, t)), boe = z(2, (e, t)=>Ex(e, sb(t))), xoe = z(2, (e, t)=>Ex(e, Sb(t))), Dx = (e, t)=>{
         let n = q_(e.state);
         if (n._tag === `Pending`) {
             J_(e.state, Ry(t));
@@ -22599,28 +22289,28 @@ perfecta armonía.`,
                 let e = n.joiners.indexOf(t);
                 e >= 0 && n.joiners.splice(e, 1);
             }
-        }), Coe = Ky((e)=>xx(e.currentContext)), Ox = ()=>Coe, kx = (e)=>U(Ox(), e), Ax = B(2, (e, t)=>Gb(Yb, t)(e)), jx = B(2, (e, t)=>Kae(Yb, (e)=>ug(e, t))(e)), woe = B(2, (e, t)=>kx((n)=>Ax(e, t(n)))), Mx = (e)=>{
+        }), Coe = Ky((e)=>xx(e.currentContext)), Ox = ()=>Coe, kx = (e)=>U(Ox(), e), Ax = z(2, (e, t)=>Gb(Yb, t)(e)), jx = z(2, (e, t)=>Kae(Yb, (e)=>ug(e, t))(e)), woe = z(2, (e, t)=>kx((n)=>Ax(e, t(n)))), Mx = (e)=>{
         let t = e.currentSpan;
-        return t !== void 0 && t._tag === `Span` ? qf(t) : H();
+        return t !== void 0 && t._tag === `Span` ? H(t) : V();
     }, Toe = loe, Eoe = poe, Doe = bx, Nx = Symbol.for(`effect/MutableHashMap`), Ooe = {
         [Nx]: Nx,
         [Symbol.iterator] () {
             return new koe(this);
         },
         toString () {
-            return wd(this.toJSON());
+            return Td(this.toJSON());
         },
         toJSON () {
             return {
                 _id: `MutableHashMap`,
-                values: Array.from(this).map(vd)
+                values: Array.from(this).map(yd)
             };
         },
-        [_d] () {
+        [vd] () {
             return this.toJSON();
         },
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, koe = class e {
         self;
@@ -22655,19 +22345,19 @@ perfecta armonía.`,
     }, joe = ()=>{
         let e = Object.create(Ooe);
         return e.referential = new Map, e.buckets = new Map, e.bucketsSize = 0, e;
-    }, Px = B(2, (e, t)=>{
-        if (hd(t) === !1) return e.referential.has(t) ? qf(e.referential.get(t)) : H();
-        let n = t[ed](), r = e.buckets.get(n);
-        return r === void 0 ? H() : Moe(e, r, t);
+    }, Px = z(2, (e, t)=>{
+        if (gd(t) === !1) return e.referential.has(t) ? H(e.referential.get(t)) : V();
+        let n = t[td](), r = e.buckets.get(n);
+        return r === void 0 ? V() : Moe(e, r, t);
     }), Moe = (e, t, n, r = !1)=>{
-        for(let i = 0, a = t.length; i < a; i++)if (n[fd](t[i][0])) {
+        for(let i = 0, a = t.length; i < a; i++)if (n[pd](t[i][0])) {
             let n = t[i][1];
-            return r && (t.splice(i, 1), e.bucketsSize--), qf(n);
+            return r && (t.splice(i, 1), e.bucketsSize--), H(n);
         }
-        return H();
-    }, Fx = B(2, (e, t)=>Xf(Px(e, t))), Ix = B(3, (e, t, n)=>{
-        if (hd(t) === !1) return e.referential.set(t, n), e;
-        let r = t[ed](), i = e.buckets.get(r);
+        return V();
+    }, Fx = z(2, (e, t)=>Xf(Px(e, t))), Ix = z(3, (e, t, n)=>{
+        if (gd(t) === !1) return e.referential.set(t, n), e;
+        let r = t[td](), i = e.buckets.get(r);
         return i === void 0 ? (e.buckets.set(r, [
             [
                 t,
@@ -22678,7 +22368,7 @@ perfecta armonía.`,
             n
         ]), e.bucketsSize++, e);
     }), Noe = (e, t, n)=>{
-        for(let r = 0, i = t.length; r < i; r++)if (n[fd](t[r][0])) {
+        for(let r = 0, i = t.length; r < i; r++)if (n[pd](t[r][0])) {
             t.splice(r, 1), e.bucketsSize--;
             return;
         }
@@ -22687,7 +22377,7 @@ perfecta armonía.`,
     var Lx = Symbol.for(`effect/Clock`), Rx = ng(`effect/Clock`), Poe = 2 ** 31 - 1, zx = {
         unsafeSchedule (e, t) {
             let n = Xg(t);
-            if (n > Poe) return eu;
+            if (n > Poe) return tu;
             let r = !1, i = setTimeout(()=>{
                 r = !0, e();
             }, n);
@@ -22755,7 +22445,7 @@ perfecta armonía.`,
         return r._op = Vx, r.path = e, r.message = t, Object.defineProperty(r, `toString`, {
             enumerable: !1,
             value () {
-                return `(Invalid data at ${V(this.path, Gp(n.pathDelim))}: "${this.message}")`;
+                return `(Invalid data at ${B(this.path, Gp(n.pathDelim))}: "${this.message}")`;
             }
         }), r;
     }, Xx = (e, t, n = {
@@ -22765,7 +22455,7 @@ perfecta armonía.`,
         return r._op = Hx, r.path = e, r.message = t, Object.defineProperty(r, `toString`, {
             enumerable: !1,
             value () {
-                return `(Missing data at ${V(this.path, Gp(n.pathDelim))}: "${this.message}")`;
+                return `(Missing data at ${B(this.path, Gp(n.pathDelim))}: "${this.message}")`;
             }
         }), r;
     }, Roe = (e, t, n, r = {
@@ -22775,7 +22465,7 @@ perfecta armonía.`,
         return i._op = Ux, i.path = e, i.message = t, i.cause = n, Object.defineProperty(i, `toString`, {
             enumerable: !1,
             value () {
-                return `(Source unavailable at ${V(this.path, Gp(r.pathDelim))}: "${this.message}")`;
+                return `(Source unavailable at ${B(this.path, Gp(r.pathDelim))}: "${this.message}")`;
             }
         }), i;
     }, zoe = (e, t, n = {
@@ -22785,10 +22475,10 @@ perfecta armonía.`,
         return r._op = Wx, r.path = e, r.message = t, Object.defineProperty(r, `toString`, {
             enumerable: !1,
             value () {
-                return `(Unsupported operation at ${V(this.path, Gp(n.pathDelim))}: "${this.message}")`;
+                return `(Unsupported operation at ${B(this.path, Gp(n.pathDelim))}: "${this.message}")`;
             }
         }), r;
-    }, Zx = B(2, (e, t)=>{
+    }, Zx = z(2, (e, t)=>{
         switch(e._op){
             case `And`:
                 return qx(Zx(e.left, t), Zx(e.right, t));
@@ -22818,11 +22508,11 @@ perfecta armonía.`,
     }), Boe = {
         andCase: (e, t, n)=>t && n,
         orCase: (e, t, n)=>t && n,
-        invalidDataCase: eu,
-        missingDataCase: $l,
-        sourceUnavailableCase: eu,
-        unsupportedCase: eu
-    }, Voe = B(3, (e, t, n)=>{
+        invalidDataCase: tu,
+        missingDataCase: eu,
+        sourceUnavailableCase: tu,
+        unsupportedCase: tu
+    }, Voe = z(3, (e, t, n)=>{
         let r = [
             e
         ], i = [];
@@ -22830,26 +22520,26 @@ perfecta armonía.`,
             let e = r.pop();
             switch(e._op){
                 case `And`:
-                    r.push(e.right), r.push(e.left), i.push(kf({
+                    r.push(e.right), r.push(e.left), i.push(Af({
                         _op: `AndCase`
                     }));
                     break;
                 case `Or`:
-                    r.push(e.right), r.push(e.left), i.push(kf({
+                    r.push(e.right), r.push(e.left), i.push(Af({
                         _op: `OrCase`
                     }));
                     break;
                 case Vx:
-                    i.push(Of(n.invalidDataCase(t, e.path, e.message)));
+                    i.push(kf(n.invalidDataCase(t, e.path, e.message)));
                     break;
                 case Hx:
-                    i.push(Of(n.missingDataCase(t, e.path, e.message)));
+                    i.push(kf(n.missingDataCase(t, e.path, e.message)));
                     break;
                 case Ux:
-                    i.push(Of(n.sourceUnavailableCase(t, e.path, e.message, e.cause)));
+                    i.push(kf(n.sourceUnavailableCase(t, e.path, e.message, e.cause)));
                     break;
                 case Wx:
-                    i.push(Of(n.unsupportedCase(t, e.path, e.message)));
+                    i.push(kf(n.unsupportedCase(t, e.path, e.message)));
                     break;
             }
         }
@@ -22882,14 +22572,14 @@ perfecta armonía.`,
         return a.pop();
     }), Hoe = (e)=>Voe(e, void 0, Boe), Qx = {
         _tag: `Empty`
-    }, Uoe = B(2, (e, t)=>({
+    }, Uoe = z(2, (e, t)=>({
             _tag: `AndThen`,
             first: e,
             second: t
-        })), Woe = B(2, (e, t)=>Uoe(e, {
+        })), Woe = z(2, (e, t)=>Uoe(e, {
             _tag: `MapName`,
             f: t
-        })), $x = B(2, (e, t)=>{
+        })), $x = z(2, (e, t)=>{
         let n = xv(t), r = e;
         for(; Pre(n);){
             let e = n.head;
@@ -22907,12 +22597,12 @@ perfecta armonía.`,
                     r = Sp(r, e.name), n = n.tail;
                     break;
                 case `Unnested`:
-                    if (V(Op(r), mp(e.name))) r = jp(r), n = n.tail;
-                    else return kf(Xx(r, `Expected ${e.name} to be in path in ConfigProvider#unnested`));
+                    if (B(Op(r), mp(e.name))) r = jp(r), n = n.tail;
+                    else return Af(Xx(r, `Expected ${e.name} to be in path in ConfigProvider#unnested`));
                     break;
             }
         }
-        return Of(r);
+        return kf(r);
     }), eS = `Constant`, Goe = `Fail`, tS = `Fallback`, Koe = `Described`, nS = `Lazy`, rS = `MapOrFail`, iS = `Nested`, aS = `Primitive`, qoe = `Sequence`, Joe = `HashMap`, oS = `ZipWith`, Yoe = (e)=>e.toLowerCase(), Xoe = (e)=>e.toUpperCase(), sS = (e, t, n)=>t instanceof RegExp ? e.replace(t, n) : t.reduce((e, t)=>e.replace(t, n), e), Zoe = [
         /([a-z0-9])([A-Z])/g,
         /([A-Z])([A-Z][a-z])/g
@@ -22933,7 +22623,7 @@ perfecta armonía.`,
         ], lS = Symbol.for(`effect/ConfigProvider`), uS = ng(`effect/ConfigProvider`), dS = Symbol.for(`effect/ConfigProviderFlat`), tse = (e)=>({
             [lS]: lS,
             pipe () {
-                return ru(this, arguments);
+                return iu(this, arguments);
             },
             ...e
         }), fS = (e)=>({
@@ -22951,17 +22641,17 @@ perfecta armonía.`,
         let { pathDelim: t, seqDelim: n } = Object.assign({}, {
             pathDelim: `_`,
             seqDelim: `,`
-        }, e), r = (e)=>V(e, Gp(t)), i = (e)=>e.split(t), a = ()=>($c !== void 0 && `env` in $c, {});
+        }, e), r = (e)=>B(e, Gp(t)), i = (e)=>e.split(t), a = ()=>($c !== void 0 && `env` in $c, {});
         return pS(fS({
             load: (e, t, i = !0)=>{
                 let o = r(e), s = a();
-                return V(o in s ? qf(s[o]) : H(), vb(()=>Xx(e, `Expected ${o} to exist in the process context`)), U((r)=>hS(r, e, t, n, i)));
+                return B(o in s ? H(s[o]) : V(), vb(()=>Xx(e, `Expected ${o} to exist in the process context`)), U((r)=>hS(r, e, t, n, i)));
             },
             enumerateChildren: (e)=>wb(()=>{
                     let t = a();
                     return L_(Object.keys(t).map((e)=>i(e.toUpperCase())).filter((t)=>{
                         for(let n = 0; n < e.length; n++){
-                            let r = V(e, Dp(n)), i = t[n];
+                            let r = B(e, Dp(n)), i = t[n];
                             if (i === void 0 || r !== i) return !1;
                         }
                         return !0;
@@ -22973,15 +22663,15 @@ perfecta armonía.`,
         let { pathDelim: n, seqDelim: r } = Object.assign({
             seqDelim: `,`,
             pathDelim: `.`
-        }, t), i = (e)=>V(e, Gp(n)), a = (e)=>e.split(n), o = gse(e, (e)=>a(e), i);
+        }, t), i = (e)=>B(e, Gp(n)), a = (e)=>e.split(n), o = gse(e, (e)=>a(e), i);
         return pS(fS({
             load: (e, t, n = !0)=>{
                 let a = i(e);
-                return V(o.has(a) ? qf(o.get(a)) : H(), vb(()=>Xx(e, `Expected ${a} to exist in the provided map`)), U((i)=>hS(i, e, t, r, n)));
+                return B(o.has(a) ? H(o.get(a)) : V(), vb(()=>Xx(e, `Expected ${a} to exist in the provided map`)), U((i)=>hS(i, e, t, r, n)));
             },
             enumerateChildren: (e)=>wb(()=>L_(xp(o.keys()).map(a).filter((t)=>{
                         for(let n = 0; n < e.length; n++){
-                            let r = V(e, Dp(n)), i = t[n];
+                            let r = B(e, Dp(n)), i = t[n];
                             if (i === void 0 || r !== i) return !1;
                         }
                         return !0;
@@ -22989,10 +22679,10 @@ perfecta armonía.`,
             patch: Qx
         }));
     }, ise = (e, t, n, r)=>{
-        let i = Hp(n.length, (t)=>t >= r.length ? H() : qf([
+        let i = Hp(n.length, (t)=>t >= r.length ? V() : H([
                 e(t),
                 t + 1
-            ])), a = Hp(r.length, (e)=>e >= n.length ? H() : qf([
+            ])), a = Hp(r.length, (e)=>e >= n.length ? V() : H([
                 t(e),
                 e + 1
             ]));
@@ -23018,61 +22708,61 @@ perfecta armonía.`,
             case Goe:
                 return ab(Xx(t, i.message));
             case tS:
-                return V(Cb(()=>mS(e, t, i.first, r)), $y((n)=>i.condition(n) ? V(mS(e, t, i.second, r), $y((e)=>ab(Jx(n, e)))) : ab(n)));
+                return B(Cb(()=>mS(e, t, i.first, r)), $y((n)=>i.condition(n) ? B(mS(e, t, i.second, r), $y((e)=>ab(Jx(n, e)))) : ab(n)));
             case nS:
                 return Cb(()=>mS(e, t, i.config(), r));
             case rS:
-                return Cb(()=>V(mS(e, t, i.original, r), U(pb((e)=>V(i.mapOrFail(e), vb(Zx(ase(t, i.original))))))));
+                return Cb(()=>B(mS(e, t, i.original, r), U(pb((e)=>B(i.mapOrFail(e), vb(Zx(ase(t, i.original))))))));
             case iS:
                 return Cb(()=>mS(e, cS(t, Rp(i.name)), i.config, r));
             case aS:
-                return V($x(t, e.patch), U((t)=>V(e.load(t, i, r), U((e)=>{
+                return B($x(t, e.patch), U((t)=>B(e.load(t, i, r), U((e)=>{
                         if (e.length === 0) {
-                            let e = V(lee(t), $f(()=>`<n/a>`));
+                            let e = B(lee(t), $f(()=>`<n/a>`));
                             return ab(Xx([], `Expected ${i.description} with name ${e}`));
                         }
                         return Sb(e);
                     }))));
             case qoe:
-                return V($x(t, e.patch), U((n)=>V(e.enumerateChildren(n), U(fse), U((n)=>n.length === 0 ? Cb(()=>gb(mS(e, t, i.config, !0), Rp)) : V(pb(n, (n)=>mS(e, iee(t, `[${n}]`), i.config, !0)), gb((e)=>{
+                return B($x(t, e.patch), U((n)=>B(e.enumerateChildren(n), U(fse), U((n)=>n.length === 0 ? Cb(()=>gb(mS(e, t, i.config, !0), Rp)) : B(pb(n, (n)=>mS(e, iee(t, `[${n}]`), i.config, !0)), gb((e)=>{
                             let t = vee(e);
                             return t.length === 0 ? Rp(Lp()) : Rp(t);
                         }))))));
             case Joe:
-                return Cb(()=>V($x(t, e.patch), U((t)=>V(e.enumerateChildren(t), U((n)=>V(n, pb((n)=>mS(e, cS(t, Rp(n)), i.valueConfig, r)), gb((e)=>e.length === 0 ? Rp(cv()) : V(dse(e), zp((e)=>Dre(Pp(xp(n), e)))))))))));
+                return Cb(()=>B($x(t, e.patch), U((t)=>B(e.enumerateChildren(t), U((n)=>B(n, pb((n)=>mS(e, cS(t, Rp(n)), i.valueConfig, r)), gb((e)=>e.length === 0 ? Rp(cv()) : B(dse(e), zp((e)=>Dre(Pp(xp(n), e)))))))))));
             case oS:
-                return Cb(()=>V(mS(e, t, i.left, r), rb, U((n)=>V(mS(e, t, i.right, r), rb, U((e)=>{
-                            if (Nf(n) && Nf(e)) return ab(qx(n.left, e.left));
-                            if (Nf(n) && Pf(e)) return ab(n.left);
-                            if (Pf(n) && Nf(e)) return ab(e.left);
-                            if (Pf(n) && Pf(e)) {
-                                let r = ose(t, V(t, Gp(`.`))), [a, o] = ise(r, r, V(n.right, zp(Of)), V(e.right, zp(Of)));
-                                return V(a, Pp(o), pb(([e, t])=>V(Fb(e, t), gb(([e, t])=>i.zip(e, t)))));
+                return Cb(()=>B(mS(e, t, i.left, r), rb, U((n)=>B(mS(e, t, i.right, r), rb, U((e)=>{
+                            if (Pf(n) && Pf(e)) return ab(qx(n.left, e.left));
+                            if (Pf(n) && Ff(e)) return ab(n.left);
+                            if (Ff(n) && Pf(e)) return ab(e.left);
+                            if (Ff(n) && Ff(e)) {
+                                let r = ose(t, B(t, Gp(`.`))), [a, o] = ise(r, r, B(n.right, zp(kf)), B(e.right, zp(kf)));
+                                return B(a, Pp(o), pb(([e, t])=>B(Fb(e, t), gb(([e, t])=>i.zip(e, t)))));
                             }
                             throw Error(`BUG: ConfigProvider.fromFlatLoop - please report an issue at https://github.com/Effect-TS/effect/issues`);
                         })))));
         }
-    }, ose = (e, t)=>(n)=>kf(Xx(e, `The element at index ${n} in a sequence at path "${t}" was missing`)), sse = B(2, (e, t)=>pS(cse(e.flattened, t))), cse = (e, t)=>fS({
+    }, ose = (e, t)=>(n)=>Af(Xx(e, `The element at index ${n} in a sequence at path "${t}" was missing`)), sse = z(2, (e, t)=>pS(cse(e.flattened, t))), cse = (e, t)=>fS({
             load: (t, n, r = !0)=>e.load(t, n, r),
             enumerateChildren: (t)=>e.enumerateChildren(t),
             patch: Woe(e.patch, t)
-        }), lse = (e)=>sse(e, ese), use = (e, t)=>e.split(RegExp(`\\s*${rm(t)}\\s*`)), hS = (e, t, n, r, i)=>i ? V(use(e, r), pb((e)=>n.parse(e.trim())), vb(Zx(t))) : V(n.parse(e), _b({
+        }), lse = (e)=>sse(e, ese), use = (e, t)=>e.split(RegExp(`\\s*${rm(t)}\\s*`)), hS = (e, t, n, r, i)=>i ? B(use(e, r), pb((e)=>n.parse(e.trim())), vb(Zx(t))) : B(n.parse(e), _b({
             onFailure: Zx(t),
             onSuccess: Rp
-        })), dse = (e)=>Object.keys(e[0]).map((t)=>e.map((e)=>e[t])), fse = (e)=>V(pb(e, hse), _b({
+        })), dse = (e)=>Object.keys(e[0]).map((t)=>e.map((e)=>e[t])), fse = (e)=>B(pb(e, hse), _b({
             onFailure: ()=>Lp(),
             onSuccess: Np(nm)
-        }), rb, gb(zf)), pse = /(^.+)(\[(\d+)\])$/, mse = /^(\[(\d+)\])$/, hse = (e)=>{
+        }), rb, gb(Bf)), pse = /(^.+)(\[(\d+)\])$/, mse = /^(\[(\d+)\])$/, hse = (e)=>{
         let t = e.match(mse);
         if (t !== null) {
             let e = t[2];
-            return V(e !== void 0 && e.length > 0 ? qf(e) : H(), cp(gS));
+            return B(e !== void 0 && e.length > 0 ? H(e) : V(), cp(gS));
         }
-        return H();
+        return V();
     }, gse = (e, t, n)=>{
         let r = new Map;
         for (let [i, a] of e){
-            let e = V(t(i), Bp((e)=>Zf(_se(e), {
+            let e = B(t(i), Bp((e)=>Zf(_se(e), {
                     onNone: ()=>Rp(e),
                     onSome: ([e, t])=>vp(e, `[${t}]`)
                 })));
@@ -23084,14 +22774,14 @@ perfecta armonía.`,
         if (t !== null) {
             let e = t[1], n = t[3];
             return up([
-                e !== void 0 && e.length > 0 ? qf(e) : H(),
-                V(n !== void 0 && n.length > 0 ? qf(n) : H(), cp(gS))
+                e !== void 0 && e.length > 0 ? H(e) : V(),
+                B(n !== void 0 && n.length > 0 ? H(n) : V(), cp(gS))
             ]);
         }
-        return H();
+        return V();
     }, gS = (e)=>{
         let t = Number.parseInt(e);
-        return Number.isNaN(t) ? H() : qf(t);
+        return Number.isNaN(t) ? V() : H(t);
     }, _S = Symbol.for(`effect/Console`), vS = ng(`effect/Console`), vse = {
         [_S]: _S,
         assert (e, ...t) {
@@ -23180,7 +22870,7 @@ perfecta armonía.`,
         [yS] = yS;
         PRNG;
         constructor(e){
-            this.seed = e, this.PRNG = new Wu(e);
+            this.seed = e, this.PRNG = new Gu(e);
         }
         get next() {
             return wb(()=>this.PRNG.number());
@@ -23200,14 +22890,14 @@ perfecta armonía.`,
         shuffle(e) {
             return xse(e, (e)=>this.nextIntBetween(0, e));
         }
-    }, xse = (e, t)=>Cb(()=>V(wb(()=>Array.from(e)), U((e)=>{
+    }, xse = (e, t)=>Cb(()=>B(wb(()=>Array.from(e)), U((e)=>{
                 let n = [];
                 for(let t = e.length; t >= 2; --t)n.push(t);
-                return V(n, mb((n)=>V(t(n), gb((t)=>Sse(e, n - 1, t)))), qy(xg(e)));
+                return B(n, mb((n)=>B(t(n), gb((t)=>Sse(e, n - 1, t)))), qy(xg(e)));
             }))), Sse = (e, t, n)=>{
         let r = e[t];
         return e[t] = e[n], e[n] = r, e;
-    }, Cse = (e)=>new bse(td(e)), bS = Symbol.for(`effect/Tracer`), wse = (e)=>({
+    }, Cse = (e)=>new bse(nd(e)), bS = Symbol.for(`effect/Tracer`), wse = (e)=>({
             [bS]: bS,
             ...e
         }), xS = ng(`effect/Tracer`), SS = ng(`effect/ParentSpan`), CS = function() {
@@ -23261,8 +22951,8 @@ perfecta armonía.`,
         span: (e, t, n, r, i, a)=>new Tse(e, t, n, r, i, a),
         context: (e)=>e()
     }), Dse = fg()(`effect/Tracer/DisablePropagation`, {
-        defaultValue: eu
-    }), Ose = V(ig(), og(Rx, Loe()), og(vS, vse), og(yse, Cse(Math.random())), og(uS, nse()), og(xS, Ese)), wS = hu(Symbol.for(`effect/DefaultServices/currentServices`), ()=>qb(Ose)), kse = (e)=>{
+        defaultValue: tu
+    }), Ose = B(ig(), og(Rx, Loe()), og(vS, vse), og(yse, Cse(Math.random())), og(uS, nse()), og(xS, Ese)), wS = gu(Symbol.for(`effect/DefaultServices/currentServices`), ()=>qb(Ose)), kse = (e)=>{
         let t = Hg(e);
         return ES((e)=>e.sleep(t));
     }, TS = (e)=>Ky((t)=>e(t.currentDefaultServices)), ES = (e)=>TS((t)=>e(t.unsafeMap.get(Rx.key))), Ase = ES((e)=>e.currentTimeMillis), jse = (e)=>TS((t)=>e(t.unsafeMap.get(uS.key))), Mse = (e)=>jse((t)=>t.load(e)), Nse = kse, Pse = Ase;
@@ -23279,7 +22969,7 @@ perfecta armonía.`,
             this.locals = e;
         }
         pipe() {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, Lse = (e, t, n, r = !1)=>{
         let i = e, a = t, o = n, s = r, c;
@@ -23294,13 +22984,13 @@ perfecta armonía.`,
             !0
         ];
         return c;
-    }, Rse = B(3, (e, t, n)=>{
+    }, Rse = z(3, (e, t, n)=>{
         let r = new Map(e.locals);
         return n.locals.forEach((e, n)=>{
             let i = e[0][1];
-            if (!e[0][0][fd](t)) {
+            if (!e[0][0][pd](t)) {
                 if (!r.has(n)) {
-                    if (pd(i, n.initial)) return;
+                    if (md(i, n.initial)) return;
                     r.set(n, [
                         [
                             t,
@@ -23312,9 +23002,9 @@ perfecta armonía.`,
                 let a = r.get(n), [o, s] = Lse(n, a, e);
                 if (s) {
                     let e = n.diff(o, i), s = a[0][1], c = n.join(s, n.patch(e)(s));
-                    if (!pd(s, c)) {
+                    if (!md(s, c)) {
                         let e, i = a[0][0];
-                        e = i[fd](t) ? [
+                        e = i[pd](t) ? [
                             [
                                 i,
                                 c
@@ -23331,13 +23021,13 @@ perfecta armonía.`,
                 }
             }
         }), new OS(r);
-    }), zse = B(2, (e, t)=>{
+    }), zse = z(2, (e, t)=>{
         let n = new Map;
         return kS(e, n, t), new OS(n);
     }), kS = (e, t, n)=>{
         e.locals.forEach((e, r)=>{
             let i = e[0][1], a = r.patch(r.fork)(i);
-            pd(i, a) ? t.set(r, e) : t.set(r, [
+            md(i, a) ? t.set(r, e) : t.set(r, [
                 [
                     n,
                     a
@@ -23345,10 +23035,10 @@ perfecta armonía.`,
                 ...e
             ]);
         });
-    }, AS = B(2, (e, t)=>{
+    }, AS = z(2, (e, t)=>{
         let n = new Map(e.locals);
         return n.delete(t), new OS(n);
-    }), Bse = B(2, (e, t)=>e.locals.has(t) ? qf(kp(e.locals.get(t))[1]) : H()), jS = B(2, (e, t)=>V(Bse(e, t), $f(()=>t.initial))), MS = B(2, (e, { fiberId: t, fiberRef: n, value: r })=>{
+    }), Bse = z(2, (e, t)=>e.locals.has(t) ? H(kp(e.locals.get(t))[1]) : V()), jS = z(2, (e, t)=>B(Bse(e, t), $f(()=>t.initial))), MS = z(2, (e, { fiberId: t, fiberRef: n, value: r })=>{
         if (e.locals.size === 0) return new OS(new Map([
             [
                 n,
@@ -23366,8 +23056,8 @@ perfecta armonía.`,
         let i = e.get(n) ?? [], a;
         if (Tp(i)) {
             let [e, n] = kp(i);
-            if (e[fd](t)) {
-                if (pd(n, r)) return;
+            if (e[pd](t)) {
+                if (md(n, r)) return;
                 a = [
                     [
                         t,
@@ -23389,7 +23079,7 @@ perfecta armonía.`,
             ]
         ];
         e.set(n, a);
-    }, Vse = B(2, (e, { entries: t, forkAs: n })=>{
+    }, Vse = z(2, (e, { entries: t, forkAs: n })=>{
         if (e.locals.size === 0) return new OS(new Map(t));
         let r = new Map(e.locals);
         return n !== void 0 && kS(e, r, n), t.forEach(([e, t])=>{
@@ -23397,7 +23087,7 @@ perfecta armonía.`,
                 NS(r, t, e, n);
             });
         }), new OS(r);
-    }), Hse = jS, Use = Vse, Wse = Ise, Gse = Rae, Kse = zae, qse = Bae, Jse = zb, Yse = Bb, Xse = Vb, Zse = Vae, Qse = Hae, $se = Kf(V(nm, Gf((e)=>e.ordinal))), ece = (e)=>{
+    }), Hse = jS, Use = Vse, Wse = Ise, Gse = Rae, Kse = zae, qse = Bae, Jse = zb, Yse = Bb, Xse = Vb, Zse = Vae, Qse = Hae, $se = qf(B(nm, Kf((e)=>e.ordinal))), ece = (e)=>{
         switch(e){
             case `All`:
                 return Gse;
@@ -23416,7 +23106,7 @@ perfecta armonía.`,
             case `Warning`:
                 return Jse;
         }
-    }, PS = (e)=>e.replace(/[\s="]/g, `_`), tce = (e)=>(t)=>`${PS(t.label)}=${e - t.startTime}ms`, nce = tf, rce = rf, ice = of, FS = class extends ice {
+    }, PS = (e)=>e.replace(/[\s="]/g, `_`), tce = (e)=>(t)=>`${PS(t.label)}=${e - t.startTime}ms`, nce = nf, rce = af, ice = sf, FS = class extends ice {
     }, IS = Symbol.for(`effect/Readable`), LS = Symbol.for(`effect/Ref`), RS = {
         _A: (e)=>e
     }, ace = class extends FS {
@@ -23436,13 +23126,13 @@ perfecta armonía.`,
                 return t !== r && J_(r)(this.ref), n;
             });
         }
-    }, zS = (e)=>new ace(K_(e)), BS = (e)=>wb(()=>zS(e)), VS = (e)=>e.get, HS = B(2, (e, t)=>e.modify(()=>[
+    }, zS = (e)=>new ace(K_(e)), BS = (e)=>wb(()=>zS(e)), VS = (e)=>e.get, HS = z(2, (e, t)=>e.modify(()=>[
                 void 0,
                 t
-            ])), oce = B(2, (e, t)=>e.modify((e)=>[
+            ])), oce = z(2, (e, t)=>e.modify((e)=>[
                 e,
                 t
-            ])), sce = B(2, (e, t)=>e.modify(t)), US = B(2, (e, t)=>e.modify((e)=>[
+            ])), sce = z(2, (e, t)=>e.modify(t)), US = z(2, (e, t)=>e.modify((e)=>[
                 void 0,
                 t(e)
             ])), cce = BS, lce = oce, WS = `Empty`, GS = `Remove`, KS = `Update`, qS = `AndThen`, uce = {
@@ -23453,7 +23143,7 @@ perfecta armonía.`,
             let t = kp(i)[1], a = n.get(e);
             if (a !== void 0) {
                 let n = kp(a)[1];
-                pd(n, t) || (r = YS({
+                md(n, t) || (r = YS({
                     _tag: KS,
                     fiberRef: e,
                     patch: e.diff(n, t)
@@ -23470,11 +23160,11 @@ perfecta armonía.`,
             fiberRef: e
         })(r);
         return r;
-    }, YS = B(2, (e, t)=>({
+    }, YS = z(2, (e, t)=>({
             _tag: qS,
             first: e,
             second: t
-        })), XS = B(3, (e, t, n)=>{
+        })), XS = z(3, (e, t, n)=>{
         let r = n, i = Rp(e);
         for(; Tp(i);){
             let e = kp(i), n = jp(i);
@@ -23514,40 +23204,40 @@ perfecta armonía.`,
         [QS] = QS;
         _hash;
         constructor(e, t){
-            this.key = e, this.value = t, this._hash = sd(ZS + this.key + this.value);
+            this.key = e, this.value = t, this._hash = cd(ZS + this.key + this.value);
         }
-        [ed]() {
+        [td]() {
             return this._hash;
         }
-        [fd](e) {
+        [pd](e) {
             return pce(e) && this.key === e.key && this.value === e.value;
         }
         pipe() {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
-    }, fce = (e, t)=>new dce(e, t), pce = (e)=>Du(e, QS), mce = (e)=>gb(e, qf), hce = (e)=>{
+    }, fce = (e, t)=>new dce(e, t), pce = (e)=>Ou(e, QS), mce = (e)=>gb(e, H), hce = (e)=>{
         let t, n;
         return typeof e == `function` ? t = e : (t = e.try, n = e.catch), Cb(()=>{
             try {
-                return Sb(Qu(t));
+                return Sb($u(t));
             } catch (e) {
-                return ab(n ? Qu(()=>n(e)) : new px(e, `An unknown error occurred in Effect.try`));
+                return ab(n ? $u(()=>n(e)) : new px(e, `An unknown error occurred in Effect.try`));
             }
         });
     }, gce = (e)=>tC(e, $S, JS), _ce = (e)=>tC(e, Fb($S, jae), ([e, t], [n, r])=>[
                 JS(e, n),
                 Jv(t, r)
             ]), vce = (e)=>kae(e, ()=>U(Pb(), ()=>vce(e))), yce = (e, t, n, r)=>U(n(r, t), (i)=>{
-            if (i) return Sb(qf(r));
+            if (i) return Sb(H(r));
             let a = e.next();
-            return a.done ? Sb(H()) : yce(e, t + 1, n, a.value);
+            return a.done ? Sb(V()) : yce(e, t + 1, n, a.value);
         }), bce = (e, t, n)=>{
         let r = e.next();
         return r.done ? Sb(!0) : U(n(r.value, t), (r)=>r ? bce(e, t + 1, n) : Sb(r));
-    }, $S = Ky((e)=>Sb(e.getFiberRefs())), xce = (e, t)=>Cb(()=>t.while(e) ? U(t.body(e), (e)=>xce(e, t)) : Sb(e)), Sce = (e, t, n, r)=>Cb(()=>t(e) ? U(r(e), (i)=>gb(Sce(n(e), t, n, r), Sv(i))) : wb(()=>bv())), Cce = (e, t, n, r)=>Cb(()=>t(e) ? U(r(e), ()=>Cce(n(e), t, n, r)) : Ob), wce = (e)=>V(wx(), U((t)=>V(_ce(e), Oae(t), Tce, gb((e)=>Lb(e, V(Tx(t), U(([e, t])=>qy(Fb(eC(e[0]), kb(e[1])), t)))))))), Tce = (e)=>gb(cce(!0), (t)=>Jy(Ab(e, lce(t, !1)))), eC = (e)=>jce((t, n)=>V(e, XS(t, n))), Ece = B(3, (e, t, n)=>kx((r)=>Ax(e, og(r, t, n)))), Dce = (e, t, n, r, i)=>{
+    }, $S = Ky((e)=>Sb(e.getFiberRefs())), xce = (e, t)=>Cb(()=>t.while(e) ? U(t.body(e), (e)=>xce(e, t)) : Sb(e)), Sce = (e, t, n, r)=>Cb(()=>t(e) ? U(r(e), (i)=>gb(Sce(n(e), t, n, r), Sv(i))) : wb(()=>bv())), Cce = (e, t, n, r)=>Cb(()=>t(e) ? U(r(e), ()=>Cce(n(e), t, n, r)) : Ob), wce = (e)=>B(wx(), U((t)=>B(_ce(e), Oae(t), Tce, gb((e)=>Lb(e, B(Tx(t), U(([e, t])=>qy(Fb(eC(e[0]), kb(e[1])), t)))))))), Tce = (e)=>gb(cce(!0), (t)=>Jy(Ab(e, lce(t, !1)))), eC = (e)=>jce((t, n)=>B(e, XS(t, n))), Ece = z(3, (e, t, n)=>kx((r)=>Ax(e, og(r, t, n)))), Dce = (e, t, n, r, i)=>{
         let a = e.next();
         return !a.done && r(n) ? U(i(n, a.value, t), (n)=>Dce(e, t + 1, n, r, i)) : Sb(n);
-    }, Oce = (e, t)=>U(e, (n)=>t <= 0 ? Sb(n) : Lb(Pb(), Oce(e, t - 1))), kce = Sb(H()), tC = B(3, (e, t, n)=>U(t, (r)=>U(e, (e)=>gb(t, (t)=>[
+    }, Oce = (e, t)=>U(e, (n)=>t <= 0 ? Sb(n) : Lb(Pb(), Oce(e, t - 1))), kce = Sb(V()), tC = z(3, (e, t, n)=>U(t, (r)=>U(e, (e)=>gb(t, (t)=>[
                         n(r, t),
                         e
                     ])))), Ace = (e)=>{
@@ -23567,20 +23257,20 @@ perfecta armonía.`,
                 e(r(t));
             }
         });
-    }, jce = (e)=>Ky((t)=>(t.setFiberRefs(e(t.id(), t.getFiberRefs())), Ob)), nC = cp((e)=>sg(e.context, Dse) ? e._tag === `Span` ? nC(e.parent) : H() : qf(e)), rC = `Sequential`, iC = `Parallel`, Mce = `ParallelN`, aC = {
+    }, jce = (e)=>Ky((t)=>(t.setFiberRefs(e(t.id(), t.getFiberRefs())), Ob)), nC = cp((e)=>sg(e.context, Dse) ? e._tag === `Span` ? nC(e.parent) : V() : H(e)), rC = `Sequential`, iC = `Parallel`, Mce = `ParallelN`, aC = {
         _tag: rC
     }, oC = {
         _tag: iC
     }, Nce = (e)=>({
             _tag: Mce,
             parallelism: e
-        }), Pce = (e)=>e._tag === rC, Fce = (e)=>e._tag === iC, sC = aC, cC = oC, lC = Nce, uC = JS, dC = XS, fC = `effect/FiberStatus`, pC = Symbol.for(fC), mC = `Done`, Ice = `Running`, Lce = `Suspended`, Rce = sd(`${fC}-${mC}`), zce = class {
+        }), Pce = (e)=>e._tag === rC, Fce = (e)=>e._tag === iC, sC = aC, cC = oC, lC = Nce, uC = JS, dC = XS, fC = `effect/FiberStatus`, pC = Symbol.for(fC), mC = `Done`, Ice = `Running`, Lce = `Suspended`, Rce = cd(`${fC}-${mC}`), zce = class {
         [pC] = pC;
         _tag = mC;
-        [ed]() {
+        [td]() {
             return Rce;
         }
-        [fd](e) {
+        [pd](e) {
             return hC(e) && e._tag === `Done`;
         }
     }, Bce = class {
@@ -23590,10 +23280,10 @@ perfecta armonía.`,
         constructor(e){
             this.runtimeFlags = e;
         }
-        [ed]() {
-            return V(td(fC), rd(td(this._tag)), rd(td(this.runtimeFlags)), dd(this));
+        [td]() {
+            return B(nd(fC), id(nd(this._tag)), id(nd(this.runtimeFlags)), fd(this));
         }
-        [fd](e) {
+        [pd](e) {
             return hC(e) && e._tag === `Running` && this.runtimeFlags === e.runtimeFlags;
         }
     }, Vce = class {
@@ -23604,14 +23294,14 @@ perfecta armonía.`,
         constructor(e, t){
             this.runtimeFlags = e, this.blockingOn = t;
         }
-        [ed]() {
-            return V(td(fC), rd(td(this._tag)), rd(td(this.runtimeFlags)), rd(td(this.blockingOn)), dd(this));
+        [td]() {
+            return B(nd(fC), id(nd(this._tag)), id(nd(this.runtimeFlags)), id(nd(this.blockingOn)), fd(this));
         }
-        [fd](e) {
-            return hC(e) && e._tag === `Suspended` && this.runtimeFlags === e.runtimeFlags && pd(this.blockingOn, e.blockingOn);
+        [pd](e) {
+            return hC(e) && e._tag === `Suspended` && this.runtimeFlags === e.runtimeFlags && md(this.blockingOn, e.blockingOn);
         }
-    }, Hce = new zce, Uce = (e)=>new Bce(e), Wce = (e, t)=>new Vce(e, t), hC = (e)=>Du(e, pC), Gce = (e)=>e._tag === mC, Kce = Hce, gC = Uce, qce = Wce, Jce = Gce, Yce = Symbol.for(`effect/Micro`), _C = Symbol.for(`effect/Micro/MicroExit`), vC = Symbol.for(`effect/Micro/MicroCause`), Xce = {
-        _E: Zl
+    }, Hce = new zce, Uce = (e)=>new Bce(e), Wce = (e, t)=>new Vce(e, t), hC = (e)=>Ou(e, pC), Gce = (e)=>e._tag === mC, Kce = Hce, gC = Uce, qce = Wce, Jce = Gce, Yce = Symbol.for(`effect/Micro`), _C = Symbol.for(`effect/Micro/MicroExit`), vC = Symbol.for(`effect/Micro/MicroCause`), Xce = {
+        _E: Ql
     }, yC = class extends globalThis.Error {
         _tag;
         traces;
@@ -23625,17 +23315,17 @@ perfecta armonía.`,
                 o = t.stack ? `(${r}) ${t.stack.split(`
 `).slice(0, e + 3).join(`
 `)}` : `${i}: ${a}`;
-            } else i = r, a = Td(t, 0), o = `${i}: ${a}`;
+            } else i = r, a = Ed(t, 0), o = `${i}: ${a}`;
             n.length > 0 && (o += `\n    ${n.join(`
     `)}`), super(a), this._tag = e, this.traces = n, this[vC] = Xce, this.name = i, this.stack = o;
         }
         pipe() {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
         toString() {
             return this.stack;
         }
-        [_d]() {
+        [vd]() {
             return this.stack;
         }
     }, Zce = class extends yC {
@@ -23653,8 +23343,8 @@ perfecta armonía.`,
             super(`Interrupt`, `interrupted`, e);
         }
     }, nle = (e = [])=>new tle(e), rle = (e)=>e._tag === `Interrupt`, bC = Symbol.for(`effect/Micro/MicroFiber`), ile = {
-        _A: Zl,
-        _E: Zl
+        _A: Ql,
+        _E: Ql
     }, ale = class {
         context;
         interruptible;
@@ -23671,7 +23361,7 @@ perfecta armonía.`,
             return Yte(this.context, e);
         }
         addObserver(e) {
-            return this._exit ? (e(this._exit), nu) : (this._observers.push(e), ()=>{
+            return this._exit ? (e(this._exit), ru) : (this._observers.push(e), ()=>{
                 let t = this._observers.indexOf(e);
                 t >= 0 && this._observers.splice(t, 1);
             });
@@ -23713,7 +23403,7 @@ perfecta armonía.`,
                     }
                 }
             } catch (e) {
-                return Du(n, wC) ? BC(e) : BC(`MicroFiber.runLoop: Not a valid effect: ${String(n)}`);
+                return Ou(n, wC) ? BC(e) : BC(`MicroFiber.runLoop: Not a valid effect: ${String(n)}`);
             }
         }
         getCont(e) {
@@ -23734,21 +23424,21 @@ perfecta armonía.`,
         children() {
             return this._children ??= new Set;
         }
-    }, xC = hu(`effect/Micro/fiberMiddleware`, ()=>({
+    }, xC = gu(`effect/Micro/fiberMiddleware`, ()=>({
             interruptChildren: void 0
         })), SC = Symbol.for(`effect/Micro/identifier`), CC = Symbol.for(`effect/Micro/args`), wC = Symbol.for(`effect/Micro/evaluate`), TC = Symbol.for(`effect/Micro/successCont`), EC = Symbol.for(`effect/Micro/failureCont`), DC = Symbol.for(`effect/Micro/ensureCont`), OC = Symbol.for(`effect/Micro/Yield`), ole = {
-        _A: Zl,
-        _E: Zl,
-        _R: Zl
+        _A: Ql,
+        _E: Ql,
+        _R: Ql
     }, kC = {
         ...nce,
         _op: `Micro`,
         [Yce]: ole,
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         },
         [Symbol.iterator] () {
-            return new Lu(new Ju(this));
+            return new Ru(new Yu(this));
         },
         toJSON () {
             return {
@@ -23760,10 +23450,10 @@ perfecta armonía.`,
             };
         },
         toString () {
-            return wd(this);
+            return Td(this);
         },
-        [_d] () {
-            return wd(this);
+        [vd] () {
+            return Td(this);
         }
     };
     function sle(e) {
@@ -23797,11 +23487,11 @@ perfecta armonía.`,
                     [e.prop]: this[CC]
                 };
             },
-            [fd] (t) {
-                return fle(t) && t._tag === e.op && pd(this[CC], t[CC]);
+            [pd] (t) {
+                return fle(t) && t._tag === e.op && md(this[CC], t[CC]);
             },
-            [ed] () {
-                return dd(this, rd(sd(e.op))(td(this[CC])));
+            [td] () {
+                return fd(this, id(cd(e.op))(nd(this[CC])));
             }
         };
         return function(e) {
@@ -23838,7 +23528,7 @@ perfecta armonía.`,
         eval (e) {
             return this[CC](e);
         }
-    }), IC = B(2, (e, t)=>{
+    }), IC = z(2, (e, t)=>{
         let n = Object.create(dle);
         return n[CC] = e, n[TC] = t, n;
     }), dle = AC({
@@ -23846,7 +23536,7 @@ perfecta armonía.`,
         eval (e) {
             return e._stack.push(this), this[CC];
         }
-    }), fle = (e)=>Du(e, _C), LC = NC, RC = PC, zC = RC(nle()), BC = (e)=>RC(ele(e)), ple = LC(void 0), mle = `setImmediate` in globalThis ? globalThis.setImmediate : (e)=>setTimeout(e, 0), VC = class {
+    }), fle = (e)=>Ou(e, _C), LC = NC, RC = PC, zC = RC(nle()), BC = (e)=>RC(ele(e)), ple = LC(void 0), mle = `setImmediate` in globalThis ? globalThis.setImmediate : (e)=>setTimeout(e, 0), VC = class {
         tasks = [];
         running = !1;
         scheduleTask(e, t) {
@@ -23866,10 +23556,10 @@ perfecta armonía.`,
         flush() {
             for(; this.tasks.length > 0;)this.runTasks();
         }
-    }, hle = B(2, (e, t)=>FC((n)=>{
+    }, hle = z(2, (e, t)=>FC((n)=>{
             let r = n.context;
             return n.context = t(r), ble(e, ()=>(n.context = r, ule));
-        })), gle = B(2, (e, t)=>hle(e, ug(t))), _le = class extends fg()(`effect/Micro/currentMaxOpsBeforeYield`, {
+        })), gle = z(2, (e, t)=>hle(e, ug(t))), _le = class extends fg()(`effect/Micro/currentMaxOpsBeforeYield`, {
         defaultValue: ()=>2048
     }) {
     };
@@ -23879,7 +23569,7 @@ perfecta armonía.`,
     var HC = class extends fg()(`effect/Micro/currentScheduler`, {
         defaultValue: ()=>new VC
     }) {
-    }, vle = B(2, (e, t)=>{
+    }, vle = z(2, (e, t)=>{
         let n = Object.create(yle);
         return n[CC] = e, n[TC] = t.onSuccess, n[EC] = t.onFailure, n;
     }), yle = AC({
@@ -23887,7 +23577,7 @@ perfecta armonía.`,
         eval (e) {
             return e._stack.push(this), this[CC];
         }
-    }), ble = B(2, (e, t)=>Sle((n)=>vle(n(e), {
+    }), ble = z(2, (e, t)=>Sle((n)=>vle(n(e), {
                 onFailure: (e)=>IC(t(RC(e)), ()=>PC(e)),
                 onSuccess: (e)=>IC(t(LC(e)), ()=>NC(e))
             }))), UC = jC({
@@ -23895,7 +23585,7 @@ perfecta armonía.`,
         ensure (e) {
             if (e.interruptible = this[CC], e._interrupted && e.interruptible) return ()=>zC;
         }
-    }), xle = (e)=>FC((t)=>t.interruptible ? e : (t.interruptible = !0, t._stack.push(UC(!1)), t._interrupted ? zC : e)), Sle = (e)=>FC((t)=>t.interruptible ? (t.interruptible = !1, t._stack.push(UC(!0)), e(xle)) : e(Zl)), Cle = (e, t)=>{
+    }), xle = (e)=>FC((t)=>t.interruptible ? e : (t.interruptible = !0, t._stack.push(UC(!1)), t._interrupted ? zC : e)), Sle = (e)=>FC((t)=>t.interruptible ? (t.interruptible = !1, t._stack.push(UC(!0)), e(xle)) : e(Ql)), Cle = (e, t)=>{
         let n = new ale(HC.context(t?.scheduler ?? new VC));
         if (n.evaluate(e), t?.signal) if (t.signal.aborted) n.unsafeInterrupt();
         else {
@@ -23908,7 +23598,7 @@ perfecta armonía.`,
     }, wle = function() {
         class e extends globalThis.Error {
         }
-        return Object.assign(e.prototype, kC, nf, {
+        return Object.assign(e.prototype, kC, rf, {
             [SC]: `Failure`,
             [wC] () {
                 return cle(this);
@@ -23921,7 +23611,7 @@ perfecta armonía.`,
                     ...this
                 };
             },
-            [_d] () {
+            [vd] () {
                 let e = this.stack;
                 return e ? `${this.toString()}\n${e.split(`
 `).slice(1).join(`
@@ -23999,7 +23689,7 @@ perfecta armonía.`,
         scheduleTask(e, t, n) {
             this.getRunner(n).scheduleTask(e, t);
         }
-    }, KC = hu(Symbol.for(`effect/Scheduler/defaultScheduler`), ()=>new Dle(2048)), qC = class {
+    }, KC = gu(Symbol.for(`effect/Scheduler/defaultScheduler`), ()=>new Dle(2048)), qC = class {
         tasks = new GC;
         deferred = !1;
         scheduleTask(e, t, n) {
@@ -24016,7 +23706,7 @@ perfecta armonía.`,
             }
             this.deferred = !0;
         }
-    }, JC = hu(Symbol.for(`effect/FiberRef/currentScheduler`), ()=>Kb(KC)), YC = hu(Symbol.for(`effect/FiberRef/currentRequestMap`), ()=>Kb(new Map)), XC = (e, t, n, r)=>{
+    }, JC = gu(Symbol.for(`effect/FiberRef/currentScheduler`), ()=>Kb(KC)), YC = gu(Symbol.for(`effect/FiberRef/currentRequestMap`), ()=>Kb(new Map)), XC = (e, t, n, r)=>{
         switch(e){
             case void 0:
                 return t();
@@ -24061,17 +23751,17 @@ perfecta armonía.`,
                 });
             }));
         }
-    }, jle = (e)=>new Ale(e.id(), e), aw = hu(Symbol.for(`effect/FiberScope/Global`), ()=>new kle), ow = Symbol.for(`effect/Fiber`), sw = {
+    }, jle = (e)=>new Ale(e.id(), e), aw = gu(Symbol.for(`effect/FiberScope/Global`), ()=>new kle), ow = Symbol.for(`effect/Fiber`), sw = {
         _E: (e)=>e,
         _A: (e)=>e
     }, Mle = {
         [ow]: sw,
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, Nle = Symbol.for(`effect/Fiber`), cw = (e)=>Ib(ub(e.await), e.inheritAll);
     ({
-        ...rf
+        ...af
     }), {
         ...Mle
     };
@@ -24084,18 +23774,18 @@ perfecta armonía.`,
             [Ple]: Fle,
             log: e,
             pipe () {
-                return ru(this, arguments);
+                return iu(this, arguments);
             }
         }), Ile = /^[^\s"=]*$/, Lle = uw(((e, t)=>({ annotations: n, cause: r, date: i, fiberId: a, logLevel: o, message: s, spans: c })=>{
             let l = (t)=>t.match(Ile) ? t : e(t), u = (e, t)=>`${PS(e)}=${l(t)}`, d = (e, t)=>` ` + u(e, t), f = u(`timestamp`, i.toISOString());
             f += d(`level`, o.label), f += d(`fiber`, iv(a));
             let p = nee(s);
-            for(let e = 0; e < p.length; e++)f += d(`message`, Td(p[e], t));
+            for(let e = 0; e < p.length; e++)f += d(`message`, Ed(p[e], t));
             eae(r) || (f += d(`cause`, Ay(r, {
                 renderErrorCause: !0
             })));
             for (let e of c)f += ` ` + tce(i.getTime())(e);
-            for (let [e, r] of n)f += d(e, Td(r, t));
+            for (let [e, r] of n)f += d(e, Ed(r, t));
             return f;
         })((e)=>`"${e.replace(/\\([\s\S])|(")/g, `\\$1$2`)}"`)), dw = {
         bold: `1`,
@@ -24116,19 +23806,19 @@ perfecta armonía.`,
         values;
         [mw] = mw;
         constructor(e){
-            this.values = e, this._hash = V(sd(pw), rd(ud(this.values)));
+            this.values = e, this._hash = B(cd(pw), id(dd(this.values)));
         }
         _hash;
-        [ed]() {
+        [td]() {
             return this._hash;
         }
-        [fd](e) {
-            return zle(e) && pd(this.values, e.values);
+        [pd](e) {
+            return zle(e) && md(this.values, e.values);
         }
         pipe() {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
-    }, zle = (e)=>Du(e, mw), Ble = (e)=>new Rle(V(e, Cp(bg(1 / 0)), bee)), Vle = (e)=>V(bp(e.count - 1, (t)=>e.start * e.factor ** +t), Tg, Ble), hw = Symbol.for(`effect/MetricKeyType`), gw = `effect/MetricKeyType/Counter`, _w = Symbol.for(gw), Hle = Symbol.for(`effect/MetricKeyType/Frequency`), Ule = Symbol.for(`effect/MetricKeyType/Gauge`), vw = `effect/MetricKeyType/Histogram`, yw = Symbol.for(vw), Wle = Symbol.for(`effect/MetricKeyType/Summary`), bw = {
+    }, zle = (e)=>Ou(e, mw), Ble = (e)=>new Rle(B(e, Cp(bg(1 / 0)), bee)), Vle = (e)=>B(bp(e.count - 1, (t)=>e.start * e.factor ** +t), Tg, Ble), hw = Symbol.for(`effect/MetricKeyType`), gw = `effect/MetricKeyType/Counter`, _w = Symbol.for(gw), Hle = Symbol.for(`effect/MetricKeyType/Frequency`), Ule = Symbol.for(`effect/MetricKeyType/Gauge`), vw = `effect/MetricKeyType/Histogram`, yw = Symbol.for(vw), Wle = Symbol.for(`effect/MetricKeyType/Summary`), bw = {
         _In: (e)=>e,
         _Out: (e)=>e
     }, Gle = class {
@@ -24137,57 +23827,57 @@ perfecta armonía.`,
         [hw] = bw;
         [_w] = _w;
         constructor(e, t){
-            this.incremental = e, this.bigint = t, this._hash = sd(gw);
+            this.incremental = e, this.bigint = t, this._hash = cd(gw);
         }
         _hash;
-        [ed]() {
+        [td]() {
             return this._hash;
         }
-        [fd](e) {
+        [pd](e) {
             return xw(e);
         }
         pipe() {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, Kle = class {
         boundaries;
         [hw] = bw;
         [yw] = yw;
         constructor(e){
-            this.boundaries = e, this._hash = V(sd(vw), rd(td(this.boundaries)));
+            this.boundaries = e, this._hash = B(cd(vw), id(nd(this.boundaries)));
         }
         _hash;
-        [ed]() {
+        [td]() {
             return this._hash;
         }
-        [fd](e) {
-            return Sw(e) && pd(this.boundaries, e.boundaries);
+        [pd](e) {
+            return Sw(e) && md(this.boundaries, e.boundaries);
         }
         pipe() {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
-    }, qle = (e)=>new Gle(e?.incremental ?? !1, e?.bigint ?? !1), Jle = (e)=>new Kle(e), xw = (e)=>Du(e, _w), Yle = (e)=>Du(e, Hle), Xle = (e)=>Du(e, Ule), Sw = (e)=>Du(e, yw), Zle = (e)=>Du(e, Wle), Cw = Symbol.for(`effect/MetricKey`), Qle = {
+    }, qle = (e)=>new Gle(e?.incremental ?? !1, e?.bigint ?? !1), Jle = (e)=>new Kle(e), xw = (e)=>Ou(e, _w), Yle = (e)=>Ou(e, Hle), Xle = (e)=>Ou(e, Ule), Sw = (e)=>Ou(e, yw), Zle = (e)=>Ou(e, Wle), Cw = Symbol.for(`effect/MetricKey`), Qle = {
         _Type: (e)=>e
-    }, $le = Up(pd), ww = class {
+    }, $le = Up(md), ww = class {
         name;
         keyType;
         description;
         tags;
         [Cw] = Qle;
         constructor(e, t, n, r = []){
-            this.name = e, this.keyType = t, this.description = n, this.tags = r, this._hash = V(sd(this.name + this.description), rd(td(this.keyType)), rd(ud(this.tags)));
+            this.name = e, this.keyType = t, this.description = n, this.tags = r, this._hash = B(cd(this.name + this.description), id(nd(this.keyType)), id(dd(this.tags)));
         }
         _hash;
-        [ed]() {
+        [td]() {
             return this._hash;
         }
-        [fd](e) {
-            return eue(e) && this.name === e.name && pd(this.keyType, e.keyType) && pd(this.description, e.description) && $le(this.tags, e.tags);
+        [pd](e) {
+            return eue(e) && this.name === e.name && md(this.keyType, e.keyType) && md(this.description, e.description) && $le(this.tags, e.tags);
         }
         pipe() {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
-    }, eue = (e)=>Du(e, Cw), tue = (e, t)=>new ww(e, qle(t), np(t?.description)), nue = (e, t, n)=>new ww(e, Jle(t), np(n)), rue = B(2, (e, t)=>t.length === 0 ? e : new ww(e.name, e.keyType, e.description, Ip(e.tags, t))), Tw = Symbol.for(`effect/MetricState`), Ew = `effect/MetricState/Counter`, Dw = Symbol.for(Ew), Ow = `effect/MetricState/Frequency`, kw = Symbol.for(Ow), Aw = `effect/MetricState/Gauge`, jw = Symbol.for(Aw), Mw = `effect/MetricState/Histogram`, Nw = Symbol.for(Mw), Pw = `effect/MetricState/Summary`, Fw = Symbol.for(Pw), Iw = {
+    }, eue = (e)=>Ou(e, Cw), tue = (e, t)=>new ww(e, qle(t), np(t?.description)), nue = (e, t, n)=>new ww(e, Jle(t), np(n)), rue = z(2, (e, t)=>t.length === 0 ? e : new ww(e.name, e.keyType, e.description, Ip(e.tags, t))), Tw = Symbol.for(`effect/MetricState`), Ew = `effect/MetricState/Counter`, Dw = Symbol.for(Ew), Ow = `effect/MetricState/Frequency`, kw = Symbol.for(Ow), Aw = `effect/MetricState/Gauge`, jw = Symbol.for(Aw), Mw = `effect/MetricState/Histogram`, Nw = Symbol.for(Mw), Pw = `effect/MetricState/Summary`, Fw = Symbol.for(Pw), Iw = {
         _A: (e)=>e
     }, iue = class {
         count;
@@ -24196,16 +23886,16 @@ perfecta armonía.`,
         constructor(e){
             this.count = e;
         }
-        [ed]() {
-            return V(td(Ew), rd(td(this.count)), dd(this));
+        [td]() {
+            return B(nd(Ew), id(nd(this.count)), fd(this));
         }
-        [fd](e) {
+        [pd](e) {
             return hue(e) && this.count === e.count;
         }
         pipe() {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
-    }, aue = Up(pd), oue = class {
+    }, aue = Up(md), oue = class {
         occurrences;
         [Tw] = Iw;
         [kw] = kw;
@@ -24213,14 +23903,14 @@ perfecta armonía.`,
             this.occurrences = e;
         }
         _hash;
-        [ed]() {
-            return V(sd(Ow), rd(ud(xp(this.occurrences.entries()))), dd(this));
+        [td]() {
+            return B(cd(Ow), id(dd(xp(this.occurrences.entries()))), fd(this));
         }
-        [fd](e) {
+        [pd](e) {
             return gue(e) && aue(xp(this.occurrences.entries()), xp(e.occurrences.entries()));
         }
         pipe() {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, sue = class {
         value;
@@ -24229,14 +23919,14 @@ perfecta armonía.`,
         constructor(e){
             this.value = e;
         }
-        [ed]() {
-            return V(td(Aw), rd(td(this.value)), dd(this));
+        [td]() {
+            return B(nd(Aw), id(nd(this.value)), fd(this));
         }
-        [fd](e) {
+        [pd](e) {
             return _ue(e) && this.value === e.value;
         }
         pipe() {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, cue = class {
         buckets;
@@ -24249,14 +23939,14 @@ perfecta armonía.`,
         constructor(e, t, n, r, i){
             this.buckets = e, this.count = t, this.min = n, this.max = r, this.sum = i;
         }
-        [ed]() {
-            return V(td(Mw), rd(td(this.buckets)), rd(td(this.count)), rd(td(this.min)), rd(td(this.max)), rd(td(this.sum)), dd(this));
+        [td]() {
+            return B(nd(Mw), id(nd(this.buckets)), id(nd(this.count)), id(nd(this.min)), id(nd(this.max)), id(nd(this.sum)), fd(this));
         }
-        [fd](e) {
-            return vue(e) && pd(this.buckets, e.buckets) && this.count === e.count && this.min === e.min && this.max === e.max && this.sum === e.sum;
+        [pd](e) {
+            return vue(e) && md(this.buckets, e.buckets) && this.count === e.count && this.min === e.min && this.max === e.max && this.sum === e.sum;
         }
         pipe() {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, lue = class {
         error;
@@ -24270,22 +23960,22 @@ perfecta armonía.`,
         constructor(e, t, n, r, i, a){
             this.error = e, this.quantiles = t, this.count = n, this.min = r, this.max = i, this.sum = a;
         }
-        [ed]() {
-            return V(td(Pw), rd(td(this.error)), rd(td(this.quantiles)), rd(td(this.count)), rd(td(this.min)), rd(td(this.max)), rd(td(this.sum)), dd(this));
+        [td]() {
+            return B(nd(Pw), id(nd(this.error)), id(nd(this.quantiles)), id(nd(this.count)), id(nd(this.min)), id(nd(this.max)), id(nd(this.sum)), fd(this));
         }
-        [fd](e) {
-            return yue(e) && this.error === e.error && pd(this.quantiles, e.quantiles) && this.count === e.count && this.min === e.min && this.max === e.max && this.sum === e.sum;
+        [pd](e) {
+            return yue(e) && this.error === e.error && md(this.quantiles, e.quantiles) && this.count === e.count && this.min === e.min && this.max === e.max && this.sum === e.sum;
         }
         pipe() {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
-    }, uue = (e)=>new iue(e), due = (e)=>new oue(e), fue = (e)=>new sue(e), pue = (e)=>new cue(e.buckets, e.count, e.min, e.max, e.sum), mue = (e)=>new lue(e.error, e.quantiles, e.count, e.min, e.max, e.sum), hue = (e)=>Du(e, Dw), gue = (e)=>Du(e, kw), _ue = (e)=>Du(e, jw), vue = (e)=>Du(e, Nw), yue = (e)=>Du(e, Fw), bue = Symbol.for(`effect/MetricHook`), xue = {
+    }, uue = (e)=>new iue(e), due = (e)=>new oue(e), fue = (e)=>new sue(e), pue = (e)=>new cue(e.buckets, e.count, e.min, e.max, e.sum), mue = (e)=>new lue(e.error, e.quantiles, e.count, e.min, e.max, e.sum), hue = (e)=>Ou(e, Dw), gue = (e)=>Ou(e, kw), _ue = (e)=>Ou(e, jw), vue = (e)=>Ou(e, Nw), yue = (e)=>Ou(e, Fw), bue = Symbol.for(`effect/MetricHook`), xue = {
         _In: (e)=>e,
         _Out: (e)=>e
     }, Lw = (e)=>({
             [bue]: xue,
             pipe () {
-                return ru(this, arguments);
+                return iu(this, arguments);
             },
             ...e
         }), Rw = BigInt(0), Sue = (e)=>{
@@ -24322,7 +24012,7 @@ perfecta armonía.`,
         });
     }, Tue = (e)=>{
         let t = e.keyType.boundaries.values, n = t.length, r = new Uint32Array(n + 1), i = new Float64Array(n), a = 0, o = 0, s = Number.MAX_VALUE, c = Number.MIN_VALUE;
-        V(t, Np(nm), zp((e, t)=>{
+        B(t, Np(nm), zp((e, t)=>{
             i[t] = e;
         }));
         let l = (e)=>{
@@ -24355,7 +24045,7 @@ perfecta armonía.`,
             modify: l
         });
     }, Eue = (e)=>{
-        let { error: t, maxAge: n, maxSize: r, quantiles: i } = e.keyType, a = V(i, Np(nm)), o = yp(r), s = 0, c = 0, l = 0, u = 0, d = 0, f = (e)=>{
+        let { error: t, maxAge: n, maxSize: r, quantiles: i } = e.keyType, a = B(i, Np(nm)), o = yp(r), s = 0, c = 0, l = 0, u = 0, d = 0, f = (e)=>{
             let i = [], s = 0;
             for(; s !== r - 1;){
                 let t = o[s];
@@ -24392,7 +24082,7 @@ perfecta armonía.`,
     }, Due = (e, t, n)=>{
         let r = n.length;
         if (!Tp(t)) return Lp();
-        let i = t[0], a = t.slice(1), o = zw(e, r, H(), 0, i, n), s = Rp(o);
+        let i = t[0], a = t.slice(1), o = zw(e, r, V(), 0, i, n), s = Rp(o);
         return a.forEach((t)=>{
             s.push(zw(e, r, o.value, o.consumed, t, o.rest));
         }), zp(s, (e)=>[
@@ -24404,13 +24094,13 @@ perfecta armonía.`,
         for(;;){
             if (!Tp(d)) return {
                 quantile: u,
-                value: H(),
+                value: V(),
                 consumed: l,
                 rest: []
             };
             if (u === 1) return {
                 quantile: u,
-                value: qf(Ap(d)),
+                value: H(Ap(d)),
                 consumed: l + d.length,
                 rest: []
             };
@@ -24420,7 +24110,7 @@ perfecta armonía.`,
                 continue;
             }
             if (i > n + r) {
-                let t = Yf(c) ? qf(e) : c;
+                let t = Yf(c) ? H(e) : c;
                 return {
                     quantile: u,
                     value: t,
@@ -24439,7 +24129,7 @@ perfecta armonía.`,
                     }
                     return {
                         quantile: u,
-                        value: qf(c.value),
+                        value: H(c.value),
                         consumed: l,
                         rest: d
                     };
@@ -24453,7 +24143,7 @@ perfecta armonía.`,
             metricKey: e,
             metricState: t,
             pipe () {
-                return ru(this, arguments);
+                return iu(this, arguments);
             }
         }), Bw = Symbol.for(`effect/MetricRegistry`), jue = class {
         [Bw] = Bw;
@@ -24464,7 +24154,7 @@ perfecta armonía.`,
             return e;
         }
         get(e) {
-            let t = V(this.map, Px(e), rp);
+            let t = B(this.map, Px(e), rp);
             if (t == null) {
                 if (xw(e.keyType)) return this.getCounter(e);
                 if (Xle(e.keyType)) return this.getGauge(e);
@@ -24475,42 +24165,42 @@ perfecta armonía.`,
             } else return t;
         }
         getCounter(e) {
-            let t = V(this.map, Px(e), rp);
+            let t = B(this.map, Px(e), rp);
             if (t == null) {
                 let n = Sue(e);
-                V(this.map, Fx(e)) || V(this.map, Ix(e, n)), t = n;
+                B(this.map, Fx(e)) || B(this.map, Ix(e, n)), t = n;
             }
             return t;
         }
         getFrequency(e) {
-            let t = V(this.map, Px(e), rp);
+            let t = B(this.map, Px(e), rp);
             if (t == null) {
                 let n = Cue(e);
-                V(this.map, Fx(e)) || V(this.map, Ix(e, n)), t = n;
+                B(this.map, Fx(e)) || B(this.map, Ix(e, n)), t = n;
             }
             return t;
         }
         getGauge(e) {
-            let t = V(this.map, Px(e), rp);
+            let t = B(this.map, Px(e), rp);
             if (t == null) {
                 let n = wue(e, e.keyType.bigint ? BigInt(0) : 0);
-                V(this.map, Fx(e)) || V(this.map, Ix(e, n)), t = n;
+                B(this.map, Fx(e)) || B(this.map, Ix(e, n)), t = n;
             }
             return t;
         }
         getHistogram(e) {
-            let t = V(this.map, Px(e), rp);
+            let t = B(this.map, Px(e), rp);
             if (t == null) {
                 let n = Tue(e);
-                V(this.map, Fx(e)) || V(this.map, Ix(e, n)), t = n;
+                B(this.map, Fx(e)) || B(this.map, Ix(e, n)), t = n;
             }
             return t;
         }
         getSummary(e) {
-            let t = V(this.map, Px(e), rp);
+            let t = B(this.map, Px(e), rp);
             if (t == null) {
                 let n = Eue(e);
-                V(this.map, Fx(e)) || V(this.map, Ix(e, n)), t = n;
+                B(this.map, Fx(e)) || B(this.map, Ix(e, n)), t = n;
             }
             return t;
         }
@@ -24518,7 +24208,7 @@ perfecta armonía.`,
         _Type: (e)=>e,
         _In: (e)=>e,
         _Out: (e)=>e
-    }, Vw = hu(Symbol.for(`effect/Metric/globalMetricRegistry`), ()=>Mue()), Hw = function(e, t, n, r) {
+    }, Vw = gu(Symbol.for(`effect/Metric/globalMetricRegistry`), ()=>Mue()), Hw = function(e, t, n, r) {
         let i = Object.assign((e)=>Tb(e, (e)=>Rue(i, e)), {
             [Nue]: Pue,
             keyType: e,
@@ -24529,7 +24219,7 @@ perfecta armonía.`,
                 return this.unsafeValue([]), this;
             },
             pipe () {
-                return ru(this, arguments);
+                return iu(this, arguments);
             }
         });
         return i;
@@ -24540,13 +24230,13 @@ perfecta armonía.`,
             return i === void 0 ? (i = Vw.get(rue(e, r)), n.set(r, i), i) : i;
         };
         return Hw(e.keyType, (e, t)=>r(t).update(e), (e)=>r(e).get(), (e, t)=>r(t).modify(e));
-    }, Fue = (e, t, n)=>Ww(nue(e, t, n)), Iue = B(3, (e, t, n)=>Lue(e, [
+    }, Fue = (e, t, n)=>Ww(nue(e, t, n)), Iue = z(3, (e, t, n)=>Lue(e, [
             fce(t, n)
-        ])), Lue = B(2, (e, t)=>Hw(e.keyType, (n, r)=>e.unsafeUpdate(n, Ip(t, r)), (n)=>e.unsafeValue(Ip(t, n)), (n, r)=>e.unsafeModify(n, Ip(t, r)))), Rue = B(2, (e, t)=>Ub(Qb, (n)=>wb(()=>e.unsafeUpdate(t, n))));
+        ])), Lue = z(2, (e, t)=>Hw(e.keyType, (n, r)=>e.unsafeUpdate(n, Ip(t, r)), (n)=>e.unsafeValue(Ip(t, n)), (n, r)=>e.unsafeModify(n, Ip(t, r)))), Rue = z(2, (e, t)=>Ub(Qb, (n)=>wb(()=>e.unsafeUpdate(t, n))));
     ({
-        ...nf
+        ...rf
     });
-    var zue = B(2, (e, t)=>Ub(YC, (n)=>wb(()=>{
+    var zue = z(2, (e, t)=>Ub(YC, (n)=>wb(()=>{
                 if (n.has(e)) {
                     let r = n.get(e);
                     r.state.completed || (r.state.completed = !0, Dx(r.result, t));
@@ -24579,7 +24269,7 @@ perfecta armonía.`,
             this.underlying.onResume(e);
         }
         map(t) {
-            return new e(this, V(this.value, gb(t)));
+            return new e(this, B(this.value, gb(t)));
         }
         zip(e) {
             return new Jw(this, e);
@@ -24611,12 +24301,12 @@ perfecta armonía.`,
             this.left.onResume(e), this.right.onResume(e);
         }
         map(e) {
-            return new qw(this, V(this.value, gb(e)));
+            return new qw(this, B(this.value, gb(e)));
         }
         zip(t) {
             return new e(this, t);
         }
-    }, Yw = (e)=>Du(e, Gw) && Ou(e, `Zip`), Bue = class {
+    }, Yw = (e)=>Ou(e, Gw) && ku(e, `Zip`), Bue = class {
         effect;
         [Gw] = Kw;
         constructor(e){
@@ -24631,7 +24321,7 @@ perfecta armonía.`,
         onSuspend(e) {}
         onResume(e) {}
         map(e) {
-            return new qw(this, V(this.value, gb(e)));
+            return new qw(this, B(this.value, gb(e)));
         }
         zip(e) {
             return new Jw(this, e);
@@ -24639,7 +24329,7 @@ perfecta armonía.`,
         onRun(e, t) {
             return e();
         }
-    }, Vue = (e)=>new Bue(e), Xw = hu(`effect/Supervisor/none`, ()=>Vue(Ob)), Hue = Iv, Zw = `Empty`, Qw = `AddSupervisor`, $w = `RemoveSupervisor`, eT = `AndThen`, tT = {
+    }, Vue = (e)=>new Bue(e), Xw = gu(`effect/Supervisor/none`, ()=>Vue(Ob)), Hue = Iv, Zw = `Empty`, Qw = `AddSupervisor`, $w = `RemoveSupervisor`, eT = `AndThen`, tT = {
         _tag: Zw
     }, nT = (e, t)=>({
             _tag: eT,
@@ -24665,17 +24355,17 @@ perfecta armonía.`,
             }
         }
         return n;
-    }, rT = (e, t)=>pd(e, t) ? Xw : Yw(e) ? rT(e.left, t).zip(rT(e.right, t)) : e, iT = (e)=>pd(e, Xw) ? I_() : Yw(e) ? V(iT(e.left), U_(iT(e.right))) : R_(e), Gue = Hue({
+    }, rT = (e, t)=>md(e, t) ? Xw : Yw(e) ? rT(e.left, t).zip(rT(e.right, t)) : e, iT = (e)=>md(e, Xw) ? I_() : Yw(e) ? B(iT(e.left), U_(iT(e.right))) : R_(e), Gue = Hue({
         empty: tT,
         patch: Uue,
         combine: nT,
         diff: (e, t)=>{
-            if (pd(e, t)) return tT;
+            if (md(e, t)) return tT;
             let n = iT(e), r = iT(t);
-            return nT(V(r, H_(n), W_(tT, (e, t)=>nT(e, {
+            return nT(B(r, H_(n), W_(tT, (e, t)=>nT(e, {
                     _tag: Qw,
                     supervisor: t
-                }))), V(n, H_(r), W_(tT, (e, t)=>nT(e, {
+                }))), B(n, H_(r), W_(tT, (e, t)=>nT(e, {
                     _tag: $w,
                     supervisor: t
                 }))));
@@ -24694,20 +24384,20 @@ perfecta armonía.`,
         _E: (e)=>e,
         _A: (e)=>e
     }, cT = (e)=>{
-        throw Error(`BUG: FiberRuntime - ${Td(e)} - please report an issue at https://github.com/Effect-TS/effect/issues`);
-    }, lT = Symbol.for(`effect/internal/fiberRuntime/YieldedOp`), uT = hu(`effect/internal/fiberRuntime/yieldedOpChannel`, ()=>({
+        throw Error(`BUG: FiberRuntime - ${Ed(e)} - please report an issue at https://github.com/Effect-TS/effect/issues`);
+    }, lT = Symbol.for(`effect/internal/fiberRuntime/YieldedOp`), uT = gu(`effect/internal/fiberRuntime/yieldedOpChannel`, ()=>({
             currentOp: null
         })), dT = {
-        [Id]: (e, t, n)=>Qu(()=>t.effect_instruction_i1(n)),
+        [Ld]: (e, t, n)=>$u(()=>t.effect_instruction_i1(n)),
         OnStep: (e, t, n)=>xx(xx(n)),
-        [Ld]: (e, t, n)=>Qu(()=>t.effect_instruction_i2(n)),
-        [Gd]: (e, t, n)=>(e.patchRuntimeFlags(e.currentRuntimeFlags, t.patch), Uv(e.currentRuntimeFlags) && e.isInterrupted() ? vx(e.getInterruptedCause()) : xx(n)),
-        [Vd]: (e, t, n)=>(Qu(()=>t.effect_instruction_i2(n)), Qu(()=>t.effect_instruction_i0()) ? (e.pushStack(t), Qu(()=>t.effect_instruction_i1())) : Ob),
-        [Hd]: (e, t, n)=>{
+        [Rd]: (e, t, n)=>$u(()=>t.effect_instruction_i2(n)),
+        [Kd]: (e, t, n)=>(e.patchRuntimeFlags(e.currentRuntimeFlags, t.patch), Uv(e.currentRuntimeFlags) && e.isInterrupted() ? vx(e.getInterruptedCause()) : xx(n)),
+        [Hd]: (e, t, n)=>($u(()=>t.effect_instruction_i2(n)), $u(()=>t.effect_instruction_i0()) ? (e.pushStack(t), $u(()=>t.effect_instruction_i1())) : Ob),
+        [Ud]: (e, t, n)=>{
             for(;;){
-                let r = Qu(()=>t.effect_instruction_i0.next(n));
+                let r = $u(()=>t.effect_instruction_i0.next(n));
                 if (r.done) return xx(r.value);
-                let i = Yu(r.value);
+                let i = Xu(r.value);
                 if (!mx(i)) return e.pushStack(t), i;
                 if (i._tag === `Failure`) return i;
                 n = i.value;
@@ -24730,7 +24420,7 @@ perfecta armonía.`,
                 return Gb(Tde(e.runAll(r), i, ()=>i.forEach((e)=>{
                         e.listeners.interrupted = !0;
                     })), YC, n);
-            }, !1, !1)), ede = qd(), fT = class extends FS {
+            }, !1, !1)), ede = Jd(), fT = class extends FS {
         [ow] = sw;
         [Nle] = Zue;
         _fiberRefs;
@@ -24818,7 +24508,7 @@ perfecta armonía.`,
         get inheritAll() {
             return Ky((e, t)=>{
                 let n = e.id(), r = e.getFiberRefs(), i = t.runtimeFlags, a = Rse(r, n, this.getFiberRefs());
-                return e.setFiberRefs(a), kb(V(Jv(i, e.getFiberRef(kT)), Qv(1), Qv(16)));
+                return e.setFiberRefs(a), kb(B(Jv(i, e.getFiberRef(kT)), Qv(1), Qv(16)));
             });
         }
         get poll() {
@@ -24933,10 +24623,10 @@ perfecta armonía.`,
             if (qv(this.currentRuntimeFlags)) {
                 let t = this.getFiberRef(Qb), n = this.id().startTimeMillis, r = Date.now();
                 switch(Yue.unsafeUpdate(r - n, t), aT.unsafeUpdate(-1, t), e._tag){
-                    case Rd:
+                    case zd:
                         que.unsafeUpdate(1, t);
                         break;
-                    case Pd:
+                    case Fd:
                         Jue.unsafeUpdate(1, t);
                         break;
                 }
@@ -24960,7 +24650,7 @@ perfecta armonía.`,
             let i = this.getFiberRef(Qae), a = this.getFiberRef(Xae), o = this.getLoggers(), s = this.getFiberRefs();
             if (z_(o) > 0) {
                 let n = sg(this.getFiberRef(wS), Rx), c = new Date(n.unsafeCurrentTimeMillis());
-                Ad(s, ()=>{
+                jd(s, ()=>{
                     for (let n of o)n.log({
                         fiberId: this.id(),
                         logLevel: r,
@@ -24998,7 +24688,7 @@ perfecta armonía.`,
                         let e = uT.currentOp;
                         uT.currentOp = null, e._op === `Yield` ? jie(this.currentRuntimeFlags) ? (this.tell(Ole()), this.tell(rw(Sx)), t = null) : t = Sx : e._op === `Async` && (t = null);
                     } else {
-                        this.currentRuntimeFlags = V(this.currentRuntimeFlags, Nie(16));
+                        this.currentRuntimeFlags = B(this.currentRuntimeFlags, Nie(16));
                         let e = this.interruptAllChildren();
                         e === null ? (this._queue.length === 0 ? this.setExitValue(n) : this.tell(rw(n)), t = null) : t = U(e, ()=>n);
                     }
@@ -25097,31 +24787,31 @@ perfecta armonía.`,
                 });
             });
         }
-        [zd](e) {
-            let t = Qu(()=>e.effect_instruction_i0()), n = this.getNextSuccessCont();
+        [Bd](e) {
+            let t = $u(()=>e.effect_instruction_i0()), n = this.getNextSuccessCont();
             return n === void 0 ? (uT.currentOp = xx(t), lT) : (n._op in dT || cT(n), dT[n._op](this, n, t));
         }
-        [Rd](e) {
+        [zd](e) {
             let t = e, n = this.getNextSuccessCont();
             return n === void 0 ? (uT.currentOp = t, lT) : (n._op in dT || cT(n), dT[n._op](this, n, t.effect_instruction_i0));
         }
-        [Pd](e) {
+        [Fd](e) {
             let t = e.effect_instruction_i0, n = this.getNextFailCont();
             if (n !== void 0) switch(n._op){
-                case Fd:
-                case Ld:
-                    return Uv(this.currentRuntimeFlags) && this.isInterrupted() ? vx(Sy(t)) : Qu(()=>n.effect_instruction_i1(t));
+                case Id:
+                case Rd:
+                    return Uv(this.currentRuntimeFlags) && this.isInterrupted() ? vx(Sy(t)) : $u(()=>n.effect_instruction_i1(t));
                 case `OnStep`:
                     return Uv(this.currentRuntimeFlags) && this.isInterrupted() ? vx(Sy(t)) : xx(vx(t));
-                case Gd:
+                case Kd:
                     return this.patchRuntimeFlags(this.currentRuntimeFlags, n.patch), Uv(this.currentRuntimeFlags) && this.isInterrupted() ? vx(vy(t, this.getInterruptedCause())) : vx(t);
                 default:
                     cT(n);
             }
             else return uT.currentOp = vx(t), lT;
         }
-        [Ud](e) {
-            return Qu(()=>e.effect_instruction_i0(this, gC(this.currentRuntimeFlags)));
+        [Wd](e) {
+            return $u(()=>e.effect_instruction_i0(this, gC(this.currentRuntimeFlags)));
         }
         Blocked(e) {
             let t = this.getFiberRefs(), n = this.currentRuntimeFlags;
@@ -25140,41 +24830,41 @@ perfecta armonía.`,
         RunBlocked(e) {
             return $ue(e.effect_instruction_i0);
         }
-        [Bd](e) {
+        [Vd](e) {
             let t = e.effect_instruction_i0, n = this.currentRuntimeFlags, r = Yv(n, t);
             if (Uv(r) && this.isInterrupted()) return vx(this.getInterruptedCause());
             if (this.patchRuntimeFlags(this.currentRuntimeFlags, t), e.effect_instruction_i1) {
                 let t = Jv(r, n);
-                return this.pushStack(new xae(t, e)), Qu(()=>e.effect_instruction_i1(n));
+                return this.pushStack(new xae(t, e)), $u(()=>e.effect_instruction_i1(n));
             } else return Sx;
         }
-        [Id](e) {
+        [Ld](e) {
             return this.pushStack(e), e.effect_instruction_i0;
         }
         OnStep(e) {
             return this.pushStack(e), e.effect_instruction_i0;
         }
-        [Fd](e) {
+        [Id](e) {
             return this.pushStack(e), e.effect_instruction_i0;
         }
-        [Ld](e) {
+        [Rd](e) {
             return this.pushStack(e), e.effect_instruction_i0;
         }
-        [Md](e) {
+        [Nd](e) {
             return this._asyncBlockingOn = e.effect_instruction_i1, this.initiateAsync(this.currentRuntimeFlags, e.effect_instruction_i0), uT.currentOp = e, lT;
         }
-        [Wd](e) {
+        [Gd](e) {
             return this._isYielding = !1, uT.currentOp = e, lT;
         }
-        [Vd](e) {
+        [Hd](e) {
             let t = e.effect_instruction_i0, n = e.effect_instruction_i1;
             return t() ? (this.pushStack(e), n()) : Sx;
         }
-        [Hd](e) {
-            return dT[Hd](this, e, void 0);
+        [Ud](e) {
+            return dT[Ud](this, e, void 0);
         }
-        [Nd](e) {
-            return Qu(()=>e.commit());
+        [Pd](e) {
+            return $u(()=>e.commit());
         }
         runLoop(e) {
             let t = e;
@@ -25196,7 +24886,7 @@ perfecta armonía.`,
                             let e = this.getFiberRef(roe);
                             if (e._tag === `Some`) {
                                 let n = t[Vy]._V;
-                                this.log(`Executing an Effect versioned ${n} with a Runtime of version ${qd()}, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service`, py, e);
+                                this.log(`Executing an Effect versioned ${n} with a Runtime of version ${Jd()}, you may want to dedupe the effect dependencies, you can use the language service plugin to detect this at compile time: https://github.com/Effect-TS/language-service`, py, e);
                             }
                         }
                         return this[t._op](t);
@@ -25205,24 +24895,24 @@ perfecta armonía.`,
                         return e._op === `Yield` || e._op === `Async` ? lT : (uT.currentOp = null, e._op === `Success` || e._op === `Failure` ? e : vx(hy(e)));
                     }
                 } catch (e) {
-                    t = t !== lT && !Du(t, `_op`) || !(t._op in this) ? Cae(`Not a valid effect: ${Td(t)}`) : soe(e) ? vx(vy(hy(e), gy(ov))) : nb(e);
+                    t = t !== lT && !Ou(t, `_op`) || !(t._op in this) ? Cae(`Not a valid effect: ${Ed(t)}`) : soe(e) ? vx(vy(hy(e), gy(ov))) : nb(e);
                 }
             }
         }
         run = ()=>{
             this.drainQueueOnCurrentThread();
         };
-    }, tde = hu(`effect/FiberRef/currentMinimumLogLevel`, ()=>Kb(ece(`Info`))), nde = (e)=>uw((t)=>{
+    }, tde = gu(`effect/FiberRef/currentMinimumLogLevel`, ()=>Kb(ece(`Info`))), nde = (e)=>uw((t)=>{
             sg(Hse(t.context, wS), vS).unsafe.log(e.log(t));
-        }), rde = hu(Symbol.for(`effect/Logger/defaultLogger`), ()=>nde(Lle)), ide = hu(Symbol.for(`effect/Logger/tracerLogger`), ()=>uw(({ annotations: e, cause: t, context: n, fiberId: r, logLevel: i, message: a })=>{
+        }), rde = gu(Symbol.for(`effect/Logger/defaultLogger`), ()=>nde(Lle)), ide = gu(Symbol.for(`effect/Logger/tracerLogger`), ()=>uw(({ annotations: e, cause: t, context: n, fiberId: r, logLevel: i, message: a })=>{
             let o = nC(lg(jS(n, Yb), SS));
             if (o._tag === `None` || o.value._tag === `ExternalSpan`) return;
             let s = cg(jS(n, wS), Rx), c = {};
             for (let [t, n] of e)c[t] = n;
             c[`effect.fiberId`] = Ere(r), c[`effect.logLevel`] = i.label, t !== null && t._tag !== `Empty` && (c[`effect.cause`] = Ay(t, {
                 renderErrorCause: !0
-            })), o.value.event(Td(Array.isArray(a) && a.length === 1 ? a[0] : a), s.unsafeCurrentTimeNanos(), c);
-        })), ade = hu(Symbol.for(`effect/FiberRef/currentLoggers`), ()=>qae(R_(rde, ide))), ode = B((e)=>Gy(e[0]), (e, t)=>Eb(Tb(e, (e)=>sde((n)=>t(e, n))))), sde = (e)=>Ky((t)=>{
+            })), o.value.event(Ed(Array.isArray(a) && a.length === 1 ? a[0] : a), s.unsafeCurrentTimeNanos(), c);
+        })), ade = gu(Symbol.for(`effect/FiberRef/currentLoggers`), ()=>qae(R_(rde, ide))), ode = z((e)=>Gy(e[0]), (e, t)=>Eb(Tb(e, (e)=>sde((n)=>t(e, n))))), sde = (e)=>Ky((t)=>{
             let n = t.getFiberRefs(), r = Mie(t.currentRuntimeFlags, 1);
             return U(vde, (t)=>rx(t, (t)=>Ky((i)=>{
                         let a = i.getFiberRefs(), o = i.currentRuntimeFlags, s = uC(a, n), c = Jv(o, r), l = uC(n, a);
@@ -25234,14 +24924,14 @@ perfecta armonía.`,
         let r = e.next();
         return r.done ? Sb(!1) : U(n(r.value, t), (r)=>r ? Sb(r) : cde(e, t + 1, n));
     }, lde = (e)=>{
-        if (Array.isArray(e) || Nu(e)) return [
+        if (Array.isArray(e) || Pu(e)) return [
             e,
-            H()
+            V()
         ];
         let t = Object.keys(e), n = t.length;
         return [
             t.map((t)=>e[t]),
-            qf((e)=>{
+            H((e)=>{
                 let r = {};
                 for(let i = 0; i < n; i++)r[t[i]] = e[i];
                 return r;
@@ -25250,35 +24940,35 @@ perfecta armonía.`,
     }, ude = (e, t, n)=>{
         let r = [];
         for (let t of e)r.push(rb(t));
-        return U(mT(r, Zl, {
+        return U(mT(r, Ql, {
             concurrency: n?.concurrency,
             batching: n?.batching,
             concurrentFinalizers: n?.concurrentFinalizers
         }), (e)=>{
-            let r = H(), i = e.length, a = Array(i), o = Array(i), s = !1;
+            let r = V(), i = e.length, a = Array(i), o = Array(i), s = !1;
             for(let t = 0; t < i; t++){
                 let n = e[t];
-                n._tag === `Left` ? (a[t] = qf(n.left), s = !0) : (o[t] = n.right, a[t] = r);
+                n._tag === `Left` ? (a[t] = H(n.left), s = !0) : (o[t] = n.right, a[t] = r);
             }
             return s ? t._tag === `Some` ? ab(t.value(a)) : ab(a) : n?.discard ? Ob : t._tag === `Some` ? Sb(t.value(o)) : Sb(o);
         });
     }, dde = (e, t, n)=>{
         let r = [];
         for (let t of e)r.push(rb(t));
-        return n?.discard ? mT(r, Zl, {
+        return n?.discard ? mT(r, Ql, {
             concurrency: n?.concurrency,
             batching: n?.batching,
             discard: !0,
             concurrentFinalizers: n?.concurrentFinalizers
-        }) : gb(mT(r, Zl, {
+        }) : gb(mT(r, Ql, {
             concurrency: n?.concurrency,
             batching: n?.batching,
             concurrentFinalizers: n?.concurrentFinalizers
         }), (e)=>t._tag === `Some` ? t.value(e) : e);
     }, pT = (e, t)=>{
         let [n, r] = lde(e);
-        return t?.mode === `validate` ? ude(n, r, t) : t?.mode === `either` ? dde(n, r, t) : t?.discard !== !0 && r._tag === `Some` ? gb(mT(n, Zl, t), r.value) : mT(n, Zl, t);
-    }, mT = B((e)=>Nu(e[0]), (e, t, n)=>Ky((r)=>{
+        return t?.mode === `validate` ? ude(n, r, t) : t?.mode === `either` ? dde(n, r, t) : t?.discard !== !0 && r._tag === `Some` ? gb(mT(n, Ql, t), r.value) : mT(n, Ql, t);
+    }, mT = z((e)=>Pu(e[0]), (e, t, n)=>Ky((r)=>{
             let i = n?.batching === !0 || n?.batching === `inherit` && r.getFiberRef(toe);
             return n?.discard ? XC(n.concurrency, ()=>ST(sC, n?.concurrentFinalizers)((n)=>i ? gT(e, (e, r)=>n(t(e, r)), !0, !1, 1) : mb(e, (e, r)=>n(t(e, r)))), ()=>ST(cC, n?.concurrentFinalizers)((n)=>gT(e, (e, r)=>n(t(e, r)), i, !1)), (r)=>ST(lC(r), n?.concurrentFinalizers)((n)=>gT(e, (e, r)=>n(t(e, r)), i, !1, r))) : XC(n?.concurrency, ()=>ST(sC, n?.concurrentFinalizers)((n)=>i ? _T(e, 1, (e, r)=>n(t(e, r)), !0) : pb(e, (e, r)=>n(t(e, r)))), ()=>ST(cC, n?.concurrentFinalizers)((n)=>hT(e, (e, r)=>n(t(e, r)), i)), (r)=>ST(lC(r), n?.concurrentFinalizers)((n)=>_T(e, r, (e, r)=>n(t(e, r)), i)));
         })), hT = (e, t, n)=>Cb(()=>{
@@ -25358,7 +25048,7 @@ perfecta armonía.`,
         return i.resume(e), i;
     }, pde = (e, t, n, r = null)=>yT(e, t, n, r), yT = (e, t, n, r = null)=>{
         let i = sv(), a = zse(t.getFiberRefs(), i), o = new fT(i, a, n), s = jS(a, Yb), c = o.currentSupervisor;
-        return c.onStart(s, e, qf(t), o), o.addObserver((e)=>c.onEnd(e, o)), (r === null ? V(t.getFiberRef($b), $f(()=>t.scope())) : r).add(n, o), o;
+        return c.onStart(s, e, H(t), o), o.addObserver((e)=>c.onEnd(e, o)), (r === null ? B(t.getFiberRef($b), $f(()=>t.scope())) : r).add(n, o), o;
     }, mde = (e, t)=>Ky((n, r)=>Sb(fde(e, n, r.runtimeFlags, t))), bT = (e)=>kx((t)=>Zf(lg(t, TT), {
                 onNone: ()=>e,
                 onSome: (t)=>{
@@ -25374,7 +25064,7 @@ perfecta armonía.`,
                     onNone: ()=>t,
                     onSome: (n)=>n.strategy._tag === `ParallelN` && n.strategy.parallelism === e ? t : U(ax(n, lC(e)), (e)=>OT(t, e))
                 })), ST = (e, t)=>(n)=>kx((r)=>Zf(lg(r, TT), {
-                    onNone: ()=>n(Zl),
+                    onNone: ()=>n(Ql),
                     onSome: (r)=>{
                         if (t === !0) {
                             let t = e._tag === `Parallel` ? bT : e._tag === `Sequential` ? wT : xT(e.parallelism);
@@ -25386,7 +25076,7 @@ perfecta armonía.`,
                                 case `ParallelN`:
                                     return t(n(xT(r.strategy.parallelism)));
                             }
-                        } else return n(Zl);
+                        } else return n(Ql);
                     }
                 })), CT = (e)=>U(TT, e), hde = (e)=>U(DT(), (t)=>yb(e(t), (e)=>t.close(e))), wT = (e)=>kx((t)=>Zf(lg(t, TT), {
                 onNone: ()=>e,
@@ -25399,7 +25089,7 @@ perfecta armonía.`,
                             return U(ax(t, sC), (t)=>OT(e, t));
                     }
                 }
-            })), gde = (e)=>Cde(wS, og(uS, e)), _de = B((e)=>Gy(e[1]), (e, t, n, r)=>gb(pT([
+            })), gde = (e)=>Cde(wS, og(uS, e)), _de = z((e)=>Gy(e[1]), (e, t, n, r)=>gb(pT([
             e,
             t
         ], {
@@ -25412,7 +25102,7 @@ perfecta armonía.`,
         [tx]: tx,
         [nx]: nx,
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         },
         fork (e) {
             return wb(()=>{
@@ -25431,9 +25121,9 @@ perfecta armonía.`,
                 return this.state = {
                     _tag: `Closed`,
                     exit: e
-                }, t.length === 0 ? Ob : Pce(this.strategy) ? V(pb(t, (t)=>ib(t(e))), U((e)=>V(gx(e), sp(hx), $f(()=>Sx)))) : Fce(this.strategy) ? V(hT(t, (t)=>ib(t(e)), !1), U((e)=>V(gx(e, {
+                }, t.length === 0 ? Ob : Pce(this.strategy) ? B(pb(t, (t)=>ib(t(e))), U((e)=>B(gx(e), sp(hx), $f(()=>Sx)))) : Fce(this.strategy) ? B(hT(t, (t)=>ib(t(e)), !1), U((e)=>B(gx(e, {
                         parallel: !0
-                    }), sp(hx), $f(()=>Sx)))) : V(_T(t, this.strategy.parallelism, (t)=>ib(t(e)), !1), U((e)=>V(gx(e, {
+                    }), sp(hx), $f(()=>Sx)))) : B(_T(t, this.strategy.parallelism, (t)=>ib(t(e)), !1), U((e)=>B(gx(e, {
                         parallel: !0
                     }), sp(hx), $f(()=>Sx))));
             });
@@ -25447,10 +25137,10 @@ perfecta armonía.`,
             _tag: `Open`,
             finalizers: new Map
         }, t;
-    }, DT = (e = aC)=>wb(()=>ET(e)), OT = B(2, (e, t)=>woe(e, ug(ag(TT, t)))), xde = (e)=>Jb(e, {
+    }, DT = (e = aC)=>wb(()=>ET(e)), OT = z(2, (e, t)=>woe(e, ug(ag(TT, t)))), xde = (e)=>Jb(e, {
             differ: Gue,
             fork: tT
-        }), Sde = B(2, (e, t)=>Jy(ode(U(Hb(e), (n)=>qy(Wb(e, t), n)), (t)=>Wb(e, t)))), Cde = B(2, (e, t)=>Ub(e, (n)=>Sde(e, t(n)))), kT = Yae(Pie), wde = xde(Xw), AT = B(2, (e, t)=>Db((n)=>db(n(e), {
+        }), Sde = z(2, (e, t)=>Jy(ode(U(Hb(e), (n)=>qy(Wb(e, t), n)), (t)=>Wb(e, t)))), Cde = z(2, (e, t)=>Ub(e, (n)=>Sde(e, t(n)))), kT = Yae(Pie), wde = xde(Xw), AT = z(2, (e, t)=>Db((n)=>db(n(e), {
                 onFailure: (e)=>db(t, {
                         onFailure: (t)=>sb(vy(e, t)),
                         onSuccess: ()=>sb(e)
@@ -25478,7 +25168,7 @@ perfecta armonía.`,
         [PT]: PT,
         startMillis: 0,
         endMillis: 0
-    }, IT = (e)=>V(e.intervals, jg, $f(()=>FT)).startMillis, Ode = (e)=>V(e.intervals, jg, $f(()=>FT)).endMillis, kde = B(2, (e, t)=>IT(e) < IT(t)), Ade = (e)=>Ag(e.intervals), jde = IT, LT = Ode, Mde = kde, Nde = Ade, Pde = `Continue`, RT = `Done`, Fde = (e)=>({
+    }, IT = (e)=>B(e.intervals, jg, $f(()=>FT)).startMillis, Ode = (e)=>B(e.intervals, jg, $f(()=>FT)).endMillis, kde = z(2, (e, t)=>IT(e) < IT(t)), Ade = (e)=>Ag(e.intervals), jde = IT, LT = Ode, Mde = kde, Nde = Ade, Pde = `Continue`, RT = `Done`, Fde = (e)=>({
             _tag: Pde,
             intervals: e
         }), Ide = {
@@ -25537,7 +25227,7 @@ perfecta armonía.`,
             return this.modifyEffect((t)=>Sb(e(t)));
         }
         modifyEffect(e) {
-            return this.withLock(V(U(VS(this.ref), e), U(([e, t])=>qy(HS(this.ref, t), e))));
+            return this.withLock(B(U(VS(this.ref), e), U(([e, t])=>qy(HS(this.ref, t), e))));
         }
     }, Kde = (e)=>wb(()=>HT(e)), HT = (e)=>new Gde(zS(e), Hde(1).withPermits(1)), UT = Symbol.for(`effect/ManagedRuntime`), qde = `Fold`, WT = `Fresh`, Jde = `FromEffect`, Yde = `Scoped`, Xde = `Suspend`, Zde = `Provide`, Qde = `ProvideMerge`, $de = `MergeAll`, efe = Rb, GT = (e)=>function() {
             if (arguments.length === 1) {
@@ -25572,14 +25262,14 @@ perfecta armonía.`,
         });
         n?.updateRefs && (a = n.updateRefs(a, r));
         let o = new fT(r, a, e.runtimeFlags), s = t;
-        n?.scope && (s = U(Bde(n.scope, aC), (e)=>Lb(ioe(e, lb((e)=>pd(e, o.id()) ? Ob : Rb(o, e))), yb(t, (t)=>VT(e, t)))));
+        n?.scope && (s = U(Bde(n.scope, aC), (e)=>Lb(ioe(e, lb((e)=>md(e, o.id()) ? Ob : Rb(o, e))), yb(t, (t)=>VT(e, t)))));
         let c = o.currentSupervisor;
-        return c !== Xw && (c.onStart(e.context, s, H(), o), o.addObserver((e)=>c.onEnd(e, o))), aw.add(e.runtimeFlags, o), n?.immediate === !1 ? o.resume(s) : o.start(s), o;
+        return c !== Xw && (c.onStart(e.context, s, V(), o), o.addObserver((e)=>c.onEnd(e, o))), aw.add(e.runtimeFlags, o), n?.immediate === !1 ? o.resume(s) : o.start(s), o;
     }), qT = GT((e, t, n = {})=>{
         let r = KT(e, t, n);
         return n.onExit && r.addObserver((e)=>{
             n.onExit(e);
-        }), (t, n)=>qT(e)(V(r, efe(t ?? ov)), {
+        }), (t, n)=>qT(e)(B(r, efe(t ?? ov)), {
                 ...n,
                 onExit: n?.onExit ? (e)=>n.onExit(Eoe(e)) : void 0
             });
@@ -25616,7 +25306,7 @@ perfecta armonía.`,
                 renderErrorCause: !0
             });
         }
-        [_d]() {
+        [vd]() {
             return this.toString();
         }
     }, ZT = (e)=>{
@@ -25648,9 +25338,9 @@ perfecta armonía.`,
         return r.flush(), i.unsafePoll() || doe(tb(nfe(i), Mx(i)));
     }), eE = GT((e, t, n)=>tE(e, t, n).then((e)=>{
             switch(e._tag){
-                case Rd:
+                case zd:
                     return e.effect_instruction_i0;
-                case Pd:
+                case Fd:
                     throw ZT(e.effect_instruction_i0);
             }
         })), tE = GT((e, t, n)=>new Promise((r)=>{
@@ -25672,59 +25362,59 @@ perfecta armonía.`,
             this.context = e, this.runtimeFlags = t, this.fiberRefs = n;
         }
         pipe() {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, ife = (e)=>new nE(e.context, e.runtimeFlags, e.fiberRefs), afe = ()=>Ky((e, t)=>Sb(new nE(e.getFiberRef(Yb), t.runtimeFlags, e.getFiberRefs()))), rE = ife({
         context: ig(),
         runtimeFlags: Kv(1, 32, 4),
         fiberRefs: Wse()
-    }), iE = KT(rE), aE = eE(rE), ofe = tE(rE), oE = JT(rE), sfe = $T(rE), cfe = B(2, (e, t)=>e.modifyEffect(t)), sE = Symbol.for(`effect/Layer`), lfe = {
+    }), iE = KT(rE), aE = eE(rE), ofe = tE(rE), oE = JT(rE), sfe = $T(rE), cfe = z(2, (e, t)=>e.modifyEffect(t)), sE = Symbol.for(`effect/Layer`), lfe = {
         _RIn: (e)=>e,
         _E: (e)=>e,
         _ROut: (e)=>e
     }, cE = {
         [sE]: lfe,
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, lE = Symbol.for(`effect/Layer/MemoMap`), ufe = fg()(`effect/Layer/CurrentMemoMap`, {
         defaultValue: ()=>dE()
-    }), dfe = (e)=>Du(e, sE), ffe = (e)=>e._op_layer === WT, uE = class {
+    }), dfe = (e)=>Ou(e, sE), ffe = (e)=>e._op_layer === WT, uE = class {
         ref;
         [lE];
         constructor(e){
             this.ref = e, this[lE] = lE;
         }
         getOrElseMemoize(e, t) {
-            return V(cfe(this.ref, (n)=>{
+            return B(cfe(this.ref, (n)=>{
                 let r = n.get(e);
                 if (r !== void 0) {
                     let [e, i] = r;
                     return Sb([
-                        V(e, U(([e, t])=>V(eC(e), qy(t))), yb(bx({
+                        B(e, U(([e, t])=>B(eC(e), qy(t))), yb(bx({
                             onFailure: ()=>Ob,
                             onSuccess: ()=>rx(t, i)
                         }))),
                         n
                     ]);
                 }
-                return V(BS(0), U((r)=>V(wx(), U((i)=>V(BS(()=>Ob), gb((a)=>{
-                            let o = Db((o)=>V(DT(), U((s)=>V(o(U(mE(e, s, !0), (e)=>gce(e(this)))), ib, U((o)=>{
+                return B(BS(0), U((r)=>B(wx(), U((i)=>B(BS(()=>Ob), gb((a)=>{
+                            let o = Db((o)=>B(DT(), U((s)=>B(o(U(mE(e, s, !0), (e)=>gce(e(this)))), ib, U((o)=>{
                                         switch(o._tag){
-                                            case Pd:
-                                                return V(boe(i, o.effect_instruction_i0), Lb(ix(s, o)), Lb(sb(o.effect_instruction_i0)));
-                                            case Rd:
-                                                return V(HS(a, (e)=>V(ix(s, e), Ab(sce(r, (e)=>[
+                                            case Fd:
+                                                return B(boe(i, o.effect_instruction_i0), Lb(ix(s, o)), Lb(sb(o.effect_instruction_i0)));
+                                            case zd:
+                                                return B(HS(a, (e)=>B(ix(s, e), Ab(sce(r, (e)=>[
                                                             e === 1,
                                                             e - 1
-                                                        ])), Jy)), Lb(US(r, (e)=>e + 1)), Lb(rx(t, (t)=>V(wb(()=>n.delete(e)), Lb(VS(a)), U((e)=>e(t))))), Lb(xoe(i, o.effect_instruction_i0)), qy(o.effect_instruction_i0[1]));
+                                                        ])), Jy)), Lb(US(r, (e)=>e + 1)), Lb(rx(t, (t)=>B(wb(()=>n.delete(e)), Lb(VS(a)), U((e)=>e(t))))), Lb(xoe(i, o.effect_instruction_i0)), qy(o.effect_instruction_i0[1]));
                                         }
                                     }))))), s = [
-                                V(Tx(i), yb(hoe({
+                                B(Tx(i), yb(hoe({
                                     onFailure: ()=>Ob,
                                     onSuccess: ()=>US(r, (e)=>e + 1)
                                 }))),
-                                (e)=>V(VS(a), U((t)=>t(e)))
+                                (e)=>B(VS(a), U((t)=>t(e)))
                             ];
                             return [
                                 o,
@@ -25733,7 +25423,7 @@ perfecta armonía.`,
                         }))))));
             }), ub);
         }
-    }, pfe = Cb(()=>gb(Kde(new Map), (e)=>new uE(e))), dE = ()=>new uE(HT(new Map)), fE = B(2, (e, t)=>U(pfe, (n)=>pE(e, n, t))), pE = B(3, (e, t, n)=>U(mE(e, n), (e)=>Ece(e(t), ufe, t))), mE = (e, t, n = !1)=>{
+    }, pfe = Cb(()=>gb(Kde(new Map), (e)=>new uE(e))), dE = ()=>new uE(HT(new Map)), fE = z(2, (e, t)=>U(pfe, (n)=>pE(e, n, t))), pE = z(3, (e, t, n)=>U(mE(e, n), (e)=>Ece(e(t), ufe, t))), mE = (e, t, n = !1)=>{
         let r = e;
         switch(r._op_layer){
             case `Locally`:
@@ -25741,26 +25431,26 @@ perfecta armonía.`,
             case `ExtendScope`:
                 return wb(()=>(e)=>CT((t)=>e.getOrElseMemoize(r.layer, t)));
             case `Fold`:
-                return wb(()=>(e)=>V(e.getOrElseMemoize(r.layer, t), db({
+                return wb(()=>(e)=>B(e.getOrElseMemoize(r.layer, t), db({
                             onFailure: (n)=>e.getOrElseMemoize(r.failureK(n), t),
                             onSuccess: (n)=>e.getOrElseMemoize(r.successK(n), t)
                         })));
             case `Fresh`:
-                return wb(()=>(e)=>V(r.layer, fE(t)));
+                return wb(()=>(e)=>B(r.layer, fE(t)));
             case `FromEffect`:
                 return wb(n ? ()=>(e)=>r.effect : ()=>(n)=>n.getOrElseMemoize(e, t));
             case `Provide`:
-                return wb(()=>(e)=>V(e.getOrElseMemoize(r.first, t), U((n)=>V(e.getOrElseMemoize(r.second, t), Ax(n)))));
+                return wb(()=>(e)=>B(e.getOrElseMemoize(r.first, t), U((n)=>B(e.getOrElseMemoize(r.second, t), Ax(n)))));
             case `Scoped`:
                 return wb(n ? ()=>(e)=>OT(r.effect, t) : ()=>(n)=>n.getOrElseMemoize(e, t));
             case `Suspend`:
                 return wb(()=>(e)=>e.getOrElseMemoize(r.evaluate(), t));
             case `ProvideMerge`:
-                return wb(()=>(e)=>V(e.getOrElseMemoize(r.first, t), Iae(e.getOrElseMemoize(r.second, t), r.zipK)));
+                return wb(()=>(e)=>B(e.getOrElseMemoize(r.first, t), Iae(e.getOrElseMemoize(r.second, t), r.zipK)));
             case `ZipWith`:
                 return Nb(function*() {
                     let e = yield* ax(t, oC), n = yield* ax(e, aC), i = yield* ax(e, aC);
-                    return (e)=>V(e.getOrElseMemoize(r.first, n), _de(e.getOrElseMemoize(r.second, i), r.zipK, {
+                    return (e)=>B(e.getOrElseMemoize(r.first, n), _de(e.getOrElseMemoize(r.second, i), r.zipK, {
                             concurrent: !0
                         }));
                 });
@@ -25776,16 +25466,16 @@ perfecta armonía.`,
                         });
                 }
         }
-    }, mfe = B(2, (e, t)=>vE(e, {
+    }, mfe = z(2, (e, t)=>vE(e, {
             onFailure: t,
             onSuccess: Tfe
-        })), hfe = ()=>_E(Ox()), gfe = (e)=>hE(Ede(e)), hE = (e)=>_E(sb(e)), _fe = B(2, (e, t)=>vE(e, {
+        })), hfe = ()=>_E(Ox()), gfe = (e)=>hE(Ede(e)), hE = (e)=>_E(sb(e)), _fe = z(2, (e, t)=>vE(e, {
             onFailure: gfe,
             onSuccess: t
         })), vfe = (e)=>{
         let t = Object.create(cE);
         return t._op_layer = WT, t.layer = e, t;
-    }, gE = B(2, (e, t)=>{
+    }, gE = z(2, (e, t)=>{
         let n = rg(e), r = n ? e : t;
         return _E(gb(n ? t : e, (e)=>ag(r, e)));
     });
@@ -25793,10 +25483,10 @@ perfecta armonía.`,
         let t = Object.create(cE);
         return t._op_layer = Jde, t.effect = e, t;
     }
-    var yfe = B(2, (e, { onFailure: t, onSuccess: n })=>{
+    var yfe = z(2, (e, { onFailure: t, onSuccess: n })=>{
         let r = Object.create(cE);
         return r._op_layer = qde, r.layer = e, r.failureK = t, r.successK = n, r;
-    }), vE = B(2, (e, { onFailure: t, onSuccess: n })=>yfe(e, {
+    }), vE = z(2, (e, { onFailure: t, onSuccess: n })=>yfe(e, {
             onFailure: (e)=>{
                 let n = Dde(e);
                 switch(n._tag){
@@ -25810,18 +25500,18 @@ perfecta armonía.`,
         })), yE = (...e)=>{
         let t = Object.create(cE);
         return t._op_layer = $de, t.layers = e, t;
-    }, bfe = (e, t, n, r)=>V(e, mfe((i)=>V(xfe(t, n, i, r), _fe((r)=>vfe(bfe(e, t, n, V(r, sg(n)).state)))))), xfe = (e, t, n, r)=>gE(t, V(Pse, U((t)=>V(e.step(t, n, r), U(([e, r, i])=>BT(i) ? ab(n) : V(Nse(Yg(jde(i.intervals) - t)), qy({
+    }, bfe = (e, t, n, r)=>B(e, mfe((i)=>B(xfe(t, n, i, r), _fe((r)=>vfe(bfe(e, t, n, B(r, sg(n)).state)))))), xfe = (e, t, n, r)=>gE(t, B(Pse, U((t)=>B(e.step(t, n, r), U(([e, r, i])=>BT(i) ? ab(n) : B(Nse(Yg(jde(i.intervals) - t)), qy({
                     state: e
-                }))))))), Sfe = (e)=>Cfe(V(e, qy(ig()))), Cfe = (e)=>{
+                }))))))), Sfe = (e)=>Cfe(B(e, qy(ig()))), Cfe = (e)=>{
         let t = Object.create(cE);
         return t._op_layer = Yde, t.effect = e, t;
-    }, wfe = B(2, (e, t)=>{
+    }, wfe = z(2, (e, t)=>{
         let n = rg(e);
         return _E(Sb(ag(n ? e : t, n ? t : e)));
     }), Tfe = (e)=>_E(Sb(e)), Efe = (e)=>{
         let t = Object.create(cE);
         return t._op_layer = Xde, t.evaluate = e, t;
-    }, Dfe = B(2, (e, t)=>U(CT((n)=>pE(e, t, n)), (e)=>V(afe(), Ax(e)))), Ofe = B(2, (e, t)=>Efe(()=>{
+    }, Dfe = z(2, (e, t)=>U(CT((n)=>pE(e, t, n)), (e)=>B(afe(), Ax(e)))), Ofe = z(2, (e, t)=>Efe(()=>{
             let n = Object.create(cE);
             return n._op_layer = Zde, n.first = Object.create(cE, {
                 _op_layer: {
@@ -25836,16 +25526,16 @@ perfecta armonía.`,
                     value: Array.isArray(t) ? yE(...t) : t
                 },
                 zipK: {
-                    value: (e, t)=>V(e, ug(t))
+                    value: (e, t)=>B(e, ug(t))
                 }
             }), n.second = e, n;
-        })), bE = B(2, (e, t)=>hde((n)=>U(fE(t, n), (t)=>jx(e, t)))), xE = B(2, (e, t)=>{
+        })), bE = z(2, (e, t)=>hde((n)=>U(fE(t, n), (t)=>jx(e, t)))), xE = z(2, (e, t)=>{
         let n = uC(rE.fiberRefs, t.fiberRefs), r = Jv(rE.runtimeFlags, t.runtimeFlags);
         return Db((i)=>Ky((a)=>{
                 let o = a.getFiberRef(Yb), s = a.getFiberRefs(), c = dC(a.id(), s)(n), l = a.currentRuntimeFlags, u = Yv(r)(l), d = uC(c, s), f = Jv(u, l);
                 return a.setFiberRefs(c), a.currentRuntimeFlags = u, AT(jx(i(e), ug(o, t.context)), Ky((e)=>(e.setFiberRefs(dC(e.id(), e.getFiberRefs())(d)), e.currentRuntimeFlags = Yv(f)(e.currentRuntimeFlags), Ob)));
             }));
-    }), kfe = B(2, (e, t)=>Array.isArray(t) ? bE(e, yE(...t)) : dfe(t) ? bE(e, t) : ene(t) ? jx(e, t) : UT in t ? U(t.runtimeEffect, (t)=>xE(e, t)) : xE(e, t)), SE = function() {
+    }), kfe = z(2, (e, t)=>Array.isArray(t) ? bE(e, yE(...t)) : dfe(t) ? bE(e, t) : ene(t) ? jx(e, t) : UT in t ? U(t.runtimeEffect, (t)=>xE(e, t)) : xE(e, t)), SE = function() {
         let e = Symbol.for(`effect/Data/Error/plainArgs`);
         return {
             BaseEffectError: class extends ox {
@@ -25875,9 +25565,9 @@ perfecta armonía.`,
     }, CE = Symbol.for(`effect/DateTime`), wE = Symbol.for(`effect/DateTime/TimeZone`), TE = {
         [CE]: CE,
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         },
-        [_d] () {
+        [vd] () {
             return this.toString();
         },
         toJSON () {
@@ -25886,10 +25576,10 @@ perfecta armonía.`,
     }, jfe = {
         ...TE,
         _tag: `Utc`,
-        [ed] () {
-            return dd(this, od(this.epochMillis));
+        [td] () {
+            return fd(this, sd(this.epochMillis));
         },
-        [fd] (e) {
+        [pd] (e) {
             return OE(e) && e._tag === `Utc` && this.epochMillis === e.epochMillis;
         },
         toString () {
@@ -25898,27 +25588,27 @@ perfecta armonía.`,
     }, Mfe = {
         ...TE,
         _tag: `Zoned`,
-        [ed] () {
-            return V(od(this.epochMillis), rd(td(this.zone)), dd(this));
+        [td] () {
+            return B(sd(this.epochMillis), id(nd(this.zone)), fd(this));
         },
-        [fd] (e) {
-            return OE(e) && e._tag === `Zoned` && this.epochMillis === e.epochMillis && pd(this.zone, e.zone);
+        [pd] (e) {
+            return OE(e) && e._tag === `Zoned` && this.epochMillis === e.epochMillis && md(this.zone, e.zone);
         },
         toString () {
             return `DateTime.Zoned(${JE(this)})`;
         }
     }, EE = {
         [wE]: wE,
-        [_d] () {
+        [vd] () {
             return this.toString();
         }
     }, Nfe = {
         ...EE,
         _tag: `Named`,
-        [ed] () {
-            return dd(this, sd(`Named:${this.id}`));
+        [td] () {
+            return fd(this, cd(`Named:${this.id}`));
         },
-        [fd] (e) {
+        [pd] (e) {
             return kE(e) && e._tag === `Named` && this.id === e.id;
         },
         toString () {
@@ -25934,10 +25624,10 @@ perfecta armonía.`,
     }, Pfe = {
         ...EE,
         _tag: `Offset`,
-        [ed] () {
-            return dd(this, sd(`Offset:${this.offset}`));
+        [td] () {
+            return fd(this, cd(`Offset:${this.offset}`));
         },
-        [fd] (e) {
+        [pd] (e) {
             return kE(e) && e._tag === `Offset` && this.offset === e.offset;
         },
         toString () {
@@ -25965,7 +25655,7 @@ perfecta armonía.`,
             enumerable: !1,
             writable: !0
         }), r;
-    }, OE = (e)=>Du(e, CE), kE = (e)=>Du(e, wE), Ffe = (e)=>kE(e) && e._tag === `Offset`, Ife = (e)=>kE(e) && e._tag === `Named`, Lfe = (e)=>e._tag === `Utc`, AE = (e)=>e._tag === `Zoned`, Rfe = iu((e, t)=>e.epochMillis === t.epochMillis), zfe = (e)=>{
+    }, OE = (e)=>Ou(e, CE), kE = (e)=>Ou(e, wE), Ffe = (e)=>kE(e) && e._tag === `Offset`, Ife = (e)=>kE(e) && e._tag === `Named`, Lfe = (e)=>e._tag === `Utc`, AE = (e)=>e._tag === `Zoned`, Rfe = au((e, t)=>e.epochMillis === t.epochMillis), zfe = (e)=>{
         let t = Object.create(jfe);
         return t.epochMillis = e, Object.defineProperty(t, `partsUtc`, {
             value: void 0,
@@ -26002,7 +25692,7 @@ perfecta armonía.`,
         let t = Ufe.exec(e);
         if (t === null) {
             let t = GE(e);
-            return t === null ? H() : PE(e, {
+            return t === null ? V() : PE(e, {
                 timeZone: t
             });
         }
@@ -26010,7 +25700,7 @@ perfecta armonía.`,
         return PE(n, {
             timeZone: r
         });
-    }, FE = hu(`effect/DateTime/validZoneCache`, ()=>new Map), Gfe = {
+    }, FE = gu(`effect/DateTime/validZoneCache`, ()=>new Map), Gfe = {
         day: `numeric`,
         month: `numeric`,
         year: `numeric`,
@@ -26041,7 +25731,7 @@ perfecta armonía.`,
     }, qfe = ip(IE), Jfe = /^(?:GMT|[+-])/, RE = (e)=>{
         if (Jfe.test(e)) {
             let t = GE(e);
-            return t === null ? H() : qf(LE(t));
+            return t === null ? V() : H(LE(t));
         }
         return qfe(e);
     }, Yfe = (e)=>e._tag === `Offset` ? HE(e.offset) : e.id, zE = (e)=>new Date(e.epochMillis), BE = (e)=>{
@@ -26114,7 +25804,7 @@ perfecta armonía.`,
                 s
             ],
             Rde(u)
-        ]) : V(a, Mde(c)) ? U(e.step(LT(a), n, r), ([r, i, a])=>BT(a) ? Sb([
+        ]) : B(a, Mde(c)) ? U(e.step(LT(a), n, r), ([r, i, a])=>BT(a) ? Sb([
                 [
                     r,
                     o
@@ -26138,21 +25828,21 @@ perfecta armonía.`,
     }, ope = (e, t, n, r)=>fb(t.next(r), {
             onFailure: ()=>xb(t.last),
             onSuccess: (r)=>fb(e, {
-                    onFailure: (e)=>n(e, qf(r)),
+                    onFailure: (e)=>n(e, H(r)),
                     onSuccess: (r)=>ope(e, t, n, r)
                 })
         }), spe = (e, t, n)=>$y(e, (r)=>fb(t.next(r), {
-                onFailure: ()=>V(t.last, xb, U((e)=>n(r, e))),
+                onFailure: ()=>B(t.last, xb, U((e)=>n(r, e))),
                 onSuccess: ()=>spe(e, t, n)
             })), cpe = (e, t, n)=>fb(n.next(t), {
             onFailure: ()=>xb(n.last),
             onSuccess: ()=>U(e, (t)=>cpe(e, t, n))
-        }), lpe = Gy, upe = wce, XE = pT, ZE = mT, QE = Nb, $E = Cb, dpe = wb, eD = Ob, fpe = $y, tD = hce, ppe = Ace, nD = gb, mpe = _b, rD = vb, hpe = kfe, iD = rb, aD = U, gpe = Tae, _pe = iE, oD = oE, vpe = (e)=>Sfe(gde(e)), sD = gE, cD = yE, ype = wfe, bpe = Ofe, xpe = vpe, Spe = Yx, Cpe = Hoe, lD = `effect/Redacted`, uD = hu(`effect/Redacted/redactedRegistry`, ()=>new WeakMap), dD = Symbol.for(lD), wpe = {
+        }), lpe = Gy, upe = wce, XE = pT, ZE = mT, QE = Nb, $E = Cb, dpe = wb, eD = Ob, fpe = $y, tD = hce, ppe = Ace, nD = gb, mpe = _b, rD = vb, hpe = kfe, iD = rb, aD = U, gpe = Tae, _pe = iE, oD = oE, vpe = (e)=>Sfe(gde(e)), sD = gE, cD = yE, ype = wfe, bpe = Ofe, xpe = vpe, Spe = Yx, Cpe = Hoe, lD = `effect/Redacted`, uD = gu(`effect/Redacted/redactedRegistry`, ()=>new WeakMap), dD = Symbol.for(lD), wpe = {
         [dD]: {
             _A: (e)=>e
         },
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         },
         toString () {
             return `<redacted>`;
@@ -26160,65 +25850,65 @@ perfecta armonía.`,
         toJSON () {
             return `<redacted>`;
         },
-        [_d] () {
+        [vd] () {
             return `<redacted>`;
         },
-        [ed] () {
-            return V(td(lD), rd(td(uD.get(this))), dd(this));
+        [td] () {
+            return B(nd(lD), id(nd(uD.get(this))), fd(this));
         },
-        [fd] (e) {
-            return Tpe(e) && pd(uD.get(this), uD.get(e));
+        [pd] (e) {
+            return Tpe(e) && md(uD.get(this), uD.get(e));
         }
-    }, Tpe = (e)=>Du(e, dD);
+    }, Tpe = (e)=>Ou(e, dD);
     ({
         ...wpe
     });
     var fD = Symbol.for(`effect/Config`), Epe = {
         _A: (e)=>e
     }, pD = {
-        ...rf,
+        ...af,
         [fD]: Epe,
         commit () {
             return Mse(this);
         }
-    }, mD = B(2, (e, t)=>hD(e, (e)=>Of(t(e)))), hD = B(2, (e, t)=>{
+    }, mD = z(2, (e, t)=>hD(e, (e)=>kf(t(e)))), hD = z(2, (e, t)=>{
         let n = Object.create(pD);
         return n._tag = rS, n.original = e, n.mapOrFail = t, n;
-    }), gD = B(2, (e, t)=>{
+    }), gD = z(2, (e, t)=>{
         let n = Object.create(pD);
         return n._tag = iS, n.name = t, n.config = e, n;
-    }), Dpe = B(2, (e, t)=>{
+    }), Dpe = z(2, (e, t)=>{
         let n = Object.create(pD);
         return n._tag = tS, n.first = e, n.second = Mpe(t.orElse), n.condition = t.if, n;
-    }), Ope = (e)=>V(e, mD(qf), Dpe({
-            orElse: ()=>vD(H()),
+    }), Ope = (e)=>B(e, mD(H), Dpe({
+            orElse: ()=>vD(V()),
             if: Cpe
         })), kpe = (e, t)=>{
         let n = Object.create(pD);
         return n._tag = aS, n.description = e, n.parse = t, n;
     }, Ape = (e)=>{
-        let t = kpe(`a text property`, Of);
+        let t = kpe(`a text property`, kf);
         return e === void 0 ? t : gD(t, e);
     }, jpe = (e)=>Array.isArray(e) ? yD(e) : Symbol.iterator in e ? yD([
             ...e
         ]) : _D(e), _D = (e)=>{
-        let t = Object.entries(e), n = V(t[0][1], mD((e)=>({
+        let t = Object.entries(e), n = B(t[0][1], mD((e)=>({
                 [t[0][0]]: e
             })));
         if (t.length === 1) return n;
         let r = t.slice(1);
-        for (let [e, t] of r)n = V(n, bD(t, (t, n)=>({
+        for (let [e, t] of r)n = B(n, bD(t, (t, n)=>({
                 ...t,
                 [e]: n
             })));
         return n;
     }, vD = (e)=>{
         let t = Object.create(pD);
-        return t._tag = eS, t.value = e, t.parse = ()=>Of(e), t;
+        return t._tag = eS, t.value = e, t.parse = ()=>kf(e), t;
     }, Mpe = (e)=>{
         let t = Object.create(pD);
         return t._tag = nS, t.config = e, t;
-    }, Npe = (e)=>Du(e, fD), yD = (e)=>{
+    }, Npe = (e)=>Ou(e, fD), yD = (e)=>{
         if (e.length === 0) return vD([]);
         if (e.length === 1) return mD(e[0], (e)=>[
                 e
@@ -26228,7 +25918,7 @@ perfecta armonía.`,
             ]);
         for(let n = 1; n < e.length; n++){
             let r = e[n];
-            t = V(t, bD(r, (e, t)=>[
+            t = B(t, bD(r, (e, t)=>[
                     ...e,
                     t
                 ]));
@@ -26237,7 +25927,7 @@ perfecta armonía.`,
     }, Ppe = (e)=>Npe(e) ? e : _D(Object.fromEntries(Object.entries(e).map(([e, t])=>[
                 e,
                 Ppe(t)
-            ]))), bD = B(3, (e, t, n)=>{
+            ]))), bD = z(3, (e, t, n)=>{
         let r = Object.create(pD);
         return r._tag = oS, r.left = e, r.right = t, r.zip = n, r;
     }), Fpe = jpe, Ipe = hD, Lpe = gD, xD = Ope, Rpe = Ape, zpe = rse, Bpe = lse, SD = OE, Vpe = Ffe, Hpe = Ife, Upe = Lfe, Wpe = AE, CD = Rfe, Gpe = jE, Kpe = ME, qpe = NE, Jpe = Wfe, wD = IE, TD = LE, Ype = RE, Xpe = Yfe, Zpe = zE, Qpe = UE;
@@ -26322,21 +26012,21 @@ perfecta armonía.`,
                 message: this.toString()
             };
         }
-        [_d]() {
+        [vd]() {
             return this.toJSON();
         }
     }, nme = (e)=>new tme({
             issue: e
-        }), FD = Of, ID = kf, LD = jf, RD = Af, zD = Mf, BD = B(2, (e, t)=>zD(e) ? Rf(e, {
-            onLeft: kf,
+        }), FD = kf, ID = Af, LD = Mf, RD = jf, zD = Nf, BD = z(2, (e, t)=>zD(e) ? zf(e, {
+            onLeft: Af,
             onRight: t
-        }) : aD(e, t)), VD = B(2, (e, t)=>zD(e) ? Lf(e, t) : nD(e, t)), HD = B(2, (e, t)=>zD(e) ? If(e, t) : rD(e, t)), rme = B(2, (e, t)=>zD(e) ? Ff(e, {
+        }) : aD(e, t)), VD = z(2, (e, t)=>zD(e) ? Rf(e, t) : nD(e, t)), HD = z(2, (e, t)=>zD(e) ? Lf(e, t) : rD(e, t)), rme = z(2, (e, t)=>zD(e) ? If(e, {
             onLeft: t.onFailure,
             onRight: t.onSuccess
-        }) : mpe(e, t)), UD = B(2, (e, t)=>zD(e) ? Rf(e, {
+        }) : mpe(e, t)), UD = z(2, (e, t)=>zD(e) ? zf(e, {
             onLeft: t,
-            onRight: Of
-        }) : fpe(e, t)), WD = (e, t)=>t === void 0 || vu(t) ? e : e === void 0 ? t : {
+            onRight: kf
+        }) : fpe(e, t)), WD = (e, t)=>t === void 0 || yu(t) ? e : e === void 0 ? t : {
             ...e,
             ...t
         }, GD = (e, t, n)=>{
@@ -26344,7 +26034,7 @@ perfecta armonía.`,
         return (e, t)=>r(e, WD(n, t));
     }, ime = (e, t, n)=>{
         let r = GD(e, t, n);
-        return (e, t)=>Bf(r(e, t), nme);
+        return (e, t)=>Vf(r(e, t), nme);
     }, KD = (e, t, n)=>{
         let r = YD(e, t);
         return (e, t)=>r(e, {
@@ -26353,11 +26043,11 @@ perfecta armonía.`,
             });
     }, ame = (e, t)=>GD(e.ast, !0, t), ome = (e, t)=>KD(e.ast, !0, t), qD = (e, t)=>KD(e.ast, !1, t), JD = (e, t)=>ime(_h(e.ast), !0, t), sme = (e, t)=>{
         let n = YD(_h(e.ast), !0);
-        return (e, r)=>Pf(n(e, {
+        return (e, r)=>Ff(n(e, {
                 exact: !0,
                 ...WD(t, r)
             }));
-    }, cme = hu(Symbol.for(`effect/ParseResult/decodeMemoMap`), ()=>new WeakMap), lme = hu(Symbol.for(`effect/ParseResult/encodeMemoMap`), ()=>new WeakMap), YD = (e, t)=>{
+    }, cme = gu(Symbol.for(`effect/ParseResult/decodeMemoMap`), ()=>new WeakMap), lme = gu(Symbol.for(`effect/ParseResult/encodeMemoMap`), ()=>new WeakMap), YD = (e, t)=>{
         let n = t ? cme : lme, r = n.get(e);
         if (r) return r;
         let i = ume(e, t), a = Qee(e), o = Xf(a) ? (e, t)=>i(e, WD(t, a.value)) : i, s = $ee(e), c = t && Xf(s) ? (t, n)=>tO(UD(o(t, n), s.value), e, t, n) : o;
@@ -26373,15 +26063,15 @@ perfecta armonía.`,
                         return tO(BD(UD(t(n, r), (t)=>{
                             let a = new AD(e, n, `From`, t);
                             return i && Om(e) && lO(t) ? Zf(e.filter(n, r, e), {
-                                onNone: ()=>kf(a),
-                                onSome: (t)=>kf(new kD(e, n, [
+                                onNone: ()=>Af(a),
+                                onSome: (t)=>Af(new kD(e, n, [
                                         a,
                                         new AD(e, n, `Predicate`, t)
                                     ]))
-                            }) : kf(a);
+                            }) : Af(a);
                         }), (t)=>Zf(e.filter(t, r, e), {
-                                onNone: ()=>Of(t),
-                                onSome: (t)=>kf(new AD(e, n, `Predicate`, t))
+                                onNone: ()=>kf(t),
+                                onSome: (t)=>Af(new AD(e, n, `Predicate`, t))
                             })), e, n, r);
                     };
                 } else {
@@ -26403,31 +26093,31 @@ perfecta armonía.`,
             case `UniqueSymbol`:
                 return QD(e, (t)=>t === e.symbol);
             case `UndefinedKeyword`:
-                return QD(e, Cu);
-            case `NeverKeyword`:
                 return QD(e, wu);
+            case `NeverKeyword`:
+                return QD(e, Tu);
             case `UnknownKeyword`:
             case `AnyKeyword`:
             case `VoidKeyword`:
-                return Of;
+                return kf;
             case `StringKeyword`:
-                return QD(e, _u);
-            case `NumberKeyword`:
                 return QD(e, vu);
-            case `BooleanKeyword`:
+            case `NumberKeyword`:
                 return QD(e, yu);
-            case `BigIntKeyword`:
+            case `BooleanKeyword`:
                 return QD(e, bu);
-            case `SymbolKeyword`:
+            case `BigIntKeyword`:
                 return QD(e, xu);
+            case `SymbolKeyword`:
+                return QD(e, Su);
             case `ObjectKeyword`:
-                return QD(e, Eu);
+                return QD(e, Du);
             case `Enums`:
                 return QD(e, (t)=>e.enums.some(([e, n])=>n === t));
             case `TemplateLiteral`:
                 {
                     let t = xte(e);
-                    return QD(e, (e)=>_u(e) && t.test(e));
+                    return QD(e, (e)=>vu(e) && t.test(e));
                 }
             case `TupleType`:
                 {
@@ -26435,7 +26125,7 @@ perfecta armonía.`,
                     e.rest.length > 0 && (i = i.concat(e.rest.slice(1)));
                     let a = i.length, o = e.elements.length > 0 ? e.elements.map((e, t)=>t).join(` | `) : `never`, s = XD(e), c = ZD(e);
                     return (t, l)=>{
-                        if (!aee(t)) return kf(new MD(e, t));
+                        if (!aee(t)) return Af(new MD(e, t));
                         let u = l?.errors === `all`, d = [], f = 0, p = [], m = t.length;
                         for(let n = m; n <= a - 1; n++){
                             let r = new ED(n, t, new OD(i[n - m]));
@@ -26445,7 +26135,7 @@ perfecta armonía.`,
                                     r
                                 ]);
                                 continue;
-                            } else return kf(new kD(e, t, r, p));
+                            } else return Af(new kD(e, t, r, p));
                         }
                         if (e.rest.length === 0) for(let n = e.elements.length; n <= m - 1; n++){
                             let r = new ED(n, t, new DD(t[n], `is unexpected, expected: ${o}`));
@@ -26455,7 +26145,7 @@ perfecta armonía.`,
                                     r
                                 ]);
                                 continue;
-                            } else return kf(new kD(e, t, r, p));
+                            } else return Af(new kD(e, t, r, p));
                         }
                         let h = 0, g;
                         for(; h < n.length; h++)if (m < h + 1) {
@@ -26463,7 +26153,7 @@ perfecta armonía.`,
                         } else {
                             let r = n[h], i = r(t[h], l);
                             if (zD(i)) {
-                                if (Nf(i)) {
+                                if (Pf(i)) {
                                     let n = new ED(h, t, i.left);
                                     if (u) {
                                         d.push([
@@ -26471,7 +26161,7 @@ perfecta armonía.`,
                                             n
                                         ]);
                                         continue;
-                                    } else return kf(new kD(e, t, n, nO(p)));
+                                    } else return Af(new kD(e, t, n, nO(p)));
                                 }
                                 p.push([
                                     f++,
@@ -26480,12 +26170,12 @@ perfecta armonía.`,
                             } else {
                                 let n = f++, r = h;
                                 g ||= [], g.push(({ es: a, output: o })=>aD(iD(i), (i)=>{
-                                        if (Nf(i)) {
+                                        if (Pf(i)) {
                                             let s = new ED(r, t, i.left);
                                             return u ? (a.push([
                                                 n,
                                                 s
-                                            ]), eD) : kf(new kD(e, t, s, nO(o)));
+                                            ]), eD) : Af(new kD(e, t, s, nO(o)));
                                         }
                                         return o.push([
                                             n,
@@ -26498,7 +26188,7 @@ perfecta armonía.`,
                             let [n, ...i] = r;
                             for(; h < m - i.length; h++){
                                 let r = n(t[h], l);
-                                if (zD(r)) if (Nf(r)) {
+                                if (zD(r)) if (Pf(r)) {
                                     let n = new ED(h, t, r.left);
                                     if (u) {
                                         d.push([
@@ -26506,7 +26196,7 @@ perfecta armonía.`,
                                             n
                                         ]);
                                         continue;
-                                    } else return kf(new kD(e, t, n, nO(p)));
+                                    } else return Af(new kD(e, t, n, nO(p)));
                                 } else p.push([
                                     f++,
                                     r.right
@@ -26514,12 +26204,12 @@ perfecta armonía.`,
                                 else {
                                     let n = f++, i = h;
                                     g ||= [], g.push(({ es: a, output: o })=>aD(iD(r), (r)=>{
-                                            if (Nf(r)) {
+                                            if (Pf(r)) {
                                                 let s = new ED(i, t, r.left);
                                                 return u ? (a.push([
                                                     n,
                                                     s
-                                                ]), eD) : kf(new kD(e, t, s, nO(o)));
+                                                ]), eD) : Af(new kD(e, t, s, nO(o)));
                                             } else return o.push([
                                                 n,
                                                 r.right
@@ -26532,7 +26222,7 @@ perfecta armonía.`,
                                 if (!(m < r + 1)) {
                                     let a = i[n](t[r], l);
                                     if (zD(a)) {
-                                        if (Nf(a)) {
+                                        if (Pf(a)) {
                                             let n = new ED(r, t, a.left);
                                             if (u) {
                                                 d.push([
@@ -26540,7 +26230,7 @@ perfecta armonía.`,
                                                     n
                                                 ]);
                                                 continue;
-                                            } else return kf(new kD(e, t, n, nO(p)));
+                                            } else return Af(new kD(e, t, n, nO(p)));
                                         }
                                         p.push([
                                             f++,
@@ -26549,12 +26239,12 @@ perfecta armonía.`,
                                     } else {
                                         let n = f++;
                                         g ||= [], g.push(({ es: i, output: o })=>aD(iD(a), (a)=>{
-                                                if (Nf(a)) {
+                                                if (Pf(a)) {
                                                     let s = new ED(r, t, a.left);
                                                     return u ? (i.push([
                                                         n,
                                                         s
-                                                    ]), eD) : kf(new kD(e, t, s, nO(o)));
+                                                    ]), eD) : Af(new kD(e, t, s, nO(o)));
                                                 }
                                                 return o.push([
                                                     n,
@@ -26565,7 +26255,7 @@ perfecta armonía.`,
                                 }
                             }
                         }
-                        let _ = ({ es: n, output: r })=>wp(n) ? kf(new kD(e, t, nO(n), nO(r))) : Of(nO(r));
+                        let _ = ({ es: n, output: r })=>wp(n) ? Af(new kD(e, t, nO(n), nO(r))) : kf(nO(r));
                         if (g && g.length > 0) {
                             let e = g;
                             return $E(()=>{
@@ -26588,7 +26278,7 @@ perfecta armonía.`,
                 }
             case `TypeLiteral`:
                 {
-                    if (e.propertySignatures.length === 0 && e.indexSignatures.length === 0) return QD(e, Au);
+                    if (e.propertySignatures.length === 0 && e.indexSignatures.length === 0) return QD(e, ju);
                     let n = [], r = {}, i = [];
                     for (let a of e.propertySignatures)n.push([
                         YD(a.type, t),
@@ -26598,15 +26288,15 @@ perfecta armonía.`,
                             YD(e.parameter, t),
                             YD(e.type, t),
                             e.parameter
-                        ]), o = eh.make(e.indexSignatures.map((e)=>e.parameter).concat(i.map((e)=>xu(e) ? new rte(e) : new Mm(e)))), s = YD(o, t), c = XD(e), l = ZD(e);
+                        ]), o = eh.make(e.indexSignatures.map((e)=>e.parameter).concat(i.map((e)=>Su(e) ? new rte(e) : new Mm(e)))), s = YD(o, t), c = XD(e), l = ZD(e);
                     return (t, u)=>{
-                        if (!Pu(t)) return kf(new MD(e, t));
+                        if (!Fu(t)) return Af(new MD(e, t));
                         let d = u?.errors === `all`, f = [], p = 0, m = u?.onExcessProperty === `error`, h = u?.onExcessProperty === `preserve`, g = {}, _;
                         if (m || h) {
                             _ = Reflect.ownKeys(t);
                             for (let n of _){
                                 let r = s(n, u);
-                                if (zD(r) && Nf(r)) if (m) {
+                                if (zD(r) && Pf(r)) if (m) {
                                     let r = new ED(n, t, new DD(t[n], `is unexpected, expected: ${String(o)}`));
                                     if (d) {
                                         f.push([
@@ -26614,7 +26304,7 @@ perfecta armonía.`,
                                             r
                                         ]);
                                         continue;
-                                    } else return kf(new kD(e, t, r, g));
+                                    } else return Af(new kD(e, t, r, g));
                                 } else g[n] = t[n];
                             }
                         }
@@ -26631,12 +26321,12 @@ perfecta armonía.`,
                                             n
                                         ]);
                                         continue;
-                                    } else return kf(new kD(e, t, n, g));
+                                    } else return Af(new kD(e, t, n, g));
                                 }
                             }
                             let s = n[r][0], c = s(t[a], u);
                             if (zD(c)) {
-                                if (Nf(c)) {
+                                if (Pf(c)) {
                                     let n = new ED(a, t, o ? c.left : new OD(i));
                                     if (d) {
                                         f.push([
@@ -26644,18 +26334,18 @@ perfecta armonía.`,
                                             n
                                         ]);
                                         continue;
-                                    } else return kf(new kD(e, t, n, g));
+                                    } else return Af(new kD(e, t, n, g));
                                 }
                                 g[a] = c.right;
                             } else {
                                 let n = p++, r = a;
                                 v ||= [], v.push(({ es: a, output: s })=>aD(iD(c), (c)=>{
-                                        if (Nf(c)) {
+                                        if (Pf(c)) {
                                             let l = new ED(r, t, o ? c.left : new OD(i));
                                             return d ? (a.push([
                                                 n,
                                                 l
-                                            ]), eD) : kf(new kD(e, t, l, s));
+                                            ]), eD) : Af(new kD(e, t, l, s));
                                         }
                                         return s[r] = c.right, eD;
                                     }));
@@ -26665,9 +26355,9 @@ perfecta armonía.`,
                             let i = a[n], o = i[0], s = i[1], c = Kp(t, i[2]);
                             for (let n of c){
                                 let i = o(n, u);
-                                if (zD(i) && Pf(i)) {
+                                if (zD(i) && Ff(i)) {
                                     let i = s(t[n], u);
-                                    if (zD(i)) if (Nf(i)) {
+                                    if (zD(i)) if (Pf(i)) {
                                         let r = new ED(n, t, i.left);
                                         if (d) {
                                             f.push([
@@ -26675,17 +26365,17 @@ perfecta armonía.`,
                                                 r
                                             ]);
                                             continue;
-                                        } else return kf(new kD(e, t, r, g));
+                                        } else return Af(new kD(e, t, r, g));
                                     } else Object.prototype.hasOwnProperty.call(r, n) || (g[n] = i.right);
                                     else {
                                         let a = p++, o = n;
                                         v ||= [], v.push(({ es: s, output: c })=>aD(iD(i), (i)=>{
-                                                if (Nf(i)) {
+                                                if (Pf(i)) {
                                                     let n = new ED(o, t, i.left);
                                                     return d ? (s.push([
                                                         a,
                                                         n
-                                                    ]), eD) : kf(new kD(e, t, n, c));
+                                                    ]), eD) : Af(new kD(e, t, n, c));
                                                 } else return Object.prototype.hasOwnProperty.call(r, n) || (c[n] = i.right), eD;
                                             }));
                                     }
@@ -26693,15 +26383,15 @@ perfecta armonía.`,
                             }
                         }
                         let b = ({ es: n, output: r })=>{
-                            if (wp(n)) return kf(new kD(e, t, nO(n), r));
+                            if (wp(n)) return Af(new kD(e, t, nO(n), r));
                             if (u?.propertyOrder === `original`) {
                                 let e = _ || Reflect.ownKeys(t);
                                 for (let t of i)e.indexOf(t) === -1 && e.push(t);
                                 let n = {};
                                 for (let t of e)Object.prototype.hasOwnProperty.call(r, t) && (n[t] = r[t]);
-                                return Of(n);
+                                return kf(n);
                             }
-                            return Of(r);
+                            return kf(r);
                         };
                         if (v && v.length > 0) {
                             let e = v;
@@ -26730,7 +26420,7 @@ perfecta armonía.`,
                     let s = XD(e) ?? 1, c = ZD(e);
                     return (t, l)=>{
                         let u = [], d = 0, f = [];
-                        if (i > 0) if (Tu(t)) for(let e = 0; e < i; e++){
+                        if (i > 0) if (Eu(t)) for(let e = 0; e < i; e++){
                             let i = r[e], o = n.keys[i].buckets;
                             if (Object.prototype.hasOwnProperty.call(t, i)) {
                                 let e = String(t[i]);
@@ -26766,20 +26456,20 @@ perfecta armonía.`,
                         for(let e = 0; e < f.length; e++){
                             let n = f[e], r = o.get(n)(t, l);
                             if (zD(r) && (!p || p.length === 0)) {
-                                if (Pf(r)) return r;
+                                if (Ff(r)) return r;
                                 u.push([
                                     d++,
                                     r.left
                                 ]);
                             } else {
                                 let e = d++;
-                                p ||= [], p.push((t)=>$E(()=>`finalResult` in t ? eD : aD(iD(r), (n)=>(Pf(n) ? t.finalResult = n : t.es.push([
+                                p ||= [], p.push((t)=>$E(()=>`finalResult` in t ? eD : aD(iD(r), (n)=>(Ff(n) ? t.finalResult = n : t.es.push([
                                                 e,
                                                 n.left
                                             ]), eD))));
                             }
                         }
-                        let m = (n)=>wp(n) ? n.length === 1 && n[0][1]._tag === `Type` ? kf(n[0][1]) : kf(new kD(e, t, nO(n))) : kf(new MD(e, t));
+                        let m = (n)=>wp(n) ? n.length === 1 && n[0][1]._tag === `Type` ? Af(n[0][1]) : Af(new kD(e, t, nO(n))) : Af(new MD(e, t));
                         if (p && p.length > 0) {
                             let e = p;
                             return $E(()=>{
@@ -26802,7 +26492,7 @@ perfecta armonía.`,
                     return (e, t)=>n()(e, t);
                 }
         }
-    }, QD = (e, t)=>(n)=>t(n) ? Of(n) : kf(new MD(e, n)), $D = (e, t)=>{
+    }, QD = (e, t)=>(n)=>t(n) ? kf(n) : Af(new MD(e, n)), $D = (e, t)=>{
         switch(e._tag){
             case `Declaration`:
                 {
@@ -26881,11 +26571,11 @@ perfecta armonía.`,
         i.flush();
         let o = a.unsafePoll();
         if (o) {
-            if (Toe(o)) return Of(o.value);
+            if (Toe(o)) return kf(o.value);
             let e = o.cause;
-            return jT(e) ? kf(e.error) : kf(new ND(t, n, NT(e)));
+            return jT(e) ? Af(e.error) : Af(new ND(t, n, NT(e)));
         }
-        return kf(new ND(t, n, `cannot be be resolved synchronously, this is caused by using runSync on an effect that performs async work`));
+        return Af(new ND(t, n, `cannot be be resolved synchronously, this is caused by using runSync on an effect that performs async work`));
     }, fme = ([e], [t])=>e > t ? 1 : e < t ? -1 : 0;
     function nO(e) {
         return e.sort(fme).map((e)=>e[1]);
@@ -26895,10 +26585,10 @@ perfecta armonía.`,
             case `FinalTransformation`:
                 return t ? e.decode : e.encode;
             case `ComposeTransformation`:
-                return Of;
+                return kf;
             case `TypeLiteralTransformation`:
                 return (n)=>{
-                    let r = Of(n);
+                    let r = kf(n);
                     for (let n of e.propertySignatureTransformations){
                         let [e, i] = t ? [
                             n.from,
@@ -26908,7 +26598,7 @@ perfecta armonía.`,
                             n.from
                         ], a = t ? n.decode : n.encode;
                         r = VD(r, (t)=>{
-                            let n = a(Object.prototype.hasOwnProperty.call(t, e) ? qf(t[e]) : H());
+                            let n = a(Object.prototype.hasOwnProperty.call(t, e) ? H(t[e]) : V());
                             return delete t[e], Xf(n) && (t[i] = n.value), t;
                         });
                     }
@@ -26922,7 +26612,7 @@ perfecta armonía.`,
         formatIssue: (e)=>VD(hO(e), mme),
         formatIssueSync: (e)=>{
             let t = iO.formatIssue(e);
-            return zD(t) ? Vf(t) : oD(t);
+            return zD(t) ? Hf(t) : oD(t);
         },
         formatError: (e)=>iO.formatIssue(e.issue),
         formatErrorSync: (e)=>iO.formatIssueSync(e.issue)
@@ -26951,17 +26641,17 @@ perfecta armonía.`,
             case `Predicate`:
                 return `Predicate refinement failure`;
         }
-    }, oO = (e)=>`ast` in e ? qf(e.ast) : H(), sO = Of(void 0), _me = (e)=>oO(e).pipe(cp(qee), Zf({
+    }, oO = (e)=>`ast` in e ? H(e.ast) : V(), sO = kf(void 0), _me = (e)=>oO(e).pipe(cp(qee), Zf({
             onNone: ()=>sO,
             onSome: (t)=>{
                 let n = t(e);
-                return _u(n) ? Of({
+                return vu(n) ? kf({
                     message: n,
                     override: !1
                 }) : lpe(n) ? nD(n, (e)=>({
                         message: e,
                         override: !1
-                    })) : _u(n.message) ? Of({
+                    })) : vu(n.message) ? kf({
                     message: n.message,
                     override: n.override
                 }) : nD(n.message, (e)=>({
@@ -26969,30 +26659,30 @@ perfecta armonía.`,
                         override: n.override
                     }));
             }
-        })), cO = (e)=>(t)=>t._tag === e, lO = cO(`Composite`), uO = cO(`Refinement`), dO = cO(`Transformation`), fO = (e)=>BD(_me(e), (t)=>t === void 0 ? sO : !t.override && (lO(e) || uO(e) && e.kind === `From` || dO(e) && e.kind !== `Transformation`) ? dO(e) || uO(e) ? fO(e.issue) : sO : Of(t.message)), pO = (e)=>oO(e).pipe(cp(Zee), lp((t)=>t(e)), rp);
+        })), cO = (e)=>(t)=>t._tag === e, lO = cO(`Composite`), uO = cO(`Refinement`), dO = cO(`Transformation`), fO = (e)=>BD(_me(e), (t)=>t === void 0 ? sO : !t.override && (lO(e) || uO(e) && e.kind === `From` || dO(e) && e.kind !== `Transformation`) ? dO(e) || uO(e) ? fO(e.issue) : sO : kf(t.message)), pO = (e)=>oO(e).pipe(cp(Zee), lp((t)=>t(e)), rp);
     function vme(e) {
         return Em(e).pipe(ep(()=>Cm(e)), ep(()=>wm(e)), ep(()=>Tm(e)), $f(()=>`{ ${e.from} | filter }`));
     }
     function yme(e) {
-        return e.message === void 0 ? `Expected ${oh(e.ast) ? vme(e.ast) : String(e.ast)}, actual ${Cd(e.actual)}` : e.message;
+        return e.message === void 0 ? `Expected ${oh(e.ast) ? vme(e.ast) : String(e.ast)}, actual ${wd(e.actual)}` : e.message;
     }
     var bme = (e)=>VD(fO(e), (t)=>t ?? pO(e) ?? yme(e)), mO = (e)=>pO(e) ?? String(e.ast), xme = (e)=>e.message ?? `is forbidden`, Sme = (e)=>e.message ?? `is unexpected`, Cme = (e)=>{
         let t = Jee(e.ast);
         if (Xf(t)) {
             let e = t.value();
-            return _u(e) ? Of(e) : e;
+            return vu(e) ? kf(e) : e;
         }
-        return Of(e.message ?? `is missing`);
+        return kf(e.message ?? `is missing`);
     }, hO = (e)=>{
         switch(e._tag){
             case `Type`:
                 return VD(bme(e), rO);
             case `Forbidden`:
-                return Of(rO(mO(e), [
+                return kf(rO(mO(e), [
                     rO(xme(e))
                 ]));
             case `Unexpected`:
-                return Of(rO(Sme(e)));
+                return kf(rO(Sme(e)));
             case `Missing`:
                 return VD(Cme(e), rO);
             case `Transformation`:
@@ -27000,20 +26690,20 @@ perfecta armonía.`,
                             rO(hme(e.kind), [
                                 t
                             ])
-                        ])) : Of(rO(t)));
+                        ])) : kf(rO(t)));
             case `Refinement`:
                 return BD(fO(e), (t)=>t === void 0 ? VD(hO(e.issue), (t)=>rO(mO(e), [
                             rO(gme(e.kind), [
                                 t
                             ])
-                        ])) : Of(rO(t)));
+                        ])) : kf(rO(t)));
             case `Pointer`:
                 return VD(hO(e.issue), (t)=>rO(Xp(e.path), [
                         t
                     ]));
             case `Composite`:
                 return BD(fO(e), (t)=>{
-                    if (t !== void 0) return Of(rO(t));
+                    if (t !== void 0) return kf(rO(t));
                     let n = mO(e);
                     return Jp(e.issues) ? VD(ZE(e.issues, hO), (e)=>rO(n, e)) : VD(hO(e.issues), (e)=>rO(n, [
                             e
@@ -27028,7 +26718,7 @@ perfecta armonía.`,
         ...rce,
         [UT]: UT,
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         },
         commit () {
             return this.runtimeEffect;
@@ -27078,11 +26768,11 @@ perfecta armonía.`,
             }
         });
         return a;
-    }, Eme = B((e)=>Eu(e[0]), (e, ...t)=>{
+    }, Eme = z((e)=>Du(e[0]), (e, ...t)=>{
         let n = {};
         for (let r of t)r in e && (n[r] = e[r]);
         return n;
-    }), Dme = B((e)=>Eu(e[0]), (e, ...t)=>{
+    }), Dme = z((e)=>Du(e[0]), (e, ...t)=>{
         let n = {
             ...e
         };
@@ -27097,7 +26787,7 @@ perfecta armonía.`,
                 return vO(SO(this.ast, e));
             }
             static pipe() {
-                return ru(this, arguments);
+                return iu(this, arguments);
             }
             static toString() {
                 return String(e);
@@ -27142,7 +26832,7 @@ perfecta armonía.`,
             t[r] = e[n], delete t[n];
         }
         return t;
-    }, SO = (e, t)=>fh(e, xO(t)), Ome = (e)=>String(e.ast), kme = (e)=>vO(xh(e.ast)), CO = (e)=>vO(_h(e.ast)), wO = (e)=>Du(e, _O) && Eu(e[_O]);
+    }, SO = (e, t)=>fh(e, xO(t)), Ome = (e)=>String(e.ast), kme = (e)=>vO(xh(e.ast)), CO = (e)=>vO(_h(e.ast)), wO = (e)=>Ou(e, _O) && Du(e[_O]);
     function Ame(e) {
         return th(e) ? eh.make(pte(e, (e)=>new Mm(e))) : new Mm(e[0]);
     }
@@ -27182,7 +26872,7 @@ perfecta armonía.`,
         return Mme(e, t);
     }, kO = Symbol.for(`effect/SchemaId/Brand`), AO = (e, t)=>(n)=>lk(n, new ah(n.ast, function(t, n, r) {
                 let i = e.either(t);
-                return Nf(i) ? qf(new MD(r, t, i.left.map((e)=>e.message).join(`, `))) : H();
+                return Pf(i) ? H(new MD(r, t, i.left.map((e)=>e.message).join(`, `))) : V();
             }, xO({
                 schemaId: kO,
                 [kO]: {
@@ -27281,7 +26971,7 @@ perfecta armonía.`,
         constructor(e, t, n, r, i){
             super(e, t, r), this.isReadonly = n, this.defaultValue = i;
         }
-    }, zme = (e)=>e === void 0 ? `never` : _u(e) ? JSON.stringify(e) : String(e), YO = class {
+    }, zme = (e)=>e === void 0 ? `never` : vu(e) ? JSON.stringify(e) : String(e), YO = class {
         from;
         to;
         decode;
@@ -27306,7 +26996,7 @@ perfecta armonía.`,
                     ...t
                 }, e.to.defaultValue), e.decode, e.encode);
         }
-    }, ZO = Symbol.for(`effect/PropertySignature`), QO = (e)=>Du(e, ZO), $O = class e {
+    }, ZO = Symbol.for(`effect/PropertySignature`), QO = (e)=>Ou(e, ZO), $O = class e {
         ast;
         [_O];
         [ZO] = null;
@@ -27318,7 +27008,7 @@ perfecta armonía.`,
             this.ast = e;
         }
         pipe() {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
         annotations(t) {
             return new e(XO(this.ast, xO(t)));
@@ -27334,7 +27024,7 @@ perfecta armonía.`,
         annotations(t) {
             return new e(XO(this.ast, xO(t)), this.from);
         }
-    }, nk = (e)=>new tk(new qO(e.ast, !1, !0, {}, void 0), e), rk = B(2, (e, t)=>{
+    }, nk = (e)=>new tk(new qO(e.ast, !1, !0, {}, void 0), e), rk = z(2, (e, t)=>{
         let n = e.ast;
         switch(n._tag){
             case `PropertySignatureDeclaration`:
@@ -27470,13 +27160,13 @@ perfecta armonía.`,
         ], mk = (e, t, n)=>Bp(e, (e)=>Bp(t, (t)=>{
                 switch(t._tag){
                     case `Literal`:
-                        if (_u(t.literal) && Rm(e) || vu(t.literal) && Bm(e) || yu(t.literal) && Hm(e)) return [
+                        if (vu(t.literal) && Rm(e) || yu(t.literal) && Bm(e) || bu(t.literal) && Hm(e)) return [
                             t
                         ];
                         break;
                     case `StringKeyword`:
                         if (t === Lm) {
-                            if (Rm(e) || Nm(e) && _u(e.literal)) return [
+                            if (Rm(e) || Nm(e) && vu(e.literal)) return [
                                 e
                             ];
                             if (oh(e)) return dk(e, mk(pk(e.from), [
@@ -27488,7 +27178,7 @@ perfecta armonía.`,
                         break;
                     case `NumberKeyword`:
                         if (t === zm) {
-                            if (Bm(e) || Nm(e) && vu(e.literal)) return [
+                            if (Bm(e) || Nm(e) && yu(e.literal)) return [
                                 e
                             ];
                             if (oh(e)) return dk(e, mk(pk(e.from), [
@@ -27500,7 +27190,7 @@ perfecta armonía.`,
                         break;
                     case `BooleanKeyword`:
                         if (t === Vm) {
-                            if (Hm(e) || Nm(e) && yu(e.literal)) return [
+                            if (Hm(e) || Nm(e) && bu(e.literal)) return [
                                 e
                             ];
                             if (oh(e)) return dk(e, mk(pk(e.from), [
@@ -27575,7 +27265,7 @@ perfecta armonía.`,
                         break;
                 }
                 throw Error(Qp(e, t, n));
-            })), hk = B(2, (e, t)=>vO(fk(e.ast, t.ast, []))), gk = (e)=>vO(new ih(()=>e().ast)), _k = Symbol.for(`effect/SchemaId/Refine`);
+            })), hk = z(2, (e, t)=>vO(fk(e.ast, t.ast, []))), gk = (e)=>vO(new ih(()=>e().ast)), _k = Symbol.for(`effect/SchemaId/Refine`);
     function vk(e, t, n) {
         return class extends vO(n) {
             static annotations(e) {
@@ -27588,21 +27278,21 @@ perfecta armonía.`,
         };
     }
     var yk = (e, t, n)=>{
-        if (yu(e)) return e ? H() : qf(new MD(t, n));
-        if (_u(e)) return qf(new MD(t, n, e));
+        if (bu(e)) return e ? V() : H(new MD(t, n));
+        if (vu(e)) return H(new MD(t, n, e));
         if (e !== void 0) {
-            if (`_tag` in e) return qf(e);
+            if (`_tag` in e) return H(e);
             let r = new MD(t, n, e.message);
-            return qf(Tp(e.path) ? new ED(e.path, n, r) : r);
+            return H(Tp(e.path) ? new ED(e.path, n, r) : r);
         }
-        return H();
+        return V();
     }, Wme = (e, t, n)=>{
         if (xee(e)) return yk(e, t, n);
         if (Tp(e)) {
             let r = yee(e, (e)=>yk(e, t, n));
-            if (Tp(r)) return qf(r.length === 1 ? r[0] : new kD(t, n, r));
+            if (Tp(r)) return H(r.length === 1 ? r[0] : new kD(t, n, r));
         }
-        return H();
+        return V();
     };
     function bk(e, t) {
         return (n)=>{
@@ -27621,7 +27311,7 @@ perfecta armonía.`,
             static to = t;
         };
     }
-    var Sk = B((e)=>wO(e[0]) && wO(e[1]), (e, t, n)=>xk(e, t, new ch(e.ast, t.ast, new lh(n.decode, n.encode)))), Ck = B((e)=>wO(e[0]) && wO(e[1]), (e, t, n)=>Sk(e, t, {
+    var Sk = z((e)=>wO(e[0]) && wO(e[1]), (e, t, n)=>xk(e, t, new ch(e.ast, t.ast, new lh(n.decode, n.encode)))), Ck = z((e)=>wO(e[0]) && wO(e[1]), (e, t, n)=>Sk(e, t, {
             strict: !0,
             decode: (e, t, r, i)=>FD(n.decode(e, i)),
             encode: (e, t, r, i)=>FD(n.encode(e, i))
@@ -27642,7 +27332,7 @@ perfecta armonía.`,
                 },
                 ...t
             })), wk = zee, Yme = (e, t)=>(n)=>{
-            let r = Eu(e) ? Math.max(0, Math.floor(e.min)) : Math.max(0, Math.floor(e)), i = Eu(e) ? Math.max(r, Math.floor(e.max)) : r;
+            let r = Du(e) ? Math.max(0, Math.floor(e.min)) : Math.max(0, Math.floor(e)), i = Du(e) ? Math.max(r, Math.floor(e.max)) : r;
             return r === i ? n.pipe(bk((e)=>e.length === r, {
                 schemaId: wk,
                 title: `length(${r})`,
@@ -27733,7 +27423,7 @@ perfecta armonía.`,
     }), Qme, {
         strict: !0,
         decode: (e)=>e.toLowerCase(),
-        encode: Zl
+        encode: Ql
     }).annotations({
         identifier: `Lowercase`
     }), Ck(IO.annotations({
@@ -27741,7 +27431,7 @@ perfecta armonía.`,
     }), the, {
         strict: !0,
         decode: (e)=>e.toUpperCase(),
-        encode: Zl
+        encode: Ql
     }).annotations({
         identifier: `Uppercase`
     }), Ck(IO.annotations({
@@ -27749,7 +27439,7 @@ perfecta armonía.`,
     }), ihe, {
         strict: !0,
         decode: (e)=>rpe(e),
-        encode: Zl
+        encode: Ql
     }).annotations({
         identifier: `Capitalize`
     }), Ck(IO.annotations({
@@ -27757,7 +27447,7 @@ perfecta armonía.`,
     }), she, {
         strict: !0,
         decode: (e)=>ipe(e),
-        encode: Zl
+        encode: Ql
     }).annotations({
         identifier: `Uncapitalize`
     });
@@ -27773,7 +27463,7 @@ perfecta armonía.`,
     }), Ok, {
         strict: !0,
         decode: (e)=>e.trim(),
-        encode: Zl
+        encode: Ql
     }).annotations({
         identifier: `Trim`
     });
@@ -28080,14 +27770,14 @@ perfecta armonía.`,
     }).annotations({
         identifier: `Duration`
     });
-    var Uhe = class extends OO(ju, {
+    var Uhe = class extends OO(Mu, {
         typeConstructor: {
             _tag: `Uint8Array`
         },
         identifier: `Uint8ArrayFromSelf`,
         pretty: ()=>(e)=>`new Uint8Array(${JSON.stringify(Array.from(e))})`,
         arbitrary: ()=>(e)=>e.uint8Array(),
-        equivalence: ()=>Up(pd)
+        equivalence: ()=>Up(md)
     }) {
     };
     Ck(GO(class extends LO.pipe(whe(0, 255, {
@@ -28111,7 +27801,7 @@ perfecta armonía.`,
                 title: `validDate`,
                 description: `a valid Date`,
                 ...e
-            })), Gk = Eee, Kk = class extends OO(Mu, {
+            })), Gk = Eee, Kk = class extends OO(Nu, {
         typeConstructor: {
             _tag: `Date`
         },
@@ -28125,7 +27815,7 @@ perfecta armonía.`,
         arbitrary: ()=>(e)=>e.date({
                     noInvalidDate: !1
                 }),
-        equivalence: ()=>uu
+        equivalence: ()=>du
     }) {
     };
     Kk.pipe(Wk({
@@ -28136,7 +27826,7 @@ perfecta armonía.`,
     }), Kk, {
         strict: !0,
         decode: (e)=>new Date(e),
-        encode: (e)=>bd(e)
+        encode: (e)=>xd(e)
     }).annotations({
         identifier: `DateFromString`
     }) {
@@ -28165,7 +27855,7 @@ perfecta armonía.`,
     }) {
     }, Jk = (e, t)=>LD({
             try: ()=>Kpe(e),
-            catch: ()=>new MD(t, e, `Unable to decode ${Cd(e)} into a DateTime.Utc`)
+            catch: ()=>new MD(t, e, `Unable to decode ${wd(e)} into a DateTime.Utc`)
         });
     Sk(LO.annotations({
         description: `a number to be decoded into a DateTime.Utc`
@@ -28278,7 +27968,7 @@ perfecta armonía.`,
     }).annotations({
         identifier: `DateTimeZoned`
     });
-    var qhe = (e)=>e._tag === `None` ? H() : qf(e.value), Jhe = (e, t)=>(n)=>n.oneof(t, n.record({
+    var qhe = (e)=>e._tag === `None` ? V() : H(e.value), Jhe = (e, t)=>(n)=>n.oneof(t, n.record({
                 _tag: n.constant(`None`)
             }), n.record({
                 _tag: n.constant(`Some`),
@@ -28286,7 +27976,7 @@ perfecta armonía.`,
             })).map(qhe), Yhe = (e)=>Zf({
             onNone: ()=>`none()`,
             onSome: (t)=>`some(${e(t)})`
-        }), $k = (e)=>(t, n, r)=>Jf(t) ? Yf(t) ? FD(H()) : Rhe(e(t.value, n), qf, r, t) : ID(new MD(r, t)), Xhe = (e)=>OO([
+        }), $k = (e)=>(t, n, r)=>Jf(t) ? Yf(t) ? FD(V()) : Rhe(e(t.value, n), H, r, t) : ID(new MD(r, t)), Xhe = (e)=>OO([
             e
         ], {
             decode: (e)=>$k(ome(e)),
@@ -28303,7 +27993,7 @@ perfecta armonía.`,
             description: `Option<${Ome(e)}>`
         }))(che), {
         strict: !0,
-        decode: (e)=>fp(qf(e.trim()), ape),
+        decode: (e)=>fp(H(e.trim()), ape),
         encode: (e)=>$f(e, ()=>``)
     });
     var Zhe = ()=>(e)=>`BigDecimal(${zh(Fh(e))})`, Qhe = ()=>(e)=>e.tuple(e.bigInt(), e.integer({
@@ -28359,7 +28049,7 @@ perfecta armonía.`,
             }
             return l || Object.defineProperty(u.prototype, `message`, {
                 get () {
-                    return `{ ${Reflect.ownKeys(a).map((e)=>`${Sd(e)}: ${Cd(this[e])}`).join(`, `)} }`;
+                    return `{ ${Reflect.ownKeys(a).map((e)=>`${Cd(e)}: ${wd(this[e])}`).join(`, `)} }`;
                 },
                 enumerable: !1,
                 configurable: !0
@@ -28375,9 +28065,9 @@ perfecta armonía.`,
         return n;
     };
     function sA(e) {
-        return yu(e) ? e : e?.disableValidation ?? !1;
+        return bu(e) ? e : e?.disableValidation ?? !1;
     }
-    var cA = hu(`effect/Schema/astCache`, ()=>new WeakMap), tge = (e)=>e === void 0 ? [] : Array.isArray(e) ? e : [
+    var cA = gu(`effect/Schema/astCache`, ()=>new WeakMap), tge = (e)=>e === void 0 ? [] : Array.isArray(e) ? e : [
             e
         ], lA = ({ Base: e, annotations: t, disableToString: n, fields: r, identifier: i, kind: a, schema: o })=>{
         let s = Symbol.for(`effect/Schema/${a}/${i}`), [c, l, u] = tge(t), d = CO(o), f = d.annotations({
@@ -28396,7 +28086,7 @@ perfecta armonía.`,
             ...u,
             ...c,
             ...l
-        }), _ = (e)=>Du(e, s) && sme(p)(e), v = class extends e {
+        }), _ = (e)=>Ou(e, s) && sme(p)(e), v = class extends e {
             constructor(e = {}, t = !1){
                 e = {
                     ...e
@@ -28414,20 +28104,20 @@ perfecta armonía.`,
                     identifier: i,
                     pretty: (e)=>(t)=>`${i}(${e(t)})`,
                     arbitrary: (e)=>(t)=>e(t).map((e)=>new this(e)),
-                    equivalence: Zl,
+                    equivalence: Ql,
                     [xm]: f.ast,
                     ...c
                 }), {
                     strict: !0,
                     decode: (e)=>new this(e, !0),
-                    encode: Zl
+                    encode: Ql
                 }).annotations({
                     [xm]: g.ast,
                     ...l
                 }).ast, cA.set(this, e), e);
             }
             static pipe() {
-                return ru(this, arguments);
+                return iu(this, arguments);
             }
             static annotations(e) {
                 return vO(this.ast).annotations(e);
@@ -28487,7 +28177,7 @@ perfecta armonía.`,
         };
         return n !== !0 && Object.defineProperty(v.prototype, `toString`, {
             value () {
-                return `${i}({ ${Reflect.ownKeys(r).map((e)=>`${Sd(e)}: ${Cd(this[e])}`).join(`, `)} })`;
+                return `${i}({ ${Reflect.ownKeys(r).map((e)=>`${Cd(e)}: ${wd(this[e])}`).join(`, `)} })`;
             },
             configurable: !0,
             writable: !0
@@ -28581,7 +28271,7 @@ perfecta armonía.`,
     var mA = class extends Ck(NO, NO, {
         strict: !0,
         decode: (e)=>{
-            if (Eu(e) && `message` in e && typeof e.message == `string`) {
+            if (Du(e) && `message` in e && typeof e.message == `string`) {
                 let t = Error(e.message, {
                     cause: e
                 });
@@ -28599,8 +28289,8 @@ perfecta armonía.`,
     };
     Ck(NO, RO, {
         strict: !0,
-        decode: (e)=>gu(e),
-        encode: Zl
+        decode: (e)=>_u(e),
+        encode: Ql
     }).annotations({
         identifier: `BooleanFromUnknown`
     }), Ck(EO(`true`, `false`).annotations({
@@ -28614,7 +28304,7 @@ perfecta armonía.`,
     });
     var hA = (e, t)=>{
         let n = ame(t);
-        return Rpe(e).pipe(Ipe((e)=>n(e).pipe(If((e)=>Spe([], iO.formatIssueSync(e))))));
+        return Rpe(e).pipe(Ipe((e)=>n(e).pipe(Lf((e)=>Spe([], iO.formatIssueSync(e))))));
     }, gA = ck(`symbol`, {
         key: IO
     }).annotations({
@@ -28654,20 +28344,20 @@ perfecta armonía.`,
             _R: (e)=>e
         },
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, lge = (e, t)=>{
         let n = Object.create(cge);
         return n.tag = e, n[_A] = {
             ctor: t
         }, n;
-    }, uge = B(2, (e, t)=>({
+    }, uge = z(2, (e, t)=>({
             ...e,
             [_A]: {
                 ...e[_A],
                 witnesses: t
             }
-        })), dge = B(2, (e, t)=>({
+        })), dge = z(2, (e, t)=>({
             ...e,
             [_A]: {
                 ...e[_A],
@@ -34576,13 +34266,13 @@ perfecta armonía.`,
         }
     }, gge);
     yge(Iye), hH();
-    var gH = Symbol.for(`platform-js/effect/IntegerRange`), oCe = fu({
-        value: fu({
-            _tag: su,
-            min: cu,
-            max: cu
+    var gH = Symbol.for(`platform-js/effect/IntegerRange`), oCe = pu({
+        value: pu({
+            _tag: cu,
+            min: lu,
+            max: lu
         })
-    }), _H = (e)=>Du(e, gH), sCe = (e)=>e.value._tag === `Inclusive`, cCe = B(2, (e, t)=>oCe(e, t)), vH = B(2, (e, t)=>{
+    }), _H = (e)=>Ou(e, gH), sCe = (e)=>e.value._tag === `Inclusive`, cCe = z(2, (e, t)=>oCe(e, t)), vH = z(2, (e, t)=>{
         if (sCe(e)) return vH(yH([
             e.value.min,
             e.value.max + 1
@@ -34591,10 +34281,10 @@ perfecta armonía.`,
         return t >= n && t < r;
     }), yH = (e)=>fCe(e), lCe = /(?<n>\d*)\.\.(?<inc>\=?)(?<x>\d*)/, uCe = `Exclusive`, dCe = {
         [gH]: gH,
-        [ed] () {
-            return dd(this, ld(this.value));
+        [td] () {
+            return fd(this, ud(this.value));
         },
-        [fd] (e) {
+        [pd] (e) {
             return _H(e) && cCe(this, e);
         },
         toString () {
@@ -34607,27 +34297,27 @@ perfecta armonía.`,
                 ...this.value
             };
         },
-        [_d] () {
+        [vd] () {
             return this.toJSON();
         },
         pipe () {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
     }, fCe = (e, t)=>{
         let n = Object.create(dCe);
         if (_H(e)) n.value = e.value;
-        else if (Array.isArray(e) && e.length === 2 && e.every(vu)) {
+        else if (Array.isArray(e) && e.length === 2 && e.every(yu)) {
             let [r, i] = e;
             n.value = {
                 _tag: t ?? uCe,
                 min: r,
                 max: i
             };
-        } else if (_u(e)) {
+        } else if (vu(e)) {
             let t = e.match(lCe);
             if (!t || !t.groups) throw Error(`Invalid IntegerRange: ${e}`);
             let { n: r, inc: i, x: a } = t.groups, o = Number(r), s = Number(a);
-            if (!vu(o) || !vu(s)) throw TypeError(`Invalid IntegerRange: ${e}`);
+            if (!yu(o) || !yu(s)) throw TypeError(`Invalid IntegerRange: ${e}`);
             n.value = {
                 _tag: i === `=` ? `Inclusive` : `Exclusive`,
                 min: o,
@@ -34642,23 +34332,23 @@ perfecta armonía.`,
             meta: n,
             cause: r
         }), hCe = /^(?<prefix>(0x)?)(?<byteChars>([0-9A-Fa-f]{2})*)(?<incompleteChars>.*)$/, gCe = (e)=>{
-        if (!e) return kf(bH(`Source string must have non-zero length`, e));
+        if (!e) return Af(bH(`Source string must have non-zero length`, e));
         let t = e.match(hCe);
-        if (!t || !t.groups) return kf(bH(`Source string '${e}' is not a valid hex-string`, e));
+        if (!t || !t.groups) return Af(bH(`Source string '${e}' is not a valid hex-string`, e));
         let { prefix: n, byteChars: r, incompleteChars: i } = t.groups, a = {
             hasPrefix: !!n,
             byteChars: r || ``,
             incompleteChars: i || ``,
             toString: ()=>`${n}${r}..[${i ?? `<none>`}]`,
             toJSON: ()=>t.groups,
-            [_d]: ()=>t.groups
+            [vd]: ()=>t.groups
         };
         if (a.incompleteChars) {
-            if (a.incompleteChars.length % 2 > 0) return kf(bH(`Last byte of source string '${e}' is incomplete`, e, a));
+            if (a.incompleteChars.length % 2 > 0) return Af(bH(`Last byte of source string '${e}' is incomplete`, e, a));
             let t = a.byteChars.length + (a.hasPrefix ? 2 : 0);
-            return kf(bH(`Invalid hex-digit '${e[t]}' found in source string at index ${t}`, e, a));
+            return Af(bH(`Invalid hex-digit '${e[t]}' found in source string at index ${t}`, e, a));
         }
-        return a.byteChars ? Of(a) : kf(bH(`Source string '${e}' is not a valid hex-string`, e, a));
+        return a.byteChars ? kf(a) : Af(bH(`Source string '${e}' is not a valid hex-string`, e, a));
     }, _Ce = {
         requirePrefix: !1
     }, xH = (e)=>{
@@ -34666,16 +34356,16 @@ perfecta armonía.`,
             ..._Ce,
             ...e
         };
-        return Uh((e)=>Rf(gCe(e), {
-                onLeft: (e)=>qf(Hh(e.message, e.meta)),
+        return Uh((e)=>zf(gCe(e), {
+                onLeft: (e)=>H(Hh(e.message, e.meta)),
                 onRight: (n)=>{
-                    if (t.requirePrefix && !n.hasPrefix) return qf(Hh(`Source string '${e}' requires a '0x' prefix`));
-                    if (!t.requirePrefix && n.hasPrefix) return qf(Hh(`Source string '${e}' has a '0x' prefix but prefixes are not allowed`));
+                    if (t.requirePrefix && !n.hasPrefix) return H(Hh(`Source string '${e}' requires a '0x' prefix`));
+                    if (!t.requirePrefix && n.hasPrefix) return H(Hh(`Source string '${e}' has a '0x' prefix but prefixes are not allowed`));
                     if (t.byteLength) {
                         let r = _H(t.byteLength) ? t.byteLength : yH(t.byteLength), i = n.byteChars.length / 2;
-                        if (!vH(r, i)) return qf(Hh(`Source string '${e}' has a byte length of ${i}, but expected ${r.toString()}`));
+                        if (!vH(r, i)) return H(Hh(`Source string '${e}' has a byte length of ${i}, but expected ${r.toString()}`));
                     }
-                    return H();
+                    return V();
                 }
             }));
     };
@@ -34687,9 +34377,9 @@ perfecta armonía.`,
     }), SH = (e)=>xH({
             requirePrefix: !1,
             ...e
-        }), CH = Gh(Wh(), vCe), wH = Wh(), TH = (e)=>CH.is(e) ? e : (wH.is(e), CH(e)), yCe = /^[a-zA-Z0-9-]+$/, EH = Uh((e)=>e.match(yCe) ? H() : qf(Hh(`Source string '${e}' is not a valid network identifier`))), bCe = EH(`main`), DH = Symbol.for(`platform-js/effect/NetworkId`), OH = Symbol.for(`platform-js/effect/NetworkId#NetworkMoniker`), xCe = lu((e, t)=>pd(e, t), (e)=>e[OH]), kH = (e)=>Du(e, DH), SCe = B(2, (e, t)=>xCe(e, t)), AH = (e)=>({
+        }), CH = Gh(Wh(), vCe), wH = Wh(), TH = (e)=>CH.is(e) ? e : (wH.is(e), CH(e)), yCe = /^[a-zA-Z0-9-]+$/, EH = Uh((e)=>e.match(yCe) ? V() : H(Hh(`Source string '${e}' is not a valid network identifier`))), bCe = EH(`main`), DH = Symbol.for(`platform-js/effect/NetworkId`), OH = Symbol.for(`platform-js/effect/NetworkId#NetworkMoniker`), xCe = uu((e, t)=>md(e, t), (e)=>e[OH]), kH = (e)=>Ou(e, DH), SCe = z(2, (e, t)=>xCe(e, t)), AH = (e)=>({
             [DH]: DH,
-            [fd] (e) {
+            [pd] (e) {
                 return kH(e) && SCe(this, e);
             },
             toString () {
@@ -34701,7 +34391,7 @@ perfecta armonía.`,
                     moniker: this.toString()
                 };
             },
-            [_d] () {
+            [vd] () {
                 return this.toJSON();
             },
             [OH]: e,
@@ -34723,7 +34413,7 @@ perfecta armonía.`,
         });
     })), sD(NH, QE(function*() {
         return NH.of(wCe(Zf(yield* ECe, {
-            onSome: Zl,
+            onSome: Ql,
             onNone: ()=>CCe
         })));
     }))), OCe = Symbol.for(`compact-js/effect/ContractRuntimeError`), kCe = class extends xA(OCe, `ContractRuntimeError`) {
@@ -34738,15 +34428,15 @@ perfecta armonía.`,
         let i = Cge([
             new dM(Array.from(t.comIndices).reduce((e, t)=>e.insertCommitment(...t), MCe(e)), n)
         ], r ?? qj.initialParameters());
-        return i.length === 1 ? Of(i[0]) : kf(Error(`Expected one transcript partition pair, received: ${i.length}`));
+        return i.length === 1 ? kf(i[0]) : Af(Error(`Expected one transcript partition pair, received: ${i.length}`));
     }, IH = class {
         compiledContract;
         transform;
-        constructor(e, t = Zl){
+        constructor(e, t = Ql){
             this.compiledContract = e, this.transform = t;
         }
         pipe() {
-            return ru(this, arguments);
+            return iu(this, arguments);
         }
         initialize(e, ...t) {
             return XE({
@@ -34802,7 +34492,7 @@ perfecta armonía.`,
                             initialTxContext: c
                         };
                     },
-                    catch: Zl
+                    catch: Ql
                 }).pipe(aD(({ initialTxContext: e, result: n, context: r, proofData: i })=>QE(function*() {
                         return {
                             public: {
@@ -34828,7 +34518,7 @@ perfecta armonía.`,
             return XE({
                 keyConfig: MH
             }).pipe(aD(({ keyConfig: n })=>QE(this, function*() {
-                    let { contractState: r } = t, [i, a] = yield* this.createMaintenanceAuthority(e, r), o = ij.deserialize(i.serialize()), s = yield* this.createSignedMaintenanceUpdate(()=>Of([
+                    let { contractState: r } = t, [i, a] = yield* this.createMaintenanceAuthority(e, r), o = ij.deserialize(i.serialize()), s = yield* this.createSignedMaintenanceUpdate(()=>kf([
                             new yM(o)
                         ]), n, t);
                     return {
@@ -34844,7 +34534,7 @@ perfecta armonía.`,
             return XE({
                 keyConfig: MH
             }).pipe(aD(({ keyConfig: n })=>QE(this, function*() {
-                    return yield* this.createSignedMaintenanceUpdate(()=>Of([
+                    return yield* this.createSignedMaintenanceUpdate(()=>kf([
                             new ZM(e, new cj(`v3`))
                         ]), n, t);
                 })), this.transform);
@@ -34853,18 +34543,18 @@ perfecta armonía.`,
             return XE({
                 keyConfig: MH
             }).pipe(aD(({ keyConfig: r })=>QE(this, function*() {
-                    return yield* this.createSignedMaintenanceUpdate(()=>Of([
+                    return yield* this.createSignedMaintenanceUpdate(()=>kf([
                             new YM(e, new uj(`v3`, t))
                         ]), r, n);
                 })), this.transform);
         }
         createSignedMaintenanceUpdate(e, t, n) {
             let { address: r, contractState: i } = n, a = t.getSigningKey();
-            if (Yf(a)) return kf(CA(`Signing key required to authorize contract maintenance update`, i));
+            if (Yf(a)) return Af(CA(`Signing key required to authorize contract maintenance update`, i));
             let o = e();
-            if (Nf(o)) return kf(o.left);
-            let s = new Zj(r, Vf(o), i.maintenanceAuthority.counter);
-            return Of({
+            if (Pf(o)) return Af(o.left);
+            let s = new Zj(r, Hf(o), i.maintenanceAuthority.counter);
+            return kf({
                 public: {
                     maintenanceUpdate: s.addSignature(jCe, Oge(op(a), s.dataToSign))
                 },
@@ -34875,18 +34565,18 @@ perfecta armonía.`,
         }
         createMaintenanceAuthority(e, t) {
             let n = Zf(e, {
-                onSome: Zl,
+                onSome: Ql,
                 onNone: ()=>jH(It())
             });
             try {
-                return Of([
+                return kf([
                     new tn([
                         jt(n)
                     ], ACe, t ? t.maintenanceAuthority.counter + 1n : 0n),
                     n
                 ]);
             } catch (e) {
-                return kf(CA(`Failed to create a signature verifying key for signing key '${n}'`, t, e));
+                return Af(CA(`Failed to create a signature verifying key for signing key '${n}'`, t, e));
             }
         }
         createContract() {
@@ -34894,7 +34584,7 @@ perfecta armonía.`,
         }
         contract;
     }, LH = (e)=>new IH(e);
-    B(2, (e, t)=>new IH(e.compiledContract, (e)=>hpe(e, t)));
+    z(2, (e, t)=>new IH(e.compiledContract, (e)=>hpe(e, t)));
     var PCe = (e)=>Tme(e), FCe = Symbol.for(`compact-js/effect/ZKConfigurationReadError`), ICe = class extends xA(FCe, `ZKConfigurationReadError`) {
     }, LCe = (e, t, n, r)=>new ICe({
             contractTag: e,
@@ -34906,7 +34596,7 @@ perfecta armonía.`,
         byteLength: `32..=32`
     })), RCe = (e)=>(t)=>QE(function*() {
                 let n = (n)=>ppe({
-                        try: ()=>e.getVerifierKey(n).then((e)=>qf(vA(e))),
+                        try: ()=>e.getVerifierKey(n).then((e)=>H(vA(e))),
                         catch: (e)=>LCe(t.tag, n, `verifier-key`, e)
                     });
                 return {
@@ -34941,7 +34631,7 @@ perfecta armonía.`,
             onFailure: (e)=>{
                 throw jT(e) ? e.error : Error(`Unexpected error: ${NT(e)}`);
             }
-        }), BCe = (e)=>qf(e), VH = (e)=>RH(e), HH = class extends Error {
+        }), BCe = (e)=>H(e), VH = (e)=>RH(e), HH = class extends Error {
         invalidScheme;
         allowableSchemes;
         constructor(e, t){
@@ -61042,7 +60732,7 @@ ${h(e)}
         let n = await gNe(e, t);
         return e.publicDataProvider.watchForTxData(n);
     }, M5 = 0, _Ne = `0`.repeat(64), vNe = `f5b9fa49d3c4f06582dab6ba45c85f6b1927873105b4c8cf363b9b57ca910f65`, N5 = (e, t, n)=>{
-        let r = Yl(), i = z6(e, r), a = B6(t, r), o = n ? new Map(Array.from(n, ([e, t])=>[
+        let r = Xl(), i = z6(e, r), a = B6(t, r), o = n ? new Map(Array.from(n, ([e, t])=>[
                 z6(e, r),
                 B6(t, r)
             ])) : void 0;
@@ -61089,7 +60779,7 @@ ${h(e)}
         ].filter((e)=>e != null);
         if (c.length !== 0) return c.length === 1 ? c[0] : c.reduce((e, t)=>e.merge(t));
     }, R5 = (e, t)=>t.outputs.filter((t)=>t.recipient.left === e).map(({ coinInfo: e })=>e), CNe = (e, t, n, r)=>{
-        let i = Yl(), a = z6(t, i);
+        let i = Xl(), a = z6(t, i);
         if (z6(e.coinPublicKey, i) !== a) throw Error(`Unable to lookup encryption public key (Unsupported coin)`);
         return N5(t, n, r);
     }, z5 = (e)=>fj.deserialize(e.serialize()), wNe = (e)=>on.deserialize(e.serialize()), TNe = (e, t, n)=>{
@@ -61097,7 +60787,7 @@ ${h(e)}
         return [
             r.address,
             wNe(r.initialState),
-            NM.fromParts(Yl(), L5(t, n), void 0, Hj.new(P6()).addDeploy(r))
+            NM.fromParts(Xl(), L5(t, n), void 0, Hj.new(P6()).addDeploy(r))
         ];
     }, B5 = (e)=>{
         if (!e) return [];
@@ -61114,11 +60804,11 @@ ${h(e)}
         let d = Hj.new(P6()).addCall(new ej(t, e, u, i[0], i[1], a, o, s, Dge(), e)), f = B5(i[0]);
         f.length > 0 && (d.guaranteedUnshieldedOffer = VM.new([], f, []));
         let p = B5(i[1]);
-        return p.length > 0 && (d.fallibleUnshieldedOffer = VM.new([], p, [])), NM.fromPartsRandomized(Yl(), L5(c, l, {
+        return p.length > 0 && (d.fallibleUnshieldedOffer = VM.new([], p, [])), NM.fromPartsRandomized(Xl(), L5(c, l, {
             contractAddress: t,
             zswapChainState: r
         }), void 0, d);
-    }, V5 = async (e)=>NM.fromParts(Yl(), void 0, void 0, Hj.new(P6()).addMaintenanceUpdate(await e())), DNe = (e, t, n, r, i, a, o)=>{
+    }, V5 = async (e)=>NM.fromParts(Xl(), void 0, void 0, Hj.new(P6()).addMaintenanceUpdate(await e())), DNe = (e, t, n, r, i, a, o)=>{
         let s = LH(t), c = zH(e, {
             coinPublicKey: o,
             signingKey: a
@@ -61173,7 +60863,7 @@ ${h(e)}
         }
     }
     async function jNe(e, t) {
-        return ANe(e.zkConfigProvider, z6(e.walletProvider.getCoinPublicKey(), Yl()), t, e.walletProvider.getEncryptionPublicKey());
+        return ANe(e.zkConfigProvider, z6(e.walletProvider.getCoinPublicKey(), Xl()), t, e.walletProvider.getEncryptionPublicKey());
     }
     async function MNe(e, t) {
         let n = await jNe(e, t), r = await j5(e, {
@@ -61351,7 +61041,7 @@ ${h(e)}
                     nextZswapLocalState: h,
                     privateTranscriptOutputs: f,
                     unprovenTx: ENe(t.circuitId, i, o, s, r, f, l, u, h, CNe(h, t.coinPublicKey, n, t.additionalCoinEncPublicKeyMappings)),
-                    newCoins: R5(z6(a, Yl()), h)
+                    newCoins: R5(z6(a, Xl()), h)
                 }
             };
         } catch (e) {
@@ -61371,7 +61061,7 @@ ${h(e)}
                 ...o,
                 args: e.args
             } : o,
-            coinPublicKey: z6(t, Yl()),
+            coinPublicKey: z6(t, Xl()),
             initialContractState: r,
             initialZswapChainState: i,
             ledgerParameters: n
@@ -61405,10 +61095,10 @@ ${h(e)}
         if (i && !r) throw new A5;
         if (i && r) {
             let { zswapChainState: r, contractState: i, privateState: a, ledgerParameters: o } = await LNe(e, t, n);
-            return X5(e.zkConfigProvider, Z5(t, z6(e.walletProvider.getCoinPublicKey(), Yl()), o, i, r, a), e.walletProvider.getEncryptionPublicKey());
+            return X5(e.zkConfigProvider, Z5(t, z6(e.walletProvider.getCoinPublicKey(), Xl()), o, i, r, a), e.walletProvider.getEncryptionPublicKey());
         }
         let { zswapChainState: a, contractState: o, ledgerParameters: s } = await RNe(e, t, n);
-        return X5(e.zkConfigProvider, Z5(t, z6(e.walletProvider.getCoinPublicKey(), Yl()), s, o, a), e.walletProvider.getEncryptionPublicKey());
+        return X5(e.zkConfigProvider, Z5(t, z6(e.walletProvider.getCoinPublicKey(), Xl()), s, o, a), e.walletProvider.getEncryptionPublicKey());
     }
     async function Q5(e, t, n) {
         V6(t.contractAddress), N6(LH(t.compiledContract).getProvableCircuitIds().find((e)=>e === t.circuitId), `Circuit '${t.circuitId}' is undefined`);
@@ -61557,7 +61247,7 @@ ${h(e)}
         return $s(e);
     }
     function i7(e, t, n, r, i, a) {
-        let o = $s(e), s = ePe(), c = $s(s), l = Kl.getShieldedId(a);
+        let o = $s(e), s = ePe(), c = $s(s), l = ql.getShieldedId(a);
         return {
             issuerId: t,
             vaccine: n,
@@ -61565,7 +61255,7 @@ ${h(e)}
             expirationDate: i,
             issuerSignature: {
                 announcement: c,
-                response: ((s + Kl.schnorrChallengeVaxZk(c, o, n, r, i, l) % $Ne * e) % r7 + r7) % r7
+                response: ((s + ql.schnorrChallengeVaxZk(c, o, n, r, i, l) % $Ne * e) % r7 + r7) % r7
             }
         };
     }
@@ -61585,7 +61275,7 @@ ${h(e)}
                 }
             },
             inviteNonce: t ?? crypto.getRandomValues(new Uint8Array(32))
-        }), o7 = 452312848583266388373324160190187140051835877600158453279131187530910662656n, s7 = lge(`VaxZk`, Ul).pipe(uge({
+        }), o7 = 452312848583266388373324160190187140051835877600158453279131187530910662656n, s7 = lge(`VaxZk`, Wl).pipe(uge({
         getAttestedCertProofWitness: ({ privateState: e })=>[
                 e,
                 e.vaxZkProof
@@ -61639,7 +61329,7 @@ ${h(e)}
             this.providers = t, this.deployedContract = e, this.deployedContractAddress = e.deployTxData.public.contractAddress, this.state$ = TMe([
                 t.publicDataProvider.contractStateObservable(this.deployedContractAddress, {
                     type: `latest`
-                }).pipe(K8((e)=>Wl(e.data)), FMe((e)=>console.log(`ledger state changed: invites: ${e.totalInviteAdmin} admins; ${e.totalAdmin} clinics: ${e.clinics.size()}, vaccines: ${e.vaccines.size()}`))),
+                }).pipe(K8((e)=>Gl(e.data)), FMe((e)=>console.log(`ledger state changed: invites: ${e.totalInviteAdmin} admins; ${e.totalAdmin} clinics: ${e.clinics.size()}, vaccines: ${e.vaccines.size()}`))),
                 W8(t.privateStateProvider.get(n7))
             ], (e, t)=>{
                 let n = new TextDecoder, r = (e)=>n.decode(e).replace(/\0/g, ``).trim(), i = [];
@@ -61647,7 +61337,6 @@ ${h(e)}
                     id: t,
                     ownerId: n.ownerId,
                     name: r(n.name),
-                    urlImage: r(n.urlImage),
                     address: r(n.address),
                     latitud: r(n.latitud),
                     longitud: r(n.longitud),
@@ -61685,7 +61374,7 @@ ${h(e)}
                     totalInviteClinic: u,
                     totalVaccines: a.length,
                     totalClinics: d,
-                    totalActiveClinicOwners: e.ownerClinics.size()
+                    totalActiveClinicOwners: e.totalOwnerClinics
                 };
             }).pipe(NMe({
                 bufferSize: 1,
@@ -61845,7 +61534,7 @@ ${h(e)}
         }
     };
     async function l7(e, t) {
-        Jl(t);
+        Yl(t);
         let n = await e.getConfiguration(), r = await e.getShieldedAddresses(), i = new nwe(window.location.origin, fetch.bind(window));
         return {
             privateStateProvider: nPe(),
@@ -61854,7 +61543,7 @@ ${h(e)}
             proofProvider: cNe(n.proverServerUri, i),
             walletProvider: {
                 getCoinPublicKey () {
-                    return z6(r.shieldedCoinPublicKey, Yl());
+                    return z6(r.shieldedCoinPublicKey, Xl());
                 },
                 getEncryptionPublicKey () {
                     return r.shieldedEncryptionPublicKey;
@@ -69166,7 +68855,7 @@ ${h(e)}
         return n.set(new TextEncoder().encode(e).slice(0, t)), n;
     }
     var SPe = ({ connectedApi: e })=>{
-        let [t, n] = (0, F.useState)([]), [r, i] = (0, F.useState)(!0), [a, o] = (0, F.useState)(!1), [s, c] = (0, F.useState)(null), [l, u] = (0, F.useState)(null), [d, f] = (0, F.useState)(``), [p, m] = (0, F.useState)(``), [h, g] = (0, F.useState)(``), [_, v] = (0, F.useState)(``), [y, x] = (0, F.useState)(``), [S, C] = (0, F.useState)(!1);
+        let [t, n] = (0, F.useState)([]), [r, i] = (0, F.useState)(!0), [a, o] = (0, F.useState)(!1), [s, c] = (0, F.useState)(null), [l, u] = (0, F.useState)(null), [d, f] = (0, F.useState)(``), [p, m] = (0, F.useState)(``), [h, g] = (0, F.useState)(``), [_, v] = (0, F.useState)(``), [y, x] = (0, F.useState)(!1);
         (0, F.useEffect)(()=>{
             let t;
             async function r() {
@@ -69186,7 +68875,7 @@ ${h(e)}
         }, [
             e
         ]);
-        let w = !!l && !a && d.trim().length > 0;
+        let S = !!l && !a && d.trim().length > 0;
         return (0, b.jsxs)(`main`, {
             className: `pt-24 pb-32 px-6 max-w-screen-xl mx-auto`,
             children: [
@@ -69224,13 +68913,12 @@ ${h(e)}
                                         let e = globalThis.crypto.getRandomValues(new Uint8Array(32)), t = {
                                             ownerId: new Uint8Array(32),
                                             name: F7(d.trim(), 32),
-                                            urlImage: F7(p.trim(), 64),
-                                            address: F7(h.trim(), 64),
-                                            latitud: F7(_.trim(), 20),
-                                            longitud: F7(y.trim(), 20),
-                                            isOnline: S
+                                            address: F7(p.trim(), 64),
+                                            latitud: F7(h.trim(), 20),
+                                            longitud: F7(_.trim(), 20),
+                                            isOnline: y
                                         };
-                                        await l.addClinic(e, t), f(``), m(``), g(``), v(``), x(``), C(!1);
+                                        await l.addClinic(e, t), f(``), m(``), g(``), v(``), x(!1);
                                     } catch (e) {
                                         console.error(`Failed to add clinic:`, e), c(e instanceof Error ? e.message : String(e));
                                     } finally{
@@ -69260,28 +68948,12 @@ ${h(e)}
                                     children: [
                                         (0, b.jsx)(`label`, {
                                             className: `block text-xs font-semibold text-on-surface-variant uppercase tracking-wide mb-1`,
-                                            children: `Image URL`
-                                        }),
-                                        (0, b.jsx)(`input`, {
-                                            type: `text`,
-                                            value: p,
-                                            onChange: (e)=>m(e.target.value.slice(0, 255)),
-                                            placeholder: `e.g. https://example.com/clinic.png`,
-                                            maxLength: 255,
-                                            className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary`
-                                        })
-                                    ]
-                                }),
-                                (0, b.jsxs)(`div`, {
-                                    children: [
-                                        (0, b.jsx)(`label`, {
-                                            className: `block text-xs font-semibold text-on-surface-variant uppercase tracking-wide mb-1`,
                                             children: `Address`
                                         }),
                                         (0, b.jsx)(`input`, {
                                             type: `text`,
-                                            value: h,
-                                            onChange: (e)=>g(e.target.value.slice(0, 64)),
+                                            value: p,
+                                            onChange: (e)=>m(e.target.value.slice(0, 64)),
                                             placeholder: `e.g. 123 Main St, Springfield`,
                                             maxLength: 64,
                                             className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary`
@@ -69299,8 +68971,8 @@ ${h(e)}
                                                 }),
                                                 (0, b.jsx)(`input`, {
                                                     type: `text`,
-                                                    value: _,
-                                                    onChange: (e)=>v(e.target.value.slice(0, 20)),
+                                                    value: h,
+                                                    onChange: (e)=>g(e.target.value.slice(0, 20)),
                                                     placeholder: `e.g. -23.5990263`,
                                                     maxLength: 20,
                                                     className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary`
@@ -69315,8 +68987,8 @@ ${h(e)}
                                                 }),
                                                 (0, b.jsx)(`input`, {
                                                     type: `text`,
-                                                    value: y,
-                                                    onChange: (e)=>x(e.target.value.slice(0, 20)),
+                                                    value: _,
+                                                    onChange: (e)=>v(e.target.value.slice(0, 20)),
                                                     placeholder: `e.g. -46.6419712`,
                                                     maxLength: 20,
                                                     className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary`
@@ -69331,8 +69003,8 @@ ${h(e)}
                                         (0, b.jsx)(`input`, {
                                             type: `checkbox`,
                                             id: `isOnline`,
-                                            checked: S,
-                                            onChange: (e)=>C(e.target.checked),
+                                            checked: y,
+                                            onChange: (e)=>x(e.target.checked),
                                             className: `w-4 h-4 accent-primary`
                                         }),
                                         (0, b.jsx)(`label`, {
@@ -69348,7 +69020,7 @@ ${h(e)}
                                 }),
                                 (0, b.jsx)(`button`, {
                                     type: `submit`,
-                                    disabled: !w,
+                                    disabled: !S,
                                     className: `px-8 py-4 bg-primary font-bold rounded-lg shadow-lg active:scale-95 transition-all duration-200 disabled:opacity-50 flex items-center gap-2`,
                                     children: a ? (0, b.jsxs)(b.Fragment, {
                                         children: [
@@ -69478,21 +69150,6 @@ ${h(e)}
                                                         (0, b.jsx)(`span`, {
                                                             className: `text-on-surface-variant`,
                                                             children: e.address
-                                                        })
-                                                    ]
-                                                }),
-                                                e.urlImage && (0, b.jsxs)(`div`, {
-                                                    children: [
-                                                        (0, b.jsxs)(`span`, {
-                                                            className: `font-semibold text-on-surface-variant uppercase tracking-wide`,
-                                                            children: [
-                                                                `Image URL:`,
-                                                                ` `
-                                                            ]
-                                                        }),
-                                                        (0, b.jsx)(`span`, {
-                                                            className: `text-on-surface-variant break-all`,
-                                                            children: e.urlImage
                                                         })
                                                     ]
                                                 }),
