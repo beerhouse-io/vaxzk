@@ -64,29 +64,21 @@
       }
     },
     {
-      "name": "registerInviteAdmin",
+      "name": "registerInvite",
       "pure": false,
       "proof": true,
       "arguments": [
         {
-          "name": "inviteCode",
+          "name": "role",
           "type": {
-            "type-name": "Bytes",
-            "length": 32
+            "type-name": "Enum",
+            "name": "Role",
+            "elements": [
+              "admin",
+              "clinic"
+            ]
           }
-        }
-      ],
-      "result-type": {
-        "type-name": "Tuple",
-        "types": [
-        ]
-      }
-    },
-    {
-      "name": "registerInviteClinic",
-      "pure": false,
-      "proof": true,
-      "arguments": [
+        },
         {
           "name": "inviteCode",
           "type": {

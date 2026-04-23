@@ -39,10 +39,9 @@ export type Witnesses<PS> = {
 }
 
 export type ImpureCircuits<PS> = {
-  registerInviteAdmin(context: __compactRuntime.CircuitContext<PS>,
-                      inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
-  registerInviteClinic(context: __compactRuntime.CircuitContext<PS>,
-                       inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
+  registerInvite(context: __compactRuntime.CircuitContext<PS>,
+                 role_0: Role,
+                 inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   acceptInvite(context: __compactRuntime.CircuitContext<PS>,
                role_0: Role,
                inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
@@ -63,10 +62,9 @@ export type ImpureCircuits<PS> = {
 }
 
 export type ProvableCircuits<PS> = {
-  registerInviteAdmin(context: __compactRuntime.CircuitContext<PS>,
-                      inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
-  registerInviteClinic(context: __compactRuntime.CircuitContext<PS>,
-                       inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
+  registerInvite(context: __compactRuntime.CircuitContext<PS>,
+                 role_0: Role,
+                 inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   acceptInvite(context: __compactRuntime.CircuitContext<PS>,
                role_0: Role,
                inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
@@ -104,10 +102,9 @@ export type Circuits<PS> = {
                         personalId_0: Uint8Array,
                         expirationDate_0: bigint,
                         userPubKey_0: Uint8Array): __compactRuntime.CircuitResults<PS, bigint>;
-  registerInviteAdmin(context: __compactRuntime.CircuitContext<PS>,
-                      inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
-  registerInviteClinic(context: __compactRuntime.CircuitContext<PS>,
-                       inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
+  registerInvite(context: __compactRuntime.CircuitContext<PS>,
+                 role_0: Role,
+                 inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
   acceptInvite(context: __compactRuntime.CircuitContext<PS>,
                role_0: Role,
                inviteCode_0: Uint8Array): __compactRuntime.CircuitResults<PS, []>;
