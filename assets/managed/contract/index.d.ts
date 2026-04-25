@@ -126,10 +126,30 @@ export type Circuits<PS> = {
 }
 
 export type Ledger = {
-  readonly totalAdmin: bigint;
-  readonly totalInviteAdmin: bigint;
-  readonly totalOwnerClinics: bigint;
-  readonly totalInviteClinic: bigint;
+  admins: {
+    isEmpty(): boolean;
+    size(): bigint;
+    member(elem_0: Uint8Array): boolean;
+    [Symbol.iterator](): Iterator<Uint8Array>
+  };
+  inviteAdminHash: {
+    isEmpty(): boolean;
+    size(): bigint;
+    member(elem_0: Uint8Array): boolean;
+    [Symbol.iterator](): Iterator<Uint8Array>
+  };
+  ownerClinics: {
+    isEmpty(): boolean;
+    size(): bigint;
+    member(elem_0: Uint8Array): boolean;
+    [Symbol.iterator](): Iterator<Uint8Array>
+  };
+  inviteClinicHash: {
+    isEmpty(): boolean;
+    size(): bigint;
+    member(elem_0: Uint8Array): boolean;
+    [Symbol.iterator](): Iterator<Uint8Array>
+  };
   clinics: {
     isEmpty(): boolean;
     size(): bigint;
