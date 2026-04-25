@@ -64,21 +64,10 @@
       }
     },
     {
-      "name": "registerInvite",
+      "name": "registerInviteAdmin",
       "pure": false,
       "proof": true,
       "arguments": [
-        {
-          "name": "role",
-          "type": {
-            "type-name": "Enum",
-            "name": "Role",
-            "elements": [
-              "admin",
-              "clinic"
-            ]
-          }
-        },
         {
           "name": "inviteCode",
           "type": {
@@ -94,21 +83,10 @@
       }
     },
     {
-      "name": "acceptInvite",
+      "name": "acceptInviteAdmin",
       "pure": false,
       "proof": true,
       "arguments": [
-        {
-          "name": "role",
-          "type": {
-            "type-name": "Enum",
-            "name": "Role",
-            "elements": [
-              "admin",
-              "clinic"
-            ]
-          }
-        },
         {
           "name": "inviteCode",
           "type": {
@@ -128,6 +106,25 @@
       "pure": false,
       "proof": true,
       "arguments": [
+      ],
+      "result-type": {
+        "type-name": "Tuple",
+        "types": [
+        ]
+      }
+    },
+    {
+      "name": "registerInviteClinic",
+      "pure": false,
+      "proof": true,
+      "arguments": [
+        {
+          "name": "inviteCode",
+          "type": {
+            "type-name": "Bytes",
+            "length": 32
+          }
+        }
       ],
       "result-type": {
         "type-name": "Tuple",
@@ -183,6 +180,13 @@
                 "type": {
                   "type-name": "Bytes",
                   "length": 32
+                }
+              },
+              {
+                "name": "urlImage",
+                "type": {
+                  "type-name": "Bytes",
+                  "length": 64
                 }
               },
               {
