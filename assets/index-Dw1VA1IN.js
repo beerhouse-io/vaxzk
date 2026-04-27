@@ -71577,7 +71577,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
                                     ]
                                 }),
                                 (0, b.jsx)(`button`, {
-                                    className: `w-full py-4 bg-primary text-white font-bold text-base rounded-xl shadow-md shadow-primary/20 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2 disabled:opacity-50`,
+                                    className: `w-full py-4 bg-primary-container text-on-primary-container font-bold text-base rounded-xl shadow-md active:scale-95 transition-all duration-200 flex items-center justify-center gap-2 disabled:opacity-50`,
                                     type: `submit`,
                                     disabled: o,
                                     children: o ? (0, b.jsxs)(b.Fragment, {
