@@ -13560,7 +13560,7 @@ perfecta armonía.`,
                 addClinic: (...e)=>{
                     if (e.length !== 3) throw new S(`addClinic: expected 3 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1], r = e[2];
-                    typeof t == `object` && t.currentQueryContext != null || w(`addClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 113 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`addClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 113 char 1`, `Bytes<32>`, n), typeof r == `object` && r.ownerId.buffer instanceof ArrayBuffer && r.ownerId.BYTES_PER_ELEMENT === 1 && r.ownerId.length === 32 && r.name.buffer instanceof ArrayBuffer && r.name.BYTES_PER_ELEMENT === 1 && r.name.length === 32 && r.address.buffer instanceof ArrayBuffer && r.address.BYTES_PER_ELEMENT === 1 && r.address.length === 64 && r.latitud.buffer instanceof ArrayBuffer && r.latitud.BYTES_PER_ELEMENT === 1 && r.latitud.length === 20 && r.longitud.buffer instanceof ArrayBuffer && r.longitud.BYTES_PER_ELEMENT === 1 && r.longitud.length === 20 && typeof r.isOnline == `boolean` || w(`addClinic`, `argument 2 (argument 3 as invoked from Typescript)`, `vaxzk.compact line 113 char 1`, `struct ClinicProfile<ownerId: Bytes<32>, name: Bytes<32>, address: Bytes<64>, latitud: Bytes<20>, longitud: Bytes<20>, isOnline: Boolean>`, r);
+                    typeof t == `object` && t.currentQueryContext != null || w(`addClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 87 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`addClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 87 char 1`, `Bytes<32>`, n), typeof r == `object` && r.ownerId.buffer instanceof ArrayBuffer && r.ownerId.BYTES_PER_ELEMENT === 1 && r.ownerId.length === 32 && r.name.buffer instanceof ArrayBuffer && r.name.BYTES_PER_ELEMENT === 1 && r.name.length === 32 && r.address.buffer instanceof ArrayBuffer && r.address.BYTES_PER_ELEMENT === 1 && r.address.length === 64 && r.latitud.buffer instanceof ArrayBuffer && r.latitud.BYTES_PER_ELEMENT === 1 && r.latitud.length === 20 && r.longitud.buffer instanceof ArrayBuffer && r.longitud.BYTES_PER_ELEMENT === 1 && r.longitud.length === 20 && typeof r.isOnline == `boolean` || w(`addClinic`, `argument 2 (argument 3 as invoked from Typescript)`, `vaxzk.compact line 87 char 1`, `struct ClinicProfile<ownerId: Bytes<32>, name: Bytes<32>, address: Bytes<64>, latitud: Bytes<20>, longitud: Bytes<20>, isOnline: Boolean>`, r);
                     let i = {
                         ...t,
                         gasCost: mc()
@@ -13586,7 +13586,7 @@ perfecta armonía.`,
                 revokeClinic: (...e)=>{
                     if (e.length !== 2) throw new S(`revokeClinic: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`revokeClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 122 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`revokeClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 122 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`revokeClinic`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 96 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`revokeClinic`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 96 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: mc()
@@ -13612,7 +13612,7 @@ perfecta armonía.`,
                 addCertificateIssuer: (...e)=>{
                     if (e.length !== 2) throw new S(`addCertificateIssuer: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`addCertificateIssuer`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 134 char 1`, `CircuitContext`, t), typeof n != `object` && w(`addCertificateIssuer`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 134 char 1`, `struct CertIssuerInfo<uri: Opaque<"string">, name: Opaque<"string">, key: Opaque<"JubjubPoint">, verificationEndpoint: Opaque<"string">>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`addCertificateIssuer`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 108 char 1`, `CircuitContext`, t), typeof n != `object` && w(`addCertificateIssuer`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 108 char 1`, `struct CertIssuerInfo<uri: Opaque<"string">, name: Opaque<"string">, key: Opaque<"JubjubPoint">, verificationEndpoint: Opaque<"string">>`, n);
                     let r = {
                         ...t,
                         gasCost: mc()
@@ -13638,7 +13638,7 @@ perfecta armonía.`,
                 addVaccine: (...e)=>{
                     if (e.length !== 2) throw new S(`addVaccine: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`addVaccine`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 143 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 20 || w(`addVaccine`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 143 char 1`, `Bytes<20>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`addVaccine`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 117 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 20 || w(`addVaccine`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 117 char 1`, `Bytes<20>`, n);
                     let r = {
                         ...t,
                         gasCost: mc()
@@ -13664,7 +13664,7 @@ perfecta armonía.`,
                 delVaccine: (...e)=>{
                     if (e.length !== 2) throw new S(`delVaccine: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`delVaccine`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 151 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 20 || w(`delVaccine`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 151 char 1`, `Bytes<20>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`delVaccine`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 125 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 20 || w(`delVaccine`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 125 char 1`, `Bytes<20>`, n);
                     let r = {
                         ...t,
                         gasCost: mc()
@@ -13690,7 +13690,7 @@ perfecta armonía.`,
                 requestVaccineProof: (...e)=>{
                     if (e.length !== 2) throw new S(`requestVaccineProof: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`requestVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 159 char 1`, `CircuitContext`, t), typeof n == `object` && n.vaccine.buffer instanceof ArrayBuffer && n.vaccine.BYTES_PER_ELEMENT === 1 && n.vaccine.length === 20 && n.personalId.buffer instanceof ArrayBuffer && n.personalId.BYTES_PER_ELEMENT === 1 && n.personalId.length === 20 && typeof n.validUntil == `bigint` && n.validUntil >= 0n && n.validUntil <= 340282366920938463463374607431768211455n || w(`requestVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 159 char 1`, `struct VaccineProofRequest<vaccine: Bytes<20>, personalId: Bytes<20>, validUntil: Uint<0..340282366920938463463374607431768211456>>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`requestVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 133 char 1`, `CircuitContext`, t), typeof n == `object` && n.vaccine.buffer instanceof ArrayBuffer && n.vaccine.BYTES_PER_ELEMENT === 1 && n.vaccine.length === 20 && n.personalId.buffer instanceof ArrayBuffer && n.personalId.BYTES_PER_ELEMENT === 1 && n.personalId.length === 20 && typeof n.validUntil == `bigint` && n.validUntil >= 0n && n.validUntil <= 340282366920938463463374607431768211455n || w(`requestVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 133 char 1`, `struct VaccineProofRequest<vaccine: Bytes<20>, personalId: Bytes<20>, validUntil: Uint<0..340282366920938463463374607431768211456>>`, n);
                     let r = {
                         ...t,
                         gasCost: mc()
@@ -13716,7 +13716,7 @@ perfecta armonía.`,
                 submitVaccineProof: (...e)=>{
                     if (e.length !== 2) throw new S(`submitVaccineProof: expected 2 arguments (as invoked from Typescript), received ${e.length}`);
                     let t = e[0], n = e[1];
-                    typeof t == `object` && t.currentQueryContext != null || w(`submitVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 176 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`submitVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 176 char 1`, `Bytes<32>`, n);
+                    typeof t == `object` && t.currentQueryContext != null || w(`submitVaccineProof`, `argument 1 (as invoked from Typescript)`, `vaxzk.compact line 150 char 1`, `CircuitContext`, t), n.buffer instanceof ArrayBuffer && n.BYTES_PER_ELEMENT === 1 && n.length === 32 || w(`submitVaccineProof`, `argument 1 (argument 2 as invoked from Typescript)`, `vaxzk.compact line 150 char 1`, `Bytes<32>`, n);
                     let r = {
                         ...t,
                         gasCost: mc()
@@ -14031,7 +14031,7 @@ perfecta armonía.`,
                 }
             ]);
             let o = this._ownPublicKey_0(i, a), s = this._getShieldedId_0(o.bytes);
-            P(i, a, [
+            return P(i, a, [
                 {
                     idx: {
                         cached: !1,
@@ -14126,697 +14126,6 @@ perfecta armonía.`,
                             value: zl.toValue(1n),
                             alignment: zl.alignment()
                         }.value))
-                    }
-                },
-                {
-                    ins: {
-                        cached: !0,
-                        n: 1
-                    }
-                }
-            ]), P(i, a, [
-                {
-                    idx: {
-                        cached: !1,
-                        pushPath: !0,
-                        path: [
-                            {
-                                tag: `value`,
-                                value: {
-                                    value: R.toValue(5n),
-                                    alignment: R.alignment()
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    push: {
-                        storage: !1,
-                        value: N.newCell({
-                            value: Dl.toValue(new Uint8Array([
-                                72,
-                                101,
-                                112,
-                                66,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0
-                            ])),
-                            alignment: Dl.alignment()
-                        }).encode()
-                    }
-                },
-                {
-                    push: {
-                        storage: !0,
-                        value: N.newNull().encode()
-                    }
-                },
-                {
-                    ins: {
-                        cached: !1,
-                        n: 1
-                    }
-                },
-                {
-                    ins: {
-                        cached: !0,
-                        n: 1
-                    }
-                }
-            ]), P(i, a, [
-                {
-                    idx: {
-                        cached: !1,
-                        pushPath: !0,
-                        path: [
-                            {
-                                tag: `value`,
-                                value: {
-                                    value: R.toValue(5n),
-                                    alignment: R.alignment()
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    push: {
-                        storage: !1,
-                        value: N.newCell({
-                            value: Dl.toValue(new Uint8Array([
-                                80,
-                                67,
-                                86,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0
-                            ])),
-                            alignment: Dl.alignment()
-                        }).encode()
-                    }
-                },
-                {
-                    push: {
-                        storage: !0,
-                        value: N.newNull().encode()
-                    }
-                },
-                {
-                    ins: {
-                        cached: !1,
-                        n: 1
-                    }
-                },
-                {
-                    ins: {
-                        cached: !0,
-                        n: 1
-                    }
-                }
-            ]), P(i, a, [
-                {
-                    idx: {
-                        cached: !1,
-                        pushPath: !0,
-                        path: [
-                            {
-                                tag: `value`,
-                                value: {
-                                    value: R.toValue(5n),
-                                    alignment: R.alignment()
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    push: {
-                        storage: !1,
-                        value: N.newCell({
-                            value: Dl.toValue(new Uint8Array([
-                                84,
-                                100,
-                                97,
-                                112,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0
-                            ])),
-                            alignment: Dl.alignment()
-                        }).encode()
-                    }
-                },
-                {
-                    push: {
-                        storage: !0,
-                        value: N.newNull().encode()
-                    }
-                },
-                {
-                    ins: {
-                        cached: !1,
-                        n: 1
-                    }
-                },
-                {
-                    ins: {
-                        cached: !0,
-                        n: 1
-                    }
-                }
-            ]);
-            let c = {
-                ownerId: s,
-                name: new Uint8Array([
-                    67,
-                    108,
-                    105,
-                    110,
-                    105,
-                    99,
-                    32,
-                    49,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0
-                ]),
-                address: new Uint8Array([
-                    49,
-                    50,
-                    51,
-                    32,
-                    77,
-                    97,
-                    105,
-                    110,
-                    32,
-                    83,
-                    116,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0
-                ]),
-                latitud: new Uint8Array([
-                    45,
-                    50,
-                    51,
-                    46,
-                    53,
-                    57,
-                    57,
-                    48,
-                    50,
-                    54,
-                    51,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0
-                ]),
-                longitud: new Uint8Array([
-                    45,
-                    52,
-                    54,
-                    46,
-                    54,
-                    52,
-                    49,
-                    57,
-                    55,
-                    49,
-                    50,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0
-                ]),
-                isOnline: !0
-            };
-            P(i, a, [
-                {
-                    idx: {
-                        cached: !1,
-                        pushPath: !0,
-                        path: [
-                            {
-                                tag: `value`,
-                                value: {
-                                    value: R.toValue(4n),
-                                    alignment: R.alignment()
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    push: {
-                        storage: !1,
-                        value: N.newCell({
-                            value: I.toValue(new Uint8Array([
-                                99,
-                                108,
-                                105,
-                                110,
-                                105,
-                                99,
-                                49,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0
-                            ])),
-                            alignment: I.alignment()
-                        }).encode()
-                    }
-                },
-                {
-                    push: {
-                        storage: !0,
-                        value: N.newCell({
-                            value: Rl.toValue(c),
-                            alignment: Rl.alignment()
-                        }).encode()
-                    }
-                },
-                {
-                    ins: {
-                        cached: !1,
-                        n: 1
-                    }
-                },
-                {
-                    ins: {
-                        cached: !0,
-                        n: 1
-                    }
-                }
-            ]);
-            let l = {
-                ownerId: s,
-                name: new Uint8Array([
-                    67,
-                    108,
-                    105,
-                    110,
-                    105,
-                    99,
-                    32,
-                    76,
-                    111,
-                    99,
-                    97,
-                    108,
-                    32,
-                    50,
-                    50,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0
-                ]),
-                address: new Uint8Array([
-                    49,
-                    50,
-                    51,
-                    32,
-                    77,
-                    97,
-                    105,
-                    110,
-                    32,
-                    83,
-                    116,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0
-                ]),
-                latitud: new Uint8Array([
-                    45,
-                    50,
-                    51,
-                    46,
-                    53,
-                    57,
-                    57,
-                    48,
-                    50,
-                    54,
-                    51,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0
-                ]),
-                longitud: new Uint8Array([
-                    45,
-                    52,
-                    54,
-                    46,
-                    54,
-                    52,
-                    49,
-                    57,
-                    55,
-                    49,
-                    50,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0
-                ]),
-                isOnline: !0
-            };
-            return P(i, a, [
-                {
-                    idx: {
-                        cached: !1,
-                        pushPath: !0,
-                        path: [
-                            {
-                                tag: `value`,
-                                value: {
-                                    value: R.toValue(4n),
-                                    alignment: R.alignment()
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    push: {
-                        storage: !1,
-                        value: N.newCell({
-                            value: I.toValue(new Uint8Array([
-                                99,
-                                108,
-                                105,
-                                110,
-                                105,
-                                99,
-                                50,
-                                50,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0,
-                                0
-                            ])),
-                            alignment: I.alignment()
-                        }).encode()
-                    }
-                },
-                {
-                    push: {
-                        storage: !0,
-                        value: N.newCell({
-                            value: Rl.toValue(l),
-                            alignment: Rl.alignment()
-                        }).encode()
-                    }
-                },
-                {
-                    ins: {
-                        cached: !1,
-                        n: 1
-                    }
-                },
-                {
-                    ins: {
-                        cached: !0,
-                        n: 1
-                    }
-                }
-            ]), P(i, a, [
-                {
-                    idx: {
-                        cached: !1,
-                        pushPath: !0,
-                        path: [
-                            {
-                                tag: `value`,
-                                value: {
-                                    value: R.toValue(2n),
-                                    alignment: R.alignment()
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    push: {
-                        storage: !1,
-                        value: N.newCell({
-                            value: I.toValue(s),
-                            alignment: I.alignment()
-                        }).encode()
-                    }
-                },
-                {
-                    push: {
-                        storage: !0,
-                        value: N.newNull().encode()
-                    }
-                },
-                {
-                    ins: {
-                        cached: !1,
-                        n: 1
                     }
                 },
                 {
@@ -15493,7 +14802,7 @@ perfecta armonía.`,
                     0,
                     0,
                     0
-                ]), `vaxzk.compact line 99 char 45`),
+                ]), `vaxzk.compact line 73 char 45`),
                 Bl.fromValue(P(e, t, [
                     {
                         dup: {
@@ -15590,7 +14899,7 @@ perfecta armonía.`,
                     0,
                     0,
                     0
-                ]), `vaxzk.compact line 107 char 45`),
+                ]), `vaxzk.compact line 81 char 45`),
                 Bl.fromValue(P(e, t, [
                     {
                         dup: {
@@ -17938,7 +17247,7 @@ perfecta armonía.`,
         getShieldedId: (...e)=>{
             if (e.length !== 1) throw new S(`getShieldedId: expected 1 argument (as invoked from Typescript), received ${e.length}`);
             let t = e[0];
-            return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`getShieldedId`, `argument 1`, `vaxzk.compact line 92 char 1`, `Bytes<32>`, t), Xl._getShieldedId_0(t);
+            return t.buffer instanceof ArrayBuffer && t.BYTES_PER_ELEMENT === 1 && t.length === 32 || w(`getShieldedId`, `argument 1`, `vaxzk.compact line 66 char 1`, `Bytes<32>`, t), Xl._getShieldedId_0(t);
         }
     }, Ql, $l = (e)=>{
         Ql = e;

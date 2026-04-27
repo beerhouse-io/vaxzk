@@ -367,21 +367,21 @@ export class Contract {
         if (!(typeof(contextOrig_0) === 'object' && contextOrig_0.currentQueryContext != undefined)) {
           __compactRuntime.typeError('addClinic',
                                      'argument 1 (as invoked from Typescript)',
-                                     'vaxzk.compact line 113 char 1',
+                                     'vaxzk.compact line 87 char 1',
                                      'CircuitContext',
                                      contextOrig_0)
         }
         if (!(clinicId_0.buffer instanceof ArrayBuffer && clinicId_0.BYTES_PER_ELEMENT === 1 && clinicId_0.length === 32)) {
           __compactRuntime.typeError('addClinic',
                                      'argument 1 (argument 2 as invoked from Typescript)',
-                                     'vaxzk.compact line 113 char 1',
+                                     'vaxzk.compact line 87 char 1',
                                      'Bytes<32>',
                                      clinicId_0)
         }
         if (!(typeof(clinicProfile_0) === 'object' && clinicProfile_0.ownerId.buffer instanceof ArrayBuffer && clinicProfile_0.ownerId.BYTES_PER_ELEMENT === 1 && clinicProfile_0.ownerId.length === 32 && clinicProfile_0.name.buffer instanceof ArrayBuffer && clinicProfile_0.name.BYTES_PER_ELEMENT === 1 && clinicProfile_0.name.length === 32 && clinicProfile_0.address.buffer instanceof ArrayBuffer && clinicProfile_0.address.BYTES_PER_ELEMENT === 1 && clinicProfile_0.address.length === 64 && clinicProfile_0.latitud.buffer instanceof ArrayBuffer && clinicProfile_0.latitud.BYTES_PER_ELEMENT === 1 && clinicProfile_0.latitud.length === 20 && clinicProfile_0.longitud.buffer instanceof ArrayBuffer && clinicProfile_0.longitud.BYTES_PER_ELEMENT === 1 && clinicProfile_0.longitud.length === 20 && typeof(clinicProfile_0.isOnline) === 'boolean')) {
           __compactRuntime.typeError('addClinic',
                                      'argument 2 (argument 3 as invoked from Typescript)',
-                                     'vaxzk.compact line 113 char 1',
+                                     'vaxzk.compact line 87 char 1',
                                      'struct ClinicProfile<ownerId: Bytes<32>, name: Bytes<32>, address: Bytes<64>, latitud: Bytes<20>, longitud: Bytes<20>, isOnline: Boolean>',
                                      clinicProfile_0)
         }
@@ -411,14 +411,14 @@ export class Contract {
         if (!(typeof(contextOrig_0) === 'object' && contextOrig_0.currentQueryContext != undefined)) {
           __compactRuntime.typeError('revokeClinic',
                                      'argument 1 (as invoked from Typescript)',
-                                     'vaxzk.compact line 122 char 1',
+                                     'vaxzk.compact line 96 char 1',
                                      'CircuitContext',
                                      contextOrig_0)
         }
         if (!(clinicId_0.buffer instanceof ArrayBuffer && clinicId_0.BYTES_PER_ELEMENT === 1 && clinicId_0.length === 32)) {
           __compactRuntime.typeError('revokeClinic',
                                      'argument 1 (argument 2 as invoked from Typescript)',
-                                     'vaxzk.compact line 122 char 1',
+                                     'vaxzk.compact line 96 char 1',
                                      'Bytes<32>',
                                      clinicId_0)
         }
@@ -447,14 +447,14 @@ export class Contract {
         if (!(typeof(contextOrig_0) === 'object' && contextOrig_0.currentQueryContext != undefined)) {
           __compactRuntime.typeError('addCertificateIssuer',
                                      'argument 1 (as invoked from Typescript)',
-                                     'vaxzk.compact line 134 char 1',
+                                     'vaxzk.compact line 108 char 1',
                                      'CircuitContext',
                                      contextOrig_0)
         }
         if (!(typeof(issuerInfo_0) === 'object' && true && true && true && true)) {
           __compactRuntime.typeError('addCertificateIssuer',
                                      'argument 1 (argument 2 as invoked from Typescript)',
-                                     'vaxzk.compact line 134 char 1',
+                                     'vaxzk.compact line 108 char 1',
                                      'struct CertIssuerInfo<uri: Opaque<"string">, name: Opaque<"string">, key: Opaque<"JubjubPoint">, verificationEndpoint: Opaque<"string">>',
                                      issuerInfo_0)
         }
@@ -483,14 +483,14 @@ export class Contract {
         if (!(typeof(contextOrig_0) === 'object' && contextOrig_0.currentQueryContext != undefined)) {
           __compactRuntime.typeError('addVaccine',
                                      'argument 1 (as invoked from Typescript)',
-                                     'vaxzk.compact line 143 char 1',
+                                     'vaxzk.compact line 117 char 1',
                                      'CircuitContext',
                                      contextOrig_0)
         }
         if (!(name_0.buffer instanceof ArrayBuffer && name_0.BYTES_PER_ELEMENT === 1 && name_0.length === 20)) {
           __compactRuntime.typeError('addVaccine',
                                      'argument 1 (argument 2 as invoked from Typescript)',
-                                     'vaxzk.compact line 143 char 1',
+                                     'vaxzk.compact line 117 char 1',
                                      'Bytes<20>',
                                      name_0)
         }
@@ -517,14 +517,14 @@ export class Contract {
         if (!(typeof(contextOrig_0) === 'object' && contextOrig_0.currentQueryContext != undefined)) {
           __compactRuntime.typeError('delVaccine',
                                      'argument 1 (as invoked from Typescript)',
-                                     'vaxzk.compact line 151 char 1',
+                                     'vaxzk.compact line 125 char 1',
                                      'CircuitContext',
                                      contextOrig_0)
         }
         if (!(name_0.buffer instanceof ArrayBuffer && name_0.BYTES_PER_ELEMENT === 1 && name_0.length === 20)) {
           __compactRuntime.typeError('delVaccine',
                                      'argument 1 (argument 2 as invoked from Typescript)',
-                                     'vaxzk.compact line 151 char 1',
+                                     'vaxzk.compact line 125 char 1',
                                      'Bytes<20>',
                                      name_0)
         }
@@ -551,14 +551,14 @@ export class Contract {
         if (!(typeof(contextOrig_0) === 'object' && contextOrig_0.currentQueryContext != undefined)) {
           __compactRuntime.typeError('requestVaccineProof',
                                      'argument 1 (as invoked from Typescript)',
-                                     'vaxzk.compact line 159 char 1',
+                                     'vaxzk.compact line 133 char 1',
                                      'CircuitContext',
                                      contextOrig_0)
         }
         if (!(typeof(req_0) === 'object' && req_0.vaccine.buffer instanceof ArrayBuffer && req_0.vaccine.BYTES_PER_ELEMENT === 1 && req_0.vaccine.length === 20 && req_0.personalId.buffer instanceof ArrayBuffer && req_0.personalId.BYTES_PER_ELEMENT === 1 && req_0.personalId.length === 20 && typeof(req_0.validUntil) === 'bigint' && req_0.validUntil >= 0n && req_0.validUntil <= 340282366920938463463374607431768211455n)) {
           __compactRuntime.typeError('requestVaccineProof',
                                      'argument 1 (argument 2 as invoked from Typescript)',
-                                     'vaxzk.compact line 159 char 1',
+                                     'vaxzk.compact line 133 char 1',
                                      'struct VaccineProofRequest<vaccine: Bytes<20>, personalId: Bytes<20>, validUntil: Uint<0..340282366920938463463374607431768211456>>',
                                      req_0)
         }
@@ -587,14 +587,14 @@ export class Contract {
         if (!(typeof(contextOrig_0) === 'object' && contextOrig_0.currentQueryContext != undefined)) {
           __compactRuntime.typeError('submitVaccineProof',
                                      'argument 1 (as invoked from Typescript)',
-                                     'vaxzk.compact line 176 char 1',
+                                     'vaxzk.compact line 150 char 1',
                                      'CircuitContext',
                                      contextOrig_0)
         }
         if (!(proofReqId_0.buffer instanceof ArrayBuffer && proofReqId_0.BYTES_PER_ELEMENT === 1 && proofReqId_0.length === 32)) {
           __compactRuntime.typeError('submitVaccineProof',
                                      'argument 1 (argument 2 as invoked from Typescript)',
-                                     'vaxzk.compact line 176 char 1',
+                                     'vaxzk.compact line 150 char 1',
                                      'Bytes<32>',
                                      proofReqId_0)
         }
@@ -856,124 +856,6 @@ export class Contract {
                                                                 alignment: _descriptor_13.alignment() }
                                                                 .value
                                                             )) } },
-                                       { ins: { cached: true, n: 1 } }]);
-    __compactRuntime.queryLedgerState(context,
-                                      partialProofData,
-                                      [
-                                       { idx: { cached: false,
-                                                pushPath: true,
-                                                path: [
-                                                       { tag: 'value',
-                                                         value: { value: _descriptor_24.toValue(5n),
-                                                                  alignment: _descriptor_24.alignment() } }] } },
-                                       { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_1.toValue(new Uint8Array([72, 101, 112, 66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])),
-                                                                                              alignment: _descriptor_1.alignment() }).encode() } },
-                                       { push: { storage: true,
-                                                 value: __compactRuntime.StateValue.newNull().encode() } },
-                                       { ins: { cached: false, n: 1 } },
-                                       { ins: { cached: true, n: 1 } }]);
-    __compactRuntime.queryLedgerState(context,
-                                      partialProofData,
-                                      [
-                                       { idx: { cached: false,
-                                                pushPath: true,
-                                                path: [
-                                                       { tag: 'value',
-                                                         value: { value: _descriptor_24.toValue(5n),
-                                                                  alignment: _descriptor_24.alignment() } }] } },
-                                       { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_1.toValue(new Uint8Array([80, 67, 86, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])),
-                                                                                              alignment: _descriptor_1.alignment() }).encode() } },
-                                       { push: { storage: true,
-                                                 value: __compactRuntime.StateValue.newNull().encode() } },
-                                       { ins: { cached: false, n: 1 } },
-                                       { ins: { cached: true, n: 1 } }]);
-    __compactRuntime.queryLedgerState(context,
-                                      partialProofData,
-                                      [
-                                       { idx: { cached: false,
-                                                pushPath: true,
-                                                path: [
-                                                       { tag: 'value',
-                                                         value: { value: _descriptor_24.toValue(5n),
-                                                                  alignment: _descriptor_24.alignment() } }] } },
-                                       { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_1.toValue(new Uint8Array([84, 100, 97, 112, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])),
-                                                                                              alignment: _descriptor_1.alignment() }).encode() } },
-                                       { push: { storage: true,
-                                                 value: __compactRuntime.StateValue.newNull().encode() } },
-                                       { ins: { cached: false, n: 1 } },
-                                       { ins: { cached: true, n: 1 } }]);
-    const tmp_2 = { ownerId: adminId_0,
-                    name:
-                      new Uint8Array([67, 108, 105, 110, 105, 99, 32, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
-                    address:
-                      new Uint8Array([49, 50, 51, 32, 77, 97, 105, 110, 32, 83, 116, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
-                    latitud:
-                      new Uint8Array([45, 50, 51, 46, 53, 57, 57, 48, 50, 54, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
-                    longitud:
-                      new Uint8Array([45, 52, 54, 46, 54, 52, 49, 57, 55, 49, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
-                    isOnline: true };
-    __compactRuntime.queryLedgerState(context,
-                                      partialProofData,
-                                      [
-                                       { idx: { cached: false,
-                                                pushPath: true,
-                                                path: [
-                                                       { tag: 'value',
-                                                         value: { value: _descriptor_24.toValue(4n),
-                                                                  alignment: _descriptor_24.alignment() } }] } },
-                                       { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(new Uint8Array([99, 108, 105, 110, 105, 99, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])),
-                                                                                              alignment: _descriptor_0.alignment() }).encode() } },
-                                       { push: { storage: true,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_12.toValue(tmp_2),
-                                                                                              alignment: _descriptor_12.alignment() }).encode() } },
-                                       { ins: { cached: false, n: 1 } },
-                                       { ins: { cached: true, n: 1 } }]);
-    const tmp_3 = { ownerId: adminId_0,
-                    name:
-                      new Uint8Array([67, 108, 105, 110, 105, 99, 32, 76, 111, 99, 97, 108, 32, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
-                    address:
-                      new Uint8Array([49, 50, 51, 32, 77, 97, 105, 110, 32, 83, 116, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
-                    latitud:
-                      new Uint8Array([45, 50, 51, 46, 53, 57, 57, 48, 50, 54, 51, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
-                    longitud:
-                      new Uint8Array([45, 52, 54, 46, 54, 52, 49, 57, 55, 49, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
-                    isOnline: true };
-    __compactRuntime.queryLedgerState(context,
-                                      partialProofData,
-                                      [
-                                       { idx: { cached: false,
-                                                pushPath: true,
-                                                path: [
-                                                       { tag: 'value',
-                                                         value: { value: _descriptor_24.toValue(4n),
-                                                                  alignment: _descriptor_24.alignment() } }] } },
-                                       { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(new Uint8Array([99, 108, 105, 110, 105, 99, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])),
-                                                                                              alignment: _descriptor_0.alignment() }).encode() } },
-                                       { push: { storage: true,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_12.toValue(tmp_3),
-                                                                                              alignment: _descriptor_12.alignment() }).encode() } },
-                                       { ins: { cached: false, n: 1 } },
-                                       { ins: { cached: true, n: 1 } }]);
-    __compactRuntime.queryLedgerState(context,
-                                      partialProofData,
-                                      [
-                                       { idx: { cached: false,
-                                                pushPath: true,
-                                                path: [
-                                                       { tag: 'value',
-                                                         value: { value: _descriptor_24.toValue(2n),
-                                                                  alignment: _descriptor_24.alignment() } }] } },
-                                       { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(adminId_0),
-                                                                                              alignment: _descriptor_0.alignment() }).encode() } },
-                                       { push: { storage: true,
-                                                 value: __compactRuntime.StateValue.newNull().encode() } },
-                                       { ins: { cached: false, n: 1 } },
                                        { ins: { cached: true, n: 1 } }]);
     state_0.data = new __compactRuntime.ChargedState(context.currentQueryContext.state.state);
     return {
@@ -1354,7 +1236,7 @@ export class Contract {
   _getCertIssuerId_0(context, partialProofData) {
     const newIssuerId_0 = this._persistentHash_1([__compactRuntime.convertBytesToField(32,
                                                                                        new Uint8Array([99, 101, 114, 116, 45, 105, 115, 115, 117, 101, 114, 45, 105, 100, 58, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
-                                                                                       'vaxzk.compact line 99 char 45'),
+                                                                                       'vaxzk.compact line 73 char 45'),
                                                   _descriptor_14.fromValue(__compactRuntime.queryLedgerState(context,
                                                                                                              partialProofData,
                                                                                                              [
@@ -1388,7 +1270,7 @@ export class Contract {
   _getProofReqId_0(context, partialProofData) {
     const newProofReqId_0 = this._persistentHash_1([__compactRuntime.convertBytesToField(32,
                                                                                          new Uint8Array([112, 114, 111, 111, 102, 45, 114, 101, 113, 45, 105, 100, 58, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
-                                                                                         'vaxzk.compact line 107 char 45'),
+                                                                                         'vaxzk.compact line 81 char 45'),
                                                     _descriptor_14.fromValue(__compactRuntime.queryLedgerState(context,
                                                                                                                partialProofData,
                                                                                                                [
@@ -2763,7 +2645,7 @@ export const pureCircuits = {
     if (!(id_0.buffer instanceof ArrayBuffer && id_0.BYTES_PER_ELEMENT === 1 && id_0.length === 32)) {
       __compactRuntime.typeError('getShieldedId',
                                  'argument 1',
-                                 'vaxzk.compact line 92 char 1',
+                                 'vaxzk.compact line 66 char 1',
                                  'Bytes<32>',
                                  id_0)
     }
