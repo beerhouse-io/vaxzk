@@ -12480,94 +12480,7 @@ perfect harmony.`,
             tryDifferentSearch: `Try a different search term`,
             noClinicsRegistered: `No clinics have been registered yet`,
             needHelpFinding: `Need help finding a clinic?`,
-            contactLocalHealth: `Contact your local health authority for the most up-to-date information about vaccination centers.`,
-            cancel: `Cancel`,
-            online: `Online`,
-            unnamed: `Unnamed`,
-            coordinates: `Coordinates:`,
-            issuerLabel: `Issuer:`,
-            noIssuerRegistered: `No issuer registered`,
-            reqIdLabel: `Req ID:`,
-            errConnectContract: `Failed to connect to the contract`,
-            inviteLinkCreated: `Invitation link created!`,
-            inviteLinkStoredDesc: `Share this link securely with the intended recipient.`,
-            copyLink: `Copy link`,
-            removeAdminTitle: `Remove my admin access`,
-            removeAdminDesc: `Remove your admin permissions from the blockchain. This action cannot be undone.`,
-            adminAccessRemoved: `Admin access removed successfully!`,
-            errCreateInvite: `Failed to create invite: `,
-            errRemoveAdmin: `Failed to remove admin: `,
-            deploySuccessDesc: `This address is stored in your browser. All views will use it automatically on the next page load.`,
-            copyAddress: `Copy address`,
-            totalVaccinesRegistered: `Total Vaccines Registered`,
-            activeAdmins: `Active Admins`,
-            activeVerifierOwners: `Active Verifier Owners`,
-            totalClinicsMetric: `Total Clinics`,
-            pendingAdminInvites: `Pending Admin Invites`,
-            pendingVerifierInvites: `Pending Verifier Invites`,
-            issuersAdminTitleEnd: `Certificate Issuers`,
-            issuersAdminSubtitle: `Register and review the organizations authorized to issue vaccine certificates.`,
-            addIssuer: `Add Issuer`,
-            addingIssuer: `Adding Issuer...`,
-            vaccinationCertIssuers: `Vaccination Certificate Issuers`,
-            loadingIssuers: `Loading issuers...`,
-            noIssuersRegistered: `No issuers registered yet.`,
-            addCertIssuerTitle: `Add Certificate Issuer`,
-            addIssuerInfo: `To register a certificate issuer, contact the vaccine certificate provider/issuer to obtain their details (name, service URI, verification endpoint, and public key).`,
-            issuerName: `Issuer Name`,
-            issuerUri: `Issuer URI`,
-            verificationEndpoint: `Verification Endpoint`,
-            verificationEndpointDesc: `URL used by administrative agents or personnel to verify the authenticity of a vaccination certificate.`,
-            publicKey: `Public Key`,
-            issuerNamePlaceholder: `e.g. National Health Authority`,
-            issuerUriPlaceholder: `e.g. https://issuer.example.com`,
-            issuerVerifEndpointPlaceholder: `e.g. https://issuer.example.com/verify`,
-            issuerKeyPlaceholder: `Public key provided by the issuer`,
-            issuerShieldedId: `Issuer Shielded Id:`,
-            signaturePubKey: `Signature Public Key:`,
-            uriLabel: `URI:`,
-            verificationEndpointLabel: `Verification Endpoint:`,
-            clinicsTitleEnd: `Clinics`,
-            manageClinicsSubtitle: `Register your clinics on-chain and view all currently registered clinics.`,
-            registerNewClinic: `Register New Clinic`,
-            clinicName: `Clinic Name`,
-            clinicAddress: `Address`,
-            latitude: `Latitude`,
-            longitude: `Longitude`,
-            clinicNamePlaceholder: `e.g. City Health Clinic`,
-            addressPlaceholder: `e.g. 123 Main St, Springfield`,
-            latitudePlaceholder: `e.g. -23.5990263`,
-            longitudePlaceholder: `e.g. -46.6419712`,
-            onlineClinic: `Online clinic (offers remote/telehealth services)`,
-            registering: `Registering...`,
-            registerClinic: `Register Clinic`,
-            loadingClinics: `Loading clinics...`,
-            noClinicsOnChain: `No clinics registered on-chain yet.`,
-            clinicShieldedId: `Clinic Shielded ID:`,
-            ownerShieldedId: `Owner Shielded ID:`,
-            vaccineProofRequests: `Vaccine Proof Requests`,
-            newRequest: `New Request`,
-            loadingProofRequests: `Loading proof requests...`,
-            noProofRequestsYet: `No proof requests on-chain yet.`,
-            submitted: `Submitted`,
-            newVaccineProofRequest: `New Vaccine Proof Request`,
-            vaccineLabel: `Vaccine`,
-            loadingVaccines: `Loading vaccines...`,
-            noVaccinesRegistered: `No vaccines registered`,
-            selectVaccine: `Select a vaccine...`,
-            patientId: `Patient ID`,
-            validUntilLabel: `Valid Until`,
-            requesting: `Requesting...`,
-            requestVaccineProofBtn: `Request Vaccine Proof`,
-            errRequestVaccineProof: `Failed to request vaccine proof: `,
-            patientIdPlaceholder: `e.g. PASSPORT-001`,
-            myProofsTitleStart: `My`,
-            myProofsTitleEnd: `Vaccine Proofs`,
-            vaccineProofsSubtitle: `View and submit your vaccine proof requests.`,
-            submitting: `Submitting…`,
-            submitProof: `Submit Proof`,
-            errNoIssuerFound: `No registered issuer found.`,
-            errSubmitProof: `Failed to submit proof: `
+            contactLocalHealth: `Contact your local health authority for the most up-to-date information about vaccination centers.`
         },
         pt: {
             tagline: `Seu passaporte de imunização, sempre com você.`,
@@ -12698,9 +12611,9 @@ perfeita harmonia.`,
             accessAddAdminTitle: `Adicionar um novo Admin`,
             accessAddAdminLink: `Criar link de convite`,
             accessAddAdminDesc: `Crie um link de convite e envie para o usuario se tornar admin.`,
-            accessAddClinicTitle: `Adicionar uma nova Clínica`,
-            accessAddAClinicLink: `Criar link de convite`,
-            accessAddClinicDesc: `Crie um link de convite e envie para o usuário se tornar uma clínica.`,
+            accessAddClinicTitle: `Add a new Clinic`,
+            accessAddAClinicLink: `Create invitation link`,
+            accessAddClinicDesc: `Create an invitation link and send it to the user to become an clinic.`,
             removeAccess: `Remover meu acesso de admin`,
             listClinicsTitle: `Lista de Clínicas`,
             listClinicsSubtitle: `Encontre centros de vacinacao autorizados perto de voce`,
@@ -12712,94 +12625,7 @@ perfeita harmonia.`,
             tryDifferentSearch: `Tente um termo de busca diferente`,
             noClinicsRegistered: `Nenhuma clinica foi cadastrada ainda`,
             needHelpFinding: `Precisa de ajuda para encontrar uma clinica?`,
-            contactLocalHealth: `Entre em contato com a autoridade de saude local para informacoes atualizadas sobre centros de vacinacao.`,
-            cancel: `Cancelar`,
-            online: `Online`,
-            unnamed: `Sem nome`,
-            coordinates: `Coordenadas:`,
-            issuerLabel: `Emissor:`,
-            noIssuerRegistered: `Nenhum emissor registrado`,
-            reqIdLabel: `ID Req:`,
-            errConnectContract: `Falha ao conectar ao contrato`,
-            inviteLinkCreated: `Link de convite criado!`,
-            inviteLinkStoredDesc: `Compartilhe este link com segurança com o destinatário.`,
-            copyLink: `Copiar link`,
-            removeAdminTitle: `Remover meu acesso de admin`,
-            removeAdminDesc: `Remova suas permissões de admin da blockchain. Esta ação não pode ser desfeita.`,
-            adminAccessRemoved: `Acesso de admin removido com sucesso!`,
-            errCreateInvite: `Erro ao criar convite: `,
-            errRemoveAdmin: `Erro ao remover admin: `,
-            deploySuccessDesc: `Este endereço está salvo no seu navegador. Todas as visualizações o usarão automaticamente no próximo carregamento.`,
-            copyAddress: `Copiar endereço`,
-            totalVaccinesRegistered: `Total de Vacinas Cadastradas`,
-            activeAdmins: `Admins Ativos`,
-            activeVerifierOwners: `Proprietários Ativos`,
-            totalClinicsMetric: `Total de Clínicas`,
-            pendingAdminInvites: `Convites de Admin Pendentes`,
-            pendingVerifierInvites: `Convites de Clínica Pendentes`,
-            issuersAdminTitleEnd: `Emissores de Certificado`,
-            issuersAdminSubtitle: `Cadastre e revise as organizações autorizadas a emitir certificados de vacinação.`,
-            addIssuer: `Adicionar Emissor`,
-            addingIssuer: `Adicionando Emissor...`,
-            vaccinationCertIssuers: `Emissores de Certificado de Vacinação`,
-            loadingIssuers: `Carregando emissores...`,
-            noIssuersRegistered: `Nenhum emissor cadastrado ainda.`,
-            addCertIssuerTitle: `Adicionar Emissor de Certificado`,
-            addIssuerInfo: `Para registrar um emissor de certificado, entre em contato com o provedor/emissor do certificado de vacina para obter os detalhes (nome, URI do serviço, endpoint de verificação e chave pública).`,
-            issuerName: `Nome do Emissor`,
-            issuerUri: `URI do Emissor`,
-            verificationEndpoint: `Endpoint de Verificação`,
-            verificationEndpointDesc: `URL usada por agentes ou pessoal administrativo para verificar a autenticidade de um certificado de vacinação.`,
-            publicKey: `Chave Pública`,
-            issuerNamePlaceholder: `Ex: Autoridade Nacional de Saúde`,
-            issuerUriPlaceholder: `Ex: https://emissor.exemplo.com`,
-            issuerVerifEndpointPlaceholder: `Ex: https://emissor.exemplo.com/verificar`,
-            issuerKeyPlaceholder: `Chave pública fornecida pelo emissor`,
-            issuerShieldedId: `ID Blindado do Emissor:`,
-            signaturePubKey: `Chave Pública de Assinatura:`,
-            uriLabel: `URI:`,
-            verificationEndpointLabel: `Endpoint de Verificação:`,
-            clinicsTitleEnd: `Clínicas`,
-            manageClinicsSubtitle: `Cadastre suas clínicas na blockchain e veja todas as clínicas registradas.`,
-            registerNewClinic: `Registrar Nova Clínica`,
-            clinicName: `Nome da Clínica`,
-            clinicAddress: `Endereço`,
-            latitude: `Latitude`,
-            longitude: `Longitude`,
-            clinicNamePlaceholder: `Ex: UBS Centro de Saúde`,
-            addressPlaceholder: `Ex: Rua Principal, 123, São Paulo`,
-            latitudePlaceholder: `Ex: -23.5990263`,
-            longitudePlaceholder: `Ex: -46.6419712`,
-            onlineClinic: `Clínica online (oferece serviços remotos/telesaúde)`,
-            registering: `Registrando...`,
-            registerClinic: `Registrar Clínica`,
-            loadingClinics: `Carregando clínicas...`,
-            noClinicsOnChain: `Nenhuma clínica cadastrada na blockchain ainda.`,
-            clinicShieldedId: `ID Blindado da Clínica:`,
-            ownerShieldedId: `ID Blindado do Proprietário:`,
-            vaccineProofRequests: `Solicitações de Prova de Vacina`,
-            newRequest: `Nova Solicitação`,
-            loadingProofRequests: `Carregando solicitações de prova...`,
-            noProofRequestsYet: `Nenhuma solicitação de prova na blockchain ainda.`,
-            submitted: `Enviada`,
-            newVaccineProofRequest: `Nova Solicitação de Prova de Vacina`,
-            vaccineLabel: `Vacina`,
-            loadingVaccines: `Carregando vacinas...`,
-            noVaccinesRegistered: `Nenhuma vacina cadastrada`,
-            selectVaccine: `Selecione uma vacina...`,
-            patientId: `ID do Paciente`,
-            validUntilLabel: `Válido Até`,
-            requesting: `Solicitando...`,
-            requestVaccineProofBtn: `Solicitar Prova de Vacina`,
-            errRequestVaccineProof: `Falha ao solicitar prova de vacina: `,
-            patientIdPlaceholder: `Ex: PASSAPORTE-001`,
-            myProofsTitleStart: `Minhas`,
-            myProofsTitleEnd: `Provas de Vacina`,
-            vaccineProofsSubtitle: `Veja e envie suas solicitações de prova de vacina.`,
-            submitting: `Enviando…`,
-            submitProof: `Enviar Prova`,
-            errNoIssuerFound: `Nenhum emissor registrado encontrado.`,
-            errSubmitProof: `Falha ao enviar prova: `
+            contactLocalHealth: `Entre em contato com a autoridade de saude local para informacoes atualizadas sobre centros de vacinacao.`
         },
         es: {
             tagline: `Tu pasaporte de inmunización, siempre contigo.`,
@@ -12895,7 +12721,7 @@ perfecta armonía.`,
             optional: `opcional`,
             applicationLocation: `Lugar de Aplicación`,
             locationPlaceholder: `Ej: Clínica Central, Farmacia Popular...`,
-            locationTip: `Consejo: Use el nombre oficial del centro de salud o clínica para un mejor seguimiento.`,
+            locationTip: `Consejo: Use o nome oficial do posto de saúde ou clínica para melhor rastreio.`,
             secureRegistry: `Registro Seguro`,
             secureRegistryDesc: `Su información de salud está cifrada y se utiliza únicamente para su control personal de inmunización.`,
             saveRegistry: `Guardar Registro`,
@@ -12925,14 +12751,14 @@ perfecta armonía.`,
             vaccinesList: `Vacunas Registradas`,
             add: `Agregar`,
             loading: `Procesando...`,
-            accessAdminTitleEnd: `Accesos`,
-            accessAdminSubtitle: `Gestionar permisos de usuario`,
-            accessAddAdminTitle: `Agregar un nuevo Admin`,
+            accessAdminTitleEnd: `Acessos`,
+            accessAdminSubtitle: `Gerencie as permissoes dos usuarios`,
+            accessAddAdminTitle: `Adicionar um novo Admin`,
             accessAddAdminLink: `Crear enlace de invitación`,
             accessAddAdminDesc: `Crea un enlace de invitación y envíalo al usuario para que se convierta en administrador.`,
-            accessAddClinicTitle: `Agregar una nueva Clínica`,
-            accessAddAClinicLink: `Crear enlace de invitación`,
-            accessAddClinicDesc: `Crea un enlace de invitación y envíalo al usuario para que se convierta en clínica.`,
+            accessAddClinicTitle: `Add a new Clinic`,
+            accessAddAClinicLink: `Create invitation link`,
+            accessAddClinicDesc: `Create an invitation link and send it to the user to become an clinic.`,
             removeAccess: `Retira mi acceso de administrador`,
             listClinicsTitle: `Lista de Clínicas`,
             listClinicsSubtitle: `Encuentra centros de vacunacion autorizados cerca de ti`,
@@ -12944,117 +12770,30 @@ perfecta armonía.`,
             tryDifferentSearch: `Intenta con otro término de búsqueda`,
             noClinicsRegistered: `Aún no hay clínicas registradas`,
             needHelpFinding: `¿Necesitas ayuda para encontrar una clínica?`,
-            contactLocalHealth: `Contacta a tu autoridad de salud local para obtener información actualizada sobre los centros de vacunación.`,
-            cancel: `Cancelar`,
-            online: `En línea`,
-            unnamed: `Sin nombre`,
-            coordinates: `Coordenadas:`,
-            issuerLabel: `Emisor:`,
-            noIssuerRegistered: `Ningún emisor registrado`,
-            reqIdLabel: `ID Sol:`,
-            errConnectContract: `Error al conectar con el contrato`,
-            inviteLinkCreated: `¡Enlace de invitación creado!`,
-            inviteLinkStoredDesc: `Comparta este enlace de forma segura con el destinatario.`,
-            copyLink: `Copiar enlace`,
-            removeAdminTitle: `Retirar mi acceso de administrador`,
-            removeAdminDesc: `Elimina tus permisos de administrador de la blockchain. Esta acción no se puede deshacer.`,
-            adminAccessRemoved: `¡Acceso de administrador eliminado con éxito!`,
-            errCreateInvite: `Error al crear invitación: `,
-            errRemoveAdmin: `Error al eliminar administrador: `,
-            deploySuccessDesc: `Esta dirección está guardada en su navegador. Todas las vistas la usarán automáticamente en la próxima carga.`,
-            copyAddress: `Copiar dirección`,
-            totalVaccinesRegistered: `Total de Vacunas Registradas`,
-            activeAdmins: `Admins Activos`,
-            activeVerifierOwners: `Propietarios Activos`,
-            totalClinicsMetric: `Total de Clínicas`,
-            pendingAdminInvites: `Invitaciones de Admin Pendientes`,
-            pendingVerifierInvites: `Invitaciones de Clínica Pendientes`,
-            issuersAdminTitleEnd: `Emisores de Certificado`,
-            issuersAdminSubtitle: `Registre y revise las organizaciones autorizadas para emitir certificados de vacunación.`,
-            addIssuer: `Agregar Emisor`,
-            addingIssuer: `Agregando Emisor...`,
-            vaccinationCertIssuers: `Emisores de Certificado de Vacunación`,
-            loadingIssuers: `Cargando emisores...`,
-            noIssuersRegistered: `Aún no hay emisores registrados.`,
-            addCertIssuerTitle: `Agregar Emisor de Certificado`,
-            addIssuerInfo: `Para registrar un emisor de certificado, contacte al proveedor/emisor del certificado de vacuna para obtener sus datos (nombre, URI del servicio, endpoint de verificación y clave pública).`,
-            issuerName: `Nombre del Emisor`,
-            issuerUri: `URI del Emisor`,
-            verificationEndpoint: `Endpoint de Verificación`,
-            verificationEndpointDesc: `URL utilizada por agentes o personal administrativo para verificar la autenticidad de un certificado de vacunación.`,
-            publicKey: `Clave Pública`,
-            issuerNamePlaceholder: `Ej: Autoridad Nacional de Salud`,
-            issuerUriPlaceholder: `Ej: https://emisor.ejemplo.com`,
-            issuerVerifEndpointPlaceholder: `Ej: https://emisor.ejemplo.com/verificar`,
-            issuerKeyPlaceholder: `Clave pública proporcionada por el emisor`,
-            issuerShieldedId: `ID Blindado del Emisor:`,
-            signaturePubKey: `Clave Pública de Firma:`,
-            uriLabel: `URI:`,
-            verificationEndpointLabel: `Endpoint de Verificación:`,
-            clinicsTitleEnd: `Clínicas`,
-            manageClinicsSubtitle: `Registre sus clínicas en la blockchain y vea todas las clínicas actualmente registradas.`,
-            registerNewClinic: `Registrar Nueva Clínica`,
-            clinicName: `Nombre de la Clínica`,
-            clinicAddress: `Dirección`,
-            latitude: `Latitud`,
-            longitude: `Longitud`,
-            clinicNamePlaceholder: `Ej: Clínica de Salud Ciudad`,
-            addressPlaceholder: `Ej: Calle Principal 123, Ciudad`,
-            latitudePlaceholder: `Ej: -23.5990263`,
-            longitudePlaceholder: `Ej: -46.6419712`,
-            onlineClinic: `Clínica en línea (ofrece servicios remotos/telesalud)`,
-            registering: `Registrando...`,
-            registerClinic: `Registrar Clínica`,
-            loadingClinics: `Cargando clínicas...`,
-            noClinicsOnChain: `Aún no hay clínicas registradas en la blockchain.`,
-            clinicShieldedId: `ID Blindado de la Clínica:`,
-            ownerShieldedId: `ID Blindado del Propietario:`,
-            vaccineProofRequests: `Solicitudes de Prueba de Vacuna`,
-            newRequest: `Nueva Solicitud`,
-            loadingProofRequests: `Cargando solicitudes de prueba...`,
-            noProofRequestsYet: `Aún no hay solicitudes de prueba en la blockchain.`,
-            submitted: `Enviada`,
-            newVaccineProofRequest: `Nueva Solicitud de Prueba de Vacuna`,
-            vaccineLabel: `Vacuna`,
-            loadingVaccines: `Cargando vacunas...`,
-            noVaccinesRegistered: `No hay vacunas registradas`,
-            selectVaccine: `Seleccione una vacuna...`,
-            patientId: `ID del Paciente`,
-            validUntilLabel: `Válido Hasta`,
-            requesting: `Solicitando...`,
-            requestVaccineProofBtn: `Solicitar Prueba de Vacuna`,
-            errRequestVaccineProof: `Error al solicitar prueba de vacuna: `,
-            patientIdPlaceholder: `Ej: PASAPORTE-001`,
-            myProofsTitleStart: `Mis`,
-            myProofsTitleEnd: `Pruebas de Vacuna`,
-            vaccineProofsSubtitle: `Vea y envíe sus solicitudes de prueba de vacuna.`,
-            submitting: `Enviando…`,
-            submitProof: `Enviar Prueba`,
-            errNoIssuerFound: `No se encontró ningún emisor registrado.`,
-            errSubmitProof: `Error al enviar prueba: `
+            contactLocalHealth: `Contacta a tu autoridad de salud local para obtener información actualizada sobre los centros de vacunación.`
         }
     }, ul = (0, F.createContext)({
         language: `en`,
         setLanguage: ()=>{},
-        i18n: ll.en
+        t: ll.en
     }), dl = ({ children: e })=>{
         let [t, n] = (0, F.useState)(`en`);
         return (0, b.jsx)(ul.Provider, {
             value: {
                 language: t,
                 setLanguage: n,
-                i18n: ll[t]
+                t: ll[t]
             },
             children: e
         });
     }, fl = ()=>(0, F.useContext)(ul), pl = `preprod`, ml = `https://preprod.vaxzk.com.br`;
     function hl() {
-        return `51a783f1146d9757150e7812b8a2be15593d7337d89559f35bbefb5d7b95b713`;
+        return `228c6562bc105f8554275e7f72fbb9d61de2fe5a93c85e9c8dfbd2d2b7d6103f`;
     }
     var gl = (()=>{
         if (window.midnight) return Object.values(window.midnight).find((e)=>!!e && typeof e == `object` && `apiVersion` in e);
     })(), _l = ({ onLoginSuccess: e })=>{
-        let { i18n: t } = fl(), [n, r] = (0, F.useState)(`idle`), [i, a] = (0, F.useState)(null);
+        let { t } = fl(), [n, r] = (0, F.useState)(`idle`), [i, a] = (0, F.useState)(null);
         return (0, b.jsxs)(`div`, {
             className: `bg-surface text-on-surface min-h-screen flex flex-col items-center justify-between hero-gradient overflow-hidden w-full`,
             children: [
@@ -66305,7 +66044,7 @@ ${h(e)}
             className: `w-full h-32 rounded-lg mt-3 overflow-hidden`
         });
     }, oPe = ({ vaxApi: e })=>{
-        let { i18n: t } = fl(), [n, r] = (0, F.useState)([]), [i, a] = (0, F.useState)(``);
+        let { t } = fl(), [n, r] = (0, F.useState)([]), [i, a] = (0, F.useState)(``);
         (0, F.useEffect)(()=>{
             if (!e) return;
             let t;
@@ -67482,40 +67221,40 @@ ${h(e)}
     });
     D7.displayName = `QRCodeSVG`;
     var O7 = ({ connectedApi: e })=>{
-        let { i18n: t } = fl(), [n, r] = (0, F.useState)([]), [i, a] = (0, F.useState)([]), [o, s] = (0, F.useState)(!0), [c, l] = (0, F.useState)(null), [u, d] = (0, F.useState)(null), [f, p] = (0, F.useState)(null);
+        let [t, n] = (0, F.useState)([]), [r, i] = (0, F.useState)([]), [a, o] = (0, F.useState)(!0), [s, c] = (0, F.useState)(null), [l, u] = (0, F.useState)(null), [d, f] = (0, F.useState)(null);
         (0, F.useEffect)(()=>{
             let t;
-            async function n() {
-                let n = hl();
-                if (!(!e || !n)) try {
-                    let i = await c7(e, pl), o = new Uint8Array(32), c = await s7.join(i, n, o);
-                    p(c), t = c.state$.subscribe((e)=>{
-                        r(e.issuers), a(e.vaccineProofReqs), s(!1);
+            async function r() {
+                let r = hl();
+                if (!(!e || !r)) try {
+                    let a = await c7(e, pl), s = new Uint8Array(32), c = await s7.join(a, r, s);
+                    f(c), t = c.state$.subscribe((e)=>{
+                        n(e.issuers), i(e.vaccineProofReqs), o(!1);
                     });
                 } catch (e) {
-                    console.error(`Failed to join contract:`, e), s(!1);
+                    console.error(`Failed to join contract:`, e), o(!1);
                 }
             }
-            return n(), ()=>{
+            return r(), ()=>{
                 t && t.unsubscribe();
             };
         }, [
             e
         ]);
-        let m = async (e)=>{
-            if (!f) return;
-            let r = n[0];
-            if (!r) {
-                d(t.errNoIssuerFound);
+        let p = async (e)=>{
+            if (!d) return;
+            let n = t[0];
+            if (!n) {
+                u(`No registered issuer found.`);
                 return;
             }
-            l(F6(e.id)), d(null);
+            c(F6(e.id)), u(null);
             try {
-                await f.submitVaccineProof(e.id, r.id, e.vaccine, e.personalId);
+                await d.submitVaccineProof(e.id, n.id, e.vaccine, e.personalId);
             } catch (e) {
-                console.error(`Failed to submit vaccine proof:`, e), d(t.errSubmitProof + (e instanceof Error ? e.message : String(e)));
+                console.error(`Failed to submit vaccine proof:`, e), u(e instanceof Error ? `Failed to submit proof: ` + e.message : String(e));
             } finally{
-                l(null);
+                c(null);
             }
         };
         return (0, b.jsxs)(`main`, {
@@ -67529,23 +67268,22 @@ ${h(e)}
                             children: [
                                 (0, b.jsx)(`span`, {
                                     className: `text-primary`,
-                                    children: t.myProofsTitleStart
+                                    children: `My`
                                 }),
-                                ` `,
-                                t.myProofsTitleEnd
+                                ` Vaccine Proofs`
                             ]
                         }),
                         (0, b.jsx)(`p`, {
                             className: `text-on-surface-variant text-lg leading-relaxed`,
-                            children: t.vaccineProofsSubtitle
+                            children: `View and submit your vaccine proof requests.`
                         })
                     ]
                 }),
-                u && (0, b.jsx)(`p`, {
+                l && (0, b.jsx)(`p`, {
                     className: `text-error text-sm mb-6 px-1`,
-                    children: u
+                    children: l
                 }),
-                o ? (0, b.jsxs)(`div`, {
+                a ? (0, b.jsxs)(`div`, {
                     className: `flex items-center gap-2 text-on-surface-variant text-sm py-8`,
                     children: [
                         (0, b.jsx)(`span`, {
@@ -67553,10 +67291,10 @@ ${h(e)}
                             children: `sync`
                         }),
                         (0, b.jsx)(`span`, {
-                            children: t.loadingProofRequests
+                            children: `Loading proof requests...`
                         })
                     ]
-                }) : i.length === 0 ? (0, b.jsxs)(`div`, {
+                }) : r.length === 0 ? (0, b.jsxs)(`div`, {
                     className: `bg-surface-container-low p-12 rounded-xl border border-dashed border-slate-200 text-center`,
                     children: [
                         (0, b.jsx)(`span`, {
@@ -67565,20 +67303,20 @@ ${h(e)}
                         }),
                         (0, b.jsx)(`p`, {
                             className: `text-on-surface-variant italic`,
-                            children: t.noProofRequestsYet
+                            children: `No proof requests on-chain yet.`
                         })
                     ]
                 }) : (0, b.jsx)(`div`, {
                     className: `space-y-4`,
-                    children: i.map((e)=>{
-                        let r = F6(e.id), i = new TextDecoder().decode(e.vaccine).replace(/\0/g, ``).trim(), a = new TextDecoder().decode(e.personalId).replace(/\0/g, ``).trim(), o = c === r, s = n[0], l = s ? `${s.name} (${F6(s.id).slice(0, 16)}…)` : t.noIssuerRegistered;
+                    children: r.map((e)=>{
+                        let n = F6(e.id), r = new TextDecoder().decode(e.vaccine).replace(/\0/g, ``).trim(), i = new TextDecoder().decode(e.personalId).replace(/\0/g, ``).trim(), a = s === n, o = t[0], c = o ? `${o.name} (${F6(o.id).slice(0, 16)}…)` : `No issuer registered`;
                         return (0, b.jsxs)(`div`, {
                             className: `bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex flex-row items-center gap-6`,
                             children: [
                                 (0, b.jsx)(`div`, {
                                     className: `flex-shrink-0 p-2 bg-white border border-slate-100 rounded-lg`,
                                     children: (0, b.jsx)(D7, {
-                                        value: r,
+                                        value: n,
                                         size: 96
                                     })
                                 }),
@@ -67593,14 +67331,14 @@ ${h(e)}
                                                     children: [
                                                         (0, b.jsx)(`span`, {
                                                             className: `text-primary`,
-                                                            children: i
+                                                            children: r
                                                         }),
                                                         (0, b.jsxs)(`span`, {
                                                             className: `text-on-surface-variant font-normal`,
                                                             children: [
                                                                 ` `,
                                                                 `· `,
-                                                                a
+                                                                i
                                                             ]
                                                         })
                                                     ]
@@ -67608,20 +67346,19 @@ ${h(e)}
                                                 (0, b.jsxs)(`p`, {
                                                     className: `text-xs text-on-surface-variant font-mono`,
                                                     children: [
-                                                        t.reqIdLabel,
-                                                        ` `,
-                                                        r.slice(0, 16),
+                                                        `Req ID: `,
+                                                        n.slice(0, 16),
                                                         `…`
                                                     ]
                                                 }),
                                                 (0, b.jsxs)(`p`, {
                                                     className: `text-xs text-on-surface-variant`,
                                                     children: [
-                                                        t.issuerLabel,
+                                                        `Issuer:`,
                                                         ` `,
                                                         (0, b.jsx)(`span`, {
                                                             className: `font-semibold text-secondary`,
-                                                            children: l
+                                                            children: c
                                                         })
                                                     ]
                                                 })
@@ -67635,21 +67372,21 @@ ${h(e)}
                                                     children: `task_alt`
                                                 }),
                                                 (0, b.jsx)(`span`, {
-                                                    children: t.submitted
+                                                    children: `Submitted`
                                                 })
                                             ]
                                         }) : (0, b.jsx)(`button`, {
                                             className: `px-6 py-3 bg-primary font-bold rounded-lg shadow active:scale-95 transition-all duration-200 disabled:opacity-50 flex items-center gap-2 text-sm`,
-                                            onClick: ()=>m(e),
-                                            disabled: o || !f || !s,
-                                            children: o ? (0, b.jsxs)(b.Fragment, {
+                                            onClick: ()=>p(e),
+                                            disabled: a || !d || !o,
+                                            children: a ? (0, b.jsxs)(b.Fragment, {
                                                 children: [
                                                     (0, b.jsx)(`span`, {
                                                         className: `material-symbols-outlined animate-spin text-base`,
                                                         children: `sync`
                                                     }),
                                                     (0, b.jsx)(`span`, {
-                                                        children: t.submitting
+                                                        children: `Submitting…`
                                                     })
                                                 ]
                                             }) : (0, b.jsxs)(b.Fragment, {
@@ -67659,7 +67396,7 @@ ${h(e)}
                                                         children: `verified`
                                                     }),
                                                     (0, b.jsx)(`span`, {
-                                                        children: t.submitProof
+                                                        children: `Submit Proof`
                                                     })
                                                 ]
                                             })
@@ -67667,7 +67404,7 @@ ${h(e)}
                                     ]
                                 })
                             ]
-                        }, r);
+                        }, n);
                     })
                 })
             ]
@@ -67707,7 +67444,7 @@ ${h(e)}
                 })
             ]
         }), k7 = ({ connectedApi: e, triggerModal: t, onModalTriggered: n })=>{
-        let { i18n: r } = fl(), [i, a] = (0, F.useState)([]), [o, s] = (0, F.useState)(!0), [c, l] = (0, F.useState)([]), [u, d] = (0, F.useState)(!1), [f, p] = (0, F.useState)(null), [m, h] = (0, F.useState)(``), [g, _] = (0, F.useState)(``), [v, y] = (0, F.useState)(``), [x, S] = (0, F.useState)([]), [C, w] = (0, F.useState)(null), [T, E] = (0, F.useState)(!1);
+        let { t: r } = fl(), [i, a] = (0, F.useState)([]), [o, s] = (0, F.useState)(!0), [c, l] = (0, F.useState)([]), [u, d] = (0, F.useState)(!1), [f, p] = (0, F.useState)(null), [m, h] = (0, F.useState)(``), [g, _] = (0, F.useState)(``), [v, y] = (0, F.useState)(``), [x, S] = (0, F.useState)([]), [C, w] = (0, F.useState)(null), [T, E] = (0, F.useState)(!1);
         return (0, F.useEffect)(()=>{
             t === `proofReq` && (p(null), E(!0), n?.());
         }, [
@@ -67722,7 +67459,7 @@ ${h(e)}
                         a(e.issuers), l(e.vaccines), S(e.vaccineProofReqs), s(!1);
                     });
                 } catch (e) {
-                    console.error(`Failed to join contract:`, e), p(r.errConnectContract);
+                    console.error(`Failed to join contract:`, e), p(`Erro ao conectar ao contrato`);
                 }
             }
             return n(), ()=>{
@@ -67764,7 +67501,7 @@ ${h(e)}
                                     children: [
                                         (0, b.jsx)(`h3`, {
                                             className: `text-2xl font-bold`,
-                                            children: r.vaccineProofRequests
+                                            children: `Vaccine Proof Requests`
                                         }),
                                         (0, b.jsxs)(`button`, {
                                             onClick: ()=>{
@@ -67776,7 +67513,7 @@ ${h(e)}
                                                     className: `material-symbols-outlined text-base`,
                                                     children: `add`
                                                 }),
-                                                r.newRequest
+                                                `New Request`
                                             ]
                                         })
                                     ]
@@ -67789,7 +67526,7 @@ ${h(e)}
                                             children: `sync`
                                         }),
                                         (0, b.jsx)(`span`, {
-                                            children: r.loadingProofRequests
+                                            children: `Loading proof requests...`
                                         })
                                     ]
                                 }) : x.length === 0 ? (0, b.jsxs)(`div`, {
@@ -67801,13 +67538,13 @@ ${h(e)}
                                         }),
                                         (0, b.jsx)(`p`, {
                                             className: `text-on-surface-variant italic`,
-                                            children: r.noProofRequestsYet
+                                            children: `No proof requests on-chain yet.`
                                         })
                                     ]
                                 }) : (0, b.jsx)(`div`, {
                                     className: `space-y-4`,
                                     children: x.map((e)=>{
-                                        let t = F6(e.id), n = new TextDecoder().decode(e.vaccine).replace(/\0/g, ``).trim(), a = new TextDecoder().decode(e.personalId).replace(/\0/g, ``).trim(), o = i[0], s = o ? `${o.name} (${F6(o.id).slice(0, 16)}…)` : r.noIssuerRegistered;
+                                        let t = F6(e.id), n = new TextDecoder().decode(e.vaccine).replace(/\0/g, ``).trim(), r = new TextDecoder().decode(e.personalId).replace(/\0/g, ``).trim(), a = i[0], o = a ? `${a.name} (${F6(a.id).slice(0, 16)}…)` : `No issuer registered`;
                                         return (0, b.jsxs)(`div`, {
                                             className: `bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex flex-row items-center gap-6`,
                                             children: [
@@ -67836,7 +67573,7 @@ ${h(e)}
                                                                             children: [
                                                                                 ` `,
                                                                                 `· `,
-                                                                                a
+                                                                                r
                                                                             ]
                                                                         })
                                                                     ]
@@ -67844,8 +67581,7 @@ ${h(e)}
                                                                 (0, b.jsxs)(`p`, {
                                                                     className: `text-xs text-on-surface-variant font-mono`,
                                                                     children: [
-                                                                        r.reqIdLabel,
-                                                                        ` `,
+                                                                        `Req ID: `,
                                                                         t.slice(0, 16),
                                                                         `…`
                                                                     ]
@@ -67853,11 +67589,11 @@ ${h(e)}
                                                                 (0, b.jsxs)(`p`, {
                                                                     className: `text-xs text-on-surface-variant`,
                                                                     children: [
-                                                                        r.issuerLabel,
+                                                                        `Issuer:`,
                                                                         ` `,
                                                                         (0, b.jsx)(`span`, {
                                                                             className: `font-semibold text-secondary`,
-                                                                            children: s
+                                                                            children: o
                                                                         })
                                                                     ]
                                                                 })
@@ -67871,7 +67607,7 @@ ${h(e)}
                                                                     children: `task_alt`
                                                                 }),
                                                                 (0, b.jsx)(`span`, {
-                                                                    children: r.submitted
+                                                                    children: `Submitted`
                                                                 })
                                                             ]
                                                         }) : (0, b.jsxs)(`div`, {
@@ -67882,7 +67618,7 @@ ${h(e)}
                                                                     children: `pending`
                                                                 }),
                                                                 (0, b.jsx)(`span`, {
-                                                                    children: r.pending
+                                                                    children: `Pending`
                                                                 })
                                                             ]
                                                         })
@@ -67897,7 +67633,7 @@ ${h(e)}
                     ]
                 }),
                 T && (0, b.jsxs)(gPe, {
-                    title: r.newVaccineProofRequest,
+                    title: `New Vaccine Proof Request`,
                     onClose: ()=>E(!1),
                     children: [
                         (0, b.jsxs)(`div`, {
@@ -67907,7 +67643,7 @@ ${h(e)}
                                     children: [
                                         (0, b.jsx)(`label`, {
                                             className: `block text-xs font-semibold text-on-surface-variant uppercase tracking-wide mb-1`,
-                                            children: r.vaccineLabel
+                                            children: `Vaccine`
                                         }),
                                         o ? (0, b.jsxs)(`div`, {
                                             className: `flex items-center gap-2 text-on-surface-variant text-sm py-2`,
@@ -67917,7 +67653,7 @@ ${h(e)}
                                                     children: `sync`
                                                 }),
                                                 (0, b.jsx)(`span`, {
-                                                    children: r.loadingVaccines
+                                                    children: `Loading vaccines...`
                                                 })
                                             ]
                                         }) : (0, b.jsxs)(`select`, {
@@ -67928,7 +67664,7 @@ ${h(e)}
                                             children: [
                                                 (0, b.jsx)(`option`, {
                                                     value: ``,
-                                                    children: c.length === 0 ? r.noVaccinesRegistered : r.selectVaccine
+                                                    children: c.length === 0 ? `No vaccines registered` : `Select a vaccine...`
                                                 }),
                                                 c.map((e)=>(0, b.jsx)(`option`, {
                                                         value: e,
@@ -67942,13 +67678,13 @@ ${h(e)}
                                     children: [
                                         (0, b.jsx)(`label`, {
                                             className: `block text-xs font-semibold text-on-surface-variant uppercase tracking-wide mb-1`,
-                                            children: r.patientId
+                                            children: `Patient ID`
                                         }),
                                         (0, b.jsx)(`input`, {
                                             type: `text`,
                                             value: g,
                                             onChange: (e)=>_(e.target.value.slice(0, 20)),
-                                            placeholder: r.patientIdPlaceholder,
+                                            placeholder: `e.g. PASSPORT-001`,
                                             maxLength: 20,
                                             className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-tertiary`
                                         })
@@ -67958,7 +67694,7 @@ ${h(e)}
                                     children: [
                                         (0, b.jsx)(`label`, {
                                             className: `block text-xs font-semibold text-on-surface-variant uppercase tracking-wide mb-1`,
-                                            children: r.validUntilLabel
+                                            children: `Valid Until`
                                         }),
                                         (0, b.jsx)(`input`, {
                                             type: `date`,
@@ -67981,7 +67717,7 @@ ${h(e)}
                                     className: `px-5 py-2.5 rounded-lg border border-slate-200 text-on-surface-variant text-sm font-semibold hover:bg-slate-50 transition-colors`,
                                     onClick: ()=>E(!1),
                                     disabled: u,
-                                    children: r.cancel
+                                    children: `Cancel`
                                 }),
                                 (0, b.jsx)(`button`, {
                                     className: `px-6 py-2.5 bg-tertiary font-bold rounded-lg shadow active:scale-95 transition-all duration-200 disabled:opacity-50 flex items-center gap-2 text-sm`,
@@ -68000,7 +67736,7 @@ ${h(e)}
                                                     validUntil: o
                                                 }), h(``), _(``), y(``), E(!1);
                                             } catch (e) {
-                                                console.error(`Failed to request vaccine proof:`, e), p(r.errRequestVaccineProof + (e instanceof Error ? e.message : String(e)));
+                                                console.error(`Failed to request vaccine proof:`, e), e instanceof Error ? p(`Erro ao solicitar prova de vacina: ` + e.message) : p(`Erro ao solicitar prova de vacina: ` + String(e));
                                             } finally{
                                                 d(!1);
                                             }
@@ -68014,7 +67750,7 @@ ${h(e)}
                                                 children: `sync`
                                             }),
                                             (0, b.jsx)(`span`, {
-                                                children: r.requesting
+                                                children: `Requesting...`
                                             })
                                         ]
                                     }) : (0, b.jsxs)(b.Fragment, {
@@ -68024,7 +67760,7 @@ ${h(e)}
                                                 children: `assignment`
                                             }),
                                             (0, b.jsx)(`span`, {
-                                                children: r.requestVaccineProofBtn
+                                                children: `Request Vaccine Proof`
                                             })
                                         ]
                                     })
@@ -68066,7 +67802,7 @@ ${h(e)}
         return M7.randomUUID && !t && !e ? M7.randomUUID() : bPe(e, t, n);
     }
     var xPe = ({ vaxApi: e })=>{
-        let { i18n: t } = fl(), [n, r] = (0, F.useState)(!1), [i, a] = (0, F.useState)(!1), [o, s] = (0, F.useState)(null), [c, l] = (0, F.useState)(null), [u, d] = (0, F.useState)(null), [f, p] = (0, F.useState)(null), [m, h] = (0, F.useState)(null), [g, _] = (0, F.useState)(!1);
+        let { t } = fl(), [n, r] = (0, F.useState)(!1), [i, a] = (0, F.useState)(!1), [o, s] = (0, F.useState)(null), [c, l] = (0, F.useState)(null), [u, d] = (0, F.useState)(null), [f, p] = (0, F.useState)(null), [m, h] = (0, F.useState)(null), [g, _] = (0, F.useState)(!1);
         return (0, b.jsxs)(`main`, {
             className: `pt-24 pb-32 px-6 max-w-screen-xl mx-auto`,
             children: [
@@ -68103,14 +67839,14 @@ ${h(e)}
                             children: t.accessAddAdminDesc
                         }),
                         (0, b.jsxs)(`form`, {
-                            onSubmit: async (n)=>{
-                                if (n.preventDefault(), e) {
+                            onSubmit: async (t)=>{
+                                if (t.preventDefault(), e) {
                                     r(!0), s(null), p(``);
                                     try {
                                         let t = N7(), n = await e.registerInvite(`admin`, t);
                                         console.log(`txData`, n), p(ml + `/#/invite?role=admin&code=` + t);
                                     } catch (e) {
-                                        console.error(`Failed to add vaccine:`, e), e instanceof Error ? s(t.errCreateInvite + e.message) : s(t.errCreateInvite + String(e));
+                                        console.error(`Failed to add vaccine:`, e), e instanceof Error ? s(`Erro ao criar um novo convite: ` + e.message) : s(`Erro ao criar um novo convite: ` + String(e));
                                     } finally{
                                         r(!1);
                                     }
@@ -68159,13 +67895,13 @@ ${h(e)}
                                                     children: `check_circle`
                                                 }),
                                                 (0, b.jsx)(`span`, {
-                                                    children: t.inviteLinkCreated
+                                                    children: `Contract deployed & saved!`
                                                 })
                                             ]
                                         }),
                                         (0, b.jsx)(`p`, {
                                             className: `text-xs text-green-800/70`,
-                                            children: t.inviteLinkStoredDesc
+                                            children: `This address is stored in your browser. All views will use it automatically on the next page load.`
                                         }),
                                         (0, b.jsxs)(`div`, {
                                             className: `flex items-center gap-2 bg-white border border-green-100 rounded-lg px-4 py-3`,
@@ -68180,7 +67916,7 @@ ${h(e)}
                                                 }),
                                                 (0, b.jsx)(`button`, {
                                                     type: `button`,
-                                                    title: t.copyLink,
+                                                    title: `Copy address`,
                                                     className: `shrink-0 p-1 rounded hover:bg-green-100 transition-colors`,
                                                     onClick: ()=>navigator.clipboard.writeText(f),
                                                     children: (0, b.jsx)(`span`, {
@@ -68208,14 +67944,14 @@ ${h(e)}
                             children: t.accessAddClinicDesc
                         }),
                         (0, b.jsxs)(`form`, {
-                            onSubmit: async (n)=>{
-                                if (n.preventDefault(), e) {
+                            onSubmit: async (t)=>{
+                                if (t.preventDefault(), e) {
                                     r(!0), l(null), h(``);
                                     try {
                                         let t = N7(), n = await e.registerInvite(`clinic`, t);
                                         console.log(`txData`, n), h(ml + `/#/invite?role=clinic&code=` + t);
                                     } catch (e) {
-                                        console.error(`Failed to add vaccine:`, e), e instanceof Error ? l(t.errCreateInvite + e.message) : l(t.errCreateInvite + String(e));
+                                        console.error(`Failed to add vaccine:`, e), e instanceof Error ? l(`Erro ao criar um novo convite: ` + e.message) : l(`Erro ao criar um novo convite: ` + String(e));
                                     } finally{
                                         r(!1);
                                     }
@@ -68309,11 +68045,11 @@ ${h(e)}
                     children: [
                         (0, b.jsx)(`h3`, {
                             className: `text-lg font-semibold text-red-600 mb-4`,
-                            children: t.removeAdminTitle
+                            children: `Remover meu acesso de admin`
                         }),
                         (0, b.jsx)(`p`, {
                             className: `text-on-surface-variant text-sm mb-4`,
-                            children: t.removeAdminDesc
+                            children: `Remova suas permissoes de admin da blockchain. Esta acao nao pode ser desfeita.`
                         }),
                         (0, b.jsxs)(`div`, {
                             className: `flex flex-col gap-4`,
@@ -68327,7 +68063,7 @@ ${h(e)}
                                             try {
                                                 await e.revokeAdmin(), _(!0);
                                             } catch (e) {
-                                                console.error(`Failed to remove admin:`, e), e instanceof Error ? d(t.errRemoveAdmin + e.message) : d(t.errRemoveAdmin + String(e));
+                                                console.error(`Failed to remove admin:`, e), e instanceof Error ? d(`Erro ao remover admin: ` + e.message) : d(`Erro ao remover admin: ` + String(e));
                                             } finally{
                                                 a(!1);
                                             }
@@ -68372,7 +68108,7 @@ ${h(e)}
                                                 children: `check_circle`
                                             }),
                                             (0, b.jsx)(`span`, {
-                                                children: t.adminAccessRemoved
+                                                children: `Admin acesso removido com sucesso!`
                                             })
                                         ]
                                     })
@@ -68384,20 +68120,20 @@ ${h(e)}
             ]
         });
     }, P7 = ({ vaxApi: e })=>{
-        let { i18n: t } = fl(), [n, r] = (0, F.useState)(0n), [i, a] = (0, F.useState)(0n), [o, s] = (0, F.useState)(0n), [c, l] = (0, F.useState)(0), [u, d] = (0, F.useState)(0), [f, p] = (0, F.useState)(0n);
+        let [t, n] = (0, F.useState)(0n), [r, i] = (0, F.useState)(0n), [a, o] = (0, F.useState)(0n), [s, c] = (0, F.useState)(0), [l, u] = (0, F.useState)(0), [d, f] = (0, F.useState)(0n);
         return (0, F.useEffect)(()=>{
             if (!e) return;
             let t;
-            async function n() {
+            async function r() {
                 try {
                     t = e.state$.subscribe((e)=>{
-                        r(e.totalAdmin), a(e.totalInviteAdmin), s(e.totalInviteClinic), l(e.totalClinics), d(e.totalVaccines), p(e.totalActiveClinicOwners);
+                        n(e.totalAdmin), i(e.totalInviteAdmin), o(e.totalInviteClinic), c(e.totalClinics), u(e.totalVaccines), f(e.totalActiveClinicOwners);
                     });
                 } catch (e) {
                     console.error(`Failed to join contract:`, e);
                 }
             }
-            return n(), ()=>{
+            return r(), ()=>{
                 t && t.unsubscribe();
             };
         }, [
@@ -68426,11 +68162,11 @@ ${h(e)}
                                 children: [
                                     (0, b.jsx)(`p`, {
                                         className: `text-on-surface-variant font-medium label-md`,
-                                        children: t.totalVaccinesRegistered
+                                        children: `Total Vaccines Registered`
                                     }),
                                     (0, b.jsx)(`h2`, {
                                         className: `text-6xl font-extrabold tracking-tighter mt-2`,
-                                        children: u
+                                        children: l
                                     })
                                 ]
                             })
@@ -68456,11 +68192,11 @@ ${h(e)}
                                     children: [
                                         (0, b.jsx)(`p`, {
                                             className: `text-on-surface-variant font-medium text-sm`,
-                                            children: t.activeAdmins
+                                            children: `Active Admins`
                                         }),
                                         (0, b.jsx)(`h2`, {
                                             className: `text-3xl font-bold tracking-tight`,
-                                            children: n
+                                            children: t
                                         })
                                     ]
                                 })
@@ -68482,11 +68218,11 @@ ${h(e)}
                                     children: [
                                         (0, b.jsx)(`p`, {
                                             className: `text-on-surface-variant font-medium text-sm`,
-                                            children: t.activeVerifierOwners
+                                            children: `Active Clinic Owners`
                                         }),
                                         (0, b.jsx)(`h2`, {
                                             className: `text-3xl font-bold tracking-tight`,
-                                            children: f
+                                            children: d
                                         })
                                     ]
                                 })
@@ -68508,11 +68244,11 @@ ${h(e)}
                                     children: [
                                         (0, b.jsx)(`p`, {
                                             className: `text-on-surface-variant font-medium text-sm`,
-                                            children: t.totalClinicsMetric
+                                            children: `Total Clinics`
                                         }),
                                         (0, b.jsx)(`h2`, {
                                             className: `text-3xl font-bold tracking-tight`,
-                                            children: c
+                                            children: s
                                         })
                                     ]
                                 })
@@ -68530,11 +68266,11 @@ ${h(e)}
                                 children: [
                                     (0, b.jsx)(`p`, {
                                         className: `text-on-surface-variant font-medium`,
-                                        children: t.pendingAdminInvites
+                                        children: `Pending Admin Invites`
                                     }),
                                     (0, b.jsx)(`h2`, {
                                         className: `text-5xl font-extrabold tracking-tight`,
-                                        children: i
+                                        children: r
                                     })
                                 ]
                             })
@@ -68546,11 +68282,11 @@ ${h(e)}
                                 children: [
                                     (0, b.jsx)(`p`, {
                                         className: `text-on-surface-variant font-medium`,
-                                        children: t.pendingVerifierInvites
+                                        children: `Pending Clinic Invites`
                                     }),
                                     (0, b.jsx)(`h2`, {
                                         className: `text-5xl font-extrabold tracking-tight`,
-                                        children: o
+                                        children: a
                                     })
                                 ]
                             })
@@ -68560,7 +68296,7 @@ ${h(e)}
             ]
         });
     }, SPe = ({ vaxApi: e })=>{
-        let { i18n: t } = fl(), [n, r] = (0, F.useState)([]), [i, a] = (0, F.useState)(``), [o, s] = (0, F.useState)(!1), [c, l] = (0, F.useState)(null);
+        let { t } = fl(), [n, r] = (0, F.useState)([]), [i, a] = (0, F.useState)(``), [o, s] = (0, F.useState)(!1), [c, l] = (0, F.useState)(null);
         (0, F.useEffect)(()=>{
             if (!e) return;
             let t;
@@ -68746,27 +68482,27 @@ ${h(e)}
         return n.set(new TextEncoder().encode(e).slice(0, t)), n;
     }
     var CPe = ({ connectedApi: e })=>{
-        let { i18n: t } = fl(), [n, r] = (0, F.useState)([]), [i, a] = (0, F.useState)(!0), [o, s] = (0, F.useState)(!1), [c, l] = (0, F.useState)(null), [u, d] = (0, F.useState)(null), [f, p] = (0, F.useState)(``), [m, h] = (0, F.useState)(``), [g, _] = (0, F.useState)(``), [v, y] = (0, F.useState)(``), [x, S] = (0, F.useState)(!1);
+        let [t, n] = (0, F.useState)([]), [r, i] = (0, F.useState)(!0), [a, o] = (0, F.useState)(!1), [s, c] = (0, F.useState)(null), [l, u] = (0, F.useState)(null), [d, f] = (0, F.useState)(``), [p, m] = (0, F.useState)(``), [h, g] = (0, F.useState)(``), [_, v] = (0, F.useState)(``), [y, x] = (0, F.useState)(!1);
         (0, F.useEffect)(()=>{
-            let n;
-            async function i() {
-                let i = hl();
-                if (!(!e || !i)) try {
-                    let t = await c7(e, pl), o = new Uint8Array(32), s = await s7.join(t, i, o);
-                    d(s), n = s.state$.subscribe((e)=>{
-                        r(e.clinics), a(!1);
+            let t;
+            async function r() {
+                let r = hl();
+                if (!(!e || !r)) try {
+                    let a = await c7(e, pl), o = new Uint8Array(32), s = await s7.join(a, r, o);
+                    u(s), t = s.state$.subscribe((e)=>{
+                        n(e.clinics), i(!1);
                     });
                 } catch (e) {
-                    console.error(`Failed to join contract:`, e), l(t.errConnectContract), a(!1);
+                    console.error(`Failed to join contract:`, e), c(`Failed to connect to the contract`), i(!1);
                 }
             }
-            return i(), ()=>{
-                n && n.unsubscribe();
+            return r(), ()=>{
+                t && t.unsubscribe();
             };
         }, [
             e
         ]);
-        let C = !!u && !o && f.trim().length > 0;
+        let S = !!l && !a && d.trim().length > 0;
         return (0, b.jsxs)(`main`, {
             className: `pt-24 pb-32 px-6 max-w-screen-xl mx-auto`,
             children: [
@@ -68778,15 +68514,14 @@ ${h(e)}
                             children: [
                                 (0, b.jsx)(`span`, {
                                     className: `text-primary`,
-                                    children: t.manage
+                                    children: `Manage`
                                 }),
-                                ` `,
-                                t.clinicsTitleEnd
+                                ` Clinics`
                             ]
                         }),
                         (0, b.jsx)(`p`, {
                             className: `text-on-surface-variant text-lg leading-relaxed`,
-                            children: t.manageClinicsSubtitle
+                            children: `Register your clinics on-chain and view all currently registered clinics.`
                         })
                     ]
                 }),
@@ -68795,26 +68530,26 @@ ${h(e)}
                     children: [
                         (0, b.jsx)(`h3`, {
                             className: `text-lg font-semibold text-on-surface mb-6`,
-                            children: t.registerNewClinic
+                            children: `Register New Clinic`
                         }),
                         (0, b.jsxs)(`form`, {
                             onSubmit: async (e)=>{
-                                if (e.preventDefault(), u) {
-                                    s(!0), l(null);
+                                if (e.preventDefault(), l) {
+                                    o(!0), c(null);
                                     try {
                                         let e = globalThis.crypto.getRandomValues(new Uint8Array(32)), t = {
                                             ownerId: new Uint8Array(32),
-                                            name: F7(f.trim(), 32),
-                                            address: F7(m.trim(), 64),
-                                            latitud: F7(g.trim(), 20),
-                                            longitud: F7(v.trim(), 20),
-                                            isOnline: x
+                                            name: F7(d.trim(), 32),
+                                            address: F7(p.trim(), 64),
+                                            latitud: F7(h.trim(), 20),
+                                            longitud: F7(_.trim(), 20),
+                                            isOnline: y
                                         };
-                                        await u.addClinic(e, t), p(``), h(``), _(``), y(``), S(!1);
+                                        await l.addClinic(e, t), f(``), m(``), g(``), v(``), x(!1);
                                     } catch (e) {
-                                        console.error(`Failed to add clinic:`, e), l(e instanceof Error ? e.message : String(e));
+                                        console.error(`Failed to add clinic:`, e), c(e instanceof Error ? e.message : String(e));
                                     } finally{
-                                        s(!1);
+                                        o(!1);
                                     }
                                 }
                             },
@@ -68824,13 +68559,13 @@ ${h(e)}
                                     children: [
                                         (0, b.jsx)(`label`, {
                                             className: `block text-xs font-semibold text-on-surface-variant uppercase tracking-wide mb-1`,
-                                            children: t.clinicName
+                                            children: `Clinic Name`
                                         }),
                                         (0, b.jsx)(`input`, {
                                             type: `text`,
-                                            value: f,
-                                            onChange: (e)=>p(e.target.value.slice(0, 32)),
-                                            placeholder: t.clinicNamePlaceholder,
+                                            value: d,
+                                            onChange: (e)=>f(e.target.value.slice(0, 32)),
+                                            placeholder: `e.g. City Health Clinic`,
                                             maxLength: 32,
                                             className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary`
                                         })
@@ -68840,13 +68575,13 @@ ${h(e)}
                                     children: [
                                         (0, b.jsx)(`label`, {
                                             className: `block text-xs font-semibold text-on-surface-variant uppercase tracking-wide mb-1`,
-                                            children: t.clinicAddress
+                                            children: `Address`
                                         }),
                                         (0, b.jsx)(`input`, {
                                             type: `text`,
-                                            value: m,
-                                            onChange: (e)=>h(e.target.value.slice(0, 64)),
-                                            placeholder: t.addressPlaceholder,
+                                            value: p,
+                                            onChange: (e)=>m(e.target.value.slice(0, 64)),
+                                            placeholder: `e.g. 123 Main St, Springfield`,
                                             maxLength: 64,
                                             className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary`
                                         })
@@ -68859,13 +68594,13 @@ ${h(e)}
                                             children: [
                                                 (0, b.jsx)(`label`, {
                                                     className: `block text-xs font-semibold text-on-surface-variant uppercase tracking-wide mb-1`,
-                                                    children: t.latitude
+                                                    children: `Latitude`
                                                 }),
                                                 (0, b.jsx)(`input`, {
                                                     type: `text`,
-                                                    value: g,
-                                                    onChange: (e)=>_(e.target.value.slice(0, 20)),
-                                                    placeholder: t.latitudePlaceholder,
+                                                    value: h,
+                                                    onChange: (e)=>g(e.target.value.slice(0, 20)),
+                                                    placeholder: `e.g. -23.5990263`,
                                                     maxLength: 20,
                                                     className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary`
                                                 })
@@ -68875,13 +68610,13 @@ ${h(e)}
                                             children: [
                                                 (0, b.jsx)(`label`, {
                                                     className: `block text-xs font-semibold text-on-surface-variant uppercase tracking-wide mb-1`,
-                                                    children: t.longitude
+                                                    children: `Longitude`
                                                 }),
                                                 (0, b.jsx)(`input`, {
                                                     type: `text`,
-                                                    value: v,
-                                                    onChange: (e)=>y(e.target.value.slice(0, 20)),
-                                                    placeholder: t.longitudePlaceholder,
+                                                    value: _,
+                                                    onChange: (e)=>v(e.target.value.slice(0, 20)),
+                                                    placeholder: `e.g. -46.6419712`,
                                                     maxLength: 20,
                                                     className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary`
                                                 })
@@ -68895,26 +68630,26 @@ ${h(e)}
                                         (0, b.jsx)(`input`, {
                                             type: `checkbox`,
                                             id: `isOnline`,
-                                            checked: x,
-                                            onChange: (e)=>S(e.target.checked),
+                                            checked: y,
+                                            onChange: (e)=>x(e.target.checked),
                                             className: `w-4 h-4 accent-primary`
                                         }),
                                         (0, b.jsx)(`label`, {
                                             htmlFor: `isOnline`,
                                             className: `text-sm font-medium text-on-surface`,
-                                            children: t.onlineClinic
+                                            children: `Online clinic (offers remote/telehealth services)`
                                         })
                                     ]
                                 }),
-                                c && (0, b.jsx)(`p`, {
+                                s && (0, b.jsx)(`p`, {
                                     className: `text-red-600 text-sm px-1`,
-                                    children: c
+                                    children: s
                                 }),
                                 (0, b.jsx)(`button`, {
                                     type: `submit`,
-                                    disabled: !C,
+                                    disabled: !S,
                                     className: `px-8 py-4 bg-primary font-bold rounded-lg shadow-lg active:scale-95 transition-all duration-200 disabled:opacity-50 flex items-center gap-2`,
-                                    children: o ? (0, b.jsxs)(b.Fragment, {
+                                    children: a ? (0, b.jsxs)(b.Fragment, {
                                         children: [
                                             (0, b.jsx)(`span`, {
                                                 translate: `no`,
@@ -68922,7 +68657,7 @@ ${h(e)}
                                                 children: `sync`
                                             }),
                                             (0, b.jsx)(`span`, {
-                                                children: t.registering
+                                                children: `Registering...`
                                             })
                                         ]
                                     }) : (0, b.jsxs)(b.Fragment, {
@@ -68932,7 +68667,7 @@ ${h(e)}
                                                 children: `local_hospital`
                                             }),
                                             (0, b.jsx)(`span`, {
-                                                children: t.registerClinic
+                                                children: `Register Clinic`
                                             })
                                         ]
                                     })
@@ -68946,9 +68681,9 @@ ${h(e)}
                     children: [
                         (0, b.jsx)(`h3`, {
                             className: `text-2xl font-bold mb-6`,
-                            children: t.registeredClinics
+                            children: `Registered Clinics`
                         }),
-                        i ? (0, b.jsxs)(`div`, {
+                        r ? (0, b.jsxs)(`div`, {
                             className: `flex items-center gap-2 text-on-surface-variant text-sm py-4`,
                             children: [
                                 (0, b.jsx)(`span`, {
@@ -68956,10 +68691,10 @@ ${h(e)}
                                     children: `sync`
                                 }),
                                 (0, b.jsx)(`span`, {
-                                    children: t.loadingClinics
+                                    children: `Loading clinics...`
                                 })
                             ]
-                        }) : n.length === 0 ? (0, b.jsxs)(`div`, {
+                        }) : t.length === 0 ? (0, b.jsxs)(`div`, {
                             className: `bg-surface-container-low p-12 rounded-xl border border-dashed border-slate-200 text-center`,
                             children: [
                                 (0, b.jsx)(`span`, {
@@ -68968,13 +68703,13 @@ ${h(e)}
                                 }),
                                 (0, b.jsx)(`p`, {
                                     className: `text-on-surface-variant italic`,
-                                    children: t.noClinicsOnChain
+                                    children: `No clinics registered on-chain yet.`
                                 })
                             ]
                         }) : (0, b.jsx)(`div`, {
                             className: `space-y-4`,
-                            children: n.map((e)=>{
-                                let n = F6(e.id), r = F6(e.ownerId);
+                            children: t.map((e)=>{
+                                let t = F6(e.id), n = F6(e.ownerId);
                                 return (0, b.jsxs)(`div`, {
                                     className: `bg-white p-6 rounded-xl shadow-sm border border-slate-100 space-y-3`,
                                     children: [
@@ -68989,12 +68724,12 @@ ${h(e)}
                                                     className: `font-semibold text-on-surface`,
                                                     children: e.name || (0, b.jsx)(`span`, {
                                                         className: `italic text-on-surface-variant`,
-                                                        children: t.unnamed
+                                                        children: `Unnamed`
                                                     })
                                                 }),
                                                 e.isOnline && (0, b.jsx)(`span`, {
                                                     className: `ml-2 text-xs font-semibold text-green-700 bg-green-100 px-2 py-0.5 rounded-full`,
-                                                    children: t.online
+                                                    children: `Online`
                                                 })
                                             ]
                                         }),
@@ -69006,7 +68741,22 @@ ${h(e)}
                                                         (0, b.jsxs)(`span`, {
                                                             className: `font-semibold text-on-surface-variant uppercase tracking-wide`,
                                                             children: [
-                                                                t.clinicShieldedId,
+                                                                `Clinic Shielded ID:`,
+                                                                ` `
+                                                            ]
+                                                        }),
+                                                        (0, b.jsx)(`span`, {
+                                                            className: `font-mono text-on-surface-variant break-all`,
+                                                            children: t
+                                                        })
+                                                    ]
+                                                }),
+                                                (0, b.jsxs)(`div`, {
+                                                    children: [
+                                                        (0, b.jsxs)(`span`, {
+                                                            className: `font-semibold text-on-surface-variant uppercase tracking-wide`,
+                                                            children: [
+                                                                `Owner Shielded ID:`,
                                                                 ` `
                                                             ]
                                                         }),
@@ -69016,27 +68766,12 @@ ${h(e)}
                                                         })
                                                     ]
                                                 }),
-                                                (0, b.jsxs)(`div`, {
-                                                    children: [
-                                                        (0, b.jsxs)(`span`, {
-                                                            className: `font-semibold text-on-surface-variant uppercase tracking-wide`,
-                                                            children: [
-                                                                t.ownerShieldedId,
-                                                                ` `
-                                                            ]
-                                                        }),
-                                                        (0, b.jsx)(`span`, {
-                                                            className: `font-mono text-on-surface-variant break-all`,
-                                                            children: r
-                                                        })
-                                                    ]
-                                                }),
                                                 e.address && (0, b.jsxs)(`div`, {
                                                     children: [
                                                         (0, b.jsxs)(`span`, {
                                                             className: `font-semibold text-on-surface-variant uppercase tracking-wide`,
                                                             children: [
-                                                                t.clinicAddress,
+                                                                `Address:`,
                                                                 ` `
                                                             ]
                                                         }),
@@ -69051,7 +68786,7 @@ ${h(e)}
                                                         (0, b.jsxs)(`span`, {
                                                             className: `font-semibold text-on-surface-variant uppercase tracking-wide`,
                                                             children: [
-                                                                t.coordinates,
+                                                                `Coordinates:`,
                                                                 ` `
                                                             ]
                                                         }),
@@ -69068,7 +68803,7 @@ ${h(e)}
                                             ]
                                         })
                                     ]
-                                }, n);
+                                }, t);
                             })
                         })
                     ]
@@ -69110,16 +68845,16 @@ ${h(e)}
                 })
             ]
         }), EPe = ({ vaxApi: e })=>{
-        let { i18n: t } = fl(), [n, r] = (0, F.useState)([]), [i, a] = (0, F.useState)(!0), [o, s] = (0, F.useState)(!1), [c, l] = (0, F.useState)(!1), [u, d] = (0, F.useState)(null), [f, p] = (0, F.useState)(``), [m, h] = (0, F.useState)(``), [g, _] = (0, F.useState)(``), [v, y] = (0, F.useState)(``);
+        let [t, n] = (0, F.useState)([]), [r, i] = (0, F.useState)(!0), [a, o] = (0, F.useState)(!1), [s, c] = (0, F.useState)(!1), [l, u] = (0, F.useState)(null), [d, f] = (0, F.useState)(``), [p, m] = (0, F.useState)(``), [h, g] = (0, F.useState)(``), [_, v] = (0, F.useState)(``);
         return (0, F.useEffect)(()=>{
             if (!e) return;
             let t;
             try {
                 t = e.state$.subscribe((e)=>{
-                    r(e.issuers), a(!1);
+                    n(e.issuers), i(!1);
                 });
             } catch (e) {
-                console.error(`Failed to subscribe to contract state:`, e), a(!1);
+                console.error(`Failed to subscribe to contract state:`, e), i(!1);
             }
             return ()=>{
                 t && t.unsubscribe();
@@ -69139,15 +68874,14 @@ ${h(e)}
                                     children: [
                                         (0, b.jsx)(`span`, {
                                             className: `text-primary`,
-                                            children: t.manage
+                                            children: `Manage`
                                         }),
-                                        ` `,
-                                        t.issuersAdminTitleEnd
+                                        ` Certificate Issuers`
                                     ]
                                 }),
                                 (0, b.jsx)(`p`, {
                                     className: `text-on-surface-variant text-lg leading-relaxed`,
-                                    children: t.issuersAdminSubtitle
+                                    children: `Register and review the organizations authorized to issue vaccine certificates.`
                                 })
                             ]
                         }),
@@ -69155,7 +68889,7 @@ ${h(e)}
                             className: `mb-8 flex justify-end`,
                             children: (0, b.jsxs)(`button`, {
                                 onClick: ()=>{
-                                    d(null), s(!0);
+                                    u(null), o(!0);
                                 },
                                 className: `flex items-center gap-2 px-6 py-3 bg-secondary font-bold rounded-lg shadow active:scale-95 transition-all duration-200 text-sm`,
                                 children: [
@@ -69163,7 +68897,7 @@ ${h(e)}
                                         className: `material-symbols-outlined text-base`,
                                         children: `verified_user`
                                     }),
-                                    t.addIssuer
+                                    `Add Issuer`
                                 ]
                             })
                         }),
@@ -69172,9 +68906,9 @@ ${h(e)}
                             children: [
                                 (0, b.jsx)(`h3`, {
                                     className: `text-lg font-semibold text-on-surface mb-4`,
-                                    children: t.vaccinationCertIssuers
+                                    children: `Vaccination Certificate Issuers`
                                 }),
-                                i ? (0, b.jsxs)(`div`, {
+                                r ? (0, b.jsxs)(`div`, {
                                     className: `flex items-center gap-2 text-on-surface-variant text-sm py-2`,
                                     children: [
                                         (0, b.jsx)(`span`, {
@@ -69182,10 +68916,10 @@ ${h(e)}
                                             children: `sync`
                                         }),
                                         (0, b.jsx)(`span`, {
-                                            children: t.loadingIssuers
+                                            children: `Loading issuers...`
                                         })
                                     ]
-                                }) : n.length === 0 ? (0, b.jsxs)(`div`, {
+                                }) : t.length === 0 ? (0, b.jsxs)(`div`, {
                                     className: `bg-surface-container-low p-8 rounded-xl border border-dashed border-slate-200 text-center`,
                                     children: [
                                         (0, b.jsx)(`span`, {
@@ -69194,13 +68928,13 @@ ${h(e)}
                                         }),
                                         (0, b.jsx)(`p`, {
                                             className: `text-on-surface-variant italic text-sm`,
-                                            children: t.noIssuersRegistered
+                                            children: `No issuers registered yet.`
                                         })
                                     ]
                                 }) : (0, b.jsx)(`div`, {
                                     className: `space-y-2`,
-                                    children: n.map((e)=>{
-                                        let n = F6(e.id);
+                                    children: t.map((e)=>{
+                                        let t = F6(e.id);
                                         return (0, b.jsxs)(`div`, {
                                             className: `p-4 bg-surface-container-low rounded-lg space-y-2`,
                                             children: [
@@ -69225,13 +68959,13 @@ ${h(e)}
                                                                 (0, b.jsxs)(`span`, {
                                                                     className: `text-xs font-semibold text-on-surface-variant uppercase tracking-wide`,
                                                                     children: [
-                                                                        t.issuerShieldedId,
+                                                                        `Issuer Shielded Id:`,
                                                                         ` `
                                                                     ]
                                                                 }),
                                                                 (0, b.jsx)(`span`, {
                                                                     className: `text-xs text-on-surface-variant font-mono break-all`,
-                                                                    children: n
+                                                                    children: t
                                                                 })
                                                             ]
                                                         }),
@@ -69240,7 +68974,7 @@ ${h(e)}
                                                                 (0, b.jsxs)(`span`, {
                                                                     className: `text-xs font-semibold text-on-surface-variant uppercase tracking-wide`,
                                                                     children: [
-                                                                        t.signaturePubKey,
+                                                                        `Signature Public Key:`,
                                                                         ` `
                                                                     ]
                                                                 }),
@@ -69255,7 +68989,7 @@ ${h(e)}
                                                                 (0, b.jsxs)(`span`, {
                                                                     className: `text-xs font-semibold text-on-surface-variant uppercase tracking-wide`,
                                                                     children: [
-                                                                        t.uriLabel,
+                                                                        `URI:`,
                                                                         ` `
                                                                     ]
                                                                 }),
@@ -69270,7 +69004,7 @@ ${h(e)}
                                                                 (0, b.jsxs)(`span`, {
                                                                     className: `text-xs font-semibold text-on-surface-variant uppercase tracking-wide`,
                                                                     children: [
-                                                                        t.verificationEndpointLabel,
+                                                                        `Verification Endpoint:`,
                                                                         ` `
                                                                     ]
                                                                 }),
@@ -69283,16 +69017,16 @@ ${h(e)}
                                                     ]
                                                 })
                                             ]
-                                        }, n);
+                                        }, t);
                                     })
                                 })
                             ]
                         })
                     ]
                 }),
-                o && (0, b.jsxs)(TPe, {
-                    title: t.addCertIssuerTitle,
-                    onClose: ()=>s(!1),
+                a && (0, b.jsxs)(TPe, {
+                    title: `Add Certificate Issuer`,
+                    onClose: ()=>o(!1),
                     children: [
                         (0, b.jsxs)(`div`, {
                             className: `flex gap-3 bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6`,
@@ -69303,7 +69037,7 @@ ${h(e)}
                                 }),
                                 (0, b.jsx)(`p`, {
                                     className: `text-blue-800 text-sm leading-relaxed`,
-                                    children: t.addIssuerInfo
+                                    children: `To register a certificate issuer, contact the vaccine certificate provider/issuer to obtain their details (name, service URI, verification endpoint, and public key).`
                                 })
                             ]
                         }),
@@ -69314,13 +69048,13 @@ ${h(e)}
                                     children: [
                                         (0, b.jsx)(`label`, {
                                             className: `block text-xs font-semibold text-on-surface-variant uppercase tracking-wide mb-1`,
-                                            children: t.issuerName
+                                            children: `Issuer Name`
                                         }),
                                         (0, b.jsx)(`input`, {
                                             type: `text`,
-                                            value: f,
-                                            onChange: (e)=>p(e.target.value),
-                                            placeholder: t.issuerNamePlaceholder,
+                                            value: d,
+                                            onChange: (e)=>f(e.target.value),
+                                            placeholder: `e.g. National Health Authority`,
                                             className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-secondary`
                                         })
                                     ]
@@ -69329,13 +69063,13 @@ ${h(e)}
                                     children: [
                                         (0, b.jsx)(`label`, {
                                             className: `block text-xs font-semibold text-on-surface-variant uppercase tracking-wide mb-1`,
-                                            children: t.issuerUri
+                                            children: `Issuer URI`
                                         }),
                                         (0, b.jsx)(`input`, {
                                             type: `text`,
-                                            value: m,
-                                            onChange: (e)=>h(e.target.value),
-                                            placeholder: t.issuerUriPlaceholder,
+                                            value: p,
+                                            onChange: (e)=>m(e.target.value),
+                                            placeholder: `e.g. https://issuer.example.com`,
                                             className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-secondary`
                                         })
                                     ]
@@ -69344,17 +69078,17 @@ ${h(e)}
                                     children: [
                                         (0, b.jsx)(`label`, {
                                             className: `block text-xs font-semibold text-on-surface-variant uppercase tracking-wide mb-1`,
-                                            children: t.verificationEndpoint
+                                            children: `Verification Endpoint`
                                         }),
                                         (0, b.jsx)(`p`, {
                                             className: `text-xs text-on-surface-variant mb-1`,
-                                            children: t.verificationEndpointDesc
+                                            children: `URL used by administrative agents or personnel to verify the authenticity of a vaccination certificate.`
                                         }),
                                         (0, b.jsx)(`input`, {
                                             type: `text`,
-                                            value: g,
-                                            onChange: (e)=>_(e.target.value),
-                                            placeholder: t.issuerVerifEndpointPlaceholder,
+                                            value: h,
+                                            onChange: (e)=>g(e.target.value),
+                                            placeholder: `e.g. https://issuer.example.com/verify`,
                                             className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-secondary`
                                         })
                                     ]
@@ -69363,59 +69097,59 @@ ${h(e)}
                                     children: [
                                         (0, b.jsx)(`label`, {
                                             className: `block text-xs font-semibold text-on-surface-variant uppercase tracking-wide mb-1`,
-                                            children: t.publicKey
+                                            children: `Public Key`
                                         }),
                                         (0, b.jsx)(`input`, {
                                             type: `text`,
-                                            value: v,
-                                            onChange: (e)=>y(e.target.value),
-                                            placeholder: t.issuerKeyPlaceholder,
+                                            value: _,
+                                            onChange: (e)=>v(e.target.value),
+                                            placeholder: `Public key provided by the issuer`,
                                             className: `w-full px-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-secondary`
                                         })
                                     ]
                                 })
                             ]
                         }),
-                        u && (0, b.jsx)(`p`, {
+                        l && (0, b.jsx)(`p`, {
                             className: `text-error text-sm mb-4 px-1`,
-                            children: u
+                            children: l
                         }),
                         (0, b.jsxs)(`div`, {
                             className: `flex gap-3 justify-end`,
                             children: [
                                 (0, b.jsx)(`button`, {
                                     className: `px-5 py-2.5 rounded-lg border border-slate-200 text-on-surface-variant text-sm font-semibold hover:bg-slate-50 transition-colors`,
-                                    onClick: ()=>s(!1),
-                                    disabled: c,
-                                    children: t.cancel
+                                    onClick: ()=>o(!1),
+                                    disabled: s,
+                                    children: `Cancel`
                                 }),
                                 (0, b.jsx)(`button`, {
                                     className: `px-6 py-2.5 bg-secondary font-bold rounded-lg shadow active:scale-95 transition-all duration-200 disabled:opacity-50 flex items-center gap-2 text-sm`,
                                     onClick: async ()=>{
-                                        l(!0), d(null);
+                                        c(!0), u(null);
                                         try {
                                             let t = rPe(wPe);
                                             await e.addCertificateIssuer({
-                                                uri: m,
-                                                name: f,
+                                                uri: p,
+                                                name: d,
                                                 key: t,
-                                                verificationEndpoint: g
-                                            }), p(``), h(``), _(``), y(``), s(!1);
+                                                verificationEndpoint: h
+                                            }), f(``), m(``), g(``), v(``), o(!1);
                                         } catch (e) {
-                                            console.error(`Failed to add issuer:`, e), d(`Failed to add issuer: ` + (e instanceof Error ? e.message : String(e)));
+                                            console.error(`Failed to add issuer:`, e), u(`Failed to add issuer: ` + (e instanceof Error ? e.message : String(e)));
                                         } finally{
-                                            l(!1);
+                                            c(!1);
                                         }
                                     },
-                                    disabled: c || !f || !m || !g,
-                                    children: c ? (0, b.jsxs)(b.Fragment, {
+                                    disabled: s || !d || !p || !h,
+                                    children: s ? (0, b.jsxs)(b.Fragment, {
                                         children: [
                                             (0, b.jsx)(`span`, {
                                                 className: `material-symbols-outlined animate-spin text-base`,
                                                 children: `sync`
                                             }),
                                             (0, b.jsx)(`span`, {
-                                                children: t.addingIssuer
+                                                children: `Adding Issuer...`
                                             })
                                         ]
                                     }) : (0, b.jsxs)(b.Fragment, {
@@ -69425,7 +69159,7 @@ ${h(e)}
                                                 children: `verified_user`
                                             }),
                                             (0, b.jsx)(`span`, {
-                                                children: t.addIssuer
+                                                children: `Add Issuer`
                                             })
                                         ]
                                     })
@@ -69437,7 +69171,7 @@ ${h(e)}
             ]
         });
     }, DPe = ({ onLogout: e, walletAddress: t, connectedApi: n, vaxApi: r })=>{
-        let { i18n: i } = fl(), { profile: a, activeTab: o, setActiveTab: s } = Sl(), c = (e)=>{
+        let { t: i } = fl(), { profile: a, activeTab: o, setActiveTab: s } = Sl(), c = (e)=>{
             s(e);
         };
         return (0, b.jsxs)(`div`, {
@@ -69724,7 +69458,7 @@ ${h(e)}
             ]
         });
     }, OPe = ({ onLogout: e, walletAddress: t })=>{
-        let { i18n: n } = fl(), [r, i] = (0, F.useState)(!1), [a, o] = (0, F.useState)(hl() || null), [s, c] = (0, F.useState)(null);
+        let { t: n } = fl(), [r, i] = (0, F.useState)(!1), [a, o] = (0, F.useState)(hl() || null), [s, c] = (0, F.useState)(null);
         return (0, b.jsxs)(`div`, {
             className: `bg-background text-on-background min-h-screen`,
             children: [
@@ -69910,13 +69644,13 @@ ${h(e)}
                                                                 children: `check_circle`
                                                             }),
                                                             (0, b.jsx)(`span`, {
-                                                                children: n.deploySuccess
+                                                                children: `Contract deployed & saved!`
                                                             })
                                                         ]
                                                     }),
                                                     (0, b.jsx)(`p`, {
                                                         className: `text-xs text-green-800/70`,
-                                                        children: n.deploySuccessDesc
+                                                        children: `This address is stored in your browser. All views will use it automatically on the next page load.`
                                                     }),
                                                     (0, b.jsxs)(`div`, {
                                                         className: `flex items-center gap-2 bg-white border border-green-100 rounded-lg px-4 py-3`,
@@ -69931,7 +69665,7 @@ ${h(e)}
                                                             }),
                                                             (0, b.jsx)(`button`, {
                                                                 type: `button`,
-                                                                title: n.copyAddress,
+                                                                title: `Copy address`,
                                                                 className: `shrink-0 p-1 rounded hover:bg-green-100 transition-colors`,
                                                                 onClick: ()=>navigator.clipboard.writeText(a),
                                                                 children: (0, b.jsx)(`span`, {
