@@ -12467,8 +12467,9 @@ perfect harmony.`,
             accessAddAdminLink: `Create invitation link`,
             accessAddAdminDesc: `Create an invitation link and send it to the user to become an admin.`,
             accessAddClinicTitle: `Add a new Clinic`,
-            accessAddClinicDesc: `Create invitation link`,
-            accessAddAClinicLink: `Create an invitation link and send it to the user to become an clinic.`,
+            accessAddAClinicLink: `Create invitation link`,
+            accessAddClinicDesc: `Create an invitation link and send it to the user to become an clinic.`,
+            removeAccess: `Remove my admin access`,
             listClinicsTitle: `List of Clinics`,
             listClinicsSubtitle: `Find authorized vaccination centers near you`,
             registeredClinics: `Registered Clinics`,
@@ -12611,8 +12612,9 @@ perfeita harmonia.`,
             accessAddAdminLink: `Criar link de convite`,
             accessAddAdminDesc: `Crie um link de convite e envie para o usuario se tornar admin.`,
             accessAddClinicTitle: `Add a new Clinic`,
-            accessAddClinicDesc: `Create invitation link`,
-            accessAddAClinicLink: `Create an invitation link and send it to the user to become an clinic.`,
+            accessAddAClinicLink: `Create invitation link`,
+            accessAddClinicDesc: `Create an invitation link and send it to the user to become an clinic.`,
+            removeAccess: `Remover meu acesso de admin`,
             listClinicsTitle: `Lista de Clínicas`,
             listClinicsSubtitle: `Encontre centros de vacinacao autorizados perto de voce`,
             registeredClinics: `Clinicas Cadastradas`,
@@ -12755,8 +12757,9 @@ perfecta armonía.`,
             accessAddAdminLink: `Crear enlace de invitación`,
             accessAddAdminDesc: `Crea un enlace de invitación y envíalo al usuario para que se convierta en administrador.`,
             accessAddClinicTitle: `Add a new Clinic`,
-            accessAddClinicDesc: `Create invitation link`,
-            accessAddAClinicLink: `Create an invitation link and send it to the user to become an clinic.`,
+            accessAddAClinicLink: `Create invitation link`,
+            accessAddClinicDesc: `Create an invitation link and send it to the user to become an clinic.`,
+            removeAccess: `Retira mi acceso de administrador`,
             listClinicsTitle: `Lista de Clínicas`,
             listClinicsSubtitle: `Encuentra centros de vacunacion autorizados cerca de ti`,
             registeredClinics: `Clínicas Registradas`,
@@ -67911,6 +67914,7 @@ ${h(e)}
                                             className: `flex items-center gap-2 text-green-700 font-bold`,
                                             children: [
                                                 (0, b.jsx)(`span`, {
+                                                    translate: `no`,
                                                     className: `material-symbols-outlined`,
                                                     children: `check_circle`
                                                 }),
@@ -67927,6 +67931,7 @@ ${h(e)}
                                             className: `flex items-center gap-2 bg-white border border-green-100 rounded-lg px-4 py-3`,
                                             children: [
                                                 (0, b.jsx)(`span`, {
+                                                    translate: `no`,
                                                     className: `material-symbols-outlined text-green-600 text-base shrink-0`,
                                                     children: `link`
                                                 }),
@@ -67940,6 +67945,7 @@ ${h(e)}
                                                     className: `shrink-0 p-1 rounded hover:bg-green-100 transition-colors`,
                                                     onClick: ()=>navigator.clipboard.writeText(m),
                                                     children: (0, b.jsx)(`span`, {
+                                                        translate: `no`,
                                                         className: `material-symbols-outlined text-green-600 text-base`,
                                                         children: `content_copy`
                                                     })
@@ -67985,6 +67991,7 @@ ${h(e)}
                                     children: i ? (0, b.jsxs)(b.Fragment, {
                                         children: [
                                             (0, b.jsx)(`span`, {
+                                                translate: `no`,
                                                 className: `material-symbols-outlined animate-spin`,
                                                 children: `sync`
                                             }),
@@ -67995,11 +68002,12 @@ ${h(e)}
                                     }) : (0, b.jsxs)(b.Fragment, {
                                         children: [
                                             (0, b.jsx)(`span`, {
+                                                translate: `no`,
                                                 className: `material-symbols-outlined`,
                                                 children: `delete_forever`
                                             }),
                                             (0, b.jsx)(`span`, {
-                                                children: `Remover meu acesso de admin`
+                                                children: t.removeAccess
                                             })
                                         ]
                                     })
