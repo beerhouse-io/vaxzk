@@ -69874,7 +69874,7 @@ ${h(e)}
                                                 }),
                                                 (0, b.jsxs)(`button`, {
                                                     type: `button`,
-                                                    className: `px-6 py-3 bg-primary text-white font-bold rounded-lg shadow active:scale-95 transition-all duration-200 disabled:opacity-50 flex items-center gap-2 text-sm whitespace-nowrap`,
+                                                    className: `px-6 py-3 bg-primary text-black font-bold rounded-lg shadow active:scale-95 transition-all duration-200 disabled:opacity-50 flex items-center gap-2 text-sm whitespace-nowrap`,
                                                     disabled: !u.trim(),
                                                     onClick: ()=>n?.(u.trim()),
                                                     children: [
