@@ -251,21 +251,21 @@ export class Contract {
         if (!(typeof(contextOrig_0) === 'object' && contextOrig_0.currentQueryContext != undefined)) {
           __compactRuntime.typeError('registerInvite',
                                      'argument 1 (as invoked from Typescript)',
-                                     'Invites.compact line 29 char 1',
+                                     'Invites.compact line 37 char 1',
                                      'CircuitContext',
                                      contextOrig_0)
         }
         if (!(typeof(role_0) === 'number' && role_0 >= 0 && role_0 <= 1)) {
           __compactRuntime.typeError('registerInvite',
                                      'argument 1 (argument 2 as invoked from Typescript)',
-                                     'Invites.compact line 29 char 1',
+                                     'Invites.compact line 37 char 1',
                                      'Enum<Role, admin, clinic>',
                                      role_0)
         }
         if (!(inviteCode_0.buffer instanceof ArrayBuffer && inviteCode_0.BYTES_PER_ELEMENT === 1 && inviteCode_0.length === 32)) {
           __compactRuntime.typeError('registerInvite',
                                      'argument 2 (argument 3 as invoked from Typescript)',
-                                     'Invites.compact line 29 char 1',
+                                     'Invites.compact line 37 char 1',
                                      'Bytes<32>',
                                      inviteCode_0)
         }
@@ -296,21 +296,21 @@ export class Contract {
         if (!(typeof(contextOrig_0) === 'object' && contextOrig_0.currentQueryContext != undefined)) {
           __compactRuntime.typeError('acceptInvite',
                                      'argument 1 (as invoked from Typescript)',
-                                     'Invites.compact line 40 char 1',
+                                     'Invites.compact line 51 char 1',
                                      'CircuitContext',
                                      contextOrig_0)
         }
         if (!(typeof(role_0) === 'number' && role_0 >= 0 && role_0 <= 1)) {
           __compactRuntime.typeError('acceptInvite',
                                      'argument 1 (argument 2 as invoked from Typescript)',
-                                     'Invites.compact line 40 char 1',
+                                     'Invites.compact line 51 char 1',
                                      'Enum<Role, admin, clinic>',
                                      role_0)
         }
         if (!(inviteCode_0.buffer instanceof ArrayBuffer && inviteCode_0.BYTES_PER_ELEMENT === 1 && inviteCode_0.length === 32)) {
           __compactRuntime.typeError('acceptInvite',
                                      'argument 2 (argument 3 as invoked from Typescript)',
-                                     'Invites.compact line 40 char 1',
+                                     'Invites.compact line 51 char 1',
                                      'Bytes<32>',
                                      inviteCode_0)
         }
@@ -339,7 +339,7 @@ export class Contract {
         if (!(typeof(contextOrig_0) === 'object' && contextOrig_0.currentQueryContext != undefined)) {
           __compactRuntime.typeError('revokeAdmin',
                                      'argument 1 (as invoked from Typescript)',
-                                     'Invites.compact line 64 char 1',
+                                     'Invites.compact line 76 char 1',
                                      'CircuitContext',
                                      contextOrig_0)
         }
@@ -367,21 +367,21 @@ export class Contract {
         if (!(typeof(contextOrig_0) === 'object' && contextOrig_0.currentQueryContext != undefined)) {
           __compactRuntime.typeError('addClinic',
                                      'argument 1 (as invoked from Typescript)',
-                                     'vaxzk.compact line 100 char 1',
+                                     'vaxzk.compact line 113 char 1',
                                      'CircuitContext',
                                      contextOrig_0)
         }
         if (!(clinicId_0.buffer instanceof ArrayBuffer && clinicId_0.BYTES_PER_ELEMENT === 1 && clinicId_0.length === 32)) {
           __compactRuntime.typeError('addClinic',
                                      'argument 1 (argument 2 as invoked from Typescript)',
-                                     'vaxzk.compact line 100 char 1',
+                                     'vaxzk.compact line 113 char 1',
                                      'Bytes<32>',
                                      clinicId_0)
         }
         if (!(typeof(clinicProfile_0) === 'object' && clinicProfile_0.ownerId.buffer instanceof ArrayBuffer && clinicProfile_0.ownerId.BYTES_PER_ELEMENT === 1 && clinicProfile_0.ownerId.length === 32 && clinicProfile_0.name.buffer instanceof ArrayBuffer && clinicProfile_0.name.BYTES_PER_ELEMENT === 1 && clinicProfile_0.name.length === 32 && clinicProfile_0.address.buffer instanceof ArrayBuffer && clinicProfile_0.address.BYTES_PER_ELEMENT === 1 && clinicProfile_0.address.length === 64 && clinicProfile_0.latitud.buffer instanceof ArrayBuffer && clinicProfile_0.latitud.BYTES_PER_ELEMENT === 1 && clinicProfile_0.latitud.length === 20 && clinicProfile_0.longitud.buffer instanceof ArrayBuffer && clinicProfile_0.longitud.BYTES_PER_ELEMENT === 1 && clinicProfile_0.longitud.length === 20 && typeof(clinicProfile_0.isOnline) === 'boolean')) {
           __compactRuntime.typeError('addClinic',
                                      'argument 2 (argument 3 as invoked from Typescript)',
-                                     'vaxzk.compact line 100 char 1',
+                                     'vaxzk.compact line 113 char 1',
                                      'struct ClinicProfile<ownerId: Bytes<32>, name: Bytes<32>, address: Bytes<64>, latitud: Bytes<20>, longitud: Bytes<20>, isOnline: Boolean>',
                                      clinicProfile_0)
         }
@@ -411,14 +411,14 @@ export class Contract {
         if (!(typeof(contextOrig_0) === 'object' && contextOrig_0.currentQueryContext != undefined)) {
           __compactRuntime.typeError('revokeClinic',
                                      'argument 1 (as invoked from Typescript)',
-                                     'vaxzk.compact line 108 char 1',
+                                     'vaxzk.compact line 122 char 1',
                                      'CircuitContext',
                                      contextOrig_0)
         }
         if (!(clinicId_0.buffer instanceof ArrayBuffer && clinicId_0.BYTES_PER_ELEMENT === 1 && clinicId_0.length === 32)) {
           __compactRuntime.typeError('revokeClinic',
                                      'argument 1 (argument 2 as invoked from Typescript)',
-                                     'vaxzk.compact line 108 char 1',
+                                     'vaxzk.compact line 122 char 1',
                                      'Bytes<32>',
                                      clinicId_0)
         }
@@ -447,14 +447,14 @@ export class Contract {
         if (!(typeof(contextOrig_0) === 'object' && contextOrig_0.currentQueryContext != undefined)) {
           __compactRuntime.typeError('addCertificateIssuer',
                                      'argument 1 (as invoked from Typescript)',
-                                     'vaxzk.compact line 115 char 1',
+                                     'vaxzk.compact line 134 char 1',
                                      'CircuitContext',
                                      contextOrig_0)
         }
         if (!(typeof(issuerInfo_0) === 'object' && true && true && true && true)) {
           __compactRuntime.typeError('addCertificateIssuer',
                                      'argument 1 (argument 2 as invoked from Typescript)',
-                                     'vaxzk.compact line 115 char 1',
+                                     'vaxzk.compact line 134 char 1',
                                      'struct CertIssuerInfo<uri: Opaque<"string">, name: Opaque<"string">, key: Opaque<"JubjubPoint">, verificationEndpoint: Opaque<"string">>',
                                      issuerInfo_0)
         }
@@ -483,14 +483,14 @@ export class Contract {
         if (!(typeof(contextOrig_0) === 'object' && contextOrig_0.currentQueryContext != undefined)) {
           __compactRuntime.typeError('addVaccine',
                                      'argument 1 (as invoked from Typescript)',
-                                     'vaxzk.compact line 124 char 1',
+                                     'vaxzk.compact line 143 char 1',
                                      'CircuitContext',
                                      contextOrig_0)
         }
         if (!(name_0.buffer instanceof ArrayBuffer && name_0.BYTES_PER_ELEMENT === 1 && name_0.length === 20)) {
           __compactRuntime.typeError('addVaccine',
                                      'argument 1 (argument 2 as invoked from Typescript)',
-                                     'vaxzk.compact line 124 char 1',
+                                     'vaxzk.compact line 143 char 1',
                                      'Bytes<20>',
                                      name_0)
         }
@@ -517,14 +517,14 @@ export class Contract {
         if (!(typeof(contextOrig_0) === 'object' && contextOrig_0.currentQueryContext != undefined)) {
           __compactRuntime.typeError('delVaccine',
                                      'argument 1 (as invoked from Typescript)',
-                                     'vaxzk.compact line 130 char 1',
+                                     'vaxzk.compact line 151 char 1',
                                      'CircuitContext',
                                      contextOrig_0)
         }
         if (!(name_0.buffer instanceof ArrayBuffer && name_0.BYTES_PER_ELEMENT === 1 && name_0.length === 20)) {
           __compactRuntime.typeError('delVaccine',
                                      'argument 1 (argument 2 as invoked from Typescript)',
-                                     'vaxzk.compact line 130 char 1',
+                                     'vaxzk.compact line 151 char 1',
                                      'Bytes<20>',
                                      name_0)
         }
@@ -551,14 +551,14 @@ export class Contract {
         if (!(typeof(contextOrig_0) === 'object' && contextOrig_0.currentQueryContext != undefined)) {
           __compactRuntime.typeError('requestVaccineProof',
                                      'argument 1 (as invoked from Typescript)',
-                                     'vaxzk.compact line 137 char 1',
+                                     'vaxzk.compact line 159 char 1',
                                      'CircuitContext',
                                      contextOrig_0)
         }
         if (!(typeof(req_0) === 'object' && req_0.vaccine.buffer instanceof ArrayBuffer && req_0.vaccine.BYTES_PER_ELEMENT === 1 && req_0.vaccine.length === 20 && req_0.personalId.buffer instanceof ArrayBuffer && req_0.personalId.BYTES_PER_ELEMENT === 1 && req_0.personalId.length === 20 && typeof(req_0.validUntil) === 'bigint' && req_0.validUntil >= 0n && req_0.validUntil <= 340282366920938463463374607431768211455n)) {
           __compactRuntime.typeError('requestVaccineProof',
                                      'argument 1 (argument 2 as invoked from Typescript)',
-                                     'vaxzk.compact line 137 char 1',
+                                     'vaxzk.compact line 159 char 1',
                                      'struct VaccineProofRequest<vaccine: Bytes<20>, personalId: Bytes<20>, validUntil: Uint<0..340282366920938463463374607431768211456>>',
                                      req_0)
         }
@@ -587,14 +587,14 @@ export class Contract {
         if (!(typeof(contextOrig_0) === 'object' && contextOrig_0.currentQueryContext != undefined)) {
           __compactRuntime.typeError('submitVaccineProof',
                                      'argument 1 (as invoked from Typescript)',
-                                     'vaxzk.compact line 148 char 1',
+                                     'vaxzk.compact line 176 char 1',
                                      'CircuitContext',
                                      contextOrig_0)
         }
         if (!(proofReqId_0.buffer instanceof ArrayBuffer && proofReqId_0.BYTES_PER_ELEMENT === 1 && proofReqId_0.length === 32)) {
           __compactRuntime.typeError('submitVaccineProof',
                                      'argument 1 (argument 2 as invoked from Typescript)',
-                                     'vaxzk.compact line 148 char 1',
+                                     'vaxzk.compact line 176 char 1',
                                      'Bytes<32>',
                                      proofReqId_0)
         }
@@ -1022,7 +1022,7 @@ export class Contract {
     if (!(Array.isArray(result_0) && result_0.length === 2  && typeof(result_0[0]) === 'bigint' && result_0[0] >= 0 && result_0[0] <= __compactRuntime.MAX_FIELD && typeof(result_0[1]) === 'bigint' && result_0[1] >= 0n && result_0[1] <= 452312848583266388373324160190187140051835877600158453279131187530910662655n)) {
       __compactRuntime.typeError('getSchnorrReduction',
                                  'return value',
-                                 'Schnorr.compact line 27 char 3',
+                                 'Schnorr.compact line 29 char 3',
                                  '[Field, Uint<0..452312848583266388373324160190187140051835877600158453279131187530910662656>]',
                                  result_0)
     }
@@ -1337,7 +1337,7 @@ export class Contract {
     if (!(typeof(result_0) === 'object' && result_0.issuerId.buffer instanceof ArrayBuffer && result_0.issuerId.BYTES_PER_ELEMENT === 1 && result_0.issuerId.length === 32 && result_0.vaccine.buffer instanceof ArrayBuffer && result_0.vaccine.BYTES_PER_ELEMENT === 1 && result_0.vaccine.length === 20 && result_0.personalId.buffer instanceof ArrayBuffer && result_0.personalId.BYTES_PER_ELEMENT === 1 && result_0.personalId.length === 20 && typeof(result_0.expirationDate) === 'bigint' && result_0.expirationDate >= 0n && result_0.expirationDate <= 340282366920938463463374607431768211455n && typeof(result_0.issuerSignature) === 'object' && true && typeof(result_0.issuerSignature.response) === 'bigint' && result_0.issuerSignature.response >= 0 && result_0.issuerSignature.response <= __compactRuntime.MAX_FIELD)) {
       __compactRuntime.typeError('getAttestedCertProofWitness',
                                  'return value',
-                                 'vaxzk.compact line 41 char 1',
+                                 'vaxzk.compact line 51 char 1',
                                  'struct VaxZkProof<issuerId: Bytes<32>, vaccine: Bytes<20>, personalId: Bytes<20>, expirationDate: Uint<0..340282366920938463463374607431768211456>, issuerSignature: struct SchnorrSignature<announcement: Opaque<"JubjubPoint">, response: Field>>',
                                  result_0)
     }
@@ -1354,7 +1354,7 @@ export class Contract {
   _getCertIssuerId_0(context, partialProofData) {
     const newIssuerId_0 = this._persistentHash_1([__compactRuntime.convertBytesToField(32,
                                                                                        new Uint8Array([99, 101, 114, 116, 45, 105, 115, 115, 117, 101, 114, 45, 105, 100, 58, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
-                                                                                       'vaxzk.compact line 86 char 45'),
+                                                                                       'vaxzk.compact line 99 char 45'),
                                                   _descriptor_14.fromValue(__compactRuntime.queryLedgerState(context,
                                                                                                              partialProofData,
                                                                                                              [
@@ -1388,7 +1388,7 @@ export class Contract {
   _getProofReqId_0(context, partialProofData) {
     const newProofReqId_0 = this._persistentHash_1([__compactRuntime.convertBytesToField(32,
                                                                                          new Uint8Array([112, 114, 111, 111, 102, 45, 114, 101, 113, 45, 105, 100, 58, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
-                                                                                         'vaxzk.compact line 94 char 45'),
+                                                                                         'vaxzk.compact line 107 char 45'),
                                                     _descriptor_14.fromValue(__compactRuntime.queryLedgerState(context,
                                                                                                                partialProofData,
                                                                                                                [
@@ -1476,6 +1476,7 @@ export class Contract {
   }
   _revokeClinic_0(context, partialProofData, clinicId_0) {
     this._isAdmin_0(context, partialProofData);
+    const d_clinicId_0 = clinicId_0;
     __compactRuntime.assert(_descriptor_4.fromValue(__compactRuntime.queryLedgerState(context,
                                                                                       partialProofData,
                                                                                       [
@@ -1487,12 +1488,45 @@ export class Contract {
                                                                                                          value: { value: _descriptor_24.toValue(4n),
                                                                                                                   alignment: _descriptor_24.alignment() } }] } },
                                                                                        { push: { storage: false,
-                                                                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(clinicId_0),
+                                                                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(d_clinicId_0),
                                                                                                                                               alignment: _descriptor_0.alignment() }).encode() } },
                                                                                        'member',
                                                                                        { popeq: { cached: true,
                                                                                                   result: undefined } }]).value),
                             'Clinic ID is not in the clinics list');
+    const clinicProfile_0 = _descriptor_12.fromValue(__compactRuntime.queryLedgerState(context,
+                                                                                       partialProofData,
+                                                                                       [
+                                                                                        { dup: { n: 0 } },
+                                                                                        { idx: { cached: false,
+                                                                                                 pushPath: false,
+                                                                                                 path: [
+                                                                                                        { tag: 'value',
+                                                                                                          value: { value: _descriptor_24.toValue(4n),
+                                                                                                                   alignment: _descriptor_24.alignment() } }] } },
+                                                                                        { idx: { cached: false,
+                                                                                                 pushPath: false,
+                                                                                                 path: [
+                                                                                                        { tag: 'value',
+                                                                                                          value: { value: _descriptor_0.toValue(d_clinicId_0),
+                                                                                                                   alignment: _descriptor_0.alignment() } }] } },
+                                                                                        { popeq: { cached: false,
+                                                                                                   result: undefined } }]).value);
+    const tmp_0 = clinicProfile_0.ownerId;
+    __compactRuntime.queryLedgerState(context,
+                                      partialProofData,
+                                      [
+                                       { idx: { cached: false,
+                                                pushPath: true,
+                                                path: [
+                                                       { tag: 'value',
+                                                         value: { value: _descriptor_24.toValue(2n),
+                                                                  alignment: _descriptor_24.alignment() } }] } },
+                                       { push: { storage: false,
+                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(tmp_0),
+                                                                                              alignment: _descriptor_0.alignment() }).encode() } },
+                                       { rem: { cached: false } },
+                                       { ins: { cached: true, n: 1 } }]);
     __compactRuntime.queryLedgerState(context,
                                       partialProofData,
                                       [
@@ -1503,7 +1537,7 @@ export class Contract {
                                                          value: { value: _descriptor_24.toValue(4n),
                                                                   alignment: _descriptor_24.alignment() } }] } },
                                        { push: { storage: false,
-                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(clinicId_0),
+                                                 value: __compactRuntime.StateValue.newCell({ value: _descriptor_0.toValue(d_clinicId_0),
                                                                                               alignment: _descriptor_0.alignment() }).encode() } },
                                        { rem: { cached: false } },
                                        { ins: { cached: true, n: 1 } }]);
@@ -1861,7 +1895,7 @@ export function ledger(stateOrChargedState) {
         if (!(elem_0.buffer instanceof ArrayBuffer && elem_0.BYTES_PER_ELEMENT === 1 && elem_0.length === 32)) {
           __compactRuntime.typeError('member',
                                      'argument 1',
-                                     'Invites.compact line 3 char 1',
+                                     'Invites.compact line 6 char 1',
                                      'Bytes<32>',
                                      elem_0)
         }
@@ -1939,7 +1973,7 @@ export function ledger(stateOrChargedState) {
         if (!(elem_0.buffer instanceof ArrayBuffer && elem_0.BYTES_PER_ELEMENT === 1 && elem_0.length === 32)) {
           __compactRuntime.typeError('member',
                                      'argument 1',
-                                     'Invites.compact line 5 char 1',
+                                     'Invites.compact line 8 char 1',
                                      'Bytes<32>',
                                      elem_0)
         }
@@ -2017,7 +2051,7 @@ export function ledger(stateOrChargedState) {
         if (!(elem_0.buffer instanceof ArrayBuffer && elem_0.BYTES_PER_ELEMENT === 1 && elem_0.length === 32)) {
           __compactRuntime.typeError('member',
                                      'argument 1',
-                                     'Invites.compact line 7 char 1',
+                                     'Invites.compact line 10 char 1',
                                      'Bytes<32>',
                                      elem_0)
         }
@@ -2095,7 +2129,7 @@ export function ledger(stateOrChargedState) {
         if (!(elem_0.buffer instanceof ArrayBuffer && elem_0.BYTES_PER_ELEMENT === 1 && elem_0.length === 32)) {
           __compactRuntime.typeError('member',
                                      'argument 1',
-                                     'Invites.compact line 9 char 1',
+                                     'Invites.compact line 12 char 1',
                                      'Bytes<32>',
                                      elem_0)
         }
@@ -2173,7 +2207,7 @@ export function ledger(stateOrChargedState) {
         if (!(key_0.buffer instanceof ArrayBuffer && key_0.BYTES_PER_ELEMENT === 1 && key_0.length === 32)) {
           __compactRuntime.typeError('member',
                                      'argument 1',
-                                     'vaxzk.compact line 17 char 1',
+                                     'vaxzk.compact line 24 char 1',
                                      'Bytes<32>',
                                      key_0)
         }
@@ -2202,7 +2236,7 @@ export function ledger(stateOrChargedState) {
         if (!(key_0.buffer instanceof ArrayBuffer && key_0.BYTES_PER_ELEMENT === 1 && key_0.length === 32)) {
           __compactRuntime.typeError('lookup',
                                      'argument 1',
-                                     'vaxzk.compact line 17 char 1',
+                                     'vaxzk.compact line 24 char 1',
                                      'Bytes<32>',
                                      key_0)
         }
@@ -2282,7 +2316,7 @@ export function ledger(stateOrChargedState) {
         if (!(elem_0.buffer instanceof ArrayBuffer && elem_0.BYTES_PER_ELEMENT === 1 && elem_0.length === 20)) {
           __compactRuntime.typeError('member',
                                      'argument 1',
-                                     'vaxzk.compact line 20 char 1',
+                                     'vaxzk.compact line 27 char 1',
                                      'Bytes<20>',
                                      elem_0)
         }
@@ -2360,7 +2394,7 @@ export function ledger(stateOrChargedState) {
         if (!(key_0.buffer instanceof ArrayBuffer && key_0.BYTES_PER_ELEMENT === 1 && key_0.length === 32)) {
           __compactRuntime.typeError('member',
                                      'argument 1',
-                                     'vaxzk.compact line 23 char 1',
+                                     'vaxzk.compact line 30 char 1',
                                      'Bytes<32>',
                                      key_0)
         }
@@ -2389,7 +2423,7 @@ export function ledger(stateOrChargedState) {
         if (!(key_0.buffer instanceof ArrayBuffer && key_0.BYTES_PER_ELEMENT === 1 && key_0.length === 32)) {
           __compactRuntime.typeError('lookup',
                                      'argument 1',
-                                     'vaxzk.compact line 23 char 1',
+                                     'vaxzk.compact line 30 char 1',
                                      'Bytes<32>',
                                      key_0)
         }
@@ -2497,7 +2531,7 @@ export function ledger(stateOrChargedState) {
         if (!(key_0.buffer instanceof ArrayBuffer && key_0.BYTES_PER_ELEMENT === 1 && key_0.length === 32)) {
           __compactRuntime.typeError('member',
                                      'argument 1',
-                                     'vaxzk.compact line 32 char 1',
+                                     'vaxzk.compact line 39 char 1',
                                      'Bytes<32>',
                                      key_0)
         }
@@ -2526,7 +2560,7 @@ export function ledger(stateOrChargedState) {
         if (!(key_0.buffer instanceof ArrayBuffer && key_0.BYTES_PER_ELEMENT === 1 && key_0.length === 32)) {
           __compactRuntime.typeError('lookup',
                                      'argument 1',
-                                     'vaxzk.compact line 32 char 1',
+                                     'vaxzk.compact line 39 char 1',
                                      'Bytes<32>',
                                      key_0)
         }
@@ -2606,7 +2640,7 @@ export function ledger(stateOrChargedState) {
         if (!(key_0.buffer instanceof ArrayBuffer && key_0.BYTES_PER_ELEMENT === 1 && key_0.length === 32)) {
           __compactRuntime.typeError('member',
                                      'argument 1',
-                                     'vaxzk.compact line 35 char 1',
+                                     'vaxzk.compact line 43 char 1',
                                      'Bytes<32>',
                                      key_0)
         }
@@ -2635,7 +2669,7 @@ export function ledger(stateOrChargedState) {
         if (!(key_0.buffer instanceof ArrayBuffer && key_0.BYTES_PER_ELEMENT === 1 && key_0.length === 32)) {
           __compactRuntime.typeError('lookup',
                                      'argument 1',
-                                     'vaxzk.compact line 35 char 1',
+                                     'vaxzk.compact line 43 char 1',
                                      'Bytes<32>',
                                      key_0)
         }
@@ -2689,28 +2723,28 @@ export const pureCircuits = {
     if (!(vaccine_0.buffer instanceof ArrayBuffer && vaccine_0.BYTES_PER_ELEMENT === 1 && vaccine_0.length === 20)) {
       __compactRuntime.typeError('schnorrChallengeVaxZk',
                                  'argument 3',
-                                 'Schnorr.compact line 58 char 3',
+                                 'Schnorr.compact line 63 char 3',
                                  'Bytes<20>',
                                  vaccine_0)
     }
     if (!(personalId_0.buffer instanceof ArrayBuffer && personalId_0.BYTES_PER_ELEMENT === 1 && personalId_0.length === 20)) {
       __compactRuntime.typeError('schnorrChallengeVaxZk',
                                  'argument 4',
-                                 'Schnorr.compact line 58 char 3',
+                                 'Schnorr.compact line 63 char 3',
                                  'Bytes<20>',
                                  personalId_0)
     }
     if (!(typeof(expirationDate_0) === 'bigint' && expirationDate_0 >= 0n && expirationDate_0 <= 340282366920938463463374607431768211455n)) {
       __compactRuntime.typeError('schnorrChallengeVaxZk',
                                  'argument 5',
-                                 'Schnorr.compact line 58 char 3',
+                                 'Schnorr.compact line 63 char 3',
                                  'Uint<0..340282366920938463463374607431768211456>',
                                  expirationDate_0)
     }
     if (!(userPubKey_0.buffer instanceof ArrayBuffer && userPubKey_0.BYTES_PER_ELEMENT === 1 && userPubKey_0.length === 32)) {
       __compactRuntime.typeError('schnorrChallengeVaxZk',
                                  'argument 6',
-                                 'Schnorr.compact line 58 char 3',
+                                 'Schnorr.compact line 63 char 3',
                                  'Bytes<32>',
                                  userPubKey_0)
     }
@@ -2729,7 +2763,7 @@ export const pureCircuits = {
     if (!(id_0.buffer instanceof ArrayBuffer && id_0.BYTES_PER_ELEMENT === 1 && id_0.length === 32)) {
       __compactRuntime.typeError('getShieldedId',
                                  'argument 1',
-                                 'vaxzk.compact line 80 char 1',
+                                 'vaxzk.compact line 92 char 1',
                                  'Bytes<32>',
                                  id_0)
     }
