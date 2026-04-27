@@ -12916,8 +12916,11 @@ perfect harmony.`,
             copyAddress: `Copy address`,
             invitePageTitleClinic: `Join as Clinic`,
             invitePageTitleAdmin: `Join as Admin`,
+            invitePageSubtitleClinic: `You have been invited to join as an authorized clinic. Accept the invitation to start managing vaccination records on the network.`,
+            invitePageSubtitleAdmin: `You have been invited to join as a system administrator. Accept the invitation to gain access to platform management.`,
             acceptInviteBtn: `Accept Invitation`,
             inviteAccepted: `Invitation accepted successfully!`,
+            inviteAcceptedDesc: `You now have access to the platform. You can close this page or navigate to the main app.`,
             inviteCodeMissing: `Invite code is required.`,
             inviteRoleMissing: `Role is required.`,
             totalVaccinesRegistered: `Total Vaccines Registered`,
@@ -13165,8 +13168,11 @@ perfeita harmonia.`,
             copyAddress: `Copiar endereço`,
             invitePageTitleClinic: `Entrar como Clínica`,
             invitePageTitleAdmin: `Entrar como Admin`,
+            invitePageSubtitleClinic: `Você foi convidado para participar como clínica autorizada. Aceite o convite para começar a gerenciar registros de vacinação na rede.`,
+            invitePageSubtitleAdmin: `Você foi convidado para participar como administrador do sistema. Aceite o convite para obter acesso ao gerenciamento da plataforma.`,
             acceptInviteBtn: `Aceitar Convite`,
             inviteAccepted: `Convite aceito com sucesso!`,
+            inviteAcceptedDesc: `Você agora tem acesso à plataforma. Você pode fechar esta página ou navegar até o aplicativo principal.`,
             inviteCodeMissing: `Código de convite é necessário.`,
             inviteRoleMissing: `Papel é necessário.`,
             totalVaccinesRegistered: `Total de Vacinas Cadastradas`,
@@ -13414,8 +13420,11 @@ perfecta armonía.`,
             copyAddress: `Copiar dirección`,
             invitePageTitleClinic: `Unirse como Clínica`,
             invitePageTitleAdmin: `Unirse como Admin`,
+            invitePageSubtitleClinic: `Has sido invitado a unirte como clínica autorizada. Acepta la invitación para comenzar a gestionar registros de vacunación en la red.`,
+            invitePageSubtitleAdmin: `Has sido invitado a unirte como administrador del sistema. Acepta la invitación para obtener acceso a la gestión de la plataforma.`,
             acceptInviteBtn: `Aceptar Invitación`,
             inviteAccepted: `¡Invitación aceptada con éxito!`,
+            inviteAcceptedDesc: `Ahora tienes acceso a la plataforma. Puedes cerrar esta página o navegar a la aplicación principal.`,
             inviteCodeMissing: `El código de invitación es necesario.`,
             inviteRoleMissing: `El rol es necesario.`,
             totalVaccinesRegistered: `Total de Vacunas Registradas`,
@@ -71465,91 +71474,139 @@ Please change the parent <Route path="${e}"> to <Route path="${e === `/` ? `*` :
         return Y7(i.pathname, o) != null || Y7(i.pathname, a) != null;
     }
     var vIe = ({ vaxApi: e })=>{
-        let { i18n: t } = ul(), [n, r] = (0, R.useState)(null), [i, a] = (0, R.useState)(null), [o, s] = (0, R.useState)(!1), c = h9(), l = new URLSearchParams(c.search), u = l.get(`code`);
+        let { i18n: t } = ul(), [n, r] = (0, R.useState)(null), [i, a] = (0, R.useState)(!1), [o, s] = (0, R.useState)(!1), c = h9(), l = new URLSearchParams(c.search), u = l.get(`code`);
         if (!u) return (0, b.jsx)(`p`, {
             className: `p-8 text-error`,
             children: t.inviteCodeMissing
         });
         let d = l.get(`role`);
-        return d ? (0, b.jsxs)(`main`, {
-            className: `pt-12 px-6 max-w-screen-md mx-auto`,
-            children: [
-                (0, b.jsx)(`section`, {
-                    className: `mb-7`,
-                    children: (0, b.jsx)(`h2`, {
-                        className: `text-4xl font-extrabold tracking-tight text-on-surface mb-2`,
-                        children: d === `clinic` ? t.invitePageTitleClinic : t.invitePageTitleAdmin
-                    })
-                }),
-                (0, b.jsx)(`div`, {
-                    className: `space-y-16`,
-                    children: (0, b.jsx)(`div`, {
-                        className: `bg-surface-container-low p-8 rounded-xl shadow-sm border-none relative overflow-hidden`,
-                        children: (0, b.jsx)(`form`, {
-                            onSubmit: async (n)=>{
-                                if (n.preventDefault(), e) {
-                                    s(!0), r(null), a(null);
+        if (!d) return (0, b.jsx)(`p`, {
+            className: `p-8 text-error`,
+            children: t.inviteRoleMissing
+        });
+        let f = d === `clinic`, p = f ? t.invitePageTitleClinic : t.invitePageTitleAdmin, m = f ? t.invitePageSubtitleClinic : t.invitePageSubtitleAdmin, h = f ? `local_hospital` : `admin_panel_settings`;
+        return (0, b.jsx)(`main`, {
+            className: `min-h-screen bg-slate-50 flex items-center justify-center px-6 py-16`,
+            children: (0, b.jsxs)(`div`, {
+                className: `w-full max-w-lg`,
+                children: [
+                    (0, b.jsxs)(`div`, {
+                        className: `text-center mb-8`,
+                        children: [
+                            (0, b.jsx)(`div`, {
+                                className: `inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 mb-5`,
+                                children: (0, b.jsx)(`span`, {
+                                    className: `material-symbols-outlined text-primary text-3xl`,
+                                    children: h
+                                })
+                            }),
+                            (0, b.jsx)(`h1`, {
+                                className: `text-3xl md:text-4xl font-extrabold tracking-tight text-on-surface mb-3`,
+                                children: p
+                            }),
+                            (0, b.jsx)(`p`, {
+                                className: `text-on-surface-variant text-base leading-relaxed max-w-sm mx-auto`,
+                                children: m
+                            })
+                        ]
+                    }),
+                    (0, b.jsx)(`div`, {
+                        className: `bg-white rounded-2xl shadow-sm border border-slate-100 p-8`,
+                        children: i ? (0, b.jsxs)(`div`, {
+                            className: `flex flex-col items-center gap-4 py-4 text-center`,
+                            children: [
+                                (0, b.jsx)(`div`, {
+                                    className: `w-14 h-14 rounded-full bg-green-100 flex items-center justify-center`,
+                                    children: (0, b.jsx)(`span`, {
+                                        className: `material-symbols-outlined text-green-600 text-3xl`,
+                                        children: `check_circle`
+                                    })
+                                }),
+                                (0, b.jsxs)(`div`, {
+                                    children: [
+                                        (0, b.jsx)(`p`, {
+                                            className: `text-lg font-bold text-green-700`,
+                                            children: t.inviteAccepted
+                                        }),
+                                        (0, b.jsx)(`p`, {
+                                            className: `text-sm text-on-surface-variant mt-1`,
+                                            children: t.inviteAcceptedDesc
+                                        })
+                                    ]
+                                })
+                            ]
+                        }) : (0, b.jsxs)(`form`, {
+                            onSubmit: async (t)=>{
+                                if (t.preventDefault(), e) {
+                                    s(!0), r(null);
                                     try {
-                                        let n = d === `clinic` ? `clinic` : `admin`;
-                                        await e.acceptInvite(n, u.trim()), a(t.inviteAccepted);
+                                        await e.acceptInvite(f ? `clinic` : `admin`, u.trim()), a(!0);
                                     } catch (e) {
-                                        console.error(`Contract failed:`, e), e instanceof Error ? r(e.message) : r(String(e));
+                                        console.error(`Contract failed:`, e), r(e instanceof Error ? e.message : String(e));
                                     } finally{
                                         s(!1);
                                     }
                                 }
                             },
-                            className: `space-y-8 relative z-10`,
-                            children: (0, b.jsxs)(`div`, {
-                                className: `bg-secondary-container/20 p-5 rounded-lg border-none flex items-start gap-4 mt-12`,
-                                style: {
-                                    background: `rgb(161 190 253 / 0.2)`
-                                },
-                                children: [
-                                    (0, b.jsx)(`div`, {
-                                        className: `w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center shrink-0`,
-                                        children: (0, b.jsx)(`span`, {
-                                            className: `material-symbols-outlined text-on-secondary-container`,
-                                            children: `verified_user`
+                            className: `flex flex-col gap-6`,
+                            children: [
+                                (0, b.jsxs)(`div`, {
+                                    className: `bg-slate-50 rounded-xl p-4 flex items-center gap-3`,
+                                    children: [
+                                        (0, b.jsx)(`span`, {
+                                            className: `material-symbols-outlined text-slate-400 shrink-0`,
+                                            children: `key`
+                                        }),
+                                        (0, b.jsx)(`code`, {
+                                            className: `text-xs font-mono text-slate-500 break-all`,
+                                            children: u
                                         })
-                                    }),
-                                    n && (0, b.jsx)(`p`, {
-                                        className: `text-error text-sm mt-3 px-1`,
-                                        children: n
-                                    }),
-                                    i && (0, b.jsx)(`p`, {
-                                        className: `text-green-600 text-sm mt-3 px-1 font-medium`,
-                                        children: i
-                                    }),
-                                    (0, b.jsx)(`div`, {
-                                        className: `pt-6`,
-                                        children: (0, b.jsxs)(`button`, {
-                                            className: `w-full py-4 bg-gradient-to-r from-primary to-primary-container text-white font-bold text-lg rounded-full shadow-lg shadow-primary/20 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2 disabled:opacity-50`,
-                                            style: {
-                                                background: `#0070eb`
-                                            },
-                                            type: `submit`,
-                                            disabled: o,
-                                            children: [
-                                                (0, b.jsx)(`span`, {
-                                                    children: o ? t.loading : t.acceptInviteBtn
-                                                }),
-                                                !o && (0, b.jsx)(`span`, {
-                                                    className: `material-symbols-outlined`,
-                                                    children: `check_circle`
-                                                })
-                                            ]
+                                    ]
+                                }),
+                                n && (0, b.jsxs)(`div`, {
+                                    className: `flex items-start gap-2 bg-red-50 border border-red-100 rounded-xl p-4`,
+                                    children: [
+                                        (0, b.jsx)(`span`, {
+                                            className: `material-symbols-outlined text-error text-base shrink-0 mt-0.5`,
+                                            children: `error`
+                                        }),
+                                        (0, b.jsx)(`p`, {
+                                            className: `text-error text-sm`,
+                                            children: n
                                         })
+                                    ]
+                                }),
+                                (0, b.jsx)(`button`, {
+                                    className: `w-full py-4 bg-primary text-white font-bold text-base rounded-xl shadow-md shadow-primary/20 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2 disabled:opacity-50`,
+                                    type: `submit`,
+                                    disabled: o,
+                                    children: o ? (0, b.jsxs)(b.Fragment, {
+                                        children: [
+                                            (0, b.jsx)(`span`, {
+                                                className: `material-symbols-outlined animate-spin text-xl`,
+                                                children: `sync`
+                                            }),
+                                            (0, b.jsx)(`span`, {
+                                                children: t.loading
+                                            })
+                                        ]
+                                    }) : (0, b.jsxs)(b.Fragment, {
+                                        children: [
+                                            (0, b.jsx)(`span`, {
+                                                className: `material-symbols-outlined text-xl`,
+                                                children: `verified_user`
+                                            }),
+                                            (0, b.jsx)(`span`, {
+                                                children: t.acceptInviteBtn
+                                            })
+                                        ]
                                     })
-                                ]
-                            })
+                                })
+                            ]
                         })
                     })
-                })
-            ]
-        }) : (0, b.jsx)(`p`, {
-            className: `p-8 text-error`,
-            children: t.inviteRoleMissing
+                ]
+            })
         });
     }, yIe = [
         {
