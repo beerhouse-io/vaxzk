@@ -1,5 +1,5 @@
 import * as __compactRuntime from '@midnight-ntwrk/compact-runtime';
-__compactRuntime.checkRuntimeVersion('0.15.0');
+__compactRuntime.checkRuntimeVersion('0.16.0');
 
 export var Role;
 (function (Role) {
@@ -947,7 +947,8 @@ export class Contract {
     const c_0 = cTruncated_0;
     const lhs_0 = this._ecMulGenerator_0(response_0);
     const rhs_0 = this._ecAdd_0(announcement_0, this._ecMul_0(pk_0, c_0));
-    __compactRuntime.assert(lhs_0 === rhs_0, 'Invalid attestation signature');
+    __compactRuntime.assert(this._equal_0(lhs_0, rhs_0),
+                            'Invalid attestation signature');
     return [];
   }
   _schnorrChallengeVaxZk_0(ann_0,
@@ -1666,10 +1667,10 @@ export class Contract {
                                                                                                                  alignment: _descriptor_0.alignment() } }] } },
                                                                                       { popeq: { cached: false,
                                                                                                  result: undefined } }]).value);
-    __compactRuntime.assert(this._equal_0(proof_0.vaccine,
+    __compactRuntime.assert(this._equal_1(proof_0.vaccine,
                                           vaccineProofReq_0.vaccine),
                             "The submitted proof doesn't match the vaccine type");
-    __compactRuntime.assert(this._equal_1(proof_0.personalId,
+    __compactRuntime.assert(this._equal_2(proof_0.personalId,
                                           vaccineProofReq_0.personalId),
                             "The submitted proof doesn't match the passport or ID number");
     let t_0;
@@ -1706,10 +1707,23 @@ export class Contract {
     return [];
   }
   _equal_0(x0, y0) {
-    if (!x0.every((x, i) => y0[i] === x)) { return false; }
+    {
+      let x1 = x0.x;
+      let y1 = y0.x;
+      if (x1 !== y1) { return false; }
+    }
+    {
+      let x1 = x0.y;
+      let y1 = y0.y;
+      if (x1 !== y1) { return false; }
+    }
     return true;
   }
   _equal_1(x0, y0) {
+    if (!x0.every((x, i) => y0[i] === x)) { return false; }
+    return true;
+  }
+  _equal_2(x0, y0) {
     if (!x0.every((x, i) => y0[i] === x)) { return false; }
     return true;
   }
